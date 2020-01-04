@@ -1,4 +1,4 @@
-<link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto+Slab:400,700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:500|Roboto+Slab:400,700&amp;display=swap" rel="stylesheet">
 <style>
 html {
   margin: 0;
@@ -10,15 +10,33 @@ body {
   font-family: 'Roboto Slab';
   font-size: 100%;
 }
+td, th {
+  border: 1px solid #ccc !important;
+}
 h1 {
-  border-bottom: 2px solid #000;
+  border-bottom: 2px solid #000 !important;
 }
 h1,h2,h3,h4,h5 {
   font-weight: 700;
 }
+pre {
+  margin: 1em !important;
+  padding: 0 !important;
+}
+pre, * {
+  background-color: #fefefe !important;
+  color: #000 !important;
+}
+a {
+  color: #000066 !important;
+}
+.signal-high {
+  border-top: 2px solid #000;
+}
 code {
   color: #000;
   font-family: 'Roboto Mono';
+  font-weight: 500;
 }
 </style>
 
@@ -562,37 +580,13 @@ Each side of a disk may be used independently. A disk should be inserted with it
                      ---_|___---
 ```
 
-[Their diagram is zoomed in on the drive, but you get the idea.]
-
 ## Loading disk software
 
 To load Spectrum +3, Spectrum +2 and Spectrum 128 software (a game, an utility program, etc.) from disk, carry out the following instructions.
 
 1. Set up and switch on the +3 so that the opening menu appears on the screen...
 
-```
-    +-------------------------------------------------------------+
-    |                                                             |
-    |                                                             |
-    |                                                             |
-    |                                                             |
-    |                                                             |
-    |                      _________________                      |
-    |                     |_128_+3__________|                     |
-    |                     |//Loader/////////|                     |
-    |                     |  +3 BASIC       |                     |
-    |                     |  Calculator     |                     |
-    |                     |  48 BASIC       |                     |
-    |                     +-----------------+                     |
-    |                                                             |
-    |                                                             |
-    |                                                             |
-    |                                                             |
-    |                                                             |
-    | C 1982, 1986, 1987 Amstrad Plc.                             |
-    | Drives A: and M: available.                                 |
-    +-------------------------------------------------------------+
-```
+<canvas id="screen-loading-disk"></canvas>
 
 2. Insert your software disk into the disk drive.
 
@@ -631,29 +625,7 @@ To load Spectrum +3, Spectrum +2 and Spectrum 128 software (a game, an utility p
 
 1. Set up and switch on the system so that the opening menu appears on the screen...
 
-```
-    +-------------------------------------------------------------+
-    |                                                             |
-    |                                                             |
-    |                                                             |
-    |                                                             |
-    |                                                             |
-    |                      _________________                      |
-    |                     |_128_+3__________|                     |
-    |                     |//Loader/////////|                     |
-    |                     |  +3 BASIC       |                     |
-    |                     |  Calculator     |                     |
-    |                     |  48 BASIC       |                     |
-    |                     +-----------------+                     |
-    |                                                             |
-    |                                                             |
-    |                                                             |
-    |                                                             |
-    |                                                             |
-    |              (C) 1982, 1986, 1987 Amstrad Plc.              |
-    |                 Drives A: and M: available.                 |
-    +-------------------------------------------------------------+
-```
+<canvas id="screen-loading-software"></canvas>
 
 2. Make sure that no disk in inserted in the drive.
 
@@ -668,77 +640,17 @@ Note that when you select the `Loader` option from the opening menu, the +3 know
 To load Spectrum 48 software (a game, an utility program, etc.) from tape, carry out the following instructions...
 
 1. Set up and switch on the system so that the opening menu appears on the screen...
-```
-    +-------------------------------------------------------------+
-    |                                                             |
-    |                                                             |
-    |                                                             |
-    |                                                             |
-    |                                                             |
-    |                      _________________                      |
-    |                     |_128_+3__________|                     |
-    |                     |//Loader/////////|                     |
-    |                     |  +3 BASIC       |                     |
-    |                     |  Calculator     |                     |
-    |                     |  48 BASIC       |                     |
-    |                     +-----------------+                     |
-    |                                                             |
-    |                                                             |
-    |                                                             |
-    |                                                             |
-    |                                                             |
-    |              (C) 1982, 1986, 1987 Amstrad Plc.              |
-    |                 Drives A: and M: available.                 |
-    +-------------------------------------------------------------+
-```
+
+<canvas id="screen-loading-48"></canvas>
+
 2. Select the option `48 BASIC` from the opening menu. (If you don't know how to select a menu option, refer back to chapter 2.) The opening menu will disappear and the following message will be displayed at the bottom of the screen...
-```
-    +-------------------------------------------------------------+
-    |                                                             |
-    |                                                             |
-    |                                                             |
-    |                                                             |
-    |                                                             |
-    |                                                             |
-    |                                                             |
-    |                                                             |
-    |                                                             |
-    |                                                             |
-    |                                                             |
-    |                                                             |
-    |                                                             |
-    |                                                             |
-    |                                                             |
-    |                                                             |
-    |                                                             |
-    |                                                             |
-    | (C) 1982 Amstrad                                            |
-    +-------------------------------------------------------------+
-```
+
+<canvas id="screen-basic-48"></canvas>
+
 3. Now press the **J** key once, followed by the **"** (double quote) key twice. The screen should look like this...
-```
-    +-------------------------------------------------------------+
-    |                                                             |
-    |                                                             |
-    |                                                             |
-    |                                                             |
-    |                                                             |
-    |                                                             |
-    |                                                             |
-    |                                                             |
-    |                                                             |
-    |                                                             |
-    |                                                             |
-    |                                                             |
-    |                                                             |
-    |                                                             |
-    |                                                             |
-    |                                                             |
-    |                                                             |
-    |                                                             |
-    | LOAD ""[L]                                                  |
-    +-------------------------------------------------------------+
-```
+
+<canvas id="screen-basic-48-load"></canvas>
+
 When you see this message, press **ENTER**.
 
 Now skip to the section ahead entitled 'Loading from tape'.
@@ -941,31 +853,8 @@ The +3 has an advanced ***editor*** to create, modify and run BASIC programs. To
 
 The screen should now look like this...
 
-<canvas id="screen-plus3-basic"></canvas>
+<canvas id="screen-basic-plus3"></canvas>
 
-```
-    +-------------------------------------------------------------+
-    |                                                             |
-    |   []                                                        |
-    |                                                             |
-    |                                                             |
-    |                                                             |
-    |                                                             |
-    |                                                             |
-    |                                                             |
-    |                                                             |
-    |                                                             |
-    |                                                             |
-    |                                                             |
-    |                                                             |
-    |                                                             |
-    |                                                             |
-    |     ___________________________________________________     |
-    |    [_+3_BASIC__________________________________________]    |
-    |                                                             |
-    |                                                             |
-    +-------------------------------------------------------------+
-```
 There are three things to notice about this screen.
 
 Firstly, there is a flashing blue and white blob in the top left-hand corner. This is called the ***cursor***, and if you type any letters at the keyboard, then they will appear on the screen at the position of the cursor.
@@ -975,29 +864,9 @@ Secondly, there's a black bar towards the bottom of the screen. This is called t
 The last item of note at the moment is the small screen. This fits between the footer bar and the bottom of the screen, and is currently blank. It only has room for two lines of text, and is most often used by the +3 when it detects an error and needs to print a ***report*** to say so. It does have other uses, however, and these will be described later.
 
 Now press the **EDIT** key. You will notice two things happen - the cursor vanishes, and a new menu appears. This is called the ***edit menu***...
-```
-    +-------------------------------------------------------------+
-    |                                                             |
-    |                                                             |
-    |                                                             |
-    |                      _________________                      |
-    |                     |_Options_________|                     |
-    |                     |//+3 BASIC///////|                     |
-    |                     |  Renumber       |                     |
-    |                     |  Screen         |                     |
-    |                     |  Print          |                     |
-    |                     |  Exit           |                     |
-    |                     +-----------------+                     |
-    |                                                             |
-    |                                                             |
-    |                                                             |
-    |                                                             |
-    |     ___________________________________________________     |
-    |    [_+3_BASIC__________________________________________]    |
-    |                                                             |
-    |                                                             |
-    +-------------------------------------------------------------+
-```
+
+<canvas id="screen-basic-plus3-edit"></canvas>
+
 The edit menu's options are selected in the same way as for the opening menu (by using the cursor keys and **ENTER**).
 
 Taking the options in turn...
@@ -1272,27 +1141,7 @@ The 48 BASIC mode is included for compatibility reasons only - there is no advan
 There are, in fact, two methods of entering the 48 BASIC mode: the first is by selecting the `48 BASIC` option from the opening menu (if you don't know how to select a menu option, refer back to chapter 2).
 When 48 BASIC starts up, you will see the following on the screen...
 
-    +-------------------------------------------------------------+
-    |                                                             |
-    |                                                             |
-    |                                                             |
-    |                                                             |
-    |                                                             |
-    |                                                             |
-    |                                                             |
-    |                                                             |
-    |                                                             |
-    |                                                             |
-    |                                                             |
-    |                                                             |
-    |                                                             |
-    |                                                             |
-    |                                                             |
-    |                                                             |
-    |                                                             |
-    |                                                             |
-    | (C) 1982 Amstrad                                            |
-    +-------------------------------------------------------------+
+<canvas id="screen-using-basic-48"></canvas>
 
 The second method allows you to enter the 48 BASIC mode while editing a +3 BASIC program. To do this (while in +3 BASIC mode), type...
 
@@ -1307,6 +1156,8 @@ Once in 48 BASIC mode, the keyboard performs as follows:
 All the BASIC commands, functions and operators are available directly from the keyboard rather than needing to be spelled out. In order to accommodate all these functions and commands, some keys have five or more distinct meanings, obtained partly by 'shifting' the keys (i.e. pressing either **CAPS SHIFT** or **SYMB SHIFT** together with the required key); and partly by having the machine in different modes. The flashing cursor contains a letter (`K`, `L`, `C`, `E` or `G`) to indicate which mode you are operating in.
 
 `K` (for Keywords) mode automatically replaces `L` (for Letters mode when the machine is expecting a command or program line (rather than input data), and from its position on the line the +3 knows that it should expect either a line number or a keyword. `K` mode occurs at the beginning of a line, or after a colon ':' (except in a string), or after the keyword `THEN`. Whenever the `K` cursor appears, the next key pressed will be interpreted as either a keyword or a line number, as follows...
+
+
 ```
 +-----------------------------------------------------------------------------+
 |TRUE |INV. |     |     |     |     |     |     |     |     |     |     |     |
@@ -1510,6 +1361,9 @@ Whether you read chapter 6 first, or came straight here, you should be aware tha
 This guide to BASIC starts by repeating some of the information given in chapter 6 (Introducing +3 BASIC), but in greater detail. You may also find exercises at the end of some sections - don't ignore these, as many of them illustrate points that are hinted at in the text. Look through them, and do any that interest you or that seem to cover ground that you don't understand properly.
 
 ## The Keyboard
+
+<canvas id="the-keyboard"></canvas>
+
 ```
 +-----------------------------------------------------------------------------+
 |TRUE |INV. |     |     |     |     |     |     |     |     |     |     |     |
@@ -5780,6 +5634,275 @@ None
   * AF BC DE HL IX corrupt
   * All other registers preserved
 
+# Part 28 - Spectrum character set
+
+Subjects covered...
+
+* Control codes
+* Characters
+* Z80 assembler mnemonics
+
+This is the complete Spectrum character set, with codes in decimal and hex. If one imagines the codes as being Z80 machine code instructions, then the right hand columns give the corresponding assembly language mnemonics. As you may be aware certain Z80 instructions are 'compounds' starting with CBh or EDh, these are shown in the two right hand columns. Where a character changes between 48K and +3 (128K) modes, the 48K version is given in brackets after the +3 one.
+
+| CODE | CHARACTER          | HEX | Z80 ASSEMBLER | -AFTER CBh | -AFTER EDh
+|------|--------------------|-----|---------------|------------|-----------
+|   0  | *not used*           | 00  | nop           | rlc b
+|   1  | *not used*           | 01  | ld bc,NN      | rlc d
+|   2  | *not used*           | 02  | ld (bc),a     |  rlc e
+|   3  | *not used*           | 03  | inc bc        | rlc h
+|   4  | *not used*           | 04  | inc b         | rlc l
+|   5  | *not used*           | 05  | dec b         | rlc (hl)
+|   6  | `PRINT` comma      | 06  | ld b,N        | rlc a
+|   7  | **[EDIT]**         | 07  | rlca          | rlc a
+|   8  | cursor left        | 08  | ex af,af'     | rrc b
+|   9  | cursor right       | 09  | add hl,bc     | rrc c
+|  10  |  cursor down       | 0A  | ld a,(bc)     | rrc d
+|  11  |  cursor up         | 0B  | dec bc        | rrc e
+|  12  |  **[DELETE]**      | 0C  | inc c         | rrc h
+|  13  |  **[ENTER]**       | 0D  | dec c         | rrc l
+|  14  |  number            | 0E  | ld c,N        | rrc (hl)
+|  15  |  not used          | 0F  | rrca          | rrc a
+|  16  |  `INK` control     | 10  | djnz DIS      | rl b
+|  17  |  `PAPER` control   | 11  | ld de,NN      | rl c
+|  18  |  `FLASH` control   | 12  | ld (de),a     | rl d
+|  19  |  `BRIGHT` control  | 13  | inc de        | rl e
+|  20  |  `INVERSE` control | 14  | inc d         | rl h
+|  21  |  `OVER` control    | 15  | dec d         | rl l
+|  22  |  `AT` control      | 16  | ld d,N        | rl (hl)
+|  23  |  `TAB` control     | 17  | rla           | rl a
+|  24  |  *not used*       | 18  | jr DIS        | rr b
+|  25  |  *not used*       | 19  | add hl,de     | rr c
+|  26  |  *not used*       | 1A  | ld a,(de)     | rr d
+|  27  |  *not used*       | 1B  | dec de        | rr e
+|  28  |  *not used*       | 1C  | inc e         | rr h
+|  29  |  *not used*       | 1D  | dec e         | rr l
+|  30  |  *not used*       | 1E  | ld e,N        | rr (hl)
+|  31  |  *not used*       | 1F  | rra           | rr a
+|  32  |  space             | 20  | jr nz,DIS     | sla b
+|  33  |  `!`               | 21  | ld hl,NN      | sla c
+|  34  |  `"`               | 22  | ld (NN),hl    | sla d
+|  35  |  `#`               | 23  | inc hl        | sla e
+|  36  |  `$`               | 24  | inc h         | sla h
+|  37  |  `%`               | 25  | dec h         | sla l
+|  38  |  `&`               | 26  | ld h,N        | sla (hl)
+|  39  |  `'`               | 27  | daa           | sla a
+|  40  |  `(`               | 28  | jr z,DIS      | sra b
+|  41  |  `)`               | 29  | add hl,hl     | sra c
+|  42  |  `*`               | 2A  | ld hl,(NN)    | sra d
+|  43  |  `+`               | 2B  | dec hl        | sra e
+|  44  |  `,`               | 2C  | inc l         | sra h
+|  45  |  `-`               | 2D  | dec l         | sra l
+|  46  |  `.`               | 2E  | ld l,N        | sra (hl)
+|  47  |  `/`               | 2F  | cpl           | sra a
+|  48  |  `0`               | 30  | jr nc,DIS
+|  49  |  `1`               | 31  | ld sp,NN
+|  50  |  `2`               | 32  | ld (NN),a
+|  51  |  `3`               | 33  | inc sp
+|  52  |  `4`               | 34  | inc (hl)
+|  53  |  `5`               | 35  | dec (hl)
+|  54  |  `6`               | 36  | ld (hl),N
+|  55  |  `7`               | 37  | scf
+|  56  |  `8`               | 38  | jr c,DIS      | srl b
+|  57  |  `9`               | 39  | add hl,sp     | srl c
+|  58  |  `:`               | 3A  | ld a,(NN)     | srl d
+|  59  |  `;`               | 3B  | dec sp        | srl e
+|  60  |  `<`               | 3C  | inc a         | srl h
+|  61  |  `=`               | 3D  | dec a         | srl l
+|  62  |  `>`               | 3E  | ld a,N        | srl (hl)
+|  63  |  `?`               | 3F  | ccf           | srl a
+|  64  |  `@`               | 40  | ld b,b        | bit 0,b     | in b,(c)
+|  65  |  `A`               | 41  | ld b,c        | bit 0,c     | out (c),b
+|  66  |  `B`               | 42  | ld b,d        | bit 0,d     | sbc hl,bc
+|  67  |  `C`               | 43  | ld b,e        | bit 0,e     | ld (NN),bc
+|  68  |  `D`               | 44  | ld b,h        | bit 0,h     | neg
+|  69  |  `E`               | 45  | ld b,l        | bit 0,l     | retn
+|  70  |  `F`               | 46  | ld b,(hl)     | bit 0,(hl)  | im 0
+|  71  |  `G`               | 47  | ld b,a        | bit 1,a     | ld i,a
+|  72  |  `H`               | 48  | ld c,b        | bit 1,b     | in c,(c)
+|  73  |  `I`               | 49  | ld c,c        | bit 1,c     | out (c),c
+|  74  |  `J`               | 4A  | ld c,d        | bit 1,d     | adc hl,bc
+|  75  |  `K`               | 4B  | ld c,e        | bit 1,e     | ld bc,(NN)
+|  76  |  `L`               | 4C  | ld c,h        | bit 1,h
+|  77  |  `M`               | 4D  | ld c,l        | bit 1,l     | reti
+|  78  |  `N`               | 4E  | ld c,(hl)     | bit 1,(hl)
+|  79  |  `O`               | 4F  | ld c,a        | bit 1,a     | ld r,a
+|  80  |  `P`               | 50  | ld d,b        |  bit 2,b    | in d,(c)
+|  81  |  `Q`               | 51  | ld d,c        |  bit 2,c    | out (c),d
+|  82  |  `R`               | 52  | ld d,d        |  bit 2,d    | sbc hl,de
+|  83  |  `S`               | 53  | ld d,e        |  bit 2,e    | ld (NN),de
+|  84  |  `T`               | 54  | ld d,h        |  bit 2,h
+|  85  |  `U`               | 55  | ld d,l        |  bit 2,l
+|  86  |  `V`               | 56  | ld d,(hl)     |  bit 2,(hl) | im 1
+|  87  |  `W`               | 57  | ld d,a        |  bit 2,a    | ld a,i
+|  88  |  `X`               | 58  | ld e,b        |  bit 3,b    | in e,(c)
+|  89  |  `Y`               | 59  | ld e,c        | bit 3,c     | out (c),e
+|  90  |  `Z`               | 5A  | ld e,d        | bit 3,d     | adc hl,de
+|  91  |  `[`               | 5B  | ld e,e        | bit 3,e     | ld de,(NN)
+|  92  |  `\`               | 5C  | ld e,h        | bit 3,h
+|  93  |  `]`               | 5D  | ld e,l        | bit 3,l
+|  94  |  `^`               | 5E  | ld e,(hl)     | bit 3,(hl)  | im 2
+|  95  |  `_`               | 5F  | ld e,a        | bit 3,a     | ld a,r
+|  96  |  `` ` ``           | 60  | ld h,b        | bit 4,b     | in h,(c)
+|  97  |  `a`               | 61  | ld h,c        | bit 4,c     | out (c),h
+|  98  |  `b`               | 62  | ld h,d        | bit 4,d     | sbc hl,hl
+|  99  |  `c`               | 63  | ld h,e        | bit 4,e     | ld (NN),hl
+| 100  |  `d`               | 64  | ld h,h        | bit 4,h
+| 101  |  `e`               | 65  | ld h,l        | bit 4,l
+| 102  |  `f`               | 66  | ld h,(hl)     | bit 4,(hl)
+| 103  |  `g`               | 67  | ld h,a        | bit 4,a     | rrd
+| 104  |  `h`               | 68  | ld l,b        | bit 5,b     | in l,(c)
+| 105  |  `i`               | 69  | ld l,c        | bit 5,c     | out (c),l
+| 106  |  `j`               | 6A  | ld l,d        | bit 5,d     | adc hl,hl
+| 107  |  `k`               | 6B  | ld l,e        | bit 5,e     | ld hl,(NN)
+| 108  |  `l`               | 6C  | ld l,h        | bit 5,h
+| 109  |  `m`               | 6D  | ld l,l        | bit 5,l
+| 110  |  `n`               | 6E  | ld l,(hl)     | bit 5,(hl)
+| 111  |  `o`               | 6F  | ld l,a        | bit 5,a     | rld
+| 112  |  `p`               | 70  | ld (hl),b     | bit 6,b     | in f,(c)
+| 113  |  `q`               | 71  | ld (hl),c     | bit 6,c
+| 114  |  `r`               | 72  | ld (hl),d     | bit 6,d     | sbc hl,sp
+| 115  |  `s`               | 73  | ld (hl),e     | bit 6,e     | ld (NN),sp
+| 116  |  `t`               | 74  | ld (hl),h     | bit 6,h
+| 117  |  `u`               | 75  | ld (hl),l     | bit 6,l
+| 118  |  `v`               | 76  | halt          | bit 6,(hl)
+| 119  |  `w`               | 77  | ld (hl),a     | bit 6,a
+| 120  |  `x`               | 78  | ld a,b        | bit 7,b     | in a,(c)
+| 121  |  `y`               | 79  | ld a,c        | bit 7,c     | out (c),a
+| 122  |  `z`               | 7A  | ld a,d        | bit 7,d     | adc hl,sp
+| 123  |  `{`               | 7B  | ld a,e        | bit 7,e     | ld sp,(NN)
+| 124  |  `\|`              | 7C  | ld a,h        | bit 7,h
+| 125  |  `}`               | 7D  | ld a,l        | bit 7,l
+| 126  |  `~`               | 7E  | ld a,(hl)     | bit 7,(hl)
+| 127  |  `©`               | 7F  | ld a,a        | bit 7,a
+| 128  | [  ]               | 80  | add a,b       | res 0,b
+| 129  | ▝                 | 81  | add a,c       | res 0,c
+| 130  | ▘                 | 82  | add a,d       | res 0,d
+| 131  | ▀                  | 83  | add a,e       | res 0,e
+| 132  | ▗                 | 84  | add a,h       | res 0,h
+| 133  | ▐                  | 85  | add a,l       | res 0,l
+| 134  | ['.]               | 86  | add a,(hl)    | res 0,(hl)
+| 135  | [':]               | 87  | add a,a       | res 0,a
+| 136  | [' ]               | 88  | adc a,b       | res 1,b
+| 137  | [.']               | 89  | adc a,c       | res 1,c
+| 138  | [: ]               | 8A  | adc a,d       | res 1,d
+| 139  | [:']               | 8B  | adc a,e       | res 1,e
+| 140  | [..]               | 8C  | adc a,h       | res 1,h
+| 141  | [.:]               | 8D  | adc a,l       | res 1,l
+| 142  | [:.]               | 8E  | adc a,(hl)    | res 1,(hl)
+| 143  | [::]               | 8F  | adc a,a       | res 1,a
+| 144  | (a)  ]             | 90  | sub b         | res 2,b
+| 145  | (b) \|             | 91  | sub c         | res 2,c
+| 146  | (c) \|             | 92  | sub d         | res 2,d
+| 147  | (d) \|             | 93  | sub e         | res 2,e
+| 148  | (e) \|             | 94  | sub h         | res 2,h
+| 149  | (f) \|             | 95  | sub l         | res 2,l
+| 150  | (g) \|             | 96  | sub (hl)      | res 2,(hl)
+| 151  | (h) \|             | 97  | sub a         | res 2,a
+| 152  | (i) \|- user       | 98  | sbc a,b       | res 3,b
+| 153  | (j) \|graphics     | 99  | sbc a,c       | res 3,c
+| 154  | (k) \|             | 9A  | sbc a,d       | res 3,d
+| 155  | (l) \|             | 9B  | sbc a,e       | res 3,e
+| 156  | (m) \|             | 9C  | sbc a,h       | res 3,h
+| 157  | (n) \|             | 9D  | sbc a,l       | res 3,l
+| 158  | (o) \|             | 9E  | sbc a,(hl)    | res 3,(hl)
+| 159  | (p) \|             | 9F  | sbc a,a       | res 3,a
+| 160  | (q) \|             | A0  | and b         | res 4,b       |  ldi
+| 161  | (r) \|             | A1  | and c         | res 4,c       |  cpi
+| 162  | (s)  ]             | A2  | and d         | res 4,d       |  ini
+| 163  | `SPECTRUM` (t)     | A3  | and e         | res 4,e       | outi
+| 164  | `PLAY` (u)         | A4  | and h         | res 4,h
+| 165  | `RND`              | A5  | and l         | res 4,l
+| 166  | `INKEY$`           | A6  | and (hl)      | res 4,(hl)
+| 167  | `PI`               | A7  | and a         | res 4,a
+| 168  | `FN`               | A8  | xor b         | res 5,b       | ldd
+| 169  | `POINT`            | A9  | xor c         | res 5,c       | cpd
+| 170  | `SCREEN$`          | AA  | xor d         | res 5,d       | ind
+| 171  | `ATTR`             | AB  | xor e         | res 5,e       | outd
+| 172  | `AT`               | AC  | xor h         | res 5,h
+| 173  | `TAB`              | AD  | xor l         | res 5,l
+| 174  | `VAL$`             | AE  | xor (hl)      | res 5,(hl)
+| 175  | `CODE`             | AF  | xor a         | res 5,a
+| 176  | `VAL`              | B0  | or b          | res 6,b       | ldir
+| 177  | `LEN`              | B1  | or c          | res 6,c       | cpir
+| 178  | `SIN`              | B2  | or d          | res 6,d       | inir
+| 179  | `COS`              | B3  | or e          | res 6,e       | otir
+| 180  | `TAN`              | B4  | or h          | res 6,h
+| 181  | `ASN`              | B5  | or l          | res 6,l
+| 182  | `ACS`              | B6  | or (hl)       | res 6,(hl)
+| 183  | `ATN`              | B7  | or a          | res 6,a
+| 184  | `LN`               | B8  | cp b          | res 7,b       | lddr
+| 185  | `EXP`              | B9  | cp c          | res 7,c       | cpdr
+| 186  | `INT`              | BA  | cp d          | res 7,d       | indr
+| 187  | `SQR`              | BB  | cp e          | res 7,e       | otdr
+| 188  | `SGN`              | BC  | cp h          | res 7,h
+| 189  | `ABS`              | BD  | cp l          | res 7,l
+| 190  | `PEEK`             | BE  | cp (hl)       | res 7,(hl)
+| 191  | `IN`               | BF  | cp a          | res 7,a
+| 192  | `USR`              | C0  | ret nz        | set 0,b
+| 193  | `STR$`             | C1  | pop bc        | set 0,c
+| 194  | `CHR$`             | C2  | jp nz,NN      | set 0,d
+| 195  | `NOT`              | C3  | jp NN         | set 0,e
+| 196  | `BIN`              | C4  | call nz,NN    | set 0,h
+| 197  | `OR`               | C5  | push bc       | set 0,l
+| 198  | `AND`              | C6  | add a,N       | set 0,(hl)
+| 199  | `<=`               | C7  | rst 0         | set 0,a
+| 200  | `>=`               | C8  | ret z         | set 1,b
+| 201  | `<>`               | C9  | ret           | set 1,c
+| 202  | `LINE`             | CA  | jp z,NN       | set 1,d
+| 203  | `THEN`             | CB  |               | set 1,e
+| 204  | `TO`               | CC  | call z,NN     | set 1,h
+| 205  | `STEP`             | CD  | call NN       | set 1,l
+| 206  | `DEF FN`           | CE  | adc a,N       | set 1,(hl)
+| 207  | `CAT`              | CF  | rst 8         | set 1,a
+| 208  | `FORMAT`           | D0  | ret nc        | set 2,b
+| 209  | `MOVE`             | D1  | pop de        | set 2,c
+| 210  | `ERASE`            | D2  | jp nc,NN      | set 2,d
+| 211  | `OPEN #`           | D3  | out (N),a     | set 2,e
+| 212  | `CLOSE #`          | D4  | call nc,NN    | set 2,h
+| 213  | `MERGE`            | D5  | push de       | set 2,l
+| 214  | `VERIFY`           | D6  | sub N         | set 2,(hl)
+| 215  | `BEEP`             | D7  | rst 16        | set 2,a
+| 216  | `CIRCLE`           | D8  | ret c         | set 3,b
+| 217  | `INK`              | D9  | exx           | set 3,c
+| 218  | `PAPER`            | DA  | jp c,NN       | set 3,d
+| 219  | `FLASH`            | DB  | in a,(N)      | set 3,e
+| 220  | `BRIGHT`           | DC  | call c,NN     | set 3,h
+| 221  | `INVERSE`          | DD  | prefixes<br>instructions<br>using ix | set 3,l
+| 222  | `OVER`             | DE  | sbc a,N       | set 3,(hl)
+| 223  | `OUT`              | DF  | rst 24        | set 3,a
+| 224  | `LPRINT`           | E0  | ret po        | set 4,b
+| 225  | `LLIST`            | E1  | pop hl        | set 4,c
+| 226  | `STOP`             | E2  | jp po,NN      | set 4,d
+| 227  | `READ`             | E3  | ex (sp),hl    | set 4,e
+| 228  | `DATA`             | E4  | call po,NN    | set 4,h
+| 229  | `RESTORE`          | E5  | push hl       | set 4,l
+| 230  | `NEW`              | E6  | and N         | set 4,(hl)
+| 231  | `BORDER`           | E7  | rst 32        | set 4,a
+| 232  | `CONTINUE`         | E8  | ret pe        | set 5,b
+| 233  | `DIM`              | E9  | jp (hl)       | set 5,c
+| 234  | `REM`              | EA  | jp pe,NN      | set 5,d
+| 235  | `FOR`              | EB  | ex de,hl      | set 5,e
+| 236  | `GO TO`            | EC  | call pe,NN    | set 5,h
+| 237  | `GOTO`             | ED  |               | set 5,l
+| 238  | `GO SUB`           | EE  | xor N         | set 5,(hl)
+| 239  | `GOSUB`            | EF  | rst 40        | set 5,a
+| 240  | `INPUT`            | F0  | ret p         | set 6,b
+| 241  | `LOAD`             | F1  | pop af        | set 6,c
+| 242  | `LIST`             | F2  | jp p,NN       | set 6,d
+| 243  | `LET`              | F3  | di            | set 6,e
+| 244  | `PAUSE`            | F4  | call p,NN     | set 6,h
+| 245  | `NEXT`             | F5  | push af       | set 6,l
+| 246  | `POKE`             | F6  | or N          | set 6,(hl)
+| 247  | `PRINT`            | F7  | rst 48        | set 6,a
+| 248  | `PLOT`             | F8  | ret m         | set 7,b
+| 249  | `RUN`              | F9  | ld sp,hl      | set 7,c
+| 250  | `SAVE`             | FA  | jp m,NN       | set 7,d
+| 251  | `RANDOMIZE`        | FB  | ei            | set 7,e
+| 252  | `IF`               | FC  | call m,NN     | set 7,h
+| 253  | `CLS`              | FD  | prefixes<br>instructions<br>using iy | set 7,l
+| 254  | `DRAW`             | FE  | cp N          | set 7,(hl)
+| 255  | `CLEAR`            | FF  | rst 56        | set 7,a
+
 # <a id="chapter9"></a> Chapter 9 - Using the calculator
 
 Subjects covered...
@@ -5848,29 +5971,9 @@ If you are using the calculator whilst working on a BASIC program, then any vari
 BASIC keywords are not allowed to be used as variable names.
 
 When you have finished using the calculator, press the **EDIT** key. The screen will change to...
-```
-    +-------------------------------------------------------------+
-    |                                                             |
-    |                                                             |
-    |                                                             |
-    |                                                             |
-    |                                                             |
-    |                      _________________                      |
-    |                     |_Options_________|                     |
-    |                     |//Calculator/////|                     |
-    |                     |  Exit           |                     |
-    |                     +-----------------+                     |
-    |                                                             |
-    |                                                             |
-    |                                                             |
-    |                                                             |
-    |                                                             |
-    |     ___________________________________________________     |
-    |    [_Calculator________________________________________]    |
-    |                                                             |
-    |                                                             |
-    +-------------------------------------------------------------+
-```
+
+<canvas id="screen-calculator-options"></canvas>
+
 Select the `Exit` option to return to the opening menu. If you were working on a +3 BASIC program before you started using the calculator, then you may return to the program by selecting the `+3 BASIC` option. (If you wish to continue using the calculator, then select the `Calculator` option.)
 
 Note that if you have set up any user defined functions (using the `DEF FN` statement) whilst working on a BASIC program, you will be able to invoke that function when using the calculator. To illustrate this point, return to +3 BASIC and type in (for example)...
@@ -5933,7 +6036,7 @@ The shafts of the other two jack plugs are divided into only 2 separate metal se
 
 It is important to remember that the successful transfer of programs to and from tape is largely dependent on the correct setting of the LEVEL or VOLUME control on your cassette unit. If you cannot load or save program easily, try experimenting with different LEVEL control positions until the optimum setting is found. If you cannot seem to load or save any programs at all, try reversing the plugs to the MIC and EAR sockets on your cassette unit.
 
-Details of tape operation will be found in chapter 4 and chapter 8 parts 20 and 27.
+Details of tape operation will be found in [chapter 4](#chapter4) and chapter 8 [parts 20](#part20) and [27](#part27).
 
 ## Printer
 
@@ -6038,7 +6141,7 @@ When the FD-1 is connected to the +3, first switch on the FD-1 (using the slide 
 | 16  | GND             | 33  | not used       |
 | 17  | DIRECTIONSELECT | 34  | GND            |
 
-Details of two-drive operation will be found in chapter 8 parts 20 and 27.
+Details of two-drive operation will be found in chapter 8 [parts 20] and [27](#part27).
 
 ## Joystick(s)
 
@@ -6131,7 +6234,7 @@ GND (common) _______|   |       |
 
 **TAPE/SOUND** socket
 
-Details of the +3's sound facilities will be found in chapter 8 part 19.
+Details of the +3's sound facilities will be found in [chapter 8 part 19](#part19).
 
 ## Serial devices
 
@@ -6140,7 +6243,7 @@ To connect any serial device to the +3, you will require a Spectrum +3 serial le
 If you wish to wire-up your own, then the connections are as follows...
 
 | PIN | FUNCTION |
-|-----|----------|
+|:---:|----------|
 |  1  | GND      |
 |  2  | TXD      |
 |  3  | RXD      |
@@ -6157,7 +6260,7 @@ If you wish to wire-up your own, then the connections are as follows...
 
 **RS232** socket
 
-Details of serial operations will be found in chapter 8 part 21.
+Details of serial operations will be found in [chapter 8 part 21](#part21).
 
 ## MIDI device
 
@@ -6166,7 +6269,7 @@ Although the +3's **MIDI** (Musical Instrument Digital Interface) socket shares 
 Using the MIDI interface will not disturb the RS232's baud rate setting.
 
 | PIN | FUNCTION |
-|-----|----------|
+|:---:|----------|
 |  1  | RETURN   |
 |  2  | not used |
 |  3  | not used |
@@ -6183,27 +6286,27 @@ Using the MIDI interface will not disturb the RS232's baud rate setting.
 
 **MIDI** socket
 
-Details of MIDI operations will be found in chapter 8 part 19.
+Details of MIDI operations will be found in [chapter 8 part 19](#part19).
 
 ## Auxiliary interface
 
 The **AUX** (auxiliary interface) socket supports two input lines (pins 2 and 5) and two output lines (pins 2 and 4). The I/O lines are driven by 1488 and 1489 line driver chips which are, in turn, connected to the I/O lines of the AY-3-8912 (see the manufacturer's data sheet for this device). Basically, register 16 of the AY-3-8912 controls eight I/O lines, the bits are designated as follows:
 
-| BIT | SIGNAL                |
-|-----|-----------------------|
-|  0  | AUX pin 2 (out)       |
-|  1  | AUX pin 4 (out)       |
-|  2  | RS232 pin 5 (CTS out) |
-|  3  | RS232 pin 3 (RXD out) |
-|  4  | AUX pin 3 (in)        |
-|  5  | AUX pin 5 (in)        |
-|  6  | RS232 pin 4 (DTR in)  |
-|  7  | RS232 pin 5 (TXD in)  |
+| BIT | SIGNAL                    |
+|:---:|---------------------------|
+|  0  | **AUX** pin 2 (out)       |
+|  1  | **AUX** pin 4 (out)       |
+|  2  | **RS232** pin 5 (CTS out) |
+|  3  | **RS232** pin 3 (RXD out) |
+|  4  | **AUX** pin 3 (in)        |
+|  5  | **AUX** pin 5 (in)        |
+|  6  | **RS232** pin 4 (DTR in)  |
+|  7  | **RS232** pin 5 (TXD in)  |
 
 Using software control loops, the I/O lines could be driven as a second RS232 port (in the same way as the **RS232/MIDI** socket is driven using bits 2, 3, 6 and 7). Alternatively, the I/O lines could be used to drive, for example, a robot or some other external device.
 
 | PIN | FUNCTION     |
-|-----|--------------|
+|:---:|--------------|
 |  1  | GND          |
 |  2  | OUTPUT BIT 0 |
 |  3  | INPUT BIT 4  |
@@ -6238,11 +6341,11 @@ L 27  26  25  24  23  22  21           8   7   6   5   4   3   2   1
 **EXPANSION I/O** socket
 
 | PIN | UPPER ROW (U) | LOWER ROW (L) |
-|-----|---------------|---------------|
+|:---:|---------------|---------------|
 |  1  | A15           | A14           |
 |  2  | A13           | A12           |
 |  3  | D7            | +5V           |
-|  4  | ROM 1 OE      | not used      |
+|  4  | ROM 1 <span class="signal-high">OE</a> | not used      |
 |  5  | D0            | GND           |
 |  6  | D1            | GND           |
 |  7  | D2            | CK            |
@@ -6250,25 +6353,24 @@ L 27  26  25  24  23  22  21           8   7   6   5   4   3   2   1
 |  9  | D5            | A1            |
 |  10 | D3            | A2            |
 |  11 | D4            | A3            |
-|  12 | INT           | not used      |
-|  13 | NMI           | GND           |
-|  14 | HALT          | ROM 2 OE      |
-|  15 | MREQ          | DISK RD       |
-|  16 | IORQ          | DISK WR       |
-|  17 | RD            | MOTOR ON      |
-|  18 | WR            | BUSRQ         |
-|  19 | not used      | RESET         |
-|  20 | WAIT          | A7            |
+|  12 | <span class="signal-high">INT</a>  | not used      |
+|  13 | <span class="signal-high">NMI</a>  | GND           |
+|  14 | <span class="signal-high">HALT</a> | ROM 2 OE      |
+|  15 | <span class="signal-high">MREQ</a> | DISK <span class="signal-high">RD</a> |
+|  16 | <span class="signal-high">IORQ</a> | DISK <span class="signal-high">WR</a> |
+|  17 | <span class="signal-high">RD</a>   | <span class="signal-high">MOTOR ON</a> |
+|  18 | <span class="signal-high">WR</a>   | <span class="signal-high">BUSRQ</a> |
+|  19 | not used      | <span class="signal-high">RESET</a> |
+|  20 | <span class="signal-high">WAIT</a> | A7            |
 |  21 | +12V          | A6            |
 |  22 | -12V          | A5            |
-|  23 | M1            | A4            |
-|  24 | RFSH          | not used      |
+|  23 | <span class="signal-high">M1</a>   | A4            |
+|  24 | <span class="signal-high">RFSH</a> | not used      |
 |  25 | A8            | BUSACK        |
 |  26 | A10           | A9            |
 |  27 | RESET         | A11           |
 
-Details of the +3's hardware will be found in chapter 8 part 30.
-
+Details of the +3's hardware will be found in [chapter 8 part 30](#part30).
 
 <script>
 const spectrumFont = [
@@ -6337,10 +6439,10 @@ const spectrumFont = [
   0x00, 0x70, 0x10, 0x0c, 0x10, 0x10, 0x70, 0x00, 0x00, 0x14, 0x28, 0x00,
   0x00, 0x00, 0x00, 0x00, 0x3c, 0x42, 0x99, 0xa1, 0xa1, 0x99, 0x42, 0x3c
 ];
-
+</script>
+<script>
 const darkColors = [ '#000', '#0000d7', '#d70000', '#d700d7', '#00d700', '#00d7d7', '#d7d700', '#d7d7d7' ];
 const lightColors = [ '#000', '#0000ff', '#ff0000', '#ff00ff', '#00ff00', '#00ffff', '#ffff00', '#ffff' ];
-
 const borderSize = 16;
 
 function spectrum(id, scale, f) {
@@ -6353,18 +6455,22 @@ function spectrum(id, scale, f) {
 }
 
 function cursor(cx, x, y) {
-  cx.fillStyle = lightColors[1];
-  cx.fillRect(x, y, 8, 8);
+  fill(cx, x, y, 8, 8, lightColors[1]);
+}
+
+function fill(cx, x, y, w, h, color) {
+  if (color) cx.fillStyle = color;
+  cx.fillRect(x, y, w, h);
 }
 
 function barWithStripe(cx, x, y, w, title) {
   cx.clearRect(x, y, w, 8);
   stripe(cx, x + w - (8 * 5), y);
-  cx.fillStyle = lightColors[7];
-  text(cx, x, y, title);
+  if (title) text(cx, x, y, title, lightColors[7]);
 }
 
-function text(cx, x, y, text) {
+function text(cx, x, y, text, pen) {
+  if (pen) cx.fillStyle = pen;
   const p2r = [ 128, 64, 32, 16, 8, 4, 2, 1 ];
   for (let i = 0; i < text.length; i++) {
   	let charCode = text.charCodeAt(i);
@@ -6381,23 +6487,18 @@ function text(cx, x, y, text) {
 
 function stripe(cx, x, y) {
   const rainbow = ['red', 'yellow', 'lime', 'cyan'];
-  for (let col = 0; col < rainbow.length; col++) {
-    cx.fillStyle = rainbow[col];
+  for (let col = 0; col < rainbow.length; col++)
     for (let row = 0; row < 8; row++)
-      cx.fillRect(x + (col * 8) - row, y + row, 8, 1);
-  }
+      fill(cx, x + (col * 8) - row, y + row, 8, 1, rainbow[col]);
 }
 
 function menu(cx, x, y, w, title, options, index) {
   barWithStripe(cx, x, y, w, title);
-  cx.fillStyle = darkColors[0];
-	cx.fillRect(x, y + 8, w, (options.length + 1) * 8);
+	fill(cx, x, y + 8, w, (options.length + 1) * 8, darkColors[0]);
   w-=2;
   x++;
-  cx.fillStyle = lightColors[7];
-	cx.fillRect(x, y + 8, w, (options.length + 1) * 8 - 1);
-  cx.fillStyle = lightColors[5];
-	cx.fillRect(x, y + 8 + (index * 8), w, 8);
+	fill(cx, x, y + 8, w, (options.length + 1) * 8 - 1, lightColors[7]);
+	fill(cx, x, y + 8 + (index * 8), w, 8, lightColors[5]);
 	cx.fillStyle = darkColors[0];
   for (let i = 0; i < options.length; i++)
   	text(cx, x + 8, y + 8 + (i * 8), options[i]);
@@ -6408,42 +6509,109 @@ function clear(cx, color) {
   cx.fillRect(0, 0, cx.canvas.width, cx.canvas.height);
 }
 
-spectrum('screen-calculator', 2, function(cx) {
-  clear(cx);
-	cursor(cx, borderSize, borderSize);
-	barWithStripe(cx, borderSize, 168, 256 - borderSize, 'Calculator');
-});
+function bottomBarWithStripe(cx, title) {
+	barWithStripe(cx, borderSize, 172 + borderSize, 256, title);
+}
 
-spectrum('screen-test', 2, function(cx) {
-  clear(cx);
-	cx.fillStyle = 'white';
-  cx.fillRect(16, borderSize, 16, 176);
-  let x = 0;
-  for (let c = 7; c >= 0; c--) {
-  	cx.fillStyle = darkColors[c];
-    cx.fillRect(borderSize + (x++ * 16), borderSize, 16, 176);
-  	cx.fillStyle = lightColors[c];
-    cx.fillRect(borderSize + (x++ * 16), borderSize, 16, 176);
-  }
-	x = 0;
-  for (let c = 7; c >= 0; c--) {
-  	cx.fillStyle = lightColors[c];
-  	text(cx, borderSize, borderSize + (x++ * 8), "19861986198619861986198619861986");
-  }
-});
-
-spectrum('screen-opening-menu', 2, function(cx) {
+function initialPlus3(cx) {
   clear(cx);
 	menu(cx, borderSize + (8 * 8), borderSize + (7 * 8), 14 * 8, '128 +3', Array('Loader', '+3 BASIC', 'Calculator', '48 BASIC' ), 0);
   cx.fillStyle = darkColors[0];
   text(cx, borderSize, borderSize + 176, '©1982, 1986, 1987 Amstrad Plc.');
   text(cx, borderSize, borderSize + 184, 'Drives A: and M: available.');
+}
+
+function cursor48K(cx, x, y, mode) {
+  fill(cx, x, y, 8, 8, darkColors[0]);
+  text(cx, x, y, mode, darkColors[7]);
+}
+
+function optionsMenu(cx) {
+	menu(cx, borderSize + (8 * 8), borderSize + (7 * 8), 14 * 8, 'Options', Array('+3 BASIC', 'Renumber', 'Screen', 'Print', 'Exit'), 0);
+}
+
+function initial48K(cx) {
+  clear(cx);
+  text(cx, borderSize, borderSize + 192 - 8, '© 1982 Amstrad', darkColors[0]);
+}
+
+spectrum('screen-calculator', 2, function(cx) {
+  clear(cx);
+  cursor(cx, borderSize, borderSize);
+  bottomBarWithStripe(cx, 'Calculator');
+});
+
+spectrum('screen-test', 2, function(cx) {
+  clear(cx);
+  fill(cx, 16, borderSize, 16, 176, lightColors[7]);
+  let x = 0;
+  for (let c = 7; c >= 0; c--) {
+    fill(cx, borderSize + (x++ * 16), borderSize, 16, 176, darkColors[c]);
+    fill(cx, borderSize + (x++ * 16), borderSize, 16, 176, lightColors[c]);
+  }
+	x = 0;
+  for (let c = 7; c >= 0; c--)
+  	text(cx, borderSize, borderSize + (x++ * 8), "19861986198619861986198619861986", lightColors[c]);
+});
+
+spectrum('screen-opening-menu', 2, initialPlus3);
+spectrum('screen-loading-disk', 2, initialPlus3);
+spectrum('screen-loading-software', 2, initialPlus3);
+spectrum('screen-loading-48', 2, initialPlus3);
+
+spectrum('screen-basic-48', 2, initial48K);
+spectrum('screen-using-basic-48', 2, initial48K);
+
+spectrum('screen-basic-48-load', 2, function(cx) {
+  clear(cx);
+  const y = borderSize + 192 - 8;
+  text(cx, borderSize, y, 'LOAD ""', darkColors[0]);
+  const x = borderSize + 7 * 8;
+  cursor48K(cx, x, y, 'L');
 })
 
 spectrum('screen-options', 2, function(cx) {
   clear(cx);
-	menu(cx, borderSize + (8 * 8), borderSize + (7 * 8), 14 * 8, 'Options', Array('+3 BASIC', 'Renumber', 'Screen', 'Print', 'Exit'), 0);
-	barWithStripe(cx, borderSize, 168, 256 - borderSize, '+3 BASIC');
+  optionsMenu(cx);
+	bottomBarWithStripe(cx, '+3 BASIC');
 })
+
+spectrum('screen-calculator-options', 2, function(cx) {
+  clear(cx);
+	menu(cx, borderSize + (8 * 8), borderSize + (7 * 8), 14 * 8, 'Options', Array('Calculator', 'Exit'), 0);
+	bottomBarWithStripe(cx, 'Calculator');
+})
+
+spectrum('screen-basic-plus3', 2, function(cx) {
+  clear(cx);
+  cursor(cx, borderSize, borderSize);
+	bottomBarWithStripe(cx, '+3 BASIC');
+})
+
+spectrum('screen-basic-plus3-edit', 2, function(cx) {
+  clear(cx);
+  optionsMenu(cx);
+	bottomBarWithStripe(cx, '+3 BASIC');
+})
+
+function drawKeyboard(cx) {
+  const keyHeight = 50;
+  const key1U = 50;
+  const padding = 3;
+  cx.canvas.width = 400;
+  cx.canvas.height = (5 * keyHeight) + (4 * padding);
+  cx.fillStyle = 'black';
+  cx.fillRect(0, 0, 100, 100);
+}
+
+function keyboard(id, f) {
+  const c = document.getElementById(id);
+  const cx = c.getContext('2d', { alpha: false });
+  f(cx);
+}
+
+keyboard('the-keyboard', function(cx) {
+  drawKeyboard(cx);
+});
 
 </script>
