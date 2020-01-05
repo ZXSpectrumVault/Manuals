@@ -43,22 +43,22 @@ code {
 # Contents
 
 [Introduction](#introduction)
-- Software compatibility
-- The BASIC
-- How to read this book
-- Precautions
+- [Software compatibility](#software-compatibility)
+- [The BASIC](#the-basic)
+- [How to read this book](#how-to-read)
+- [Precautions](#precautions)
 
 [Chapter 1 - Open the box](#chapter1)
-- Unpacking
-- Fitting a mains plug
-- Setting up
+- [Unpacking](#unpacking)
+- [Fitting a mains plug](#fitting-a-plug)
+- [Setting up](#setting-up)
 
 [Chapter 2 - Operating your +3](#chapter2)
-- Switching on
-- Tuning-in your TV
-- Using the +3
-  - The opening menu
-  - How to choose an option
+- [Switching on](#switching-on)
+- [Tuning-in your TV](#tuning-in)
+- [Using the +3](#using-the-plus3)
+  - [The opening menu](#the-opening-menu)
+  - [How to choose an option](#how-to-choose-an-option)
 
 [Chapter 3 - How to load disk software](#chapter3)
 - Disks for the +3
@@ -149,16 +149,16 @@ code {
 - Exiting from the calculator
 
 [Chapter 10 - Peripherals for your +3](#chapter10)
-- Cassette unit
-- Printer
-- Additional disk drive
-- Joystick(s)
-- VDU Monitor
-- Amplifier
-- Serial devices
-- MIDI device
-- Auxiliary interface
-- Expansion devices
+- [Cassette unit](#cassette-unit)
+- [Printer](#printer)
+- [Additional disk drive](#additional-disk-drive)
+- [Joystick(s)](#joysticks)
+- [VDU Monitor](#vdu-monitor)
+- [Amplifier](#amplifier)
+- [Serial devices](#serial-devices)
+- [MIDI device](#midi-device)
+- [Auxiliary interface](#aux-interface)
+- [Expansion devices](#expansion-devices)
 
 [Index](#index)
 
@@ -170,42 +170,42 @@ Following on from the outstanding success of the established ZX range of compute
 
 The whole is a truly complete computer/disk system which allies established Sinclair technology with AMSTRAD's expertise in integration and engineering reliability and flair for producing a 'no nonsense' all-in-one package.
 
-## Software compatibility
+## <a id="software-compatibility"></a> Software compatibility
 
 The +3 may be used with software written for the earlier models in the ZX Spectrum range. This means that a vast quantity of software of software already exists for the +3. There are literally thousands of titles available covering every conceivable application: games utilities, music, scientific, educational and many many more.
 
-## The BASIC
+## <a id="the-basic"></a> The BASIC
 
 The +3 uses a computer language called BASIC (Beginners' All-purpose Symbolic Instruction Code). BASIC is by far the commonest language for home computers, and +3 BASIC has been designed to be particularly easy to learn and use.
 
-## How to read this book
+## <a id="how-to-read"></a> How to read this book
 
 In order to get the best out of your +3, it is vital that you read all the relevant information provided in this manual. If you skip various sections, it is likely that you will come to a grinding halt later on!
 
 Therefore, you should adopt the following reading programme...
 
-Chapter 1 - This chapter shows you how to connect up your +3 system. Note especially the safety warnings regarding the wiring-up of the mains plug.
+[Chapter 1](#chapter1) - This chapter shows you how to connect up your +3 system. Note especially the safety warnings regarding the wiring-up of the mains plug.
 
-Chapter 2 - This chapter describes the switching on of the +3 and shows you how to tune in your TV to display the computer's signal. You are then shown how to select an option from the 'opening menu' - and if you don't know how to do that, you'll not be able to use the +3 at all! If, however, you do know how to tune-in your TV and select menu options (perhaps by having previously used a Spectrum 128 or a +2), then you may skip this chapter.
+[Chapter 2](#chapter2) - This chapter describes the switching on of the +3 and shows you how to tune in your TV to display the computer's signal. You are then shown how to select an option from the 'opening menu' - and if you don't know how to do that, you'll not be able to use the +3 at all! If, however, you do know how to tune-in your TV and select menu options (perhaps by having previously used a Spectrum 128 or a +2), then you may skip this chapter.
 
-Chapter 3 - This chapter shows you how to load commercially available disk software. If you never intend to use such software, then you may skip this chapter.
+[Chapter 3](#chapter3) - This chapter shows you how to load commercially available disk software. If you never intend to use such software, then you may skip this chapter.
 
-Chapter 4 - This chapter shows you how to load commercially available pre-recorded tape software. If you never intend to use such software, then you may skip this chapter.
+[Chapter 4](#chapter4) - This chapter shows you how to load commercially available pre-recorded tape software. If you never intend to use such software, then you may skip this chapter.
 
-Chapter 5 - This chapter covers the use of the +3's built-in disk drive (known as drive A:). You may skip this chapter only if you never intend to use the disk drive during BASIC programming (perhaps having purchased the +3 solely to load and run commercially available software (e.g. games)). Note that if you have connected an additional disk drive (B:) to the +3, then throughout the manual you should take any general references to 'the disk drive' as meaning both drives (A: and B:).
+[Chapter 5](#chapter5) - This chapter covers the use of the +3's built-in disk drive (known as drive A:). You may skip this chapter only if you never intend to use the disk drive during BASIC programming (perhaps having purchased the +3 solely to load and run commercially available software (e.g. games)). Note that if you have connected an additional disk drive (B:) to the +3, then throughout the manual you should take any general references to 'the disk drive' as meaning both drives (A: and B:).
 
-Chapter 6 - This chapter introduces you to +3 BASIC. It particular, it describes the editor and certain aspects of BASIC programming that differ from those of other computers. Therefore, even if you are an experienced BASIC programmer on another computer, you should still read chapter 6. Note that you'll require a blank CF-2 floppy disk as you work through this chapter. If, however, you never intend to program in BASIC and have purchased the +3 solely to load and run commercially available software (e.g. games), then you may skip this chapter.
+[Chapter 6](#chapter6) - This chapter introduces you to +3 BASIC. It particular, it describes the editor and certain aspects of BASIC programming that differ from those of other computers. Therefore, even if you are an experienced BASIC programmer on another computer, you should still read chapter 6. Note that you'll require a blank CF-2 floppy disk as you work through this chapter. If, however, you never intend to program in BASIC and have purchased the +3 solely to load and run commercially available software (e.g. games), then you may skip this chapter.
 
-Chapter 7 - This is the one chapter that you may freely skip. It describes the 48 BASIC mode (in which the +3 operates exactly like the 'old-style' Spectrum - even in the editing and programming aspects). This mode is not recommended as anything other than a history lesson for the curious, or for loading old (Spectrum 48 only) tape software. You should certainly not use this mode for BASIC programming; indeed you cannot access many of the advanced features of the +3 (including disk drive, extra memory, RS232/MIDI/AUX interfaces or RAMdisk) from 48 BASIC. Notwithstanding the above, we have provided the relevant information in this chapter for your reference.
+[Chapter 7](#chapter7) - This is the one chapter that you may freely skip. It describes the 48 BASIC mode (in which the +3 operates exactly like the 'old-style' Spectrum - even in the editing and programming aspects). This mode is not recommended as anything other than a history lesson for the curious, or for loading old (Spectrum 48 only) tape software. You should certainly not use this mode for BASIC programming; indeed you cannot access many of the advanced features of the +3 (including disk drive, extra memory, RS232/MIDI/AUX interfaces or RAMdisk) from 48 BASIC. Notwithstanding the above, we have provided the relevant information in this chapter for your reference.
 
-Chapter 8 - This chapter forms the very heart of the manual. It is a complete guide to BASIC programming on the +3. If you have programmed in BASIC before, then you may wish to use this chapter merely as a reference guide, searching the main index to find the information you need from one of the subsections. If, on the other hand, you are new to BASIC, you may wish to work through the chapter, one subsection at a time, developing your programming skills as you go. Once you are able to type in and run a program, and have grasped a few of the fundamentals of BASIC, then you may feel confident about skipping ahead to later subsections. If, however, you never intend to program in BASIC and have purchased the +3 solely to load and run commercially available software (e.g. games), then you may skip this chapter.
+[Chapter 8](#chapter8) - This chapter forms the very heart of the manual. It is a complete guide to BASIC programming on the +3. If you have programmed in BASIC before, then you may wish to use this chapter merely as a reference guide, searching the main index to find the information you need from one of the subsections. If, on the other hand, you are new to BASIC, you may wish to work through the chapter, one subsection at a time, developing your programming skills as you go. Once you are able to type in and run a program, and have grasped a few of the fundamentals of BASIC, then you may feel confident about skipping ahead to later subsections. If, however, you never intend to program in BASIC and have purchased the +3 solely to load and run commercially available software (e.g. games), then you may skip this chapter.
 
-Chapter 9 - This chapter shows you how to use the +3 as a calculator only. You may skip this chapter if you wish.
+[Chapter 9](#chapter9) - This chapter shows you how to use the +3 as a calculator only. You may skip this chapter if you wish.
 
-Chapter 10 - This chapter illustrates how add-ons (peripherals) are connected to the +3. Peripherals include such devices as a cassette unit, a printer, an additional disk drive, a joystick, etc. So if you're thinking of linking up any device at all to the +3, check this chapter to make sure that you've got the right connections. If, on the other hand, you intend to use just the standard +3 set up (i.e. computer and TV only), then you may skip this chapter.
+[Chapter 10](#chapter10) - This chapter illustrates how add-ons (peripherals) are connected to the +3. Peripherals include such devices as a cassette unit, a printer, an additional disk drive, a joystick, etc. So if you're thinking of linking up any device at all to the +3, check this chapter to make sure that you've got the right connections. If, on the other hand, you intend to use just the standard +3 set up (ie. computer and TV only), then you may skip this chapter.
 
 AMSTRAD
-(c) Copyright 1987 - AMSTRAD Plc.
+© Copyright 1987 - AMSTRAD Plc.
 
 Neither the whole nor any part of the information contained herein, nor the product described in this manual, may be adapted or reproduced in any material form except with the prior written approval of AMSTRAD Plc. ('AMSTRAD')
 
@@ -239,7 +239,7 @@ AMSOFT, CF-2, PL-1, DL-2
 
 Unauthorised use of the above trademarks, or of the word AMSTRAD, is strictly forbidden.
 
-## Precautions!
+## <a id="precautions"></a> Precautions!
 
 You must read this...
 
@@ -266,11 +266,11 @@ You must read this...
 
 Subjects covered...
 
-- Unpacking
-- Fitting a mains plug
-- Setting up
+- [Unpacking](#unpacking)
+- [Fitting a mains plug](#fitting-a-plus)
+- [Setting up](#setting-up)
 
-## Unpacking
+## <a id="unpacking"></a> Unpacking
 
 Inside the carton, you'll find the following...
 
@@ -318,7 +318,7 @@ The aerial lead This manual (together with your user registration/guarantee card
          ' `                        -_|-               --_____--
 ```
 
-## Fitting a mains plug
+## <a id="fitting-a-plug"></a> Fitting a mains plug
 
 The power supply unit for the Spectrum +3 operates from a 220-240 Volt AC 50Hz mains supply.
 
@@ -342,7 +342,7 @@ Do not attempt to remove any screws, nor open the casing of the power supply uni
 | **WARNING: LIVE PARTS INSIDE - DO NOT REMOVE ANY SCREWS** |
 |-----------------------------------------------------------|
 
-## Setting up
+## <a id="setting-up"></a> Setting up
 
 We will now set up the standard +3 system. All you need (other than the items you unpacked) is a standard TV set (UHF). You can use a colour or black-and-white TV, but of course, with the latter you will not be able to enjoy the full colour capabilities of your +3.
 
@@ -358,18 +358,18 @@ The +3 system is now ready to be switched on.
 
 Subjects covered...
 
-- Switching on
-- Tuning-in your TV
-- Using the +3
-- The opening menu
+- [Switching on](#switching-on)
+- [Tuning-in your TV](#tuning-in)
+- [Using the +3](#using-the-plus3)
+- [The opening menu](#the-opening-menu)
 
-## Switching on
+## <a id="switching-on"></a> Switching on
 
 Connect the mains plug of the power supply unit to the mains supply socket, and switch on the socket-switch (if necessary). The power indicator lamp on the top panel of the +3 should illuminate.
 
 Now switch on your TV. On the screen you will probably see either a faint TV picture or just random 'white noise' and hear a loud 'hissing' sound from the TV's speaker. Adjust the TV's volume control until the sound is at a comfortable listening level. The next thing to do is set up the +3 ready for tuning-in.
 
-## Preparing to tune-in your TV
+## <a id="tuning-in"></a> Preparing to tune-in your TV
 
 The +3 is capable of generating its own test signal, enabling you to tune-in the TV accurately. The test signal consists of sixteen vertical colour bars (overprinted with text characters) which appear on the TV screen, and a repeating tone which is reproduced through the TV's speaker. (If you are using a black-and-white TV, then the colour bars appear as varying shades of grey.) You will see and hear the test signal when you have completed the tuning-in of your TV (described ahead).
 
@@ -377,11 +377,11 @@ The +3 is capable of generating its own test signal, enabling you to tune-in the
 
 Switch on the test signal by holding down the BREAK key (at the top right of the keyboard) and while it is held down, press and release the **RESET** button (at the left hand side of the +3). Keep the BREAK key held down for a few seconds longer, then release it. The test signal will now be generated by the +3, and you should proceed to tune-in your TV as now described.
 
-## Push-button TV channel selectors
+### Push-button TV channel selectors
 
 If your TV doesn't have push-button channel selectors, then skip to the section ahead entitled 'Manual tuning'.
 
-If your TV does have push-button channel selectors, then press one of them to select a spare channel (i.e. one not normally used for receiving TV or video programmes). Note that if your TV is equipped with an AFC (or AFT) switch, then this should be set to the off position.
+If your TV does have push-button channel selectors, then press one of them to select a spare channel (ie. one not normally used for receiving TV or video programmes). Note that if your TV is equipped with an AFC (or AFT) switch, then this should be set to the off position.
 
 Using the tuning control that corresponds to the selected channel, tune-in to the test signal (shown on the previous page). Make sure that both picture and sound are tuned-in for the best possible results.
 
@@ -393,7 +393,7 @@ Now that you have tuned-in one of the TV's push-button channel selectors specifi
 
 You may now skip to the section ahead entitled 'Using the +3'.
 
-## Manual tuning
+### Manual tuning
 
 If your TV isn't equipped with push-button channel selectors, then you will have to use the TV's manual tuning knob to tune-in to your +3.
 
@@ -405,7 +405,7 @@ Each time that you wish to set up and use the +3 with your TV, you should follow
 
 You may now skip to the section ahead entitled 'Using the +3'.
 
-## Having problems?
+### Having problems?
 
 If you have tuned in your TV satisfactorily, you may now skip to the section ahead entitled 'Using the +3'.
 
@@ -481,13 +481,13 @@ Action...
 
 If you cannot identify the cause of your problem, try carrying out the entire procedure (from the beginning of this chapter) again. If the problem still persists, contact your Sinclair dealer.
 
-## Using the +3
+## <a id="using-the-plus3"></a> Using the +3
 
 The +3 system should now be fully set up, with the test signal colour bars on the screen, and the repeating tone coming from the TV's speaker.
 
 We will now switch off the test signal and start using the +3. Press and release the **RESET** button (at the left hand side of the +3). The test signal will disappear from the screen, and in its place will be the opening menu.
 
-### The opening menu
+### <a id="the-opening-menu"></a> The opening menu
 
 <canvas id="screen-opening-menu"></canvas>
 
@@ -500,7 +500,7 @@ As its name suggests, the menu offers you a selection of options. You can choose
 * `Calculator`  - Choose this option if you wish to use the +3 as a calculator only.
 * `48 BASIC`    - Choose this option if you wish to load Spectrum 48 software from tape (or wish to use the +3 as a 48K Spectrum).
 
-### How to choose an option
+#### How to choose an option
 
 Notice that the menu option `Loader` appears to be highlighted by a 'bar'. This means that the `Loader` option is ready to be selected - (the selection hasn't been confirmed yet). For the purpose of this example, let's assume that you don't want to select `Loader`, but that instead you want to select `+3 BASIC`. This means that you need to move the highlight bar to the option `+3 BASIC`. To do this, use the cursor keys (shown below) until the highlight bar moves to the desired position.
 
@@ -888,7 +888,7 @@ A useful aid to this renumbering facility can be found in chapter 8 part 33.
 
 If you select the opening menu option `48 BASIC` (or if you switch off or reset the +3), then any program in the memory will be lost. (You may, however, use the opening menu option `Calculator` without losing a program in the memory.)
 
-Reset the computer and select `+3 BASIC`. Now type in the line below. As you type it in, the characters will appear on the screen (a character is a letter, number, space, etc.). Note that to type in the equals sign '=' you should hold down the **SYMB SHIF**T key, then press the **L** key once. Try typing in the line now...
+Reset the computer and select `+3 BASIC`. Now type in the line below. As you type it in, the characters will appear on the screen (a character is a letter, number, space, etc.). Note that to type in the equals sign '=' you should hold down the **SYMB SHIFT** key, then press the **L** key once. Try typing in the line now...
 
     10 for f=1 to 100 step 10
 
@@ -1023,7 +1023,7 @@ You have now formatted side 1 of the disk. Once you have done this, you should n
 
 Having formatted side 1, it is now ready for saving programs onto.
 
-In order that each program file on a disk can be identified, you ***must*** give the program a ***filename*** when you save it. For example, as the program that you are about to save draws a patterned picture, save the program using the name 'pattern.pic', i.e. type in...
+In order that each program file on a disk can be identified, you ***must*** give the program a ***filename*** when you save it. For example, as the program that you are about to save draws a patterned picture, save the program using the name 'pattern.pic', ie. type in...
 
     save "pattern.pic"
 
@@ -1153,7 +1153,7 @@ One major difference between 48 BASIC and +3 BASIC is in the entering and editin
 
 Once in 48 BASIC mode, the keyboard performs as follows:
 
-All the BASIC commands, functions and operators are available directly from the keyboard rather than needing to be spelled out. In order to accommodate all these functions and commands, some keys have five or more distinct meanings, obtained partly by 'shifting' the keys (i.e. pressing either **CAPS SHIFT** or **SYMB SHIFT** together with the required key); and partly by having the machine in different modes. The flashing cursor contains a letter (`K`, `L`, `C`, `E` or `G`) to indicate which mode you are operating in.
+All the BASIC commands, functions and operators are available directly from the keyboard rather than needing to be spelled out. In order to accommodate all these functions and commands, some keys have five or more distinct meanings, obtained partly by 'shifting' the keys (ie. pressing either **CAPS SHIFT** or **SYMB SHIFT** together with the required key); and partly by having the machine in different modes. The flashing cursor contains a letter (`K`, `L`, `C`, `E` or `G`) to indicate which mode you are operating in.
 
 `K` (for Keywords) mode automatically replaces `L` (for Letters mode when the machine is expecting a command or program line (rather than input data), and from its position on the line the +3 knows that it should expect either a line number or a keyword. `K` mode occurs at the beginning of a line, or after a colon ':' (except in a string), or after the keyword `THEN`. Whenever the `K` cursor appears, the next key pressed will be interpreted as either a keyword or a line number, as follows...
 
@@ -1179,7 +1179,7 @@ All the BASIC commands, functions and operators are available directly from the 
                             The keyboard in `K` mode
 ```
 
-`L` (for Letters) mode normally occurs at all times (other than K mode, described above). Whenever the `L` cursor appears, the next key pressed will be interpreted as per the legends on the key-tops themselves, i.e....
+`L` (for Letters) mode normally occurs at all times (other than K mode, described above). Whenever the `L` cursor appears, the next key pressed will be interpreted as per the legends on the key-tops themselves, ie....
 ```
 +-----------------------------------------------------------------------------+
 |TRUE |INV. |     |     |     |     |     |     |     |     |     |     |     |
@@ -1317,7 +1317,7 @@ Applying **SYMB SHIFT** while in `E` mode, the next key pressed will be interpre
                              The keyboard in G mode
 ```
 
-Applying **CAPS SHIFT** while in `G` mode inverts the mosaic graphics (i.e. the ink colour becomes the paper colour, and the paper becomes the ink colour). Hence, the next key pressed will be interpreted as follows...
+Applying **CAPS SHIFT** while in `G` mode inverts the mosaic graphics (ie. the ink colour becomes the paper colour, and the paper becomes the ink colour). Hence, the next key pressed will be interpreted as follows...
 ```
 +-----------------------------------------------------------------------------+
 |     |     |##.. |..## |.... |#### |##.. |..## |.... |#### |graph|     |     |
@@ -1389,7 +1389,7 @@ The most commonly used keys for BASIC are the alphanumeric keys. When a letter k
 
 If you wish to continuously type upper case letters, then pressing the **CAPS LOCK** key once will make all subsequent letters typed upper case. To return to lower case letters, simply press **CAPS LOCK** again.
 
-To type the symbols which appear on the alphanumeric keys on the keyboard, i.e....
+To type the symbols which appear on the alphanumeric keys on the keyboard, ie....
 
     ! @ # $ % & ' ( ) _ < > ^ - + = : <pound sign> ? / *
 
@@ -1520,7 +1520,7 @@ Note that the screen looks like this...
 
 As we have already discussed - because these lines began with numbers, they were not obeyed immediately but were stored away as program lines. You will have also noticed here that the line numbers govern the order in which the program lines are to be executed, and as you can see on the screen, the +3 sorts all the lines into order whenever a new line is entered.
 
-Note also that although we typed each line in lower case letters, the keywords (i.e. `PRINT` and `LET`) were converted to upper case as soon the line was entered and accepted by the +3. From now on, we will show keywords to be typed in upper case letters; however, you may continue to type in lower case letters.
+Note also that although we typed each line in lower case letters, the keywords (ie. `PRINT` and `LET`) were converted to upper case as soon the line was entered and accepted by the +3. From now on, we will show keywords to be typed in upper case letters; however, you may continue to type in lower case letters.
 
 (By the way, if you don't know what a keyword is, you should have studied chapter 6 before reading this chapter.)
 
@@ -1736,7 +1736,7 @@ If you now type...
 
 ...you will find that you can use `n$` as input data without any trouble.
 
-In that case `CONTINUE` does a jump to the `INPUT` command in line 110. It disregards the report from the `LET` statement because that said `OK` and jumps to the command referred to in the previous report, i.e. line 110. This feature can be extremely useful as it allows you to 'fix' a program that has stopped due to errors, and then `CONTINUE` from that point.
+In that case `CONTINUE` does a jump to the `INPUT` command in line 110. It disregards the report from the `LET` statement because that said `OK` and jumps to the command referred to in the previous report, ie. line 110. This feature can be extremely useful as it allows you to 'fix' a program that has stopped due to errors, and then `CONTINUE` from that point.
 
 As we said before, the report `L BREAK into program` is special because after it, `CONTINUE` does not repeat the command where the program stopped.
 
@@ -2299,7 +2299,7 @@ As an example, there is a function called `LEN`, which works out the length of a
 
     PRINT LEN "Jammy Smears"
 
-...the +3 will write the answer 12, i.e. the number of characters (including spaces) in the string `Jammy Smears`.
+...the +3 will write the answer 12, ie. the number of characters (including spaces) in the string `Jammy Smears`.
 
 If you mix functions and operations in a single expression, then the functions will be worked out before the operations. Again, however, you can circumvent this rule by using brackets. For instance, here are two expressions which differ only in the brackets, and yet calculations are performed in an entirely different order in each case (although, as it happens, the end results are the same).
 
@@ -2386,7 +2386,7 @@ Be careful when you are applying it to negative numbers, because it always round
 
 ...is equal to -4.
 
-`SQR` calculates the square root of a number, i.e. the result that, when multiplied by itself, gives the argument, for instance...
+`SQR` calculates the square root of a number, ie. the result that, when multiplied by itself, gives the argument, for instance...
 
     SQR 4
 
@@ -2562,7 +2562,7 @@ Unfortunately, ***e*** itself is not an especially pretty number; it is an infin
 
 The inverse of an exponential function is a logarithmic function - the logarithm (to base a) of a number x is the power to which you'd have to raise a to get the number x, and this is written log<sub>a</sub>x. Thus by definition, a^log<sub>a</sub>x is equal to x; and it is also true that log (a^x) is equal to x.
 
-You may well already know how to use base 10 logarithms for doing multiplications; these are called common logarithms. The +3 has a function `LN` which calculates logarithms to the base ***e***; these are called natural logarithms. To calculate logarithms to any other base, you must first divide the natural logarithm by the natural logarithm of the base, i.e. log<sub>a</sub>x is equal to `LN x/LN a`.
+You may well already know how to use base 10 logarithms for doing multiplications; these are called common logarithms. The +3 has a function `LN` which calculates logarithms to the base ***e***; these are called natural logarithms. To calculate logarithms to any other base, you must first divide the natural logarithm by the natural logarithm of the base, ie. log<sub>a</sub>x is equal to `LN x/LN a`.
 
 ## PI
 
@@ -2717,7 +2717,7 @@ Subjects covered...
 - Arrays
 - `DIM`
 
-Suppose that you have a list of numbers - for instance, the marks of ten people in a class. To store them in the +3 you could use the variables `m1`, `m2`, `m3`... and so on up to `m10`, but the program to set up these ten variables would be rather long and tedious to type in, i.e....
+Suppose that you have a list of numbers - for instance, the marks of ten people in a class. To store them in the +3 you could use the variables `m1`, `m2`, `m3`... and so on up to `m10`, but the program to set up these ten variables would be rather long and tedious to type in, ie....
 
      10 LET m1=75
      20 LET m2=44
@@ -3548,7 +3548,7 @@ The boot sector that is written to the disk has a standard disk specification in
 
 This very simple boot program just uses the BASIC ROM to print a greeting then enters a tight loop changing the border colour. It could be modified to load a large binary file and enter it or perform any other action you desired.
 
-# Part 27 - Guide to +3DOS
+# <a id="part27"></a> Part 27 - Guide to +3DOS
 
 Subjects covered...
 
@@ -3788,7 +3788,7 @@ For double sided disks, two options are available:
     ...to...
     side 1 track 0 = logical track n
 
-...where n is the total number of logical tracks (i.e. 2 x number of tracks per side).
+...where n is the total number of logical tracks (ie. 2 x number of tracks per side).
 
 Logical sectors hide the actual physical sector numbers. Logical sector numbers always start from 0.
 
@@ -3938,13 +3938,13 @@ The XDPBs for the three main formats are as follows:
 * Directory labels are ignored.
 * No passwords. XFCBs will be erased, renamed, etc., along with their file(s) but are otherwise ignored.
 * No date and time stamps. SFCBs are initialised to zero when a file is created, but are otherwise ignored.
-* The archive file attribute is ignored, i.e. it is unaffected by all routines except [DOS SET ATTRIBUTES](#dos-set-attr).
+* The archive file attribute is ignored, ie. it is unaffected by all routines except [DOS SET ATTRIBUTES](#dos-set-attr).
 
 ## File model
 
 A file is an array of bytes which may be of any length from 0 to 8 megabytes. Associated with each open file is a 24 bit file pointer. The file pointer is the address of the next byte to be written or read. The file pointer is automatically advanced after each read or write operation, however, the user may set it to any value required for random access.
 
-The end of file position (***EOF***) is the lowest byte position that is greater than all written byte positions. Files without headers can only record their EOF position to the start of the next 128 byte record, i.e. ceiling(EOF/128). Files with headers have their EOF position recorded exactly.
+The end of file position (***EOF***) is the lowest byte position that is greater than all written byte positions. Files without headers can only record their EOF position to the start of the next 128 byte record, ie. ceiling(EOF/128). Files with headers have their EOF position recorded exactly.
 
 Writing a byte after the EOF position will extend the file and advance the EOF position.
 
@@ -4802,7 +4802,7 @@ Set a file's attributes.
 
 Only the file attributes f1'...f4', t1'...t3' can be set or cleared. The interface attributes f5'...f8' are always 0.
 
-This routine first sets the attributes specified in D, then clears those attributes specified in E, i.e. E has priority.
+This routine first sets the attributes specified in D, then clears those attributes specified in E, ie. E has priority.
 
 #### ENTRY CONDITIONS
 
@@ -5073,7 +5073,7 @@ Parameter block format:
 
 #### <a id="dd-set-retry"></a> DD SET RETRY 0160h (352)
 
-Set the try and retry count. (A value of 1 will try the operation once, i.e. no retry.)
+Set the try and retry count. (A value of 1 will try the operation once, ie. no retry.)
 
 #### ENTRY CONDITIONS
 
@@ -5356,7 +5356,7 @@ Issue a sense drive status command.
 
 ### <a id="dd-equipment"></a> DD EQUIPMENT 0181h (385)
 
-Ask what type of drive this is (i.e. single/double track, single/double sided).
+Ask what type of drive this is (ie. single/double track, single/double sided).
 
 Track information can only be determined once a disk has been seen and had its type identified during logging in.
 
@@ -5634,7 +5634,7 @@ None
   * AF BC DE HL IX corrupt
   * All other registers preserved
 
-# Part 28 - Spectrum character set
+# <a id="part28"></a> Part 28 - Spectrum character set
 
 Subjects covered...
 
@@ -5770,47 +5770,47 @@ This is the complete Spectrum character set, with codes in decimal and hex. If o
 | 121  |  `y`               | 79  | ld a,c        | bit 7,c     | out (c),a
 | 122  |  `z`               | 7A  | ld a,d        | bit 7,d     | adc hl,sp
 | 123  |  `{`               | 7B  | ld a,e        | bit 7,e     | ld sp,(NN)
-| 124  |  `\|`              | 7C  | ld a,h        | bit 7,h
+| 124  |  `|`               | 7C  | ld a,h        | bit 7,h
 | 125  |  `}`               | 7D  | ld a,l        | bit 7,l
 | 126  |  `~`               | 7E  | ld a,(hl)     | bit 7,(hl)
 | 127  |  `©`               | 7F  | ld a,a        | bit 7,a
-| 128  | [  ]               | 80  | add a,b       | res 0,b
+| 128  | ▯                 | 80  | add a,b       | res 0,b
 | 129  | ▝                 | 81  | add a,c       | res 0,c
 | 130  | ▘                 | 82  | add a,d       | res 0,d
 | 131  | ▀                  | 83  | add a,e       | res 0,e
 | 132  | ▗                 | 84  | add a,h       | res 0,h
 | 133  | ▐                  | 85  | add a,l       | res 0,l
-| 134  | ['.]               | 86  | add a,(hl)    | res 0,(hl)
-| 135  | [':]               | 87  | add a,a       | res 0,a
-| 136  | [' ]               | 88  | adc a,b       | res 1,b
-| 137  | [.']               | 89  | adc a,c       | res 1,c
-| 138  | [: ]               | 8A  | adc a,d       | res 1,d
-| 139  | [:']               | 8B  | adc a,e       | res 1,e
-| 140  | [..]               | 8C  | adc a,h       | res 1,h
-| 141  | [.:]               | 8D  | adc a,l       | res 1,l
-| 142  | [:.]               | 8E  | adc a,(hl)    | res 1,(hl)
-| 143  | [::]               | 8F  | adc a,a       | res 1,a
-| 144  | (a)  ]             | 90  | sub b         | res 2,b
-| 145  | (b) \|             | 91  | sub c         | res 2,c
-| 146  | (c) \|             | 92  | sub d         | res 2,d
-| 147  | (d) \|             | 93  | sub e         | res 2,e
-| 148  | (e) \|             | 94  | sub h         | res 2,h
-| 149  | (f) \|             | 95  | sub l         | res 2,l
-| 150  | (g) \|             | 96  | sub (hl)      | res 2,(hl)
-| 151  | (h) \|             | 97  | sub a         | res 2,a
-| 152  | (i) \|- user       | 98  | sbc a,b       | res 3,b
-| 153  | (j) \|graphics     | 99  | sbc a,c       | res 3,c
-| 154  | (k) \|             | 9A  | sbc a,d       | res 3,d
-| 155  | (l) \|             | 9B  | sbc a,e       | res 3,e
-| 156  | (m) \|             | 9C  | sbc a,h       | res 3,h
-| 157  | (n) \|             | 9D  | sbc a,l       | res 3,l
-| 158  | (o) \|             | 9E  | sbc a,(hl)    | res 3,(hl)
-| 159  | (p) \|             | 9F  | sbc a,a       | res 3,a
-| 160  | (q) \|             | A0  | and b         | res 4,b       |  ldi
-| 161  | (r) \|             | A1  | and c         | res 4,c       |  cpi
-| 162  | (s)  ]             | A2  | and d         | res 4,d       |  ini
-| 163  | `SPECTRUM` (t)     | A3  | and e         | res 4,e       | outi
-| 164  | `PLAY` (u)         | A4  | and h         | res 4,h
+| 134  | ▚                 | 86  | add a,(hl)    | res 0,(hl)
+| 135  | ▜                 | 87  | add a,a       | res 0,a
+| 136  | ▘                 | 88  | adc a,b       | res 1,b
+| 137  | ▞                 | 89  | adc a,c       | res 1,c
+| 138  | ▌                  | 8A  | adc a,d       | res 1,d
+| 139  | ▛                 | 8B  | adc a,e       | res 1,e
+| 140  | ▅                 | 8C  | adc a,h       | res 1,h
+| 141  | ▟                 | 8D  | adc a,l       | res 1,l
+| 142  | ▙                 | 8E  | adc a,(hl)    | res 1,(hl)
+| 143  | █                  | 8F  | adc a,a       | res 1,a
+| 144  | `(a)`              | 90  | sub b         | res 2,b
+| 145  | `(b)`              | 91  | sub c         | res 2,c
+| 146  | `(c)`              | 92  | sub d         | res 2,d
+| 147  | `(d)`              | 93  | sub e         | res 2,e
+| 148  | `(e)`              | 94  | sub h         | res 2,h
+| 149  | `(f)`              | 95  | sub l         | res 2,l
+| 150  | `(g)`              | 96  | sub (hl)      | res 2,(hl)
+| 151  | `(h)`              | 97  | sub a         | res 2,a
+| 152  | `(i)`   user       | 98  | sbc a,b       | res 3,b
+| 153  | `(j)`   graphics   | 99  | sbc a,c       | res 3,c
+| 154  | `(k)`              | 9A  | sbc a,d       | res 3,d
+| 155  | `(l)`              | 9B  | sbc a,e       | res 3,e
+| 156  | `(m)`              | 9C  | sbc a,h       | res 3,h
+| 157  | `(n)`              | 9D  | sbc a,l       | res 3,l
+| 158  | `(o)`              | 9E  | sbc a,(hl)    | res 3,(hl)
+| 159  | `(p)`              | 9F  | sbc a,a       | res 3,a
+| 160  | `(q)`              | A0  | and b         | res 4,b       |  ldi
+| 161  | `(r)`              | A1  | and c         | res 4,c       |  cpi
+| 162  | `(s)`              | A2  | and d         | res 4,d       |  ini
+| 163  | `SPECTRUM (t)`     | A3  | and e         | res 4,e       | outi
+| 164  | `PLAY (u)`         | A4  | and h         | res 4,h
 | 165  | `RND`              | A5  | and l         | res 4,l
 | 166  | `INKEY$`           | A6  | and (hl)      | res 4,(hl)
 | 167  | `PI`               | A7  | and a         | res 4,a
@@ -5903,6 +5903,461 @@ This is the complete Spectrum character set, with codes in decimal and hex. If o
 | 254  | `DRAW`             | FE  | cp N          | set 7,(hl)
 | 255  | `CLEAR`            | FF  | rst 56        | set 7,a
 
+# <a id="part29"></a> Part 29 - Reports
+
+Subjects covered...
+
+- Reports and messages
+- `CONTINUE`
+
+Reports appear at the bottom of the screen whenever the +3 has stopped executing some BASIC. They explain why it has stopped - be it for some natural reason, or because an error has occurred.
+
+Most reports have a code number or letter (so that you can refer to the table ahead), a brief message explaining what happened, and the line number (and the statement number within the line) where BASIC stopped. (A command is shown as line `0`. Within a line, statement `1` is at the beginning, statement `2` comes after the first colon (or `THEN`), and so on.)
+
+Reports pertaining to disk operation (or +3DOS) do not start with a number or letter - they are shown ahead in alphabetical order.
+
+The behaviour of the `CONTINUE` command depends very much on the reports. Normally, `CONTINUE` goes to the line and statement specified in the last report, but there are exceptions with reports `0`, `9` and `D`.
+
+Here is a table showing all the reports. The right-hand column tells you in which circumstances the report can occur, and this refers you to [part 31](#part31) of this chapter. For example, you can see from the table that the error `A Invalid argument` can occur with `SQR`, `LN`, `ACS`, `ASN` and `USR`. If you then look up these keywords in [part 31](#part31) of this chapter, you will be able to find out just which arguments are invalid.
+
+Disk errors marked by `RIC` (in the left-hand column) will normally be displayed followed by the options: `- Retry, Ignore or Cancel?`. If the cancel option is chosen, then the report shown in the second column will be displayed.
+
+|CODE | REPORT/EXPLANATION                               | SITUATION
+|:---:|--------------------------------------------------|----------
+| `0` | `OK`<br>Successful completion, or jump to a line number bigger than any existing. This report does not change the line and statement jumped to by `CONTINUE`.| Any
+| `1` | `NEXT without FOR`<br>The control variable does not exist (it has not been set up by a `FOR` statement), but there is an  ordinary variable with the same name. | `NEXT`
+| `2` | `Variable not found`<br> For a simple variable, this will happen if the  variable is used before it has been assigned to by a `LET`, `READ` or `INPUT` statement, loaded from  disk (or tape), or set up in a `FOR` statement. For a subscripted variable, it will happen if   the variable is used before it has been dimensioned in a `DIM` statement, or loaded from  disk (or tape). | Any
+| `3` | `Subscript wrong`<br>A subscript is beyond the dimension of the array, or there are the wrong number of subscripts. If the subscript is negative or bigger than 65535, then error `B` will result. | Subscripted variables, strings
+| `4` | `Out of memory`<br>There is not enough room in the computer for what you are trying to do. If the computer really seems to be stuck in this state, you may have to clear out the command line using **DELETE** and then delete a program line or two (with the intention of putting them back afterwards) to give yourself room to manoeuvre. | `LET`, `INPUT`, `FOR`, `DIM`, `GO SUB`, `LOAD`, `MERGE`, Sometimes during expression evaluation.
+| `5` | `Out of screen`<br>An `INPUT` statement has tried to generate more  than 23 lines in the lower half of the screen. Also occurs with `PRINT AT 22,`xx. | `INPUT`, `PRINT AT`
+| `6` | `Number too big`<br>Calculations have yielded a number greater than approximately 10<sup>38</sup>.| Any arithmetic
+| `7` | `RETURN without GO SUB`<br>There has been one more `RETURN` than there were `GO SUB`s. | `RETURN`
+| `9` | `STOP statement`<br>After this, `CONTINUE` will not repeat the `STOP`, but carries on with the statement after. | `STOP`
+| `A` | `Invalid argument`<p>The argument for a function is unsuitable (for some reason). | `SQR`, `LN`, `ASN`, `ACS`, `USR` (with string argument)
+| `B` | `Integer out of range`<br>When an integer is required, the floating point argument is rounded to the nearest integer. If this is outside a suitable range, then this error results.</p>For array access, see also error 3. | `RUN`, `RANDOMIZE`, `POKE`, `DIM`,` GO TO`, `GO SUB`, `LIST`, `LLIST`, `PAUSE`, `PLOT`, `CHR$`, `PEEK`, `USR` (with numeric argument)
+| `C` | `Nonsense in BASIC`<br>The text of the (string) argument does not form a valid expression. Also used when the argument for a function or command is outrageously wrong.| `VAL`, `VAL$`
+| `D` | `BREAK - CONT repeats`<br>**BREAK** was pressed during some peripheral operation. The behaviour of `CONTINUE` after this report is normal in that it repeats the statement. Compare with report `L`. | `LOAD`, `SAVE`, `VERIFY`, `MERGE`, Also used when the computer asks `scroll?` and you press **N**, **BREAK** or the space bar
+| `E` | `Out of DATA`<br>You have tried to `READ` past the end of the `DATA` list. | `READ`
+| `F` | `Invalid filename`<br>`SAVE` with filename empty (or longer than 10 characters using tape). | `SAVE`
+| `G` |` No room for line`<br>There is not enough room left in memory to accommodate the new program line. | Entering a line into the program
+| `H` | `STOP in INPUT`<br> Some `INPUT` data started with `STOP`. Unlike the case with report `9`, after this report, `CONTINUE` will behave normally, by repeating the `INPUT` statement. | `INPUT`
+| `I` |` FOR without NEXT`<br>There was a `FOR` loop to be executed no times (eg. `FOR n=1 TO 0`) and the corresponding `NEXT` statement could not be found. | `FOR`
+| `J` | `Invalid I/O device`<br>You are attempting to input characters from (or output characters to) a device that doesn't support it. For example, it is not possible to input characters from the screen stream. A command such as `INPUT #2,a$` will therefore result in this error. | Stream operations; `OPEN #`, `CLOSE #`, `INPUT #`, `PRINT #`, etc.
+| `K` | `Invalid colour`<br>The number specified is not an appropriate value. | `INK`, `PAPER`, `BORDER`, `FLASH`, `BRIGHT`, `INVERSE`, `OVER`; also after one of the corresponding control characters
+| `L` | `BREAK into program`<br>**BREAK** pressed. This is detected between two statements. The line and statement number in the report refer to the statement before **BREAK** was pressed, but `CONTINUE` goes to the statement after (allowing for any jumps to be made), so that it does not repeat any statements. | Any
+| `M` | `RAMTOP no good`<br>The number specified for [RAMTOP](#ramtop) is either too big or too small | `CLEAR`; possibly in `RUN`
+| `N` | `Statement lost`<br>Jump to a statement that no longer exists. | `RETURN`, `NEXT`, `CONTINUE`
+| `O` | `Invalid Stream`<br>Trying to input from (or output to) a stream that isn't open or that is out of range (0...15), or trying to open a stream that is out of range. | `INPUT #`, `OPEN #`, `PRINT #`
+| `P` | `FN without DEF`<br>User-defined function used without a corresponding `DEF` in the program. | `FN`
+| `Q` | `Parameter error`<br>Wrong number of arguments, or one of them is the wrong type (string instead of number, or vice versa). | `FN`
+| `R` | `Tape loading error`A file on tape was found but for some reason could not be read in, or would not verify. | `VERIFY`, `LOAD` or `MERGE`
+| `d` | `Too many brackets`<br>Too many brackets around a repeated phrase in one of the arguments. | `PLAY`
+| `j` | `Invalid baud rate`<br>The baud rate for the RS232 was set to zero. | `FORMAT LINE`
+| `k` | `Invalid note name`<br>`PLAY` came across a note or command it didn't recognise, or a command which was in lower case. | `PLAY`
+| `l` | `Number too big`<br>A parameter for a command is an order of magnitude too big. | `PLAY`
+| `m` | `Note out of range`<br>A series of sharps of flats has taken a note beyond the range of the sound chip. | `PLAY`
+| `n` | `Out of range`<br>A parameter for a command is too big or too small. If the error is very large, error [`l`][#error-l] results.| `PLAY`
+| `o` | `Too many tied notes`<br>An attempt was made to tie too many notes together. | `PLAY`
+|     | `Bad filename`<br>The filename used in any of the disk commands does not conform to the limits described in [part 20](#part20) of this chapter. | `CAT`, `COPY`, `ERASE`, `LOAD`, `MERGE`, `MOVE`, `SAVE`
+|     | `Bad parameters`<br>One of the values passed to +3DOS by BASIC is out of range. It is unlikely that this error will ever be seen. | Unlikely
+| `RIC` | `CRC data error`<br>The cyclic redundancy check (checksum byte) for a sector is incorrect. This is a rare error that is produced if the disk being read has been corrupted in some way (perhaps magnetically). | `CAT`, `COPY`, `ERASE`, `LOAD`, `MERGE`, `MOVE`, `SAVE`
+|     | `Code length error`<br>Trying to load a `CODE` file from disk that is longer than the value given in the `LOAD` command.| `LOAD`...`CODE`
+|     | `Destination cannot be wild`<br>Trying to give a wildcard file specification for the destination in a `COPY` command when the source also contains wildcard characters. In this case, the destination can ***only*** be a drive letter. | `COPY`...`TO`
+|     | `Destination must be drive`<br>The source filename in a `COPY` command contains wildcard characters, but the destination is only a single file name. In this case, the destination can only be a drive letter. | `COPY`...`TO`
+|     | `Directory full`<br>Trying to create the 65th file on a disk; (the normal disk directory can only have 64 entries). | `COPY`, `SAVE`
+|     | `Disk full`<br>Saving or copying files to a disk has used the last byte of free space. The `CAT` command can be used to check that there is sufficient free space before attempting such an operation. When copying, any partially-copied files will be deleted. However, when saving, it is possible that part of the file may be left on the disk - this part should be erased, as any attempt to use it will fail. | `COPY`, `SAVE`
+| RIC | `Disk has been changed`<br>While executing a command, +3DOS has noticed that the disk in the drive is not the same one that was present at the beginning of command execution. If a machine code program has opened files on a disk (then the disk is changed) and a +3 BASIC command tries to access the disk, then this report will be produced. | `CAT`, `COPY`, `ERASE`, `LOAD`, `MERGE`, `MOVE`, `SAVE`
+|     | `Disk is not bootable`<br>An attempt has been made to load the 'bootstrap' program from a disk that doesn't have a boot sector.| `LOAD "*"`
+| RIC | `Disk is write protected`<br>An attempt has been made to write to a disk whose write protect hole is open. Write protection may be disabled by sliding closed the appropriate tab, before the disk is written to. | `COPY`, `ERASE`, `FORMAT`, `MOVE`, `SAVE`
+|     | `Drive B: is not present`<br>An attempt has been made to use the `FORMAT` command on the external disk drive (drive B:) when it has not been connected. | `FORMAT`
+|     | `Drive in use`<br>An attempt has been made to re-map a drive that has files open on it. It is very unlikely that this error will ever be seen. | Unlikely
+|     | `Drive not found`<br> A filename used in a disk command contains a drive letter specifying a drive that isn't present. For example, `ERASE "c:fred"`. | `CAT`, `COPY`, `ERASE`, `LOAD`, `MERGE`, `MOVE`, `SAVE`
+| RIC | `Drive not ready`<br>A disk command has been attempted when the drive was not ready. This usually happens because there is no disk in the drive. It will usually be possible to simply put a disk in the drive and type `R`. | `CAT`, `COPY`, `ERASE`, `FORMAT`, `LOAD`, `MERGE`, `MOVE`, `SAVE`
+|     | `End of file found`<br>An attempt has been made to read a byte past the end-of-file position. It is unlikely that this report will be seen.| Unlikely
+|     | `File already exists`<br>The destination filename in a `MOVE` command (that is being used to rename a file) already exists. | `MOVE`...`TO`
+|     | `File already in use`<br>If a machine code program has opened files 1...3, then a +3 BASIC command might fail with  this error when it tries to open a file that was already open. It is unlikely that this error will ever be seen.| Unlikely; `COPY`, `LOAD`, `MERGE`, `SAVE`
+|     | `File is read only`<br>Trying to update, erase or save using the name  of a file that has its protection attribute set (using the command `MOVE` filename `TO "+P"`). Use the command `MOVE` filename `TO "-P"` to remove write protection. | `COPY`, `ERASE`, `MOVE`, `SAVE`
+|     | `File not found`<br>The filename given for one of the disk reading commands specifies a file that does not exist. | `COPY`, `ERASE`, `LOAD`, `MERGE`, `MERGE`
+|     | `File not open`<br>A disk command has tried to operate on a file which has not been opened. It is very unlikely that this error will ever be seen.| Unlikely
+|     | `File too big`<br>An attempt has been made to write a file that is greater than 8 megabytes in length. It is very unlikely that this error will ever be seen. | Unlikely
+|     | `Invalid attribute`<br>The attribute character following `+` or `-` in a `MOVE` command is not `P`, `S` or `A` (or there is more than one character after the `+` or `-`). | `MOVE`...`TO`
+|     | `Invalid drive`<br>A drive letter other than `A:` or `B:` has been specified in a `FORMAT` command. | `FORMAT`
+| RIC | `Missing address mark`<br>A sector being read from the disk does not contain the usual information that is used by the system to identify where it is on the disk. This almost invariably means that an attempt is being made to read a disk that has not been formatted. The error may possibly occur when trying to read a disk that has become corrupted in some way, or one that employs some form of in-built protection. | `CAT`, `COPY`, `ERASE`, `LOAD`, `MERGE`, `MOVE`, `SAVE`
+|     | `Missing extent`<br>Files are essentially made up of 16K blocks and each of these is known as an ***extent***. This error might occur while reading a file from disk if the disk is changed after the system has read the directory entry for a file (but before it has read a particular extent). However, it is very unlikely that this error will ever be seen. | Unlikely; `COPY`, `LOAD`, `MERGE`
+| RIC | `No data`<br>This is a low level disk error that occurs when a sector identifier cannot be found. It is possible that the error might occur while trying to copy a disk that employs some form of in-built protection.| `CAT`, `COPY`, `ERASE`, `LOAD`, `MERGE`, `MOVE`, `SAVE`
+|     | `No rename between drives`<br>An attempt has been made to use the `MOVE` command specifying source and destination filenames that are on different drives.| `MOVE`...`TO`
+| RIC | `Seek fail`<br>This is a hardware error that means the drive is unable to locate the track that has been requested. If this error persists, it may indicate that the computer needs to be serviced.| `CAT`, `COPY`, `ERASE`, `ERASE`, `FORMAT`, `LOAD`, `MERGE`, `MOVE`, `SAVE`
+|     | `Uncached`<br>This is an internal system error and it is very unlikely that it will ever be seen. | Unlikely
+| RIC | `Unknown disk error`<br>An error has occurred that the system is not familiar with. It is very unlikely that it will ever be seen. | Unlikely; `CAT`, `COPY`, `ERASE`, `FORMAT`, `LOAD`, `MERGE`, `MOVE`, `SAVE`
+| RIC | `Unrecognised disk format`<br>While trying to read/write a disk, +3DOS has been unable to recognise its format, ie. it has read the disk specification but has found information there that doesn't make sense. This error may occur when trying to access disks which employ some form of in-built protection. | `CAT`, `COPY`, `ERASE`, `LOAD`, `MERGE`, `MOVE`, `SAVE`
+| RIC | `Unsuitable media`<br>The disk in the drive has a format that is not suitable. This error might occur when, for example, trying to write to an 80 track disk placed in the (40 track) disk drive of the +3. | `CAT`, `COPY`, `ERASE`, `FORMAT`, `LOAD`, `MERGE`, `MOVE`, `SAVE`
+
+# <a id="part30"></a>Part 30 - Reference section
+
+Subjects covered...
+
+- Hardware
+
+The +3 is designed around the Z80A microprocessor, which runs at a speed of 3.5469MHz (about three and half million cycles per second).
+
+The +3's memory is divided into 64K ROM and 128K RAM, arranged in 16K pages. The four ROM pages (0-3) can be mapped into the bottom 16K (0000h-3FFFh) of the memory map.The eight RAM pages (0-7) are usually mapped into the top 16K (C000h-FFFFh) of the memory map. RAM page 5 is also mapped into the range 4000h-7FFFh, and RAM page 2 is mapped into the range 8000h-BFFFh.There are also several RAM page combinations that occupy the full 64K address range. These were given in [part 35](#part35) of this chapter, under the heading 'Memory management'.
+
+Physically speaking, the ROMs are two 32K devices (similar to the 27256), which are both treated by the system as two 16K chips. The RAM is composed of four 16K x 4 bit chips (41464), some of which (RAM banks 4-7) are time-shared between the circuitry that produces the screen display, and the Z80A. The others (RAM banks 0-3) are for the exclusive use of the Z80A, as in the ROM.
+
+For the contended RAM (which shares time between the video circuitry and the processor), during 128 out of every 228 CPU T states (1 TV line), and during 192 out of every 311 TV lines (1 frame) the CPU is allowed only 1 access to contended RAM in every 8 T states. The CPU is controlled by introducing wait states.
+
+Executing NOP instructions in contended RAM will have an effective average clock frequency of 2.66MHz (a reduction of about 25%).
+
+The Uncommitted Logic Array (ULA) handles most of the I/O such as keyboard, tape interface, part of the printer interface and screen handling. It converts bytes in memory into patterns and colours on the screen, and allows the Z80A to scan the keyboard and read and write data to tape.
+
+The three-channel sound is produced by the AY-3-8912 - a very popular sound chip, and this device also controls the **RS232/MIDI** and **AUX** ports.
+
+The two serial ports can be driven only by software. The +3 has no software support for the **AUX** port - this is left to the user's discretion. The **RS232/MIDI** port is fully supported from +3 BASIC.
+
+The way in which the AY-3-8912 works is quite complex, and the would-be experimenter is advised to get the manufacturer's data sheet. The following information should be enough to get things underway, however.
+
+The sound chip contains sixteen registers which are selected by writing first to the address write port FFFDh (65533) with the register number, and then reading the register value (same address), or writing to the data register write address BFFDh (49149). Once a register has been selected, any number of data read/writes can be made; the address write port need only be re-written if a different register needs to be addressed.
+
+The basic clock frequency of the circuit is 1.7734MHz (to 0.01%).
+
+The registers do the following:
+
+* R0 - Fine tone control channel A
+* R1 - Coarse tone control channel A
+* R2 - Fine tone control channel B
+* R3 - Coarse tone control channel B
+* R4 - Fine tone control channel C
+* R5 - Coarse tone control channel C
+
+The tone of a channel is a 12 bit value taken from the sum of D3-D0 of the coarse register, and D7-D0 of the fine register. The basic unit of tone is the clock frequency divided by 16 (ie 110.83KHz), and with a
+12 bit counter range, frequencies from 27Hz to 11KHz can generated.
+
+* R6 - Noise generator control, D4-D0
+
+The period of the noise source is taken by counting down the lower 5 bits of the noise register every sound clock period divided by 16.
+
+* R7 - Mixer and I/O control
+* D7 - Not used
+* D6 - 1 means input port, 0 means output port
+* D5 - Channel C noise
+* D4 - Channel B noise
+* D3 - Channel C noise
+* D2 - Channel C tone
+* D1 - Channel B tone
+* D0 - Channel A tone
+
+This register controls both the mixing of noise and tone values for each channel, and the direction of the 8 bit I/O port. A zero in a mix bit indicates that the function is ***enabled***.
+
+* R8 - Amplitude control channel A
+* R9 - Amplitude control channel B
+* RA - Amplitude control channel C
+
+
+* D4 - 1 means use envelope generator
+*  - 0 means use value of D3-D0 for amplitude
+* D3-D0 - Amplitude
+
+These three registers control the amplitude of each channel and whether or not it is modulated by the envelope registers.
+
+- RB - Envelope coarse period control
+- RC - Envelope fine period control
+
+The eight bit values in RB+RC are summed to produce a 16 bit number which is counted down in units of 256 multiplied by the sound clock. Envelope frequencies can be between 0.1Hz and 6KHz.
+
+- RD - Envelope control
+
+- D3 - Continue
+- D2 - Attack
+- D1 - Alternate
+- D0 - Hold
+
+The diagram of envelope shapes (in [part 19](#part19) of this chapter) gives a graphical illustration of the possible settings for this register.
+
+The disk drive is controlled by the uPD765A floppy disk controller chip. As described in [part 23](#part23) of this chapter, the data register for this device is at address 3FFDh (16381) and the status register is at 2FFDh (12285). This is a very complex device and it would be unwise to attempt to use it without full details of its operation (see the manufacturer's data sheet).
+
+The Centronics parallel printer port is basically just an 8 bit data latch (74273) whose address is 0FFDh (4093). The [STROBE](#printer-strobe) signal for the printer is produced by the ULA and is accessed using the bit 4 of address 1FFDh (8189). The state of the [BUSY](#printer-busy) line from the printer is read from bit 0 of address 0FFDh (4093).
+
+# <a id="part33"></a> Part 33 - Part 33 - Example programs
+
+Programs...
+
+- [Renumber](#example-renumber)
+- [Clock](#example-clock)
+- [Bustout](#example-bustout)
+- [Telly tennis](#example-tennis)
+
+## <a id="example-renumber"></a> Renumber
+
+This short program is an aid to the renumbering facility provided by the edit menu's `Renumber` option. If you `MERGE` this program into the program you are developing (or wish to renumber), you will be able to select both the starting line number and the step size (between successive program lines).
+
+Type `RUN 9000` to run the program, enter the start line (in the range 1...9999), enter the step size (in the range 1...9999), then press the **EDIT** key and select the `Renumber` option from the edit menu.
+
+````
+9000 INPUT "Start size",st
+9010 INPUT "Step size",sp
+9020 LET hst= INT (st/256)
+9030 LET hsp= INT (sp/256)
+9040 POKE 23413,st-256*hst
+9050 POKE 23414,hst
+9060 POKE 23415,sp-256*hsp
+9070 POKE 23416,hsp
+9080 PRINT "Press EDIT then select Renumber option"
+````
+
+## <a id="example-clock"></a> Clock
+
+This program sets up the +3 as an analogue (and digital) clock.
+
+Type `RUN` to start the program, enter the hour (in the range 1...12) and enter the minute (in the range 0...59). The clock will then start.
+
+````
+  10 DIM s(60): DIM c(60)
+  20 BORDER 0: PAPER 0: BRIGHT 1: INK 7: CLS
+  30 PRINT AT 10,1;"Hold on while I calculate"
+  40 PRINT AT 11,2;"some sines and cosines"
+  50 GO SUB 370
+  60 LET z$="00"
+  70 CLS
+  80 INPUT "What hour is it ";h
+  90 INPUT "How many minutes past ";m
+ 100 LET s=0: POKE 23672,0: POKE 23673,0
+ 110 IF h=12 THEN LET h=0
+ 120 LET xc=112: LET yc=90: LET r=70: LET rh=r/2: LET rm=r*3/4: LET rs=r*5/6
+ 130 CIRCLE xc,yc,r
+ 140 INK 1
+ 150 FOR i=0 TO 359 STEP 30
+ 160 PLOT (r+1)*s(i/6+1)+xc,(r+1)*c(i/6+1)+yc
+ 170 NEXT i
+ 180 INK 4
+ 190 OVER 1: GO SUB 500
+ 200 GO SUB 470
+ 210 GO SUB 440
+ 220 LET tm=INT ((PEEK 23672+256*PEEK 23673)/50)
+ 230 IF s+1=tm THEN LET os=s: LET s=s+1: GO TO 250
+ 240 GO TO 220
+ 250 IF s=60 THEN LET s=0: POKE 23672,0: POKE 23673,0: LET om=m: LET m=m+1: GO TO 290
+ 260 PLOT xc,yc: DRAW rs*s(os+1),rs*c(os+1)
+ 270 GO SUB 440
+ 280 GO TO 220
+ 290 IF m=60 THEN LET m=0: LET oh=h: LET h=h+1: GO TO 330
+ 300 PLOT xc,yc: DRAW rm*s(om+1),rm*c(om+1)
+ 310 GO SUB 470
+ 320 GO TO 260
+ 330 IF h=12 THEN LET h=0
+ 340 PLOT xc,yc: DRAW rh*s(oh*5+1),rh*c(oh*5+1)
+ 350 GO SUB 500
+ 360 GO TO 300
+ 370 PRINT AT 14,0
+ 380 FOR i=6 TO 360 STEP 6
+ 390 PRINT ".";
+ 400 LET s(i/6)=SIN ((i-6)*PI/180)
+ 410 LET c(i/6)=COS ((i-6)*PI/180)
+ 420 NEXT i
+ 430 RETURN
+ 440 PLOT xc,yc: DRAW rs*s(s+1),rs*c(s+1)
+ 450 LET s$=STR$ (s): PRINT OVER 0;AT 18,27; INK 4;":"; INK 6; z$( TO 2-LEN (s$));s$
+ 460 RETURN
+ 470 PLOT xc,yc: DRAW rm*s(m+1),rm*c(m+1)
+ 480 LET m$=STR$ (m): PRINT OVER 0;AT 18,24; INK 2;":"; INK 5; z$( TO 2-LEN (m$));m$
+ 490 RETURN
+ 500 PLOT xc,yc: DRAW rh*s(h*5+1),rh*c(h*5+1)
+ 510 LET ph=h: IF ph=0 THEN LET ph=12
+ 520 LET h$=STR$ (ph): PRINT OVER 0; INK 3;AT 18,22;"  "( TO 2-LEN (h$));h$
+ 530 RETURN
+````
+
+## <a id="example-bustout"></a> Bustout
+
+This program provides a colourful and entertaining little game for one player against the computer.
+
+To play the game, type `RUN`, then press any key to start.
+
+Options:
+
+- Cursor left moves the bat left.
+- Cursor right moves the bat right.
+- The space bar trades a life for a new screen.
+- See if you can get the highest 'hiscore'!
+
+Note the following when typing in the listing:
+
+1. The `"BBBBBBB..."`s shown in lines 30 and 50 are graphics characters. They are produced by pressing the **GRAPH** key once (to switch graphics mode on), typing the charactres (using the **B** key), then pressing the **GRAPH** key again (to switch graphics mode off).
+2. The `"3333"`s shown in line 210 are also graphics characters. Again, they are produced by pressing **GRAPH** once, pressing the **3** key four times, then pressing **GRAPH** again. (Note that these characters will look like black blocks on the screen.)
+3. The `"A"` shown in line 430 is also a graphics character. Again, it is produced by pressing **GRAPH** once, pressing the **A** key once, then pressing **GRAPH** again.
+
+````
+  10 BORDER 0: INK 0: PAPER 0: CLS : BRIGHT 1
+  20 GO SUB 560
+  30 LET b$="BBBBBBBBBBBBBBBBBBBBBBBBBBBB": REM 28 Bs
+  40 LET s$="                                ": REM 32 spaces
+  50 PRINT AT 3,12; INK 7; FLASH 1;"BUSTOUT"; FLASH 0;AT 6,9; INK 1;"B"; INK 7;" = 20 Points";AT 8,9; INK 4;"B"; INK 7;" = 10 Points";AT 10,9; INK 2;"B"; INK 7;" =  5 Points"
+  60 PRINT AT 14,1; INK 4;"Press SPACE or FIRE to trade";AT 16,3; "a life for a new sheet."
+  70 PAUSE 200
+  80 LET hiscore=0
+  90 LET tscore=0
+ 100 LET lives=5
+ 110 LET score=0
+ 120 CLS
+ 130 INK 7: PLOT 12,13: DRAW 0,160: DRAW 230,0: DRAW 0,-160: INK 0
+ 140 PRINT AT 1,2; INK 1;b$;AT 2,2; INK 4;b$
+ 150 FOR r=5 TO 6: PRINT AT r,2; INK 2;b$: NEXT r
+ 160 LET bx=9
+ 170 PRINT AT 19,5; INK 6;"PRESS ANY KEY TO START";AT 17,4; "Use < and > to move bat"
+ 180 PAUSE 0
+ 190 PRINT AT 19,5; INK 0;s$( TO 24);AT 20,0;s$( TO 32);AT 17,4;s$( TO 24)
+ 200 PRINT AT 21,0; INK 0;s$( TO 32): GO SUB 540: GO TO 220
+ 210 PRINT AT 20,bx; INK 0;" "; INK 5;"3333"; INK 0;" ": RETURN
+ 220 LET xa=1: LET ya=1: IF INT (RND*2)=1 THEN LET xa=-xa
+ 230 GO SUB 210
+ 240 LET x=bx+4: LET y=11: LET xc=x: LET yc=y
+ 250 REM main loop
+ 260 IF score>1100 THEN GO TO 110
+ 270 IF INKEY$=" " OR INKEY$="0" THEN IF lives>1 THEN LET lives=lives-1: GO TO 110
+ 280 LET xc=x+xa: LET yc=y+ya
+ 290 REM scan the keyboard
+ 300 GO SUB 470
+ 310 IF yc=20 THEN IF ATTR (yc,xc)=69 THEN PLAY "N1g": LET ya=-ya: LET yc=yc-2: IF xc=bx+1 OR xc=bx+4 THEN LET xa=-xa: LET xc=x+xa
+ 320 IF yc=21 THEN PLAY "O3N7#d": PRINT AT y,x;" ": GO TO 450
+ 330 GO SUB 470
+ 340 IF yc=20 THEN GO TO 430
+ 350 LET t=ATTR (yc,xc)
+ 360 IF t=71 THEN GO TO 410
+ 370 IF t=64 THEN GO TO 420
+ 380 LET ya=-ya: LET xz=xc: LET yz=yc: LET yc=yc+ya: GO SUB 510: IF t=66 THEN PLAY "N1e": LET score=score+5: LET tscore=tscore+5: GO SUB 540: GO TO 350
+ 390 IF t=68 THEN PLAY "N1c": LET score=score+10: LET tscore=tscore+10: GO SUB 540: GO TO 350
+ 400 IF t=65 THEN PLAY "N1a": LET score=score+20: LET tscore=tscore+20: GO SUB 540: GO TO 350
+ 410 LET xa=-xa: LET xc=xc+2*xa: PLAY "N1f"
+ 420 IF yc=1 THEN LET ya=1
+ 430 PRINT AT y,x; INK 0;" ";AT yc,xc; INK 3;"B": LET x=xc: LET y=yc
+ 440 GO TO 250
+ 450 LET lives=lives-1: IF lives=0 THEN GO TO 530
+ 460 GO SUB 540: GO TO 220
+ 470 LET a$=INKEY$
+ 480 IF (a$=CHR$ (8) OR a$="6") AND bx>1 THEN LET bx=bx-1: GO SUB 210: RETURN
+ 490 IF (a$=CHR$ (9) OR a$="7") AND bx<25 THEN LET bx=bx+1: GO SUB 210: RETURN
+ 500 RETURN
+ 510 IF yz=20 THEN RETURN
+ 520 PRINT AT yz,xz; INK 0;" ": RETURN
+ 530 GO SUB 540: PRINT AT 10,10; INK 7;"GAME OVER";AT 12,8;"You scored : "; tscore: FOR i=1 TO 300: NEXT i: GO TO 90
+ 540 IF tscore>hiscore THEN LET hiscore=tscore
+ 550 PRINT AT 21,11; INK 6;"HISCORE ";hiscore;AT 21,1;"SCORE ";tscore; AT 21,24;"LIVES ";lives: RETURN
+ 560 FOR i=USR "a" TO USR "b"+7
+ 570 READ b
+ 580 POKE i,b
+ 590 NEXT i
+ 600 RETURN
+ 610 REM ball
+ 620 DATA 0,60,126,126,126,126,60,0
+ 630 REM brick
+ 640 DATA BIN 11111111
+ 650 DATA BIN 10000001
+ 660 DATA BIN 10111101
+ 670 DATA BIN 10111101
+ 680 DATA BIN 10111101
+ 690 DATA BIN 10111101
+ 700 DATA BIN 10000001
+ 710 DATA BIN 11111111
+````
+
+## <a id="example-tennis"></a> Telly tennis
+
+This program sets up the +3 to play one of the most well-known and enduring of computer games. For two players, or one player against the computer.
+
+Type `RUN` to start the program, then type `1` or `2` (for the number of players) to play.
+
+Options:
+
+- Player 1 - **A** moves the bat up, **Z** moves the bat down.
+- Player 2 - **K** moves the bat up, **M** moves the bat down.
+- The first player to score 15 points wins.
+
+Note the following when typing in the listing:
+
+1. The `"66"`s shown in lines 150 are graphics characters. They are produced by pressing the **GRAPH** key once (to switch graphics mode on), typing the charactres (using the **6** key), then pressing the **GRAPH** key again (to switch graphics mode off). (Note that these characters will look like black blocks on the screen.)
+2. The `"8"`s shown in lines 150, 250 and 540 are also graphics characters. Again, they are produced by pressing **GRAPH** once, holding down **CAPS SHIFT** and pressing the **8** key once, then pressing **GRAPH** again. (Again, note that these characters will look like black blocks on the screen.)
+3. The `"A"` shown in line 330 is also a graphics character. Again, it is produced by pressing **GRAPH** once, pressing the **A** key once, then pressing **GRAPH** again.
+
+````
+  10 PAPER 4: INK 0: BRIGHT 0: BORDER 4
+  20 CLS
+  30 GO SUB 730
+  40 DIM x(2): DIM y(2): DIM p(2)
+  50 LET comp=1: LET sc1=0: LET sc2=0: LET z$="0"
+  60 PRINT AT 2,9; INK 7;"TELLY TENNIS"
+  70 PRINT AT 8,3;"ONE OR TWO PLAYERS (1/2)?"
+  80 LET i$=INKEY$
+  90 IF i$="1" THEN PRINT AT 12,8;"Use A to go up";AT 14,8; "and Z to go down": GO TO 120
+ 100 IF i$="2" THEN PRINT AT 10,3;"Player 1 use A to go up";AT 12,12; "and Z to go down";AT 14,3;"Player 2 use K to go up";AT 16,12; "and M to go down": LET comp=0: GO TO 120
+ 110 GO TO 80
+ 120 FOR i=0 TO 200: NEXT i
+ 130 LET x(1)=2: LET y(1)=3
+ 140 LET x(2)=29: LET y(2)=18
+ 150 LET e$="8": LET f$="66"
+ 160 PRINT AT 1,0;
+ 170 GO SUB 400: REM top edge
+ 180 FOR i=3 TO 19
+ 190 PRINT AT i,0; INK 6;f$; INK 0;TAB 30; INK 6;f$
+ 200 NEXT i
+ 210 PRINT AT 20,0;
+ 220 GO SUB 400: REM bottom edge
+ 230 PRINT AT 0,0; INK 1;"Player 1: 00";AT 0,19; INK 2;"Player 2 : 00"
+ 240 LET n=INT (RND*2)
+ 250 FOR i=1 TO 2: PRINT AT y(i),x(i); INK i;"8";AT y(i)+1,x(i);"8": NEXT i
+ 260 IF n=0 THEN LET xb=21: LET dx=1: GO TO 280
+ 270 LET xb=19: LET dx=-1
+ 280 LET yb=12: LET dy=INT (RND*3)-1
+ 290 GO SUB 440: REM move bats
+ 300 LET oxb=xb: LET oyb=yb: LET scd=0
+ 310 GO SUB 580: REM move ball
+ 320 PRINT AT oyb,oxb; INK 0;" "
+ 330 PRINT AT yb,xb; INK 7;"8"
+ 340 IF scd=0 THEN GO TO 290
+ 350 PRINT AT yb,xb; INK 0;" "
+ 360 GO SUB 380
+ 370 GO TO 240
+ 380 PRINT AT 0,10; INK 1;z$( TO 2-LEN (STR$ (sc1)));sc1;AT 0,30; INK 2; z$( TO 2-LEN (STR$ (sc2)));sc2
+ 390 RETURN
+ 400 FOR i=1 TO 64
+ 410 PRINT INK 5;e$;
+ 420 NEXT i
+ 430 RETURN
+ 440 LET a$=INKEY$
+ 450 IF a$="a" THEN LET p(1)=-1
+ 460 IF a$="z" THEN LET p(1)=2
+ 470 IF comp=1 THEN LET p(2)=(2*(y(2)<(yb))-(y(2)>(yb))): GO TO 500
+ 480 IF a$="k" THEN LET p(2)=-1
+ 490 IF a$="m" THEN LET p(2)=2
+ 500 FOR i=1 TO 2
+ 510 LET a=ATTR (y(i)+p(i),x(i))
+ 520 IF p(i)=2 THEN LET p(i)=1
+ 530 IF a=32 THEN PRINT INK 0;AT y(i),x(i);" ";AT y(i)+1,x(i);" "; AT y(i)+1,x(i);" ": LET y(i)=y(i)+p(i)
+ 540 PRINT AT y(i),x(i); INK i;"8";AT y(i)+1,x(i);"8"
+ 550 LET p(i)=0
+ 560 NEXT i
+ 570 RETURN
+ 580 LET w=ATTR (yb+dy,xb+dx)
+ 590 IF w=32 THEN LET xb=xb+dx: LET yb=yb+dy: RETURN
+ 600 IF w=33 OR w=34 THEN LET dx=-dx: PLAY "V15O7N1g": LET dy=INT (RND*3-1): RETURN
+ 610 IF w=38 THEN GO TO 640
+ 620 IF w=37 THEN PLAY "V15O7N1c": LET dy=-dy
+ 630 RETURN
+ 640 PLAY "O3V15#d": IF dx>0 THEN LET sc1=sc1+1: GO TO 660
+ 650 LET sc2=sc2+1
+ 660 LET d=(sc1=15)+2*(sc2=15): LET scd=1
+ 670 IF d<>0 THEN GO SUB 380: PRINT INK 7;AT 10,8;"Player ";d;" wins."; AT 12,7;"Play again (y/n)?": GO TO 690
+ 680 RETURN
+ 690 IF INKEY$="" THEN GO TO 690
+ 700 IF INKEY$="y" THEN RUN
+ 710 IF INKEY$="n" THEN STOP
+ 720 GO TO 690
+ 730 FOR i=0 TO 7
+ 740 READ n
+ 750 POKE USR "a"+i,n
+ 760 NEXT i
+ 770 RETURN
+ 780 DATA 0,60,126,126,126,126,60,0
+````
+
 # <a id="chapter9"></a> Chapter 9 - Using the calculator
 
 Subjects covered...
@@ -5984,26 +6439,26 @@ Note that if you have set up any user defined functions (using the `DEF FN` stat
 
     FN c(3)
 
-...and the calculator will print the number `27` (i.e. the cube of 3).
+...and the calculator will print the number `27` (ie. the cube of 3).
 
 # <a id="chapter10"></a> Chapter 10 - Peripherals for your +3
 
 Subjects covered...
 
-- Cassette unit
-- Printer
-- Additional disk drive
-- Joystick(s)
-- VDU Monitor
-- Amplifier
-- Serial devices
-- MIDI device
-- Auxiliary interface
-- Expansion devices
+- [Cassette unit](#cassette-unit)
+- [Printer](#printer)
+- [Additional disk drive](#additional-disk-drive)
+- [Joystick(s)](#joysticks)
+- [VDU Monitor](#vdu-monitor)
+- [Amplifier](#amplifier)
+- [Serial devices](#serial-devices)
+- [MIDI device](#midi-device)
+- [Auxiliary interface](#aux-interface)
+- [Expansion devices](#expansion-devices)
 
 The +3 is capable of operating with a wide range of add-ons (***peripherals***) such as joystick(s), printer, cassette unit, etc. This section contains all the information necessary to connect these.
 
-## Cassette unit
+## <a id="cassette-unit"></a> Cassette unit
 
 Programs may be loaded from, or saved to tape instead of disk, (the commands which instruct the computer to direct data to and from disk or tape were explained earlier in this manual).
 
@@ -6038,7 +6493,7 @@ It is important to remember that the successful transfer of programs to and from
 
 Details of tape operation will be found in [chapter 4](#chapter4) and chapter 8 [parts 20](#part20) and [27](#part27).
 
-## Printer
+## <a id="printer"></a> Printer
 
 The +3 may be used with any Centronics compatible parallel printer. We would particularly recommend the AMSTRAD DMP range of printers (e.g. models DMP2000, DMP3000, DMP3160 or DMP4000) for use with the +3.
 
@@ -6064,7 +6519,7 @@ Connect the other end of the lead (which is fitted with a Centronics style plug)
 
 | PIN | FUNCTION       | PIN | FUNCTION       |
 |-----|----------------|-----|----------------|
-| 1   | STROBE         | 19  | GND            |
+| 1   | <a id="printer-strobe"></a><span class="signal-high">STROBE</span> | 19  | GND            |
 | 2   | D0             | 20  | GND            |
 | 3   | D1             | 21  | GND            |
 | 4   | D2             | 22  | GND            |
@@ -6074,7 +6529,7 @@ Connect the other end of the lead (which is fitted with a Centronics style plug)
 | 8   | D6             | 26  | GND            |
 | 9   | D7             | 27  | not used       |
 | 10  | not used       | 28  | GND            |
-| 11  | BUSY           | 29  | not used       |
+| 11  | <a id="printer-busy"></a>BUSY           | 29  | not used       |
 | 12  | not used       | 30  | not used       |
 | 13  | not used       | 31  | not used       |
 | 14  | GND            | 32  | not used       |
@@ -6091,9 +6546,9 @@ The +3 may also be used with most serial printers conforming to the RS232 standa
 
 A serial printer should be connected to the **RS232/MIDI** socket at the back of the +3.
 
-Details of (parallel and serial) printer operation will be found in chapter 8 parts 21 and 22.
+Details of (parallel and serial) printer operation will be found in chapter 8 [parts 21](#part21) and [22](#part22).
 
-## Additional disk drive
+## <a id="additional-disk-drive"></a> Additional disk drive
 
 The AMSTRAD model FD-1 may be added to the +3 system as an additional disk drive.
 
@@ -6122,28 +6577,28 @@ When the FD-1 is connected to the +3, first switch on the FD-1 (using the slide 
 **DISK B:** socket
 
 | PIN | FUNCTION        | PIN | FUNCTION       |
-|-----|-----------------|-----|----------------|
-| 1   | READY           | 18  | GND            |
-| 2   | GND             | 19  | MOTOR ON       |
-| 3   | SIDE 1 SELECT   | 20  | GND            |
+|:---:|-----------------|:---:|----------------|
+| 1   | <span class="signal-high">READY</span> | 18  | GND            |
+| 2   | GND             | 19  | <span class="signal-high">MOTOR ON</span>       |
+| 3   | <span class="signal-high">SIDE 1 SELECT</span> | 20  | GND            |
 | 4   | GND             | 21  | not used       |
-| 5   | READ DATA       | 22  | GND            |
-| 6   | D4              | 23  | DRIVE SELECT 1 |
-| 7   | WRITE PROTECT   | 24  | GND            |
+| 5   | <span class="signal-high">READ DATA</span>       | 22  | GND            |
+| 6   | D4              | 23  | <span class="signal-high">DRIVE SELECT 1</span> |
+| 7   | <span class="signal-high">WRITE PROTECT</span>   | 24  | GND            |
 | 8   | GND             | 25  | not used       |
-| 9   | TRACK 0         | 26  | GND            |
-| 10  | GND             | 27  | INDEX          |
-| 11  | WRITE GATE      | 28  | GND            |
+| 9   | <span class="signal-high">TRACK 0</span>         | 26  | GND            |
+| 10  | GND             | 27  | <span class="signal-high">INDEX</span>          |
+| 11  | <span class="signal-high">WRITE GATE      | 28  | GND            |
 | 12  | GND             | 29  | not used       |
-| 13  | WRITE DATA      | 30  | GND            |
+| 13  | <span class="signal-high">WRITE DATA</span>      | 30  | GND            |
 | 14  | GND             | 31  | not used       |
-| 15  | STEP            | 32  | GND            |
+| 15  | <span class="signal-high">STEP</span>            | 32  | GND            |
 | 16  | GND             | 33  | not used       |
-| 17  | DIRECTIONSELECT | 34  | GND            |
+| 17  | <span class="signal-high">DIRECTION SELECT</span> | 34  | GND            |
 
 Details of two-drive operation will be found in chapter 8 [parts 20] and [27](#part27).
 
-## Joystick(s)
+## <a id="joysticks"></a> Joystick(s)
 
 We recommend that you use the Sinclair SJS range of joystick(s) with the +3. Other types of joystick (eg. Atari) will not operate directly, as their connecting plugs are wired differently.
 
@@ -6154,16 +6609,16 @@ If a program offers you a choice of joystick types, then choose the 'Interface T
 It is safe to plug in (or unplug) a joystick while the +3 is switched on.
 
 | PIN | FUNCTION |
-|-----|----------|
-| 1   | not used |
-| 2   | common   |
-| 3   | not used |
-| 4   | fire     |
-| 5   | up       |
-| 6   | right    |
-| 7   | left     |
-| 8   | common   |
-| 9   | down     |
+|:---:|----------|
+|  1  | not used |
+|  2  | common   |
+|  3  | not used |
+|  4  | fire     |
+|  5  | up       |
+|  6  | right    |
+|  7  | left     |
+|  8  | common   |
+|  9  | down     |
 
 ```
  _____________________
@@ -6176,7 +6631,7 @@ It is safe to plug in (or unplug) a joystick while the +3 is switched on.
 
 **JOYSTICK 1** and **JOYSTICK 2** sockets
 
-## VDU Monitor
+## <a id="vdu-monitor"></a> VDU Monitor
 
 The +3 can use a monochrome or colour VDU monitor (or a French standard PERITEL TV) instead of (or in addition to) an ordinary TV. If the monitor that you wish to use isn't quoted as being Spectrum +3
 compatible, then the chances are you'll have to buy a lead for it (contact your Sinclair dealer).
@@ -6184,15 +6639,15 @@ compatible, then the chances are you'll have to buy a lead for it (contact your 
 A VDU monitor (or PERITEL TV) should be plugged into the RGB/PERITEL socket at the back of the +3.
 
 | PIN | FUNCTION       |
-|-----|----------------|
-| 1   | +12V           |
-| 2   | GND            |
-| 3   | audio out      |
-| 4   | composite sync |
-| 5   | +12V           |
-| 6   | green          |
-| 7   | red            |
-| 8   | blue           |
+|:---:|----------------|
+|  1  | +12V           |
+|  2  | GND            |
+|  3  | audio out      |
+|  4  | <span class="signal-high">composite sync</a> |
+|  5  | +12V           |
+|  6  | green          |
+|  7  | red            |
+|  8  | blue           |
 
 ```
       __   __
@@ -6210,7 +6665,7 @@ A VDU monitor (or PERITEL TV) should be plugged into the RGB/PERITEL socket at t
 
 When using a monitor, some provision may have to be made for sound (if required). If the monitor has an audio input, then this should be connected either to pin 3 of the **RGB/PERITEL** socket or to the **TAPE/SOUND** socket at the back of the +3. If the monitor is not capable of producing sound, then an external amplifier will have to be used. See the next paragraph for further details.
 
-## Amplifier
+## <a id="amplifier"></a> Amplifier
 
 The +3 normally reproduces sound through the TV set it is connected to. However, if a VDU monitor is being used, or if you would like to record or amplify the sound further, then a sound signal is available from the **TAPE/SOUND** socket at the back of the +3. This is a 3.5mm jack socket producing 200mV pk-pk at approximately 5 Kohms impedance. When using an amplifier, it is worth remembering that if you have connected a cassette unit to the +3, the tape 'load' and 'save' signals are also fed to the **TAPE/SOUND** socket (and therefore the amplifier's volume control should be turned down when performing these operations).
 
@@ -6236,7 +6691,7 @@ GND (common) _______|   |       |
 
 Details of the +3's sound facilities will be found in [chapter 8 part 19](#part19).
 
-## Serial devices
+## <a id="serial-devices"></a> Serial devices
 
 To connect any serial device to the +3, you will require a Spectrum +3 serial lead - available from your Sinclair dealer.
 
@@ -6262,7 +6717,7 @@ If you wish to wire-up your own, then the connections are as follows...
 
 Details of serial operations will be found in [chapter 8 part 21](#part21).
 
-## MIDI device
+## <a id="midi-device"></a> MIDI device
 
 Although the +3's **MIDI** (Musical Instrument Digital Interface) socket shares the same socket as the RS232, you will need a different lead for it (available from your Sinclair dealer). The lead should be connected into the 'MIDI IN' socket on your synthesiser, drum machine, etc. There is no provision for the +3 to ***receive*** MIDI data - it can only act as a source. No setting up of the MIDI is necessary before use (except the inclusion of the `Y` parameter within the `PLAY` command to turn it on).
 
@@ -6288,7 +6743,7 @@ Using the MIDI interface will not disturb the RS232's baud rate setting.
 
 Details of MIDI operations will be found in [chapter 8 part 19](#part19).
 
-## Auxiliary interface
+## <a id="aux-interface"></a> Auxiliary interface
 
 The **AUX** (auxiliary interface) socket supports two input lines (pins 2 and 5) and two output lines (pins 2 and 4). The I/O lines are driven by 1488 and 1489 line driver chips which are, in turn, connected to the I/O lines of the AY-3-8912 (see the manufacturer's data sheet for this device). Basically, register 16 of the AY-3-8912 controls eight I/O lines, the bits are designated as follows:
 
@@ -6323,11 +6778,12 @@ Using software control loops, the I/O lines could be driven as a second RS232 po
 
 **AUX** socket
 
-## Expansion devices
+## <a id="expansion-devices"></a> Expansion devices
 
 The +3 can connect to a very wide range of peripherals via the **EXPANSION I/O** socket at the back of the machine. Although this socket is much the same as on the old-style Spectrum 48K, there is no guarantee that a device which ran correctly on a Spectrum 48K will run on a +3. You should, therefore, before you purchase any expansion device or add-on, verify that it will work with the +3, and not just with a 48K Spectrum.
 
-> WARNING - It is very dangerous indeed to plug in (or unplug) any device from the **EXPANSION I/O** socket while the +3 is switched on - you will probably damage both the +3 and the expansion device if you do so. |
+| WARNING - It is very dangerous indeed to plug in (or unplug) any device from the **EXPANSION I/O** socket while the +3 is switched on - you will probably damage both the +3 and the expansion device if you do so. |
+|-|
 
 ```
 U 27  26  25  24  23  22  21           8   7   6   5   4   3   2   1
