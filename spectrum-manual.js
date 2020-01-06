@@ -381,21 +381,26 @@ function boxCharInverse(cx, index, x, y, pad, size) {
       cx.fillRect(x + pad + half, y + pad, half, half);
       cx.fillRect(x + pad, y + pad + half, size, half);
       break;
-    case 3: cx.fillRect(x + pad, y + pad + half, size, half); break;
+    case 3:
+      cx.fillRect(x + pad, y + pad + half, size, half);
+      break;
     case 4:
       cx.fillRect(x + pad, y + pad, size, half);
       cx.fillRect(x + pad, y + pad + half, half, half);
       break;
-    case 5: cx.fillRect(x + pad, y + pad, half, size); break;
+    case 5:
+      cx.fillRect(x + pad, y + pad, half, size);
+      break;
     case 6:
-        cx.fillRect(x + pad, y + pad + half, half, half);
-        cx.fillRect(x + pad + half, y + pad, half, half);
-        break;
+      cx.fillRect(x + pad, y + pad + half, half, half);
+      cx.fillRect(x + pad + half, y + pad, half, half);
+      break;
     case 7:
-        cx.fillRect(x + pad, y + pad, size, half);
-        cx.fillRect(x + pad + half, y + pad + half, half, half);
-        break;
-    case 8: cx.fillRect(x + pad, y + pad, size, size); break;
+      cx.fillRect(x + pad, y + pad + half, half, half);
+      break;
+    case 8:
+      cx.fillRect(x + pad, y + pad, size, size);
+      break;
   }
 }
 

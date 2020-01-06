@@ -1117,7 +1117,7 @@ All the BASIC commands, functions and operators are available directly from the 
 
 `K` (for Keywords) mode automatically replaces `L` (for Letters mode when the machine is expecting a command or program line (rather than input data), and from its position on the line the +3 knows that it should expect either a line number or a keyword. `K` mode occurs at the beginning of a line, or after a colon ':' (except in a string), or after the keyword `THEN`. Whenever the `K` cursor appears, the next key pressed will be interpreted as either a keyword or a line number, as follows...
 
-<script src="./spectrum-manual.js?"></script>
+<script src="./spectrum-manual.js"></script>
 
 <center>
 <canvas id="keyboard-mode-k"></canvas>
