@@ -1098,6 +1098,7 @@ The +3 has the ability to act exactly like a 48K Spectrum (or Spectrum +). This 
 The 48 BASIC mode is included for compatibility reasons only - there is no advantage in using 48 BASIC (instead of +3 BASIC mode) to write programs, and it is ***not*** recommended. The following information is included for reference only, or for anybody who is used to the old 48K Spectrum and wants to use the machine immediately without having to learn about the +3 BASIC editor.
 
 There are, in fact, two methods of entering the 48 BASIC mode: the first is by selecting the `48 BASIC` option from the opening menu (if you don't know how to select a menu option, refer back to chapter 2).
+
 When 48 BASIC starts up, you will see the following on the screen...
 
 <canvas id="screen-using-basic-48"></canvas>
@@ -1116,71 +1117,67 @@ All the BASIC commands, functions and operators are available directly from the 
 
 `K` (for Keywords) mode automatically replaces `L` (for Letters mode when the machine is expecting a command or program line (rather than input data), and from its position on the line the +3 knows that it should expect either a line number or a keyword. `K` mode occurs at the beginning of a line, or after a colon ':' (except in a string), or after the keyword `THEN`. Whenever the `K` cursor appears, the next key pressed will be interpreted as either a keyword or a line number, as follows...
 
+<script src="./spectrum-manual.js?"></script>
 
-```
-+-----------------------------------------------------------------------------+
-|TRUE |INV. |     |     |     |     |     |     |     |     |     |     |     |
-|VIDEO|VIDEO|    1|    2|    3|    4|    5|    6|    7|    8|    9|    0|SPACE|
-|-----------------------------------------------------------------------------|
-|       |     |PLOT |DRAW |REM  |RUN  |RAND.|RETRN|IF   |INPUT|POKE |PRINT|   |
-| DELETE|     |    Q|    W|    E|    R|    T|    Y|    U|    I|    O|    P|   |
-|-------------------------------------------------------------------------+   |
-|         |     |NEW  |SAVE |DIM  |FOR  |GOTO |GOSUB|LOAD |LIST |LET  |       |
-|         | EDIT|    A|    S|    D|    F|    G|    H|    J|    K|    L| ENTER |
-|-----------------------------------------------------------------------------|
-|            |     |COPY |CLEAR|CONT.|CLS  |BORDR|NEXT |PAUSE|     |          |
-|            |     |    Z|    X|    C|    V|    B|    N|    M|    .|          |
-|-----------------------------------------------------------------------------|
-|     |     |     | /-- | --\ |                       | ||  | /\  |     |     |
-|     |    ;|    "| \-- | --/ |                 SPACE | \/  | ||  |    ,|     |
-+-----------------------------------------------------------------------------+
+<center>
+<canvas id="keyboard-mode-k"></canvas>
+<script>keyboard('keyboard-mode-k', function(cx) {
+  const fontSize = 11;
+  cx.font = lowerKeyFont;
+  drawKeyboard(cx, function(c, r, x, y, w, h) {
+    cx.textAlign = 'right';
+    drawLabel(cx, keyboardLabelsKlower[r][c], x + w, y + h + fontSize, w, h, fontSize);
+    cx.textAlign = 'center';
+    drawLabel(cx, keyboardLabelsK[r][c], x + w / 2, y + h / 2, w, h, fontSize);
+  });
+});</script>
 
-                            The keyboard in `K` mode
-```
+The keyboard in `K` mode
+</center>
 
 `L` (for Letters) mode normally occurs at all times (other than K mode, described above). Whenever the `L` cursor appears, the next key pressed will be interpreted as per the legends on the key-tops themselves, ie....
-```
-+-----------------------------------------------------------------------------+
-|TRUE |INV. |     |     |     |     |     |     |     |     |     |     |     |
-|VIDEO|VIDEO|    1|    2|    3|    4|    5|    6|    7|    8|    9|    0|SPACE|
-|-----------------------------------------------------------------------------|
-|       |     |     |     |     |     |     |     |     |     |     |     |   |
-| DELETE|GRAPH|    Q|    W|    E|    R|    T|    Y|    U|    I|    O|    P|   |
-|-------------------------------------------------------------------------+   |
-| EXTEND  |     |     |     |     |     |     |     |     |     |     |       |
-|  MODE   | EDIT|    A|    S|    D|    F|    G|    H|    J|    K|    L| ENTER |
-|-----------------------------------------------------------------------------|
-|            |CAPS |     |     |     |     |     |     |     |     |          |
-| CAPS SHIFT | LOCK|    Z|    X|    C|    V|    B|    N|    M|    .|CAPS SHIFT|
-|-----------------------------------------------------------------------------|
-|SYMB |     |     | /-- | --\ |                       | ||  | /\  |     |SYMB |
-|SHIFT|    ;|    "| \-- | --/ |                 SPACE | \/  | ||  |    ,|SHIFT|
-+-----------------------------------------------------------------------------+
 
-                            The keyboard in L mode
-```
+<center>
+<canvas id="keyboard-mode-l"></canvas>
+<script>keyboard('keyboard-mode-l', drawDefaultKeyboard);</script>
+
+The keyboard in `L` mode
+</center>
 
 In both `K` and `L` modes, pressing **SYMB SHIFT** together with a key will be interpreted as follows...
-```
-+-----------------------------------------------------------------------------+
-|     |     | !   | @   | #   | $   | %   | &   | '   | (   | )   | _   |     |
-|     |     |    1|    2|    3|    4|    5|    6|    7|    8|    9|    0|     |
-|-----------------------------------------------------------------------------|
-|       |     | <=  | <>  | >=  | <   | >   |AND  |OR   |AT   | ;   | "   |   |
-|       |     |    Q|    W|    E|    R|    T|    Y|    U|    I|    O|    P|   |
-|-------------------------------------------------------------------------+   |
-|         |     |STOP |NOT  |STEP |TO   |THEN | ^   | -   | +   | =   |       |
-|         |     |    A|    S|    D|    F|    G|    H|    J|    K|    L| ENTER |
-|-----------------------------------------------------------------------------|
-|            |     | :   |pound| ?   | /   | *   | ,   | .   | .   |          |
-|            |     |    Z|signX|    C|    V|    B|    N|    M|    .|          |
-=======-----------------------------------------------------------------=======
-=SYMB== ;   | "   | /-- | --\ |                       | ||  | /\  | ,   =SYMB==
-=SHIFT=    ;|    "| \-- | --/ |                 SPACE | \/  | ||  |    ,=SHIFT=
-=======-----------------------------------------------------------------=======
 
-                The keyboard using SYMB SHIFT in K or L mode
-```
+<center>
+<canvas id="keyboard-48-shift"></canvas>
+<script>
+const keyboardLabels48ShiftLower = [
+  [ '', '', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '' ],
+  [ '', '', 'Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P' ],
+  [ '', '', 'A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L', 'ENTER'],
+  [ '', '', 'Z', 'X', 'C', 'V', 'B', 'N', 'M', '.', ''],
+  [ 'SYMB\nSHIFT', ';', '"', '', '', 'SPACE', '', '', ',', 'SYMB\nSHIFT']
+];
+const keyboardLabels48Shift = [
+  [ '', '', '!', '@', '#', '$', '%', '&', "'", '(', ')', '_' ],
+  [ '', '', '<=', '<>', '>=', '<', '>', 'AND', 'OR', 'AT', ';', '"' ],
+  [ '', '', 'STOP', 'NOT', 'STEP', 'TO', 'THEN', '^', '-', '+', '=' ],
+  [ '', '', ':', '£', '?', '/', '*', ',', '.', '.' ],
+  [ '', ';', '"', '', '', '', '', '', ',' ]
+];
+keyboard('keyboard-48-shift', function(cx) {
+  drawKeyboard(cx, function(c, r, x, y, w, h) {
+    cx.font = lowerKeyFont;
+    cx.textAlign = 'right';
+    drawLabel(cx, keyboardLabels48ShiftLower[r][c], x + w, y + h + 11, w, h, 11);
+    if (r === 0 || r > 2 || (r === 1 && c < 7 || c > 9) || (r === 2 && c > 6))
+      cx.font = midKeyBigFont;
+    cx.textAlign = 'center';
+    drawLabel(cx, keyboardLabels48Shift[r][c], x + w / 2, y + h, w, h, 14);
+  });
+});
+</script>
+
+The keyboard using **SYMB SHIFT** in `K` or `L` mode
+</center>
 
 Using **CAPS SHIFT** in `L` mode simply converts small letters to capitals. In `K` mode, however, **CAPS SHIFT** does not affect the keywords.
 
@@ -1188,115 +1185,194 @@ Using **CAPS SHIFT** in `L` mode simply converts small letters to capitals. In `
 
 `E` (for Extended) mode is used to obtain further characters, mostly tokens. It is entered by pressing the **EXTEND MODE** key, and lasts for only one character (or key depression) thereafter. Whenever the `E` cursor appears, the next key pressed will be interpreted as follows...
 
-```
-+-----------------------------------------------------------------------------+
-|     |     |blue |red  |mgnta|green|cyan |yellw|white|brght|brght|black|     |
-|     |     |    1|    2|    3|    4|    5|    6|    7|off 8|on  9|    0|SPACE|
-|-----------------------------------------------------------------------------|
-|       |     |SIN  |COS  |TAN  |INT  |RND  |STR$ |CHR$ |CODE |PEEK |TAB  |   |
-|       |     |    Q|    W|    E|    R|    T|    Y|    U|    I|    O|    P|   |
-===========---------------------------------------------------------------+   |
-= EXTEND ==     |READ |RESTR|DATA |SGN  |ABS  |SQR  |VAL  |LEN  |USR  |       |
-== MODE ===     |    A|    S|    D|    F|    G|    H|    J|    K|    L| ENTER |
-===========-------------------------------------------------------------------|
-|            |     |LN   |EXP  |LPRNT|LLIST|RUN  |INKY$|PI   |     |          |
-|            |     |    Z|    X|    C|    V|    B|    N|    M|     |          |
-|-----------------------------------------------------------------------------|
-|     |     |     |     |     |                       |     |     |     |     |
-|     |     |     |     |     |                 SPACE |     |     |     |     |
-+-----------------------------------------------------------------------------+
+<center>
+<canvas id="keyboard-48-extend"></canvas>
+<script>
+const keyboardLabels48ExtendLower = [
+  [ '', '', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', 'SPACE' ],
+  [ '', '', 'Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P' ],
+  [ 'EXTEND MODE', '', 'A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L', 'ENTER'],
+  [ '', '', 'Z', 'X', 'C', 'V', 'B', 'N', 'M', ],
+  [ '', '', '', '', '', 'SPACE', ]
+];
+const keyboardLabels48Extend = [
+  [ '', '', 'BLUE\nPAPER', 'RED\nPAPER', 'MAGENTA\nPAPER', 'GREEN\nPAPER', 'CYAN\nPAPER', 'YELLOW\nPAPER', 'WHITE\nPAPER', 'BRIGHT\nOFF', 'BRIGHT\nON', 'BLACK\nPAPER' ],
+  [ '', '', 'SIN', 'COS', 'TAN', 'INT', 'RND', 'STR$', 'CHR$', 'CODE', 'PEEK', 'TAB' ],
+  [ '', '', 'READ', 'RESTORE', 'DATA', 'SGN', 'ABS', 'SQR', 'VAL', 'LEN', 'USR' ],
+  [ '', '', 'LN', 'EXP', 'LPRINT', 'LLIST', 'BIN', 'INKEY$', 'PI' ],
+  [ ]
+];
+keyboard('keyboard-48-extend', function(cx) {
+  drawKeyboard(cx, function(c, r, x, y, w, h) {
+    cx.font = lowerKeyFont;
+    cx.textAlign = 'right';
+    drawLabel(cx, keyboardLabels48ExtendLower[r][c], x + w, y + h + 11, w, h, 11);
+    cx.textAlign = 'center';
+    drawLabel(cx, keyboardLabels48Extend[r][c], x + w / 2, y + h, w, h, 14);
+  });
+});
+</script>
 
-                              The keyboard in E mode
-```
+The keyboard in `E` mode
+</center>
 
 Applying **CAPS SHIFT** while in `E` mode, the next key pressed will be interpreted as follows...
 
-```
-+-----------------------------------------------------------------------------+
-|     |     |blue |red  |mgnta|green|cyan |yellw|white|flash|flash|black|     |
-|     |     |    1|    2|    3|    4|    5|    6|    7|off 8|on  9|    0|SPACE|
-|-----------------------------------------------------------------------------|
-|       |     |ASN  |ACS  |ATN  |VERFY|MERGE| [   | ]   |IN   |OUT  |(C)  |   |
-|       |     |    Q|    W|    E|    R|    T|    Y|    U|    I|    O|    P|   |
-===========---------------------------------------------------------------+   |
-= EXTEND ==     | ~   | |   | \   | {   | }   |CIRCL|VAL$ |SCRN$|ATTR |       |
-== MODE ===     |    A|    S|    D|    F|    G|    H|    J|    K|    L| ENTER |
-==============-----------------------------------------------------============
-==============     |BEEP |INK  |PAPER|FLASH|BRGHT|OVER |INVRS|     ============
-= CAPS SHIFT =     |    Z|    X|    C|    V|    B|    N|    M|     =CAPS SHIFT=
-==============-----------------------------------------------------============
-|     |     |     |     |     |                       |     |     |     |     |
-|     |     |     |     |     |                 SPACE |     |     |     |     |
-+-----------------------------------------------------------------------------+
+<center>
+<canvas id="keyboard-48-extend-caps"></canvas>
+<script>
+const keyboardLabels48ExtendCapsLower = [
+  [ '', '', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '' ],
+  [ '', '', 'Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P' ],
+  [ 'EXTEND MODE', '', 'A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L', 'ENTER'],
+  [ 'CAPS SHIFT', '', 'Z', 'X', 'C', 'V', 'B', 'N', 'M', '', 'CAPS SHIFT' ],
+  [ '', '', '', '', '', 'SPACE', ]
+];
+const keyboardLabels48ExtendCaps = [
+  [ '', '', 'BLUE\nINK', 'RED\nINK', 'MAGENTA\nINK', 'GREEN\nINK', 'CYAN\nINK', 'YELLOW\nINK', 'WHITE\nINK', 'FLASH\nOFF', 'FLASH\nON', 'BLACK\nINK' ],
+  [ '', '', 'ASN', 'ACS', 'ATN', 'VERIFY', 'MERGE', '[', ']', 'IN', 'OUT', '©' ],
+  [ '', '', '~', '|', '\\', '{', '}', 'CIRCLE', 'VAL$', 'SCREEN$', 'ATTR' ],
+  [ '', '', 'BEEP', 'INK', 'PAPER', 'FLASH', 'BRIGHT', 'OVER', 'INVERSE' ],
+  [ ]
+];
+keyboard('keyboard-48-extend-caps', function(cx) {
+  drawKeyboard(cx, function(c, r, x, y, w, h) {
+    cx.font = lowerKeyFont;
+    cx.textAlign = 'right';
+    drawLabel(cx, keyboardLabels48ExtendCapsLower[r][c], x + w, y + h + 11, w, h, 11);
+    const midLabel = keyboardLabels48ExtendCaps[r][c];
+    if (midLabel) {
+      if (midLabel.length === 1)
+        cx.font = midKeyBigFont;
+      cx.textAlign = 'center';
+      drawLabel(cx, midLabel, x + w / 2, y + h, w, h, 16);
+    }
+  });
+});
+</script>
 
-                    The keyboard using CAPS SHIFT in E mode
-```
+The keyboard using **CAPS SHIFT** in `E` mode
+</center>
 
 Applying **SYMB SHIFT** while in `E` mode, the next key pressed will be interpreted as follows...
-```
-+-----------------------------------------------------------------------------+
-|     |     |DEFFN|FN   |LINE |OPEN#|CLOS#|MOVE |ERASE|POINT|CAT  |FORMT|     |
-|     |     |    1|    2|    3|    4|    5|    6|    7|    8|    9|    0|SPACE|
-|-----------------------------------------------------------------------------|
-|       |     |ASN  |ACS  |ATN  |VERFY|MERGE| [   | ]   |IN   |OUT  |(C)  |   |
-|       |     |    Q|    W|    E|    R|    T|    Y|    U|    I|    O|    P|   |
-===========---------------------------------------------------------------+   |
-= EXTEND ==     | ~   | |   | \   | {   | }   |CIRCL|VAL$ |SCRN$|ATTR |       |
-== MODE ===     |    A|    S|    D|    F|    G|    H|    J|    K|    L| ENTER |
-===========-------------------------------------------------------------------|
-|            |     |BEEP |INK  |PAPER|FLASH|BRGHT|OVER |INVRS|     |          |
-|            |     |    Z|    X|    C|    V|    B|    N|    M|     |          |
-=======-----------------------------------------------------------------=======
-=SYMB==     |     |     |     |                       |     |     |     =SYMB==
-=SHIFT=     |     |     |     |                 SPACE |     |     |     =SHIFT=
-=======-----------------------------------------------------------------=======
 
-                    The keyboard using SYMB SHIFT in E mode
-```
+<center>
+<canvas id="keyboard-48-extend-sym"></canvas>
+<script>
+const keyboardLabels48ExtendSymLower = [
+  [ '', '', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '' ],
+  [ '', '', 'Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P' ],
+  [ 'EXTEND MODE', '', 'A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L', 'ENTER'],
+  [ '', '', 'Z', 'X', 'C', 'V', 'B', 'N', 'M', '', '' ],
+  [ 'SYMB\nSHIFT', '', '', '', '', 'SPACE', '', '', '', 'SYMB\nSHIFT' ]
+];
+const keyboardLabels48ExtendSym = [
+  [ '', '', 'DEFN FN', 'FN', 'LINE', 'OPEN #', 'CLOSE #', 'MOVE', 'ERASE', 'POINT', 'CAT', 'FORMAT' ],
+  [ '', '', 'ASN', 'ACS', 'ATN', 'VERIFY', 'MERGE', '[', ']', 'IN', 'OUT', '©' ],
+  [ '', '', '~', '|', '\\', '{', '}', 'CIRCLE', 'VAL$', 'SCREEN$', 'ATTR' ],
+  [ '', '', 'BEEP', 'INK', 'PAPER', 'FLASH', 'BRIGHT', 'OVER', 'INVERSE' ],
+  [ ]
+];
+keyboard('keyboard-48-extend-sym', function(cx) {
+  drawKeyboard(cx, function(c, r, x, y, w, h) {
+    cx.font = lowerKeyFont;
+    cx.textAlign = 'right';
+    drawLabel(cx, keyboardLabels48ExtendSymLower[r][c], x + w, y + h + 11, w, h, 11);
+    const midLabel = keyboardLabels48ExtendSym[r][c];
+    if (midLabel) {
+      if (midLabel.length === 1)
+        cx.font = midKeyBigFont;
+      cx.textAlign = 'center';
+      drawLabel(cx, midLabel, x + w / 2, y + h, w, h, 16);
+    }
+  });
+});
+</script>
+
+The keyboard using **SYMB SHIFT** in `E` mode
+</center>
 
 `G` (for Graphics) mode occurs when **GRAPH** is pressed, and lasts until it is pressed again (or **9** is pressed on its own). A number key will give a mosaic graphics, and each of the letter keys (apart from **V**, **W**, **X**, **Y** and **Z**) will give a user-defined graphics which, until it is defined, will look identical to a capital letter. Whenever the `G` cursor appears, the next key pressed will be interpreted as follows...
-```
-+-----------------------------------------------------------------------------+
-|     |     |..## |##.. |#### |.... |..## |##.. |#### |.... |graph|     |     |
-|     |     |....1|....2|....3|..##4|..##5|..##6|..##7|....8|off 9|     |SPACE|
-|-----------------------------------------------------------------------------|
-|       |     | Q   |     | E   | R   | T   |     | U   | I   | O   | P   |   |
-| DELETE|GRAPH|     |     |     |     |     |     |     |     |     |     |   |
-|-------------------------------------------------------------------------+   |
-|         |     | A   | S   | D   | F   | G   | H   | J   | K   | L   |       |
-|         |     |     |     |     |     |     |     |     |     |     |       |
-|-----------------------------------------------------------------------------|
-|            |     |     |     | C   |     | B   | N   | M   |     |          |
-|            |     |     |     |     |     |     |     |     |     |          |
-|-----------------------------------------------------------------------------|
-|     |     |     |     |     |                       |     |     |     |     |
-|     |     |     |     |     |                 SPACE |     |     |     |     |
-+-----------------------------------------------------------------------------+
 
-                             The keyboard in G mode
-```
+<center>
+<canvas id="keyboard-48-graph"></canvas>
+<script>
+const keyboardLabelsGraph48Lower = [
+  [ '', '', '1', '2', '3', '4', '5', '6', '7', '8', '9', '', 'SPACE' ],
+  [ 'DELETE', 'GRAPH', 'Q', '', 'E', 'R', 'T', '', 'U', 'I', 'O', 'P' ],
+  [ '', '', 'A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L' ],
+  [ '', '', '', '', 'C', '', 'B', 'N', 'M', '', ''],
+  [ '', '', '', '', '', 'SPACE' ],
+];
+keyboard('keyboard-48-graph', function(cx) {
+  drawKeyboard(cx, function(c, r, x, y, w, h) {
+    cx.font = lowerKeyFont;
+    cx.textAlign = 'right';
+    const label = keyboardLabelsGraph48Lower[r][c];
+    if (r === 0) {
+      drawLabel(cx, label, x + w, y + h + 11, w, h, 11);
+      if (c == 10) {
+        cx.textAlign = 'center';
+        cx.font = '9px Arial';
+        drawLabel(cx, 'GRAPHICS\nMODE\nOFF', x + w / 2, y + h, w, h, 10);
+      } else if (c > 1 && c < 10) {
+        boxChar(cx, c - 1, x, y, 4, 24);
+      }
+    } else if (label) {
+      drawLabel(cx, label, x + w, y + h + 11, w, h, 11);
+      if (label.length === 1) {
+        cx.font = midKeyBigFont;
+        cx.textAlign = 'center';
+        drawLabel(cx, label, x + w / 2, y + h, w, h, 16);
+      }
+    }
+  })
+});
+</script>
+
+The keyboard in `G` mode
+</center>
 
 Applying **CAPS SHIFT** while in `G` mode inverts the mosaic graphics (ie. the ink colour becomes the paper colour, and the paper becomes the ink colour). Hence, the next key pressed will be interpreted as follows...
-```
-+-----------------------------------------------------------------------------+
-|     |     |##.. |..## |.... |#### |##.. |..## |.... |#### |graph|     |     |
-|     |     |####1|####2|####3|##..4|##..5|##..6|##..7|####8|off 9|     |SPACE|
-|-----------------------------------------------------------------------------|
-|       |     | Q   |     | E   | R   | T   |     | U   | I   | O   | P   |   |
-| DELETE|GRAPH|     |     |     |     |     |     |     |     |     |     |   |
-|-------------------------------------------------------------------------+   |
-|         |     | A   | S   | D   | F   | G   | H   | J   | K   | L   |       |
-|         |     |     |     |     |     |     |     |     |     |     |       |
-==============-----------------------------------------------------============
-==============     |     |     | C   |     | B   | N   | M   |     ============
-==CAPS SHIFT==     |     |     |     |     |     |     |     |     =CAPS SHIFT=
-==============-----------------------------------------------------============
-|     |     |     |     |     |                       |     |     |     |     |
-|     |     |     |     |     |                 SPACE |     |     |     |     |
-+-----------------------------------------------------------------------------+
 
-                    The keyboard using CAPS SHIFT in G mode
-```
+<center>
+<canvas id="keyboard-48-graph-caps"></canvas>
+<script>
+const keyboardLabelsGraphCaps48Lower = [
+  [ '', '', '1', '2', '3', '4', '5', '6', '7', '8', '9', '', 'SPACE' ],
+  [ 'DELETE', 'GRAPH', 'Q', '', 'E', 'R', 'T', '', 'U', 'I', 'O', 'P' ],
+  [ '', '', 'A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L' ],
+  [ 'CAPS SHIFT', '', '', '', 'C', '', 'B', 'N', 'M', '', 'CAPS SHIFT'],
+  [ '', '', '', '', '', 'SPACE' ],
+];
+keyboard('keyboard-48-graph-caps', function(cx) {
+  drawKeyboard(cx, function(c, r, x, y, w, h) {
+    cx.font = lowerKeyFont;
+    cx.textAlign = 'right';
+    const label = keyboardLabelsGraphCaps48Lower[r][c];
+    if (r === 0) {
+      drawLabel(cx, label, x + w, y + h + 11, w, h, 11);
+      if (c == 10) {
+        cx.textAlign = 'center';
+        cx.font = '9px Arial';
+        drawLabel(cx, 'GRAPHICS\nMODE\nOFF', x + w / 2, y + h, w, h, 10);
+      } else if (c > 1 && c < 10) {
+        boxCharInverse(cx, c - 1, x, y, 4, 24);
+      }
+    } else if (label) {
+      drawLabel(cx, label, x + w, y + h + 11, w, h, 11);
+      if (label.length === 1) {
+        cx.font = midKeyBigFont;
+        cx.textAlign = 'center';
+        drawLabel(cx, label, x + w / 2, y + h, w, h, 16);
+      }
+    }
+  })
+});
+</script>
+
+The keyboard using **CAPS SHIFT** in `G` mode
+</center>
 
 ## General keyboard notes
 
@@ -1321,26 +1397,10 @@ This guide to BASIC starts by repeating some of the information given in chapter
 
 ### The Keyboard
 
-<canvas id="the-keyboard"></canvas>
-
-```
-+-----------------------------------------------------------------------------+
-|TRUE |INV. |     |     |     |     |     |     |     |     |     |     |     |
-|VIDEO|VIDEO|    1|    2|    3|    4|    5|    6|    7|    8|    9|    0|SPACE|
-|-----------------------------------------------------------------------------|
-|       |     |     |     |     |     |     |     |     |     |     |     |   |
-| DELETE|GRAPH|    Q|    W|    E|    R|    T|    Y|    U|    I|    O|    P|   |
-|-------------------------------------------------------------------------+   |
-| EXTEND  |     |     |     |     |     |     |     |     |     |     |       |
-|  MODE   | EDIT|    A|    S|    D|    F|    G|    H|    J|    K|    L| ENTER |
-|-----------------------------------------------------------------------------|
-|            |CAPS |     |     |     |     |     |     |     |     |          |
-| CAPS SHIFT | LOCK|    Z|    X|    C|    V|    B|    N|    M|    .|CAPS SHIFT|
-|-----------------------------------------------------------------------------|
-|SYMB |     |     | /-- | --\ |                       | ||  | /\  |     |SYMB |
-|SHIFT|    ;|    "| \-- | --/ |                 SPACE | \/  | ||  |    ,|SHIFT|
-+-----------------------------------------------------------------------------+
-```
+<center>
+<canvas id="keyboard-basic"></canvas>
+<script>keyboard('keyboard-basic', drawDefaultKeyboard);</script>
+</center>
 
 The characters used on the +3 comprise not only single symbols (letters, digits, etc.) but also compound tokens (keywords, function names, etc.). Everything must be typed in full, and in most cases it doesn't matter whether capital letters (known as ***UPPER CASE***) or small letters (***lower case***) are used. There are three sorts of keys on the keyboard: letter and number keys (called alphanumeric keys); symbol keys (punctuation marks); and control keys (things like **CAPS SHIFT**, **DELETE** and so on).
 
@@ -1353,74 +1413,109 @@ To type the symbols which appear on the alphanumeric keys on the keyboard, ie...
     ! @ # $ % & ' ( ) _ < > ^ - + = : <pound sign> ? / *
 
 ...simply hold down the **SYMB SHIFT** key while the alphanumeric key with the required symbol on it is pressed (see the following diagram)...
-```
-+-----------------------------------------------------------------------------+
-|     |     | !   | @   | #   | $   | %   | &   | '   | (   | )   | _   |     |
-|     |     |    1|    2|    3|    4|    5|    6|    7|    8|    9|    0|     |
-|-----------------------------------------------------------------------------|
-|       |     |     |     |     | <   | >   |     |     |     |     |     |   |
-|       |     |     |     |     |    R|    T|     |     |     |     |     |   |
-|-------------------------------------------------------------------------+   |
-|         |     |     |     |     |     |     | ^   | -   | +   | =   |       |
-|         |     |     |     |     |     |     |    H|    J|    K|    L|       |
-|-----------------------------------------------------------------------------|
-|            |     | :   |pound| ?   | /   | *   |     |     |     |          |
-|            |     |    Z|signX|    C|    V|    B|     |     |     |          |
-=======-----------------------------------------------------------------=======
-=SYMB==     |     |     |     |                       |     |     |     =SYMB==
-=SHIFT=     |     |     |     |                       |     |     |     =SHIFT=
-=======-----------------------------------------------------------------=======
 
-                      Symbols available using SYMB SHIFT
-```
+<center>
+<canvas id="keyboard-sym-shift"></canvas>
+<script>
+const keyboardLabelsSymbolsLower = [
+  [ ' ', ' ', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0' ],
+  [ '', '', '', '', '', 'R', 'T' ],
+  [ '', '', '', '', '', '', '', 'H', 'J', 'K', 'L' ],
+  [ '', '', 'Z', 'X', 'C', 'V', 'B' ],
+  [ 'SYMB\nSHIFT', '', '', '', '', '', '', '', '', 'SYMB\nSHIFT' ]
+];
+const keyboardLabelsSymbols = [
+  [ '', '', '!', '@', '#', '$', '%', '&', "'", '(', ')', '_' ],
+  [ '', '', '', '', '', '<', '>' ],
+  [ '', '', '', '', '', '', '', '^', '-', '+', '=' ],
+  [ '', '', ':', '£', '?', '/', '*' ],
+  []
+];
+keyboard('keyboard-sym-shift', function(cx) {
+  drawKeyboard(cx, function(c, r, x, y, w, h) {
+    cx.font = lowerKeyFont;
+    cx.textAlign = 'right';
+    drawLabel(cx, keyboardLabelsSymbolsLower[r][c], x + w, y + h + 11, w, h, 11);
+    cx.font = midKeyBigFont;
+    cx.textAlign = 'center';
+    drawLabel(cx, keyboardLabelsSymbols[r][c], x + w / 2, y + h, w, h, 14);
+  });
+});
+</script>
+
+Symbols available using **SYMB SHIFT**
+</center>
 
 Additionally, the symbols...
 
-     [ ] (C) ~ | \ { }
+      [ ] © ~ | \ { }
 
 ...can be obtained by first pressing the **EXTEND MODE** key once, then holding down **SYMB SHIFT** while pressing the appropriate alphanumeric key (see the following diagram)...
-```
-+-----------------------------------------------------------------------------+
-|     |     |     |     |     |     |     |     |     |     |     |     |     |
-|     |     |     |     |     |     |     |     |     |     |     |     |     |
-|-----------------------------------------------------------------------------|
-|       |     |     |     |     |     |     | [   | ]   |     |     |(C)  |   |
-|       |     |     |     |     |     |     |    Y|    U|     |     |    P|   |
-===========---------------------------------------------------------------+   |
-= EXTEND ==     | ~   | |   | \   | {   | }   |     |     |     |     |       |
-== MODE ===     |    A|    S|    D|    F|    G|     |     |     |     |       |
-===========-------------------------------------------------------------------|
-|            |     |     |     |     |     |     |     |     |     |          |
-|            |     |     |     |     |     |     |     |     |     |          |
-=======-----------------------------------------------------------------=======
-=SYMB==     |     |     |     |                       |     |     |     =SYMB==
-=SHIFT=     |     |     |     |                       |     |     |     =SHIFT=
-=======-----------------------------------------------------------------=======
 
-              Symbols available using SYMB SHIFT in EXTEND MODE
-```
+<center>
+<canvas id="keyboard-sym-shift-ext"></canvas>
+<script>
+const keyboardLabelsSymbolsExtLower = [
+  [ ],
+  [ '', '', '', '', '', '', '', 'Y', 'U', '', '', 'P' ],
+  [ 'EXTENDED\nMODE', '', 'A', 'S', 'D', 'F', 'G' ],
+  [ ],
+  [ 'SYMB\nSHIFT', '', '', '', '', '', '', '', '', 'SYMB\nSHIFT' ]
+];
+const keyboardLabelsSymbolsExt = [
+  [ ],
+  [ '', '', '', '', '', '', '', '[', ']', '', '', '©' ],
+  [ '', '', '~', '|', '\\', '{', '|' ],
+  [ ],
+  []
+];
+keyboard('keyboard-sym-shift-ext', function(cx) {
+  drawKeyboard(cx, function(c, r, x, y, w, h) {
+    cx.font = lowerKeyFont;
+    cx.textAlign = 'right';
+    drawLabel(cx, keyboardLabelsSymbolsExtLower[r][c], x + w, y + h + 11, w, h, 11);
+    cx.font = midKeyBigFont;
+    cx.textAlign = 'center';
+    drawLabel(cx, keyboardLabelsSymbolsExt[r][c], x + w / 2, y + h, w, h, 14);
+  });
+});
+</script>
+
+Symbols available using **SYMB SHIFT** in **EXTEND MODE**
+</center>
 
 To enter graphics mode, the **GRAPH** key is pressed once. Mosaic graphics (see the following diagram) can then be produced by pressing the number keys (except `9` and `0`). Pressing the letter keys (except **T**, **U**, **V**, **W**, **X**, **Y** and **Z**) produce user-defined graphics (if set up).
-```
-+-----------------------------------------------------------------------------+
-|     |     |..## |##.. |#### |.... |..## |##.. |#### |.... |graph|     |     |
-|     |     |....1|....2|....3|..##4|..##5|..##6|..##7|....8|off 9|     |     |
-|-----------------------------------------------------------------------------|
-|       |     |     |     |     |     |     |     |     |     |     |     |   |
-|       |GRAPH|     |     |     |     |     |     |     |     |     |     |   |
-|-------------------------------------------------------------------------+   |
-|         |     |     |     |     |     |     |     |     |     |     |       |
-|         |     |     |     |     |     |     |     |     |     |     |       |
-|-----------------------------------------------------------------------------|
-|            |     |     |     |     |     |     |     |     |     |          |
-|            |     |     |     |     |     |     |     |     |     |          |
-|-----------------------------------------------------------------------------|
-|     |     |     |     |     |                       |     |     |     |     |
-|     |     |     |     |     |                       |     |     |     |     |
-+-----------------------------------------------------------------------------+
 
-                    Mosaic graphics available using GRAPH
-```
+<center>
+<canvas id="keyboard-graph"></canvas>
+<script>
+const keyboardLabelsGraphLower = [
+  [ '', '', '1', '2', '3', '4', '5', '6', '7', '8', '9' ],
+  [ '', 'GRAPH' ],
+  [ ],
+  [ ],
+  [ ],
+];
+keyboard('keyboard-graph', function(cx) {
+  drawKeyboard(cx, function(c, r, x, y, w, h) {
+    cx.font = lowerKeyFont;
+    cx.textAlign = 'right';
+    drawLabel(cx, keyboardLabelsGraphLower[r][c], x + w, y + h + 11, w, h, 11);
+    if (r === 0) {
+      if (c == 10) {
+        cx.textAlign = 'center';
+        cx.font = '10px Segoe UI';
+        drawLabel(cx, 'GRAPHICS\nMODE\nOFF', x + w / 2, y + h, w, h, 10);
+      } else if (c > 1 && c < 10) {
+        boxChar(cx, c - 1, x, y, 4, 24);
+      }
+    }
+  });
+});
+</script>
+
+Mosaic graphics available using **GRAPH**
+</center>
 
 To obtain inverted mosaic graphics, press the above number keys while holding down **CAPS SHIFT**.
 
@@ -2957,10 +3052,9 @@ On the screen will appear the following...
 
 The character set
 
-As you can see, the character set consists of a space, 15 symbols and punctuation marks, the ten digits, seven more symbols, the capital letters, six more symbols, the lower case letters and five more symbols. These are all (except £ and ©) taken from a widely-used set of characters known as ASCII (American Standard Codes for Information Interchange). ASCII also assigns numeric codes to these characters, and these are the codes that the +3 uses.
+As you can see, the character set consists of a space, 15 symbols and punctuation marks, the ten digits, seven more symbols, the capital letters, six more symbols, the lower case letters and five more symbols. These are all (except £ and ©) taken from a widely-used set of characters known as ASCII (American Standard Codes for Information Interchange). ***ASCII*** also assigns numeric codes to these characters, and these are the codes that the +3 uses.
 
-The rest of the characters are not part of ASCII, but are dedicated to the ZX Spectrum range of computers. First amongst them are a space and
-15 patterns of black and white blobs [although it is difficult to depict them in ASCII, as you have recently seen]. These are called the graphics symbols and can be used for drawing pictures. You can enter these from the keyboard, using what's known as graphics mode. Pressing the GRAPH key switches on graphics mode, after which the keys 1, 2, 3, 4, 5, 6, 7 and 8 will produce the graphics symbols...
+The rest of the characters are not part of ASCII, but are dedicated to the ZX Spectrum range of computers. First amongst them are a space and 15 patterns of black and white blobs. These are called the ***graphics symbols*** and can be used for drawing pictures. You can enter these from the keyboard, using what's known as ***graphics mode***. Pressing the **GRAPH** key switches on graphics mode, after which the keys **1,** **2**, **3**, **4**, **5**, **6**, **7** and **8** will produce the graphics symbols...
 
 ````
 +-----------------------------------------------------------------------------+
@@ -2981,8 +3075,7 @@ The rest of the characters are not part of ASCII, but are dedicated to the ZX Sp
 +-----------------------------------------------------------------------------+
 ````
 
-While in graphics mode, pressing CAPS SHIFT together with one of the keys 1 to 8 produces 'inverted' versions of the same symbols, i.e.
-black becomes white and white becomes black...
+While in graphics mode, pressing **CAPS SHIFT** together with one of the keys **1** to **8** produces 'inverted' versions of the same symbols, ie. black becomes white and white becomes black...
 
 ````
 +-----------------------------------------------------------------------------+
@@ -3005,7 +3098,7 @@ black becomes white and white becomes black...
 
 The cursor keys won't work properly while all this is going on as the +3 interprets them as shifted number keys, and prints graphics characters accordingly.
 
-Pressing the 9 key turns everything back to normal (as does pressing **GRAPH** again). The 0 key deletes the character to the left of the cursor.
+Pressing the **9** key turns everything back to normal (as does pressing **GRAPH** again). The **0** key deletes the character to the left of the cursor.
 
 Here are the sixteen graphics symbols...
 
@@ -3037,12 +3130,10 @@ Here are the sixteen graphics symbols...
            |__##|                        |##__|
 ````
 
-After the graphics symbols in the character set, you will see what appears to be another copy of the alphabet from A to S. These are characters that you can redefine yourself (though when the machine is first switched on they are set as letters) - they are called user-defined graphics. You can type these in from the keyboard by going into graphics mode, and then using the letter keys A to S.
+After the graphics symbols in the character set, you will see what appears to be another copy of the alphabet from A to S. These are characters that you can redefine yourself (though when the machine is first switched on they are set as letters) - they are called ***user-defined graphics***. You can type these in from the keyboard by going into graphics mode, and then using the letter keys **A** to **S**.
 
-To define a new character for yourself, follow this recipe - it defines a character to show pi.
+(i) Work out what the character looks like. Each character has an 8 x 8 grid of dots, each of which can appear to be on or off. You'd draw a diagram something like this (with blank squares representing the dots which are on)...
 
-(i) Work out what the character looks like. Each character has an 8x8
-grid of dots, each of which can appear to be either on or off. You'd draw a diagram something like this (with blank squares representing the dots which are on)...
 ````
                     _______________________________
                    |   |   |   |   |   |   |   |   |
@@ -3063,29 +3154,28 @@ grid of dots, each of which can appear to be either on or off. You'd draw a diag
                    |___|___|___|___|___|___|___|___|
 ````
 
-When a dot is on, the +3 prints the ink colour; when a dot if off, the +3 prints the paper colour. (The terms ink and paper are explained in part 16 of this chapter.)
+When a dot is on, the +3 prints the ink colour; when a dot if off, the +3 prints the paper colour. (The terms ink and paper are explained in [part 16](#part16) of this chapter.)
 
 We've left a one-square border around the edge because all the other letters also have one (except for lower case letters with tails, where the tail goes right down to the bottom).
 
-(ii) Work out which user-defined graphic you wish to display pi - let's say the one corresponding to 'P' so that if you press P (after pressing GRAPH) you get pi.
+(ii) Work out which user-defined graphic you wish to display pi - let's say the one corresponding to **P** so that if you press **P** (after pressing **GRAPH**) you get π.
 
-(iii) Store the new pattern. Each user-defined graphic has its pattern stored as eight numbers, one for each row.  You can write each of these numbers in a program as BIN followed by eight 0's or 1's - 0 for paper, 1 for ink - so the eight numbers for our pi character are...
+(iii) Store the new pattern. Each user-defined graphic has its pattern stored as eight numbers, one for each row.  You can write each of these numbers in a program as `BIN` followed by eight 0's or 1's - 0 for paper, 1 for ink - so the eight numbers for our pi character are...
 
-    BIN 00000000    - top row
-    BIN 00000000    - second row down
-    BIN 00000010    - third row down
-    BIN 00111100    - forth row down
-    BIN 01010100    - fifth row down
-    BIN 00010100    - sixth row down
-    BIN 00010100    - seventh row down
-    BIN 00000000    - bottom row
+- `BIN 00000000`    - top row
+- `BIN 00000000`    - second row down
+- `BIN 00000010`    - third row down
+- `BIN 00111100`    - forth row down
+- `BIN 01010100`    - fifth row down
+- `BIN 00010100`    - sixth row down
+- `BIN 00010100`    - seventh row down
+- `BIN 00000000`    - bottom row
 
-(If you know about binary numbers, then it should help you to know that BIN is used to write a number in binary instead of the usual decimal.) Look at the pattern of binary numbers through half-closed eyes - you may even be able to see the pi character!
+(If you know about binary numbers, then it should help you to know that `BIN` is used to write a number in binary instead of the usual decimal.) Look at the pattern of binary numbers through half-closed eyes - you may even be able to see the π character!
 
-These eight numbers are stored in eight locations (bytes) in memory. Each of these locations has an address. The address of the first byte
-(or group of eight digits) is 'USR "P"' (we chose 'P' in (ii) above). The address of the second byte is 'USR "P"+1', and so on up to the address 'USR "P"+7'.
+These eight numbers are stored in eight locations (bytes) in memory. Each of these locations has an ***address***. The address of the first byte (or group of eight digits) is `USR "P"` (we chose `P` in (ii) above). The address of the second byte is `USR "P"+1`, and so on up to the address `USR "P"+7`.
 
-USR here is a function to convert a string argument into the address of the first byte in memory for the corresponding user-defined graphic. The string argument must be a single character which can be either the user-defined graphic itself or the corresponding letter (in upper or lower case). There is another use for USR, when its argument is a number, which will be dealt with later.
+`USR` here is a function to convert a string argument into the address of the first byte in memory for the corresponding user-defined graphic. The string argument must be a single character which can be either the user-defined graphic itself or the corresponding letter (in upper or lower case). There is another use for `USR`, when its argument is a number, which will be dealt with later.
 
 Even if you don't understand this, the following program will define the character for you...
 
@@ -3101,21 +3191,18 @@ Even if you don't understand this, the following program will define the charact
     100 DATA BIN 00010100
     110 DATA BIN 00000000
 
-The POKE statement stores a number directly in a memory location,
-bypassing the mechanisms normally used by the BASIC. The opposite of POKE is PEEK, and this allows us to look at the contents of a memory location although it does not actually alter the contents themselves.
-PEEK and POKE are described more fully in part 24 of this chapter.
+The `POKE` statement stores a number directly in a memory location, bypassing the mechanisms normally used by the BASIC. The opposite of `POKE` is `PEEK`, and this allows us to look at the contents of a memory location although it does not actually alter the contents themselves.
+`PEEK` and `POKE` are described more fully in [part 24](#part24) of this chapter.
 
 After the user-defined graphics in the character set come the tokens.
 
-You will have noticed that we have not printed out the first 32
-characters (codes 0 to 31) - these are control characters. They don't produce anything printable, but instead are used to control the screen display or some other function of the +3.
+You will have noticed that we have not printed out the first 32 characters (codes 0 to 31) - these are ***control characters***. They don't produce anything printable, but instead are used to control the screen display or some other function of the +3.
 
-(If you try to print control characters, the +3 displays '?' to show that it doesn't understand them. Control characters are described more fully in part 28 of this chapter.)
+(If you try to print control characters, the +3 displays `?` to show that it doesn't understand them. Control characters are described more fully in [part 28](#part28) of this chapter.)
 
-The three control characters that the screen display uses are 6, 8 and
-13 (these will now be explained). On the whole, 'CHR$ 8' is the only one you are likely to find useful.
+The three control characters that the screen display uses are 6, 8 and 13 (these will now be explained). On the whole, `CHR$ 8` is the only one you are likely to find useful.
 
-'CHR$ 6' prints spaces in exactly the same way as a comma does in a PRINT statement, for instance...
+`CHR$ 6` prints spaces in exactly the same way as a comma does in a `PRINT` statement, for instance...
 
     PRINT 1; CHR$ 6;2
 
@@ -3128,7 +3215,7 @@ Obviously this is not a very clear way of using it. A more subtle way is to say.
     LET a$="1"+ CHR$ 6+"2"
     PRINT a$
 
-'CHR$ 8' is 'backspace' - it moves the print position back one place.
+`CHR$ 8` is 'backspace' - it moves the print position back one place.
 Try...
 
     PRINT "1234"; CHR$ 8;"5"
@@ -3137,16 +3224,11 @@ Try...
 
     1235
 
-'CHR$ 13' is 'newline' - it moves the print position to the beginning of the next line.
+`CHR$ 13` is 'newline' - it moves the print position to the beginning of the next line.
 
 The screen display also uses control codes 16 to 23 - these are explained in parts 15 and 16 of this chapter (all the codes are listed in part 28).
 
-Using the codes for the characters we can extend the concept of
-'alphanumerical ordering' to cover strings containing any characters,
-not just letters. If instead of thinking in terms of the usual alphabet of 26 letters we use the extended alphabet of 256 characters,
-in the same order as their codes, then the principle is exactly the same. For instance, the following strings are in their 'Spectrum'
-ASCII alphabetical order. (Notice the rather odd feature that lower case letters come after all the capitals; so 'a' comes after 'Z'.
-Notice also that spaces are significant.)
+Using the codes for the characters we can extend the concept of 'alphanumerical ordering' to cover strings containing any characters, not just letters. If instead of thinking in terms of the usual alphabet of 26 letters we use the extended alphabet of 256 characters, in the same order as their codes, then the principle is exactly the same. For instance, the following strings are in their 'Spectrum' ASCII alphabetical order. (Notice the rather odd feature that lower case letters come after all the capitals; so `a` comes after `Z`. Notice also that spaces are significant.)
 
     CHR$ 3+"ZOOLOGICAL GARDENS"
     CHR$ 8+"AARDVARK HUNTING"
@@ -3166,18 +3248,16 @@ Notice also that spaces are significant.)
     "zoo"
     "zoology"
 
-Here is the rule for finding out in which order two strings come.
-Start by comparing the first two characters. If they are different,
-then one of them has its code less than the other, and the string it comes from is the earlier (lesser) of the two strings. If they are the same, then go on to compare the next two characters. If in this process one of the strings runs out before the other, then that string is the earlier; otherwise they must be equal.
+Here is the rule for finding out in which order two strings come. Start by comparing the first two characters. If they are different, then one of them has its code less than the other, and the string it comes from is the earlier (lesser) of the two strings. If they are the same, then go on to compare the next two characters. If in this process one of the strings runs out before the other, then that string is the earlier; otherwise they must be equal.
 
-The relations '=', '<', '>', '<=', '>=' and '<>' are used for strings as well as for numbers: '<' means 'comes before' and '>' means 'comes after', so that...
+The relations `=`, `<`, `>`, `<=`, `>=` and `<>` are used for strings as well as for numbers: `<` means 'comes before' and `>` means 'comes after', so that...
 
     "AA man"<"AARDVARK"
     "AARDVARK">"AA man"
 
 ...are both true.
 
-'<=' and '>=' work in the same way as they do for numbers, so that...
+`<=` and `>=` work in the same way as they do for numbers, so that...
 
     "The same string" <= "The same string"
 
@@ -3197,9 +3277,7 @@ Experiment on all this using the program here, which inputs two strings and puts
     60 PRINT " ";b$
     70 GO TO 10
 
-Note (in the above program and also in the program at the end of part
-13) how we have to introduce 'c$' in line 20 when we swap over 'a$'
-and 'b$'. Can you see why simply using...
+Note (in the above program and also in the program at the end of [part 13](#part13) how we have to introduce `c$` in line 20 when we swap over `a$` and `b$`. Can you see why simply using...
 
     LET a$=b$: LET b$=a$
 
@@ -3207,12 +3285,12 @@ and 'b$'. Can you see why simply using...
 
 The next program sets up user defined graphics for the following keys to display chess pieces...
 
-    B for bishop
-    K for king
-    R for rook
-    Q for queen
-    P for pawn
-    N for knight
+- **B** for bishop
+- **K** for king
+- **R** for rook
+- **Q** for queen
+- **P** for pawn
+- **N** for knight
 
 Chess pieces...
 
@@ -3241,27 +3319,238 @@ Chess pieces...
     260 DATA "n", 0, d, c, BIN 01111000
     270 DATA BIN 00011000, c, b, 0
 
-Note that in the above DATA statements, we have simply used '0' instead of 'BIN 00000000'.
+Note that in the above `DATA` statements, we have simply used `0` instead of `BIN 00000000`.
 
-When you have run this program, you may look at the pieces by pressing GRAPH followed by any of the keys: B, K, R, Q, P or N.
+When you have run this program, you may look at the pieces by pressing **GRAPH** followed by any of the keys: **B**, **K**,**R**, **Q**, **P** or **N**.
 
 Exercises...
 
-1. Imagine the space for one symbol divided up into four quarters like a Battenberg cake. Then if each quarter can be either black or white,
-there are 2^4 = 16 possibilities. Find them all in the character set.
+1. Imagine the space for one symbol divided up into four quarters like a Battenberg cake. Then if each quarter can be either black or white, there are 2^4 = 16 possibilities. Find them all in the character set.
 
 2. Run this program...
 
-    10 INPUT c
-    20 PRINT CHR$ c;
-    30 GO TO 10
+        10 INPUT c
+        20 PRINT CHR$ c;
+        30 GO TO 10
 
-If you experiment with it, you'll find that 'CHR$ c' is rounded to the nearest whole number; and if 'c' is not in the range 0 to 255, then the program stops with the error report 'B integer out of range'.
+If you experiment with it, you'll find that `CHR$ c` is rounded to the nearest whole number; and if `c` is not in the range 0 to 255, then the program stops with the error report `B integer out of range`.
 
 3. Which of these is the lesser?
 
-    "EVIL"
-    "evil"
+       "EVIL"
+       "evil"
+
+## <a id="part15"></a> Part 15 - More about PRINT and INPUT
+
+Subjects covered...
+
+- `CLS`
+- `PRINT` items
+- Expressions (numeric or string type)
+- `TAB` numeric expression
+- `AT` numeric expression
+- `PRINT` separators , ; '
+- `INPUT` items
+- Variables (numeric or string type)
+- `LINE` string variable
+- Scrolling
+- `SCREEN$`
+
+You have already seen `PRINT` used quite a lot, so you will have a rough idea of how it is used. Expressions whose values are printed are called `PRINT` items. They may be separated by commas, semicolons or apostrophes, which are called `PRINT` separators. A `PRINT` item can also be nothing at all, which is a way of explaining what happens when you use `PRINT` on its own.
+
+There are two more kinds of `PRINT` items, which are used to tell the +3 not what, but where to print. For example, the instruction...
+
+    10 PRINT AT 11,16;"*"
+
+...prints an asterisk '*' in the centre of the screen. This is because...
+
+    AT line,column
+
+...moves the `PRINT` position (the place where the next item is to be printed) to the line and column specified. Lines are numbered from 0 (at the top) to 21; columns are numbered from 0 (on the left) to 31.
+
+`SCREEN$` is the reverse function to `PRINT AT`, and will (within limits) 'read' the character which is located at a particular position on the screen. It uses line and column numbers in the same way as `PRINT AT`, but enclosed in brackets. For example, the instruction...
+
+    20 PRINT AT 0,0; SCREEN$ (11,16)
+
+...will read the asterisk printed in the centre of the screen, then print it at location 0,0 (the top left-hand corner).
+
+Characters from tokens are read normally (as single characters), and spaces are read as spaces. However, attempting to read user-defined characters, graphics characters, or lines drawn by `PLOT`, `DRAW` and `CIRCLE`, result in a null (empty) string being returned. The same applies if `OVER` has been used to create a composite character. (The keywords `PLOT`, `DRAW`, `CIRCLE` and `OVER` are described in [parts 16](#part16) and [17](#part17) of this chapter.)
+
+               __ You cannot normally PRINT or PLOT
+              |   on the bottom two lines
+              |
+              |  2 2 1 1 1 1 1 1 1 1 1 1
+             _|_ 1 0 9 8 7 6 5 4 3 2 1 0 9 8 7 6 5 4 3 2 1 0
+            '___`___________________________________________
+     P    0 |_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|  0  C
+     i    8 |_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|  1  o
+     x   16 |_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|  2  l
+     e   24 |_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|  3  u
+     l   32 |_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|  4  m
+         40 |_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|  5  n
+     x   48 |_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|  6  s
+         56 |_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|  7
+     c   64 |_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|  8  |
+     o   72 |_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|  9  |
+     o   80 |_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_| 10  v
+     r   88 |_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_| 11
+     d   96 |_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_| 12
+     i  104 |_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_| 13
+     n  112 |_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_| 14
+     a  120 |_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_| 15
+     t  128 |_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_| 16
+     e  136 |_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_| 17
+     s  144 |_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_| 18
+        152 |_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_| 19
+     |  160 |_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_| 20
+     |  168 |_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_| 21
+     v  176 |_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_| 22
+        184 |_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_| 23
+        192 |_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_| 24
+        200 |_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_| 25
+        208 |_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_| 26
+        216 |_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_| 27
+        224 |_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_| 28
+        232 |_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_| 29
+        240 |_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_| 30
+        248 |_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_| 31
+                                          1 1 1 1 1 1 1 1 1
+                    1 2 3 4 4 5 6 7 8 8 9 0 1 2 2 3 4 5 6 6
+                0 8 6 4 2 0 8 6 4 2 0 8 6 4 2 0 8 6 4 2 0 8
+
+                Pixel y coordinates -->
+
+The function...
+
+`TAB` column
+
+...prints enough spaces to move the `PRINT` position to the column specified. It stays on the same line, or, if this would involve backspacing, moves to the next line. Note that the +3 reduces the column number 'modulo 32' (i.e. it divides by 32 and takes the remainder) - so `TAB 33` means the same as `TAB 1`.
+
+As an example...
+
+    PRINT TAB 30;1; TAB 12;"Contents"; AT 3,1;"Chapter"; TAB 24;"Page"
+
+...is how you might want to print out the heading on the contents page (page 1) of a book.
+
+Try running this...
+
+    10 FOR n=0 TO 20
+    20 PRINT TAB 8*n;n;
+    30 NEXT n
+
+This shows what is meant by the `TAB` numbers being reduced modulo 32.
+
+For a more elegant example, change the 8 in line 20 to a 6.
+
+Note the following points...
+
+(i) `TAB`s and print items are best terminated with semicolons, as we have done above. You can use commas (or nothing, at the end of the statement), but this means that after having carefully set up the `PRINT` position, you immediately move it on again - not terribly useful!
+
+(ii) You cannot print on the bottom two lines (22 and 23) on the screen because they are reserved for commands, `INPUT` data, reports, error messages and so on. References to 'the bottom line' usually mean line 21.
+
+(iii) You can use `AT` to locate the `PRINT` position even where these is already something printed - the new print item will simply overwrite the old.
+
+Another statement connected with `PRINT` is `CLS`. This clears the whole screen.
+
+When printing reaches the bottom of the screen, it starts to scroll upwards rather like a typewriter. You can see this if you go into the small screen using the edit menu option `Screen` (described in [chapter 6](#chapter6), and then type...
+
+    CLS: FOR n=1 TO 30: PRINT n: NEXT n
+
+When it has printed a screen full, the +3 will stop with the message `scroll?` at the bottom of the screen. You can now inspect the first 22 numbers at your leisure. When you have finished with them, press Y (for yes) and the +3 will give you the next screen full of numbers. Actually, any key will make the +3 carry on except **N** (for no), the **BREAK** key or the space bar. These will make the +3 stop running the program with the report `D BREAK - CONT repeats`.
+
+The `INPUT` statement can do much more than we have told you so far. You have already seen `INPUT` statements like...
+
+    INPUT "How old are you?", age
+
+...in which the +3 prints the caption `How old are you?` at the bottom of the screen, and then you have to type in your age. In fact though, an `INPUT` statement can be made up of items and separators in exactly the same way as a `PRINT` statement, so `How old are you?` and `age` are both `INPUT` items. `INPUT` items are generally the same as `PRINT` items, however, there are some very important differences.
+
+First, an obvious extra `INPUT` item is the variable whose value you require to be typed in - `age` in our example above. The rule is that if an `INPUT` item begins with a letter, then it must be a variable whose value is to be input.
+
+This would seem to mean that you can't print out the values of variables as part of a caption. However, you can get round this by putting brackets around the variable. Any expression that starts with a letter must be enclosed in brackets if it is to be printed as part of a caption.
+
+Any kind of `PRINT` item that is not affected by these rules is also an `INPUT` item. Here is an example to illustrate what's going on...
+
+    LET my age = INT ( RND * 100): INPUT ("I am ";my age;".");" How old are you?", your age
+
+`my age` is contained in brackets, so its value gets printed out. `your age` is not contained in brackets, so you have to type its value in.
+
+Everything that an `INPUT` statement writes goes to the bottom part of the screen, which acts somewhat independently of the top part. In particular, lines are numbered relative to the top line of the bottom half, even if this has moved up the actual TV screen (which it does if you type lots of `INPUT` data). Whatever the small screen does during `INPUT`, however, it will always revert to being two lines in size when the program stops, and you start editing.
+
+To see how `AT` works in `INPUT` statements, try this...
+
+    10 INPUT "This is line 1.", a$; AT 0,0;"This is line 0.",a$; AT 2,0;"This is line 2."; AT 1,0;"This is still line 1.",a$
+
+Run the program (just press **ENTER** each time it stops). When `This is line 2` is printed, the lower part of the screen moves up to make room for it; but the numbering moves up as well, so that the lines of text keep their same numbers.
+
+Now try this...
+
+    10 FOR n=0 TO 19: PRINT AT n, 0;n;: NEXT n
+    20 INPUT AT 0, 0;a$; AT 1, 0;a$; AT 2, 0;a$; AT 3, 0;a$; AT 4,
+        0;a$; AT 5, 0;a$;
+
+As the lower part of the screen goes up and up, the upper part remains undisturbed until the lower part threatens to write on the same line as the `PRINT` position. Then the upper part starts scrolling up to avoid this.
+
+Another refinement to the INPUT statement that we haven't seen yet is called `LINE` input and is a different way of inputting string variables. If you use `LINE` before the name of a string variable to be input, as in...
+
+    INPUT LINE a$
+
+...then the +3 will not give you the string quotes that it normally does for a string variable (though it will pretend to itself that they are there). So if you type in...
+
+    bugs
+
+...as the `INPUT` data, `a$` will be given the value `bugs`. Because the string quotes do not appear with the string, you cannot delete them and type in a different sort of string expression for the `INPUT` data. Remember that you cannot use `LINE` for numeric variables.
+
+There's an interesting side effect to `INPUT`. Whilst typing into an `INPUT` request, the old Spectrum single-key entry system enjoys a brief moment of freedom before being locked away again when you press ENTER. Run this program if you're interested...
+
+    10 INPUT numbers
+    20 PRINT numbers
+    30 GO TO 10
+
+Input a few numbers, and they'll be printed faithfully onto the screen. Now press **EXTEND MODE** followed by the **M** key. The word `PI` appears, and if you press **ENTER**, then `3.1415927` will appear as if by magic. However, if you type `PI` as two letters without the aid of **EXTEND MODE** then the +3 will stop with the report `2 Variable not found, 10:1`.
+
+There's no simple explanation for this behaviour, and it's best just to be aware that it can happen if you press some combinations of keys during `INPUT`. If for some reason you're keen to experiment, chapter 7 (Using 48 BASIC) will tell you which keys produce which effects.
+
+The control characters `CHR$ 22` and `CHR$ 23` have effects rather like `AT` and `TAB`. Whenever the +3 is instructed to print one of them, the character must be followed by two more characters that do not have their usual effect, but that are treated instead as numbers (their codes) to specify the line and column (for `AT`) or the tab position (for `TAB`). You will almost always find it easier to use `AT` and `TAB` in the usual way rather than use control characters, however, they might be useful in some circumstances. The `AT` control character is `CHR$ 22`. The first character after it specified the line number and the second specifies the column number, so that...
+
+    PRINT CHR$ 22+ CHR$ 1+ CHR$ c;
+
+...has exactly the same effect as...
+
+    PRINT AT 1, c;
+
+This is so that even if `CHR$ 1` or `CHR$ c` would normally have a different meaning (for instance if `c=13`); the `CHR$ 22` before them overrides that.
+
+The `TAB` control character is `CHR$ 23` and the two characters after it combine to give a number between 0 and 65535, specifying the number you would have in a `TAB` item. The statement...
+
+    PRINT CHR$ 23+ CHR$ a+CHR$ b;
+
+...has the same effect as...
+
+    PRINT TAB a+256*b;
+
+You can use `POKE` to stop the computer asking if you wish to `scroll?` by typing...
+
+    POKE 23692,255
+
+...every so often. After this it will scroll up 255 times before stopping with `scroll?`. As an example, try...
+
+    10 FOR n=0 TO 1000
+    20 PRINT n: POKE 23692,255
+    30 NEXT n
+
+...and watch everything whizz off the screen!
+
+Exercise...
+
+1. Try this program on some children, to test their multiplication tables...
+
+         10 LET m$=""
+         20 LET a= INT ( RND *12)+1: LET b = INT ( RND *12)+1
+         30 INPUT (m$) ' ' "what is ";(a);" x ";(b);"?";c
+        100 IF c=a*b THEN LET m$="Right.": GO TO 20
+        110 LET m$="Wrong. Try again.": GO TO 30
+
+If they are perceptive, they might manage to work out that they do not have to do the calculation themselves. For instance, if the +3 asks them to type the answer to 2 x 3, then all they have to do is type in `2*3` literally.
 
 ## <a id="part25"></a> Part 25 - The system variables
 
@@ -7476,7 +7765,6 @@ Details of the +3's hardware will be found in [chapter 8 part 30](#part30).
   - Thomas Ahn Kjaer <takjaer@daimi.aau.dk> did chapter 8 part 17.
   - Russell Marks <mr216@gre.ac.uk> did the rest.
 
-<script src="./spectrum-manual.js"></script>
 <script>
 spectrum('screen-calculator', 2, function(cx) {
   clear(cx);
@@ -7545,9 +7833,5 @@ spectrum('screen-charset', 2, function(cx) {
   graphics(cx, borderSize, borderSize + (3 * 8), '0123456789:;<=>?');
   text(cx, borderSize, borderSize + 184, '0 OK, 10:1');
 })
-
-keyboard('the-keyboard', function(cx) {
-  drawKeyboard(cx);
-});
 
 </script>

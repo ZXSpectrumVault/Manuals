@@ -295,16 +295,6 @@ const charLines = [
   "DRAW CLEAR RETURN COPY"
 ];
 
-function drawKeyboard(cx) {
-  const keyHeight = 50;
-  const key1U = 50;
-  const padding = 3;
-  cx.canvas.width = 400;
-  cx.canvas.height = (5 * keyHeight) + (4 * padding);
-  cx.fillStyle = 'black';
-  cx.fillRect(0, 0, 100, 100);
-}
-
 function keyboard(id, f) {
   const c = document.getElementById(id);
   if (c == null) {
@@ -312,5 +302,159 @@ function keyboard(id, f) {
     return;
   }
   const cx = c.getContext('2d', { alpha: false });
+  if (cx == null) {
+    console.log(`Failed to get 2d context for canvas[id='${id}'] to render keyboard to.`);
+    return;
+  }
+  c.width = 673;
+  c.height = 249;
+  cx.fillStyle = '#fefefe';
+  cx.fillRect(0, 0, c.width, c.height);
+  cx.fillStyle = '#000';
   f(cx);
+}
+
+const keyboardCells = [
+  [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1.5 ],
+  [ 1.5, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ],
+  [ 1.75, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1.75 ],
+  [ 2.25, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2.25 ],
+  [ 1, 1, 1, 1, 1, 4.5, 1, 1, 1, 1 ]
+];
+
+const keyboardLabels = [
+  [ 'TRUE\nVIDEO', 'INV\nVIDEO', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', 'BREAK' ],
+  [ 'DELETE', 'GRAPH', 'Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P' ],
+  [ 'EXTEND MODE', 'EDIT', 'A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L', 'ENTER'],
+  [ 'CAPS SHIFT', 'CAPS\nLOCK', 'Z', 'X', 'C', 'V', 'B', 'N', 'M', '.', 'CAPS SHIFT'],
+  [ 'SYMB\nSHIFT', ';', '"', '⇦', '⇨', 'SPACE', '⇧', '⇩', ',', 'SYMB\nSHIFT']
+];
+
+const keyboardLabelsKlower = [
+  [ 'TRUE\nVIDEO', 'INV\nVIDEO', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', 'SPACE' ],
+  [ 'DELETE', '', 'Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P' ],
+  [ 'EXTEND MODE', 'EDIT', 'A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L', 'ENTER'],
+  [ '', '', 'Z', 'X', 'C', 'V', 'B', 'N', 'M', '.', ''],
+  [ '', ';', '"', '⇦', '⇨', 'SPACE', '⇧', '⇩', ',', '']
+];
+
+const keyboardLabelsK = [
+  [ ],
+  [ '', '', 'PLOT', 'DRAW', 'REM', 'RUN', 'RANDOMIZE', 'RETURN', 'IF', 'INPUT', 'POKE', 'PRINT' ],
+  [ '', '', 'NEW', 'SAVE', 'DIM', 'FOR', 'GOTO', 'GOSUB', 'LOAD', 'LIST', 'LET', ''],
+  [ '', '', 'COPY', 'CLEAR', 'CONTINUE', 'CLS', 'BORDER', 'NEXT', 'PAUSE', '', ''],
+  []
+];
+
+const lowerKeyFont = '11px Arial';
+const midKeyBigFont = '24px Roboto Mono';
+
+function boxChar(cx, index, x, y, pad, size) {
+  const half = size / 2;
+  cx.strokeRect(x + pad, y + pad, size, size);
+  switch (index) {
+    case 1: cx.fillRect(x + pad + half, y + pad, half, half); break;
+    case 2: cx.fillRect(x + pad, y + pad, half, half); break;
+    case 3: cx.fillRect(x + pad, y + pad, size, half); break;
+    case 4: cx.fillRect(x + pad + half, y + pad + half, half, half); break;
+    case 5: cx.fillRect(x + pad + half, y + pad, half, size); break;
+    case 6:
+        cx.fillRect(x + pad + half, y + pad + half, half, half);
+        cx.fillRect(x + pad, y + pad, half, half);
+        break;
+    case 7:
+        cx.fillRect(x + pad, y + pad, size, half);
+        cx.fillRect(x + pad + half, y + pad + half, half, half);
+        break;
+  }
+}
+
+function boxCharInverse(cx, index, x, y, pad, size) {
+  const half = size / 2;
+  cx.strokeRect(x + pad, y + pad, size, size);
+  switch (index) {
+    case 1:
+      cx.fillRect(x + pad, y + pad, half, half);
+      cx.fillRect(x + pad, y + pad + half, size, half);
+      break;
+    case 2:
+      cx.fillRect(x + pad + half, y + pad, half, half);
+      cx.fillRect(x + pad, y + pad + half, size, half);
+      break;
+    case 3: cx.fillRect(x + pad, y + pad + half, size, half); break;
+    case 4:
+      cx.fillRect(x + pad, y + pad, size, half);
+      cx.fillRect(x + pad, y + pad + half, half, half);
+      break;
+    case 5: cx.fillRect(x + pad, y + pad, half, size); break;
+    case 6:
+        cx.fillRect(x + pad, y + pad + half, half, half);
+        cx.fillRect(x + pad + half, y + pad, half, half);
+        break;
+    case 7:
+        cx.fillRect(x + pad, y + pad, size, half);
+        cx.fillRect(x + pad + half, y + pad + half, half, half);
+        break;
+    case 8: cx.fillRect(x + pad, y + pad, size, size); break;
+  }
+}
+
+function drawDefaultKeyboard(cx) {
+  const fontSize = 11;
+  cx.font = lowerKeyFont;
+  cx.textAlign = 'center';
+  drawKeyboard(cx, function(c, r, x, y, w, h) {
+    cx.textAlign = 'right';
+    drawLabel(cx, keyboardLabels[r][c], x + w, y + h + fontSize, w, h, fontSize);
+  });
+}
+
+function drawLabel(cx, label, x, y, w, h, fontSize) {
+  if (label == undefined || label == '') return;
+  let lines = label.split('\n');
+  let count = lines.length;
+  let sy = y - (fontSize * count);
+  for (let i = 0; i < count; i++) {
+    cx.fillText(lines[i], x, sy, w);
+    sy += fontSize;
+  }
+}
+
+function drawKeyboard(cx, cellFunc) {
+  let u = 50;
+  let gap = 4;
+  cx.strokeStyle = '#000';
+  cx.lineWidth = 1;
+  for (let r = 0; r < keyboardCells.length; r++) {
+    let x = 1;
+    let keyboardCellRow = keyboardCells[r];
+    for (let c = 0; c < keyboardCellRow.length; c++) {
+      let cell = keyboardCellRow[c];
+      let w = cell * u;
+      let y = 1 + r * u;
+      if (c === 11 && r == 2)
+        drawEnter(cx, x, y, u, gap);
+      else
+        cx.strokeRect(x, y, w - gap, u - gap);
+      if (cellFunc != undefined)
+        cellFunc(c, r, x + gap, y + gap, w - gap * 3, u - gap * 3);
+      x += w;
+    }
+  }
+}
+
+function drawEnter(cx, x, y, u, gap) {
+  // Enter is not a rectangle
+  let t = 1 + 1 * u;
+  let l = 1 + 12.5 * u;
+  cx.miterLimit = 0;
+  cx.beginPath();
+  cx.moveTo(l, t + u);
+  cx.lineTo(l, t);
+  cx.lineTo(l + u - gap, t);
+  cx.lineTo(l + u - gap, t + u + u - gap);
+  cx.lineTo(l - (u * 0.75), t + u + u - gap);
+  cx.lineTo(l - (u * 0.75), t + u);
+  cx.lineTo(l, t + u);
+  cx.stroke();
 }
