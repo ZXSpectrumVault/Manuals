@@ -396,8 +396,9 @@ function boxCharInverse(cx, index, x, y, pad, size) {
       cx.fillRect(x + pad + half, y + pad, half, half);
       break;
     case 7:
-      cx.fillRect(x + pad, y + pad + half, half, half);
+      cx.fillRect(x + pad + half, y + pad + half, half, half);
       break;
+    case 0:
     case 8:
       cx.fillRect(x + pad, y + pad, size, size);
       break;
@@ -406,7 +407,6 @@ function boxCharInverse(cx, index, x, y, pad, size) {
 
 function drawDefaultKeyboard(cx) {
   const fontSize = 11;
-  cx.font = lowerKeyFont;
   cx.textAlign = 'center';
   drawKeyboard(cx, function(c, r, x, y, w, h) {
     cx.textAlign = 'right';
@@ -446,6 +446,7 @@ function drawKeyboard(cx, cellFunc) {
       x += w;
     }
   }
+  cx.font = lowerKeyFont;
 }
 
 function drawEnter(cx, x, y, u, gap) {

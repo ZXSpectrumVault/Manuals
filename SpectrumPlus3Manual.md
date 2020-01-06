@@ -1,5 +1,6 @@
 <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:500|Roboto+Slab:400,700&amp;display=swap" rel="stylesheet"></link>
 <link href="./spectrum-manual.css" rel="stylesheet"></link>
+<script src="./spectrum-manual.js"></script>
 
 # Contents
 
@@ -463,26 +464,26 @@ As its name suggests, the menu offers you a selection of options. You can choose
 
 Notice that the menu option `Loader` appears to be highlighted by a 'bar'. This means that the `Loader` option is ready to be selected - (the selection hasn't been confirmed yet). For the purpose of this example, let's assume that you don't want to select `Loader`, but that instead you want to select `+3 BASIC`. This means that you need to move the highlight bar to the option `+3 BASIC`. To do this, use the cursor keys (shown below) until the highlight bar moves to the desired position.
 
-```
-+-----------------------------------------------------------------------------+
-|     |     |     |     |     |     |     |     |     |     |     |     |     |
-|     |     |     |     |     |     |     |     |     |     |     |     |     |
-|-----------------------------------------------------------------------------|
-|       |     |     |     |     |     |     |     |     |     |     |     |   |
-|       |     |     |     |     |     |     |     |     |     |     |     |   |
-|-------------------------------------------------------------------------+   |
-|         |     |     |     |     |     |     |     |     |     |     |       |
-|         | EDIT|     |     |     |     |     |     |     |     |     | ENTER |
-|-----------------------------------------------------------------------------|
-|            |     |     |     |     |     |     |     |     |     |          |
-|            |     |     |     |     |     |     |     |     |     |          |
-|-----------------------------------------------------------------------------|
-|     |     |     |     |     |                       | /^\ |  |  |     |     |
-|     |     |     |     |     |                       |  |  | \v/ |     |     |
-+-----------------------------------------------------------------------------+
-
-                                                       Cursor Keys
-```
+<center>
+<canvas id="keyboard-choose-option"></canvas>
+<script>
+const chooseOptions = [
+  [],
+  [],
+  [,'EDIT',,,,,,,,,,'ENTER'],
+  [],
+  [ , , , , , ,'⇧', '⇩'],
+];
+keyboard('keyboard-choose-option',
+  function(cx) {
+    const fontSize = 11;
+    drawKeyboard(cx, function(c, r, x, y, w, h) {
+      cx.textAlign = 'right';
+      drawLabel(cx, chooseOptions[r][c], x + w, y + h + fontSize, w, h, fontSize);
+    });
+  });
+</script>
+</center>
 
 When the highlight bar is on `+3 BASIC`, confirm this choice by pressing the **ENTER** key.
 
@@ -1117,8 +1118,6 @@ All the BASIC commands, functions and operators are available directly from the 
 
 `K` (for Keywords) mode automatically replaces `L` (for Letters mode when the machine is expecting a command or program line (rather than input data), and from its position on the line the +3 knows that it should expect either a line number or a keyword. `K` mode occurs at the beginning of a line, or after a colon ':' (except in a string), or after the keyword `THEN`. Whenever the `K` cursor appears, the next key pressed will be interpreted as either a keyword or a line number, as follows...
 
-<script src="./spectrum-manual.js"></script>
-
 <center>
 <canvas id="keyboard-mode-k"></canvas>
 <script>keyboard('keyboard-mode-k', function(cx) {
@@ -1150,18 +1149,18 @@ In both `K` and `L` modes, pressing **SYMB SHIFT** together with a key will be i
 <canvas id="keyboard-48-shift"></canvas>
 <script>
 const keyboardLabels48ShiftLower = [
-  [ '', '', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '' ],
-  [ '', '', 'Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P' ],
-  [ '', '', 'A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L', 'ENTER'],
-  [ '', '', 'Z', 'X', 'C', 'V', 'B', 'N', 'M', '.', ''],
-  [ 'SYMB\nSHIFT', ';', '"', '', '', 'SPACE', '', '', ',', 'SYMB\nSHIFT']
+  [ , , '1', '2', '3', '4', '5', '6', '7', '8', '9', '0' ],
+  [ , , 'Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P' ],
+  [ , , 'A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L', 'ENTER'],
+  [ , , 'Z', 'X', 'C', 'V', 'B', 'N', 'M', '.' ],
+  [ 'SYMB\nSHIFT', ';', '"', , , 'SPACE', , , ',', 'SYMB\nSHIFT']
 ];
 const keyboardLabels48Shift = [
-  [ '', '', '!', '@', '#', '$', '%', '&', "'", '(', ')', '_' ],
-  [ '', '', '<=', '<>', '>=', '<', '>', 'AND', 'OR', 'AT', ';', '"' ],
-  [ '', '', 'STOP', 'NOT', 'STEP', 'TO', 'THEN', '^', '-', '+', '=' ],
-  [ '', '', ':', '£', '?', '/', '*', ',', '.', '.' ],
-  [ '', ';', '"', '', '', '', '', '', ',' ]
+  [ , , '!', '@', '#', '$', '%', '&', "'", '(', ')', '_' ],
+  [ , , '<=', '<>', '>=', '<', '>', 'AND', 'OR', 'AT', ';', '"' ],
+  [ , , 'STOP', 'NOT', 'STEP', 'TO', 'THEN', '^', '-', '+', '=' ],
+  [ , , ':', '£', '?', '/', '*', ',', '.', '.' ],
+  [ , ';', '"', , , , , , ',' ]
 ];
 keyboard('keyboard-48-shift', function(cx) {
   drawKeyboard(cx, function(c, r, x, y, w, h) {
@@ -1189,17 +1188,17 @@ Using **CAPS SHIFT** in `L` mode simply converts small letters to capitals. In `
 <canvas id="keyboard-48-extend"></canvas>
 <script>
 const keyboardLabels48ExtendLower = [
-  [ '', '', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', 'SPACE' ],
-  [ '', '', 'Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P' ],
-  [ 'EXTEND MODE', '', 'A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L', 'ENTER'],
-  [ '', '', 'Z', 'X', 'C', 'V', 'B', 'N', 'M', ],
-  [ '', '', '', '', '', 'SPACE', ]
+  [ , , '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', 'SPACE' ],
+  [ , , 'Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P' ],
+  [ 'EXTEND MODE', , 'A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L', 'ENTER'],
+  [ , , 'Z', 'X', 'C', 'V', 'B', 'N', 'M', ],
+  [ , , , , , 'SPACE', ]
 ];
 const keyboardLabels48Extend = [
-  [ '', '', 'BLUE\nPAPER', 'RED\nPAPER', 'MAGENTA\nPAPER', 'GREEN\nPAPER', 'CYAN\nPAPER', 'YELLOW\nPAPER', 'WHITE\nPAPER', 'BRIGHT\nOFF', 'BRIGHT\nON', 'BLACK\nPAPER' ],
-  [ '', '', 'SIN', 'COS', 'TAN', 'INT', 'RND', 'STR$', 'CHR$', 'CODE', 'PEEK', 'TAB' ],
-  [ '', '', 'READ', 'RESTORE', 'DATA', 'SGN', 'ABS', 'SQR', 'VAL', 'LEN', 'USR' ],
-  [ '', '', 'LN', 'EXP', 'LPRINT', 'LLIST', 'BIN', 'INKEY$', 'PI' ],
+  [ , , 'BLUE\nPAPER', 'RED\nPAPER', 'MAGENTA\nPAPER', 'GREEN\nPAPER', 'CYAN\nPAPER', 'YELLOW\nPAPER', 'WHITE\nPAPER', 'BRIGHT\nOFF', 'BRIGHT\nON', 'BLACK\nPAPER' ],
+  [ , , 'SIN', 'COS', 'TAN', 'INT', 'RND', 'STR$', 'CHR$', 'CODE', 'PEEK', 'TAB' ],
+  [ , , 'READ', 'RESTORE', 'DATA', 'SGN', 'ABS', 'SQR', 'VAL', 'LEN', 'USR' ],
+  [ , , 'LN', 'EXP', 'LPRINT', 'LLIST', 'BIN', 'INKEY$', 'PI' ],
   [ ]
 ];
 keyboard('keyboard-48-extend', function(cx) {
@@ -1222,17 +1221,17 @@ Applying **CAPS SHIFT** while in `E` mode, the next key pressed will be interpre
 <canvas id="keyboard-48-extend-caps"></canvas>
 <script>
 const keyboardLabels48ExtendCapsLower = [
-  [ '', '', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '' ],
-  [ '', '', 'Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P' ],
-  [ 'EXTEND MODE', '', 'A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L', 'ENTER'],
-  [ 'CAPS SHIFT', '', 'Z', 'X', 'C', 'V', 'B', 'N', 'M', '', 'CAPS SHIFT' ],
-  [ '', '', '', '', '', 'SPACE', ]
+  [ , , '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '' ],
+  [ , , 'Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P' ],
+  [ 'EXTEND MODE', , 'A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L', 'ENTER'],
+  [ 'CAPS SHIFT', , 'Z', 'X', 'C', 'V', 'B', 'N', 'M', , 'CAPS SHIFT' ],
+  [ , , , , , 'SPACE', ]
 ];
 const keyboardLabels48ExtendCaps = [
-  [ '', '', 'BLUE\nINK', 'RED\nINK', 'MAGENTA\nINK', 'GREEN\nINK', 'CYAN\nINK', 'YELLOW\nINK', 'WHITE\nINK', 'FLASH\nOFF', 'FLASH\nON', 'BLACK\nINK' ],
-  [ '', '', 'ASN', 'ACS', 'ATN', 'VERIFY', 'MERGE', '[', ']', 'IN', 'OUT', '©' ],
-  [ '', '', '~', '|', '\\', '{', '}', 'CIRCLE', 'VAL$', 'SCREEN$', 'ATTR' ],
-  [ '', '', 'BEEP', 'INK', 'PAPER', 'FLASH', 'BRIGHT', 'OVER', 'INVERSE' ],
+  [ , , 'BLUE\nINK', 'RED\nINK', 'MAGENTA\nINK', 'GREEN\nINK', 'CYAN\nINK', 'YELLOW\nINK', 'WHITE\nINK', 'FLASH\nOFF', 'FLASH\nON', 'BLACK\nINK' ],
+  [ , , 'ASN', 'ACS', 'ATN', 'VERIFY', 'MERGE', '[', ']', 'IN', 'OUT', '©' ],
+  [ , , '~', '|', '\\', '{', '}', 'CIRCLE', 'VAL$', 'SCREEN$', 'ATTR' ],
+  [ , , 'BEEP', 'INK', 'PAPER', 'FLASH', 'BRIGHT', 'OVER', 'INVERSE' ],
   [ ]
 ];
 keyboard('keyboard-48-extend-caps', function(cx) {
@@ -1260,17 +1259,17 @@ Applying **SYMB SHIFT** while in `E` mode, the next key pressed will be interpre
 <canvas id="keyboard-48-extend-sym"></canvas>
 <script>
 const keyboardLabels48ExtendSymLower = [
-  [ '', '', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '' ],
-  [ '', '', 'Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P' ],
-  [ 'EXTEND MODE', '', 'A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L', 'ENTER'],
-  [ '', '', 'Z', 'X', 'C', 'V', 'B', 'N', 'M', '', '' ],
-  [ 'SYMB\nSHIFT', '', '', '', '', 'SPACE', '', '', '', 'SYMB\nSHIFT' ]
+  [ , , '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '' ],
+  [ , , 'Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P' ],
+  [ 'EXTEND MODE', , 'A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L', 'ENTER'],
+  [ , , 'Z', 'X', 'C', 'V', 'B', 'N', 'M', , '' ],
+  [ 'SYMB\nSHIFT', , , , , 'SPACE', , , , 'SYMB\nSHIFT' ]
 ];
 const keyboardLabels48ExtendSym = [
-  [ '', '', 'DEFN FN', 'FN', 'LINE', 'OPEN #', 'CLOSE #', 'MOVE', 'ERASE', 'POINT', 'CAT', 'FORMAT' ],
-  [ '', '', 'ASN', 'ACS', 'ATN', 'VERIFY', 'MERGE', '[', ']', 'IN', 'OUT', '©' ],
-  [ '', '', '~', '|', '\\', '{', '}', 'CIRCLE', 'VAL$', 'SCREEN$', 'ATTR' ],
-  [ '', '', 'BEEP', 'INK', 'PAPER', 'FLASH', 'BRIGHT', 'OVER', 'INVERSE' ],
+  [ , , 'DEFN FN', 'FN', 'LINE', 'OPEN #', 'CLOSE #', 'MOVE', 'ERASE', 'POINT', 'CAT', 'FORMAT' ],
+  [ , , 'ASN', 'ACS', 'ATN', 'VERIFY', 'MERGE', '[', ']', 'IN', 'OUT', '©' ],
+  [ , , '~', '|', '\\', '{', '}', 'CIRCLE', 'VAL$', 'SCREEN$', 'ATTR' ],
+  [ , , 'BEEP', 'INK', 'PAPER', 'FLASH', 'BRIGHT', 'OVER', 'INVERSE' ],
   [ ]
 ];
 keyboard('keyboard-48-extend-sym', function(cx) {
@@ -1298,11 +1297,11 @@ The keyboard using **SYMB SHIFT** in `E` mode
 <canvas id="keyboard-48-graph"></canvas>
 <script>
 const keyboardLabelsGraph48Lower = [
-  [ '', '', '1', '2', '3', '4', '5', '6', '7', '8', '9', '', 'SPACE' ],
-  [ 'DELETE', 'GRAPH', 'Q', '', 'E', 'R', 'T', '', 'U', 'I', 'O', 'P' ],
-  [ '', '', 'A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L' ],
-  [ '', '', '', '', 'C', '', 'B', 'N', 'M', '', ''],
-  [ '', '', '', '', '', 'SPACE' ],
+  [ , , '1', '2', '3', '4', '5', '6', '7', '8', '9', , 'SPACE' ],
+  [ 'DELETE', 'GRAPH', 'Q', , 'E', 'R', 'T', , 'U', 'I', 'O', 'P' ],
+  [ , , 'A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L' ],
+  [ , , , , 'C', , 'B', 'N', 'M', , ''],
+  [ , , , , , 'SPACE' ],
 ];
 keyboard('keyboard-48-graph', function(cx) {
   drawKeyboard(cx, function(c, r, x, y, w, h) {
@@ -1339,11 +1338,11 @@ Applying **CAPS SHIFT** while in `G` mode inverts the mosaic graphics (ie. the i
 <canvas id="keyboard-48-graph-caps"></canvas>
 <script>
 const keyboardLabelsGraphCaps48Lower = [
-  [ '', '', '1', '2', '3', '4', '5', '6', '7', '8', '9', '', 'SPACE' ],
-  [ 'DELETE', 'GRAPH', 'Q', '', 'E', 'R', 'T', '', 'U', 'I', 'O', 'P' ],
-  [ '', '', 'A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L' ],
-  [ 'CAPS SHIFT', '', '', '', 'C', '', 'B', 'N', 'M', '', 'CAPS SHIFT'],
-  [ '', '', '', '', '', 'SPACE' ],
+  [ , , '1', '2', '3', '4', '5', '6', '7', '8', '9', , 'SPACE' ],
+  [ 'DELETE', 'GRAPH', 'Q', , 'E', 'R', 'T', , 'U', 'I', 'O', 'P' ],
+  [ , , 'A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L' ],
+  [ 'CAPS SHIFT', , , , 'C', , 'B', 'N', 'M', , 'CAPS SHIFT'],
+  [ , , , , , 'SPACE' ],
 ];
 keyboard('keyboard-48-graph-caps', function(cx) {
   drawKeyboard(cx, function(c, r, x, y, w, h) {
@@ -1419,16 +1418,16 @@ To type the symbols which appear on the alphanumeric keys on the keyboard, ie...
 <script>
 const keyboardLabelsSymbolsLower = [
   [ ' ', ' ', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0' ],
-  [ '', '', '', '', '', 'R', 'T' ],
-  [ '', '', '', '', '', '', '', 'H', 'J', 'K', 'L' ],
-  [ '', '', 'Z', 'X', 'C', 'V', 'B' ],
-  [ 'SYMB\nSHIFT', '', '', '', '', '', '', '', '', 'SYMB\nSHIFT' ]
+  [ , , , , , 'R', 'T' ],
+  [ , , , , , , , 'H', 'J', 'K', 'L' ],
+  [ , , 'Z', 'X', 'C', 'V', 'B' ],
+  [ 'SYMB\nSHIFT', , , , , , , , , 'SYMB\nSHIFT' ]
 ];
 const keyboardLabelsSymbols = [
-  [ '', '', '!', '@', '#', '$', '%', '&', "'", '(', ')', '_' ],
-  [ '', '', '', '', '', '<', '>' ],
-  [ '', '', '', '', '', '', '', '^', '-', '+', '=' ],
-  [ '', '', ':', '£', '?', '/', '*' ],
+  [ , , '!', '@', '#', '$', '%', '&', "'", '(', ')', '_' ],
+  [ , , , , , '<', '>' ],
+  [ , , , , , , , '^', '-', '+', '=' ],
+  [ , , ':', '£', '?', '/', '*' ],
   []
 ];
 keyboard('keyboard-sym-shift', function(cx) {
@@ -1457,15 +1456,15 @@ Additionally, the symbols...
 <script>
 const keyboardLabelsSymbolsExtLower = [
   [ ],
-  [ '', '', '', '', '', '', '', 'Y', 'U', '', '', 'P' ],
-  [ 'EXTENDED\nMODE', '', 'A', 'S', 'D', 'F', 'G' ],
+  [ , , , , , , , 'Y', 'U', , , 'P' ],
+  [ 'EXTENDED\nMODE', , 'A', 'S', 'D', 'F', 'G' ],
   [ ],
-  [ 'SYMB\nSHIFT', '', '', '', '', '', '', '', '', 'SYMB\nSHIFT' ]
+  [ 'SYMB\nSHIFT', , , , , , , , , 'SYMB\nSHIFT' ]
 ];
 const keyboardLabelsSymbolsExt = [
   [ ],
-  [ '', '', '', '', '', '', '', '[', ']', '', '', '©' ],
-  [ '', '', '~', '|', '\\', '{', '|' ],
+  [ , , , , , , , '[', ']', , , '©' ],
+  [ , , '~', '|', '\\', '{', '|' ],
   [ ],
   []
 ];
@@ -1490,8 +1489,8 @@ To enter graphics mode, the **GRAPH** key is pressed once. Mosaic graphics (see 
 <canvas id="keyboard-graph"></canvas>
 <script>
 const keyboardLabelsGraphLower = [
-  [ '', '', '1', '2', '3', '4', '5', '6', '7', '8', '9' ],
-  [ '', 'GRAPH' ],
+  [ , , '1', '2', '3', '4', '5', '6', '7', '8', '9' ],
+  [ , 'GRAPH' ],
   [ ],
   [ ],
   [ ],
@@ -3048,53 +3047,77 @@ This program prints out the entire character set...
 
 On the screen will appear the following...
 
+<center>
 <canvas id="screen-charset"></canvas>
 
 The character set
+</center>
 
-As you can see, the character set consists of a space, 15 symbols and punctuation marks, the ten digits, seven more symbols, the capital letters, six more symbols, the lower case letters and five more symbols. These are all (except £ and ©) taken from a widely-used set of characters known as ASCII (American Standard Codes for Information Interchange). ***ASCII*** also assigns numeric codes to these characters, and these are the codes that the +3 uses.
+As you can see, the character set consists of a space, 15 symbols and punctuation marks, the ten digits, seven more symbols, the capital letters, six more symbols, the lower case letters and five more symbols. These are all (except `£` and `©`) taken from a widely-used set of characters known as ***ASCII*** (American Standard Codes for Information Interchange). ***ASCII*** also assigns numeric codes to these characters, and these are the codes that the +3 uses.
 
 The rest of the characters are not part of ASCII, but are dedicated to the ZX Spectrum range of computers. First amongst them are a space and 15 patterns of black and white blobs. These are called the ***graphics symbols*** and can be used for drawing pictures. You can enter these from the keyboard, using what's known as ***graphics mode***. Pressing the **GRAPH** key switches on graphics mode, after which the keys **1,** **2**, **3**, **4**, **5**, **6**, **7** and **8** will produce the graphics symbols...
 
-````
-+-----------------------------------------------------------------------------+
-|     |     |..## |##.. |#### |.... |..## |##.. |#### |.... |graph|     |     |
-|     |     |....1|....2|....3|..##4|..##5|..##6|..##7|....8|off 9|     |     |
-|-----------------------------------------------------------------------------|
-|       |     |     |     |     |     |     |     |     |     |     |     |   |
-|       |GRAPH|     |     |     |     |     |     |     |     |     |     |   |
-|-------------------------------------------------------------------------+   |
-|         |     |     |     |     |     |     |     |     |     |     |       |
-|         |     |     |     |     |     |     |     |     |     |     |       |
-|-----------------------------------------------------------------------------|
-|            |     |     |     |     |     |     |     |     |     |          |
-|            |     |     |     |     |     |     |     |     |     |          |
-|-----------------------------------------------------------------------------|
-|     |     |     |     |     |                       |     |     |     |     |
-|     |     |     |     |     |                       |     |     |     |     |
-+-----------------------------------------------------------------------------+
-````
+<center>
+<canvas id="keyboard-graph-blocks"></canvas>
+<script>
+const keyboardLabelsGraphBlocksLower = [
+  [ ,, '1', '2', '3', '4', '5', '6', '7', '8', '9' ],
+  [ , 'GRAPH' ],
+  [ ],
+  [ ],
+  [ ]
+];
+keyboard('keyboard-graph-blocks', function(cx) {
+  drawKeyboard(cx, function(c, r, x, y, w, h) {
+    cx.font = lowerKeyFont;
+    cx.textAlign = 'right';
+    const label = keyboardLabelsGraphBlocksLower[r][c];
+    drawLabel(cx, label, x + w, y + h + 11, w, h, 11);
+    if (r == 0) {
+      if (c == 10) {
+        cx.textAlign = 'center';
+        cx.font = '9px Arial';
+        drawLabel(cx, 'GRAPHICS\nMODE\nOFF', x + w / 2, y + h, w, h, 10);
+      } else if (c > 1 && c < 10) {
+        boxChar(cx, c - 1, x, y, 4, 24);
+      }
+    }
+  })
+});
+</script>
+</center>
 
 While in graphics mode, pressing **CAPS SHIFT** together with one of the keys **1** to **8** produces 'inverted' versions of the same symbols, ie. black becomes white and white becomes black...
 
-````
-+-----------------------------------------------------------------------------+
-|     |     |##.. |..## |.... |#### |##.. |..## |.... |#### |graph|     |     |
-|     |     |####1|####2|####3|##..4|##..5|##..6|##..7|####8|off 9|     |     |
-|-----------------------------------------------------------------------------|
-|       |     |     |     |     |     |     |     |     |     |     |     |   |
-|       |GRAPH|     |     |     |     |     |     |     |     |     |     |   |
-|-------------------------------------------------------------------------+   |
-|         |     |     |     |     |     |     |     |     |     |     |       |
-|         |     |     |     |     |     |     |     |     |     |     |       |
-|-----------------------------------------------------------------------------|
-|            |     |     |     |     |     |     |     |     |     |          |
-| CAPS SHIFT |     |     |     |     |     |     |     |     |     |CAPS SHIFT|
-|-----------------------------------------------------------------------------|
-|     |     |     |     |     |                       |     |     |     |     |
-|     |     |     |     |     |                       |     |     |     |     |
-+-----------------------------------------------------------------------------+
-````
+<center>
+<canvas id="keyboard-graph-caps-blocks"></canvas>
+<script>
+const keyboardLabelsGraphCapsBlocksLower = [
+  [ , , '1', '2', '3', '4', '5', '6', '7', '8', '9' ],
+  [ , 'GRAPH' ],
+  [ ],
+  [ 'CAPS SHIFT' , , , , , , , , , , 'CAPS SHIFT' ],
+  [ ]
+];
+keyboard('keyboard-graph-caps-blocks', function(cx) {
+  drawKeyboard(cx, function(c, r, x, y, w, h) {
+    cx.font = lowerKeyFont;
+    cx.textAlign = 'right';
+    const label = keyboardLabelsGraphCapsBlocksLower[r][c];
+    drawLabel(cx, label, x + w, y + h + 11, w, h, 11);
+    if (r == 0) {
+      if (c == 10) {
+        cx.textAlign = 'center';
+        cx.font = '9px Arial';
+        drawLabel(cx, 'GRAPHICS\nMODE\nOFF', x + w / 2, y + h, w, h, 10);
+      } else if (c > 1 && c < 10) {
+        boxCharInverse(cx, c - 1, x, y, 4, 24);
+      }
+    }
+  })
+});
+</script>
+</center>
 
 The cursor keys won't work properly while all this is going on as the +3 interprets them as shifted number keys, and prints graphics characters accordingly.
 
@@ -3102,35 +3125,37 @@ Pressing the **9** key turns everything back to normal (as does pressing **GRAPH
 
 Here are the sixteen graphics symbols...
 
-````
-           Symbol    Code                Symbol    Code
-            ____                          ____
-           |    |    128                 |####|    143
-           |____|                        |####|
-            ____                          ____
-           |  ##|    129                 |##  |    142
-           |____|                        |####|
-            ____                          ____
-           |##  |    130                 |  ##|    141
-           |____|                        |####|
-            ____                          ____
-           |####|    131                 |    |    140
-           |____|                        |####|
-            ____                          ____
-           |    |    132                 |####|    139
-           |__##|                        |##__|
-            ____                          ____
-           |  ##|    133                 |##  |    138
-           |__##|                        |##__|
-            ____                          ____
-           |##  |    134                 |  ##|    137
-           |__##|                        |##__|
-            ____                          ____
-           |####|    135                 |    |    136
-           |__##|                        |##__|
-````
+<center>
+
+| Symbol | Code | Symbol | Code
+| :----: | :--: | :----: | :--:
+| <canvas id="box-char-0"></canvas> | 128 | <canvas id="box-char-inv-0"></canvas> | 143
+| <canvas id="box-char-1"></canvas> | 129 | <canvas id="box-char-inv-1"></canvas> | 142
+| <canvas id="box-char-2"></canvas> | 130 | <canvas id="box-char-inv-2"></canvas> | 141
+| <canvas id="box-char-3"></canvas> | 131 | <canvas id="box-char-inv-3"></canvas> | 140
+| <canvas id="box-char-4"></canvas> | 132 | <canvas id="box-char-inv-4"></canvas> | 139
+| <canvas id="box-char-5"></canvas> | 133 | <canvas id="box-char-inv-5"></canvas> | 138
+| <canvas id="box-char-6"></canvas> | 134 | <canvas id="box-char-inv-6"></canvas> | 137
+| <canvas id="box-char-7"></canvas> | 135 | <canvas id="box-char-inv-7"></canvas> | 136
+
+<script>
+(function() {
+  const size = 24;
+  for (let i = 0; i < 8; i++) {
+    const reg = document.getElementById('box-char-' + i);
+    reg.width = reg.height = size;
+    boxChar(reg.getContext('2d'), i, 0, 0, 0, size);
+    const inv = document.getElementById('box-char-inv-' + i);
+    inv.width = inv.height = size;
+    boxCharInverse(inv.getContext('2d'), i, 0, 0, 0, size);
+  }
+})();
+</script>
+</center>
 
 After the graphics symbols in the character set, you will see what appears to be another copy of the alphabet from A to S. These are characters that you can redefine yourself (though when the machine is first switched on they are set as letters) - they are called ***user-defined graphics***. You can type these in from the keyboard by going into graphics mode, and then using the letter keys **A** to **S**.
+
+To define a new character for yourself, follow this recipe, it defines a character to show π.
 
 (i) Work out what the character looks like. Each character has an 8 x 8 grid of dots, each of which can appear to be on or off. You'd draw a diagram something like this (with blank squares representing the dots which are on)...
 
@@ -3158,7 +3183,7 @@ When a dot is on, the +3 prints the ink colour; when a dot if off, the +3 prints
 
 We've left a one-square border around the edge because all the other letters also have one (except for lower case letters with tails, where the tail goes right down to the bottom).
 
-(ii) Work out which user-defined graphic you wish to display pi - let's say the one corresponding to **P** so that if you press **P** (after pressing **GRAPH**) you get π.
+(ii) Work out which user-defined graphic you wish to display π - let's say the one corresponding to **P** so that if you press **P** (after pressing **GRAPH**) you get π.
 
 (iii) Store the new pattern. Each user-defined graphic has its pattern stored as eight numbers, one for each row.  You can write each of these numbers in a program as `BIN` followed by eight 0's or 1's - 0 for paper, 1 for ink - so the eight numbers for our pi character are...
 
