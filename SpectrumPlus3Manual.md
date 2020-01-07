@@ -1,5 +1,5 @@
 <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:500|Roboto+Slab:400,700&amp;display=swap" rel="stylesheet"></link>
-<link href="./spectrum-manual.css?" rel="stylesheet"></link>
+<link href="./spectrum-manual.css" rel="stylesheet"></link>
 <script src="./spectrum-manual.js"></script>
 
 # Contents
@@ -164,12 +164,9 @@ Therefore, you should adopt the following reading programme...
 
 [Chapter 10](#chapter10) - This chapter illustrates how add-ons (peripherals) are connected to the +3. Peripherals include such devices as a cassette unit, a printer, an additional disk drive, a joystick, etc. So if you're thinking of linking up any device at all to the +3, check this chapter to make sure that you've got the right connections. If, on the other hand, you intend to use just the standard +3 set up (ie. computer and TV only), then you may skip this chapter.
 
-<center>
-<svg xmlns="http://www.w3.org/2000/svg" width="33%" viewBox="-2 -2 784 208" stroke-linejoin="round" stroke-miterlimit="1"><path d="M40.6 203.2l3-40h16.6l3.3 40h40.8L78.8 1H26L0 203.2h40.6zM57.8 130H46l6-78.6 5.8 78.6zM171 1h-57v202.2h39V88l16 115.2h25.3L210 88.7v114.5h39V1h-57l-10.6 89.3L171 1zm85 24.6l.3 48a32.2 32.2 0 0 0 1.1 6.7c.6 2.2 1.6 5 3.2 7.4a25 25 0 0 0 2.8 3.6 54.6 54.6 0 0 0 4.6 4.4 60 60 0 0 0 11.3 7.5l25.5 14c1 .7 2.4 1.3 3.6 2.5 3 2.8 3 6 3 9.2l.2 4.4V161c0 2-.2 4-1 6a5.8 5.8 0 0 1-7.4 2.6 5.9 5.9 0 0 1-1.8-1.2c-2.2-2-2-5-2.2-7.6v-41.2h-43v46c0 5.7.1 11 1.3 16.6.7 3 1.7 5.8 3.3 8.5a23.5 23.5 0 0 0 6.2 6.8 29.8 29.8 0 0 0 7.6 3.9 24.7 24.7 0 0 0 5.6 1.2l5 .4h43.7c2 0 4 .1 6.4-.6a30 30 0 0 0 7.8-3.4c2.5-1.6 4.6-3.6 6-5.7s2.3-4.4 3-6.5 1.3-4 1.7-6.3a73 73 0 0 0 .8-8.6c.2-3 .1-6 .1-9.2l-.2-41a172 172 0 0 0-.4-6.9 26.2 26.2 0 0 0-.4-3.4 35.4 35.4 0 0 0-.6-2.4 17.7 17.7 0 0 0-1.1-2.9c-.6-1.3-1.6-3.2-2.8-5a28 28 0 0 0-4.2-4.9 44.2 44.2 0 0 0-5.2-4 170.1 170.1 0 0 0-12.7-7.9l-18.3-10a45.8 45.8 0 0 1-3.2-1.9 52 52 0 0 1-2.7-1.9c-1-.8-1-1-1.6-1.4-.2-.2-.3-.4-.6-1a12 12 0 0 1-1.7-4.6c-.1-1 0-1.8 0-2.6v-19a13 13 0 0 1 .5-4.6 9 9 0 0 1 1-2.1c2-2.8 4.6-3.2 7.3-2a6 6 0 0 1 1.7 1.3 6.7 6.7 0 0 1 1.2 1.8c.3.7.4 1.4.6 2.4a68.1 68.1 0 0 1 .2 7.3v24h43.2l-1-48.6a35.7 35.7 0 0 0-.7-2.7 21 21 0 0 0-1.2-3.3c-.7-1.5-1.7-3.7-3-5.6a21.6 21.6 0 0 0-5.1-4.9 26 26 0 0 0-6-3.1c-3.7-1.3-6.5-1.5-9.7-2-1.6-.2-3-.3-4.7-.3l-37.4.3a54 54 0 0 0-13 1.9 22.2 22.2 0 0 0-3.9 1.6c-2.5 1.3-4.5 2.8-6.6 5.4-1 1.3-2.2 3-3 4.8a27 27 0 0 0-3.1 11.6zM361.6 1v32.6h21.6v169.6h43.2V33.6h21.4V1h-86.2zm143.8 0h-46v202.2h43.2v-80.6c2.8.1 5.7-.2 8.5.7.6.2 1.2.5 1.7 1 2 1.7 1.8 4 2 6 .4 4.2.1 8.3.2 12.5v60.6h43.2V140a92 92 0 0 0-1.9-18.6c-.4-1.4-1-2.8-1.5-4.2a24 24 0 0 0-3.8-6.1c-1.6-1.8-3.4-3.4-5.5-4.7a23.9 23.9 0 0 0-6.6-2.8 27.6 27.6 0 0 0 3.4-1.1c2.2-1 4.3-2 6-3.5s3.4-3.3 4.7-5.3 2.2-4.2 2.8-6.5l1.2-5a122.4 122.4 0 0 0 1.2-20.5v-21c.1-4.2-.1-8.4-.6-12.6l-1-6c-.4-1.7-.8-3-1.3-4.4a25.2 25.2 0 0 0-1.9-3.8 25 25 0 0 0-2.5-3.5c-1.4-1.5-3-3-5-4a25.9 25.9 0 0 0-11.9-4.1c-9.6-1-19.2-.8-28.8-1zm-3 33h6a9.2 9.2 0 0 1 2.9.8c2.8 1.8 3 4.2 3.2 6.5l.3 7.7v26.6c0 1.6-.1 3.2-.4 4.7a5.7 5.7 0 0 1-2 3.8c-1.3 1.2-3 1.2-4.6 1.4-1.8.2-3.6.2-5.4.1V34zm105.2 169.3l3-40h16.6l3.3 40h41L646 1H593l-26 202.2h40.6zM625 130h-11.8l6-78.6L625 130zM774.3 13.5c-1.5-2.4-3.4-4.5-5.6-6.2s-4.8-3-6.7-3.7a19.6 19.6 0 0 0-4.3-1.2 58.9 58.9 0 0 0-3.7-.5 70.8 70.8 0 0 0-5.4-.4L680.3 1v202.2l68.6-.1c1.7 0 3.4-.5 5-.8 3.5-.6 6.6-1.3 10-2.8 1.8-.8 3.6-1.8 5.3-3a17.9 17.9 0 0 0 4.7-5.2 35 35 0 0 0 3.8-9.5 53.9 53.9 0 0 0 1.8-13.2l-.3-138c0-3-.8-6.3-1.6-9a29.8 29.8 0 0 0-3.3-7.9zm-48 20.6h2.7a14 14 0 0 1 2.5.5 6.7 6.7 0 0 1 1.8.8c.5.3 1 .8 1.3 1.2 1.5 2.3 1.3 5.4 1.4 8.3v116.5a18 18 0 0 1-.1 2.6c-.1.8-.3 1.7-.6 2.4s-.6 1.3-1 1.8a5.9 5.9 0 0 1-1.6 1.3c-.6.3-1.2.8-2 .8h-7l2.7-136z" fill="#fff" stroke="#000" stroke-width="3"  />
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="33%" viewBox="-2 -2 784 208" stroke-linejoin="round" stroke-miterlimit="1"><path d="M40.6 203.2l3-40h16.6l3.3 40h40.8L78.8 1H26L0 203.2h40.6zM57.8 130H46l6-78.6 5.8 78.6zM171 1h-57v202.2h39V88l16 115.2h25.3L210 88.7v114.5h39V1h-57l-10.6 89.3L171 1zm85 24.6l.3 48a32.2 32.2 0 0 0 1.1 6.7c.6 2.2 1.6 5 3.2 7.4a25 25 0 0 0 2.8 3.6 54.6 54.6 0 0 0 4.6 4.4 60 60 0 0 0 11.3 7.5l25.5 14c1 .7 2.4 1.3 3.6 2.5 3 2.8 3 6 3 9.2l.2 4.4V161c0 2-.2 4-1 6a5.8 5.8 0 0 1-7.4 2.6 5.9 5.9 0 0 1-1.8-1.2c-2.2-2-2-5-2.2-7.6v-41.2h-43v46c0 5.7.1 11 1.3 16.6.7 3 1.7 5.8 3.3 8.5a23.5 23.5 0 0 0 6.2 6.8 29.8 29.8 0 0 0 7.6 3.9 24.7 24.7 0 0 0 5.6 1.2l5 .4h43.7c2 0 4 .1 6.4-.6a30 30 0 0 0 7.8-3.4c2.5-1.6 4.6-3.6 6-5.7s2.3-4.4 3-6.5 1.3-4 1.7-6.3a73 73 0 0 0 .8-8.6c.2-3 .1-6 .1-9.2l-.2-41a172 172 0 0 0-.4-6.9 26.2 26.2 0 0 0-.4-3.4 35.4 35.4 0 0 0-.6-2.4 17.7 17.7 0 0 0-1.1-2.9c-.6-1.3-1.6-3.2-2.8-5a28 28 0 0 0-4.2-4.9 44.2 44.2 0 0 0-5.2-4 170.1 170.1 0 0 0-12.7-7.9l-18.3-10a45.8 45.8 0 0 1-3.2-1.9 52 52 0 0 1-2.7-1.9c-1-.8-1-1-1.6-1.4-.2-.2-.3-.4-.6-1a12 12 0 0 1-1.7-4.6c-.1-1 0-1.8 0-2.6v-19a13 13 0 0 1 .5-4.6 9 9 0 0 1 1-2.1c2-2.8 4.6-3.2 7.3-2a6 6 0 0 1 1.7 1.3 6.7 6.7 0 0 1 1.2 1.8c.3.7.4 1.4.6 2.4a68.1 68.1 0 0 1 .2 7.3v24h43.2l-1-48.6a35.7 35.7 0 0 0-.7-2.7 21 21 0 0 0-1.2-3.3c-.7-1.5-1.7-3.7-3-5.6a21.6 21.6 0 0 0-5.1-4.9 26 26 0 0 0-6-3.1c-3.7-1.3-6.5-1.5-9.7-2-1.6-.2-3-.3-4.7-.3l-37.4.3a54 54 0 0 0-13 1.9 22.2 22.2 0 0 0-3.9 1.6c-2.5 1.3-4.5 2.8-6.6 5.4-1 1.3-2.2 3-3 4.8a27 27 0 0 0-3.1 11.6zM361.6 1v32.6h21.6v169.6h43.2V33.6h21.4V1h-86.2zm143.8 0h-46v202.2h43.2v-80.6c2.8.1 5.7-.2 8.5.7.6.2 1.2.5 1.7 1 2 1.7 1.8 4 2 6 .4 4.2.1 8.3.2 12.5v60.6h43.2V140a92 92 0 0 0-1.9-18.6c-.4-1.4-1-2.8-1.5-4.2a24 24 0 0 0-3.8-6.1c-1.6-1.8-3.4-3.4-5.5-4.7a23.9 23.9 0 0 0-6.6-2.8 27.6 27.6 0 0 0 3.4-1.1c2.2-1 4.3-2 6-3.5s3.4-3.3 4.7-5.3 2.2-4.2 2.8-6.5l1.2-5a122.4 122.4 0 0 0 1.2-20.5v-21c.1-4.2-.1-8.4-.6-12.6l-1-6c-.4-1.7-.8-3-1.3-4.4a25.2 25.2 0 0 0-1.9-3.8 25 25 0 0 0-2.5-3.5c-1.4-1.5-3-3-5-4a25.9 25.9 0 0 0-11.9-4.1c-9.6-1-19.2-.8-28.8-1zm-3 33h6a9.2 9.2 0 0 1 2.9.8c2.8 1.8 3 4.2 3.2 6.5l.3 7.7v26.6c0 1.6-.1 3.2-.4 4.7a5.7 5.7 0 0 1-2 3.8c-1.3 1.2-3 1.2-4.6 1.4-1.8.2-3.6.2-5.4.1V34zm105.2 169.3l3-40h16.6l3.3 40h41L646 1H593l-26 202.2h40.6zM625 130h-11.8l6-78.6L625 130zM774.3 13.5c-1.5-2.4-3.4-4.5-5.6-6.2s-4.8-3-6.7-3.7a19.6 19.6 0 0 0-4.3-1.2 58.9 58.9 0 0 0-3.7-.5 70.8 70.8 0 0 0-5.4-.4L680.3 1v202.2l68.6-.1c1.7 0 3.4-.5 5-.8 3.5-.6 6.6-1.3 10-2.8 1.8-.8 3.6-1.8 5.3-3a17.9 17.9 0 0 0 4.7-5.2 35 35 0 0 0 3.8-9.5 53.9 53.9 0 0 0 1.8-13.2l-.3-138c0-3-.8-6.3-1.6-9a29.8 29.8 0 0 0-3.3-7.9zm-48 20.6h2.7a14 14 0 0 1 2.5.5 6.7 6.7 0 0 1 1.8.8c.5.3 1 .8 1.3 1.2 1.5 2.3 1.3 5.4 1.4 8.3v116.5a18 18 0 0 1-.1 2.6c-.1.8-.3 1.7-.6 2.4s-.6 1.3-1 1.8a5.9 5.9 0 0 1-1.6 1.3c-.6.3-1.2.8-2 .8h-7l2.7-136z" fill="#fff" stroke="#000" stroke-width="3" />
 
-© Copyright 1987 - AMSTRAD Plc.
-</center>
+<center>© Copyright 1987 - AMSTRAD Plc.</center>
 
 Neither the whole nor any part of the information contained herein, nor the product described in this manual, may be adapted or reproduced in any material form except with the prior written approval of AMSTRAD Plc. ('AMSTRAD').
 
@@ -1166,7 +1163,7 @@ const keyboardLabels48ShiftLower = [
   [ , , '1', '2', '3', '4', '5', '6', '7', '8', '9', '0' ],
   [ , , 'Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P' ],
   [ , , 'A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L', 'ENTER'],
-  [ , , 'Z', 'X', 'C', 'V', 'B', 'N', 'M', '.' ],
+  [ , , 'Z', `X`, 'C', 'V', 'B', 'N', 'M', '.' ],
   [ 'SYMB\nSHIFT', ';', '"', , , 'SPACE', , , ',', 'SYMB\nSHIFT']
 ];
 const keyboardLabels48Shift = [
@@ -4015,7 +4012,7 @@ You can see that the `CIRCLE` statement is much quicker, albeit less accurate.
 
 You can see from this that the `CIRCLE` statement leaves the `PLOT` position at a rather indeterminate place - it is always somewhere about half way up the right-hand side of the circle. You will usually need to follow the `CIRCLE` statement with a `PLOT` statement before you do any more drawing.
 
-## <a id="part18"></a> Part 18 Timing
+## <a id="part18"></a> Part 18 - Timing
 
 Subjects covered...
 
@@ -4123,6 +4120,334 @@ Exercises...
 To make this work, why is it essential that a pause should not finish if it finds you already pressing a key when it starts?
 
 3. Adapt the 'clock second hand' program so that it also shows minute and hour hands, re-drawing them every minute. If you're feeling ambitious, arrange so that every quarter of an hour, it puts on some kind of show - perhaps you could produce the 'Big Ben' chimes using `PLAY` (described in [part 19 of this chapter](#part19)).
+
+## <a id="part19"></a> Part 19 - Sound
+
+Subjects covered...
+
+- `BEEP`, `PLAY`
+
+As you will have already noticed, the +3 can make a variety of noises. To get the best quality of sound, it's important to make sure that your TV is tuned-in properly (see [chapter 2](#chapter2). If, instead of a TV, you are using a VDU monitor (which won't reproduce the +3's sound), note that a separate sound signal (which may be connected to an audio amplifier powering speaker(s) or headphones) is available from the **TAPE/SOUND** socket at the back of the +3. Headphones may not be plugged into the **TAPE/SOUND** socket directly.
+
+Connections to the **TAPE/SOUND** socket are described in [chapter 10](#chapter10).
+
+To get the most out of the +3's musical ability, it helps to have a little knowledge about musical terms.
+
+Note that in the examples that follow, it is important that you type in the string expressions ***exactly*** as shown in upper case and lower case letters, i.e. the example `"ga"` should ***not*** be typed in as `"Ga" "gA"` or `"GA"`.
+
+Type in this command (don't worry what it means just yet)...
+
+    PLAY "ga"
+
+Two notes were played - the second slightly higher than the first. The difference between the notes is called a tone. Now try...
+
+    PLAY "g$a"
+
+Again there were two notes played - the first one was the same as the previous example, but there was less of a jump to the second. If you didn't hear the difference, then try the first example followed by the second again. The second example has half the difference between notes, and this is called a ***semitone***.
+
+When you're happy with semitones, try this...
+
+    PLAY "gD"
+
+This sort of difference is called a ***fifth***, and occurs quite often in music of all kinds. With that example ringing in your ears, type...
+
+    PLAY "gG"
+
+Although (hopefully) you noticed that there was a much bigger difference that time than for the fifth, the two notes somehow sounded much more similar. This is called an ***octave***, and is the point at which music starts to repeat itself. Don't worry about that unduly, just remember what an octave sounds like.
+
+There are two ways of making music and sounds with the +3. The most elementary is the somewhat spartan `BEEP` command. This takes the form...
+
+    BEEP duration,pitch
+
+...where the duration and pitch parameters represent numerical expressions. The duration is given in seconds, and the pitch is given in semitones above middle C (negative number for notes below middle C).
+
+Here is a diagram to show the pitch values of all the notes in one octave on the piano for `BEEP`...
+
+
+      |   | | | C#| D#| | | F#| G#| A#| | |   |   |
+      |   | | | Db| Eb| | | Gb| Ab| Bb| | |   |   |
+      |-2 | | | 1 | 3 | | | 6 | 8 |10 | | |13 |15 |
+    __|___| | |___|___| | |___|___|___| | |___|___|
+        |   |   |   |   |   |   |   |   |   |   |
+     -3 |-1 | 0 | 2 | 4 | 5 | 7 | 9 |11 |12 |14 |16
+    ____|___|___|___|___|___|___|___|___|___|___|____
+              C   D   E   F   G   A   B   C
+
+
+Hence, to play the A above middle C for half a second, you would use...
+
+    BEEP 0.5,9
+
+...and to play a scale (for example, C major) a complete (albeit short) program is needed...
+
+    10 FOR f=1 TO 8
+    20 READ note
+    30 BEEP 0.5,note
+    40 NEXT f
+    50 DATA 0,2,4,5,7,9,11,12
+
+To get higher or lower notes, you have to add or subtract 12 for each octave that you go up or down.
+
+`BEEP` exists mostly to provide compatibility with the older designs of Spectrum, though it can be useful for very short or rapid sound effects. For any new program you develop, the second way of producing sound is much to be preferred, and this is achieved using the PLAY command (if you worked through the simple examples earlier in this section, you'll remember that that's what you used).
+
+`PLAY` is much more flexible than `BEEP` - it can play up to three voices in harmony with all manner of effects, and gives a much higher quality of sound. It's also much easier to use. For example, to play A above middle C for half a second, simply type in...
+
+    PLAY "a"
+
+...and to play the C major scale (which needed a program to itself before), use...
+
+    PLAY "cdefgabC"
+
+Notice that the last 'C' in the example above is in upper case. This tells the `PLAY` command to play it an octave higher than the lower case `c`. A ***scale***, by the way, is the term used for a set of notes spanning an octave. The example above is called the C major scale because it's the set of notes between two C's. Why not? There are two main classes of scale, major and minor, and this is just musical shorthand for describing two different sets. Just for interest, the C minor scale sounds like this...
+
+    PLAY "cd$efg$a$bC"
+
+Preceding a note by `$` drops it by a semitone (***flattens*** it), and preceding a note by ***#*** raises it by a semitone (sharpens it). The `PLAY` command spans 9 octaves, and can be told which one to use by having the upper case letter `O` followed by a number, in the list of notes it is given. Type in this little program...
+
+    10 LET o$="O5"
+    20 LET n$="DECcg"
+    30 LET a$=o$+n$
+    40 PLAY a$
+
+There are a few new things in this program. Firstly, `PLAY` is just as happy with a string variable as with a string constant. In other words, providing that 'a$' has been set up beforehand, `PLAY a$` works just as well as `PLAY "O5DECcg"`. In fact, using variables in `PLAY` statements has certain distinct advantages, and we shall be doing this from now on.
+
+Notice also that the string `a$` has been 'built up' by combining the two smaller strings `o$` and `n$`. While this doesn't make much difference at this sort of level, `PLAY` can cope with strings many thousands of notes long, and the only sensible way of creating and editing those strings from BASIC is to combine lots of smaller strings in this way.
+
+Now run the above program. Edit line 10 so that `"O5"` becomes `"O7"`, and run it again, or if you want to be a big spaceship make it `"O2"`. If you don't specify an octave number for a particular string, then the +3 assumes that you want octave 5. Here follows a diagram of the notes and octave numbers which correspond to the standard even-tempered musical scale...
+
+[OK, time to use your imagination here...]
+
+            _______________________________________________________
+           |C|D|E|F|G|A|B|C|D|E|F|G|A|B|C|D|E|F|G|A|B|C|D|E|F|G|A|B|
+           | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
+       _   | | | | | | | | | | | | | | | | | | | | | | | | | | |.|'|
+ _____|/___|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|.|'|_|_|___ |_|___/____|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|.|'|_|_|_|_|___| |_|__/|____|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|.|'|_|_|_|_|_|_|___| |_|_(_(_)__|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|.|'|_|_|_|_|_|_|_|_|___| |_|__`-'___|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|.|'|_|_|_|_|_|_|_|_|_|_|___|
+    ._/    | | | | | | | | | | | | | | |.|'| | | | | | | | | | | | |   |
+ __________|_|_|_|_|_|_|_|_|_|_|_|_|.|'|_|_|_|_|_|_|_|_|_|_|_|_|_|_|___| |_|_/^\__*_|_|_|_|_|_|_|_|_|_|_|.|'|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|___| |_|(*__)_*_|_|_|_|_|_|_|_|_|.|'|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|___| |_|___/____|_|_|_|_|_|_|.|'|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|___| |_|__/_____|_|_|_|_|.|'|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|___|
+    ^      | | |.|'| | | | | | | | | | | | | | | | | | | | | | | | |
+           |.|'| | | | | | | | | | | | | | | | | | | | | | | | | | |
+           | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
+           |c|d|e|f|g|a|b|C|D|E|F|G|A|B| | | | | | | | | | | | | | |
+           |__________OCTAVE_3_________| | | | | | | | | | | | | | |
+                         |c|d|e|f|g|a|b|C|D|E|F|G|A|B| | | | | | | |
+                         |__________OCTAVE_4_________| | | | | | | |
+                                       |c|d|e|f|g|a|b|C|D|E|F|G|A|B|
+                                       |__________OCTAVE_5_________|
+
+There is a lot of overlap, so for example, `"O3D"` is the same as `"O4d"`. This makes it easier to write tunes without having the change octave all the time. Some of the notes in the lowest octaves (0 and 1) aren't very accurate for technical reasons, and so the computer just makes a brave attempt at getting as close as possible.
+
+`PLAY` can also handle many different lengths of note. Edit the program above so that line 10 is now...
+
+    10 LET o$="2"
+
+...and run it. Then alter the setting of `o$` between `"1"` and `"9"`. The note length can be changed anywhere in a string by including a number between 1 and 9, and this is effective for all subsequent notes until a new number is encountered. Each of these nine note lengths has a specific musical name, and looks different when written down in musical notation. The following table shows which is which...
+
+| NUMBER | NOTE NAME           | MUSICAL SYMBOL |
+|:------:|---------------------|:--------------:|
+|   1    | semi-quaver         |       𝅘𝅥𝅯        |
+|   2    | dotted semi-quaver  |       𝅘𝅥𝅯.       |
+|   3    | quaver              |       𝅘𝅥𝅮        |
+|   4    | dotted quaver       |       𝅘𝅥𝅮.       |
+|   5    | crotchet            |       𝅘𝅥        |
+|   6    | dotted crotchet     |       𝅘𝅥.       |
+|   7    | minim               |       𝅗𝅥        |
+|   8    | dotted minim        |       𝅗𝅥.       |
+|   9    | semi-breve          |       𝅝        |
+
+`PLAY` can also cope with triplets, which are three notes played in the time for two. Unlike simple note lengths, the triplet number only applies for the three notes immediately following, and then the previous note length number resumes. The triplet numbers are as follows...
+
+| NUMBER | NOTE NAME           | MUSICAL SYMBOL |
+|:------:|---------------------|:--------------:|
+|           |                      |         3        |
+|           |                      |      |==|==|     |
+|    10     | triplet semi-quaver  |     @' @' @'     |
+|           |                      |                  |
+|           |                      |       __3__      |
+|           |                      |      |  |  |     |
+|    11     | triplet quaver       |     @' @' @'     |
+|           |                      |                  |
+|           |                      |     [---3---]    |
+|           |                      |      |  |  |     |
+|    12     | triplet crochet      |     @' @' @'     |
+
+`PLAY` is quite happy about being told to 'shut up'! A timed period during which no notes play is called a reset, and `"&"` is used to signify this. The length of reset it produces is the same as the current note length. To demonstrate, edit lines 10 and 20 to...
+
+    10 LET o$="O4"
+    20 LET n$="DEC&cg"
+
+Two notes played together without a break are called tied notes, which are signified in a `PLAY` command by an _ underline, so a crotchet c and a minim c tied together would be `"5_7c"`. (The second value is then used as the note length for all subsequent notes, as before.)
+
+There are occasions when ambiguity creeps in. Say that a piece of music needs octave 6 and a note length of 2, then...
+
+    10 LET o$="O62"
+
+...seems a good bet - but no! The computer will find the `O` and try to read the number following it. When it finds `62`, it will stop with the report `n Out of range`. In cases like this, there is a 'dummy note' called `N` that just serves to split things up, so line 10 should be...
+
+    10 LET o$="O6N2"
+
+The volume can be set between 0 (minimum) and 15 (maximum) using `"V"` followed by a number. In practice, only 10 to 15 are likely to be useful, as 1 to 9 are too soft unless the +3 is being used with an amplifier. As previously mentioned, `BEEP` is louder than a single channel of `PLAY`, but if all three channels play a note at volume 15, then it should be at the same level as a note produced by `BEEP`.
+
+Playing more than one channel at a time is very simple; you just separate lists of notes by commas. Try this new program...
+
+    10 LET a$="O4cCcCgGgG"
+    20 LET b$="O6CaCe$bd$bD"
+    30 PLAY a$,b$
+
+In general, there is no difference between the three channels, and any string of notes can be put onto any channel. The overall speed of the music (the tempo) must be in the string assigned to channel A (the first string after `PLAY`), otherwise it will be ignored. To set tempo in beats (crotchets) per minute, use `"T"` followed by a number between 60 and 240. The standard value is 120, or two crotchets per second. Modify the program above to...
+
+     5 LET t$="T120"
+    10 LET a$=t$+"O4cCcCgGgG"
+    20 LET b$="O6CaCe$bd$bD"
+    30 PLAY a$,b$
+
+...and run it several times, changing line 5 for different tempos.
+
+A common feature in music is the repetition of a group of notes. Any part of a string can be repeated by enclosing it in brackets, so if you change line 10 to...
+
+    10 LET a$="t$+"O4(cC)(gG)"
+
+`PLAY` treats it just the same as the old line 10. If you include a closing bracket (with no matching opening bracket), then the string up to that point is repeated indefinitely. This is useful for rhythm effects and bass lines. To demonstrate, try this (you'll have to press **BREAK** to stop the sound)...
+
+    PLAY "O4N2cdefgfed)"
+
+...and...
+
+    PLAY "O4N2cd(efgf)ed)"
+
+IF you set up an infinitely repeating bass line, and then play a melody with it, then it would be nice if the bass line stops when the melody does. There is a device to do this - if `PLAY` comes across `"H"` (for halt) in any of the strings it is playing, then it stops all sounds immediately. Run the following program (again, you'll have to press **BREAK** to stop it)...
+
+    10 LET a$="cegbdfaC"
+    20 LET b$="O4cC)"
+    30 PLAY a$,b$
+
+Now modify line 10 to...
+
+    10 LET a$="cegbdfaCH"
+
+...and run it again.
+
+So far we've only used notes which start and stop at one level of volume. The +3 can alter the volume of a note while it is playing, so it can start loud and die away like a piano, or rise and fall like a dog growling. To turn these effects on, use `"W"` (for waveform) followed by a number between 0 and 7, together with `"U"` for each channel you want to use the effect on. Any channel with a volume setting (`"V"`) will not respond to `"U"`. This table shows graphically how the volume changes for each setting...
+
+<svg viewBox="0 0 300 290" width="50%" height="290">
+  <style>
+  .number { font-family: "Verdana"; font-weight: bold; font-size; 12px; text-anchor: start }
+  .guide { stroke: black; stroke-dasharray: 5,2 }
+  .base { stroke: black; stroke-width: 0.3 }
+  .wave { stroke: black; stroke-width: 2; stroke-linecap: round; stroke-miterlimit=1; fill: none }
+  </style>
+  <path d="M15 0 V 290" class="guide"  />
+  <path d="M35 0 V 290" class="guide" />
+  <text x="0" y="25" class="number">0</text>
+  <path d="M15 25 H 145" class="base" />
+  <text x="160" y="25">single decay then off.</text>
+  <path d="M 15 5 L 35 25 H 145" class="wave" />
+  <text x="0" y="60" class="number">1</text>
+  <path d="M15 60 H 145" class="base" />
+  <text x="160" y="60">single attack then off.</text>
+  <path d="M 15 60 L 35 40 V 60 H 145" class="wave" />
+  <text x="0" y="95" class="number">2</text>
+  <path d="M15 95 H 145" class="base" />
+  <text x="160" y="95">single decay then hold.</text>
+  <path d="M 15 75 L 35 95 V 75 H 145" class="wave" />
+  <text x="0" y="130" class="number">3</text>
+  <path d="M15 130 H 145" class="base" />
+  <text x="160" y="130">single attack then hold.</text>
+  <path d="M 15 130 L 35 110 H 145" class="wave" />
+  <text x="0" y="165" class="number">4</text>
+  <path d="M15 165 H 145" class="base" />
+  <text x="160" y="165">repeated decay.</text>
+  <path d="M 15 145 L 35 165 V 145 L 55 165 V 145 L 75 165 V 145 L 95 165 V 145 L 115 165 V 145 L 135 165 V 145 L 145 155" class="wave" />
+  <text x="0" y="200" class="number">5</text>
+  <path d="M15 200 H 145" class="base" />
+  <text x="160" y="200">repeated attack.</text>
+  <path d="M 15 200 L 35 180 V 200 L 55 180 V 200 L 75 180 V 200 L 95 180 V 200 L 115 180 V 200 L 135 180 V 200 L 145 190" class="wave" />
+  <text x="0" y="235" class="number">6</text>
+  <path d="M15 235 H 145" class="base" />
+  <text x="160" y="235">repeated attack-decay.</text>
+  <path d="M 15 235 L 35 215 L 55 235 L 75 215 L 95 235 L 115 215 L 135 235 L 145 225" class="wave" />
+  <text x="0" y="270" class="number">7</text>
+  <path d="M15 270 H 145" class="base" />
+  <text x="160" y="270">repeated decay-attack.</text>
+  <path d="M 15 250 L 35 270 L 55 250 L 75 270 L 95 250 L 115 270 L 135 250 L 145 260" class="wave" />
+</svg>
+
+This program plays the same note with each effect in turn, so you can compare them again the diagram above.
+
+    10 LET a$="UX1000W0C&W1C&W2C&W3C&W4C&W5C&W6C&W7C"
+    20 PLAY a$
+
+The `U` turns on effects, and the `W` selects which waveform to use. There's also an `"X1000"`. `X` sets how long the effect will last for (from 0 to 65535). If you don't include an `X`, then the +3 will choose the longest value. Waveforms that settle down (0 to 3 in the previous table) after the initial part, work best with `X` settings of about 1000, whereas repetitive effects (4-7) are more effective with short values like 300. Try varying the `X` setting in the previous program to get some idea of how each works.
+
+The `PLAY` command isn't limited to pure musical notes. There are also three 'white noise' generators (white noise is a sound which is like an un-tuned FM radio or TV), and any of the three channels can play notes, white noise, or a mixture of both. To select a mix of noise and note, you may use `"M"` followed by a number between 1 and 63. You can work out which number to use from this table...
+
+<table>
+  <tr>
+    <td rowspan="2"></td>
+    <th colspan="3">Tone channels</th>
+    <th colspan="3">Noise channels</th>
+  </tr>
+  <tr>
+    <td>A</td>
+    <td>B</td>
+    <td>C</td>
+    <td>A</td>
+    <td>B</td>
+    <td>C</td>
+  </tr>
+  <tr>
+    <th>Number</th>
+    <td>1</td>
+    <td>2</td>
+    <td>4</td>
+    <td>8</td>
+    <td>16</td>
+    <td>32</td>
+  </tr>
+</table>
+
+Write down the numbers corresponding to the effects you want, and then add them together. If you wanted A to be noise, B to be tone, and C to be both tone and noise, then add 8, 2, 4 and 32 to get 46 (the order of the channels is the order of the strings which follow the `PLAY` command). The best effects can be obtained with the A channel - don't be afraid to experiment.
+
+By now, you'll be writing symphonies! However, it can be difficult to work out just which part of the music a particular section of string is responsible for. To alleviate this problem, your music string may include 'comments' enclosed between `!` exclamation marks. For example...
+
+    1090 LET z$="CDcE3Ge4_6f! end of 75th bar !egeA"
+
+The `PLAY` command will simply 'hop over' any comments in the string.
+
+If you have an electronic musical instrument with MIDI, then the +3 can control it using `PLAY`. Up to 8 channels of music can be sent to synthesisers, drum machines or sequencers. The `PLAY` command is constructed exactly as described so far in this section, except that each string should include a `"Y"` followed by a number between 1 and 16. The number after the `Y` controls which channel the music data is assigned to. Up to eight strings can be used; the first three strings will still be played through the TV as before so you'll probably want to turn the TV sound down. You can also send MIDI programming codes via the `PLAY` command, using `"Z"` followed by the code number. Key velocities (loudness) are calculated and sent at 8 times the `V` setting (so `"V6"` will send 48 as a key velocity).
+
+So, to send a little tune (in four-part harmony) to a four-voice synthesiser (after consulting your synth's handbook to find out how to allocate MIDI channels to different voices), you would use the `PLAY` command with four strings, each starting with `Y` followed by a number. This example program illustrates the `PLAY` command in some of its full glory...
+
+    10 LET a$="Y1T100O2(((1CCg$b))(($E$E$b$D))((FFC$E))((GGDF))))"
+    20 LET b$="Y2O5N&&&&C$bfG)"
+    30 LET c$="Y3O4((3C&)C&1CCDD(3$E&)$E&1$E$EEE(3F&)F&1FF$G$G(3G&)G&1GG$EC))"
+    40 LET d$="Y4N9&&&&&&&&(9EGF7b5CD))"
+    50 PLAY a$,b$,c$,d$
+
+### Summary table
+
+Finally, here is a brief list of the parameters that can be used in the string of a PLAY command, together with the values they may have...
+
+| STRING  | FUNCTION
+|---------|--------------------------------------------------------------------
+| `a`...`g`<br>`A`...`G` | Specifies the pitch of the note within the current octave range.
+| `$`        | Specifies that the note which follows must be flattened.
+| `#`        | Specifies that the note which follows must be sharpened.
+| `O`        | Specifies the octave number to be used (followed by 0 to 8).
+| `1`...`12` | Specifies the length of notes to be used.
+| `&`        | Specifies that a rest is to be played.
+| `_`        | Specifies that a tied note is to be played.
+| `N`        | Separates two numbers.
+| `V`        | Specifies the volume to be used (followed by 0 to 15).
+| `W`        | Specifies the volume effect is to be used in a string.
+| `U`        | Specifies that the volume effect is to be used in a string.
+| `X`        | Specifies duration of volume effect (followed by 0 to 65535).
+| `T`        | Specifies tempo of music (followed by 60 to 240).
+| `()`       | Specifies that enclosed phrase must be repeated.
+| `! !`      | Specifies that enclosed comment is to be skipped over.
+| `H`        | Specifies that the PLAY command must stop.
+| `M`        | Specifies the channel(s) to be used (followed by 1 to 63).
+| `Y`        | Specifies that MIDI channel is to be used (followed by 1 to 16).
+| `Z`        | Specifies MIDI programming code (followed by code number).
 
 ## <a id="part25"></a> Part 25 - The system variables
 

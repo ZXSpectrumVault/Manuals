@@ -8,6 +8,13 @@ body {
   font-family: 'Roboto Slab';
   font-size: 100%;
 }
+table, canvas, svg {
+  margin: auto !important;
+  padding: 0;
+}
+canvas, svg {
+  display: block;
+}
 td, th {
   border: 1px solid #ccc !important;
 }
