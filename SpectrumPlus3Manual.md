@@ -1,5 +1,5 @@
 <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:500|Roboto+Slab:400,700&amp;display=swap" rel="stylesheet"></link>
-<link href="./spectrum-manual.css" rel="stylesheet"></link>
+<link href="./spectrum-manual.css?" rel="stylesheet"></link>
 <script src="./spectrum-manual.js"></script>
 
 # Contents
@@ -154,7 +154,7 @@ Therefore, you should adopt the following reading programme...
 
 [Chapter 5](#chapter5) - This chapter covers the use of the +3's built-in disk drive (known as drive A:). You may skip this chapter only if you never intend to use the disk drive during BASIC programming (perhaps having purchased the +3 solely to load and run commercially available software (e.g. games)). Note that if you have connected an additional disk drive (B:) to the +3, then throughout the manual you should take any general references to 'the disk drive' as meaning both drives (A: and B:).
 
-[Chapter 6](#chapter6) - This chapter introduces you to +3 BASIC. It particular, it describes the editor and certain aspects of BASIC programming that differ from those of other computers. Therefore, even if you are an experienced BASIC programmer on another computer, you should still read chapter 6. Note that you'll require a blank CF-2 floppy disk as you work through this chapter. If, however, you never intend to program in BASIC and have purchased the +3 solely to load and run commercially available software (e.g. games), then you may skip this chapter.
+[Chapter 6](#chapter6) - This chapter introduces you to +3 BASIC. It particular, it describes the editor and certain aspects of BASIC programming that differ from those of other computers. Therefore, even if you are an experienced BASIC programmer on another computer, you should still read [chapter 6](#chapter6). Note that you'll require a blank CF-2 floppy disk as you work through this chapter. If, however, you never intend to program in BASIC and have purchased the +3 solely to load and run commercially available software (e.g. games), then you may skip this chapter.
 
 [Chapter 7](#chapter7) - This is the one chapter that you may freely skip. It describes the 48 BASIC mode (in which the +3 operates exactly like the 'old-style' Spectrum - even in the editing and programming aspects). This mode is not recommended as anything other than a history lesson for the curious, or for loading old (Spectrum 48 only) tape software. You should certainly not use this mode for BASIC programming; indeed you cannot access many of the advanced features of the +3 (including disk drive, extra memory, RS232/MIDI/AUX interfaces or RAMdisk) from 48 BASIC. Notwithstanding the above, we have provided the relevant information in this chapter for your reference.
 
@@ -219,7 +219,7 @@ You must read this...
 
 (Don't worry if you are a little baffled by some of the technical jargon in this section, the importance of these warnings will becomes clearer as you work through this manual.)
 
-1. Always connect the mains lead of the power supply unit (PSU) to a 3-pin plug following the instructions given in chapter 1.
+1. Always connect the mains lead of the power supply unit (PSU) to a 3-pin plug following the instructions given in [chapter 1](#chapter1).
 2. Do not attempt to connect the PSU to any mains supply other than 220-240V AC 50Hz.
 3. After you have finished using the +3, always disconnect the PSU from the mains supply socket.
 4. There are no user serviceable parts inside the equipment - DO NOT ATTEMPT TO GAIN ACCESS INSIDE THE PSU - THERE ARE HIGH VOLTAGES INSIDE. Refer all servicing to qualified service personnel.
@@ -465,7 +465,7 @@ We will now switch off the test signal and start using the +3. Press and release
 
 <canvas id="screen-opening-menu"></canvas>
 
-Note that the opening menu initially indicates which drives are available for use: drive A: is the built-in disk drive (at the front of the computer) and drive M: is the +3's internal RAMdisk (more about this in chapter 8 part 20). If you have connected an external disk drive to the +3, then you will see drive B: also indicated on the menu. The opening menu will appear whenever you first plug in and switch on the +3, or whenever you press and release the **RESET** button.
+Note that the opening menu initially indicates which drives are available for use: drive A: is the built-in disk drive (at the front of the computer) and drive M: is the +3's internal RAMdisk (more about this in chapter 8 [part 20](#part20)). If you have connected an external disk drive to the +3, then you will see drive B: also indicated on the menu. The opening menu will appear whenever you first plug in and switch on the +3, or whenever you press and release the **RESET** button.
 
 As its name suggests, the menu offers you a selection of options. You can choose from one of the four options which appear within the central box on the screen. These are:
 
@@ -512,10 +512,10 @@ Again, using the cursor keys and **ENTER**, select the option `Exit` to return t
 You may now select whichever opening menu option you require.
 Depending upon your selection, refer to the following chapters for further information...
 
-* `Loader`      Refer to chapters 3 and 4.
-* `+3 BASIC`    Refer to chapters 6 and 8.
-* `Calculator`  Refer to chapter 9.
-* `48 BASIC`    Refer to chapters 4 and 7.
+* `Loader`      Refer to chapters [3](#chapter3) and [4](#chapter4).
+* `+3 BASIC`    Refer to chapters [6](#chapter6) and [8](#chapter8).
+* `Calculator`  Refer to chapter [9](#chapter9).
+* `48 BASIC`    Refer to chapters [4](#chapter4) and [7](#chapter7).
 
 **IMPORTANT - Whenever you have finished using the +3, always disconnect the power supply unit from the mains supply socket (having first removed any disk from the disk drive).**
 
@@ -1096,7 +1096,7 @@ If you receive the above options, then:
 
 ## Further information
 
-Further information on disk operations (together with details of how to use the +3's RAMdisk and how to use an external cassette unit) can be found in chapter 8 part 20. A guide to +3DOS (the +3 Disk Operating System) will be found in chapter 8 part 27.
+Further information on disk operations (together with details of how to use the +3's RAMdisk and how to use an external cassette unit) can be found in chapter 8 [part 20](#part20). A guide to +3DOS (the +3 Disk Operating System) will be found in chapter 8 [part 27](#part27).
 
 # <a id="chapter7"></a> Chapter 7 - Using 48 BASIC
 
@@ -1112,7 +1112,7 @@ The +3 has the ability to act exactly like a 48K Spectrum (or Spectrum +). This 
 
 The 48 BASIC mode is included for compatibility reasons only - there is no advantage in using 48 BASIC (instead of +3 BASIC mode) to write programs, and it is ***not*** recommended. The following information is included for reference only, or for anybody who is used to the old 48K Spectrum and wants to use the machine immediately without having to learn about the +3 BASIC editor.
 
-There are, in fact, two methods of entering the 48 BASIC mode: the first is by selecting the `48 BASIC` option from the opening menu (if you don't know how to select a menu option, refer back to chapter 2).
+There are, in fact, two methods of entering the 48 BASIC mode: the first is by selecting the `48 BASIC` option from the opening menu (if you don't know how to select a menu option, refer back to [chapter 2](#chapter2)).
 
 When 48 BASIC starts up, you will see the following on the screen...
 
@@ -1395,18 +1395,18 @@ When **ENTER** is pressed, the line is either executed, entered into the program
 
 As program lines are entered, a listing is displayed in the top half of the screen. The last line entered is called the current line and is indicated by the symbol `>` after the line number. Any line in the program may be selected as the current line (for editing purposes) by using the up and down cursor keys (to the right of the space bar). To then edit the select current line, press the **EDIT** key. (Editing takes place at the bottom of the screen.)
 
-When a command is executed or a program is run, output is displayed in th top half of the screen and remains there until either **ENTER** or the cursor up or down key is pressed. At the bottom of the screen appears a ***report*** giving a code (digit or letter) referred to in part 29 of chapter 8. This report remains on the screen until a key is pressed and the +3 returns to `K` mode.
+When a command is executed or a program is run, output is displayed in th top half of the screen and remains there until either **ENTER** or the cursor up or down key is pressed. At the bottom of the screen appears a ***report*** giving a code (digit or letter) referred to in [part 29 of chapter 8](#part29). This report remains on the screen until a key is pressed and the +3 returns to `K` mode.
 
 # <a id="chapter8"></a> Chapter 8 - The +3 BASIC programmer's guide
 
 ## <a id="part1"></a> Part 1 - Introduction
 
-Whether you read chapter 6 first, or came straight here, you should be aware that...
+Whether you read [chapter 6](#chapter6) first, or came straight here, you should be aware that...
 
 - ***Commands*** are obeyed straight away.
 - ***Instructions*** begin with a line number and are stored away for later use.
 
-This guide to BASIC starts by repeating some of the information given in chapter 6 (Introducing +3 BASIC), but in greater detail. You may also find exercises at the end of some sections - don't ignore these, as many of them illustrate points that are hinted at in the text. Look through them, and do any that interest you or that seem to cover ground that you don't understand properly.
+This guide to BASIC starts by repeating some of the information given in [chapter 6 (Introducing +3 BASIC)](#chapter6), but in greater detail. You may also find exercises at the end of some sections - don't ignore these, as many of them illustrate points that are hinted at in the text. Look through them, and do any that interest you or that seem to cover ground that you don't understand properly.
 
 ### The Keyboard
 
@@ -1558,7 +1558,7 @@ If the program being entered gets bigger than the screen size, then the +3 attem
 
 ...where xxx is a line number, telling the +3 to bring a specified area of the program into view.
 
-When a command is executed or a program is run, output is displayed in the top part of the screen and remains there when the program finishes (until a key is pressed). If the program is being edited in the bottom part of the screen, then any output in the top screen will stay there until it is either overwritten, scrolled off, or a `CLS` command is issued. The bottom screen may display a ***report*** giving a code (digit or letter) referred to in part 29 of this chapter. This report remains in the bottom screen until a key is pressed.
+When a command is executed or a program is run, output is displayed in the top part of the screen and remains there when the program finishes (until a key is pressed). If the program is being edited in the bottom part of the screen, then any output in the top screen will stay there until it is either overwritten, scrolled off, or a `CLS` command is issued. The bottom screen may display a ***report*** giving a code (digit or letter) referred to in [part 29 of this chapter](#part29). This report remains in the bottom screen until a key is pressed.
 
 While the +3 is running a BASIC program, the **BREAK** key is checked every so often. This happens at the end of a statement, during use of the cassette unit (if connected) or printer (if connected), or while music is being played. If the +3 finds that the **BREAK** key is pressed, then program execution stops and displays a report. The program may then be edited.
 
@@ -1589,7 +1589,7 @@ As we have already discussed - because these lines began with numbers, they were
 
 Note also that although we typed each line in lower case letters, the keywords (ie. `PRINT` and `LET`) were converted to upper case as soon the line was entered and accepted by the +3. From now on, we will show keywords to be typed in upper case letters; however, you may continue to type in lower case letters.
 
-(By the way, if you don't know what a keyword is, you should have studied chapter 6 before reading this chapter.)
+(By the way, if you don't know what a keyword is, you should have studied [chapter 6](#chapter6) before reading this chapter.)
 
 So far you have only entered one number, so type...
 
@@ -2177,7 +2177,7 @@ Try this out for yourself. Type in...
 
     PRINT 8-12/4+2*2
 
-A full list of the priorities of mathematical (and logical) operations will be found in part 31 of this chapter.
+A full list of the priorities of mathematical (and logical) operations will be found in [part 31 of this chapter](#part31).
 
 You may, however, change the priority of calculations within an expression by the use of brackets. Calculations within brackets are carried out first, so if in the above expression, you required the addition `4+2` to be carried out first, you would enclose it in brackets. To see this, type in...
 
@@ -2911,7 +2911,7 @@ Subjects covered...
 - `AND`, `OR`
 - `NOT`
 
-We saw in part 3 of this chapter how an `IF` statement takes the form...
+We saw in [part 3 of this chapter](#part3) how an `IF` statement takes the form...
 
   `IF` condition `THEN`...
 
@@ -3049,7 +3049,7 @@ Subjects covered...
 
 The letters, digits, spaces, punctuation marks and so on that can appear in strings are called characters, and they make up the character set that the +3 uses. Most of these characters are single symbols, but there are some more, called tokens, that represent whole words, such as `PRINT`, `STOP`, `<>` and so on.
 
-There are 256 characters, and each one has a code between 0 and 255 (there is a complete list of them in part 26 of this chapter). To convert between codes and characters, there are two functions, `CODE` and `CHR$`.
+There are 256 characters, and each one has a code between 0 and 255 (there is a complete list of them in [part 26 of this chapter](#part26)). To convert between codes and characters, there are two functions, `CODE` and `CHR$`.
 
 `CODE` is applied to a string, and gives the code of the first character in the string (or 0 if the string is empty).
 
@@ -3193,7 +3193,7 @@ To define a new character for yourself, follow this recipe, it defines a charact
                    |___|___|___|___|___|___|___|___|
 ````
 
-When a dot is on, the +3 prints the ink colour; when a dot if off, the +3 prints the paper colour. (The terms ink and paper are explained in [part 16](#part16) of this chapter.)
+When a dot is on, the +3 prints the ink colour; when a dot if off, the +3 prints the paper colour. (The terms ink and paper are explained in [part 16 of this chapter](#part16).)
 
 We've left a one-square border around the edge because all the other letters also have one (except for lower case letters with tails, where the tail goes right down to the bottom).
 
@@ -3231,13 +3231,13 @@ Even if you don't understand this, the following program will define the charact
     110 DATA BIN 00000000
 
 The `POKE` statement stores a number directly in a memory location, bypassing the mechanisms normally used by the BASIC. The opposite of `POKE` is `PEEK`, and this allows us to look at the contents of a memory location although it does not actually alter the contents themselves.
-`PEEK` and `POKE` are described more fully in [part 24](#part24) of this chapter.
+`PEEK` and `POKE` are described more fully in [part 24 of this chapter](#part24).
 
 After the user-defined graphics in the character set come the tokens.
 
 You will have noticed that we have not printed out the first 32 characters (codes 0 to 31) - these are ***control characters***. They don't produce anything printable, but instead are used to control the screen display or some other function of the +3.
 
-(If you try to print control characters, the +3 displays `?` to show that it doesn't understand them. Control characters are described more fully in [part 28](#part28) of this chapter.)
+(If you try to print control characters, the +3 displays `?` to show that it doesn't understand them. Control characters are described more fully in [part 28 of this chapter](#part28).)
 
 The three control characters that the screen display uses are 6, 8 and 13 (these will now be explained). On the whole, `CHR$ 8` is the only one you are likely to find useful.
 
@@ -3547,7 +3547,7 @@ There's an interesting side effect to `INPUT`. Whilst typing into an `INPUT` req
 
 Input a few numbers, and they'll be printed faithfully onto the screen. Now press **EXTEND MODE** followed by the **M** key. The word `PI` appears, and if you press **ENTER**, then `3.1415927` will appear as if by magic. However, if you type `PI` as two letters without the aid of **EXTEND MODE** then the +3 will stop with the report `2 Variable not found, 10:1`.
 
-There's no simple explanation for this behaviour, and it's best just to be aware that it can happen if you press some combinations of keys during `INPUT`. If for some reason you're keen to experiment, chapter 7 (Using 48 BASIC) will tell you which keys produce which effects.
+There's no simple explanation for this behaviour, and it's best just to be aware that it can happen if you press some combinations of keys during `INPUT`. If for some reason you're keen to experiment, [chapter 7 (Using 48 BASIC)](#chapter7) will tell you which keys produce which effects.
 
 The control characters `CHR$ 22` and `CHR$ 23` have effects rather like `AT` and `TAB`. Whenever the +3 is instructed to print one of them, the character must be followed by two more characters that do not have their usual effect, but that are treated instead as numbers (their codes) to specify the line and column (for `AT`) or the tab position (for `TAB`). You will almost always find it easier to use `AT` and `TAB` in the usual way rather than use control characters, however, they might be useful in some circumstances. The `AT` control character is `CHR$ 22`. The first character after it specified the line number and the second specifies the column number, so that...
 
@@ -3590,6 +3590,539 @@ Exercise...
         110 LET m$="Wrong. Try again.": GO TO 30
 
 If they are perceptive, they might manage to work out that they do not have to do the calculation themselves. For instance, if the +3 asks them to type the answer to 2 x 3, then all they have to do is type in `2*3` literally.
+
+## <a id="part16"></a> Part 16 - Colours
+
+Subjects covered...
+
+- `INK`, `PAPER`, `FLASH`, `BRIGHT`, `INVERSE`, `OVER`
+- `BORDER`
+
+Run this program...
+
+     10 FOR m=0 TO 1: BRIGHT m
+     20 FOR n=1 TO 10
+     30 FOR c=0 TO 7
+     40 PAPER c: PRINT "    ";: REM 4 coloured spaces
+     50 NEXT c: NEXT n: NEXT m
+     60 FOR m=0 TO 1: BRIGHT m: PAPER 7
+     70 FOR c=0 TO 3
+     80 INK c: PRINT c;"  ":
+     90 NEXT c: PAPER 0
+    100 FOR c=4 TO 7
+    110 INK c: PRINT c;"  ";
+    120 NEXT c: NEXT m
+    130 PAPER 7: INK 0: BRIGHT 0
+
+This shows the eight colours (including white and black) and the two levels of brightness that the +3 can produce on a colour TV. (If your TV is black-and-white, then you will see just various shades of grey.) A quicker way to achieve a similar result is to **RESET** the +3 whilst holding down **BREAK** - but that's a little drastic. Here is a list of which numbers produce which colours (for your reference)...
+
+    0 - black
+    1 - blue
+    2 - red
+    3 - magenta
+    4 - green
+    5 - cyan
+    6 - yellow
+    7 - white
+
+On a black-and-white TV, these numbers are in order of brightness. To use these colours properly, you will need to understand a bit about how the picture is arranged.
+
+The picture is divided up into 768 (24 lines of 32) positions (cells) where characters can be printed.
+
+                    _______________________________
+                   |   |   |   |   |   |   |   |   |
+                   |___|___|___|___|___|___|___|___|
+                   |   |   |   |   |   |   |   |   |
+                   |___|___|___|___|___|___|___|___|
+                   |   |   |###|###|###|   |   |   |
+                   |___|___|###|###|###|___|___|___|
+                   |   |   |   |   |   |###|   |   |
+                   |___|___|___|___|___|###|___|___|
+                   |   |   |###|###|###|###|   |   |
+                   |___|___|###|###|###|###|___|___|
+                   |   |###|   |   |   |###|   |   |
+                   |___|###|___|___|___|###|___|___|
+                   |   |   |###|###|###|###|   |   |
+                   |___|___|###|###|###|###|___|___|
+                   |   |   |   |   |   |   |   |   |
+                   |___|___|___|___|___|___|___|___|
+
+                       A typical character cell
+
+Each character cell consists of an 8 x 8 grid (such as above). This should remind you of the user-defined graphics in [part 14](#part14), where we had 0s for the white dots and 1s for the black dots.
+
+The character has two colours associated with it: the ***ink***, or foreground colour, which is the colour for the black dots in our square, and the ***paper***, or background colour, which is used for the white dots. To start off with, every cell has black ink and white paper so writing appears as black on white.
+
+The character also has a brightness (normal or extra bright), and something to say whether it flashes or not. Flashing is done by continuously swapping the ink and paper colours. All this information can be coded into numbers, so a character then has the following...
+
+(i) An 8 x 8 grid of 0s and 1s to define the shape of the character, with 0 for paper and 1 for ink.
+
+(ii) Ink and paper colours, each coded into a number between 0 and 7.
+
+(iii) A brightness - 0 for normal, 1 for extra bright.
+
+(iv) A flash number - 0 for steady, 1 for flashing.
+
+Note that since the ink and paper colours cover a whole character cell, you cannot possibly have more than two colours in a given block of 64 dots. The same goes for the brightness and flash numbers - they refer to the whole character cell, not individual dots within the cell. The colour, brightness and flash number for a given character cell are called ***attributes***.
+
+When you print something on the screen, you change the dot pattern for that character cell. It is less obvious, but still true, that you also change the cell's attributes. To start off with you do not notice this because everything is printed with black ink on white paper (at normal brightness and no flashing); however, you can vary this with the `INK`, `PAPER`, `BRIGHT` and `FLASH` statements. Using the edit menu's `Screen` option, go to the bottom screen, and try...
+
+    PAPER 5
+
+...and then `PRINT` a few items on the screen - they will appear on cyan paper, because as they are printed, the paper colour for the cells they occupy are set to cyan (which has code 5).
+
+The others work the same way, so you may use the settings...
+
+- `PAPER`   (whole number between 0 and 7)
+- `INK`     (whole number between 0 and 7)
+- `BRIGHT`  (whole number between 0 and 1)
+- `FLASH`   (whole number between 0 and 1)
+
+...and any printing will set the corresponding attributes for all the character cells it subsequently uses.
+
+Try some of these out. You should now be able to see how the program at the beginning of this section worked (remember that a space is a character that has its ink and paper the same colour).
+
+There are some ore numbers you can use in these statements that have less direct effects.
+
+8 can be used in all four statements, and means 'transparent' in the same sense that the old attribute shows through. Suppose, for instance, that you do...
+
+    PAPER 8
+
+No character position will ever have its paper colour set to 8 because there is no such colour; what happens is that when a position is printed on, its paper colour is left the same as it was before. However, `INK 8`, `BRIGHT 8` and `FLASH 8` work the same way as for the other attribute numbers.
+
+9 can be used only with `PAPER` and `INK`, and means 'contrast'. The colour (ink or paper) that you use it with is made to contrast with the other by being made white if the other is a dark colour (black, blue, red or magenta), or being made black if the other is a light colour (green, cyan, yellow or white).
+
+Try this by doing...
+
+    INK 9: FOR c=0 TO 7: PAPER c: PRINT c: NEXT c
+
+A more impressive display of its power is to run the program at the beginning to make coloured stripes (again, making sure that you are in the lower screen when you type `RUN`), and then doing...
+
+    INK 9: PAPER 8: PRINT AT 0, 0;: FOR n=1 TO 1000: PRINT n;:NEXT n
+
+The ink colour here is always made to contrast with the old paper colour for each character cell.
+
+Colour TV relies on the fact that the human eye need see only three colours of light (red, green and blue) in various combinations and intensities in order to perceive all the colours of the spectrum. The +3 also displays its spectrum of colours by using mixtures of red, green and blue. For instance, yellow is made by mixing red with green - which is why the code, 6, is the sum of the codes for red and green.
+
+To see how all eight colours fit together, imagine three rectangular spotlights, coloured red, green and blue shining at not quite the same place on a piece of white paper in the dark. Where they overlap you will see mixtures of colours, as shown by the following program (note that solid ink spaces are obtained by entering graphics mode (pressing **GRAPH**) then holding down **CAPS SHIFT** while pressing **8**. To exit from graphics mode, press **9**.)...
+
+      10 BORDER 0: PAPER 0: INK 7: CLS
+      20 FOR a=1 TO 6
+      30 PRINT TAB 6; INK 1;"██████████████████": REM 18 ink squares
+      40 NEXT a
+      50 LET dataline=200
+      60 GO SUB 1000
+      70 LET dataline=210
+      80 GO SUB 1000
+      90 STOP
+     200 DATA 2,3,7,5,4
+     210 DATA 2,2,6,4,4
+    1000 FOR a=1 TO 6
+    1010 RESTORE dataline
+    1020 FOR b=1 TO 5
+    1030 READ c: PRINT INK c;"██████";: REM 6 ink squares
+    1040 NEXT b: PRINT: NEXT a
+    1050 RETURN
+
+There is a function called `ATTR` that finds out what the attributes ate at a given position on the screen. It is a fairly complicated function, so it has been relegated to the end of this section.
+
+There are two more statements, `INVERSE` and `OVER`, which control not the attributes, but the dot pattern that is printed on the screen. They use the numbers 0 for off, and 1 for on. If you use `INVERSE 1`, then each character cell's dot pattern will be the inverse of its usual form, i.e. paper dots will be replaced by ink dots and vice versa. Thus the character cell containing '**a' (shown previously) would be printed as follow...
+
+                    _______________________________
+                   |###|###|###|###|###|###|###|###|
+                   |###|###|###|###|###|###|###|###|
+                   |###|###|###|###|###|###|###|###|
+                   |###|###|###|###|###|###|###|###|
+                   |###|###|   |   |   |###|###|###|
+                   |###|###|___|___|___|###|###|###|
+                   |###|###|###|###|###|   |###|###|
+                   |###|###|###|###|###|___|###|###|
+                   |###|###|   |   |   |   |###|###|
+                   |###|###|___|___|___|___|###|###|
+                   |###|   |###|###|###|   |###|###|
+                   |###|___|###|###|###|___|###|###|
+                   |###|###|   |   |   |   |###|###|
+                   |###|###|___|___|___|___|###|###|
+                   |###|###|###|###|###|###|###|###|
+                   |###|###|###|###|###|###|###|###|
+
+
+If (as at switch on) we have black ink on white paper, then the '**a**' will appear as white on black.
+
+The statement...
+
+    OVER 1
+
+...sets into action a particular sort of overprinting. Normally when something is written into a character position, it completely obliterates what was there before; however, using `OVER 1`, the new character is simply added on top of the old one. This can be particularly useful for writing composite characters, like an underlined letter, as in the following program. (Reset the computer and select `+3 BASIC`. Note that the underline character is obtained by pressing **SYMB SHIFT** together with `0`.)...
+
+    10 OVER 1
+    20 PRINT "w"; CHR$ 8;"_";
+
+(Notice we have used the control character `CHR$ 8` (backspace) before overprinting the `b` with `_`.)
+
+There is another way of using `INK`, `PAPER` and so on which you will probably find more useful than having them as statements. You can put them as items in a `PRINT` statement (followed by `;`), and they then do exactly the same as they would have done if they had been used as statements on their own, except that their effect is only temporary, lasting as far as the end of the `PRINT` statement that contains them. Thus if you type...
+
+    PRINT PAPER 6;"x";: PRINT "y"
+
+...then only the `x` will be on yellow paper.
+
+`PAPER`, `INK`, etc. when used as statements do not affect the colour in the bottom part of the screen (where `INPUT` data is typed in and reports are displayed). The bottom screen uses the colour of the border for its paper colour, code 9 (for contrast) for its ink colour, has flashing off, and everything at normal brightness. You can change the border colour to any of the eight normal colours (not 8 or 9) using the statement...
+
+    BORDER colour
+
+When you type in `INPUT` data, it follows this rule of using contrasting ink on border coloured paper, but you can change the colour of the captions written by the +3 by using `PAPER`, `INK`, etc. items in the `INPUT` statement, just as you would in a `PRINT` statement. Their effect lasts either to the end of the statement, or until some `INPUT` data is typed in, whichever comes soonest. Try...
+
+    INPUT FLASH 1; INK 4;"Enter a number?";n
+
+The +3 has a high regard for your sanity - no matter what combination of effects and colours you manage to produce from a BASIC program, the editor will always use black ink on white paper.
+
+There is one more way of changing the colours by using control characters - rather like the control characters for `AT` and `TAB` in [part 15](#part15).
+
+- `CHR$ 16` corresponds to `INK`
+- `CHR$ 17` corresponds to `PAPER`
+- `CHR$ 18` corresponds to `FLASH`
+- `CHR$ 19` corresponds to `BRIGHT`
+- `CHR$ 20` corresponds to `INVERSE`
+- `CHR$ 21` corresponds to `OVER`
+
+These are each followed by one character that shows a colour by its code; so that (for instance)...
+
+    PRINT CHR$ 16+ CHR$ 9;"item"
+
+...has the same effect as...
+
+    PRINT INK 9;"item"
+
+On the whole, you would not bother to use these control characters because you might just as well use the statements `PAPER`, `INK`, etc. However, if you have some old 48K BASIC programs on cassette, you may find such control characters embedded in the listing. In general, the editor will actively ignore them, and remove them at the first opportunity. It is not possible to insert them into listings as with the old 48K Spectrum.
+
+The `ATTR` function has the form...
+
+    ATTR(line,column)
+
+Its two arguments are the line and column numbers that you would use in an `AT` item, and its result is a number that shows the colours and so on at the corresponding character position on the TV screen. You can use this as freely in expressions as you can any other function.
+
+The number that is the result is the sum of four other numbers as follows...
+
+- 128 - if the character cell is flashing, 0 if it is steady.
+- 64  - if the character cell is bright, 0 if it is normal.
+- 8   - multiplied by the code for the paper colour.
+- 1   - multiplied by the code for the ink colour.
+
+For instance, if the character cell is flashing, normal brightness, yellow paper and blue ink, then the four numbers that we have to add together are 128, 0, 8x6=48 and 1, making 177 altogether. Test this with...
+
+    PRINT AT 0,0; FLASH 1; PAPER 6; INK 1;" "; ATTR (0,0)
+
+Exercises...
+
+1. Try...
+
+    PRINT "B"; CHR$ 8; OVER 1;"/";
+
+Where the `/` has cut through the `B`, it has left a white dot. This is the way that overprinting works on the +3 - two papers or two inks give a paper, one of each gives an ink. This has the interesting property that if you overprint with the same thing twice you end up with what you had at the beginning. If you now type...
+
+    PRINT CHR$ 8; OVER 1;"/"
+
+...why do you recover an unblemished `B`?
+
+2. Run this program...
+
+    10 POKE 22528+ RND *704, RND *127
+    20 GO TO 10
+
+(Never mind how this program works.) The program is changing the colours of squares on the TV screen and the `RND` should ensure that this happens randomly. (The diagonal stripes that you eventually see are a manifestation of the hidden pattern in `RND`, ie. pseudo-random instead of truly random.)
+
+## <a id="part17"></a> Part 17 - Graphics
+
+Subjects covered...
+
+- `PLOT`, `DRAW`, `CIRCLE`
+- Pixels
+
+For all of this section, type in the example programs, commands and `RUN` in the small screen (use the edit menu's `Screen` option).
+
+In this section we shall see how to draw pictures on the +3. The part of the screen you can see has 22 lines and 32 columns, making 22x32 =704 character positions. As you may remember from part 16, each of these character positions is made up of an 8 x 8 grid of dots which are called ***pixels*** (picture elements).
+
+A pixel is specified by two numbers - its coordinates. The first, its x coordinate, says how far it is across from the extreme left-hand column. The second, its y coordinate, says how far it is up from the bottom. These coordinates are usually written as a pair in brackets, so (0,0) (255,0) (0,175) and (255,175) are the bottom left, bottom
+right, top left and top right corners of the screen.
+
+If you have trouble memorising which coordinate is which, simply remember that ***x is a cross*** (x is across).
+
+The statements...
+
+    PLOT x coordinate, y coordinate
+
+..inks in the pixel with these coordinates, so this measles program...
+
+    10 PLOT INT ( RND *256), INT (RND *176): INPUT a$: GO TO 10
+
+...plots a random point each time you press **ENTER**.
+
+Here is a rather more interesting program. It plots a graph of the function `SIN` (a sine wave) for values between 0 and 2*π...
+
+    10 FOR n=0 TO 255
+    20 PLOT n, 88+80* SIN (n/128*PI )
+    30 NEXT n
+
+This next program plots a graph of `SQR` (part of a parabola) between 0 and 4...
+
+    10 FOR n=0 TO 255
+    20 PLOT n, 80* SQR (n/64)
+    30 NEXT n
+
+Notice that pixel coordinates are rather different from the line and column in an `AT` item. You may find that the diagram in [part 15 of this chapter](#part15) is useful when working out pixel coordinates and line and column numbers.
+
+To help you with your pictures, the +3 will draw straight lines, circles and parts of circles for you, using `DRAW` and `CIRCLE`
+statements.
+
+The statement `DRAW` (to draw a straight line) takes the form...
+
+    DRAW x, y
+
+The starting place of the line is the pixel where the last `PLOT`, `DRAW` or `CIRCLE` statement left off (this is called the PLOT position - `RUN`, `CLEAR`, `CLS` and `NEW` reset it to the bottom left-hand corner, at 0,0); the finishing place of the line is x pixels to the right of that and y pixels up. The DRAW statement on its own determines the length and direction of the line, but not its starting point.
+
+Experiment with a few `PLOT` and `DRAW` commands, for instance...
+
+    PLOT 0,100: DRAW 80,-35
+    PLOT 90,150: DRAW 80,-35
+
+Notice that the numbers in a `DRAW` statement can be negative, but those in a `PLOT` statement can't.
+
+You can also plot and draw in colour, although you have to bear in mind that colours always cover the whole of a character cell and cannot be specified for individual pixels. When a pixel is plotted, it is set to show the full ink colour, and the whole of the character cell containing it is given the current ink colour. This program demonstrates that point...
+
+    10 BORDER 0: PAPER 0: INK 7: CLS: REM black out screen
+    20 LET x1=0: LET y1=0: REM start of line
+    30 LET c=1: REM for ink colour, starting blue
+    40 LET x2= INT ( RND *256): LET y2= INT ( RND *176): REM
+       random finish on line
+    50 DRAW INK c;x2-x1,y2-y1
+    60 LET x1=x2: LET y1=y2: REM next line starts where last
+       one finished
+    70 LET c=c+1: IF c=8 THEN LET c=1: REM new colour
+    80 GO TO 40
+
+The lines seem to get broader as the program goes on, and this is because a line changes the colours of all the inked-in pixels of all character cells that it passes through. Note that you can embed `PAPER`, `INK`, `FLASH`, `BRIGHT`, `INVERSE` and `OVER` items in a `PLOT` or `DRAW` statement just as you could with `PRINT` and `INPUT`. They go between the keyword and the coordinates, and are terminated by either semicolons or commas.
+
+An extra frill with `DRAW` is that you can use it to draw part of circles instead of straight lines, by including an extra number to specify an angle to be turned through. The form is...
+
+    DRAW x,y,a
+
+x and y are used to specify the finishing point of the line just as before, and a is the number of radians that it must turn through as it goes. If a is positive then it turns to the left, if a is negative then it turns to the right. Another way of seeing a is as showing the fraction of a complete circle that will be drawn, (a complete circle is 2\*π radians) so if a equals π it will draw a semicircle, if a equals 0.5*π a quarter if a circle, and so on.
+
+For instance, suppose a equals π. Then whatever values x and y take, a semicircle will be drawn. Try...
+
+    10 PLOT 100,100: DRAW 50,50, PI
+
+...which will draw this...
+
+
+                                       `-.   Finish at (150,150)
+                                          `
+                                           `
+                                            :
+                                            :
+                                           ;
+                                         ,'
+                             `--______--'
+
+                        Start at (100,100)
+
+
+The drawing starts off in a south-easterly direction, but by the time it stops, it is going north-west. In between, it has turned through 180 degrees, or π radians (the value of a).
+
+Run the program several times, with `PI` replaced by various other expressions, e.g. `-PI`, `PI/2`, `3*PI/2`, `PI/4`, `1`, `0`, etc.
+
+The last statement in this section is `CIRCLE`, which draws an entire circle. You specify the coordinates of the centre and the radius of the circle using...
+
+    CIRCLE x coordinate, y coordinate, radius
+
+Just as with `PLOT` and `DRAW`, you can put various sorts of colour items in at the beginning of a `CIRCLE` statement.
+
+The `POINT` function tells you whether a pixel is ink or paper colour. Its two arguments are the coordinates of the pixel (which must be enclosed in brackets) and its result is 0 if the pixel is paper colour, or 1 if its ink colour. Try...
+
+    CLS : PRINT POINT (0,0): PLOT 0,0: PRINT POINT (0,0)
+
+Type...
+
+    PAPER 7: INK 0
+
+...and investigate how `INVERSE` and `OVER` work inside `PLOT` statement. These two affect just the relevant pixel, and not the rest of the character cell. They are normally off (0) in a `PLOT` statement, so you only need to mention them to turn them on (1).
+
+Here is a list if the possibilities for reference:
+
+`PLOT`;               - This is the usual form. It plots an ink dot, i.e. sets the pixel to show the ink colour.
+
+`PLOT INVERSE 1;` - This plots a dot of 'ink eradicator', ie. it sets the pixel to show the paper colour.
+
+`PLOT OVER 1;` - This exchanges the pixel colour with whatever it was before, so if it was ink colour then it becomes paper colour, and vice versa.
+
+`PLOT INVERSE 1; OVER 1`; - This leaves the pixel exactly as it was before, but note that it also changes the `PLOT` position, so you might use it simply to do that.
+
+As another example of using `OVER` statement, fill the screen up with writing using black on white, and then type...
+
+    PLOT 0,0: DRAW OVER 1;255,175
+
+This will draw a fairly decent line, even though it has gaps in it wherever it hits some writing. Now type in exactly the same command again. The line will vanish without leaving any trace whatsoever - this is the great advantage of `OVER 1`. If you had drawn the line using...
+
+    PLOT 0,0: DRAW 255,175
+
+...and erased using...
+
+    PLOT 0,0: DRAW INVERSE 1;255,175
+
+...then you would also have erased some of the writing.
+
+Now try...
+
+    PLOT 0,0: DRAW OVER 1;250,175
+
+...and try to 'undraw' it using...
+
+    DRAW OVER 1;-250,-175
+
+This doesn't quite work because the pixels that the line uses on the way back are not quite the same as the ones that it used on the way there. You must therefore undraw a line in exactly the same direction as you drew it.
+
+One way to get unusual colours is to speckle two normal ones together in a single square, using a user-defined graphic. Try this program...
+
+    1000 FOR n=o TO 6 STEP 2
+    1010 POKE USR "a"+n, BIN 01010101: POKE USR "a"+n+1, BIN 10101010
+    1020 NEXT n
+    1030 REM now press GRAPH then A
+
+...which gives the user-defined graphic corresponding to a chessboard pattern. If you print the character (press **GRAPH** then **A**) you will find that the character is reproduced in a combination of the current paper and ink colours.
+
+Exercises...
+
+1. Experiment with `PAPER`, `INK`, `FLASH` and `BRIGHT` items in a `PLOT` statement. These are the parts that affect the whole of the character cell containing the pixel. Normally it is as though the `PLOT` statement had started off...
+
+    PLOT PAPER 8; FLASH 8; BRIGHT 8; ...etc
+
+...and only the ink colour of a character cell is altered when something is plotted there, but you can change this if you wish.
+
+Be especially careful when using colours with `INVERSE 1`, because this sets the pixel to show the paper colour, and may change the ink colour, which might not be what you expect.
+
+2. If you have read [part 10](#part10), see if you can work out how to draw circles using `SIN` and `COS`. Run this program...
+
+    10 FOR n=0 TO 2* PI STEP PI /180
+    20 PLOT 100+80* COS n, 87+80*SIN n
+    30 NEXT n
+    40 CIRCLE 150, 87, 80
+
+You can see that the `CIRCLE` statement is much quicker, albeit less accurate.
+
+3. Try...
+
+    CIRCLE 100,87,80: DRAW 50,50
+
+You can see from this that the `CIRCLE` statement leaves the `PLOT` position at a rather indeterminate place - it is always somewhere about half way up the right-hand side of the circle. You will usually need to follow the `CIRCLE` statement with a `PLOT` statement before you do any more drawing.
+
+## <a id="part18"></a> Part 18 Timing
+
+Subjects covered...
+
+- `PAUSE`, `PEEK`, `INKEY$`
+
+Quite often you will want to make the program take a specified length of time, and for this you will find the `PAUSE` statement useful.
+
+    PAUSE n
+
+...stops computing and displays the picture for n frames of the TV (there are 50 frames per second in Europe and 60 in USA). The value of n can be up to 65535, which gives you a pause of just under 22 minutes. If n=0 then it means 'pause indefinitely'.
+
+A pause can always be cut short by pressing a key.
+
+This program works the second hand of a clock...
+
+     10 REM first we draw the clock face
+     20 FOR n=1 TO 12
+     30 PRINT AT 10-10* COS (n/6* PI ),16+10* SIN (n/6* PI );n
+     40 NEXT n
+     50 REM now we start the clock
+     60 FOR t=0 TO 200000: REM t is the time in seconds
+     70 LET a=t/30* PI: REM a is the angle of the second hand in radians
+     80 LET sx=80* SIN a: LET sy=80* COS a
+    200 PLOT 128,88: DRAW OVER 1;sx,sy: REM draw second hand
+    210 PAUSE 42
+    220 PLOT 128,88: DRAW OVER 1;sx,sy: REM erase second hand
+    400 NEXT t
+
+The clock will run down after about 55.5 hours because of line 60, but you can easily make it run longer. Note how the timing is controlled by line 210. You might expect `PAUSE 50` to make it tick once per second, however, the computing takes a bit of time as well and has to be allowed for. This is best done by trial and error, timing the +3 clock against a real one, and adjusting line 210 until they agree. You can't do this very accurately - an adjustment of one frame per second is equal to 2% (or half an hour in a day).
+
+There is a much more accurate way of measuring time. This uses the contents of certain memory locations. The data stored is retrieved by using `PEEK`. [Part 25 of this chapter](#part25) explains what we're looking at in detail. Type in the expression...
+
+    PRINT (65536* PEEK 23674+256* PEEK 23673+ PEEK 23672)/50
+
+This prints the number of seconds since the +3 was turned on (up to about 3 days and 21 hours, after which it goes back to 0).
+
+Here is a revised clock program to make use of this...
+
+     10 REM first we draw the clock face
+     20 FOR n=1 TO 12
+     30 PRINT AT 10-10* COS (n/6* PI ),16+10* SIN (n/6* PI );n
+     40 NEXT n
+     50 DEF FN t()= INT ((65536* PEEK 23674+256* PEEK 23673+ PEEK 23672)/50): REM number of seconds since start
+    100 REM now we start the clock
+    110 LET t1= FN t()
+    120 LET a=t1/30* PI: REM a is the angle of the second hand in radians
+    130 LET sx=72* SIN a: LET sy=72* COS a
+    140 PLOT 131,91: DRAW OVER 1;sx,sy: REM draw hand
+    200 LET t= FN t()
+    210 IF t<=t1 THEN GO TO 200: REM will wait until time for next hand
+    220 PLOT 131,91: DRAW OVER 1;sx,sy: REM rub out old hand
+    230 LET t1=t: GO TO 120
+
+The internal clock that this method uses should be accurate to about 0.01% (approx 10 seconds per day) so long as the +3 is simply running the program. However, when you use the `BEEP` statement (described in [part 19 of this chapter](#part19)) or operate the disk drive or any peripheral attached to the +3 (e.g. a printer or second disk drive), the internal clock stops temporarily, losing time.
+
+The numbers `PEEK 23674`, `PEEK 23673`, and `PEEK 23672` are held inside the +3 and used for counting in 50ths of a second. Each is between 0 and 255 and they gradually increase through all the numbers from 0 to 255; after 255 they drop straight back to 0.
+
+The one that increases the most often is `PEEK 23672` - every 1/50 second it increases by 1. When it is at 255, the next increase 'nudges' it to 0, and at the same time it increments `PEEK 23673` up by 1. When (every 256/50 seconds) `PEEK 23673` is nudged from 255 to 0, it in turn increments `PEEK 23674` up by 1. This should be enough to explain why the expression above works.
+
+Now, consider this carefully: suppose our three numbers are 0 (for `PEEK 23674`), 255 (for `PEEK 23673`) and 255 (for `PEEK 23672`). This means that it is about 21 minutes after switch on. Our expression ought to yield (65536x0+256x255+255)/50 which is equal to 1310.7.
+
+But there is a hidden danger - the next time there is a 1/50 second count, the three numbers will change to 1, 0 and 0. Every so often, this will happen when you are half way through evaluating the expression - the +3 would evaluate `PEEK 23674` as 0, but then change the other two to 0 before it can `PEEK` them. The answer would then be (65536x0+256x0+0)/50 which is equal to 0, which is obviously wrong.
+
+A simple way of avoiding this problem is to evaluate the expression twice in succession and take the larger answer.
+
+Now if you look carefully at the previous program, you can see that it does this implicitly.
+
+Here is a trick to apply the rule. Define the functions...
+
+    10 DEF FN m(x,y)=(x+y+ ABS (x-y))/2: REM the larger of x and y
+    20 DEF FN u()=(65536* PEEK 23674+256* PEEK 23673+PEEK 23672)/50: REM time (may be wrong)
+    30 DEF FN t()= FN m( FN u(), FN u()): REM time (correct)
+
+You can change the three counter numbers so that they give the real time instead of the time since the +3 was switched on. For instance, to set the time at 10.00am, you work out that this is 10 x 60 x 60 x 50 which is equal to 1800000 fiftieths of a second (and 1800000 is equal to 65536 x 27 + 256 x 119 + 64 x 1).
+
+To set the three numbers to 27, 119 and 64, you type...
+
+    POKE 23674,27: POKE 23673,119: POKE 23672,64
+
+In countries with mains frequencies of 60 Hz (cycles per second), these programs must replace 50 by 60 where appropriate.
+
+The function `INKEY$` (which has no argument) reads the keyboard. If you are pressing just one key, (or say, **CAPS SHIFT** and just one other key), then the result is the character which that key gives normally, otherwise the result is an empty string.
+
+Try this program, which works like a typewriter.
+
+    10 IF INKEY$ <> "" THEN GO TO 10
+    20 IF INKEY$ ="" THEN GO TO 20
+    30 PRINT INKEY$ ;
+    40 GO TO 10
+
+Here line 10 waits for you to life your finger off the keyboard, and line 20 waits for you to press a new key.
+
+Unlike `INPUT`, `INKEY$` doesn't wait for you, so you don't have to press **ENTER**.
+
+Exercises...
+
+1. What happens if you miss out line 10 in the 'typewriter' program?
+
+2. Another way of using `INKEY$` is in conjunction with `PAUSE`, as in this alternative 'typewriter' program...
+
+    10 PAUSE 0
+    20 PRINT INKEY$ ;
+    30 GO TO 10
+
+To make this work, why is it essential that a pause should not finish if it finds you already pressing a key when it starts?
+
+3. Adapt the 'clock second hand' program so that it also shows minute and hour hands, re-drawing them every minute. If you're feeling ambitious, arrange so that every quarter of an hour, it puts on some kind of show - perhaps you could produce the 'Big Ben' chimes using `PLAY` (described in [part 19 of this chapter](#part19)).
 
 ## <a id="part25"></a> Part 25 - The system variables
 
@@ -3735,14 +4268,14 @@ Subjects covered...
 
 This section is written for those who understand Z80 machine code, ie. the set of instructions that the Z80 processor chip users. If you do not, but would like to, there are plenty of books about it. You should get one called something along the lines of... 'Z80 machine code (or assembly language) for the absolute beginner', and if it mentions the '+3' or other computers in the ZX Spectrum range, so much the better.
 
-Machine code programs are normally written in assembly language, which, although cryptic, is not too difficult to understand with practice. You can see the ***assembly language*** instructions in part 28 of this chapter. However, to run them on the +3 you need to code the program into a sequence of bytes - then called machine code. This translation is usually done by the computer itself using a program called an ***assembler***. There is no assembler built in to the +3, but you will be able to buy one on disk or tape. Failing that, you will have to do the translation yourself, provided that the program is not too long.
+Machine code programs are normally written in assembly language, which, although cryptic, is not too difficult to understand with practice. You can see the ***assembly language*** instructions in [part 28 of this chapter](#part28). However, to run them on the +3 you need to code the program into a sequence of bytes - then called machine code. This translation is usually done by the computer itself using a program called an ***assembler***. There is no assembler built in to the +3, but you will be able to buy one on disk or tape. Failing that, you will have to do the translation yourself, provided that the program is not too long.
 
 Let's take as an example the program...
 
     ld bc, 99
     ret
 
-...which loads the BC register pair with 99. This translates into the four machine code bytes 1, 99, 0 (for `ld bc, 99`) and 201 (for `ret`). (If you look up codes 1 and 201 in part 28 of this chapter, you will find that corresponds to ***ld bc, NN*** - where NN stands for any two-byte number, and 201 corresponds to ***ret***.)
+...which loads the BC register pair with 99. This translates into the four machine code bytes 1, 99, 0 (for `ld bc, 99`) and 201 (for `ret`). (If you look up codes 1 and 201 in [part 28 of this chapter](#part28), you will find that corresponds to ***ld bc, NN*** - where NN stands for any two-byte number, and 201 corresponds to ***ret***.)
 
 When you have got your machine code program, the next step is to get into the computer - (an assembler would probably do this automatically). You need to decide whereabouts in memory to locate it - the best thing is to make extra space for it between the BASIC area and the user-defined graphics.
 
@@ -3796,7 +4329,7 @@ Then you may run the machine code from BASIC using the single command...
 
 ### Calling +3DOS from BASIC
 
-When BASIC's `USR` function is used, the code it references is entered with the memory configured as illustrated below (left), ie. the ROM switched in at the bottom of memory in the address range (000h...3FFFh) is ROM 3 (the 48 BASIC ROM). The RAM page at the top of memory is page 0 and the machine stack resides in this area (unless the `CLEAR` command has been used to reduce it to somewhere below C000h). As explained in part 27 of this chapter (which describes the +3DOS routines), DOS can only be called with RAM page 7 switched in at the top of memory, the stack held somewhere in that range 4000h...BFE0h, and ROM 2 (the DOS ROM) switched in at the bottom of memory (000h...3FFFh). This configuration is illustrated below (right).
+When BASIC's `USR` function is used, the code it references is entered with the memory configured as illustrated below (left), ie. the ROM switched in at the bottom of memory in the address range (000h...3FFFh) is ROM 3 (the 48 BASIC ROM). The RAM page at the top of memory is page 0 and the machine stack resides in this area (unless the `CLEAR` command has been used to reduce it to somewhere below C000h). As explained in [part 27 of this chapter](#part27) (which describes the +3DOS routines), DOS can only be called with RAM page 7 switched in at the top of memory, the stack held somewhere in that range 4000h...BFE0h, and ROM 2 (the DOS ROM) switched in at the bottom of memory (000h...3FFFh). This configuration is illustrated below (right).
 
 ```
           In BASIC                      (using DOS)
@@ -3920,11 +4453,11 @@ The addresses picked for the above code and its data areas are completely arbitr
 
 If interrupts are to be enabled (as is the case in the above example), it is imperative that the system is kept up to date about the latest ROM switch. This mean that the user must make the BANK678 system variable reflect the last value output to the port at 1FFDh. As shown by the above example, the general technique is to take a copy of the variable in A, set/reset the relevant its, update the system variable then make the switch with an `OUT` instruction. Interrupts must be disabled while the system variable does not reflect the current state of the port. The port at 1FFDh doesn't just control the ROM switch, so setting the variable to absolute values would be very unwise. Using AND/OR with a bit mask or SET/RES instructions is the preferred method of updating the variable.
 
-Just as BANK678 reflects the last value output to 1FFDh, BANKM should also be kept up to date with the last value output to 7FFDh. Again, it is unwise to use absolute values, as the port is used for other purposes. For example, the bottom 3 bits of the port are used to select the RAM page that is switched into the memory area C000h...FFFFh (this is also shown in the above example). naturally, when more than one bit is to be set/reset, a bit mask used with OR/AND is the more efficient method. note that RAM paging was described in the section entitled 'Memory management' in part 24 of this chapter.
+Just as BANK678 reflects the last value output to 1FFDh, BANKM should also be kept up to date with the last value output to 7FFDh. Again, it is unwise to use absolute values, as the port is used for other purposes. For example, the bottom 3 bits of the port are used to select the RAM page that is switched into the memory area C000h...FFFFh (this is also shown in the above example). naturally, when more than one bit is to be set/reset, a bit mask used with OR/AND is the more efficient method. note that RAM paging was described in the section entitled 'Memory management' in [part 24 of this chapter](#part24).
 
 The above was a very simple example of calling DOS routines. The following shows one or two extra techniques that you may find useful. However, if you are not already familiar with assembler programming, it might be better to skip this example.
 
-Although part 20 of this chapter suggested that the opening menu's `Loader` option first looks for a file called `*` and the one called `DISK` before trying to load the first file from tape - this isn't exactly the whole story. The first operation actually tries to load a ***bootstrap*** sector from the disk in drive A. The sector on side 0, track 0, sector 1 will be used as a loader (bootstrap) if the system finds that the 9 bit checksum of the sector is 3. The following program ensures that the checksum of 512 bytes conforms to this requirement, then writes the information to the disk in the correct position. Once a disk has been modified in this way, the `Loader` option can be used to automatically load and run the disk. Alternatively, the BASIC command `LOAD "*"` can be used.
+Although [part 20 of this chapter](#part20) suggested that the opening menu's `Loader` option first looks for a file called `*` and the one called `DISK` before trying to load the first file from tape - this isn't exactly the whole story. The first operation actually tries to load a ***bootstrap*** sector from the disk in drive A. The sector on side 0, track 0, sector 1 will be used as a loader (bootstrap) if the system finds that the 9 bit checksum of the sector is 3. The following program ensures that the checksum of 512 bytes conforms to this requirement, then writes the information to the disk in the correct position. Once a disk has been modified in this way, the `Loader` option can be used to automatically load and run the disk. Alternatively, the BASIC command `LOAD "*"` can be used.
 
 This example was developed using M80 on a CP/M based machine - so the method to ensure that the code is assembled relative to the correct address might be different from that used by your own assembler...
 
@@ -4159,7 +4692,7 @@ No checks are made to see that there is even a disk interface, and possible erro
 
 ...which will come back with whatever number BC happens to contain after completion of the routine.
 
-The boot sector that is written to the disk has a standard disk specification in the first 16 bytes. This is followed by the bootstrap code that will be entered at address FE10h. As will be described in the interface for [DOS BOOT](#dos-boot) (see part 27 of this chapter), the memory will initially be set up as 4, 7, 6, 3; however, the BASIC system variables are still intact and BASIC can be operated by switching in the correct ROM (3) t5o the bottom of memory and making sure that page
+The boot sector that is written to the disk has a standard disk specification in the first 16 bytes. This is followed by the bootstrap code that will be entered at address FE10h. As will be described in the interface for [DOS BOOT](#dos-boot) (see [part 27 of this chapter](#part27)), the memory will initially be set up as 4, 7, 6, 3; however, the BASIC system variables are still intact and BASIC can be operated by switching in the correct ROM (3) t5o the bottom of memory and making sure that page
 5 is in the 4000h...7FFFh area of memory.
 
 This very simple boot program just uses the BASIC ROM to print a greeting then enters a tight loop changing the border colour. It could be modified to load a large binary file and enter it or perform any other action you desired.
@@ -4196,7 +4729,7 @@ A 'bug' in the original 48 BASIC ROM has been fixed in the +3. When a non-maskab
 
 ROM 3 not only provides the 48 BASIC mode for program compatibility, but executes the majority of +3 BASIC commands that don't make use of the more advanced hardware of the +3.
 
-The fourth ROM (ROM 2) holds +3DOS - the disk operating system. This is the subject of this section. Unlike the other ROMs, which are unlikely to be of much use for assembler programmers (except the 48 BASIC ROM perhaps), the +3DOS ROM has a wealth of routines that may well be of use in your own programs. We strongly recommend that any software that uses the disk drives makes use of these routines as they provide most of the facilities that one could wish for (more than are currently used by BASIC, in fact). Furthermore, the routines should only be accessed via the jump block. This not only makes it easier to write software that can be adapted to and from the AMSTRAD CPC range of computers, but also affords upwards compatibility for the future. The entry points for each routine are held in a jump table at address 0100h (256) in the ROM. Part 26 of this chapter gave a couple of examples of the way in which these routines can be called.
+The fourth ROM (ROM 2) holds +3DOS - the disk operating system. This is the subject of this section. Unlike the other ROMs, which are unlikely to be of much use for assembler programmers (except the 48 BASIC ROM perhaps), the +3DOS ROM has a wealth of routines that may well be of use in your own programs. We strongly recommend that any software that uses the disk drives makes use of these routines as they provide most of the facilities that one could wish for (more than are currently used by BASIC, in fact). Furthermore, the routines should only be accessed via the jump block. This not only makes it easier to write software that can be adapted to and from the AMSTRAD CPC range of computers, but also affords upwards compatibility for the future. The entry points for each routine are held in a jump table at address 0100h (256) in the ROM. [Part 26 of this chapter](#part26) gave a couple of examples of the way in which these routines can be called.
 
 +3DOS provides the following facilities:
 
@@ -4294,7 +4827,7 @@ The following is a list of the routines in each of these categories (together wi
 
 +3DOS provides facilities specifically for non-BASIC programs:
 
-- Use DOS BOOT to load a single bootstrap sector, then take over the whole machine (see the second example in part 26 of this chapter).
+- Use DOS BOOT to load a single bootstrap sector, then take over the whole machine (see the second example in [part 26 of this chapter](#part26)).
 - Claim some store from +3DOS using DOS SET 1346. This enables a non-BASIC program to take control of the machine but still use the facilities of +3DOS if required. If +3DOS is not required, then the non-BASIC program should call DD L OFF MOTOR to force the drive motor off and disable the motor ticker. Bit 4 in the FLAGS system variable should be reset to prevent any back switching/variable decrementing on interrupt.
 - A drive can be opened as a single file. This enables files and directories to be examined without going via the file structure.
 
@@ -4411,7 +4944,7 @@ Logical sectors hide the actual physical sector numbers. Logical sector numbers 
 
 ### Disk specification
 
-The PCW range disk format (used by the +3) is, in fact, a family of formats the precise member of which is defined in the 'disk specification' which is recorded on bytes 0...15 of sector 1, track 0 side 0. The format used on the +3 is the same as disk type 0 below. The sector holding this specification is also that used for a bootstrap program. An example of how it may be set up is shown in the second example in part 26 of this chapter.
+The PCW range disk format (used by the +3) is, in fact, a family of formats the precise member of which is defined in the 'disk specification' which is recorded on bytes 0...15 of sector 1, track 0 side 0. The format used on the +3 is the same as disk type 0 below. The sector holding this specification is also that used for a bootstrap program. An example of how it may be set up is shown in the second example in [part 26 of this chapter](#part26).
 
 | BYTE          | USAGE
 |---------------|------
@@ -6259,14 +6792,14 @@ Subjects covered...
 
 This is the complete Spectrum character set, with codes in decimal and hex. If one imagines the codes as being Z80 machine code instructions, then the right hand columns give the corresponding assembly language mnemonics. As you may be aware certain Z80 instructions are 'compounds' starting with CBh or EDh, these are shown in the two right hand columns. Where a character changes between 48K and +3 (128K) modes, the 48K version is given in brackets after the +3 one.
 
-| CODE | CHARACTER          | HEX | Z80 ASSEMBLER | -AFTER CBh | -AFTER EDh
-|------|--------------------|-----|---------------|------------|-----------
-|   0  | *not used*           | 00  | nop           | rlc b
-|   1  | *not used*           | 01  | ld bc,NN      | rlc d
-|   2  | *not used*           | 02  | ld (bc),a     |  rlc e
-|   3  | *not used*           | 03  | inc bc        | rlc h
-|   4  | *not used*           | 04  | inc b         | rlc l
-|   5  | *not used*           | 05  | dec b         | rlc (hl)
+| CODE | CHARACTER             | HEX | Z80 ASSEMBLER | -AFTER CBh | -AFTER EDh
+|------|-----------------------|-----|---------------|------------|-----------
+|   0  | *not used*            | 00  | nop           | rlc b
+|   1  | *not used*            | 01  | ld bc,NN      | rlc d
+|   2  | *not used*            | 02  | ld (bc),a     |  rlc e
+|   3  | *not used*            | 03  | inc bc        | rlc h
+|   4  | *not used*            | 04  | inc b         | rlc l
+|   5  | *not used*            | 05  | dec b         | rlc (hl)
 |   6  | `PRINT` comma         | 06  | ld b,N        | rlc a
 |   7  | **[EDIT]**            | 07  | rlca          | rlc a
 |   8  | cursor left           | 08  | ex af,af'     | rrc b
@@ -6533,7 +7066,7 @@ Reports pertaining to disk operation (or +3DOS) do not start with a number or le
 
 The behaviour of the `CONTINUE` command depends very much on the reports. Normally, `CONTINUE` goes to the line and statement specified in the last report, but there are exceptions with reports `0`, `9` and `D`.
 
-Here is a table showing all the reports. The right-hand column tells you in which circumstances the report can occur, and this refers you to [part 31](#part31) of this chapter. For example, you can see from the table that the error `A Invalid argument` can occur with `SQR`, `LN`, `ACS`, `ASN` and `USR`. If you then look up these keywords in [part 31](#part31) of this chapter, you will be able to find out just which arguments are invalid.
+Here is a table showing all the reports. The right-hand column tells you in which circumstances the report can occur, and this refers you to [part 31 of this chapter](#part31). For example, you can see from the table that the error `A Invalid argument` can occur with `SQR`, `LN`, `ACS`, `ASN` and `USR`. If you then look up these keywords in [part 31 of this chapter](#part31), you will be able to find out just which arguments are invalid.
 
 Disk errors marked by `RIC` (in the left-hand column) will normally be displayed followed by the options: `- Retry, Ignore or Cancel?`. If the cancel option is chosen, then the report shown in the second column will be displayed.
 
@@ -6544,12 +7077,12 @@ Disk errors marked by `RIC` (in the left-hand column) will normally be displayed
 | `2` | `Variable not found`<br> For a simple variable, this will happen if the  variable is used before it has been assigned to by a `LET`, `READ` or `INPUT` statement, loaded from  disk (or tape), or set up in a `FOR` statement. For a subscripted variable, it will happen if   the variable is used before it has been dimensioned in a `DIM` statement, or loaded from  disk (or tape). | Any
 | `3` | `Subscript wrong`<br>A subscript is beyond the dimension of the array, or there are the wrong number of subscripts. If the subscript is negative or bigger than 65535, then error `B` will result. | Subscripted variables, strings
 | `4` | `Out of memory`<br>There is not enough room in the computer for what you are trying to do. If the computer really seems to be stuck in this state, you may have to clear out the command line using **DELETE** and then delete a program line or two (with the intention of putting them back afterwards) to give yourself room to manoeuvre. | `LET`, `INPUT`, `FOR`, `DIM`, `GO SUB`, `LOAD`, `MERGE`, Sometimes during expression evaluation.
-| `5` | `Out of screen`<br>An `INPUT` statement has tried to generate more  than 23 lines in the lower half of the screen. Also occurs with `PRINT AT 22,`xx. | `INPUT`, `PRINT AT`
+| `5` | `Out of screen`<br>An `INPUT` statement has tried to generate more than 23 lines in the lower half of the screen. Also occurs with `PRINT AT 22,`xx. | `INPUT`, `PRINT AT`
 | `6` | `Number too big`<br>Calculations have yielded a number greater than approximately 10<sup>38</sup>.| Any arithmetic
 | `7` | `RETURN without GO SUB`<br>There has been one more `RETURN` than there were `GO SUB`s. | `RETURN`
 | `9` | `STOP statement`<br>After this, `CONTINUE` will not repeat the `STOP`, but carries on with the statement after. | `STOP`
 | `A` | `Invalid argument`<p>The argument for a function is unsuitable (for some reason). | `SQR`, `LN`, `ASN`, `ACS`, `USR` (with string argument)
-| `B` | `Integer out of range`<br>When an integer is required, the floating point argument is rounded to the nearest integer. If this is outside a suitable range, then this error results.</p>For array access, see also error 3. | `RUN`, `RANDOMIZE`, `POKE`, `DIM`,` GO TO`, `GO SUB`, `LIST`, `LLIST`, `PAUSE`, `PLOT`, `CHR$`, `PEEK`, `USR` (with numeric argument)
+| `B` | `Integer out of range`<br>When an integer is required, the floating point argument is rounded to the nearest integer. If this is outside a suitable range, then this error results.</p>For array access, see also [error 3](#error-3). | `RUN`, `RANDOMIZE`, `POKE`, `DIM`,` GO TO`, `GO SUB`, `LIST`, `LLIST`, `PAUSE`, `PLOT`, `CHR$`, `PEEK`, `USR` (with numeric argument)
 | `C` | `Nonsense in BASIC`<br>The text of the (string) argument does not form a valid expression. Also used when the argument for a function or command is outrageously wrong.| `VAL`, `VAL$`
 | `D` | `BREAK - CONT repeats`<br>**BREAK** was pressed during some peripheral operation. The behaviour of `CONTINUE` after this report is normal in that it repeats the statement. Compare with report `L`. | `LOAD`, `SAVE`, `VERIFY`, `MERGE`, Also used when the computer asks `scroll?` and you press **N**, **BREAK** or the space bar
 | `E` | `Out of DATA`<br>You have tried to `READ` past the end of the `DATA` list. | `READ`
@@ -6573,7 +7106,7 @@ Disk errors marked by `RIC` (in the left-hand column) will normally be displayed
 | `m` | `Note out of range`<br>A series of sharps of flats has taken a note beyond the range of the sound chip. | `PLAY`
 | `n` | `Out of range`<br>A parameter for a command is too big or too small. If the error is very large, error [`l`][#error-l] results.| `PLAY`
 | `o` | `Too many tied notes`<br>An attempt was made to tie too many notes together. | `PLAY`
-|     | `Bad filename`<br>The filename used in any of the disk commands does not conform to the limits described in [part 20](#part20) of this chapter. | `CAT`, `COPY`, `ERASE`, `LOAD`, `MERGE`, `MOVE`, `SAVE`
+|     | `Bad filename`<br>The filename used in any of the disk commands does not conform to the limits described in [part 20 of this chapter](#part20). | `CAT`, `COPY`, `ERASE`, `LOAD`, `MERGE`, `MOVE`, `SAVE`
 |     | `Bad parameters`<br>One of the values passed to +3DOS by BASIC is out of range. It is unlikely that this error will ever be seen. | Unlikely
 | `RIC` | `CRC data error`<br>The cyclic redundancy check (checksum byte) for a sector is incorrect. This is a rare error that is produced if the disk being read has been corrupted in some way (perhaps magnetically). | `CAT`, `COPY`, `ERASE`, `LOAD`, `MERGE`, `MOVE`, `SAVE`
 |     | `Code length error`<br>Trying to load a `CODE` file from disk that is longer than the value given in the `LOAD` command.| `LOAD`...`CODE`
@@ -6615,7 +7148,7 @@ Subjects covered...
 
 The +3 is designed around the Z80A microprocessor, which runs at a speed of 3.5469MHz (about three and half million cycles per second).
 
-The +3's memory is divided into 64K ROM and 128K RAM, arranged in 16K pages. The four ROM pages (0-3) can be mapped into the bottom 16K (0000h-3FFFh) of the memory map.The eight RAM pages (0-7) are usually mapped into the top 16K (C000h-FFFFh) of the memory map. RAM page 5 is also mapped into the range 4000h-7FFFh, and RAM page 2 is mapped into the range 8000h-BFFFh.There are also several RAM page combinations that occupy the full 64K address range. These were given in [part 35](#part35) of this chapter, under the heading 'Memory management'.
+The +3's memory is divided into 64K ROM and 128K RAM, arranged in 16K pages. The four ROM pages (0-3) can be mapped into the bottom 16K (0000h-3FFFh) of the memory map.The eight RAM pages (0-7) are usually mapped into the top 16K (C000h-FFFFh) of the memory map. RAM page 5 is also mapped into the range 4000h-7FFFh, and RAM page 2 is mapped into the range 8000h-BFFFh.There are also several RAM page combinations that occupy the full 64K address range. These were given in [part 35 of this chapter](#part35), under the heading 'Memory management'.
 
 Physically speaking, the ROMs are two 32K devices (similar to the 27256), which are both treated by the system as two 16K chips. The RAM is composed of four 16K x 4 bit chips (41464), some of which (RAM banks 4-7) are time-shared between the circuitry that produces the screen display, and the Z80A. The others (RAM banks 0-3) are for the exclusive use of the Z80A, as in the ROM.
 
@@ -6686,9 +7219,9 @@ The eight bit values in RB+RC are summed to produce a 16 bit number which is cou
 - D1 - Alternate
 - D0 - Hold
 
-The diagram of envelope shapes (in [part 19](#part19) of this chapter) gives a graphical illustration of the possible settings for this register.
+The diagram of envelope shapes (in [part 19 of this chapter](#part19)) gives a graphical illustration of the possible settings for this register.
 
-The disk drive is controlled by the uPD765A floppy disk controller chip. As described in [part 23](#part23) of this chapter, the data register for this device is at address 3FFDh (16381) and the status register is at 2FFDh (12285). This is a very complex device and it would be unwise to attempt to use it without full details of its operation (see the manufacturer's data sheet).
+The disk drive is controlled by the uPD765A floppy disk controller chip. As described in [part 23 of this chapter](#part23), the data register for this device is at address 3FFDh (16381) and the status register is at 2FFDh (12285). This is a very complex device and it would be unwise to attempt to use it without full details of its operation (see the manufacturer's data sheet).
 
 The Centronics parallel printer port is basically just an 8 bit data latch (74273) whose address is 0FFDh (4093). The [STROBE](#printer-strobe) signal for the printer is produced by the ULA and is accessed using the bit 4 of address 1FFDh (8189). The state of the [BUSY](#printer-busy) line from the printer is read from bit 0 of address 0FFDh (4093).
 
@@ -6796,7 +7329,7 @@ The argument of a function does not need brackets if it is a constant or a varia
 | `SQR`       | number                | Square root.<br>[Error `A`](#error-a) if x<0.
 | `STR$`      | number                | The string of characters that would be displayed if x were printed.
 | `TAN`       | number (in radians)   | Tangent.
-| `USR`       | number                | Calls the machine code subroutine whose starting address is x. On entry to the routine at address x the memory is configured so that 0000h...3FFFh (0...16383) is occupied by ROM 3 (48 BASIC), 4000h...7FFFh (16384...32767) is occupied by RAM page 5, 8000h...BFFFh (32768...49151) is occupied by RAM page 2, and C000h...FFFFh (49152...65535) is occupied by RAM page 0. If +3DOS routines are to be called, RAM page 7 should be switched in at C000h...FFFFh (49152...65535), and ROM 2 (+3DOS) should be switched in at 0000h...3FFFh (0...16383). See [part 26](#part26) of this chapter for further details.<br>On return, the result is the contents of the BC register pair.
+| `USR`       | number                | Calls the machine code subroutine whose starting address is x. On entry to the routine at address x the memory is configured so that 0000h...3FFFh (0...16383) is occupied by ROM 3 (48 BASIC), 4000h...7FFFh (16384...32767) is occupied by RAM page 5, 8000h...BFFFh (32768...49151) is occupied by RAM page 2, and C000h...FFFFh (49152...65535) is occupied by RAM page 0. If +3DOS routines are to be called, RAM page 7 should be switched in at C000h...FFFFh (49152...65535), and ROM 2 (+3DOS) should be switched in at 0000h...3FFFh (0...16383). See [part 26 of this chapter](#part26) for further details.<br>On return, the result is the contents of the BC register pair.
 | `USR`       | string                | The address of the bit pattern for the user-defined graphic corresponding to x.<br>[Error `A`](#error-a) if x is not a single letter between 'a' and 'u', or a user-defined graphic.
 | `VAL`       | string                | Evaluates x (without its bounding quotes as a numerical expression.<br>[Error `C`](#error-c) if x contains a syntax error, or gives a string value. Other errors possible, depending on the expression.
 | `VAL$`      | string                | Evaluates x (without its bounding quotes) as a string expression.<br>[Error `C`](#error-c) if x contains a syntax error of gives a numerical value. Other errors possible (as for `VAL`).
@@ -7041,7 +7574,7 @@ Two bytes can be grouped together to make what is technically called a ***word**
 
 A byte is always eight bits, but words vary in length from computer to computer.
 
-The `BIN` notation (used in [part 14](#part14) of this chapter) provides a means of entering numbers in binary on the +3, i.e. `BIN 10` represents 4 decimal, `BIN 111` represents 7 decimal, `BIN 11111111` represents 255 decimal, and so on.
+The `BIN` notation (used in [part 14 of this chapter](#part14)) provides a means of entering numbers in binary on the +3, i.e. `BIN 10` represents 4 decimal, `BIN 111` represents 7 decimal, `BIN 11111111` represents 255 decimal, and so on.
 
 You can only use 0s and 1s for this, so the number must be a non-negative whole number - for instance, you cannot use `BIN -11` to represent -3 decimal, but you can use `-BIN 11` instead. The number must also be no greater than decimal 65535 - i.e. it can't have more than sixteen bits. If you pad out a binary number with leading zeroes, for example, `BIN 00000001`, the BIN function will rightly ignore them and treat the number as if it were `BIN 1`.
 
@@ -7341,7 +7874,7 @@ Subjects covered...
 
 The +3 can be used as a full function calculator.
 
-To use the calculator, call up the opening menu and select the `Calculator` option. (If you don't know how to select a menu option, refer back to chapter 2.)
+To use the calculator, call up the opening menu and select the `Calculator` option. (If you don't know how to select a menu option, refer back to [chapter 2](#chapter2).)
 
 The calculator may be selected as soon as the +3 is switched on. Alternatively, if you are working on a +3 BASIC program, you may select the calculator by choosing the `Exit` option from the edit menu (which returns you to the opening menu), at which point you can select the `Calculator` option. Note that any BASIC program which was being worked on (when you selected the calculator) will be remembered and restored when you exit from the calculator and return to +3 BASIC.
 
@@ -7564,7 +8097,7 @@ When the FD-1 is connected to the +3, first switch on the FD-1 (using the slide 
 | 16  | GND             | 33  | not used       |
 | 17  | <span class="signal-high">DIRECTION SELECT</span> | 34  | GND            |
 
-Details of two-drive operation will be found in chapter 8 [parts 20] and [27](#part27).
+Details of two-drive operation will be found in chapter 8 [parts 20](#part20) and [27](#part27).
 
 ## <a id="joysticks"></a> Joystick(s)
 
@@ -7800,8 +8333,8 @@ Details of the +3's hardware will be found in [chapter 8 part 30](#part30).
 
 - HTML5 conversion, cross-referencing and artwork by [Damien Guard](https://damieng.com)
 - Original ASCII manual prepared by:
-  - Ian Coates <oktup@mono.city.ac.uk> did chapter 8 parts 26 and 30.
-  - Thomas Ahn Kjaer <takjaer@daimi.aau.dk> did chapter 8 part 17.
+  - Ian Coates <oktup@mono.city.ac.uk> did chapter 8 parts [26](#part26) and [30](#part30).
+  - Thomas Ahn Kjaer <takjaer@daimi.aau.dk> did [chapter 8 part 17](#part17).
   - Russell Marks <mr216@gre.ac.uk> did the rest.
 
 <script>
