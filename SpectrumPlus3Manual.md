@@ -164,10 +164,14 @@ Therefore, you should adopt the following reading programme...
 
 [Chapter 10](#chapter10) - This chapter illustrates how add-ons (peripherals) are connected to the +3. Peripherals include such devices as a cassette unit, a printer, an additional disk drive, a joystick, etc. So if you're thinking of linking up any device at all to the +3, check this chapter to make sure that you've got the right connections. If, on the other hand, you intend to use just the standard +3 set up (ie. computer and TV only), then you may skip this chapter.
 
-AMSTRAD
-© Copyright 1987 - AMSTRAD Plc.
+<center>
+<svg xmlns="http://www.w3.org/2000/svg" width="33%" viewBox="-2 -2 784 208" stroke-linejoin="round" stroke-miterlimit="1"><path d="M40.6 203.2l3-40h16.6l3.3 40h40.8L78.8 1H26L0 203.2h40.6zM57.8 130H46l6-78.6 5.8 78.6zM171 1h-57v202.2h39V88l16 115.2h25.3L210 88.7v114.5h39V1h-57l-10.6 89.3L171 1zm85 24.6l.3 48a32.2 32.2 0 0 0 1.1 6.7c.6 2.2 1.6 5 3.2 7.4a25 25 0 0 0 2.8 3.6 54.6 54.6 0 0 0 4.6 4.4 60 60 0 0 0 11.3 7.5l25.5 14c1 .7 2.4 1.3 3.6 2.5 3 2.8 3 6 3 9.2l.2 4.4V161c0 2-.2 4-1 6a5.8 5.8 0 0 1-7.4 2.6 5.9 5.9 0 0 1-1.8-1.2c-2.2-2-2-5-2.2-7.6v-41.2h-43v46c0 5.7.1 11 1.3 16.6.7 3 1.7 5.8 3.3 8.5a23.5 23.5 0 0 0 6.2 6.8 29.8 29.8 0 0 0 7.6 3.9 24.7 24.7 0 0 0 5.6 1.2l5 .4h43.7c2 0 4 .1 6.4-.6a30 30 0 0 0 7.8-3.4c2.5-1.6 4.6-3.6 6-5.7s2.3-4.4 3-6.5 1.3-4 1.7-6.3a73 73 0 0 0 .8-8.6c.2-3 .1-6 .1-9.2l-.2-41a172 172 0 0 0-.4-6.9 26.2 26.2 0 0 0-.4-3.4 35.4 35.4 0 0 0-.6-2.4 17.7 17.7 0 0 0-1.1-2.9c-.6-1.3-1.6-3.2-2.8-5a28 28 0 0 0-4.2-4.9 44.2 44.2 0 0 0-5.2-4 170.1 170.1 0 0 0-12.7-7.9l-18.3-10a45.8 45.8 0 0 1-3.2-1.9 52 52 0 0 1-2.7-1.9c-1-.8-1-1-1.6-1.4-.2-.2-.3-.4-.6-1a12 12 0 0 1-1.7-4.6c-.1-1 0-1.8 0-2.6v-19a13 13 0 0 1 .5-4.6 9 9 0 0 1 1-2.1c2-2.8 4.6-3.2 7.3-2a6 6 0 0 1 1.7 1.3 6.7 6.7 0 0 1 1.2 1.8c.3.7.4 1.4.6 2.4a68.1 68.1 0 0 1 .2 7.3v24h43.2l-1-48.6a35.7 35.7 0 0 0-.7-2.7 21 21 0 0 0-1.2-3.3c-.7-1.5-1.7-3.7-3-5.6a21.6 21.6 0 0 0-5.1-4.9 26 26 0 0 0-6-3.1c-3.7-1.3-6.5-1.5-9.7-2-1.6-.2-3-.3-4.7-.3l-37.4.3a54 54 0 0 0-13 1.9 22.2 22.2 0 0 0-3.9 1.6c-2.5 1.3-4.5 2.8-6.6 5.4-1 1.3-2.2 3-3 4.8a27 27 0 0 0-3.1 11.6zM361.6 1v32.6h21.6v169.6h43.2V33.6h21.4V1h-86.2zm143.8 0h-46v202.2h43.2v-80.6c2.8.1 5.7-.2 8.5.7.6.2 1.2.5 1.7 1 2 1.7 1.8 4 2 6 .4 4.2.1 8.3.2 12.5v60.6h43.2V140a92 92 0 0 0-1.9-18.6c-.4-1.4-1-2.8-1.5-4.2a24 24 0 0 0-3.8-6.1c-1.6-1.8-3.4-3.4-5.5-4.7a23.9 23.9 0 0 0-6.6-2.8 27.6 27.6 0 0 0 3.4-1.1c2.2-1 4.3-2 6-3.5s3.4-3.3 4.7-5.3 2.2-4.2 2.8-6.5l1.2-5a122.4 122.4 0 0 0 1.2-20.5v-21c.1-4.2-.1-8.4-.6-12.6l-1-6c-.4-1.7-.8-3-1.3-4.4a25.2 25.2 0 0 0-1.9-3.8 25 25 0 0 0-2.5-3.5c-1.4-1.5-3-3-5-4a25.9 25.9 0 0 0-11.9-4.1c-9.6-1-19.2-.8-28.8-1zm-3 33h6a9.2 9.2 0 0 1 2.9.8c2.8 1.8 3 4.2 3.2 6.5l.3 7.7v26.6c0 1.6-.1 3.2-.4 4.7a5.7 5.7 0 0 1-2 3.8c-1.3 1.2-3 1.2-4.6 1.4-1.8.2-3.6.2-5.4.1V34zm105.2 169.3l3-40h16.6l3.3 40h41L646 1H593l-26 202.2h40.6zM625 130h-11.8l6-78.6L625 130zM774.3 13.5c-1.5-2.4-3.4-4.5-5.6-6.2s-4.8-3-6.7-3.7a19.6 19.6 0 0 0-4.3-1.2 58.9 58.9 0 0 0-3.7-.5 70.8 70.8 0 0 0-5.4-.4L680.3 1v202.2l68.6-.1c1.7 0 3.4-.5 5-.8 3.5-.6 6.6-1.3 10-2.8 1.8-.8 3.6-1.8 5.3-3a17.9 17.9 0 0 0 4.7-5.2 35 35 0 0 0 3.8-9.5 53.9 53.9 0 0 0 1.8-13.2l-.3-138c0-3-.8-6.3-1.6-9a29.8 29.8 0 0 0-3.3-7.9zm-48 20.6h2.7a14 14 0 0 1 2.5.5 6.7 6.7 0 0 1 1.8.8c.5.3 1 .8 1.3 1.2 1.5 2.3 1.3 5.4 1.4 8.3v116.5a18 18 0 0 1-.1 2.6c-.1.8-.3 1.7-.6 2.4s-.6 1.3-1 1.8a5.9 5.9 0 0 1-1.6 1.3c-.6.3-1.2.8-2 .8h-7l2.7-136z" fill="#fff" stroke="#000" stroke-width="3"  />
+</svg>
 
-Neither the whole nor any part of the information contained herein, nor the product described in this manual, may be adapted or reproduced in any material form except with the prior written approval of AMSTRAD Plc. ('AMSTRAD')
+© Copyright 1987 - AMSTRAD Plc.
+</center>
+
+Neither the whole nor any part of the information contained herein, nor the product described in this manual, may be adapted or reproduced in any material form except with the prior written approval of AMSTRAD Plc. ('AMSTRAD').
 
 The product described in this manual, and products for use with it are subject to continuous development and improvement. All information of a technical nature and particulars of the product and its use (including the information and particulars in this manual) are given by AMSTRAD in good faith.
 
@@ -177,11 +181,19 @@ We ask that all users take care to submit their user registration/guarantee card
 
 All correspondence relating to the product or to this manual should be addressed to:
 
-Sinclair Computers Division AMSTRAD Plc.
+<center>
+Sinclair Computers Division
+AMSTRAD Plc.
 Brentwood House
-169 Kings Road BRENTWOOD Essex CM14 4EF
+169 Kings Road
+BRENTWOOD
+Essex CM14 4EF
 
 First Published 1987
+
+Written by Ivor Spital
+Contributions by Cliff Lawson and Rupert Goodwins
+Produced by Des Rackliff
 
 Extracts from the book 'ZX Spectrum BASIC programming' written by Steven Vickers and Robin Bradbeer
 
@@ -189,7 +201,8 @@ Published by AMSTRAD
 
 +3DOS written by Locomotive Software Ltd.
 
-CP/M is the trademark of Digital Research Ltd.
+CP/M is the trademark of Digital Research Inc.
+LocoScript is the trademark of Locomotive Software Ltd.
 Acknowledgements to Centronics and Epson Corps.
 
 The following are registered trademarks of AMSTRAD Plc.:
@@ -198,6 +211,7 @@ DMP2000, DMP3000, DMP3160, DMP4000, FD-1
 AMSOFT, CF-2, PL-1, DL-2
 
 Unauthorised use of the above trademarks, or of the word AMSTRAD, is strictly forbidden.
+</center>
 
 ## <a id="precautions"></a> Precautions!
 
