@@ -1,5 +1,5 @@
 <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:500|Roboto+Slab:400,700&amp;display=swap" rel="stylesheet"></link>
-<link href="./spectrum-manual.css" rel="stylesheet"></link>
+<link href="./spectrum-manual.css?" rel="stylesheet"></link>
 <script src="./spectrum-manual.js"></script>
 
 # Contents
@@ -23,47 +23,47 @@
   - [How to choose an option](#how-to-choose-an-option)
 
 [Chapter 3 - How to load disk software](#chapter3)
-- Disks for the +3
-- Loading disk software
-- Abandoning loading
+- [Disks for the +3](#disks-for-plus3)
+- [Loading disk software](#loading-disk-software)
+- [Abandoning loading](#abandoning-loading)
 
 [Chapter 4 - How to load tape software](#chapter4)
-- Using tape instead of disk
-- Loading Spectrum +3, Spectrum +3 and Spectrum 128 software
-- Loading Spectrum 48 software
-- Abandoning loading
+- [Using tape instead of disk](#using-tape)
+- [Loading Spectrum +3, Spectrum +3 and Spectrum 128 software](#loading-128)
+- [Loading Spectrum 48 software](#loading-48)
+- [Abandoning loading](#abandoning-loading)
 
 [Chapter 5 - The +3 disk drive](#chapter5)
-- Disks and drives
-- Insertion
-- Write protection
-- Read.write indicator lamp
-- Eject button
+- [Disks and drives](#disks-and-drives)
+- [Insertion](#insertion)
+- [Write protection](#write-protect)
+- [Read/write indicator lamp](#read-write-indicator-lamp)
+- [Eject button](#eject-button)
 
 [Chapter 6 - Introducing +3 BASIC](#chapter6)
-- The editor
-- The edit menu
-- Renumbering a BASIC program
-- Swapping screens
-- Listing to the printer
-- Typing in a program
-- Moving a cursor
-- Running a program
-- Commands and instructions
-- Simple disk operations
-- Formatting a disk
-- Saving a program
-- Filenames
-- Disk catalog
-- Loading a program
-- Error reports
+- [The editor](#the-editor)
+- [The edit menu](#the-edit-menu)
+- [Renumbering a BASIC program](#renumbering)
+- [Swapping screens](#swapping-screens)
+- [Listing to the printer](#listing-to-the-printer)
+- [Typing in a program](#typing-in-a-program)
+- [Moving the cursor](#moving-the-cursor)
+- [Running a program](#running-a-program)
+- [Commands and instructions](#commands-and-instructions)
+- [Simple disk operations](#simple-disk-operations)
+- [Formatting a disk](#formatting-a-disk)
+- [Saving a program](#saving-a-program)
+- [Filenames](#filenames)
+- [Disk catalog](#disk-catalog)
+- [Loading a program](#loading-a-program)
+- [Error reports](#error-reports)
 
 [Chapter 7 - Using 48 BASIC](#chapter7)
-- Using the +3 as a 48K Spectrum
-- Entering 48 BASIC mode
-- The keyboard under 48 BASIC
-- Program entry
-- Editing the current line
+- [Using the +3 as a 48K Spectrum](#using-plus3-as-a-48)
+- [Entering 48 BASIC mode](#entering-48-basic)
+- [The keyboard under 48 BASIC](#keyboard-under-48-basic)
+- [Program entry](#program-entry)
+- [Editing the current line](#entering-the-current-line)
 
 [Chapter 8 - The +3 BASIC programmer's guide](#chapter8)
 - [Part 1 - Introduction](#part1)
@@ -101,14 +101,14 @@
 - [Part 33 - Example programs](#part33)
 
 [Chapter 9 - Using the calculator](#chapter9)
-- Selecting the calculator
-- Entering numbers
-- Running total
-- Using built-in mathematical functions
-- Editing the screen
-- Assigning variables
-- User defined functions
-- Exiting from the calculator
+- [Selecting the calculator](#selecting-the-calculator)
+- [Entering numbers](#entering-numbers)
+- [Running total](#running-total)
+- [Using built-in mathematical functions](#built-in-math-functions)
+- [Editing the screen](#editing-the-screen)
+- [Assigning variables](#assigning-variables)
+- [User defined functions](#user-defined-functions)
+- [Exiting from the calculator](#exiting-from-the-calculator)
 
 [Chapter 10 - Peripherals for your +3](#chapter10)
 - [Cassette unit](#cassette-unit)
@@ -166,8 +166,7 @@ Therefore, you should adopt the following reading programme...
 
 <svg xmlns="http://www.w3.org/2000/svg" width="33%" viewBox="-2 -2 784 208" stroke-linejoin="round" stroke-miterlimit="1"><path d="M40.6 203.2l3-40h16.6l3.3 40h40.8L78.8 1H26L0 203.2h40.6zM57.8 130H46l6-78.6 5.8 78.6zM171 1h-57v202.2h39V88l16 115.2h25.3L210 88.7v114.5h39V1h-57l-10.6 89.3L171 1zm85 24.6l.3 48a32.2 32.2 0 0 0 1.1 6.7c.6 2.2 1.6 5 3.2 7.4a25 25 0 0 0 2.8 3.6 54.6 54.6 0 0 0 4.6 4.4 60 60 0 0 0 11.3 7.5l25.5 14c1 .7 2.4 1.3 3.6 2.5 3 2.8 3 6 3 9.2l.2 4.4V161c0 2-.2 4-1 6a5.8 5.8 0 0 1-7.4 2.6 5.9 5.9 0 0 1-1.8-1.2c-2.2-2-2-5-2.2-7.6v-41.2h-43v46c0 5.7.1 11 1.3 16.6.7 3 1.7 5.8 3.3 8.5a23.5 23.5 0 0 0 6.2 6.8 29.8 29.8 0 0 0 7.6 3.9 24.7 24.7 0 0 0 5.6 1.2l5 .4h43.7c2 0 4 .1 6.4-.6a30 30 0 0 0 7.8-3.4c2.5-1.6 4.6-3.6 6-5.7s2.3-4.4 3-6.5 1.3-4 1.7-6.3a73 73 0 0 0 .8-8.6c.2-3 .1-6 .1-9.2l-.2-41a172 172 0 0 0-.4-6.9 26.2 26.2 0 0 0-.4-3.4 35.4 35.4 0 0 0-.6-2.4 17.7 17.7 0 0 0-1.1-2.9c-.6-1.3-1.6-3.2-2.8-5a28 28 0 0 0-4.2-4.9 44.2 44.2 0 0 0-5.2-4 170.1 170.1 0 0 0-12.7-7.9l-18.3-10a45.8 45.8 0 0 1-3.2-1.9 52 52 0 0 1-2.7-1.9c-1-.8-1-1-1.6-1.4-.2-.2-.3-.4-.6-1a12 12 0 0 1-1.7-4.6c-.1-1 0-1.8 0-2.6v-19a13 13 0 0 1 .5-4.6 9 9 0 0 1 1-2.1c2-2.8 4.6-3.2 7.3-2a6 6 0 0 1 1.7 1.3 6.7 6.7 0 0 1 1.2 1.8c.3.7.4 1.4.6 2.4a68.1 68.1 0 0 1 .2 7.3v24h43.2l-1-48.6a35.7 35.7 0 0 0-.7-2.7 21 21 0 0 0-1.2-3.3c-.7-1.5-1.7-3.7-3-5.6a21.6 21.6 0 0 0-5.1-4.9 26 26 0 0 0-6-3.1c-3.7-1.3-6.5-1.5-9.7-2-1.6-.2-3-.3-4.7-.3l-37.4.3a54 54 0 0 0-13 1.9 22.2 22.2 0 0 0-3.9 1.6c-2.5 1.3-4.5 2.8-6.6 5.4-1 1.3-2.2 3-3 4.8a27 27 0 0 0-3.1 11.6zM361.6 1v32.6h21.6v169.6h43.2V33.6h21.4V1h-86.2zm143.8 0h-46v202.2h43.2v-80.6c2.8.1 5.7-.2 8.5.7.6.2 1.2.5 1.7 1 2 1.7 1.8 4 2 6 .4 4.2.1 8.3.2 12.5v60.6h43.2V140a92 92 0 0 0-1.9-18.6c-.4-1.4-1-2.8-1.5-4.2a24 24 0 0 0-3.8-6.1c-1.6-1.8-3.4-3.4-5.5-4.7a23.9 23.9 0 0 0-6.6-2.8 27.6 27.6 0 0 0 3.4-1.1c2.2-1 4.3-2 6-3.5s3.4-3.3 4.7-5.3 2.2-4.2 2.8-6.5l1.2-5a122.4 122.4 0 0 0 1.2-20.5v-21c.1-4.2-.1-8.4-.6-12.6l-1-6c-.4-1.7-.8-3-1.3-4.4a25.2 25.2 0 0 0-1.9-3.8 25 25 0 0 0-2.5-3.5c-1.4-1.5-3-3-5-4a25.9 25.9 0 0 0-11.9-4.1c-9.6-1-19.2-.8-28.8-1zm-3 33h6a9.2 9.2 0 0 1 2.9.8c2.8 1.8 3 4.2 3.2 6.5l.3 7.7v26.6c0 1.6-.1 3.2-.4 4.7a5.7 5.7 0 0 1-2 3.8c-1.3 1.2-3 1.2-4.6 1.4-1.8.2-3.6.2-5.4.1V34zm105.2 169.3l3-40h16.6l3.3 40h41L646 1H593l-26 202.2h40.6zM625 130h-11.8l6-78.6L625 130zM774.3 13.5c-1.5-2.4-3.4-4.5-5.6-6.2s-4.8-3-6.7-3.7a19.6 19.6 0 0 0-4.3-1.2 58.9 58.9 0 0 0-3.7-.5 70.8 70.8 0 0 0-5.4-.4L680.3 1v202.2l68.6-.1c1.7 0 3.4-.5 5-.8 3.5-.6 6.6-1.3 10-2.8 1.8-.8 3.6-1.8 5.3-3a17.9 17.9 0 0 0 4.7-5.2 35 35 0 0 0 3.8-9.5 53.9 53.9 0 0 0 1.8-13.2l-.3-138c0-3-.8-6.3-1.6-9a29.8 29.8 0 0 0-3.3-7.9zm-48 20.6h2.7a14 14 0 0 1 2.5.5 6.7 6.7 0 0 1 1.8.8c.5.3 1 .8 1.3 1.2 1.5 2.3 1.3 5.4 1.4 8.3v116.5a18 18 0 0 1-.1 2.6c-.1.8-.3 1.7-.6 2.4s-.6 1.3-1 1.8a5.9 5.9 0 0 1-1.6 1.3c-.6.3-1.2.8-2 .8h-7l2.7-136z" fill="#fff" stroke="#000" stroke-width="3" />
 
-<center>© Copyright 1987 - AMSTRAD Plc.</center>
-
+© Copyright 1987 - AMSTRAD Plc.
 Neither the whole nor any part of the information contained herein, nor the product described in this manual, may be adapted or reproduced in any material form except with the prior written approval of AMSTRAD Plc. ('AMSTRAD').
 
 The product described in this manual, and products for use with it are subject to continuous development and improvement. All information of a technical nature and particulars of the product and its use (including the information and particulars in this manual) are given by AMSTRAD in good faith.
@@ -178,7 +177,6 @@ We ask that all users take care to submit their user registration/guarantee card
 
 All correspondence relating to the product or to this manual should be addressed to:
 
-<center>
 Sinclair Computers Division
 AMSTRAD Plc.
 Brentwood House
@@ -208,7 +206,6 @@ DMP2000, DMP3000, DMP3160, DMP4000, FD-1
 AMSOFT, CF-2, PL-1, DL-2
 
 Unauthorised use of the above trademarks, or of the word AMSTRAD, is strictly forbidden.
-</center>
 
 ## <a id="precautions"></a> Precautions!
 
@@ -462,7 +459,7 @@ We will now switch off the test signal and start using the +3. Press and release
 
 <canvas id="screen-opening-menu"></canvas>
 
-Note that the opening menu initially indicates which drives are available for use: drive A: is the built-in disk drive (at the front of the computer) and drive M: is the +3's internal RAMdisk (more about this in chapter 8 [part 20](#part20)). If you have connected an external disk drive to the +3, then you will see drive B: also indicated on the menu. The opening menu will appear whenever you first plug in and switch on the +3, or whenever you press and release the **RESET** button.
+Note that the opening menu initially indicates which drives are available for use: drive A: is the built-in disk drive (at the front of the computer) and drive M: is the +3's internal RAMdisk (more about this in [chapter 8 part 20](#part20)). If you have connected an external disk drive to the +3, then you will see drive B: also indicated on the menu. The opening menu will appear whenever you first plug in and switch on the +3, or whenever you press and release the **RESET** button.
 
 As its name suggests, the menu offers you a selection of options. You can choose from one of the four options which appear within the central box on the screen. These are:
 
@@ -475,7 +472,6 @@ As its name suggests, the menu offers you a selection of options. You can choose
 
 Notice that the menu option `Loader` appears to be highlighted by a 'bar'. This means that the `Loader` option is ready to be selected - (the selection hasn't been confirmed yet). For the purpose of this example, let's assume that you don't want to select `Loader`, but that instead you want to select `+3 BASIC`. This means that you need to move the highlight bar to the option `+3 BASIC`. To do this, use the cursor keys (shown below) until the highlight bar moves to the desired position.
 
-<center>
 <canvas id="keyboard-choose-option"></canvas>
 <script>
 const chooseOptions = [
@@ -494,7 +490,6 @@ keyboard('keyboard-choose-option',
     });
   });
 </script>
-</center>
 
 When the highlight bar is on `+3 BASIC`, confirm this choice by pressing the **ENTER** key.
 
@@ -520,15 +515,15 @@ Depending upon your selection, refer to the following chapters for further infor
 
 Subjects covered...
 
-- Disks for the +3
-- Loading disk software
-- Abandoning loading
+- [Disks for the +3](#disks-for-plus3)
+- [Loading disk software](#loading-disk-software)
+- [Abandoning loading](#abandoning-loading)
 
 This chapter describes the loading of commercially available disk software.
 
-(For a description of the loading, saving, formatting, etc., procedures that you would use during BASIC programming, see chapter 6 and chapter 8 part 20.)
+(For a description of the loading, saving, formatting, etc., procedures that you would use during BASIC programming, see [chapter 6](#chapter6) and [chapter 8 part 20](#part20).)
 
-## Disks for the +3
+## <a id="disks-for-plus3"></a> Disks for the +3
 
 The +3 uses 3 inch compact floppy disks. We strongly recommend that for reliable data-to-disk transfer, you use AMSOFT CF-2 floppy disks. Disks made by other leading manufacturers, however, may also be used.
 
@@ -551,7 +546,7 @@ Each side of a disk may be used independently. A disk should be inserted with it
                      ---_|___---
 ```
 
-## Loading disk software
+## <a id="loading-disk-software"></a> Loading disk software
 
 To load Spectrum +3, Spectrum +2 and Spectrum 128 software (a game, an utility program, etc.) from disk, carry out the following instructions.
 
@@ -561,7 +556,7 @@ To load Spectrum +3, Spectrum +2 and Spectrum 128 software (a game, an utility p
 
 2. Insert your software disk into the disk drive.
 
-3. Press the **ENTER** key to select the option `Loader` from the opening menu. (If you don't know about selecting menu options, refer back to chapter 2.)
+3. Press the **ENTER** key to select the option `Loader` from the opening menu. (If you don't know about selecting menu options, refer back to [chapter 2](#chapter2).)
 
 The software will start to load from disk. On the disk drive, you will see the read/write indicator lamp start to flash on and off (indicating that the disk is being read from). After a few seconds, the screen display will change and the software will be loaded, ready to use.
 
@@ -569,7 +564,7 @@ When you have finished using the software and wish to use the +3 for something e
 
 If you are going to switch off the +3 completely, remember to remove any disk from the disk drive first.
 
-## Abandoning loading
+## <a id="abandoning-loading"></a> Abandoning loading
 
 If you wish to abandon a loading operation, simply press and release the **RESET** button. The +3 will return to the opening menu.
 
@@ -577,20 +572,20 @@ If you wish to abandon a loading operation, simply press and release the **RESET
 
 Subjects covered...
 
-- Using tape instead of disk
-- Loading Spectrum +3, Spectrum +2 and Spectrum 128 software
-- Loading Spectrum 48 software
-- Abandoning loading
+- [Using tape instead of disk](#using-tape)
+- [Loading Spectrum +3, Spectrum +3 and Spectrum 128 software](#loading-128)
+- [Loading Spectrum 48 software](#loading-48)
+- [Abandoning loading](#abandoning-loading)
 
 This chapter describes the loading of commercially available pre-recorded tape software.
 
-(For a description of the loading, saving, formatting, etc., procedures that you would use during BASIC programming, see chapter 6 and chapter 8 part 20.)
+(For a description of the loading, saving, formatting, etc., procedures that you would use during BASIC programming, see [chapter 6](#chapter6) and [chapter 8 part 20](#part20).)
 
-## Using tape instead of disk
+## <a id="using-tape"></a> Using tape instead of disk
 
-So far, you have seen how to load software from disk. To use tape, first set up the +3 system so that your cassette unit is connected to the **TAPE/SOUND** socket at the back of the +3 (details of connections to this socket will be found in chapter 10).
+So far, you have seen how to load software from disk. To use tape, first set up the +3 system so that your cassette unit is connected to the **TAPE/SOUND** socket at the back of the +3 (details of connections to this socket will be found in [chapter 10](#chapter10)).
 
-## Spectrum +3, Spectrum +2 and Spectrum 128 software
+## <a id="loading-128"></a> Spectrum +3, Spectrum +2 and Spectrum 128 software
 
 To load Spectrum +3, Spectrum +2 and Spectrum 128 software (a game, an utility program, etc.) from tape, carry out the following instructions...
 
@@ -600,13 +595,13 @@ To load Spectrum +3, Spectrum +2 and Spectrum 128 software (a game, an utility p
 
 2. Make sure that no disk in inserted in the drive.
 
-3. Press the **ENTER** key to select the option `Loader` from the opening menu. (If you don't know about selecting menu options, refer back to chapter 2.)
+3. Press the **ENTER** key to select the option `Loader` from the opening menu. (If you don't know about selecting menu options, refer back to [chapter 2](#chapter2).)
 
 Now skip to the section ahead entitled 'Loading from tape'.
 
 Note that when you select the `Loader` option from the opening menu, the +3 knows that you wish to load from tape (instead of disk) by automatically detecting the absence of a disk in the disk drive. If a disk is inserted, the tape will be ignored.
 
-## Spectrum 48 software
+## <a id="loading-48"></a> Spectrum 48 software
 
 To load Spectrum 48 software (a game, an utility program, etc.) from tape, carry out the following instructions...
 
@@ -614,7 +609,7 @@ To load Spectrum 48 software (a game, an utility program, etc.) from tape, carry
 
 <canvas id="screen-loading-48"></canvas>
 
-2. Select the option `48 BASIC` from the opening menu. (If you don't know how to select a menu option, refer back to chapter 2.) The opening menu will disappear and the following message will be displayed at the bottom of the screen...
+2. Select the option `48 BASIC` from the opening menu. (If you don't know how to select a menu option, refer back to [chapter 2](#chapter2).) The opening menu will disappear and the following message will be displayed at the bottom of the screen...
 
 <canvas id="screen-basic-48"></canvas>
 
@@ -641,7 +636,7 @@ When the program has loaded, stop the cassette. The software is then ready to us
 
 When you have finished using the software and wish to use the +3 for something else, press and release the **RESET** button (at the left-hand side of the +3). Always remember that whenever the **RESET** button is pressed, ***everything*** in the computer's memory (RAM) is cleared. You should therefore always make sure that you have completely finished with any program in the +3's memory, ***before*** you press the button.
 
-## Abandoning loading
+## <a id="abandoning-loading"></a> Abandoning loading
 
 If, while loading software from tape, you wish to abandon the loading operation, then simply press and release the **RESET** button. The +3 will return to the opening menu.
 
@@ -651,19 +646,19 @@ NOTE - Holding the **BREAK** key down while loading Spectrum +3, Spectrum +2 or 
 
 Subjects covered...
 
-- Disks and drives
-- Insertion
-- Write protection
-- Read/write indicator lamp
-- Eject button
+- [Disks and drives](#disks-and-drives)
+- [Insertion](#insertion)
+- [Write protection](#write-protect)
+- [Read/write indicator lamp](#read-write-indicator-lamp)
+- [Eject button](#eject-button)
 
-## Disks and drives
+## <a id="disks-and-drives"></a> Disks and drives
 
 The +3 uses 3 inch compact floppy disks. We strongly recommend that for reliable data-to-disk transfer, you use AMSOFT CF-2 floppy disks. Disks made by other leading manufacturers, however, may also be used.
 
 If you have connected an additional disk drive to the +3, note that the main disk drive (within the +3) is called ***drive A:*** and the second (additional) disk drive is called ***drive B:***.
 
-## Insertion
+## <a id="insertion"></a> Insertion
 
 Each side of a disk may be used independently. A disk should be inserted with its label facing ***outward*** from the drive, and with the side that you wish to use ***face up***...
 ```
@@ -683,7 +678,7 @@ Each side of a disk may be used independently. A disk should be inserted with it
                      ---_|___---
 ```
 
-## Write protection
+## <a id="write-protection"></a> Write protection
 
 In the left-hand corner of each side of a blank disk, you will see an arrow pointing to a small shuttered hole. This is called the ***write protect hole***, and allows you to protect the contents of the disk from erasure or 'overwriting'...
 ```
@@ -787,11 +782,11 @@ indicator ===> ##                                  [______] <==== Eject button l
       _| |_| |_| |_| |_| |_| |_| |_| |_| |_| |_| |_| |_________|
 ```
 
-## Read/write indicator lamp
+## <a id="read-write-indicator-lamp"></a> Read/write indicator lamp
 
 This lamp indicates that data is being read from or written to the disk. Note, however, that if a second disk drive is connected, the read/write indicator lamp on drive B: will be constantly on (except when drive A: is reading or writing to disk).
 
-## Eject button
+## <a id="eject-button"></a> Eject button
 
 Pressing in the eject button allows you to remove your disk from the disk drive.
 
@@ -803,24 +798,24 @@ Always eject your disk from the disk drive before switching the system off.
 
 Subjects covered...
 
-- The editor
-- The edit menu
-- Renumbering a BASIC program
-- Swapping screens
-- Listing to the printer
-- Typing in a program
-- Moving the cursor
-- Running a program
-- Commands and instructions
-- Simple disk operations
-- Formatting a disk
-- Saving a program
-- Filenames
-- Disk catalog
-- Loading a program
-- Error reports
+- [The editor](#the-editor)
+- [The edit menu](#the-edit-menu)
+- [Renumbering a BASIC program](#renumbering)
+- [Swapping screens](#swapping-screens)
+- [Listing to the printer](#listing-to-the-printer)
+- [Typing in a program](#typing-in-a-program)
+- [Moving the cursor](#moving-the-cursor)
+- [Running a program](#running-a-program)
+- [Commands and instructions](#commands-and-instructions)
+- [Simple disk operations](#simple-disk-operations)
+- [Formatting a disk](#formatting-a-disk)
+- [Saving a program](#saving-a-program)
+- [Filenames](#filenames)
+- [Disk catalog](#disk-catalog)
+- [Loading a program](#loading-a-program)
+- [Error reports](#error-reports)
 
-The +3 has an advanced ***editor*** to create, modify and run BASIC programs. To enter the editor, select the option `+3 BASIC` from the opening menu, using the cursor keys and **ENTER**. (If you don't know how to select a menu option, refer back to chapter 2.)
+<a id="the-editor"></a>The +3 has an advanced ***editor*** to create, modify and run BASIC programs. To enter the editor, select the option `+3 BASIC` from the opening menu, using the cursor keys and **ENTER**. (If you don't know how to select a menu option, refer back to [chapter 2](#chapter2).)
 
 The screen should now look like this...
 
@@ -838,28 +833,28 @@ Now press the **EDIT** key. You will notice two things happen - the cursor vanis
 
 <canvas id="screen-basic-plus3-edit"></canvas>
 
-The edit menu's options are selected in the same way as for the opening menu (by using the cursor keys and **ENTER**).
+<a id="the-edit-menu"></a>The edit menu's options are selected in the same way as for the opening menu (by using the cursor keys and **ENTER**).
 
 Taking the options in turn...
 
 `+3 BASIC` - This option simply cancels the edit menu and restores the cursor. On the face of it - not very useful; however, if **EDIT** is pressed accidentally, then this option allows you to return to your program with no damage done.
 
-`Renumber` - BASIC programs use ***line numbers*** to determine the order of the instructions to be carried out. You enter these numbers (which can be any whole-number from 1 to 9999) at the beginning of each program line you type in. Selecting the `Renumber` option causes the BASIC program's line numbers to start at line 10 and go up in steps of 10.
+<a id="renumbering"></a>`Renumber` - BASIC programs use ***line numbers*** to determine the order of the instructions to be carried out. You enter these numbers (which can be any whole-number from 1 to 9999) at the beginning of each program line you type in. Selecting the `Renumber` option causes the BASIC program's line numbers to start at line 10 and go up in steps of 10.
 BASIC commands which include references to line numbers (such as `GO TO`, `GO SUB`, `LINE`, `RESTORE`, `RUN` and `LIST`) also have these references renumbered accordingly.
 
 If for any reason it's not possible to renumber, perhaps because there's no program in the +3, or because `Renumber` would generate line numbers greater than 9999, then the +3 makes a low-pitched bleep and the menu goes away.
 
-A useful aid to this renumbering facility can be found in chapter 8 part 33.
+A useful aid to this renumbering facility can be found in [chapter 8 part 33](#part33).
 
-`Screen` - This option moves the cursor into the smaller (bottom) part of the screen, and allows BASIC to be entered and edited there. This is most useful for working with graphics, as any editing in the bottom screen does not disturb the top screen. To switch back to the top screen (which you can do at any time whilst editing), select the edit menu option `Screen` again.
+<a id="swapping-screens"></a>`Screen` - This option moves the cursor into the smaller (bottom) part of the screen, and allows BASIC to be entered and edited there. This is most useful for working with graphics, as any editing in the bottom screen does not disturb the top screen. To switch back to the top screen (which you can do at any time whilst editing), select the edit menu option `Screen` again.
 
-`Print` - If a printer is connected, this option will print-out a listing of the current program to it. When the listing has finished, the menu will go away and the cursor will come back. If for some reason the computer cannot print (e.g. the printer is not connected or is off-line), then pressing the **BREAK** key twice will return you to the editor.
+<a id="#listing-to-the-printer"></a>`Print` - If a printer is connected, this option will print-out a listing of the current program to it. When the listing has finished, the menu will go away and the cursor will come back. If for some reason the computer cannot print (e.g. the printer is not connected or is off-line), then pressing the **BREAK** key twice will return you to the editor.
 
 `Exit` - This option returns you to the opening menu - the +3 retains any program that you were working on in the memory. If you wish to go back to the program again, select the option `+3 BASIC` from the opening menu.
 
 If you select the opening menu option `48 BASIC` (or if you switch off or reset the +3), then any program in the memory will be lost. (You may, however, use the opening menu option `Calculator` without losing a program in the memory.)
 
-Reset the computer and select `+3 BASIC`. Now type in the line below. As you type it in, the characters will appear on the screen (a character is a letter, number, space, etc.). Note that to type in the equals sign '=' you should hold down the **SYMB SHIFT** key, then press the **L** key once. Try typing in the line now...
+<a id="typing-in-a-program"></a>Reset the computer and select `+3 BASIC`. Now type in the line below. As you type it in, the characters will appear on the screen (a character is a letter, number, space, etc.). Note that to type in the equals sign '=' you should hold down the **SYMB SHIFT** key, then press the **L** key once. Try typing in the line now...
 
     10 for f=1 to 100 step 10
 
@@ -891,15 +886,16 @@ The final line of this program to type in is...
 
 ...again, press **ENTER**.
 
-The numbers at the beginning of each line are called ***line numbers*** and are used to identify each line. The line you just typed in is line 30, and the cursor should be positioned just below it. As an exercise, we will now edit line 10 (to change the number `100` to `255`). Press the cursor up key (four times) until the cursor has moved up to line 10. Now press the cursor right key until the cursor has moved to the right of `100`. Press **DELETE** three times and you will see the `100` disappear.  Now type in `255` and press **ENTER**. Line 10 of the program has now been edited...
+<a id="moving-the-cursor"></a>The numbers at the beginning of each line are called ***line numbers*** and are used to identify each line. The line you just typed in is line 30, and the cursor should be positioned just below it. As an exercise, we will now edit line 10 (to change the number `100` to `255`). Press the cursor up key (four times) until the cursor has moved up to line 10. Now press the cursor right key until the cursor has moved to the right of `100`. Press **DELETE** three times and you will see the `100` disappear.  Now type in `255` and press **ENTER**. Line 10 of the program has now been edited...
 
     10 FOR f=1 TO 255 STEP 10
 
-The computer has opened up a new line in preparation for some new text. Type...
+<a id="running-a-program"></a>The computer has opened up a new line in preparation for some new text. Type...
 
     run
 
 Press **ENTER** and watch what happens. Firstly, the footer bar and the program lines are cleared off the screen as the +3 BASIC editor prepares to hand over control to the program you've just typed in.
+
 Then the program starts, draws a pattern, and stops with the report...
 
     0 OK, 30:1
@@ -908,7 +904,7 @@ Don't worry about what this report means.
 
 Press **ENTER**. The screen will clear and the footer bar will come back, as will the program listing. This takes about a second or so, during which time the +3 ***won't*** be taking input from the keyboard, so don't try and type anything while it's all happening.
 
-You've just done most of the major operations necessary to program and use a computer! First, you've given the +3 a list of instructions. ***Instructions*** tell the +3 what to do (like the instruction `30 NEXT f`).  Instructions have a line number and are 'stored away' rather than used immediately you type them in. Then you gave the +3 the command `run` to execute the stored program.
+<a id="#commands-and-instructions"></a>You've just done most of the major operations necessary to program and use a computer! First, you've given the +3 a list of instructions. ***Instructions*** tell the +3 what to do (like the instruction `30 NEXT f`).  Instructions have a line number and are 'stored away' rather than used immediately you type them in. Then you gave the +3 the command `run` to execute the stored program.
 
 ***Commands*** are just like instructions, only they don't have line numbers and the +3 carries them out immediately (as soon as **ENTER** is pressed). In general, any instruction can be used as a command, and vice versa -
 it all depends on the circumstances. Every instruction or command must have at least one ***keyword***. Keywords make up the vocabulary of the computer, and many of them require parameters. In the command `DRAW
@@ -939,7 +935,7 @@ A word of warning - while editing in the bottom screen, ***don't*** try to edit 
 
 One thing you may notice while you're typing away is that **CAPS SHIFT** and the number keys used together do strange things. **CAPS SHIFT** with `5`, `6`, `7` and `8` move the cursor about, **CAPS SHIFT** with `1` calls up the edit menu, **CAPS SHIFT** with `0` deletes a character, **CAPS SHIFT** and 2 is equivalent to **CAPS LOCK**, and finally **CAPS SHIFT** with `9` selects graphics mode. All of these functions are available using the dedicated keys on the +3, and so there is no reason why you should ever want to use the above **CAPS SHIFT** and number key alternatives.
 
-## Simple disk operations
+## <a id="simple-disk-operations"></a> Simple disk operations
 
 You have seen how to place a program into the computer's memory by typing it in. This is all very well the first time you write a particular program, but what about if you switch off the computer and want to use the same program the next day? Surely you don't have to type it all in again from scratch - the answer, of course, is no - the disk drive section of the +3 allows you to ***save*** a program from the computer's memory onto a disk, and to ***load*** a program from a disk into the computer's memory. This means that you can type in a program, save it to disk, then happily switch off the +3 knowing that next time you switch it on, you'll be able to load that same program back into the memory.
 
@@ -956,7 +952,7 @@ Firstly, a brand new blank disk cannot be simply taken out of its wrapper and re
 Secondly, it is important that disk files are correctly 'named'.
 Filenames on tape may vary greatly in length and may at times be omitted. Not so with disks - disk filenames must conform to very strict standards (and you will read about these shortly in the section ahead called 'Filenames'.
 
-## Formatting a disk
+## <a id="formatting-a-disk"></a> Formatting a disk
 
 Formatting can be likened to building a series of shelves and pigeonholes on a disk [!? never tried that one myself] prior to the storage of information on those shelves. In other words, formatting lays down an organised framework around which data can be put in or taken out.
 
@@ -990,7 +986,7 @@ You have now formatted side 1 of the disk. Once you have done this, you should n
 
 (If you don't receive the above report (and some other message appears instead), check the section entitled 'Error reports' at the end of this chapter.)
 
-## Saving a program
+## <a id="saving-a-program"></a> Saving a program
 
 Having formatted side 1, it is now ready for saving programs onto.
 
@@ -1006,7 +1002,7 @@ The program is now saved onto disk.
 
 (If you don't receive the above report (and some other message appears instead), check the section entitled 'Error reports' at the end of this chapter.)
 
-## Filenames
+## <a id="filenames"></a> Filenames
 
 Note that a filename on disk consists of two parts (***fields***). The first field is obligatory and can contain up to 8 characters (letters and numbers may be used but no spaces and punctuation marks). In the above example filename, 'pattern' is the first field.
 
@@ -1014,7 +1010,7 @@ The second field is optional. You can use up to 3 characters (but again no space
 
 If you use two fields in a filename, they must be separated by a dot (e.g. 'pattern.pic').
 
-## Disk catalog
+## <a id="disk-catalog"></a> Disk catalog
 
 A catalog of the disk (in alphabetical order) can be displayed by typing in...
 
@@ -1026,7 +1022,7 @@ A catalog of the disk (in alphabetical order) can be displayed by typing in...
 
     172K free
 
-## Loading a program
+## <a id="loading-a-program"></a> Loading a program
 
 Imagine that you have switched off the +3 and later want to load the program you have just saved. Do this now by resetting the +3 (using the **RESET** button) and selecting the option `+3 BASIC` from the opening menu. Type in...
 
@@ -1046,7 +1042,7 @@ Once loaded, you may run the program by simply typing...
 
 ...and pressing **ENTER**, as before.
 
-## Error reports
+## <a id="error-reports"></a> Error reports
 
 If you don't correctly carry out the instructions in this section, you may receive various error reports. If so, identify the report (from those shown below), read the explanation given, and then take the necessary corrective action.
 
@@ -1093,27 +1089,28 @@ If you receive the above options, then:
 
 ## Further information
 
-Further information on disk operations (together with details of how to use the +3's RAMdisk and how to use an external cassette unit) can be found in chapter 8 [part 20](#part20). A guide to +3DOS (the +3 Disk Operating System) will be found in chapter 8 [part 27](#part27).
+Further information on disk operations (together with details of how to use the +3's RAMdisk and how to use an external cassette unit) can be found in [chapter 8 part 20](#part20). A guide to +3DOS (the +3 Disk Operating System) will be found in [chapter 8 part 27](#part27).
 
 # <a id="chapter7"></a> Chapter 7 - Using 48 BASIC
 
 Subjects covered...
 
-- Using the +3 as a 48K Spectrum
-- Entering 48 BASIC mode
-- The keyboard under 48 BASIC
-- Program entry
-- Editing the current line
+- [Using the +3 as a 48K Spectrum](#using-plus3-as-a-48)
+- [Entering 48 BASIC mode](#entering-48-basic)
+- [The keyboard under 48 BASIC](#keyboard-under-48-basic)
+- [Program entry](#program-entry)
+- [Editing the current line](#entering-the-current-line)
 
-The +3 has the ability to act exactly like a 48K Spectrum (or Spectrum +). This achieved by selecting the option `48 BASIC` from the opening menu. In 48 BASIC mode, many of the enhanced features of the +3 (such as the disk drive, extra memory, full screen editor, multi-channel sound, **RS232/MIDI/AUX** interfaces and RAMdisk) cannot be used. The **JOYSTICK 1** and **JOYSTICK 2** sockets will still operate, however.
+<a id="using-plus3-as-a-48"></a>The +3 has the ability to act exactly like a 48K Spectrum (or Spectrum +). This achieved by selecting the option `48 BASIC` from the opening menu. In 48 BASIC mode, many of the enhanced features of the +3 (such as the disk drive, extra memory, full screen editor, multi-channel sound, **RS232/MIDI/AUX** interfaces and RAMdisk) cannot be used. The **JOYSTICK 1** and **JOYSTICK 2** sockets will still operate, however.
 
 The 48 BASIC mode is included for compatibility reasons only - there is no advantage in using 48 BASIC (instead of +3 BASIC mode) to write programs, and it is ***not*** recommended. The following information is included for reference only, or for anybody who is used to the old 48K Spectrum and wants to use the machine immediately without having to learn about the +3 BASIC editor.
 
-There are, in fact, two methods of entering the 48 BASIC mode: the first is by selecting the `48 BASIC` option from the opening menu (if you don't know how to select a menu option, refer back to [chapter 2](#chapter2)).
+<a id="entering-48-basic"></a>There are, in fact, two methods of entering the 48 BASIC mode: the first is by selecting the `48 BASIC` option from the opening menu (if you don't know how to select a menu option, refer back to [chapter 2](#chapter2)).
 
 When 48 BASIC starts up, you will see the following on the screen...
 
 <canvas id="screen-using-basic-48"></canvas>
+<script>spectrum('screen-using-basic-48', 2, initial48K);</script>
 
 The second method allows you to enter the 48 BASIC mode while editing a +3 BASIC program. To do this (while in +3 BASIC mode), type...
 
@@ -1121,7 +1118,7 @@ The second method allows you to enter the 48 BASIC mode while editing a +3 BASIC
 
 ...and press **ENTER**. The +3 will respond with an OK message [not on any +3 I've ever used...] and will have changed to 48 BASIC mode, retaining any program that you had in memory. Once in 48 BASIC mode, there is no way back to +3 BASIC mode apart from resetting the +3 (or switching off, then on again).
 
-One major difference between 48 BASIC and +3 BASIC is in the entering and editing of programs. (Note also that in +3 BASIC the tokens `SPECTRUM` and `PLAY` have replaced the user defined graphics characters for the keys **T** and **U** under 48 BASIC (values 163 and 164).)
+<a id="keyboard-under-48-basic"></a>One major difference between 48 BASIC and +3 BASIC is in the entering and editing of programs. (Note also that in +3 BASIC the tokens `SPECTRUM` and `PLAY` have replaced the user defined graphics characters for the keys **T** and **U** under 48 BASIC (values 163 and 164).)
 
 Once in 48 BASIC mode, the keyboard performs as follows:
 
@@ -1129,7 +1126,6 @@ All the BASIC commands, functions and operators are available directly from the 
 
 `K` (for Keywords) mode automatically replaces `L` (for Letters mode when the machine is expecting a command or program line (rather than input data), and from its position on the line the +3 knows that it should expect either a line number or a keyword. `K` mode occurs at the beginning of a line, or after a colon ':' (except in a string), or after the keyword `THEN`. Whenever the `K` cursor appears, the next key pressed will be interpreted as either a keyword or a line number, as follows...
 
-<center>
 <canvas id="keyboard-mode-k"></canvas>
 <script>keyboard('keyboard-mode-k', function(cx) {
   const fontSize = 11;
@@ -1143,20 +1139,16 @@ All the BASIC commands, functions and operators are available directly from the 
 });</script>
 
 The keyboard in `K` mode
-</center>
 
 `L` (for Letters) mode normally occurs at all times (other than K mode, described above). Whenever the `L` cursor appears, the next key pressed will be interpreted as per the legends on the key-tops themselves, ie....
 
-<center>
 <canvas id="keyboard-mode-l"></canvas>
 <script>keyboard('keyboard-mode-l', drawDefaultKeyboard);</script>
 
 The keyboard in `L` mode
-</center>
 
 In both `K` and `L` modes, pressing **SYMB SHIFT** together with a key will be interpreted as follows...
 
-<center>
 <canvas id="keyboard-48-shift"></canvas>
 <script>
 const keyboardLabels48ShiftLower = [
@@ -1187,7 +1179,6 @@ keyboard('keyboard-48-shift', function(cx) {
 </script>
 
 The keyboard using **SYMB SHIFT** in `K` or `L` mode
-</center>
 
 Using **CAPS SHIFT** in `L` mode simply converts small letters to capitals. In `K` mode, however, **CAPS SHIFT** does not affect the keywords.
 
@@ -1195,7 +1186,6 @@ Using **CAPS SHIFT** in `L` mode simply converts small letters to capitals. In `
 
 `E` (for Extended) mode is used to obtain further characters, mostly tokens. It is entered by pressing the **EXTEND MODE** key, and lasts for only one character (or key depression) thereafter. Whenever the `E` cursor appears, the next key pressed will be interpreted as follows...
 
-<center>
 <canvas id="keyboard-48-extend"></canvas>
 <script>
 const keyboardLabels48ExtendLower = [
@@ -1224,11 +1214,9 @@ keyboard('keyboard-48-extend', function(cx) {
 </script>
 
 The keyboard in `E` mode
-</center>
 
 Applying **CAPS SHIFT** while in `E` mode, the next key pressed will be interpreted as follows...
 
-<center>
 <canvas id="keyboard-48-extend-caps"></canvas>
 <script>
 const keyboardLabels48ExtendCapsLower = [
@@ -1262,11 +1250,9 @@ keyboard('keyboard-48-extend-caps', function(cx) {
 </script>
 
 The keyboard using **CAPS SHIFT** in `E` mode
-</center>
 
 Applying **SYMB SHIFT** while in `E` mode, the next key pressed will be interpreted as follows...
 
-<center>
 <canvas id="keyboard-48-extend-sym"></canvas>
 <script>
 const keyboardLabels48ExtendSymLower = [
@@ -1300,11 +1286,9 @@ keyboard('keyboard-48-extend-sym', function(cx) {
 </script>
 
 The keyboard using **SYMB SHIFT** in `E` mode
-</center>
 
 `G` (for Graphics) mode occurs when **GRAPH** is pressed, and lasts until it is pressed again (or **9** is pressed on its own). A number key will give a mosaic graphics, and each of the letter keys (apart from **V**, **W**, **X**, **Y** and **Z**) will give a user-defined graphics which, until it is defined, will look identical to a capital letter. Whenever the `G` cursor appears, the next key pressed will be interpreted as follows...
 
-<center>
 <canvas id="keyboard-48-graph"></canvas>
 <script>
 const keyboardLabelsGraph48Lower = [
@@ -1341,11 +1325,9 @@ keyboard('keyboard-48-graph', function(cx) {
 </script>
 
 The keyboard in `G` mode
-</center>
 
 Applying **CAPS SHIFT** while in `G` mode inverts the mosaic graphics (ie. the ink colour becomes the paper colour, and the paper becomes the ink colour). Hence, the next key pressed will be interpreted as follows...
 
-<center>
 <canvas id="keyboard-48-graph-caps"></canvas>
 <script>
 const keyboardLabelsGraphCaps48Lower = [
@@ -1382,7 +1364,6 @@ keyboard('keyboard-48-graph-caps', function(cx) {
 </script>
 
 The keyboard using **CAPS SHIFT** in `G` mode
-</center>
 
 ## General keyboard notes
 
@@ -1390,7 +1371,7 @@ If any key is held down for more than 2 or 3 seconds, it will start ***repeating
 
 When **ENTER** is pressed, the line is either executed, entered into the program, or used as input data. If the line contains a ***syntax error***, however, a flashing question mark `?` appears next to the error.
 
-As program lines are entered, a listing is displayed in the top half of the screen. The last line entered is called the current line and is indicated by the symbol `>` after the line number. Any line in the program may be selected as the current line (for editing purposes) by using the up and down cursor keys (to the right of the space bar). To then edit the select current line, press the **EDIT** key. (Editing takes place at the bottom of the screen.)
+<a id="entering-the-current-line"></a>As program lines are entered, a listing is displayed in the top half of the screen. The last line entered is called the current line and is indicated by the symbol `>` after the line number. Any line in the program may be selected as the current line (for editing purposes) by using the up and down cursor keys (to the right of the space bar). To then edit the select current line, press the **EDIT** key. (Editing takes place at the bottom of the screen.)
 
 When a command is executed or a program is run, output is displayed in th top half of the screen and remains there until either **ENTER** or the cursor up or down key is pressed. At the bottom of the screen appears a ***report*** giving a code (digit or letter) referred to in [part 29 of chapter 8](#part29). This report remains on the screen until a key is pressed and the +3 returns to `K` mode.
 
@@ -1407,10 +1388,8 @@ This guide to BASIC starts by repeating some of the information given in [chapte
 
 ### The Keyboard
 
-<center>
 <canvas id="keyboard-basic"></canvas>
 <script>keyboard('keyboard-basic', drawDefaultKeyboard);</script>
-</center>
 
 The characters used on the +3 comprise not only single symbols (letters, digits, etc.) but also compound tokens (keywords, function names, etc.). Everything must be typed in full, and in most cases it doesn't matter whether capital letters (known as ***UPPER CASE***) or small letters (***lower case***) are used. There are three sorts of keys on the keyboard: letter and number keys (called alphanumeric keys); symbol keys (punctuation marks); and control keys (things like **CAPS SHIFT**, **DELETE** and so on).
 
@@ -1424,7 +1403,6 @@ To type the symbols which appear on the alphanumeric keys on the keyboard, ie...
 
 ...simply hold down the **SYMB SHIFT** key while the alphanumeric key with the required symbol on it is pressed (see the following diagram)...
 
-<center>
 <canvas id="keyboard-sym-shift"></canvas>
 <script>
 const keyboardLabelsSymbolsLower = [
@@ -1454,7 +1432,6 @@ keyboard('keyboard-sym-shift', function(cx) {
 </script>
 
 Symbols available using **SYMB SHIFT**
-</center>
 
 Additionally, the symbols...
 
@@ -1462,7 +1439,6 @@ Additionally, the symbols...
 
 ...can be obtained by first pressing the **EXTEND MODE** key once, then holding down **SYMB SHIFT** while pressing the appropriate alphanumeric key (see the following diagram)...
 
-<center>
 <canvas id="keyboard-sym-shift-ext"></canvas>
 <script>
 const keyboardLabelsSymbolsExtLower = [
@@ -1492,11 +1468,9 @@ keyboard('keyboard-sym-shift-ext', function(cx) {
 </script>
 
 Symbols available using **SYMB SHIFT** in **EXTEND MODE**
-</center>
 
 To enter graphics mode, the **GRAPH** key is pressed once. Mosaic graphics (see the following diagram) can then be produced by pressing the number keys (except `9` and `0`). Pressing the letter keys (except **T**, **U**, **V**, **W**, **X**, **Y** and **Z**) produce user-defined graphics (if set up).
 
-<center>
 <canvas id="keyboard-graph"></canvas>
 <script>
 const keyboardLabelsGraphLower = [
@@ -1525,7 +1499,6 @@ keyboard('keyboard-graph', function(cx) {
 </script>
 
 Mosaic graphics available using **GRAPH**
-</center>
 
 To obtain inverted mosaic graphics, press the above number keys while holding down **CAPS SHIFT**.
 
@@ -3058,17 +3031,14 @@ This program prints out the entire character set...
 
 On the screen will appear the following...
 
-<center>
 <canvas id="screen-charset"></canvas>
 
 The character set
-</center>
 
 As you can see, the character set consists of a space, 15 symbols and punctuation marks, the ten digits, seven more symbols, the capital letters, six more symbols, the lower case letters and five more symbols. These are all (except `£` and `©`) taken from a widely-used set of characters known as ***ASCII*** (American Standard Codes for Information Interchange). ***ASCII*** also assigns numeric codes to these characters, and these are the codes that the +3 uses.
 
 The rest of the characters are not part of ASCII, but are dedicated to the ZX Spectrum range of computers. First amongst them are a space and 15 patterns of black and white blobs. These are called the ***graphics symbols*** and can be used for drawing pictures. You can enter these from the keyboard, using what's known as ***graphics mode***. Pressing the **GRAPH** key switches on graphics mode, after which the keys **1,** **2**, **3**, **4**, **5**, **6**, **7** and **8** will produce the graphics symbols...
 
-<center>
 <canvas id="keyboard-graph-blocks"></canvas>
 <script>
 const keyboardLabelsGraphBlocksLower = [
@@ -3096,11 +3066,9 @@ keyboard('keyboard-graph-blocks', function(cx) {
   })
 });
 </script>
-</center>
 
 While in graphics mode, pressing **CAPS SHIFT** together with one of the keys **1** to **8** produces 'inverted' versions of the same symbols, ie. black becomes white and white becomes black...
 
-<center>
 <canvas id="keyboard-graph-caps-blocks"></canvas>
 <script>
 const keyboardLabelsGraphCapsBlocksLower = [
@@ -3128,7 +3096,6 @@ keyboard('keyboard-graph-caps-blocks', function(cx) {
   })
 });
 </script>
-</center>
 
 The cursor keys won't work properly while all this is going on as the +3 interprets them as shifted number keys, and prints graphics characters accordingly.
 
@@ -3136,7 +3103,6 @@ Pressing the **9** key turns everything back to normal (as does pressing **GRAPH
 
 Here are the sixteen graphics symbols...
 
-<center>
 
 | Symbol | Code | Symbol | Code
 | :----: | :--: | :----: | :--:
@@ -3162,7 +3128,6 @@ Here are the sixteen graphics symbols...
   }
 })();
 </script>
-</center>
 
 After the graphics symbols in the character set, you will see what appears to be another copy of the alphabet from A to S. These are characters that you can redefine yourself (though when the machine is first switched on they are set as letters) - they are called ***user-defined graphics***. You can type these in from the keyboard by going into graphics mode, and then using the letter keys **A** to **S**.
 
@@ -3460,7 +3425,7 @@ The function...
 
 `TAB` column
 
-...prints enough spaces to move the `PRINT` position to the column specified. It stays on the same line, or, if this would involve backspacing, moves to the next line. Note that the +3 reduces the column number 'modulo 32' (i.e. it divides by 32 and takes the remainder) - so `TAB 33` means the same as `TAB 1`.
+...prints enough spaces to move the `PRINT` position to the column specified. It stays on the same line, or, if this would involve backspacing, moves to the next line. Note that the +3 reduces the column number 'modulo 32' (ie. it divides by 32 and takes the remainder) - so `TAB 33` means the same as `TAB 1`.
 
 As an example...
 
@@ -3723,7 +3688,7 @@ To see how all eight colours fit together, imagine three rectangular spotlights,
 
 There is a function called `ATTR` that finds out what the attributes ate at a given position on the screen. It is a fairly complicated function, so it has been relegated to the end of this section.
 
-There are two more statements, `INVERSE` and `OVER`, which control not the attributes, but the dot pattern that is printed on the screen. They use the numbers 0 for off, and 1 for on. If you use `INVERSE 1`, then each character cell's dot pattern will be the inverse of its usual form, i.e. paper dots will be replaced by ink dots and vice versa. Thus the character cell containing '**a' (shown previously) would be printed as follow...
+There are two more statements, `INVERSE` and `OVER`, which control not the attributes, but the dot pattern that is printed on the screen. They use the numbers 0 for off, and 1 for on. If you use `INVERSE 1`, then each character cell's dot pattern will be the inverse of its usual form, ie. paper dots will be replaced by ink dots and vice versa. Thus the character cell containing '**a' (shown previously) would be printed as follow...
 
                     _______________________________
                    |###|###|###|###|###|###|###|###|
@@ -3946,7 +3911,7 @@ Type...
 
 Here is a list if the possibilities for reference:
 
-`PLOT`;               - This is the usual form. It plots an ink dot, i.e. sets the pixel to show the ink colour.
+`PLOT`;               - This is the usual form. It plots an ink dot, ie. sets the pixel to show the ink colour.
 
 `PLOT INVERSE 1;` - This plots a dot of 'ink eradicator', ie. it sets the pixel to show the paper colour.
 
@@ -4133,7 +4098,7 @@ Connections to the **TAPE/SOUND** socket are described in [chapter 10](#chapter1
 
 To get the most out of the +3's musical ability, it helps to have a little knowledge about musical terms.
 
-Note that in the examples that follow, it is important that you type in the string expressions ***exactly*** as shown in upper case and lower case letters, i.e. the example `"ga"` should ***not*** be typed in as `"Ga" "gA"` or `"GA"`.
+Note that in the examples that follow, it is important that you type in the string expressions ***exactly*** as shown in upper case and lower case letters, ie. the example `"ga"` should ***not*** be typed in as `"Ga" "gA"` or `"GA"`.
 
 Type in this command (don't worry what it means just yet)...
 
@@ -4449,6 +4414,1484 @@ Finally, here is a brief list of the parameters that can be used in the string o
 | `Y`        | Specifies that MIDI channel is to be used (followed by 1 to 16).
 | `Z`        | Specifies MIDI programming code (followed by code number).
 
+## <a id="part20"></a> Part 20 - File operations
+
+Subjects covered...
+
+- Drives
+- `FORMAT`
+- Filenames
+- `SAVE`, `LOAD`
+- Disk catalog: `CAT`
+- Wildcards
+- `MERGE`
+- Deleting and renaming files
+- File attributes
+- `ERASE`, `MOVE`, CO`PY
+- The RAMdisk
+- Tape operations
+- `VERIFY`
+- Tape catalog: `CAT`
+
+### Drives
+
+The +3 has a built-in disk drive that can be used to save and load your own programs, and to load programs produced by other people. As it is also possible to connect a second disk drive to the +3, BASIC must have some way of identifying which disk drive is which. The built-in drive is known as drive A: (always followed by a colon because +3 BASIC knows that when you say A:, you mean 'disk drive A'). If the external drive is present, it is referred to as drive B:.
+
+As the processor at the heart of the +3 can only converse with 64K of memory at a time, the extra RAM in the +3's 128K memory is used just like another drive. This is called the ***RAMdisk*** and is identified by the letter M: (for memory drive). All the commands (except `FORMAT`) that you can use on drives A: and B: can also be used on drive M:. Drive M: is much faster than the mechanical disk drives, but it is very important to remember that just like the contents of the program memory, the contents of drive M: are erased if you press the **RESET** button or switch off the +3. BASIC's `NEW` command, however, will leave any files stored on drive M: intact.
+
+If you don't have a second disk drive connected to your +3, you can still use the machine as if drive B: were present. If you ask the machine to perform an operation on drive B: (you'll see how to do this later), a message will appear asking you to...
+
+    Please put the disk for B: into
+    the drive then press any key
+
+...whereupon you should put the disk that you would have used in drive B: (if it had existed) into drive A: then press any key (for example **ENTER**). From then on, the machine will treat the built-in disk drive as if it really ***were*** drive B:. When the +3 next needs to perform some operation on the disk that was ***originally*** in the drive, it will ask you to...
+
+    Please put the disk for A: into
+    the drive then press any key
+
+This technique will be particularly useful when using the `COPY` command (described later in this section).
+
+Now that you know which drives are available and what they are called, let's see what they can be used for. Type in the short program (which displays coloured squares) that you first met at the end of part 16, ie...
+
+    10 POKE 22527+ RND *704, RND *127
+    20 GO TO 10
+
+This is the program that you are going to save to disk.
+
+As previously explained (in [chapter 6](#chapter6), you cannot simply unwrap a brand new disk and hope to save programs onto it straight away; it must first be made ready to use with the aid of the `FORMAT` command. `FORMAT` will erase anything that was previously on the disk and set it up for +3 BASIC to use. Be careful, therefore, not to `FORMAT` any disk that has programs on it you might like to keep. To format your new disk, type in the following...
+
+    FORMAT "a:"
+
+If you haven't already put your new disk into the drive, don't worry - the +3 will just come back with the error report `Drive not ready`.
+
+In this case, put your new disk into drive A: and re-type the command.
+
+By the way, while you are using the various disk commands you may occasionally see the report `Drive A: not ready` (possibly followed by `- Retry, Ignore or Cancel ?`). This invariably means that you have forgotten to put a disk into the drive.
+
+Whenever a report appears that ends with `- Retry, Ignore or Cancel ?`, there are three options open to you.
+
+The first is to take action to rectify the problem, for example, if the report was `Drive not ready`, then put a disk into the drive and type `R` (to retry). The disk system will then try to carry out the same operation again and hopefully this time it will succeed.
+
+If you were half way through copying a large file and an error such as `Missing address mark` appeared, this would usually mean that the disk being read has been damaged in some way. Try `R` a few times and if the error persists, you indeed have a damaged disk. At this stage, you'll probably want to salvage any un-damaged data, so try typing `I` (to ignore). Although this tells the +3's disk system to ignore the error, there is no guarantee that all your data will be read intact - it's really just a last ditch operation when all else has failed.
+
+Finally, if you have tried to perform an operation where an error occurs, you may realise that there is no point in trying to go on. In this case type `C` (to cancel) which tells the +3's disk system to abandon the current command. Having typed `C`, BASIC will report an error (usually very similar to the text of the previous report.
+
+Back to out attempt to format a disk. If you have made a mistake and the disk you put into drive A: has already been formatted, the +3 will spot this and you will receive the report...
+
+    Disk is already formatted,
+    A to abandon, other key continue
+
+This is a safety feature that will allow you to abandon the format before the process gets going, if, by some chance, you inserted the wrong disk. In this case, you should type `A` (to abandon) and nothing more will happen. If, however, you really ***do*** intend to reformat the disk and don't mind losing what's on it, then press any key apart from `A` (eg. press *ENTER*).
+
+After about 30 seconds, the usual `0 OK` report will appear. The disk is now usable and should not need to be formatted again. You can always reformat a disk if you wish to clear the disk of data completely, but remember that it is an irreversible process.
+
+Disks can occasionally become spoilt (***corrupted***). This can happen if some dust or dirt comes into contact with the disk surface, if the disk is left too close to a magnetic field (such as that produced by a TV or a telephone), if the disk is ejected while it is being written to, or if the disk is left in the drive when the computer is switched on or off. A corrupted disk will cause errors during `LOAD` or `SAVE`, and should be reformatted before any more data is saved onto it.
+
+If you want to recover files from a corrupted disk, you can try to copy them individually (using `COPY`) to a known 'good' disk. If one or more files prove uncopiable, then you have probably lost them for good. We recommend that you keep at least two copies of important files (on different disks) - one for day-to-day use, and one kept in a safe place just in case the unthinkable happens. Making regular copies of valuable data and programs is known as ***backing-up***, and is an essential habit to get into. Backing-up can save you untold misery and tears. You can of course make back-ups onto tape, which may prove cheaper in the long run.
+
+Unlike many computers, the `FORMAT` command is built-in and can be used like any other BASIC command. It doesn't affect the program you have in the computer, so you can save the little two-line program you typed in a moment ago.
+
+Type in the following...
+
+    SAVE "squares"
+
+The words `SQUARES` is just a name that you use to 'label' the program you are going to store on disk. To prevent confusion, everything stored on disk must be given a name. These names (called ***filenames***) are a little different from those that you may use when storing programs on tape.
+
+### <a id="filenames"></a> Filenames
+
+The range of characters that you are allowed to use for disk filenames is more limited than for tape filenames. The format of filenames used on +3 disks is the same as that used by an operating system known as ***CP/M*** (Control Program/Monitor) by Digital Research Inc. The fact that these formats are the same means that you can take a +3 disk and use it on other computers. Data can be transferred in this way between the +3 and a CP/M system, and this is most likely to be useful for people writing machine code programs or moving text from a +3 word processor to a CP/M program. (It is extremely unlikely that programs written in BASIC can be usefully converted from one machine to another using this method.)
+
+Filenames can be as simple as the example above - `SQUARES` (or even simpler - `S`, for example). However a full CP/M-type filename can be made up of as many as four parts: ***user number***, ***drive letter***, ***name*** and ***type***. Each of these parts is called a field (e.g. the name field or the type field).
+
+You needn't worry about what user number means; if you don't know already, then it's probably best to remain blissfully ignorant. However, for anyone who is interested: on CP/M machines with very large disk capacities (or hard disks) with perhaps more than one terminal connected, user numbers are used to partition files into subsections (known as user areas) so that there isn't just one huge directory with several thousand files. On the +3, however, disks cannot have more than 64 files, so the use of user areas is not really necessary. Nevertheless, user areas can be specified in filenames used in +3 disk commands. They take the form...
+
+- user number  drive letter `:` filename
+
+...where user number is in the range 0 to 15, and drive letter is A:, B: or M:. If you specify a user number, then you must also specify a drive letter. So, to save our example program in user area 5, we would use...
+
+    SAVE "5a:squares"
+
+The problem with using user areas is that it's quite easy to forget which user area you saved a file to, and so finding it could take a while (as the `CAT` command can only catalog one user area at a time).
+
+As just mentioned, the drive letter will normally be A:, B: or M:. notice that the letter must be followed by a colon (e.g. 'a:squares'). If you don't specify a drive letter, then +3 BASIC will use the drive that was last used - this is known as the default drive. (When you first switch on the +3, the ***default*** drive is set to A:.) So typing...
+
+    SAVE "squares"
+
+...is just as if you had typed...
+
+    SAVE "a:squares"
+
+There are special forms of SAVE and LOAD which can be used to change the default drive. When SAVE or LOAD is followed by a filename that contains nothing but a drive letter and a colon, the drive identified by the letter is then made the new default drive. So...
+
+    SAVE "m:"
+    SAVE "squares"
+
+...will change the default drive to drive M: then save the program onto drive M:. (If the above command had been 'SAVE "m:squares"' the program would still have been saved to drive M: though the default drive would not have been changed.)
+
+To switch the default back to drive A:, type...
+
+    SAVE "a:"
+
+Note that `SAVE` and `LOAD` followed by just a drive letter (and colon) wildcard will do nothing other than change the default drive. They certainly won't save or load a program. You must use `SAVE` or `LOAD` followed by a real filename for this.
+
+The name field of a filename is the only field that you have to specify when using `SAVE`, `LOAD`, etc. The name field can be from 1 to 8 characters long and may contain any of the following:
+
+- Letters:      `abcdefghijklmnopqrstuvwxyz` (upper or lower case)
+- Digits:       `0123456789`
+- Other characters: `"#$'@^_{}~`
+
+Upper and lower case letters are the same in filenames, so `EXAMPLE` and `example` would be identical.
+
+A filename can end with an optional type field (which is just a further three characters) that you may wish to use in order to group together files of the same type. If a type field is specified, it ***must*** be preceded by a dot. (Unlike some other BASICs, +3 BASIC does not automatically allocate a type field to files if one is not specified.) You may find it useful to add your own type fields - a popular convention is to use the type fields `.BAS` to identify BASIC files and `.BIN` to identify CODE files (`.BIN` being short for binary). If you think this is a good idea, then the previous example program could be saved using...
+
+    SAVE "squares.bas"
+
+The characters `*` and `?` have a special meaning to +3 BASIC, and cannot be used in a filename for `LOAD` and `SAVE`. There are, however, file commands in which `*` and `?` can be used, and these will be discussed later.
+
+Here are some examples of valid filenames...
+
+    z
+    squares
+    m:picture.bin
+    a:fred
+    13a:hello
+    0M:CAPITALS
+    test.bas
+    philip
+    glass.mus
+    a:a.a
+
+Here are some illegal filenames (and reasons why)...
+
+- `pac man`     (must not contain any spaces)
+- `(test`)      (must not contains brackets)
+- `/<>-+=!&`    (must not contain any of these characters)
+- `excessive`   (more than 8 characters long)
+- `.bas`        (has no name field)
+- `later...`    (only one dot allowed)
+- `7:dubious`   (if user number is specified, then filename must also contain drive letter - eg. `7a:dubious`)
+
+### <a id="disk-catalog"></a> Disk catalog
+
+You may have spotted the fact that we have now saved the same program twice with two different names (`SQUARES` and `SQUARES.BAS`). It would be nice to be able to check what has been saved on a particular disk, and this is where the `CAT` command comes in. `CAT` displays a catalog of what you have stored on a disk.
+
+Press **ENTER** then type in...
+
+    CAT
+
+The +3 will take a quick look at the disk (the read/write indicator lamp will come on briefly), and will display a list of the disk's contents on the screen. The list is sorted into alphanumerical order and each file is followed by an indication of its size to the nearest number of kilobytes (rounded up). At the end of the list, the amount of free space on the disk is also displayed.
+
+`CAT` (on its own) is the simplest form of the command. If you wanted to list all the files on a different drive (e.g. drive M:), you would use...
+
+    CAT "m:"
+
+When `CAT` is followed by a filename containing just a drive letter, ie. `A:`, `B:` or `M:` (including the colon), all the files on the nominated drive will be listed. `CAT` on its own gave a list of the files on drive A:, this is because A: is the current default drive. You will remember that `LOAD` or `SAVE` followed by a drive letter will make that drive the current default. So...
+
+    LOAD "m:"
+    CAT
+
+...will also list all the files on drive M:. This isn't quite the same as 'CAT "m:"', because now the default drive has been left as M:. Change it back to A: before going further.
+
+We will now save several copies of our simple example program using different names, so that you will be able to see what the various forms of the `CAT` command will produce. So far the disk should contains `SQUARES` and `SQUARES.BAS`. If either of these weren't listed with the above `CAT` command, add their name to the list below. Type the following...
+
+    SAVE "fred"
+    SAVE "fat"
+    SAVE "santa.bin"
+    SAVE "trepur.bak"
+    SAVE "cliff.cjl"
+    SAVE "sausages.bas"
+
+Don't worry about cluttering up the disk with lots of copies of the same thing - you'll be shown how files can be erased later.
+
+### <a id="wildcards"></a> Wildcards
+
+If a disk has a large number of files, it is often desirable to selectively list only those of interest. The +3 caters for this. If, for example, you wished to list only those files that ended in `.BAS` you would use:
+
+    CAT "*.bas"
+
+The asterisk character `*` is what's known as a wildcard. When a filename, perhaps containing a wildcard, is specified, CAT will list only the files that match the 'specification' given. When the `*` wildcard is used (in either the name field or the type field) it means 'any character from here to the end of this field'. So, in the above command, we want CAT to display any files that have any characters in their name field and the letters 'BAS' in their type field. If there are no files on the disk that match the specification, the report `No files found` will be displayed (followed by the amount of free space). If you give a file specification of `*.*` (ie. `CAT "*.*"`) or no specification at all, (ie. `CAT`) and the report `No files found` is displayed, then this means that the disk is empty. An empty disk in drive A: or B: will have a free space value of 173K (this value may be different for disks from other types of computer). An empty drive M: will usually have 58K free. If you catalog a disk containing a commercial program (such as a game), it might appear to have no files on it but very little space free. This is a protection measure taken by the software writers to prevent illicit copying, and shouldn't cause any concern.
+
+If we use...
+
+    CAT "s*.bas"
+
+...then all files that begin with the letter `S` and then have any characters whatsoever between the `S` and the end of the name field, followed by a type field of `BAS`, will be shown. Files with the names `SQUARES.BAS`, `SAUSAGE.BAS`, `SUPER.BAS` would all be listed, but `SQUARES.BIN`, `TOAST.BAS` and `SQUARES` would not.
+
+The `*` wildcard can also be used in the type field of a filename (note, however, that you cannot use it in place of the user number or drive letter). If we wanted to list all files that had `SQUARES` as their name field and anything as their type field, we would use...
+
+    CAT "squares.*"
+
+Similarly, if we wanted to list all the files that began with a letter `S` and had a type field that began with the letter `B` we would use...
+
+    CAT "s*.b*"
+
+When we type `CAT` (on its own), we want to list ***all*** files on a disk. Therefore, `CAT` is just a shorthand way of saying...
+
+    CAT "*.*"
+
+From the above you will notice that the `*` wildcard can only be used as the last character in a field, and it is used to mean 'I don't care what other characters are present between here and the end of this field'. Sometimes, however, you may want to specify a group of files but need to be a little more discerning. This is when you use the `?` question mark wildcard (in either the name field or the type field). The `?` wildcard means 'I don't mind what character happens to be in this specific position'.
+
+Therefore, if we used the command...
+
+    CAT "?at"
+
+...then the files listed would be all those that are three characters long, ending in `AT`, but we don't mind what character is in the first position. Thus files such as `CAT`, `SAT`, `MAT` and `FAT` would be listed, but `CAR`, `CATTLE` and `AT` would not. Unlike the `*` , `?` wildcards can be used in place of any of the 8 characters of the name field and the 3 characters of the type field. There is no limit to the number of question marks you can use (other than the 8 and 3 limits of the filename field lengths).
+
+Valid file specifications containing `?` wildcards include...
+
+- `?.bas`       (one letter name with a type field of `BAS`)
+- `s?uares.*`   (specific files whose second character doesn't matter, with any type field)
+- `ca??.?t?`    (files beginning `CA` with four characters in the name field, and with a type field of 3 characters whose second letter is `T`)
+- `????????.???` (exactly the same as `*.*`)
+
+If you have a printer connected to your +3, you may find it useful to print-out the files listed by `CAT`. You can do this by directing the output from CAT to stream 3 (streams are explained in part 22 of this chapter). The command to do this is...
+
+    CAT #3
+
+If you only want some of the files printed-out, you can also include a file specification in exactly the same way as before. For example...
+
+    CAT #3,"a:*.bas"
+
+(The above `CAT #3` commands will not work unless a printer is connected to the +3 and is on line. To abandon, press **BREAK**.)
+
+Any form of the `CAT` command may also end with the word `EXP`, for example, `CAT "a:" EXP`. The `EXP` is short for expanded, and as the name might suggest, gives you a little more information about the ***attributes*** of the files on a disk. Not only will the expanded catalog display system files but also it will indicate whether files are set to write protected mode, archive mode or system status (these terms are explained in the section ahead entitled 'File attributes').
+
+(There is one other specialist use for the `CAT` command, and this will be dealt with in the section ahead entitled ['Tape catalog'](#tape-catalog.)
+
+Now that you have successfully saved a program to drive A:, you can happily switch off or reset the +3, or start a `NEW` program, knowing that you could always load in the saved program if you needed it. Remember - there is a difference between resetting the +3 and using the `NEW` command - if you reset, all the +3's memory (RAM) will be cleared. This includes any files you may have saved on drive M:. When you use `NEW`, however, any files on drive M: will remain intact. As we have saved the program on the disk in drive A:, you can go ahead and press the **RESET** button, then release it. The usual opening menu will be displayed. Select `+3 BASIC` then type the command...
+
+    LOAD "squares"
+
+The `LOAD` command reads in a new program (and variables) from disk, and then deletes any program (and variables) previously in the memory. (If the program that you specified to load is not on the disk, then any program currently in the memory is not deleted.) Just like `SAVE`, the `LOAD` command must be given a filename whose name field is at least one character long. If you have been used to a tape machine in the past, then you may have used `LOAD ""'` to mean 'load the next program on the tape'. The concept of a 'next program' on disk does not exist, so if you don't specify a filename, the disk system won't know what to load and will report an error. If you can't remember what name you saved a file under, use `CAT` to check what's on the disk (this is why it's a good idea to save programs on disk using 'mnemonic' names (names that remind you what they contain) - eg. it is more obvious what sort of program a file named `TENNIS.BAS` contains compared to one simply named `T`).
+
+There is a short cut for loading programs (such as games) that have been specially set up - you can select the `Loader` option from the opening menu. This option, when selected, attempts to load and run programs. First of all, it looks for a program called `*` on the disk. If this exists, then it will be loaded and run. The program has to be a machine code program saved in a particular fashion (as BASIC can't use `*` as a filename for `SAVE`), and is, therefore, only for use on commercial software or by those who understand machine code.
+
+If `*` can't be found, the +3 will then look for a file called `DISK`. This can be a BASIC program that you've previously written and saved, so if the `Loader` option finds a program called `DISK`, it will load it and wait for the next operation.
+
+At this point, pressing **ENTER** will just load the program again.
+
+If you wish to run or edit the program after it has loaded, first press the cursor down key once, then **ENTER**. This selects the `+3 BASIC` option from the opening menu.
+
+If there isn't a program called `DISK` on the disk (or if the +3 detects that there isn't a disk in the disk drive), then the computer will try to load a program from tape, displaying the message...
+
+    Insert tape and press PLAY
+    To cancel - press BREAK twice
+
+This is the recommended method for loading Spectrum +3 (Spectrum +2 and Spectrum 128) software from tape (see [chapter 4](#chapter4).
+
+As previously mentioned, `LOAD` deletes the old program and variables in the +3 whenever it loads in the new ones from disk. However, there is another command - `MERGE`, which is similar to `LOAD` but it only deletes an old program line or variable if there is a new one with the same line number or name. Clear the program memory using the `NEW` command, then type in the 'dice' program from part 11 of this chapter and `SAVE` it onto disk, using...
+
+    SAVE "dice"
+
+Use `NEW` to clear the program memory again, then enter and run the following program...
+
+     1 PRINT 1
+     2 PRINT 2
+    10 PRINT 10
+    20 LET x=20
+
+Now type in...
+
+    MERGE "dice"
+
+If you then `LIST` the program, you will see that lines 1 and 2 have survived, but lines 10 and 20 have been overwritten by those from the dice program. Note that the value of the variable `x` has also survived (try `PRINT x`).
+
+You have now seen simple forms of five of the commands that work in conjunction with disk:
+
+- `FORMAT`      Prepares brand new disks so that programs can be saved onto them. `FORMAT` can be used to completely erase everything on a disk that has already been used.
+- `SAVE`        Stores the program and variables onto a disk.
+- `LOAD`        Clears the computer of all its program and variables, and replaces them with new ones read in from disk.
+- `MERGE`       Similar to `LOAD` except that it does ***not*** clear the old program lines and variables unless it has to (because they are the same as those being loaded in from disk).
+- `CAT`     Displays a list of the files contained on a disk.
+
+A variant on `SAVE` takes the form...
+
+    SAVE filename LINE number
+
+A program which is saved using this command, is stored in such a way that when it is loaded, it automatically jumps to the line with the given number, then runs itself.
+
+Use `NEW` to clear the program memory then type in the following...
+
+    10 PRINT "program running"
+    20 PLAY "cdefgabC"
+
+Now save this program using the command...
+
+    SAVE "disk" LINE 10
+
+Now reset the +3, and when the main menu appears, ensure that the disk (with the above program on it) is in the drive then press the **ENTER** key. This will select the `Loader` option which searches for a file on the disk called `DISK`. When it finds the simple example program you just saved, it will load it, and as it was saved using a `LINE` parameter, it will automatically start running (from line 10).
+
+At this point, pressing **ENTER** will load and run the program again.
+
+If you wish to edit the program after it has run, press the cursor down key once, then **ENTER**. This selects the +3 BASIC option from the opening menu.
+
+Note that if you load a program called `DISK` which doesn't automatically run (using the `Loader` option from the opening menu), then you will have to select the +3 BASIC option (after the program has loaded) before you can run it or edit it.
+
+So far, the only kinds of information we have stored on disk have been programs (together with their variables). There are also two other kinds of information, called ***arrays*** and ***bytes***.
+
+You can save arrays on disk using the keyword `DATA` in a `SAVE` statement...
+
+- `SAVE` filename `DATA` array name `()`
+
+...where filename is the name that the information will have on disk and works in exactly the same way as when you save a program.
+
+The array name specified the array you want to save, so it is just a letter (or a letter followed by `$`). Remember to put the brackets `()` after the array name.
+
+Be clear about the separate roles of filename and array name. If you say (for instance)...
+
+    SAVE "bloggs" DATA b ()
+
+...then `SAVE` takes the array `b()` from the computer and stores it on disk under the name `BLOGGS`.
+
+The command...
+
+    LOAD "bloggs" DATA b ()
+
+...sees if it is possible to load the array (ie. if there is room for it in the computer), then if so, deletes any already existing array called `b()` and loads in the array `BLOGGS` from disk, calling it `b()` in the computer.
+
+You cannot use `MERGE` with saved arrays.
+
+You can save character (string) arrays in exactly the same way. However, note that when you load in a character array, it will delete not only any previous character array with the same name, but also any simple string variable with the same name.
+
+When dealing with a large amount of data you may find it useful to use the `SAVE`...`DATA` option and the `LOAD`...`DATA` option to and from drive M:. Once saved on drive M: the space previously used by an array can be re-used. Using drive M: will mean that saving and loading are very fast.
+
+Byte storage is used for pieces of information without any reference to what the information is used for - it could be a screen display, or perhaps some user-defined graphics, or just something you have made up for yourself. It is specified using the word `CODE`, as in...
+
+    SAVE "picture.bin" CODE 16384,6912
+
+The unit of storage in memory is the byte (a number between 0 and 255), and each byte has an address (which is a number between 0 and 65535). The first number after `CODE` is the address of the first byte to be stored on disk; the second number is the amount of bytes to be stored. In our case, `16384` is the address of the first byte in the file (which contains the screen display), and `6912` is the amount of bytes in it, so we are saving an actual copy of the screen display onto disk. Try the above `SAVE` command. (You don't have to save the bytes using the name `PICTURE.BIN` - it's merely a convenient reminder of what's on the disk.)
+
+To load it back, use...
+
+    LOAD "picture.bin" CODE
+
+You can put parameters after `CODE` in the form...
+
+    LOAD filename CODE start,length
+
+Here, the length parameter is used as a safety measure - when the computer attempts to load the bytes from disk, it will check the length and refuse to load the bytes if there are more than specified (thereby safeguarding against the extra bytes accidentally overwriting an area of memory that you wished to preserve). In such a case, the report `Code length error` is displayed. (Anyone using a cassette unit under 48 BASIC should note that the above error will display a different report: `R Tape loading error`.
+
+If you leave out the length parameter, the +3 will read in the bytes however many there are.
+
+The start parameter shows the address where the first byte is to be loaded back to - this can be different from the address it was saved from, though if they are the same, then you can leave out the start parameter in the `LOAD` statement.
+
+`CODE 16384,6912` is such a useful area of memory (the screen display) to save and load, that a special function (`SCREEN$`) has been provided to represent it, so you can type (for example)...
+
+    SAVE "picture.bin" SCREEN$
+
+...or...
+
+    LOAD "picture.bin" SCREEN$
+
+### <a id="automatic-back-ups"></a> Automatic back-ups
+
+If you have saved one or two things on a disk and then you save something with a filename that has already been used, what will happen? Well, each time you save a program, the disk system checks to see if the filename you specify has already been used. If it has, the existing copy on disk is given a new filename before the information you have asked to save is stored. The new name given to the existing file has the same name field but its type field will always be `.BAK` (short for backup).
+
+If a `.BAK` version of the file already exists, then that will be lost in preference to the new `.BAK` file. This means that as you save successive versions of a program with the same name the previous copy will still be there in a file called filename`.BAK`. So, if you make a serious programming error and inadvertently save the program, you can delete the newest version and rename the `.BAK` file to the original filename. The next section shows you how to do this; but first, type...
+
+    SAVE "a:squares"
+
+...to save the program using the filename `SQUARES` yet again.
+
+### <a id="deleting-and-renaming"></a> Deleting and renaming files
+
+Files can be deleted from a disk using the `ERASE` command. This should be followed by a filename that specifies which file or files are to be deleted. Just like `CAT`, you can use the wildcards `*` and `?` to identify a group of files, or you can specify the name in full if you only want to get rid of one particular file. If you specify a single filename, that file will immediately be erased from the disk - so take care. If you specify a group of files (by including `*` or `?`), BASIC will ask you to confirm that you really mean to delete this group of files. Typing `Y` will make the deletion process continue, so if you have made a mistake, type `N`.
+
+If, for example, you wanted to delete a file from drive M: called `FRED.BAS`, you would use...
+
+    ERASE "m:fred.bas"
+
+If drive M: has already been set as the default drive, then you don't need to include the M: at the start of the filename. It doesn't hurt to include the drive letter anyway, and with as powerful a command as `ERASE`, you might feel safer if you do. To erase all the files on drive B: you would use...
+
+    ERASE "b:*.*"
+
+Before doing this, BASIC will ask for confirmation...
+
+    Erase b:*.* ? (Y/N)
+
+...and assuming that you really mean to wipe all the files from the disk in drive B:, you would then type `Y`.
+
+If you ask to delete a single file (or a group of files using the wildcards `*` and `?`) and there are no files on the disk that match the specification, then the report `File not found` will be displayed.
+
+Note that `ERASE` followed by just a drive letter (eg. `ERASE "m:"`) will erase all files on the specified drive ***without asking for confirmation***. Be careful, therefore, not to enter this form of the command unless you really mean to delete everything! (The `ERASE` process will stop and report an error if a write protected disk or file is detected.)
+
+The disk you have been using up to now has many copies of the simple `SQUARES` program (saved under different names) on it. This is a waste of space so you might as well erase those that aren't needed. What you want to do in effect is erase everything except `SQUARES` (though there is no simple way to do this). However, some of the different files have the same letters in common, so you may be able to use various forms of `*` and `?` specifications to cur down the amount of typing. See if you can work out the fewest number of `ERASE` commands to erase all files other than `SQUARES`.
+
+Once a file has been saved, it can be given a new names using the `MOVE` command. For example, if there is a file on drive M: called `SQUARES` that you would like to call `BLOCKS`, its name could be changed as follows (first we make sure there is a file called `SQUARES` on drive M:). Type...
+
+    SAVE "m:squares"
+    MOVE "m:squares" TO "m:blocks"
+    CAT "m:"
+
+Imagine we have saved a file called `FRED`, and then after working on it and saving a new version with the same name, realised that we had made a terrible mistake and would like to recover the last version. This would be possible using the commands...
+
+    ERASE "fred"
+    MOVE "fred.bak" TO "fred"
+
+Unlike ERASE, you cannot include the wildcards `*` or `?` when renaming files.
+
+`MOVE` will take into account the current default drive so the filename doesn't necessarily have to contain a drive letter. Note, however, that it is not possible to use `MOVE` to rename files between different drives. The command...
+
+    MOVE "a:fred" TO "b:eric"
+
+...(for example) will fail with the error `No rename between drives` reported. Instead, you can use the COPY command (explained ahead) followed by `ERASE` to achieve the desired result.
+
+### <a id="file-attributes"></a> File attributes
+
+`MOVE` has another use besides renaming files. It can also be used to change the ***attributes*** of a file. Attributes are bits of information associated with a file that tell you (and the computer) a little more about it.
+
+There are three attributes that can be changed. The most useful attribute is write protection. Once a file's write protection attribute has been set, it will not be possible to erase it (or save a file with the same name) until you remove the write protection. It behaves a little like the write protect hole on the disk, but works just on individual files. Unlike the write protect hole, however, it offers no protection against FORMAT, which erases everything on a disk, regardless of attributes. You can set a file's write protection attribute to ***on*** with a command such as...
+
+    MOVE "squares" to "+p"
+
+The letter `P` is short for protection (against overwriting). If you now try to use the command...
+
+    ERASE "squares"
+
+...you will receive an error report saying `File is read only`.
+
+To switch write protection ***off***, use...
+
+    MOVE "squares" TO "-p"
+
+...and you'll be able to erase the file as before.
+
+In all the MOVE commands that change attributes, `+` means switch it on, and `-` means switch it off.
+
+When you are using MOVE to change attributes, the filename can include the wildcards `*` and `?`. So, to make all the files on drive M: write protected, you would use...
+
+    MOVE "m:*.*" to "+p"
+
+As always, the drive letter can be omitted if it is the current default drive.
+
+You can repeatedly switch attributes on or off without causing an error, so if you set write protect on a file that has already got write protection, it will just stay protected.
+
+The second attribute that can be changed is known as the system status attribute. This is really provided just to be compatible with other CP/M based computers, however, if you do set a file's system attribute to on, then you will notice that the file no longer appears in the list of files when you use `CAT`. The system status attribute is identified by `+S` (or `-S`) in the `MOVE` command. If you use the expanded catalog, (ie. `CAT EXP`), all the files will then be listed including system status files (which are followed by the letters `SYS`). You may also notice that any files that are write protected are followed by the letters `PROT`. You can use the system attribute to remove files from a catalog if they would otherwise just clutter things up.
+
+Bear in mind that you cannot have two files on the same disk with the same filename and different system status attributes; so if you try to create or copy a file onto a disk where a file of that already exists (but is hidden from `CAT`), then the previous file will be deleted.
+
+The final attribute you can change is known as the archive attribute. In an expanded catalog it shows up as `ARC`, and is identified by `+A` (or `-A`) in the `MOVE` command. On the +3, the archive attribute is of no practical use and is only provided for file compatibility with CP/M based computers.
+
+Here are some attribute-setting MOVE commands. See if you can predict what they will do...
+
+    MOVE "*.*" TO "+p"
+    MOVE "*.bas" TO "-s"
+    MOVE "s???.*" TO "+a"
+    MOVE "m:?.?" TO "-p"
+
+If you try to use any letter other than `A`, `S` or `P` in setting or resetting attributes, or if the 'attribute string' is not two characters long, then you will receive the report `Invalid attribute`.
+
+Quite often, a situation will arise when you would like to make a copy of one of your files, (to give to a friend perhaps, or to put it on drive M: so that it can be accessed quicker). The `COPY` command can be used to copy from one drive to another and even to make complete copies of disks. The very simplest form of the `COPY` command will look something like this...
+
+    COPY "a:fred" TO "m:"
+
+This means, put a copy of the contents of the file called `FRED` (which is presently on drive A:) onto drive M:. As no destination name has been specified (after M:), the new file will also be called `FRED`.
+
+The name before the word `TO` is known as the ***source*** filename, and the name after `TO` is the ***destination*** filename.
+
+The command...
+
+    COPY "fred" TO "eric"
+
+...will take the contents of a file called `FRED` on the default drive and copy it to a file called `ERIC`, also on the default drive. The files `FRED` and `ERIC` then contain the same information.
+
+You cannot copy one file to another with the same name and on the same drive. Trying to do so will result in the error report `File already exists` (or possibly `File already in use`).
+
+The source filename for copying from can include the wildcards `*` and `?`, however, in this case the destination filename has to be just a drive letter. So, for example...
+
+    COPY "a:*.ovl" TO "m:"
+
+...will work (assuming that there are some files on drive A: that match this specification), and transfers all files on A: with a `.OVL` type field onto drive M:. However, the command...
+
+    COPY "a:*.bas" TO "m:*.bin"
+
+...will fail with the error report `Destination cannot be wild`.
+
+The `COPY` command does not copy any attribute information associated with a file; you have to set any attributes you require on the new file after copying.
+
+`COPY` will always list the files it is copying in two columns. This will allow you to check that any wildcard specification you use encompasses all the files that you were intending to copy.
+
+After copying, a report will appear to let you know many files were copied. (If you were copying a group of files, this may be useful to check that you have indeed copied all the files you intended to.)
+
+There is a special format of the `COPY` command as follows...
+
+    COPY "a:" TO "b:"
+
+...which will perform a complete 'sector by sector' copy of the disk in drive A: to an already formatted disk in drive B:. Anything already stored on the disk in drive B: will be lost - so, if there are only a few files on the source disk to be copied, it may be quicker to use...
+
+    COPY "a:*.*" TO "b:"
+
+Even if you have only one drive (A:), you can use the fact that the single mechanism can be used as if it were drive A: or drive B:. For example, suppose you have a single drive system and want to copy a couple of files (that both end in `.BAS`) from one disk to another. Put the source disk in the drive and type...
+
+    COPY "a:*.bas" to "b:"
+
+Once the +3 has read part of the first file that ends in `.BAS`, it will ask you to...
+
+    Please put in the disk for B: into
+    the drive then press any key
+
+Simply follow this instruction. After the +3 has written the information onto the 'drive B:' disk, it will ask you to...
+
+    Please put in the disk for A: into
+    the drive then press any key
+
+This process of swapping between disks will go on until all files have been copied. Because the `COPY` command will try to use any free space on drive M:, it is a good idea to clear drive M: (if possible) before doing a lot of copying (as this can reduce the number of disk swaps needed).
+
+As well as copying files between drives, `COPY` can also be used to copy files to the screen or to a printer (if connected). The command...
+
+    COPY "words.txt" TO SCREEN$
+
+...will display the contents of a file on the default drive called `WORDS.TXT`. Any control characters (except carriage returns) will be filtered out. This command cannot really be used to look at BASIC program files as they contain various control codes. Its main use will be to inspect the contents of ASCII text files, such as those produced by a word processor.
+
+The command...
+
+    COPY "words.txt" TO LPRINT
+
+...is similar to the above, but this time the contents of the file will be sent to the printer. In this case, however, control codes ***will*** be sent to the printer. If you have set the print output to be via the RS232 with tokens unexpanded (using `FORMAT LPRINT "R";"U"`), then this command can be used to 'export' files to other computers. Once again, this command cannot be used for BASIC programs - it is intended for sending ASCII text files only.
+
+People writing machine code programs may find it easier to do so on a larger development machine. However, the files produced by this method will probably not be recognised by the +3, as BASIC expects to find a 128 byte ***header*** at the start of each file which contains information used by the `LOAD` command. However, once a binary file has been produced on a +3 formatted disk, it can have a header of the correct type put on it using a command such as...
+
+    COPY "game.com" TO SPECTRUM FORMAT
+
+This will produce a new file on the same drive, having the same name field but with a type field of `.HED` (short for headed). In the above example, a new file called `GAME.HED` will be created, and it will be written to the default drive (as no drive letter was specified).
+
+Obviously this command will only be of use for machine code files. Headed files produced in this way will have the length part in their header set to the correct value and the type part set to be a `CODE` file. However, BASIC cannot know what address the file should be loaded to, so the load address should be specified when the `LOAD`...`CODE` command is used. For example, if the above program had been assembled to execute at 7000h (the 'h' denotes a hexadecimal number) or 28672 decimal, then the headed file could be loaded with the command...
+
+    LOAD "game.hed" CODE 28672
+
+As `SCREEN$` files are just another type of `CODE` file, this technique can be used to 'import' screens designed on another machine, though they obviously wouldn't make much sense unless they had been tailored to fit the +3's size and layout.
+
+### <a id="ramdisk"></a> The RAMdisk
+
+You may have been wondering what point there is in storing information in the RAMdisk (drive M:) as it will be lost once the +3 is switched off. Well, perhaps the most obvious use of drive M: is to store chunks of BASIC program (or routines) which can be merged (using `MERGE M:`filename) into a smaller program, in sequence. This makes it possible to write about 90K of BASIC program, and hold it in the +3 (though to do this, the program structure has to be well defined).
+
+You can keep the various routines on a 3 inch disk and use `COPY` to put them into drive M: before you run the program. The benefit of doing this is that drive M: is much quicker to access than the mechanical drives (A: and B:). The mechanical drives, however, can hold much more data, so you might like to evolve a system using both disk and RAMdisk. Careful design and planning will repay itself many times over it terms of speed and performance.
+
+One of the more interesting uses of the RAMdisk is in animation, where a series of pictures can be defined by a 'slow' BASIC program, stored in drive M:, then called back to the screen at high speed. The following program offers a taste of this. Doubtless you can do better...
+
+     10 INK 5: PAPER 0: BORDER 0: CLS
+     20 FOR f=1 TO 10
+     30 CIRCLE f*20,150,f
+     40 SAVE "m:ball"+ STR$ (f) CODE 16384,2048
+     50 CLS
+     60 NEXT f
+     70 FOR f=1 TO 10
+     80 LOAD "m:ball"+ STR$ (f) CODE
+     90 NEXT f
+    100 BEEP 0.01, 0.01
+    110 FOR f=9 TO 2 STEP -1
+    120 LOAD "m:ball"+ STR$ (f) CODE
+    130 NEXT f
+    140 BEEP 0.01, 0.01
+    150 GO TO 70
+
+Before running the program, always make sure that drive M: is empty. If it isn't, first type `ERASE "m:*.*"` (typing `Y` at the `(Y/N)` prompt), then `RUN`.
+
+Note that in line 40 of this program, the two numbers following `CODE` are the address in memory of the start of the screen (`16384`) and the length of the top third of it (`2048`). By saving and loading only the top third, the overall speed is maintained.
+
+### <a id="tape-operations"></a> Tape operations
+
+(See [chapter 10 (Peripherals for your +3)](#chapter10) for details on how to connect a cassette unit to your +3.)
+
+Much of what has been said in this section about the use of `LOAD`, `SAVE` and `MERGE` on disk will apply equally to tape (if you have connected a cassette unit to the +3). However, the commands `FORMAT`, `COPY`, `MOVE`, `CAT` and `ERASE` do not apply on tape (although there is a special form of CAT that can be used - described in the section ahead entitled 'Tape catalog').
+
+As you will already know, when you first switch on the +3, the default drive for all file operations is set to drive A:. This means that if you use `CAT`, `ERASE`, `LOAD`, `SAVE`, etc. without specifying a drive letter, then +3 BASIC will perform the operation on drive A:. You will also know that the default disk can be changed using either...
+
+    LOAD "drive letter:"
+
+...or...
+
+    SAVE "drive letter:"
+
+...where drive letter is either `A:`, `B:` or `M:` (which must include the colon). In fact you can also use `T:` as a drive letter, but only in this one special form of the `LOAD` and `SAVE` command...
+
+    LOAD "t:"
+
+After 'LOAD "t:"', all subsequent `LOAD` and `MERGE` operations are performed to tape (until changed back to disk by, for example, `LOAD "a:"`). Similarly, if you use...
+
+    SAVE "t:"
+
+...then all future `SAVE` operations will be performed to tape (again, until changed back to disk by, for example, `SAVE "a:"`. Unlike `A:`, `B:` or `M:`, when you use `T:` as the drive letter, it will change only future `LOAD`, `SAVE` and `MERGE` commands. The default drive used for `MOVE`, `COPY`, `CAT` and `ERASE` will stay the same as it was before (as these commands have no relevance to tape).
+
+If all this sounds a little complicated, a few examples might help to make it a little clearer. Assuming you have just switched on (or reset) the +3, the default for all operations will be A:. So if you now type...
+
+    SAVE "m:"
+
+...then the default drive for all subsequent operations will be set to drive M: (this is exactly the same as if the command `LOAD "m:"` had been used). Using the command...
+
+    LOAD "b:"
+
+...will then set the default drive for all operations to drive B:. For this sort of thing, `LOAD` and `SAVE` operate in exactly the same way.
+
+If we now use the command...
+
+    SAVE "t:"
+
+...this will perform all future `SAVE` operations to tape, but all other commands will still default to drive B:. Using the command...
+
+    LOAD "t:"
+
+...will also perform all future `LOAD` and `MERGE` operations to tape; however, the default drive for all disk-only commands will still be drive B:.
+
+Finally, using the command...
+
+    SAVE "a:"
+
+...will perform all future `SAVE` operations and all disk operations (except `LOAD` and `MERGE`) to drive A:. `LOAD` and `MERGE` will still be from tape, however.
+
+Let's try to save our simple 'squares' program onto tape. Reset the +3 then type...
+
+    LOAD "squares"
+
+This should load in the program that we saved earlier. If you press **ENTER**, the program will be listed as follows...
+
+    10 POKE 22527+ RND *704, RND *127
+    20 GO TO 10
+
+This is the program that you are now going to save to tape. Any standard tape should work, although low noise tapes are preferable.
+
+Type in the following...
+
+    SAVE "t:"
+    SAVE "squares"
+
+This will save the program onto tape using the filename `SQUARES`. When saving files on tape, you are allowed up to ten characters in the name. Unlike disk, you can use any characters you like and the name can include spaces.
+
+The +3 will display the message...
+
+    Press REC & PLAY, then any key.
+
+We shall first go through a 'dry run' so that you can see what will happen when we actually do save the program later. This time, therefore, don't press **REC** and **PLAY** on your cassette unit - just press a key on the +3 (for example **ENTER**) and watch the border around the screen display. You will see patterns of coloured horizontal stripes as follows:
+
+Five seconds of red and cyan stripes moving slowly upwards, followed by a very short burst of blue and yellow stripes.
+
+A short pause.
+
+Two seconds of the red and cyan stripes again, followed by another short burst of blue and yellow stripes.
+
+While the stripes appear on the screen, you can also hear the 'sound' of the data through your TV's speaker.
+
+Keep trying out the above `SAVE` command (without actually operating your cassette unit) until you can recognise these patterns. What's actually happening is that the information is being saved in two blocks and both blocks have a 'lead-in' (which corresponds to the red and cyan stripes) followed by the information itself (which corresponds to the blue and yellow stripes). The first block is a preliminary one containing the name and various other bits of information about the program, and the second is the program itself together with any variables present. The pause between them is just a gap.
+
+Now let's actually save the program onto tape:
+
+1. Wind the tape to an area that is either blank, or that you are prepared to overwrite.
+
+2. Type...
+
+        SAVE "squares"
+
+3. Follow the instructions on the screen, ie....
+
+        Press REC & PLAY, then any key.
+
+4. Watch the screen as before. When the +3 has finished (with the report `0 OK`), stop the tape.
+
+Whenever you save a program to tape, before clearing the saved program from the +3's memory, you should always make sure that the program was correctly saved. You can check the signal on the tape against the program in the memory using the `VERIFY` command (this command isn't used on disk, as disks are not prone to the same sorts of errors as tapes are):
+
+1. Rewind the tape to just before the point at which you saved the program.
+
+2. Type...
+
+        VERIFY "squares"
+
+Play the tape. The border will alternate between red and cyan until the +3 finds the program that you specified, then you will see the same pattern as you did when you saved the program. During the pause between the blocks, the message `Program: squares` will be displayed on the screen. (When the +3 is searching for something on tape, it displays the name of everything it comes across.) If, after the pattern has appeared, the +3 displays the report `0 OK`, then your program is safely stored on tape and you can skip to the section ahead entitled ['Verified OK'](#verified-ok). Otherwise, something has gone wrong - take the following steps to find out what.
+
+If the program name has not been displayed, then either the program was not saved properly in the first place, or it was but was not 'read back' properly. You need to find out which. To see if it was saved properly, rewind the tape to just before the point at which you saved the program, then play it back while listening to the TV's speaker. The (red and cyan) lead-in should produce a clear, steady high pitched note, while the (blue and yellow) information part gives a much harsher screech.
+
+If you do not hear these noises, then the program was probably not saved. Check that you were not trying to save the program onto the plastic leader at the beginning of the tape. When you have checked this, try saving again.
+
+If you can hear the sounds as described, then `SAVE` was probably alright and your problem is with reading back.
+
+It could be that you mistyped the program name when you saved it (in which case when the +3 finds the program it will display the mistyped name on the screen). On the other hand, perhaps you mistyped the program name when you verified it, in which case the +3 will ignore the correctly saved program and carry on looking for the wrong name, flashing red and cyan as it goes.
+
+If there is a genuine mistake on the tape, then the +3 will display the report `R Tape loading error` which means in this case that it failed to verify the program. Note that a slight fault on the tape itself (which might be almost inaudible with music) can wreak havoc with a computer program. Try saving the program again, perhaps on a different part of the tape (or a different tape altogether).
+
+### <a id="verified-ok"></a> Verified OK
+
+Now let us suppose that you have saved the program and successfully verified it. Loading it back into the memory is just a matter of typing...
+
+    LOAD "squares"
+
+(Since the program verified properly, you should have no problem loading it.)
+
+`LOAD` deletes the old program (and variables) in the memory when it loads in the new one from tape.
+
+Once a program has been loaded, the report `0 OK` will appear. The program can then be run or edited.
+
+As mentioned in [chapter 4](#chapter4), it is possible to buy pre-recorded programs (software) on tape. They must be specially written for the ZX Spectrum range (ie. the Spectrum, the Spectrum +, the Spectrum 128, the Spectrum +2 or the Spectrum +3). Different makes and models of computer have different ways of storing programs, so they cannot use each other's tapes.
+
+If your tape has more than one program stored on the same side, then each program will have a name. You can choose the program you wish to load using the `LOAD` command - for instance, if the one you want is called `HELICOPTER`, you could type...
+
+    LOAD "helicopter"
+
+The command `LOAD ""` means 'load the first program that the +3 comes across on tape'. This can be very useful if you cannot remember the name that you saved the program under! (Remember that this only works on tape - normally you cannot specify a blank filename.)
+
+When there is no disk in drive A: (or the disk contains no file called `*` or `DISK`), then the option `Loader` from the opening menu has the same action as `LOAD ""` from tape, and is much quicker to use - simply switch on (or reset) the +3 and press **ENTER**.
+
+`MERGE` will operate in a similar way to that described for disk except, of course, that on tape you can use `MERGE ""` to mean 'merge the next file on tape'. Filenames in a `MERGE` command may conform to the less stringent limits for tape (ie. any combination of 10 characters including spaces).
+
+If you have BASIC programs saved on tape (perhaps because you owned a previous Spectrum model), you will probably want to transfer them to disk to gain the advantage of faster loading. This should be relatively straightforward. Just use...
+
+    LOAD "t:"
+    SAVE "a:"
+
+...then for each BASIC file on the tape, use...
+
+    LOAD ""
+
+...which will load the next file from the tape into the +3's program memory. Once loaded, the file can be saved out to disk using...
+
+    SAVE filename
+
+Remember that files on disk must be given a filename which conforms to the limitations outlined at the beginning of this section.
+
+If the BASIC programs have been saved with an automatic execution `LINE`, you will find that attempting to `LOAD` them will also run them. Obviously you don't want this so, for each program you wish to load, reset the computer, select `+3 BASIC` and type...
+
+    MERGE ""
+
+...(rather than `LOAD ""`).
+
+If you have saved data (numeric or string) arrays, it should be an equally simple matter to LOAD them into memory from tape, then `SAVE` them to disk.
+
+The only file types that may cause difficulty when you want to transfer them from tape to disk are `CODE` (and `SCREEN$`) files. To be able to transfer a file of this type you need to know at least two things about it.
+
+    1. The address it was saved from.
+    2. How many bytes it contains.
+
+### <a id="tape-catalog"></a> Tape catalog
+
+This is where the final form of the `CAT` command comes in. If the file specification given is simply `T:`, a special form of the `CAT` command comes into action. After you type...
+
+    CAT "t:"
+
+...the +3 will wait for you to play a tape (the `CAT "t:"` operation can be abandoned by pressing **BREAK**). When the +3 finds a header on tape it will display the information (in the same form it was saved). This means that there will be a ten character filename in inverted commas. What follows the filename will depend upon the type of file - if it was a BASIC program, the word `(BASIC)` will be displayed. If a `LINE` parameter was specified when the file was saved, this will also be shown. If the file holds data, then the word `DATA` followed by the array name will be displayed, and finally, if the file was saved using `CODE` (or `SCREEN$`, which is really just `CODE 16384,6912`), the word `CODE` will be printed followed by the start address and length that were specified when the file was saved.
+
+Here is a sample display resulting from a `CAT "t:"` command, which may make this a little clearer...
+
+    "simple    " (BASIC)
+    "execute   " LINE 10 (BASIC)
+    "numbers   " DATA f()
+    "words     " DATA c$()
+    "m/c       " CODE 30000,12345
+    "picture   " CODE 16384,6912
+
+The last item was, in fact, saved using...
+
+    SAVE "picture" SCREEN$
+
+Just like the other forms of `CAT`, its output can be directed to a printer using stream 3, ie...
+
+    CAT #3,"t:"
+
+(Streams are explained in [part 22](#part22) of this chapter.) Note that the above `CAT #3,"t:"` command will not work unless a printer is connected to the +3 and is on-line. To abandon, press BREAK.
+
+From the above it can be seen that if you have loaded (using `MERGE ""`) a program containing an execution `LINE` parameter, the `CAT "t:"` display will identify that line number for you. You may then wish to save that program to disk using...
+
+- `SAVE` filename `LINE` line number
+
+...so that the disk version of that program runs itself automatically.
+
+It is the values for the `CODE` files that you will probably find most useful from the `CAT "t:"` display. Either note them down or print them out. Then rewind the tape so it just before the header that has been read. Type...
+
+- `CLEAR` start-1
+
+...where start is the value printed for the start address. Now type...
+
+    LOAD "" CODE
+
+When the file has loaded into memory and the `0 OK` report appears, the file can be saved to disk using...
+
+- `SAVE` filename `CODE` start`,`length
+
+This technique is only intended for transferring your own code files (where you may have forgotten what start and length values were used when you saved them). Note that using this method to copy commercial software may be a breach of copyright - check with the software author first.
+
+There are several reasons why this simple scheme may ***not*** work:
+
+1. The code, when loaded would overwrite some of the system variables (in the range 23296 (5B00h) to 23755 (5CC6h)). This upper address limit may vary - it is the value held in the system variable PROG (see part 25 of this chapter).
+
+2. Attempting to load code that has no header (or that is protected in some other way) probably won't even produce any output from `CAT "t:"` and you certainly won't be able to use the BASIC `LOAD` command to load it.
+
+3. If the code file is so long that it stretches right from the screen display area to the end of memory, then it will be possible to load it, but as soon as it has loaded, the machine will crash. This is because BASIC will have 'lost' its stack.
+
+Exercise...
+
+1. Practise the operations shown in this section until you are completely au fait with manipulating files to and from the disk, the RAMdisk, and cassette unit (if connected).
+
+## <a id="part21"></a> Part 21 - Printer operations
+
+Subjects covered...
+
+- [Parallel printers](#parallel-printers)
+- [Serial printers](#serial-printers)
+- `LPRINT`, `LLIST`
+- `FORMAT`
+- `COPY`
+
+The +3 comes with an 8-bit Centronics parallel port and an RS232 serial port. Both are supported by built-in software enabling you to use virtually any printer. These features are usable only in +3 BASIC mode.
+
+The printer must have either a Centronics compatible (parallel) or an RS232 (serial) interface, and if you want to reproduce pictures of the screen, then the printer must have an Epson compatible quadruple-density bit-image graphics mode (ESC `L` n n).
+
+Make sure you have the correct lead to connect the printer to the +3 - if in doubt, consult your Sinclair dealer.
+
+For further information about which printer and connecting lead to purchase, together with details of the +3's **PRINTER** and **RS232** socket connections, see [chapter 10 (Peripherals for your +3)](#chapter10).
+
+### <a id="parallel-printers"></a> Parallel printers
+
+When the +3 is first switched on it will assume that, if a printer is present, it will be connected to the (parallel) **PRINTER** socket. The hardware connection between computer and printer is relatively straightforward - though you must make sure that you don't connect the cable the wrong way up at the computer end (if the cable doesn't have a locating 'key').
+
+Once the connection has been made, the command...
+
+    LPRINT "hello"
+
+...should produce some printed output. If not, check the connection and make sure that your printer is set to 'on line'.
+
+Once you have got your printer to print, you may skip to the section ahead entitled ['General printing'](#general-printing).
+
+### <a id="serial-printers"></a> Serial printers
+
+Unlike parallel printers, the connections between the +3 and a serial (or RS232) printer will vary for different manufacturers' printers. Make sure that your dealer has provided a lead suitable for connecting your particular printer to the +3. A serial printer must be connected to the +3's **RS232** socket, and details of connections can be found in [chapter 10 (Peripherals for your +3)](#chapter10).
+
+The +3 always uses what is known as ***hardware flow control***, or ***hardware handshaking***. This means that it will not transmit characters until certain control signals from the printer have the right values. It is therefore very important that connections are made to the control lines of the +3 as well as the transmit and receive data lines. If your printer does not support hardware handshaking then connect pins 4 and 5 of the +3's **RS232** connector socket together. The drawback of not using hardware handshaking is that the odd character may be lost when transmitting a lot of data at high speed.
+
+To get the +3 and the printer communicating with each other, they must both use the same ***baud rate***. The baud rate is the speed at which data is transferred between computer and printer. Although it is possible that your printer can be set to different baud rates, it'll probably be easier to change the rate at the computer end. Somewhere in the printer's operating manual, the baud rate will be specified - find this out and then set the +3 to this rate, using the command...
+
+- `FORMAT LINE` baud rate
+
+For example...
+
+    FORMAT LINE 300
+
+(You won't need to do this if your printer normally uses 9600 baud, as the +3 will assume this rate by default.)
+
+As the +3 usually expects to be operating with a parallel printer, it will be necessary to use the command...
+
+    FORMAT LPRINT "R"
+
+...before the +3 will successfully operate with a serial printer. (The `R` in the above command is short for RS232.)
+
+The command to set the +3 back to parallel (Centronics) mode is...
+
+    FORMAT LPRINT "C"
+
+### <a id="general-printing"></a> General printing
+
+Once you have everything set up, you can use three BASIC commands to print things out. The first two, `LPRINT` and `LLIST`, are just like `PRINT` and `LIST` except that they use the printer instead of the TV screen. Note that the `Print` option from +3 BASIC's edit menu has the same effect as `LLIST`, but is included as an easier method of getting a listing.
+
+Try this program for example...
+
+    10 LPRINT "This program..."'
+    20 LLIST 40
+    30 LPRINT '"...prints out the character set, ie..."'
+    40 FOR n=32 TO 255
+    50 LPRINT CHR$ n;
+    60 NEXT n
+    70 LPRINT
+
+It's important to note that `LPRINT` and `LLIST` normally take care to screen out any embedded colour codes (and their parameters) before printing or listing anything. Embedded colour codes are a bit of a hangover from the old 48K Spectrum - when included in a string they set `INK`, `PAPER` and so on. Printers on the whole tend to use these codes for completely different things like setting italics, underline, etc., so it would be quite dangerous to send colour codes to the printer and hope that nothing untoward happens. A side effect of this is that the +3 will normally not be able to send ***escape control sequences*** to the printer. For example, support your printer expects an escape character (character 27) followed by `"x"; CHR$ (1)` to switch to its NLQ mode; you would normally use the command...
+
+    LPRINT CHR$ (27);"x"; CHR$ (1); "This is in Near Letter Quality"
+
+However, in +3 BASIC, you must first issue the command...
+
+    FORMAT LPRINT "U"
+
+This command tells the +3 not to interpret characters as 'Spectrum codes', but as ordinary unexpanded characters (the 'U' is short for unexpanded). If the above command is not issued, then everything above code 165 (see part 28 of this chapter) will be translated as one of the +3's special words, or ***tokens***. Likewise, almost everything below code 32 will be screened out.
+
+If you wish, you can instruct the +3 to interpret characters as Spectrum codes by using...
+
+    FORMAT LPRINT "E"
+
+...(where `E` stands for expanded). You'll need to do this if you're going to use `LLIST`. The +3 starts off in expanded mode anyway, so unless you've issued a `FORMAT LPRINT "U"` command, you won't need to use `FORMAT LPRINT "E"`.
+
+So, to summarise:
+
+* If you want to send special characters (such as ESC) to your printer (in order to use different styles of printing), issue the command....
+
+      FORMAT LPRINT "U"
+
+...before printing.
+
+* If you are writing or modifying a program, and want to get a listing on the printer, issue the command...
+
+      FORMAT LPRINT "E"
+
+...before listing the program.
+
+The third BASIC statement used with a printer - `COPY`, prints out a copy of the TV screen. To demonstrate, go into the small screen (by selecting the 'Screen' option from the edit menu) and type in the following command.
+
+    FOR n=1 TO 20: PRINT n,: NEXT n
+
+The numbers 1 to 20 will be printed in the top part of the screen. Now type...
+
+    COPY
+
+The `COPY` command takes about 15-20 seconds to get started, so don't panic if nothing appears to happen immediately. After a while, you'll see a copy of the screen reproduced on the printer. (If all you get from `COPY` is a lot of random characters on the printer, then it's likely that your printer isn't fully compatible.)
+
+You can always stop printing at any time by pressing the **BREAK** key. Many printers have what's known as a ***buffer***, which stores text before printing. If your printer has a buffer, then pressing **BREAK** will not stop the printer immediately (although the +3 will register the break at once).
+
+Note that if the `COPY` command is stopped by pressing the **BREAK** key, the printer may be left in graphics mode (this will be indicated by subsequent `LPRINT` statements) producing a mass of meaningless dots, or printing each line of text partly over the previous line). In these circumstances, switching the printer off then on again is the easiest way to get things back to normal.
+
+As well as the rather simple `COPY` command, which just produces a black dot on the printer for each dot on the screen (whatever its colour may be), there is an expanded version (`COPY EXP`) which prints differing combinations of dots depending on the colour of ink that was used on the screen. To demonstrate, type in the following new program...
+
+    10 FOR b=0 TO 1
+    20 BRIGHT b
+    30 FOR i=0 TO 6
+    40 FOR c=0 TO 31
+    50 PRINT INK i; i;
+    60 NEXT c
+    70 NEXT i
+    80 NEXT b
+
+...then switch to the bottom part of the screen (using the edit menu's `Screen` option). Run the program (which displays twelve lines of coloured numbers on the screen), then type in...
+
+    COPY EXP
+
+The printed output (or ***dump***) from this command is slightly larger than that from the standard `COPY` command - (`EXP` is short for expanded). The command reproduces the coloured areas of the screen as different densities of black dots on the printer. (All 24 lines of the screen are reproduced.) Areas that have been printed with `BRIGHT 1` will appear lighter than areas printed normally (just as happens on the screen).
+
+The drawback of the `COPY EXP` command is that it takes a longer time to print (about 10 minutes), but is ideally suited to dumping graphic pictures. The quicker `COPY` command, on the other hand, is a better bet if you wish to dump text only.
+
+If the screen display to be dumped is predominantly black, then it will not only wear out your printer ribbon rather quickly, but also will probably take longer to dump than a screen that has large areas of white. To prevent this, the `COPY EXP` command can be followed by the word `INVERSE`, ie....
+
+    COPY EXP INVERSE
+
+As the command suggests, the dump is printed in `INVERSE` (like a photographic negative) so that all the dark areas of the screen are printed-out light, and vice versa.
+
+Note that `INVERSE` cannot be used after the simple `COPY` command - it only works with `COPY EXP`.
+
+The dump produced by `COPY EXP` and `COPY EXP INVERSE` is designed to fit a sheet of A4 paper; however, some printers will not print within about an inch at either end of a sheet. If this problem occurs, then it is possible to reduce the size of the dump slightly by using the command...
+
+    POKE 23419,8
+
+This sets the number of 216ths inch used as a line feed at the end of each pass of the print head. It is set to 9 when the +3 is first switched on. Once set, it will not be changed even if the `NEW` command is used. By reducing this value, each pass of the print head will fractionally overlay the previous pass. As a consequence, the quality of the dump reproduced will be degraded slightly.
+
+If you try to use any of the printer commands when there isn't a printer attached (or if the printer is off line), then the +3 will stop dead while it patiently waits for the (non-existent) printer to respond. In such a case, pressing **BREAK** twice will bring the +3 back to life.
+
+Try this...
+
+    10 FOR n=31 TO 0 STEP -1
+    20 PRINT AT 31-n,n; CHR$ ( CODE "0"+n);
+    30 NEXT n
+
+You will see a pattern of characters working down diagonally from the top right-hand corner until it reaches the bottom of the screen, at which point the program asks if you want to scroll.
+
+Now change `AT 31-n,n` in line 20 to `TAB n`. The program will have exactly the same effect as before.
+
+Now change `PRINT` in line 20 to `LPRINT`. This time there will be no pause to scroll (this does not occur with the printer).
+
+Now change `TAB n` back to `AT 31-n,n` still using `LPRINT`. This time you will get just a single line of symbols. The reason for the difference is that the output from `LPRINT` is not printed straight away, but is stored in the buffer until either one line's worth of printer output has accumulated, or something else 'flushes' the buffer. Hence, printing only takes place:
+
+1. When the buffer is full.
+2. After an `LPRINT` statement that does not end in a comma or semicolon.
+3. When a comma, apostrophe or `TAB` item requires a new line.
+4. At the end of a program, if there is anything left unprinted.
+5. When you set the printer off line (this depends on your particular printer).
+
+Number 3 above explains why our program with `TAB` works the way it does. As for `AT`, the line number is ignored, and the `LPRINT` position (like the `PRINT` position) is moved to the column number. An `AT` item can never cause a line to be sent to the printer.
+
+Exercises...
+
+1. Make a printed graph of a sine wave by running the first (3 line) program in [part 17](#part17) of this chapter, then using `COPY`.
+2. Run the program at the beginning of [part 16](#part16) of this chapter and try both a `COPY EXP` and a `COPY EXP INVERSE`.
+
+## <a id="part22"></a >Part 22 - Streams
+
+Subjects covered...
+
+- Streams
+- Channels
+- `FORMAT`, `OPEN`, `CLOSE`
+
+The +3 can 'read' data from the keyboard by using `INPUT` and `INKEY$`, and it can 'write' data onto the TV screen or a printer by using `PRINT` and `LPRINT`. However, these commands are really a form of shorthand designed to protect the user from some of the computer's more complex features.
+
+To the BASIC `PRINT` command, for example, the screen and the printer are no different. `PRINT "Roseanne"` really means 'take the characters which make up the word 'Roseanne' and send them somewhere else'. It's just convenient to use the screen most of the time. Likewise, `LPRINT` usually sends data to the printer. In fact, what these commands really do is to send data to one of a number of ***channels***.
+
+A channel is the way in which the computer communicates with its input and output devices. There are three channels normally available to BASIC. These are...
+
+  * The screen (called `S`)
+  * The keyboard (called `K`)
+  * The printer (called `P`)
+
+Of these, the screen is an output-only device, the keyboard is both an input and output device, and the printer is either an output-only device (if it uses the parallel **PRINTER** socket), or an input and output device (if it uses the serial **RS232** socket). Outputting data to the keyboard might seem a funny idea, but the computer uses the lower screen (like `INPUT` does) to display the characters.
+
+To access a channel, it has to be ***open***. Opening a channel makes it ready to receive or produce data. A channel is opened by connecting it to a ***stream***. From BASIC, you would use a command like...
+
+    OPEN #4,"p"
+
+...which means 'connect stream 4 to the printer channel'. Streams are convenient ways for the computer to switch between channels by referring to them as numbers. This idea makes it possible to write programs that can send information to any device without having to use different commands. (This is known as redirectable (or device-independent) I/O.)
+
+This might seem over-complicated, and you may well wish to stick to the standard `PRINT` and `LPRINT` commands - that's why they're there, after all.
+
+`PRINT` and `LPRINT` are really the same command. When BASIC is running, it has three streams normally open. Stream #1 is connected to the keyboard device (`K`), and is used by `INPUT` and `INKEY$`. Stream #2 is connected to the screen (`S`), and is used by `PRINT` and `LIST`. Stream #3 is connected to the printer (`P`), and is used by `LPRINT` and `LLIST`. All of these commands can be redirected to use another device by including a '#' followed by a current stream number, so...
+
+    PRINT #1;"This is the lower screen"
+
+...will print the message on the lower screen. Similarly...
+
+    PRINT #3;"Who needs LPRINT, Gladys?"
+
+...will use the printer. Conversely, `LPRINT` can behave like `PRINT`...
+
+    LPRINT #2;"Confusing, or what?"
+
+...behaves just as if the `LPRINT #2` were `PRINT`.
+
+As they stand, these examples are fairly useless but serve to demonstrate a point. This sort of thing becomes useful if you want to write a program where the results might go either to the printer or the screen, like so...
+
+    10 REM squares program for printer
+    20 INPUT "do you want to print the results?";a$
+    30 LET stream=2
+    40 IF a$="y" OR a$="Y" THEN LET stream=3
+    50 FOR n=0 TO 10
+    60 PRINT #stream;n,n*n
+    70 NEXT n
+
+The +3 can cope with 16 streams. As 3 are used by BASIC, and 1 is used internally, this leaves you with 12. You can use these by...
+
+    10 REM program to read data from RS232
+    20 FORMAT LINE 9600
+    30 FORMAT LPRINT "r"
+    40 OPEN #4,"p"
+    50 PRINT INKEY$ #4;
+    60 GO TO 50
+
+...which takes characters in from the RS232 interface and prints them onto the screen.
+
+If you want to read in data from the RS232 into memory directly, you can replace line 50 with...
+
+- `POKE` address`, CODE (INKEY$ #4)`
+
+As we mentioned before, the screen and the parallel **PRINTER** socket can only be used by the +3 for output. They cannot be used for input, and if you try `PRINT INKEY$ #2`, for example, you'll receive an error report.
+
+It is theoretically possible to redirect BASIC's normal output streams, so by using...
+
+    10 CLOSE #2
+    20 OPEN #2,"p"
+
+...all the `PRINT` output will go to the printer instead of the screen. (If you try to do this during editing, the results will be unpredictable, so it's best left alone.)
+
+On the standard +3 system, streams and channels are of mostly academic interest. However, certain peripherals and BASIC language extensions do use the stream system for more complex functions.
+
+## <a id="part23"></a> Part 23 - IN and OUT
+
+Subjects covered...
+
+- `IN`
+- `OUT`
+
+The processor can read from (ROM and RAM) and write to (RAM) memory by using `PEEK` and `POKE`. The processor itself does not really care whether memory is ROM or RAM - it just thinks there are 65536 memory addresses, and it can read a byte from each one (even if it's nonsense), and write a byte to each one (even if it gets lost). In a completely analogous way, there are 65536 of what are called ***I/O ports*** (standing for input/output ports). These are used by the processor for communicating with things like the keyboard or the printer, and also for controlling the extra memory and the sound chip. Some of them can be safely controlled from BASIC by using the `IN` function and the `OUT` command, but there are locations to which you must not write from BASIC as you will probably cause the system to crash, losing any program and data.
+
+`IN` is a function like `PEEK`. Its form is...
+
+- `IN` address
+
+It has one argument - the port address, and its result is a byte read from that port.
+
+`OUT` is a statement like `POKE`. Its form is...
+
+- `OUT` address`,`value
+
+...which writes the given value to the port with the given address. How the address is interpreted depends very much upon the rest of the computer. Quite often, many different addresses will mean the same. On the +3 it is most sensible to imagine the address being written in binary, because the individual bits (each of which can have the value either 0 or 1) tend to work independently. There are 16 bits, which we shall refer to (using A for address) as...
+
+    A15, A14, A13, A12, A11, A10, A9, A8, A7, A6, A5, A4, A3, A2, A1, A0
+
+Here, A0 is the 1s bit, A1 is the 2s bit, A2 is the 4s bit, and so on. Bits A0, A1, A2, A3 and A4 are the important ones. They are normally 1, but if any one of them is 0, then this tells the computer to do something specific. The computer cannot cope with more than one thing at a time, so no more than one of these five bits should 0. Bits A6 and A7 are ignored, so if you are a wizard with electronics you can use them yourself. The best addresses to use are those that are 1 less than a multiple of 32, so that A0 to A4 are all 1. Bits A8, A9, and so on are sometimes used to give extra information, but mostly for the extra memory and sound.
+
+The byte being written or read has 8 bits, and these are often referred to (using D for data) as...
+
+    D7, D6, D5, D4, D3, D2, D1, D0
+
+Here follows a list of the port addresses used...
+
+There is a set of input addresses that read the keyboard and the tape interface.
+
+The keyboard is divided up into 8 half-rows of 5 keys each, viz:
+
+- `IN 65278` (FEFEh) reads the half-row **CAPS SHIFT** to **V**
+- `IN 65022` (FDFEh) reads the half-row **A** to **G**
+- `IN 64510` (FBFEh) reads the half-row **Q** to **T**
+- `IN 63486` (F7FEh) reads the half-row **1** to **5** (and JOYSTICK 1)
+- `IN 61438` (EFFEh) reads the half-row **0** to **6** (and JOYSTICK 2)
+- `IN 57342` (DFFEh) reads the half-row **P** to **Y**
+- `IN 49150` (BFFEh) reads the half-row **ENTER** to **H**
+- `IN 32766` (7FFEh) reads the half-row (space) to **B**
+
+(These addresses are 254+256x(255-2^n) as n goes from 0 to 7.)
+
+Remember that digits followed by ***h*** signify hexadecimal numbers. If you don't understand hexadecimal numbers, refer to part 32 of this chapter.
+
+In the byte read in, bits D0 to D4 stand for the five keys in the given half-row. D0 is for the outside key, and D4 is for the one nearest the middle. The bit is 0 if the key is pressed, 1 if it is not. D6 is set by the tape interface, and is effectively random if no tape data is present.
+
+For JOYSTICK 1, bit 0 is fire, bit 1 is up, bit 2 is down, bit 3 is right and bit 4 is left. For JOYSTICK 2, bit 0 is left, bit 1 is right, bit 2 is down, bit 3 is up and bit 4 is fire. From BASIC, these read as the number keys.
+
+Port address 00FEh (254 decimal) in output drives the sound (D4) and the save signal to the tape interface (D3), and also sets the border colour (D2, D1 and D0).
+
+Port addresses 00FEh (254), 00F7h (247) and 00EFh (239) are reserved.
+
+Port address 7FFDh (32765) drives the extra memory. Executing an `OUT` to this port from BASIC will nearly always cause the computer to crash, losing any program and data. There is a fuller description of this port in [part 24](#part24) of this chapter (under the heading [`Memory management'](#memory-management). This port is write only, ie. you cannot determine the current state of the paging by an `IN` instruction. This is why the [BANKM](#bankm) system variable is always kept up to date with the last value output to this port.
+
+Port address BFFDh (49149) drives the sound chip's data registers. Port address FFFDh (65533) in output writes a register address, and in input reads a register. Judicious use of these two registers can allow sounds to be generated whilst BASIC gets on with something else, but you should be aware that they also control **RS232/MIDI** and **AUX** interfaces.
+
+Port address 0FFDh (4093) is used for the parallel (Centronics) interface (ie. **PRINTER**). When read using an `IN` instruction bit 0 shows the state of the BUSY signal produced by the printer. If the printer is off line or non-existent, then this bit will be 1. When this port is written to using `OUT`, it acts as the parallel port data register. In order to print a character it is necessary to wait until BUSY is 0, write the character code to port 0FFDh (4093), and finally, take the STROBE bit in port 1FFDh (8189) low than back high again.
+
+Port address 1FFDh (8189) controls several aspects of the +3. Amongst other things, this port controls the ROM that is switched into the memory area from 0000h...3FFFh (0...16383). As the port is write only, the +3 BASIC maintains a variable, [BANK678](#bank768), that holds the value last output to this port. It is therefore very unwise to `OUT` values directly to this port without first checking on the current state (which holds its current state in [BANKM](#bankm)). The bottom three bits (0..2) of this port (1FFDh) are used to switch RAM/ROM - further details can be found in part 24 of this chapter (under the heading [`Memory management'](#memory-management). Bit 3 controls the disk motor (0 is off, 1 is on), though it should not be necessary to control the motor by writing to this port as there are +3DOS routines that will achieve the desired effect. Bit 4 is the parallel port STROBE which is active low - this means that to print the character that has been output to port 0FFDh (4093), the STROBE bit should be brought low and then returned to its normally high state.
+
+Port address 2FFDh (12285) can be used to read the disk controller (µPD765A) chip's main status register. This is unlikely to be very useful without an in-depth knowledge of how the chip operates.
+
+Port address 3FFDh (16381) is the disk controller's data register. This can be both read from and written to, but once again it is unlikely to be useful to the BASIC programmer. Random `OUT`putting to this port will probably confuse the poor disk controller chip to such an extent that subsequent disk operations (like `LOAD` and `SAVE`) will be unreliable. It is entirely possible that ill-informed experiments will corrupt your disks and lose your data - you have been warned!
+
+Run this program to see how the keyboard works...
+
+    10 FOR n=0 TO 7: REM half-row number
+    20 LET a=254+256*(255-2^n)
+    30 PRINT AT 20,0; IN a: GO TO 30
+
+...and play around by pressing keys (start with the half-row from **CAPS SHIFT** to **V**). When you are finished with each half-row, press **BREAK** and then type...
+
+    NEXT n
+
+The control, data and address busses are all exposed at the back of the +3 on the **EXPANSION I/O** socket. This means that you can do almost anything with a +3 that you could with a raw Z80 chip (although sometimes, the computer's internal workings may get in the way).
+
+See [chapter 10](#chapter10) for a diagram and pin-out of the **EXPANSION I/O** socket.
+
+## <a id="part24"></a> Part 24 - The memory
+
+Subjects covered...
+
+- `PEEK`
+- `POKE`
+- `CLEAR`
+- [Memory management](#memory-management)
+
+Deep inside the +3, everything is stored as ***bytes***, ie. number between 0 and 255 (FFh). You may think you have stored away the price of Ruddles or the players' names in the Arsenal football team, but in fact, all the information has been converted into collections of bytes, and bytes are what the computer sees.
+
+Each place where a byte can be stored has an address, which is a number between 0 (or 0000h) and 65535 (FFFFh). This means that an address can be stored as two bytes. You can think of the memory as a long row of numbered boxes, each of which can contain a byte. Not all the boxes are the same, however - the boxes from 4000h to FFFFh are ***RAM*** boxes, which means you can open the lid and alter the contents, but those from 0 to 3FFFh are ***ROM*** boxes, which have a glass lid that cannot be opened - you just have to read whatever was put into them when the computer was made. In the +3, we have crammed in more than twice the amount of memory than can comfortably fit. While the processor can address 65536 bytes, there are in fact 131072 bytes of RAM and 65536 bytes of ROM making 196608 bytes (192K) in all! All this is hidden from the processor by the hardware using a process called paging - BASIC (and the processor) always 'sees' the memory as 16K of ROM and 48K of RAM (or 64K of RAM with no ROM - though this latter combination is never used by BASIC).
+
+<svg xmlns="http://www.w3.org/2000/svg" width="33%" viewBox="-2 -2 220 260" stroke-linejoin="round" stroke-miterlimit="1">
+  <style>
+  .dec { font-weight: bold; font-size; 12px; text-anchor: end }
+  .hex { font-weight: bold; font-size; 12px; text-anchor: start }
+  .bank { font-weight: bold; font-size; 12px; text-anchor: middle }
+  .inner { stroke: black; stroke-width: 1 }
+  .outer { stroke: black; stroke-width: 2.5; fill: none }
+  </style>
+  <rect x="50" y="25" width="100" height="220" class="outer" />
+  <text x="40" y="25" class="dec">65535</text>
+  <text x="160" y="25" class="hex">FFFFh</text>
+  <text x="100" y="60" class="bank">RAM 0-7</text>
+  <line x1="50" y1="80" x2="150" y2="80" class="inner" />
+  <text x="40" y="85" class="dec">49152</text>
+  <text x="160" y="85" class="hex">C000h</text>
+  <text x="100" y="115" class="bank">RAM 2</text>
+  <line x1="50" y1="135" x2="150" y2="135" class="inner" />
+  <text x="40" y="140" class="dec">32768</text>
+  <text x="160" y="140" class="hex">8000h</text>
+  <text x="100" y="170" class="bank">RAM 5</text>
+  <line x1="50" y1="190" x2="150" y2="190" class="inner" />
+  <text x="40" y="195" class="dec">16384</text>
+  <text x="160" y="195" class="hex">4000h</text>
+  <text x="100" y="220" class="bank">ROM 0-3</text>
+  <text x="40" y="250" class="dec">0</text>
+  <text x="160" y="250" class="hex">0000h</text>
+</svg>
+
+To inspect the contents of a box, we use the `PEEK` function. Its argument is the address of the box, and its result is the contents. For example, this program prints out the first 21 bytes in ROM (and their addresses)...
+
+    10 PRINT "Address"; TAB 8; "Byte"
+    20 FOR a=0 TO 20
+    30 PRINT a; TAB 8; PEEK a
+    40 NEXT a
+
+All these bytes will probably be quite meaningless to you, but the processor chip understands them to be instructions telling it what to do.
+
+To change the contents of a box (if it is RAM), we use the `POKE` command. Its form is...
+
+- `POKE` address`,`contents
+
+...where address and contents are numeric expressions. For example, if you type...
+
+    POKE 31000,57
+
+...then the byte at address 31000 is given the new value 57. Now type...
+
+    PRINT PEEK 31000
+
+...to prove this. (Try poking in other values, to show that there is no cheating.) The new value must be between -255 and +255; if it is negative, then 256 is added to it.
+
+The ability to poke gives you immense power over the computer if you know how to wield it, and immense destructive possibilities if you don't. It is very easy (by poking the wrong value into the wrong address) to lose vast programs that took you hours to type in. Fortunately though, you won't do the computer any permanent damage.
+
+We shall now take a more detailed look at how the RAM is used. Don't bother to read this unless you're really interested.
+
+The memory is divided into different areas (shown in the diagram ahead) for storing different kinds of information. The areas are only large enough for the information that they actually contain, and if you insert some more at a given point (for instance by adding a program line or variable), then space is made by shifting up everything above that point. Conversely, if you delete information, then everything is shifted down.
+
+The display file stores the contents of the TV screen. It is rather curiously laid out, so you probably won't want to `PEEK` or `POKE` in it. Each character position on the screen has an 8 x 8 grid of dots; each dot can be either 0 (paper) or 1 (ink), so by using binary notation we can store the pattern as 8 bytes - one for each row. However, these 8 bytes are not stored together. The corresponding columns in the 32 characters of a single line are stored together as a scan of 32 bytes, because this is what the electron beam in the TV needs as it scans from the left-hand side of the screen to the other. Since the complete picture has 24 lines of 8 scans each, you might expect the total of 192 scans to be stored in order, one after the other - well you'd be wrong! First come the top scans of lines 0 to 7, then the next scans of lines 0 to 7, and so on to the bottom scans of lines 0 to 7; then the same for lines 8 to 15; and again for lines 16 to 23. The upshot of all this is that if you're used to a computer that uses `PEEK` and `POKE` on the screen, then you'll have to start using `SCREEN$` and `PRINT AT` instead (or `PLOT` and `POINT`).
+
+The attributes are the colours and so on for each character position, using the format of `ATTR`. These are stored line by line in the order you'd expect.
+
+The way that the computer organises its affairs changes slightly between 48 BASIC and +3 BASIC mode. The area that was the printer buffer in 48 BASIC mode, is used for extra system variables in +3 BASIC mode in much the same way as it was on the Spectrum +2. The variables have changed, though.
+
+                                              5C00h
+                                             (23552)
+                                                |
+                                                v
+                              +-----------------+-----------------+
+             (48K mode only)  | Printer buffer  |   System vars   |
+                              +-----------------+-----------------+
+                              :                                   :
+  +--------------+------------+-----------------------------------+--
+  | Display file | Attributes |        System variables           |
+  +--------------+------------+-----------------------------------+--
+  ^              ^            ^                 ^                 ^
+  |              |            |                 |                 | 4000h          5800h        5B00h             5C00h             5CB6h (16384)       (22528)      (23296)           (23552)           (23734)
+                                                                CHANS
+
+--+-------------+-----+-------+------+-----+-------------------+----+-----+--
+  |   Channel   | 80h | BASIC | Vars | 80h | Command or prog.  | NL | 80h |
+  | information |     | prog  |      |     | line being edited |    |     | --+-------------+-----+-------+------+-----+-------------------+----+-----+--
+      ^                                                                   ^
+      |                                                                   |
+    5CB6h                                                             WORKSP
+   (23734)
+    CHANS
+
+--+-------+----+------------+------------+-------+---------+--
+  | INPUT | NL | Temporary  | Calculator | Spare | Machine |
+  | data  |    | work space |    stack   |       |  stack  | --+-------+----+------------+------------+-------+---------+--
+  ^                         ^            ^       ^
+  |                         |            |       | WORKSP                    STKBOT      STKEND     SP
+                                             (stack pointer)
+
+--+--------------+---+-----+-----------------------+
+  | GO SUB stack | ? | 3Eh | User defined graphics | --+--------------+---+-----+-----------------------+
+                     ^     ^                       ^
+                     |     |                       |
+                  RAMTOP  UDG                   P RAMT
+
+
+The system variables contain various pieces of information that tell the computer what sort of state it's in. They are listed fully in part 25 of this chapter, but for the moment, note that there are some (called CHANS, PROG, VARS, E LINE, and so on) that contain the addresses of the boundaries between the various areas in memory. These are not BASIC variables, and their names will not be recognised by the +3.
+
+The channel information contains information about the input and output devices, namely the keyboard (together with the lower half of the screen), the upper half of the screen, and the printer.
+
+Each line of BASIC program has the form...
+
+    Most significant byte
+          |
+      |  Least significant byte
+      |    |
+      v    v
+    +----+----+---------+-------- - - - - --------+-+-+-+-+-+-+-+-+
+    |    |    |         |                     | | | | | | | | |
+        | 2 bytes | 2 bytes |                     |0 0 0 0 1 1 0 1|
+        |    |    |         |                     | | | | | | | | |
+        +----+----+---------+-------- - - - - --------+-+-+-+-+-+-+-+-+
+         \_______/ \_______/ \_______________________/ \_____________/
+         |         |                 |                    |
+        Line   Length of        Text            ENTER
+       number  text + ENTER
+
+Note that, in contrast with all other cases of two-byte numbers in the Z80, the line number here is stored with its most significant byte first, ie. in the order that you'd write them down.
+
+A numerical constant in the program followed by its binary form, using the character `CHR$ 14` followed by five bytes for the number itself.
+
+The variables have different formats according to their different natures. The letters in the names should be imagined as starting off in lower case.
+
+Number whose name is one letter only:
+
+                     Sign bit
+                     |
+                     v
+        +-+-+-+-+-+-+-+-+---------------+-+----- - - - - ------+
+    | | | | | | | | |       | |                    |
+    |0 1 1          | Exponent byte |    4 Mantissa bytes  |
+        | | | | | | | | |       | |            |
+        +-+-+-+-+-+-+-+-+---------------+-+----- - - - - ------+
+           \_______/ \____________________________________/
+           |               |
+           Letter-60h        Value
+
+Number whose name is longer than one letter:
+
+        +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ - -+-+-+-+-+-+-+-+-+--- - - ---+
+    | | | | | | | | | | | | | | | | |    | | | | | | | | |           |
+        |1 0 1          |0              |    |1              |  5 bytes  |
+        | | | | | | | | | | | | | | | | |    | | | | | | | | |           |
+        +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- - +-+-+-+-+-+-+-+-+--- - - ---+
+           \_______/ \_____________/      \_____________/ \_________/
+           |            |                    |             |
+           Letter-60h  2nd character       Last character    Value
+
+Array of numbers:
+
+        +-+-+-+-+-+-+-+-+-------+------+-------+ - - +-------+-------+
+    | | | | | | | | |   2   |  1   |   2   |     |   2   |   5   |
+        |1 0 0          | bytes | byte | bytes |     | bytes | bytes |
+        | | | | | | | | |   |      |       |     |       | each  |
+        +-+-+-+-+-+-+-+-+-------+------+-------+ - - +-------+-------+
+               \_______/ \_____/ \____/ \_____/       \_____/ \_____/
+           |        |      |       |             |       |
+           Letter-60h  Total  No.   1st dim.       Last   Elements
+              length  of dims              dim.
+              of elements &
+              dims + 1 for no.
+              of dimensions
+
+The order of the elements is:
+
+First - the elements for which the first subscript is 1. Next - the elements for which the first subscript is 2. Next - the elements for which the first subscript is 3... ...and so on for all possible values of the first subscript.
+
+The elements with a given first subscript are ordered in the same way using the second subscript, and so on down to the last.
+
+As an example, the elements of the 3 x 6 array 'c' in part 12 of this chapter are stored in the order c(1,1) c(1,2) c(1,3) c(1,4) c(1,5) c(1,6) and c(2,1) c(2,2) ... c(2,6) and c(3,1) c(3,2) ... c(3,6).
+
+Control variable of a `FOR`...`NEXT` loop:
+
+
+                 Least significant byte  Most significant byte
+                              |   |
+                              v   v
+        +-+-+-+-+-+-+-+-+-------+-------+-------+---+---+------+
+    | | | | | | | | |   5   |  1    |   2   |   |   |  1   |
+        |1 1 1          | bytes | byte  | bytes |2 bytes| byte |
+        | | | | | | | | |       |       |       |   |   |      |
+        +-+-+-+-+-+-+-+-+-------+-------+-------+---+---+------+
+               \_______/ \_____/ \_____/ \_____/ \_____/ \____/
+           |        |       |       |       |       |
+           Letter-60h  Value  Limit   Step   Looping  Statement
+                          line    number
+                            within line
+
+String:
+
+        +-+-+-+-+-+-+-+-+---------+--------- - - - ----------+
+        | | | | | | | | |     |                      |
+    |0 1 0          | 2 bytes |                  |
+        | | | | | | | | |         |                  |
+        +-+-+-+-+-+-+-+-+---------+--------- - - - ----------+
+           \_______/ \_______/ \________________________/
+           |         |                 |
+           Letter-60h  Number        Text of string
+                 of          (may be empty)
+             characters
+
+Array of characters:
+
+        +-+-+-+-+-+-+-+-+-------+------+-------+ - - +-------+------+
+    | | | | | | | | |   2   |  1   |   2   |     |   2   |   1  |
+        |1 1 0          | bytes | byte | bytes |     | bytes | byte |
+        | | | | | | | | |   |      |       |     |       | each |
+        +-+-+-+-+-+-+-+-+-------+------+-------+ - - +-------+------+
+               \_______/ \_____/ \____/ \_____/       \_____/ \____/
+           |        |      |       |             |       |
+           Letter-60h  Total  No.   1st dim.       Last   Elements
+              length  of dims              dim.
+              of elements &
+              dims + 1 for no.
+              of dimensions
+
+The calculator is the part of the BASIC system that deals with arithmetic, and the numbers on which it is operating are held mostly in the calculator stack.
+
+The spare area contains the space so far unused.
+
+The machine stack is the stack used by the Z80 processor to hold return addresses and so on.
+
+The `GO SUB` stack was mentioned in [part 5](#part5) of this chapter.
+
+The byte 'pointed to' by [RAMTOP](#ramtop) has the highest address used by the BASIC system. Even `NEW`, which clears the RAM, only does so as far as this - so it doesn't change the user-defined graphics. You can change the address [RAMTOP](#ramtop) by putting a number in a `CLEAR` statement, ie....
+
+    CLEAR new RAMTOP
+
+...which does the following:
+
+1. Clears out all variables.
+2. Clears the display file (like `CLS` does).
+3. Resets the `PLOT` position to the bottom left-hand corner.
+4. `RESTORE`s the `DATA` pointer.
+5. Clears the `GO SUB` stack and puts it at the new [RAMTOP](#ramtop) (assuming that this lies between the calculator and the physical end of RAM; otherwise it leaves [RAMTOP](#ramtop) where it was).
+
+`RUN` also performs a `CLEAR`, although it never changes [RAMTOP](#ramtop).
+
+Using `CLEAR` in this way, you can either move [RAMTOP](#ramtop) up to make more room for the BASIC by overwriting the user-defined graphics, or you can move it down to make more RAM that is preserved from `NEW`. It can also be used to ensure that the machine stack is below BFE0h (49120) when intending to call +3DOS - this means that the stack will not have to be subsequently moved within your own machine code.
+
+If you are in an experimental frame of mind you can also use `CLEAR` to explore the extra memory. `CLEAR 49151` moves all of BASIC below the addresses that hold the switchable RAM paging. By using `POKE 23388,16+n` where 'n' is a number between 0 and 7, you can make the computer switch in page 'n' of the RAM. You will then be able to use `PEEK` and `POKE` in the normal way to examine and change the page. Beware - the extra pages are normally used by the system for disk and editor operations, so always reset the +3 after exploring in this way, before doing anything else.
+
+Type `NEW`, select `+3 BASIC`, then enter the command `CLEAR 23825` to get some idea of what happens to the machine when it fills up.
+
+If you then try to make the +3 compute, (for example, type in `PRINT 1+1`) you will see the report `4 Out of memory` displayed. This means the computer has no more room for information. If you come up against this message while entering a large program, you will have to empty the memory slightly (delete a line or so) in order to control the computer.
+
+### <a id="memory-management"></a> Memory management
+
+We mentioned earlier that there is rather more memory in the computer than the processor can deal with. While the processor can indeed address only 64K of memory at once, the extra memory can be slotted in and out of that 64K at will. Consider a TV set. Although it (and you) can only deal with one channel at a time, there are another three channels always there which can be selected with the right buttons. So, even though there's four times as much information as you can use at any one time, you can pick and choose which part is relevant.
+
+It is much the same for the processor. By setting the right bits in an I/O port it can pick and choose which chunks of the 192K of memory it wants to use. For the majority of the time in BASIC it ignores most of the memory, but for games playing, having three times as much RAM is really rather useful. Look again at the +3's memory map (shown at the beginning of this section). RAM pages 2 and 5 are always in the positions shown when BASIC is used, though there's no reason why they shouldn't be in the banked section (C000h to FFFFh) - however, it would be difficult to see any use for this.
+
+The RAM banks are of two types: RAM pages 4 to 7 which are ***contended*** (meaning that they share time with the video circuitry), and RAM pages 0 to 3 which are ***uncontended*** (where the processor has exclusive use). Any machine code which has critical timing loops (such as music or communications programs) should keep all such routines in uncontended banks. For example, executing NOPs in contended RAM will give an effective clock frequency of 2.66Mhz as opposed to the normal 3.55MHz in uncontended RAM. This is a reduction in speed of about 25%.
+
+The hardware switch normally used to select RAM is at I/O address 7FFDh (32765). The bit field for this address is as follows:
+
+- D0...D2 - RAM select
+- D3      - Screen select
+- D4      - ROM select
+- D5      - Disable paging
+
+D2...D0 is a three bit number that selects which RAM page goes into the C000h to FFFFh slot. In BASIC, RAM page 0 is normally in situ. When editing or calling +3DOS routines, RAM page 7 is used for various buffers and 'scratchpads'. D3 switches screens: screen 0 is held in RAM 7 (beginning at C000h) and can only be used by machine code programs. It is entirely feasible to set up a screen in RAM 7 and then page it out; this leaves the entire 48K free for data and program. Note that the +3's `COPY` (file) command may well use buffers in the second screen area (corrupting a second screen which may be 'hidden' there). D4 determines which ROM is paged into 0000h to 3FFFh (in combination with bit 2 of port 1FFDh - see below). D5 is a safety feature - once this bit has been set, no further paging operations will work. This is normally used when the machine assumes a standard 48K Spectrum configuration and all the memory paging circuitry is locked out. It cannot be turned back into a 128K machine other by switching off or pressing **RESET** button; however, the sound chip can still be driven by `OUT`. If a 48K Spectrum game loaded from disk will not work, it is possible that by using the `SPECTRUM` command followed by `OUT 32765,48` (which locks bit 5 in this port), the game might then work.
+
+The +3 also uses I/O port 1FFDh for some ROM and RAM switching. The bit field for this address is as follows:
+
+- D0...D1 - ROM/RAM switching
+- D2      - Affects whether D0...D1 work on RAM/ROM
+- D3      - Disk motor
+- D4      - Parallel port strobe (active low)
+
+When bit 0 is 0, bit 1 has no effect and bit 2 is a 'vertical' ROM switch (ie. between ROM 0 and ROM 2, or between ROM 1 and ROM 3). Bit 4 in the port at 7FFDh is a 'horizontal' ROM switch (ie. between ROM 0 and ROM 1, or between ROM 2 and ROM 3). The following diagram serves to show the various ROM switching possibilities...
+
+
+    +-------------+    Bit 4  7FFDh (23388)    +-------------+
+    |         |  (system variable: BANKM)  |         |
+    |    ROM 0    |                |    ROM 1    |
+    |         | <-----  horizontal  -----> |         |
+    |   Editor    |                |   Syntax    |
+    |         |                |         |
+    +-------------+                +-------------+
+           ^                      ^
+           |                      |
+                              |
+      Bit 2  1FFDh (23399)                |
+   (system variable: BANK678)
+       vertical                    vertical
+
+           |                      |
+           v                      v
+    +-------------+                +-------------+
+    |         |                |         |
+    |    ROM 2    |                |    ROM 3    |
+    |         | <-----  horizontal  -----> |         |
+    |     DOS     |                |  48 BASIC   |
+    |         |                |         |
+    +-------------+                +-------------+
+
+Horizontal and vertical ROM switching
+
+It is best to think of bit 4 in port 7FFDh and bit 2 in port 1FFDh combining to form a 2-bit number (0...3) which determines which ROM occupies the memory area 0000h...3FFFh. Bit 4 of port 7FFDh is the least significant bit and bit 2 of 1FFDh is the most significant bit.
+
+|Bit 2 of 1FFDh<br>(System variable:[BANK768](#bank768))|Bit 4 of 7FFDh<br>(System variable:[BANKM](#bankm))|Switched ROM at 0000h...3FFFh
+|:-:|:-:|:-:
+| 0 | 0 | 0
+| 0 | 1 | 1
+| 1 | 0 | 2
+| 1 | 1 | 3
+
+ROM switching (with Bit 0 of 1FFDh set to 0)
+When bit 0 of port 1FFDh is set to 1, bits 1 and 2 switch in various RAM combinations that occupy the full 64K address space. These are not used by +3 BASIC but are provided for authors of operating systems/games. When the [+3DOS 'DOS BOOT'](#dos-boot) routine is used, the bootstrap is loaded into the 4, 7, 6, 3 RAM page environment. The various +3 extra RAM paging options are as follows:
+
+|Bit 2 of 1FFDh|Bit 1 of 1FFDh|RAM pages used<br>(0000h...3FFFh, 4000h...7FFFh, etc.)
+|:-:|:-:|:-:
+| 0 | 0 | 0, 1, 2, 3
+| 0 | 1 | 4, 5, 6, 7
+| 1 | 0 | 4, 5, 6, 3
+| 1 | 1 | 4, 7, 6, 3
+
+Extended memory paging (with Bit 0 of 1FFDh set to 1)
+
 ## <a id="part25"></a> Part 25 - The system variables
 
 Subjects covered...
@@ -4585,7 +6028,7 @@ The number in column 1 is the number of bytes in the variable or routine. For a 
 | 2     | 5CB2h (23730) | <a id="ramtop"></a> RAMTOP  | Address of last byte of BASIC system area.
 | 2     | 5CB4h (23732) | <a id="pramt"></a> P RAMT  | Address of last byte of physical RAM.
 
-## <a id="part26"></a> Part 26 -  Using machine code
+## <a id="part26"></a> Part 26 - Using machine code
 
 Subjects covered...
 
@@ -7724,8 +9167,8 @@ All statements except `INPUT`, `DEF FN` and `DATA` can be used either as command
 | `CLOSE #`n            | Marks stream n as being unattached to any channel. It may then be used in a subsequent `OPEN #`n`,`f statement.
 | `CLS`                 | (Clear screen). Clears the display file.
 | `CONTINUE`            | Continues executing a program from the point at which it stopped with a report (other than `0`). If the report was `9` or `L`, then execution continues with the following statement (taking any jumps into account); otherwise repeats the statement where the report occurred. If the last report was in a command line, then `CONTINUE` will attempt to continue the command line, and will either go into a loop (if the error was in `0:1`), generate report `0` (if it was in `0:2`), or report `N` (if it was in `0:3` or greater).
-| `COPY`              | Sends (dumps) a copy of the top 22 lines of the screen display to the printer (if connected) in quad density Epson bit map format; otherwise does nothing. Report `D` if **BREAK** pressed. Note that if the dump is prematurely stopped, the printer may be left in graphics mode and the line feed set to an odd value.
-| `COPY EXP` [`INVERSE`]  | Sends a copy of all 24 lines of display to the printer (if connected) in quad density Epson bit map format; otherwise does nothing. Each coloured dot on the screen is printed with a different pixel pattern thus providing different grey levels for each colour. The `BRIGHT` attribute is also taken into account. The optional `INVERSE` modifier allows the dump to be 'reversed' (like a negative) in order to save ribbon wear when printing-out predominantly black dumps. Report `D` if **BREAK** pressed. Note that if the dump is prematurely stopped, the printer may be left in graphics mode and the line feed set to an odd value.
+| `COPY`              | Sends (dumps) a copy of the top 22 lines of the screen display to the printer (if connected) in quad density Epson bit map format; otherwise does nothing. [Report `D`](#report-d) if **BREAK** pressed. Note that if the dump is prematurely stopped, the printer may be left in graphics mode and the line feed set to an odd value.
+| `COPY EXP` [`INVERSE`]  | Sends a copy of all 24 lines of display to the printer (if connected) in quad density Epson bit map format; otherwise does nothing. Each coloured dot on the screen is printed with a different pixel pattern thus providing different grey levels for each colour. The `BRIGHT` attribute is also taken into account. The optional `INVERSE` modifier allows the dump to be 'reversed' (like a negative) in order to save ribbon wear when printing-out predominantly black dumps. [Report `D`](#report-d) if **BREAK** pressed. Note that if the dump is prematurely stopped, the printer may be left in graphics mode and the line feed set to an odd value.
 | `COPY` u<sub>1</sub> `TO` u<sub>2</sub><br>`COPY` a `TO` d<br>`COPY` d `TO` d | Copies the first named file to the second named file. The names must be different. Drive letters and user numbers may be specified within the filename.<br>If the source (u<sub>1</sub>) is an ambiguous file specification, then the destination (u<sub>2</sub>) must only be a drive letter. (In this case, the destination files will have the same name as the source.)<br>If both source and destination names are just drive letters, a complete disk-to-disk transfer will be made (note that any files previously on the destination disk will be deleted). If the destination disk is not +3 format, then the disk-to-disk transfer will not work.<br>When copying files, if the destination filename already exists, then the report `File already exists` will be displayed. If the report `Missing address mark` is displayed, then it is likely that the destination disk has not been formatted.
 | `COPY` u `TO SCREEN$`   | Displays the contents of a disk file on the screen. Control characters (tabs, line feeds, etc.) are replaced by spaces. This command can only sensibly be used to inspect ASCII files (though BASIC programs will be displayed, albeit without the correct formatting).
 | `COPY` u `TO LPRINT`    | The contents of the named disk file are sent to the printer. No character translations are made. If the command `FORMAT LPRINT "r"` has been issued (to divert printer output to the serial (**RS232** socket), then this form of the `COPY` command may be used as a method of exporting programs to an external machine.
@@ -7747,9 +9190,9 @@ All statements except `INPUT`, `DEF FN` and `DATA` can be used either as command
  | `GO TO` n             | Jumps to line n (or, if there is none, the first line after that).
  | `IF` x `THEN` s       | If x is true (non-zero), then s is executed. Note that s comprises all the statements until the end of the line. The form `IF` x `THEN` line number is not allowed.
  | `INK` n               | Sets the ink (foreground) colour of characters subsequently printed; n is in the range 0...7 for a colour, 8 for transparent, 9 for contrast. [Error `K`](#error-k) unless 0`<=`n`<=`9.
- | `INPUT` [#n`,`]...    | The '...' is a sequence of `INPUT` items, separated (as in a `PRINT` statement) by commas, semicolons or apostrophes. An `INPUT` item can be any of the following:<br>(i) Any `PRINT` item not beginning with a letter.<br>(ii) A variable name.<br>(iii) LINE, then a string type variable name.<br>The `PRINT` items and separators in (i) are treated exactly as in `PRINT`, except that everything is printed in the lower part of the screen. For (ii) the computer stops and waits for input of an expression from the keyboard - the value of this is assigned to the variable. The input is echoed in the usual way and syntax errors give the flashing [?]. For string type expressions, the input buffer is initialised to contain two string quotes (which can be erased if necessary). If the first character in the input is `STOP` (**SYMB SHIFT** and **A**), then the program stops with [error `H`](#error-h). (iii) is like (ii) except that the input is treated as a string literal without quotes, and the `STOP` mechanism won't work; to stop it you must press cursor down instead.
- | `INVERSE` n           | Controls inversion of characters subsequently printed. If n=0, then characters are printed in normal video, i.e. as ink colour on paper colour. If n=1, then characters are printed in inverse video, i.e. paper colour on ink colour.<br>[Error `K`](#error-k) unless n=0 or 1.<br>Note that in 48 BASIC, pressing the **INV VIDEO** key is equivalent to '`INVERSE 1`; pressing the **TRUE VIDEO** key is equivalent to `INVERSE 0`.
- | `LET` v`=`e           | Assigns the value of e to the variable v. `LET` cannot be omitted. A simple variable is undefined until it is assigned to in either a `LET`, `READ` or `INPUT` statement. If v is a subscripted string variable, or a sliced string variable (substring), then the assignment is Procrustean (fixed length), i.e. the string value of e is either truncated or filled out with spaces on the right, to make it the same length as specified in v.
+ | `INPUT` [#n`,`]...    | The '...' is a sequence of `INPUT` items, separated (as in a `PRINT` statement) by commas, semicolons or apostrophes. An `INPUT` item can be any of the following:<br>(i) Any `PRINT` item not beginning with a letter.<br>(ii) A variable name.<br>(iii) `LINE`, then a string type variable name.<br>The `PRINT` items and separators in (i) are treated exactly as in `PRINT`, except that everything is printed in the lower part of the screen. For (ii) the computer stops and waits for input of an expression from the keyboard - the value of this is assigned to the variable. The input is echoed in the usual way and syntax errors give the flashing `?`. For string type expressions, the input buffer is initialised to contain two string quotes (which can be erased if necessary). If the first character in the input is `STOP` (**SYMB SHIFT** and **A**), then the program stops with [error `H`](#error-h). (iii) is like (ii) except that the input is treated as a string literal without quotes, and the `STOP` mechanism won't work; to stop it you must press cursor down instead.
+ | `INVERSE` n           | Controls inversion of characters subsequently printed. If n=0, then characters are printed in normal video, ie. as ink colour on paper colour. If n=1, then characters are printed in inverse video, ie. paper colour on ink colour.<br>[Error `K`](#error-k) unless n=0 or 1.<br>Note that in 48 BASIC, pressing the **INV VIDEO** key is equivalent to `INVERSE 1`; pressing the **TRUE VIDEO** key is equivalent to `INVERSE 0`.
+ | `LET` v`=`e           | Assigns the value of e to the variable v. `LET` cannot be omitted. A simple variable is undefined until it is assigned to in either a `LET`, `READ` or `INPUT` statement. If v is a subscripted string variable, or a sliced string variable (substring), then the assignment is Procrustean (fixed length), ie. the string value of e is either truncated or filled out with spaces on the right, to make it the same length as specified in v.
  | `LIST` [#m]        | `LIST` [#m,] 0
  | `LIST` [#m`,`] n        | Lists the program to the upper part of the screen, starting at the first line whose number is at least n, and makes n the current line. If #m is included, the output is sent to the channel currently assigned to stream m.
  | `LLIST`            | `LLIST` 0
@@ -7899,9 +9342,9 @@ Two bytes can be grouped together to make what is technically called a ***word**
 
 A byte is always eight bits, but words vary in length from computer to computer.
 
-The `BIN` notation (used in [part 14 of this chapter](#part14)) provides a means of entering numbers in binary on the +3, i.e. `BIN 10` represents 4 decimal, `BIN 111` represents 7 decimal, `BIN 11111111` represents 255 decimal, and so on.
+The `BIN` notation (used in [part 14 of this chapter](#part14)) provides a means of entering numbers in binary on the +3, ie. `BIN 10` represents 4 decimal, `BIN 111` represents 7 decimal, `BIN 11111111` represents 255 decimal, and so on.
 
-You can only use 0s and 1s for this, so the number must be a non-negative whole number - for instance, you cannot use `BIN -11` to represent -3 decimal, but you can use `-BIN 11` instead. The number must also be no greater than decimal 65535 - i.e. it can't have more than sixteen bits. If you pad out a binary number with leading zeroes, for example, `BIN 00000001`, the BIN function will rightly ignore them and treat the number as if it were `BIN 1`.
+You can only use 0s and 1s for this, so the number must be a non-negative whole number - for instance, you cannot use `BIN -11` to represent -3 decimal, but you can use `-BIN 11` instead. The number must also be no greater than decimal 65535 - ie. it can't have more than sixteen bits. If you pad out a binary number with leading zeroes, for example, `BIN 00000001`, the BIN function will rightly ignore them and treat the number as if it were `BIN 1`.
 
 ## <a id="part33"></a> Part 33 - Example programs
 
@@ -8188,36 +9631,36 @@ Note the following when typing in the listing:
 
 Subjects covered...
 
-- Selecting the calculator
-- Entering numbers
-- Running total
-- Using built-in mathematical functions
-- Editing the screen
-- Assigning variables
-- User defined functions
-- Exiting from the calculator
+- [Selecting the calculator](#selecting-the-calculator)
+- [Entering numbers](#entering-numbers)
+- [Running total](#running-total)
+- [Using built-in mathematical functions](#built-in-math-functions)
+- [Editing the screen](#editing-the-screen)
+- [Assigning variables](#assigning-variables)
+- [User defined functions](#user-defined-functions)
+- [Exiting from the calculator](#exiting-from-the-calculator)
 
 The +3 can be used as a full function calculator.
 
 To use the calculator, call up the opening menu and select the `Calculator` option. (If you don't know how to select a menu option, refer back to [chapter 2](#chapter2).)
 
-The calculator may be selected as soon as the +3 is switched on. Alternatively, if you are working on a +3 BASIC program, you may select the calculator by choosing the `Exit` option from the edit menu (which returns you to the opening menu), at which point you can select the `Calculator` option. Note that any BASIC program which was being worked on (when you selected the calculator) will be remembered and restored when you exit from the calculator and return to +3 BASIC.
+<a id="selecting-the-calculator"></a>The calculator may be selected as soon as the +3 is switched on. Alternatively, if you are working on a +3 BASIC program, you may select the calculator by choosing the `Exit` option from the edit menu (which returns you to the opening menu), at which point you can select the `Calculator` option. Note that any BASIC program which was being worked on (when you selected the calculator) will be remembered and restored when you exit from the calculator and return to +3 BASIC.
 
 When you have selected the `Calculator` option, the screen will change to...
 
 <canvas id="screen-calculator"></canvas>
 
-...and the +3's calculator is ready to accept your first entry. Type in...
+<a id="entering-numbers"></a>...and the +3's calculator is ready to accept your first entry. Type in...
 
     6+4
 
-As soon as you press **ENTER**, the answer `10` will appear. (Note that you ***don't*** key in `=` as you would on a conventional calculator.)
+As soon as you press **ENTER**, the answer `10` will appear. (Note that you ***don{1*** key in `=` as you would on a conventional calculator.)
 
-You will see that the cursor is positioned to the right of the answer, which is a ***running total*** (like on a conventional calculator). This means that you can simply type in the next operation to be carried out on the running total (without having to type in a whole new calculation). So, with the cursor still positioned to the right of the `10` on the screen, type in...
+<a id="running-totals"></a>You will see that the cursor is positioned to the right of the answer, which is a ***running total*** (like on a conventional calculator). This means that you can simply type in the next operation to be carried out on the running total (without having to type in a whole new calculation). So, with the cursor still positioned to the right of the `10` on the screen, type in...
 
     /5
 
-...and back comes the answer `2`. Now type in...
+<a id="built-in-math-functions"></a>...and back comes the answer `2`. Now type in...
 
     *PI
 
@@ -8225,7 +9668,7 @@ This produces the result `6.2831853` on the screen. The +3 has used its built-in
 
     *ATN 60
 
-...which gives the result `9.7648943`. You may also 'edit' the contents of the screen. To demonstrate, move the cursor (using the cursor left key) to the beginning of the line and then type in `INT` so that the line reads...
+<a id="editing-the-screen"></a>...which gives the result `9.7648943`. You may also 'edit' the contents of the screen. To demonstrate, move the cursor (using the cursor left key) to the beginning of the line and then type in `INT` so that the line reads...
 
     INT 9.7648943
 
@@ -8235,7 +9678,7 @@ This produces the result `6.2831853` on the screen. The +3 has used its built-in
 
 ...and back will come the value of that expression. Notice that before you typed in `1E6`, you pressed **ENTER** on its own - this tells the +3 that you are about to start a new calculation.
 
-One extremely useful feature of the +3's calculator is that it will allow you to assign values to variables and then use them in subsequent calculations. This is achieved by using the `LET` statement (as you would in BASIC). To demonstrate, press **ENTER** and type in the following...
+<a id="assigning-variables"></a>One extremely useful feature of the +3's calculator is that it will allow you to assign values to variables and then use them in subsequent calculations. This is achieved by using the `LET` statement (as you would in BASIC). To demonstrate, press **ENTER** and type in the following...
 
     LET x=10
 
@@ -8255,9 +9698,9 @@ When you have finished using the calculator, press the **EDIT** key. The screen 
 
 <canvas id="screen-calculator-options"></canvas>
 
-Select the `Exit` option to return to the opening menu. If you were working on a +3 BASIC program before you started using the calculator, then you may return to the program by selecting the `+3 BASIC` option. (If you wish to continue using the calculator, then select the `Calculator` option.)
+<a id="exiting-the-calculator"></a>Select the `Exit` option to return to the opening menu. If you were working on a +3 BASIC program before you started using the calculator, then you may return to the program by selecting the `+3 BASIC` option. (If you wish to continue using the calculator, then select the `Calculator` option.)
 
-Note that if you have set up any user defined functions (using the `DEF FN` statement) whilst working on a BASIC program, you will be able to invoke that function when using the calculator. To illustrate this point, return to +3 BASIC and type in (for example)...
+<a id="user-defined-functions"></a>Note that if you have set up any user defined functions (using the `DEF FN` statement) whilst working on a BASIC program, you will be able to invoke that function when using the calculator. To illustrate this point, return to +3 BASIC and type in (for example)...
 
     9000 DEF FN c(n)=n*n*n
 
@@ -8317,7 +9760,7 @@ The shafts of the other two jack plugs are divided into only 2 separate metal se
 
 It is important to remember that the successful transfer of programs to and from tape is largely dependent on the correct setting of the LEVEL or VOLUME control on your cassette unit. If you cannot load or save program easily, try experimenting with different LEVEL control positions until the optimum setting is found. If you cannot seem to load or save any programs at all, try reversing the plugs to the MIC and EAR sockets on your cassette unit.
 
-Details of tape operation will be found in [chapter 4](#chapter4) and chapter 8 [parts 20](#part20) and [27](#part27).
+Details of tape operation will be found in [chapter 4](#chapter4) and [chapter 8 parts 20](#part20) and [27](#part27).
 
 ## <a id="printer"></a> Printer
 
@@ -8372,7 +9815,7 @@ The +3 may also be used with most serial printers conforming to the RS232 standa
 
 A serial printer should be connected to the **RS232/MIDI** socket at the back of the +3.
 
-Details of (parallel and serial) printer operation will be found in chapter 8 [parts 21](#part21) and [22](#part22).
+Details of (parallel and serial) printer operation will be found in [chapter 8 parts 21](#part21) and [22](#part22).
 
 ## <a id="additional-disk-drive"></a> Additional disk drive
 
@@ -8422,7 +9865,7 @@ When the FD-1 is connected to the +3, first switch on the FD-1 (using the slide 
 | 16  | GND             | 33  | not used       |
 | 17  | <span class="signal-high">DIRECTION SELECT</span> | 34  | GND            |
 
-Details of two-drive operation will be found in chapter 8 [parts 20](#part20) and [27](#part27).
+Details of two-drive operation will be found in [chapter 8 parts 20](#part20) and [27](#part27).
 
 ## <a id="joysticks"></a> Joystick(s)
 
@@ -8658,7 +10101,7 @@ Details of the +3's hardware will be found in [chapter 8 part 30](#part30).
 
 - HTML5 conversion, cross-referencing and artwork by [Damien Guard](https://damieng.com)
 - Original ASCII manual prepared by:
-  - Ian Coates <oktup@mono.city.ac.uk> did chapter 8 parts [26](#part26) and [30](#part30).
+  - Ian Coates <oktup@mono.city.ac.uk> did [chapter 8 parts 26](#part26) and [30](#part30).
   - Thomas Ahn Kjaer <takjaer@daimi.aau.dk> did [chapter 8 part 17](#part17).
   - Russell Marks <mr216@gre.ac.uk> did the rest.
 
@@ -8688,7 +10131,6 @@ spectrum('screen-loading-software', 2, initialPlus3);
 spectrum('screen-loading-48', 2, initialPlus3);
 
 spectrum('screen-basic-48', 2, initial48K);
-spectrum('screen-using-basic-48', 2, initial48K);
 
 spectrum('screen-basic-48-load', 2, function(cx) {
   clear(cx);
