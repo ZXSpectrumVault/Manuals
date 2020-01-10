@@ -1,5 +1,5 @@
 <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:500|Roboto+Slab:400,700&amp;display=swap" rel="stylesheet"></link>
-<link href="./spectrum-manual.css" rel="stylesheet"></link>
+<link href="./spectrum-manual.css?" rel="stylesheet"></link>
 <script src="./spectrum-manual.js"></script>
 
 # Contents
@@ -245,7 +245,7 @@ You must read this...
 15. Do not eject a disk while it is being read from or written to.
 16. Always remember that formatting a disk will erase its previous contents.
 
-# <a id="chapter1"></a> Chapter 1 - Open the box
+# <a id="chapter1"></a> Chapter 1<br>Open the box
 
 Subjects covered...
 
@@ -337,7 +337,7 @@ Finally, insert the 6-pin DIN plug coming from the power supply unit into the so
 
 The +3 system is now ready to be switched on.
 
-# <a id="chapter2"></a> Chapter 2 - Operating your +3
+# <a id="chapter2"></a> Chapter 2<br>Operating your +3
 
 Subjects covered...
 
@@ -544,7 +544,7 @@ Depending upon your selection, refer to the following chapters for further infor
 
 **IMPORTANT - Whenever you have finished using the +3, always disconnect the power supply unit from the mains supply socket (having first removed any disk from the disk drive).**
 
-# <a id="chapter3"></a> Chapter 3 - How to load disk software
+# <a id="chapter3"></a> Chapter 3<br>How to load disk software
 
 Subjects covered...
 
@@ -602,7 +602,7 @@ If you are going to switch off the +3 completely, remember to remove any disk fr
 
 If you wish to abandon a loading operation, simply press and release the **RESET** button. The +3 will return to the opening menu.
 
-# <a id="chapter4"></a> Chapter 4 - How to load tape software
+# <a id="chapter4"></a> Chapter 4<br>How to load tape software
 
 Subjects covered...
 
@@ -751,15 +751,15 @@ Various disk manufacturers employ differing mechanisms for opening and closing t
 To open the write protect hole, slide back the small shutter located at the left-hand corner of the disk, and the hole will be opened.
 
 <figure>
-  <svg viewBox="-2 -2 600 340" width="90%" id="disk-protect-side-diagram">
+  <svg viewBox="-2 -2 600 325" width="90%" id="disk-protect-side-diagram">
   <defs>
     <g id="disk-side">
       <rect x="0" y="0" width="220" height="290" rx="8" ry="8" class="thick" />
       <path d="M 11 289 v -60 a 8,8 0 0 1 8,-8 h 182 a 8,8 0 0 1 8,8 v 60" class="thick" />
-      <rect x="94" y="15" width="32" height="90" rx="20" ry="15" class="thin" />
+      <rect x="94" y="20" width="32" height="80" rx="20" ry="15" class="thin" />
       <circle cx="110" cy="145" r="25" class="thin" />
-      <circle cx="110" cy="190" r="8" class="thin" />
-      <circle cx="110" cy="190" r="3" class="thin" />
+      <circle cx="110" cy="190" r="7" class="thin" />
+      <circle cx="110" cy="190" r="2.5" class="thin" />
       <rect x="11" y="0.5" width="12" height="18" class="thin" />
     </g>
   </defs>
@@ -791,35 +791,51 @@ Once the hole is ***open***, write protection is ***ON***.
 To close the write protect hole, simply slide the shutter to its closed position. Write protection is then OFF.
 
 Other manufacturers' disks employ a small lever located in a slot at the left-hand corner...
-```
-                   Lever
-                    ||
-                    \/
-                    ___________  ______________________......
-                  |/]| ||    |^^|
-                  |_]|_||____|--|____________________.....
-                   \
- Write protect ======> @
- hole (CLOSED)       \
-            :
-                Write protection OFF
-```
+
+<figure>
+  <svg viewBox="0 0 330 120" width="75%">
+    <defs>
+    <g id="disk-top">
+      <path class="thin" d="
+        M 22 80 l -20 -65 v -2 h 6 l 1 -9 h -6 v -2 h 48 l -1.5 13 h -47
+        m 262 0 h -200 l 1.5 -13 h 198 v 2 h -6 l 1 9 h 6 v 3 l -20 65
+        m 18 -68 l 1 -9 m -3.5 0 l 1 9 m -212 0 h 15 m 2 -8 h -15
+        M 3 4 l 1 8 h 1.5 l 1 -8 m 6 2 h 35 l -0.7 5 h -35 l 1 -5.5 m 205 0 l 1 5 h 35 l -1 -5 h -35.5" />
+    </g>
+    </defs>
+    <use xlink:href="#disk-top" x="30" y="30" />
+    <ellipse cx="54" cy="56" rx="3.5" ry="2" />
+    <path class="fillonly" d="M 56 36 h 4 l -1 5 h -4 m 6 -5 h 4 l -1 5 h -4 " />
+    <text x="51" y="7" font-size="7">Lever</text>
+    <path class="fillonly" d="M 60 9 h 2 v 15 h 2 l -3 8 l -3 -8 h 2" />
+    <text x="55" y="75" font-size="7">Write protect hole (CLOSED)</text>
+    <path class="fillonly" d="M 55.5 68 h 3 l -1.5 -5 h 1.5 l -4 -4 l -2 4 h 1.5" />
+  </svg>
+  <figcaption>Write protection OFF</figcaption>
+</figure>
 
 To open the write protect hole on this type of disk, slide the lever towards the middle of the disk (using the tip of a ball-point pen or similar object)...
-```
-                  \
-               ___\ \  \
- Slide lever   ^^^/  \ _\
- towards middle       -_,|
- of disk          ______-|___  ______________________......
-                 |/]|    || |^^|
-                 |_]|____||_|--|____________________.....
-         \
- Write protect ======> O
- hole (OPEN)       \
-            :
-                Write protection ON
-```
+
+<figure>
+  <svg viewBox="-20 0 330 120" width="75%">
+    <use xlink:href="#disk-top" x="30" y="40" />
+    <ellipse cx="54" cy="66" rx="3.5" ry="2" class="hairline" />
+    <path class="fillonly" d="M 66 46 h 4 l -1 5 h -4 m 6 -5 h 4 l -1 5 h -4 " />
+    <text x="55" y="85" font-size="7">Write protect hole (OPEN)</text>
+    <path class="fillonly" d="M 55.5 78 h 3 l -1.5 -5 h 1.5 l -4 -4 l -2 4 h 1.5" />
+    <text x="6" y="10" font-size="7" text-anchor="middle">Slide lever</text>
+    <text x="6" y="18" font-size="7" text-anchor="middle">towards middle</text>
+    <text x="6" y="26" font-size="7" text-anchor="middle">of disk</text>
+    <path class="fillyonly" d="M 35 20 v 0 h 8 v 5 l 8 -10 l -8 -10 v 5 h -8" />
+    <path class="thin" d="
+      M 53 1 l 9.5 34 L 70 45
+      M 57 0 L 66 32 l -5 1 l 5 -1 l 4 -2
+      M 62 0 l 8 30 L 70 45 m 0 -2 l -1.5 -2" />
+  </svg>
+  <figcaption>Write protection ON</figcaption>
+</figure>
+
+
 Note that regardless of the method employed to open and close the write protect hole, opening the hole in all cases facilitates protection against overwriting.
 
 ## When your disk is in
