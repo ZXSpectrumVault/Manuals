@@ -1,6 +1,6 @@
 <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:500|Roboto+Slab:400,700&amp;display=swap" rel="stylesheet"></link>
-<link href="./spectrum-manual.css?" rel="stylesheet"></link>
-<script src="./spectrum-manual.js"></script>
+<link href="./spectrum-manual.css" rel="stylesheet"></link>
+<script src="./spectrum-manual.js?"></script>
 
 # Contents
 
@@ -165,21 +165,21 @@ Therefore, you should adopt the following reading programme...
 [Chapter 10](#chapter10) - This chapter illustrates how add-ons (peripherals) are connected to the +3. Peripherals include such devices as a cassette unit, a printer, an additional disk drive, a joystick, etc. So if you're thinking of linking up any device at all to the +3, check this chapter to make sure that you've got the right connections. If, on the other hand, you intend to use just the standard +3 set up (ie. computer and TV only), then you may skip this chapter.
 
 <figure>
-  <svg viewBox="-5 -5 790 210" width="33%" id="amstrad-logo">
+  <svg viewBox="-5 -5 790 215" width="33%" id="amstrad-logo">
     <defs>
-      <g id="A">
+      <g id="amstrad-logo-a">
         <path d="M40 203l3-40h16l3 40h40L78 1H26L0 203h40zM57 130H46l6-78 5 78z" />
       </g>
     </defs>
-    <use xlink:href="#A" />
+    <use xlink:href="#amstrad-logo-a" />
     <path d="M170 1h-57v202h39V88l16 115h25L210 88v114h39V1h-57l-10 89L171 1z" />
     <path d="M257 24l0 48a32.2 32 0 0 0 1.1 6c0 2 2 5 3 7a25 25 0 0 0 3 3 55 55 0 0 0 5 4 60 60 0 0 0 11 8l26 14c1 1 2 1 4 2 3 3 3 6 3 9l1 4V161c0 2-2 4-1 6a6 6 0 0 1-7 3 6 6 0 0 1-2-1c-2-2-2-5-2-8v-41h-43v46c0 5.7.1 11 1 16.6.7 3 1.7 6 3 9a24 24 0 0 0 6 7 30 30 0 0 0 8 4 25 25 0 0 0 6 1l5 1h44c2 0 4 0 6-1a30 30 0 0 0 8-3c3-2 5-4 6-6s2-4 3-7 1-4 2-6a73 73 0 0 0 1-9c0-3 0-6 0-9l-0-41a172 172 0 0 0-0-7 26 26 0 0 0-0-3 35 35 0 0 0-1-2 18 18 0 0 0-1-3c-1-1-2-3-3-5a28 28 0 0 0-4-5 44 44 0 0 0-5-4 170 170 0 0 0-13-8l-18-10a46 46 0 0 1-3-2 52 52 0 0 1-3-2c-1-1-1-1-2-1-0-0-0-0-1-1a12 12 0 0 1-2-5c-0-1 0-2 0-3v-19a13 13 0 0 1 0-5 9 9 0 0 1 1-2c2-3 5-3 7-2a6 6 0 0 1 2 1 7 7 0 0 1 1 2c.3.7.4 1.4.6 2a68 68 0 0 1 .2 7.3v24h43l-1-49a36 36 0 0 0-1-3 21 21 0 0 0-1-3c-1-2-2-4-3-6a22 22 0 0 0-5-5 26 26 0 0 0-6-3c-4-1-7-2-10-2-2-0-3-0-5-1l-37.4.3a54 54 0 0 0-13 2 22 22 0 0 0-4 2c-3 1-5 3-7 5-1 1-2 3-3 5a27 27 0 0 0-3 12z"/>
     <path d="M362 1v33h22v170h43V34h21V1h-86z" />
     <path d="M505 0h-46v202h43v-81c2.8.1 6-0 8.5.7.6.2 1.2.5 2 1 2 2 2 4 2 6 0 4.2.1 8.3.2 13v60.6h43V140a92 92 0 0 0-2-19c-0-1-1-3-2-4.2a24 24 0 0 0-4-6c-2-2-3-3-6-5a24 24 0 0 0-7-3 28 28 0 0 0 3-0c2-1 4-2 6-4s3.4-3 5-5 2-4 3-7l1.2-5a122 122 0 0 0 1-21v-21c.1-4-0-8-1-13l-1-6c-0-2-1-3-1-4a25 25 0 0 0-2-4 25 25 0 0 0-3-4c-1-2-3-3-5-4a26 26 0 0 0-12-4c-10-1-19-1-28-1zm-3 33h6a9 9 0 0 1 2.9.8c3 2 3 4 3 7l0 8v26.6c0 2-0 3-0 5a6 6 0 0 1-2 4c-1 1-3 1-5 1.4-1.8.2-3.6.2-5.4.1V34z"/>
-    <use xlink:href="#A" x="567" />
+    <use xlink:href="#amstrad-logo-a" x="567" />
     <path d="M774 14c-2-2-3-5-6-6s-5-3-7-4a20 20 0 0 0-4-1 59 59 0 0 0-4-1 71 71 0 0 0-5-1L680 1v202.2l68.6-0c2 0 3-2 5-1 4-1 7-1 10-3 2-1 4-2 5-3a18 18 0 0 0 5-5 35 35 0 0 0 4-10 54 54 0 0 0 2-13l-1-138c0-3-1-6-2-9a30 30 0 0 0-3-8Z m-48 21h3a14 14 0 0 1 2.5.5 7 7 0 0 1 1.8.8c.5.3 1 1 1 1 2 2 1 5 1 8v117a18 18 0 0 1-0 3c-.1.8-1 2-1 2s-1 1-1 2a6 6 0 0 1-2 1c-.6.3-1.2.8-2 1h-7l0-136z"/>
   </svg>
-  <figcaption><p>© Copyright 1987 - AMSTRAD Plc.</p></figcaption>
+  <figcaption>© Copyright 1987 - AMSTRAD Plc.</figcaption>
 </figure>
 
 Neither the whole nor any part of the information contained herein, nor the product described in this manual, may be adapted or reproduced in any material form except with the prior written approval of AMSTRAD Plc. ('AMSTRAD').
@@ -245,7 +245,7 @@ You must read this...
 15. Do not eject a disk while it is being read from or written to.
 16. Always remember that formatting a disk will erase its previous contents.
 
-# <a id="chapter1"></a> Chapter 1<br>Open the box
+# <a id="chapter1"></a> Chapter 1 <br> Open the box
 
 Subjects covered...
 
@@ -337,7 +337,7 @@ Finally, insert the 6-pin DIN plug coming from the power supply unit into the so
 
 The +3 system is now ready to be switched on.
 
-# <a id="chapter2"></a> Chapter 2<br>Operating your +3
+# <a id="chapter2"></a> Chapter 2 <br> Operating your +3
 
 Subjects covered...
 
@@ -511,10 +511,10 @@ const chooseOptions = [
 ];
 keyboard('keyboard-choose-option',
   function(cx) {
-    const fontSize = 11;
     drawKeyboard(cx, function(c, r, x, y, w, h) {
+      cx.fillStyle = 'black';
       cx.textAlign = 'right';
-      drawLabel(cx, chooseOptions[r][c], x + w, y + h + fontSize, w, h, fontSize);
+      drawLabel(cx, chooseOptions[r][c], x + w - 4, y, w, h);
     });
   });
 </script>
@@ -544,7 +544,7 @@ Depending upon your selection, refer to the following chapters for further infor
 
 **IMPORTANT - Whenever you have finished using the +3, always disconnect the power supply unit from the mains supply socket (having first removed any disk from the disk drive).**
 
-# <a id="chapter3"></a> Chapter 3<br>How to load disk software
+# <a id="chapter3"></a> Chapter 3 <br> How to load disk software
 
 Subjects covered...
 
@@ -602,7 +602,7 @@ If you are going to switch off the +3 completely, remember to remove any disk fr
 
 If you wish to abandon a loading operation, simply press and release the **RESET** button. The +3 will return to the opening menu.
 
-# <a id="chapter4"></a> Chapter 4<br>How to load tape software
+# <a id="chapter4"></a> Chapter 4 <br> How to load tape software
 
 Subjects covered...
 
@@ -653,13 +653,21 @@ To load Spectrum 48 software (a game, an utility program, etc.) from tape, carry
 3. Now press the **J** key once, followed by the **"** (double quote) key twice. The screen should look like this...
 
 <canvas id="screen-basic-48-load"></canvas>
-<script>spectrum('screen-basic-48-load', 2, function(cx) {
-  clear(cx);
-  const y = borderSize + 192 - 8;
-  text(cx, borderSize, y, 'LOAD ""', darkColors[0]);
-  const x = borderSize + 7 * 8;
-  cursor48K(cx, x, y, 'L');
-})</script>
+<script>
+spectrum('screen-basic-48-load', 2,
+  function(cx) {
+    clear(cx);
+    const y = borderSize + 192 - 8;
+    const x = borderSize + 7 * 8;
+    text(cx, borderSize, y, 'LOAD ""', darkColors[0]);
+    cursor48K(cx, x, y, 'L', true);
+  },
+  function (cx, state) {
+    const y = borderSize + 192 - 8;
+    const x = borderSize + 7 * 8;
+    cursor48K(cx, x, y, 'L', state.frame % 30 > 15);
+  })
+</script>
 
 When you see this message, press **ENTER**.
 
@@ -686,7 +694,7 @@ If, while loading software from tape, you wish to abandon the loading operation,
 
 NOTE - Holding the **BREAK** key down while loading Spectrum +3, Spectrum +2 or Spectrum 128 software will return the +3 to the opening menu; holding the key down while loading Spectrum 48 software will return the +3 to the 48 BASIC mode.
 
-# <a id="chapter5"></a> Chapter 5 - The +3 disk drive
+# <a id="chapter5"></a> Chapter 5 <br> The +3 disk drive
 
 Subjects covered...
 
@@ -868,7 +876,7 @@ Do not press the eject button while the disk is being read from or written to.
 
 Always eject your disk from the disk drive before switching the system off.
 
-# <a id="chapter6"></a> Chapter 6 - Introducing +3 BASIC
+# <a id="chapter6"></a> Chapter 6 <br> Introducing +3 BASIC
 
 Subjects covered...
 
@@ -894,11 +902,18 @@ Subjects covered...
 The screen should now look like this...
 
 <canvas id="screen-basic-plus3"></canvas>
-<script>spectrum('screen-basic-plus3', 2, function(cx) {
-  clear(cx);
-  cursor(cx, borderSize, borderSize);
-  bottomBarWithStripe(cx, '+3 BASIC');
-})</script>
+<script>
+spectrum('screen-basic-plus3', 2,
+  function(cx) {
+    clear(cx);
+    cursor(cx, borderSize, borderSize);
+    bottomBarWithStripe(cx, '+3 BASIC');
+  },
+  function (cx, state) {
+    cursor(cx, borderSize, borderSize, state.frame % 30 > 15);
+  }
+);
+</script>
 
 There are three things to notice about this screen.
 
@@ -1175,7 +1190,7 @@ If you receive the above options, then:
 
 Further information on disk operations (together with details of how to use the +3's RAMdisk and how to use an external cassette unit) can be found in [chapter 8 part 20](#part20). A guide to +3DOS (the +3 Disk Operating System) will be found in [chapter 8 part 27](#part27).
 
-# <a id="chapter7"></a> Chapter 7 - Using 48 BASIC
+# <a id="chapter7"></a> Chapter 7 <br> Using 48 BASIC
 
 Subjects covered...
 
@@ -1212,13 +1227,12 @@ All the BASIC commands, functions and operators are available directly from the 
 
 <canvas id="keyboard-mode-k"></canvas>
 <script>keyboard('keyboard-mode-k', function(cx) {
-  const fontSize = 11;
   cx.font = lowerKeyFont;
   drawKeyboard(cx, function(c, r, x, y, w, h) {
     cx.textAlign = 'right';
-    drawLabel(cx, keyboardLabelsKlower[r][c], x + w, y + h + fontSize, w, h, fontSize);
+    drawLabel(cx, keyboardLabelsKlower[r][c], x + w - 4, y - 2, w, h);
     cx.textAlign = 'center';
-    drawLabel(cx, keyboardLabelsK[r][c], x + w / 2, y + h / 2, w, h, fontSize);
+    drawLabel(cx, keyboardLabelsK[r][c], x + w / 2, y - h / 2, w, h);
   });
 });</script>
 
@@ -1227,7 +1241,7 @@ The keyboard in `K` mode
 `L` (for Letters) mode normally occurs at all times (other than K mode, described above). Whenever the `L` cursor appears, the next key pressed will be interpreted as per the legends on the key-tops themselves, ie....
 
 <canvas id="keyboard-mode-l"></canvas>
-<script>keyboard('keyboard-mode-l', drawDefaultKeyboard);</script>
+<script>keyboard('keyboard-mode-l');</script>
 
 The keyboard in `L` mode
 
@@ -1253,11 +1267,11 @@ keyboard('keyboard-48-shift', function(cx) {
   drawKeyboard(cx, function(c, r, x, y, w, h) {
     cx.font = lowerKeyFont;
     cx.textAlign = 'right';
-    drawLabel(cx, keyboardLabels48ShiftLower[r][c], x + w, y + h + 11, w, h, 11);
+    drawLabel(cx, keyboardLabels48ShiftLower[r][c], x + w - 4, y - 4, w, h);
     if (r === 0 || r > 2 || (r === 1 && c < 7 || c > 9) || (r === 2 && c > 6))
       cx.font = midKeyBigFont;
     cx.textAlign = 'center';
-    drawLabel(cx, keyboardLabels48Shift[r][c], x + w / 2, y + h, w, h, 14);
+    drawLabel(cx, keyboardLabels48Shift[r][c], x + w / 2, y - h / 2.5, w, h, 14);
   });
 });
 </script>
@@ -1290,9 +1304,9 @@ keyboard('keyboard-48-extend', function(cx) {
   drawKeyboard(cx, function(c, r, x, y, w, h) {
     cx.font = lowerKeyFont;
     cx.textAlign = 'right';
-    drawLabel(cx, keyboardLabels48ExtendLower[r][c], x + w, y + h + 11, w, h, 11);
+    drawLabel(cx, keyboardLabels48ExtendLower[r][c], x + w - 4, y, w, h, 11);
     cx.textAlign = 'center';
-    drawLabel(cx, keyboardLabels48Extend[r][c], x + w / 2, y + h, w, h, 14);
+    drawLabel(cx, keyboardLabels48Extend[r][c], x + w / 2, y - h / 2.5, w, h, 14);
   });
 });
 </script>
@@ -1321,13 +1335,13 @@ keyboard('keyboard-48-extend-caps', function(cx) {
   drawKeyboard(cx, function(c, r, x, y, w, h) {
     cx.font = lowerKeyFont;
     cx.textAlign = 'right';
-    drawLabel(cx, keyboardLabels48ExtendCapsLower[r][c], x + w, y + h + 11, w, h, 11);
+    drawLabel(cx, keyboardLabels48ExtendCapsLower[r][c], x + w - 4, y - 4, w, h, 11);
     const midLabel = keyboardLabels48ExtendCaps[r][c];
     if (midLabel) {
       if (midLabel.length === 1)
         cx.font = midKeyBigFont;
       cx.textAlign = 'center';
-      drawLabel(cx, midLabel, x + w / 2, y + h, w, h, 16);
+      drawLabel(cx, midLabel, x + w / 2, y, w, h - h / 3, 14);
     }
   });
 });
@@ -1357,13 +1371,13 @@ keyboard('keyboard-48-extend-sym', function(cx) {
   drawKeyboard(cx, function(c, r, x, y, w, h) {
     cx.font = lowerKeyFont;
     cx.textAlign = 'right';
-    drawLabel(cx, keyboardLabels48ExtendSymLower[r][c], x + w, y + h + 11, w, h, 11);
+    drawLabel(cx, keyboardLabels48ExtendSymLower[r][c], x + w - 4, y - 4, w, h, 11);
     const midLabel = keyboardLabels48ExtendSym[r][c];
     if (midLabel) {
       if (midLabel.length === 1)
         cx.font = midKeyBigFont;
       cx.textAlign = 'center';
-      drawLabel(cx, midLabel, x + w / 2, y + h, w, h, 16);
+      drawLabel(cx, midLabel, x + w / 2, y - h / 2.5, w, h, 16);
     }
   });
 });
@@ -1388,20 +1402,20 @@ keyboard('keyboard-48-graph', function(cx) {
     cx.textAlign = 'right';
     const label = keyboardLabelsGraph48Lower[r][c];
     if (r === 0) {
-      drawLabel(cx, label, x + w, y + h + 11, w, h, 11);
+      drawLabel(cx, label, x + w - 4, y, w, h, 11);
       if (c == 10) {
         cx.textAlign = 'center';
         cx.font = '9px Arial';
-        drawLabel(cx, 'GRAPHICS\nMODE\nOFF', x + w / 2, y + h, w, h, 10);
+        drawLabel(cx, 'GRAPHICS\nMODE\nOFF', x + w / 2, y - 4, w, h, 10);
       } else if (c > 1 && c < 10) {
         drawBoxChar(cx, c - 1, x + 4, y + 4, 24);
       }
     } else if (label) {
-      drawLabel(cx, label, x + w, y + h + 11, w, h, 11);
+      drawLabel(cx, label, x + w - 4, y - 4, w, h, 11);
       if (label.length === 1) {
         cx.font = midKeyBigFont;
         cx.textAlign = 'center';
-        drawLabel(cx, label, x + w / 2, y + h, w, h, 16);
+        drawLabel(cx, label, x + w / 2, y - h / 2.5, w, h, 16);
       }
     }
   })
@@ -1427,20 +1441,20 @@ keyboard('keyboard-48-graph-caps', function(cx) {
     cx.textAlign = 'right';
     const label = keyboardLabelsGraphCaps48Lower[r][c];
     if (r === 0) {
-      drawLabel(cx, label, x + w, y + h + 11, w, h, 11);
+      drawLabel(cx, label, x + w - 4, y, w, h, 11);
       if (c == 10) {
         cx.textAlign = 'center';
         cx.font = '9px Arial';
-        drawLabel(cx, 'GRAPHICS\nMODE\nOFF', x + w / 2, y + h, w, h, 10);
+        drawLabel(cx, 'GRAPHICS\nMODE\nOFF', x + w / 2, y - h / 4, w, h, 10);
       } else if (c > 1 && c < 10) {
         drawBoxChar(cx, c - 1, x + 4, y + 4, 24, true);
       }
     } else if (label) {
-      drawLabel(cx, label, x + w, y + h + 11, w, h, 11);
+      drawLabel(cx, label, x + w - 4, y, w, h, 11);
       if (label.length === 1) {
         cx.font = midKeyBigFont;
         cx.textAlign = 'center';
-        drawLabel(cx, label, x + w / 2, y + h, w, h, 16);
+        drawLabel(cx, label, x + w / 2, y - h / 2.5, w, h, 16);
       }
     }
   })
@@ -1459,7 +1473,7 @@ When **ENTER** is pressed, the line is either executed, entered into the program
 
 When a command is executed or a program is run, output is displayed in th top half of the screen and remains there until either **ENTER** or the cursor up or down key is pressed. At the bottom of the screen appears a ***report*** giving a code (digit or letter) referred to in [part 29 of chapter 8](#part29). This report remains on the screen until a key is pressed and the +3 returns to `K` mode.
 
-# <a id="chapter8"></a> Chapter 8 - The +3 BASIC programmer's guide
+# <a id="chapter8"></a> Chapter 8 <br> The +3 BASIC programmer's guide
 
 ## <a id="part1"></a> Part 1 - Introduction
 
@@ -1473,7 +1487,7 @@ This guide to BASIC starts by repeating some of the information given in [chapte
 ### The Keyboard
 
 <canvas id="keyboard-basic"></canvas>
-<script>keyboard('keyboard-basic', drawDefaultKeyboard);</script>
+<script>keyboard('keyboard-basic');</script>
 
 The characters used on the +3 comprise not only single symbols (letters, digits, etc.) but also compound tokens (keywords, function names, etc.). Everything must be typed in full, and in most cases it doesn't matter whether capital letters (known as ***UPPER CASE***) or small letters (***lower case***) are used. There are three sorts of keys on the keyboard: letter and number keys (called alphanumeric keys); symbol keys (punctuation marks); and control keys (things like **CAPS SHIFT**, **DELETE** and so on).
 
@@ -1507,10 +1521,10 @@ keyboard('keyboard-sym-shift', function(cx) {
   drawKeyboard(cx, function(c, r, x, y, w, h) {
     cx.font = lowerKeyFont;
     cx.textAlign = 'right';
-    drawLabel(cx, keyboardLabelsSymbolsLower[r][c], x + w, y + h + 11, w, h, 11);
+    drawLabel(cx, keyboardLabelsSymbolsLower[r][c], x + w - 4, y, w, h, 11);
     cx.font = midKeyBigFont;
     cx.textAlign = 'center';
-    drawLabel(cx, keyboardLabelsSymbols[r][c], x + w / 2, y + h, w, h, 14);
+    drawLabel(cx, keyboardLabelsSymbols[r][c], x + w / 2, y - h / 2.5, w, h, 14);
   });
 });
 </script>
@@ -1543,10 +1557,10 @@ keyboard('keyboard-sym-shift-ext', function(cx) {
   drawKeyboard(cx, function(c, r, x, y, w, h) {
     cx.font = lowerKeyFont;
     cx.textAlign = 'right';
-    drawLabel(cx, keyboardLabelsSymbolsExtLower[r][c], x + w, y + h + 11, w, h, 11);
+    drawLabel(cx, keyboardLabelsSymbolsExtLower[r][c], x + w - 4, y, w, h, 11);
     cx.font = midKeyBigFont;
     cx.textAlign = 'center';
-    drawLabel(cx, keyboardLabelsSymbolsExt[r][c], x + w / 2, y + h, w, h, 14);
+    drawLabel(cx, keyboardLabelsSymbolsExt[r][c], x + w / 2, y - h / 2.5, w, h, 14);
   });
 });
 </script>
@@ -1568,12 +1582,11 @@ keyboard('keyboard-graph', function(cx) {
   drawKeyboard(cx, function(c, r, x, y, w, h) {
     cx.font = lowerKeyFont;
     cx.textAlign = 'right';
-    drawLabel(cx, keyboardLabelsGraphLower[r][c], x + w, y + h + 11, w, h, 11);
+    drawLabel(cx, keyboardLabelsGraphLower[r][c], x + w - 4, y, w, h, 11);
     if (r === 0) {
       if (c == 10) {
         cx.textAlign = 'center';
-        cx.font = '10px Segoe UI';
-        drawLabel(cx, 'GRAPHICS\nMODE\nOFF', x + w / 2, y + h, w, h, 10);
+        drawLabel(cx, 'GRAPHICS\nMODE\nOFF', x + w / 2, y - 10, w, h, 10);
       } else if (c > 1 && c < 10) {
         drawBoxChar(cx, c - 1, x + 4, y + 4, 24);
       }
@@ -3117,6 +3130,27 @@ On the screen will appear the following...
 
 <canvas id="screen-charset"></canvas>
 <script>spectrum('screen-charset', 2, function(cx) {
+  const charLines = [
+      " !\"#$%&'()*+,-./0123456789:;<=>?",
+      "@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_",
+      "£abcdefghijklmnopqrstuvwxyz{|}~©",
+      "                ABCDEFGHIJKLMNOP",
+      "QRS SPECTRUM PLAY RNDINKEY$PIFN",
+      "POINT SCREEN$ ATTR AT TAB VAL$ C",
+      "ODE VAL LEN SIN COS TAN ASN ACS",
+      "ATN LN EXP INT SQR SGN ABS PEEK",
+      "IN USR STR$ CHR$ NOT BIN OR AND",
+      "<=>=<> LINE THEN TO STEP DEF FN",
+      "CAT FORMAT MOVE ERASE OPEN # CLO",
+      "SE # MERGE VERIFY BEEP CIRCLE IN",
+      "K PAPER FLASH BRIGHT INVERSE OVE",
+      "R OUT LPRINT LLIST STOP READ DAT",
+      "A RESTORE NEW BORDER CONTINUE DI",
+      "M REM FOR GO TO GO SUB INPUT LOA",
+      "D LIST LET PAUSE NEXT POKE PRINT",
+      " PLOT RUN SAVE RANDOMIZE IF CLS",
+      "DRAW CLEAR RETURN COPY"
+  ];
   clear(cx);
   cx.fillStyle = darkColors[0];
   for (let i = 0; i < charLines.length; i++)
@@ -3215,7 +3249,7 @@ Here are the sixteen graphics symbols...
     drawBoxChar(reg.getContext('2d'), i, 0, 0, size);
     const inv = document.getElementById('box-char-inv-' + i);
     inv.width = inv.height = size;
-    drawBoxCharInverse(inv.getContext('2d'), i, 0, 0, size);
+    drawBoxChar(inv.getContext('2d'), i, 0, 0, size, true);
   }
 })();
 </script>
@@ -9713,7 +9747,7 @@ Note the following when typing in the listing:
  780 DATA 0,60,126,126,126,126,60,0
 ````
 
-# <a id="chapter9"></a> Chapter 9 - Using the calculator
+# <a id="chapter9"></a> Chapter 9 <br> Using the calculator
 
 Subjects covered...
 
@@ -9806,7 +9840,7 @@ When you have finished using the calculator, press the **EDIT** key. The screen 
 
 ...and the calculator will print the number `27` (ie. the cube of 3).
 
-# <a id="chapter10"></a> Chapter 10 - Peripherals for your +3
+# <a id="chapter10"></a> Chapter 10 <br> Peripherals for your +3
 
 Subjects covered...
 
@@ -10163,8 +10197,6 @@ It is safe to plug in (or unplug) an amplifier, tape recorder, etc. into the **T
 <figure class="connector ">
   <svg viewBox="0 0 350 350" width="75%">
     <rect y="55" x="70" width="10" height="50" class="open" />
-    <path d="M20 55 h 30 d 10 10" />
-    <-text y="45" x="79">6</text>
   </svg>
   <figcaption><strong>TAPE/SOUND</strong> socket</figcaption>
 </figure>
@@ -10354,7 +10386,6 @@ The +3 can connect to a very wide range of peripherals via the **EXPANSION I/O**
     <rect y="50" x="510" height="5" width="15" />
     <rect y="50" x="530" height="5" width="15" />
     <rect y="50" x="550" height="5" width="15" />
-    <rect y="35" x="20" width="550" height="15" />
     <text y="25" x="37" class="pin">27</text>
     <text y="25" x="57" class="pin">26</text>
     <text y="25" x="77" class="pin">25</text>
@@ -10446,9 +10477,10 @@ The +3 can connect to a very wide range of peripherals via the **EXPANSION I/O**
 
 Details of the +3's hardware will be found in [chapter 8 part 30](#part30).
 
-# Credits
+# <a id="credits"></a> Credits
 
-- HTML5 conversion, cross-referencing and artwork by [Damien Guard](https://damieng.com)
+- HTML5 conversion & cross-referencing by [Damien Guard](https://damieng.com)
+- Canvas drawing, SVG drawings, layout coding by [Damien Guard](https://damieng.com)
 - Original ASCII manual prepared by:
   - Ian Coates <oktup@mono.city.ac.uk> did [chapter 8 parts 26](#part26) and [30](#part30).
   - Thomas Ahn Kjaer <takjaer@daimi.aau.dk> did [chapter 8 part 17](#part17).

@@ -6,7 +6,7 @@ const lightColors = ['#000', '#0000ff', '#ff0000', '#ff00ff', '#00ff00', '#00fff
 const borderSize = 16;
 
 // Render a Spectrum screen given the canvas id and the function to render
-function spectrum(id, scale, f) {
+function spectrum(id, scale, f, animationFunction) {
     const c = document.getElementById(id);
     if (c == null) {
         console.log(`Could not find canvas[id='${id}'] to render keyboard to.`);
@@ -17,11 +17,30 @@ function spectrum(id, scale, f) {
     c.height = (192 + borderSize * 2) * scale;
     cx.scale(scale, scale);
     f(cx);
+
+    if (animationFunction) {
+        const fps = 50;
+        let timer = null;
+        let state = { frame: 0 };
+        c.onmouseenter = function () {
+            if (timer) return;
+            timer = setInterval(function(e) {
+                animationFunction(cx, state);
+                state.frame = state.frame + 1 % fps;
+            }, 1000 / fps);
+        }
+        c.onmouseleave = function () {
+            if (!timer) return;
+            clearInterval(timer);
+            timer = null;
+            f(cx);
+        }
+    }
 }
 
 // Draw the 128K cursor
-function cursor(cx, x, y) {
-    fill(cx, x, y, 8, 8, lightColors[1]);
+function cursor(cx, x, y, inverted) {
+    fill(cx, x, y, 8, 8, inverted ? lightColors[7] : lightColors[1]);
 }
 
 // Fill an area of the screen
@@ -256,9 +275,11 @@ function initialPlus3(cx) {
 }
 
 // Draw a 48K cursor with mode indicator
-function cursor48K(cx, x, y, mode) {
-    fill(cx, x, y, 8, 8, darkColors[0]);
-    text(cx, x, y, mode, darkColors[7]);
+function cursor48K(cx, x, y, mode, inverse) {
+    const background = inverse ? darkColors[0] : darkColors[7];
+    const foreground = inverse ? darkColors[7] : darkColors[0];
+    fill(cx, x, y, 8, 8, background);
+    text(cx, x, y, mode, foreground);
 }
 
 // Draw the 128K options menu
@@ -272,29 +293,8 @@ function initial48K(cx) {
     text(cx, borderSize, borderSize + 192 - 8, '© 1982 Amstrad', darkColors[0]);
 }
 
-const charLines = [
-    " !\"#$%&'()*+,-./0123456789:;<=>?",
-    "@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_",
-    "£abcdefghijklmnopqrstuvwxyz{|}~©",
-    "                ABCDEFGHIJKLMNOP",
-    "QRS SPECTRUM PLAY RNDINKEY$PIFN",
-    "POINT SCREEN$ ATTR AT TAB VAL$ C",
-    "ODE VAL LEN SIN COS TAN ASN ACS",
-    "ATN LN EXP INT SQR SGN ABS PEEK",
-    "IN USR STR$ CHR$ NOT BIN OR AND",
-    "<=>=<> LINE THEN TO STEP DEF FN",
-    "CAT FORMAT MOVE ERASE OPEN # CLO",
-    "SE # MERGE VERIFY BEEP CIRCLE IN",
-    "K PAPER FLASH BRIGHT INVERSE OVE",
-    "R OUT LPRINT LLIST STOP READ DAT",
-    "A RESTORE NEW BORDER CONTINUE DI",
-    "M REM FOR GO TO GO SUB INPUT LOA",
-    "D LIST LET PAUSE NEXT POKE PRINT",
-    " PLOT RUN SAVE RANDOMIZE IF CLS",
-    "DRAW CLEAR RETURN COPY"
-];
-
 function keyboard(id, f) {
+    f = f || drawDefaultKeyboard;
     const c = document.getElementById(id);
     if (c == null) {
         console.log(`Could not find canvas[id='${id}'] to render keyboard to.`);
@@ -337,14 +337,14 @@ const keyboardLabelsK = [
     []
 ];
 
-const lowerKeyFont = '11px Arial';
+const lowerKeyFont = '11px sans-serif';
 const midKeyBigFont = '24px Roboto Mono';
 
 function drawBoxChar(cx, index, x, y, size, inverse) {
     cx.strokeRect(x, y, size, size);
-    (inverse ? drawBoxCharNormal : drawBoxCharInverse)(cx, index, x, y, size);
+    (inverse ? drawNormal : drawInverse)(cx, index, x, y, size);
 
-    function drawBoxCharNormal(cx, index, x, y, size) {
+    function drawNormal(cx, index, x, y, size) {
         const half = size / 2;
         switch (index) {
             case 1:
@@ -373,7 +373,7 @@ function drawBoxChar(cx, index, x, y, size, inverse) {
         }
     }
 
-    function drawBoxCharInverse(cx, index, x, y, size) {
+    function drawInverse(cx, index, x, y, size) {
         const half = size / 2;
         switch (index) {
             case 1:
@@ -410,19 +410,24 @@ function drawBoxChar(cx, index, x, y, size, inverse) {
 }
 
 function drawDefaultKeyboard(cx) {
-    const fontSize = 11;
-    cx.textAlign = 'center';
+    cx.fontSize = '11px';
     drawKeyboard(cx, function (c, r, x, y, w, h) {
+        cx.fillStyle = 'black';
         cx.textAlign = 'right';
-        drawLabel(cx, keyboardLabels[r][c], x + w, y + h + fontSize, w, fontSize);
+        drawLabel(cx, keyboardLabels[r][c], x + w - 4, y, w, h);
     });
 }
 
-function drawLabel(cx, label, x, y, w, fontSize) {
+function drawLabel(cx, label, x, y, w, h, fontSize) {
     if (label == undefined || label == '') return;
+
+    fontSize = fontSize || 11;
+    cx.fontSize = fontSize + 'px';
+
     let lines = label.split('\n');
     let count = lines.length;
-    let sy = y - (fontSize * count);
+    let sy = y + h - (fontSize * (count - 1)) - 3;
+
     for (let i = 0; i < count; i++) {
         cx.fillText(lines[i], x, sy, w);
         sy += fontSize;
@@ -453,7 +458,7 @@ function drawKeyboard(cx, cellFunc) {
             else
                 cx.strokeRect(x, y, w - gap, u - gap);
             if (cellFunc != undefined)
-                cellFunc(c, r, x + gap, y + gap, w - gap * 3, u - gap * 3);
+                cellFunc(c, r, x, y, w - gap, u - gap);
             x += w;
         }
     }
@@ -478,11 +483,10 @@ function drawKeyboard(cx, cellFunc) {
 
 // Document scrolling/fragments
 
-const allLinkElementsWithIds = document.querySelector('a[id]');
-
 function asFragmentsGoBy() {
-    for (let element of allLinkElementsWithIds) {
-        if (isInViewport(element)) {
+    for (let element of  document.querySelectorAll('a[id]')) {
+        const rect = element.getClientRects()[0];
+        if (rect.top >= 0 && rect.left >= 0) {
             const newUrl = document.URL.split('#')[0] + '#' + element.id;
             history.replaceState({}, '', newUrl);
             return;
@@ -490,11 +494,4 @@ function asFragmentsGoBy() {
     }
 }
 
-function isInViewport(element) {
-    const rect = element.getClientRect();
-    return (
-        rect.top >= 0 && rect.left >= 0 &&
-        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-    );
-};
+document.onscroll = asFragmentsGoBy;

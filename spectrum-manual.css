@@ -36,7 +36,7 @@ h1 {
   padding-bottom: 0.25em;
 }
 
-h1:before {
+/* h1:before {
   border-bottom: 1.5px solid #000;
   bottom: -10px;
   content: " ";
@@ -44,7 +44,7 @@ h1:before {
   position: absolute;
   right: 0;
   top: 0;
-}
+} */
 
 h1,
 h2,
@@ -79,7 +79,7 @@ code {
 
 /* SVG */
 
-#amstrad-logo path {
+#amstrad-logo path, #amstrad-logo-a {
   stroke: #000;
   stroke-width: 2;
   fill: #fefefe;
@@ -134,7 +134,17 @@ svg line {
   text-anchor: center;
 }
 
-.bsjack path {
+.connector.edge rect {
+  fill: #fefefe;
+  stroke: #000;
+  stroke-width: 2;
+}
+
+.connector.edge text {
+  text-anchor: middle;
+}
+
+.connector.bsjack path {
   stroke: #000;
   stroke-width: 3;
   fill: #fefefe;
@@ -143,7 +153,7 @@ svg line {
 .bsjack text {
   font-size: 27px;
   font-weight: bold;
-  text-anchor: right;
+  text-anchor: middle;
 }
 
 .bsjack rect {
