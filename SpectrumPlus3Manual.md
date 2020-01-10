@@ -1,5 +1,5 @@
 <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:500|Roboto+Slab:400,700&amp;display=swap" rel="stylesheet"></link>
-<link href="./spectrum-manual.css?" rel="stylesheet"></link>
+<link href="./spectrum-manual.css" rel="stylesheet"></link>
 <script src="./spectrum-manual.js"></script>
 
 # Contents
@@ -152,21 +152,36 @@ Therefore, you should adopt the following reading programme...
 
 [Chapter 4](#chapter4) - This chapter shows you how to load commercially available pre-recorded tape software. If you never intend to use such software, then you may skip this chapter.
 
-[Chapter 5](#chapter5) - This chapter covers the use of the +3's built-in disk drive (known as drive A:). You may skip this chapter only if you never intend to use the disk drive during BASIC programming (perhaps having purchased the +3 solely to load and run commercially available software (e.g. games)). Note that if you have connected an additional disk drive (B:) to the +3, then throughout the manual you should take any general references to 'the disk drive' as meaning both drives (A: and B:).
+[Chapter 5](#chapter5) - This chapter covers the use of the +3's built-in disk drive (known as drive A:). You may skip this chapter only if you never intend to use the disk drive during BASIC programming (perhaps having purchased the +3 solely to load and run commercially available software (eg. games)). Note that if you have connected an additional disk drive (B:) to the +3, then throughout the manual you should take any general references to 'the disk drive' as meaning both drives (A: and B:).
 
-[Chapter 6](#chapter6) - This chapter introduces you to +3 BASIC. It particular, it describes the editor and certain aspects of BASIC programming that differ from those of other computers. Therefore, even if you are an experienced BASIC programmer on another computer, you should still read [chapter 6](#chapter6). Note that you'll require a blank CF-2 floppy disk as you work through this chapter. If, however, you never intend to program in BASIC and have purchased the +3 solely to load and run commercially available software (e.g. games), then you may skip this chapter.
+[Chapter 6](#chapter6) - This chapter introduces you to +3 BASIC. It particular, it describes the editor and certain aspects of BASIC programming that differ from those of other computers. Therefore, even if you are an experienced BASIC programmer on another computer, you should still read [chapter 6](#chapter6). Note that you'll require a blank CF-2 floppy disk as you work through this chapter. If, however, you never intend to program in BASIC and have purchased the +3 solely to load and run commercially available software (eg. games), then you may skip this chapter.
 
 [Chapter 7](#chapter7) - This is the one chapter that you may freely skip. It describes the 48 BASIC mode (in which the +3 operates exactly like the 'old-style' Spectrum - even in the editing and programming aspects). This mode is not recommended as anything other than a history lesson for the curious, or for loading old (Spectrum 48 only) tape software. You should certainly not use this mode for BASIC programming; indeed you cannot access many of the advanced features of the +3 (including disk drive, extra memory, RS232/MIDI/AUX interfaces or RAMdisk) from 48 BASIC. Notwithstanding the above, we have provided the relevant information in this chapter for your reference.
 
-[Chapter 8](#chapter8) - This chapter forms the very heart of the manual. It is a complete guide to BASIC programming on the +3. If you have programmed in BASIC before, then you may wish to use this chapter merely as a reference guide, searching the main index to find the information you need from one of the subsections. If, on the other hand, you are new to BASIC, you may wish to work through the chapter, one subsection at a time, developing your programming skills as you go. Once you are able to type in and run a program, and have grasped a few of the fundamentals of BASIC, then you may feel confident about skipping ahead to later subsections. If, however, you never intend to program in BASIC and have purchased the +3 solely to load and run commercially available software (e.g. games), then you may skip this chapter.
+[Chapter 8](#chapter8) - This chapter forms the very heart of the manual. It is a complete guide to BASIC programming on the +3. If you have programmed in BASIC before, then you may wish to use this chapter merely as a reference guide, searching the main index to find the information you need from one of the subsections. If, on the other hand, you are new to BASIC, you may wish to work through the chapter, one subsection at a time, developing your programming skills as you go. Once you are able to type in and run a program, and have grasped a few of the fundamentals of BASIC, then you may feel confident about skipping ahead to later subsections. If, however, you never intend to program in BASIC and have purchased the +3 solely to load and run commercially available software (eg. games), then you may skip this chapter.
 
 [Chapter 9](#chapter9) - This chapter shows you how to use the +3 as a calculator only. You may skip this chapter if you wish.
 
 [Chapter 10](#chapter10) - This chapter illustrates how add-ons (peripherals) are connected to the +3. Peripherals include such devices as a cassette unit, a printer, an additional disk drive, a joystick, etc. So if you're thinking of linking up any device at all to the +3, check this chapter to make sure that you've got the right connections. If, on the other hand, you intend to use just the standard +3 set up (ie. computer and TV only), then you may skip this chapter.
 
-<svg xmlns="http://www.w3.org/2000/svg" width="33%" viewBox="-2 -2 784 208" stroke-linejoin="round" stroke-miterlimit="1"><path d="M40.6 203.2l3-40h16.6l3.3 40h40.8L78.8 1H26L0 203.2h40.6zM57.8 130H46l6-78.6 5.8 78.6zM171 1h-57v202.2h39V88l16 115.2h25.3L210 88.7v114.5h39V1h-57l-10.6 89.3L171 1zm85 24.6l.3 48a32.2 32.2 0 0 0 1.1 6.7c.6 2.2 1.6 5 3.2 7.4a25 25 0 0 0 2.8 3.6 54.6 54.6 0 0 0 4.6 4.4 60 60 0 0 0 11.3 7.5l25.5 14c1 .7 2.4 1.3 3.6 2.5 3 2.8 3 6 3 9.2l.2 4.4V161c0 2-.2 4-1 6a5.8 5.8 0 0 1-7.4 2.6 5.9 5.9 0 0 1-1.8-1.2c-2.2-2-2-5-2.2-7.6v-41.2h-43v46c0 5.7.1 11 1.3 16.6.7 3 1.7 5.8 3.3 8.5a23.5 23.5 0 0 0 6.2 6.8 29.8 29.8 0 0 0 7.6 3.9 24.7 24.7 0 0 0 5.6 1.2l5 .4h43.7c2 0 4 .1 6.4-.6a30 30 0 0 0 7.8-3.4c2.5-1.6 4.6-3.6 6-5.7s2.3-4.4 3-6.5 1.3-4 1.7-6.3a73 73 0 0 0 .8-8.6c.2-3 .1-6 .1-9.2l-.2-41a172 172 0 0 0-.4-6.9 26.2 26.2 0 0 0-.4-3.4 35.4 35.4 0 0 0-.6-2.4 17.7 17.7 0 0 0-1.1-2.9c-.6-1.3-1.6-3.2-2.8-5a28 28 0 0 0-4.2-4.9 44.2 44.2 0 0 0-5.2-4 170.1 170.1 0 0 0-12.7-7.9l-18.3-10a45.8 45.8 0 0 1-3.2-1.9 52 52 0 0 1-2.7-1.9c-1-.8-1-1-1.6-1.4-.2-.2-.3-.4-.6-1a12 12 0 0 1-1.7-4.6c-.1-1 0-1.8 0-2.6v-19a13 13 0 0 1 .5-4.6 9 9 0 0 1 1-2.1c2-2.8 4.6-3.2 7.3-2a6 6 0 0 1 1.7 1.3 6.7 6.7 0 0 1 1.2 1.8c.3.7.4 1.4.6 2.4a68.1 68.1 0 0 1 .2 7.3v24h43.2l-1-48.6a35.7 35.7 0 0 0-.7-2.7 21 21 0 0 0-1.2-3.3c-.7-1.5-1.7-3.7-3-5.6a21.6 21.6 0 0 0-5.1-4.9 26 26 0 0 0-6-3.1c-3.7-1.3-6.5-1.5-9.7-2-1.6-.2-3-.3-4.7-.3l-37.4.3a54 54 0 0 0-13 1.9 22.2 22.2 0 0 0-3.9 1.6c-2.5 1.3-4.5 2.8-6.6 5.4-1 1.3-2.2 3-3 4.8a27 27 0 0 0-3.1 11.6zM361.6 1v32.6h21.6v169.6h43.2V33.6h21.4V1h-86.2zm143.8 0h-46v202.2h43.2v-80.6c2.8.1 5.7-.2 8.5.7.6.2 1.2.5 1.7 1 2 1.7 1.8 4 2 6 .4 4.2.1 8.3.2 12.5v60.6h43.2V140a92 92 0 0 0-1.9-18.6c-.4-1.4-1-2.8-1.5-4.2a24 24 0 0 0-3.8-6.1c-1.6-1.8-3.4-3.4-5.5-4.7a23.9 23.9 0 0 0-6.6-2.8 27.6 27.6 0 0 0 3.4-1.1c2.2-1 4.3-2 6-3.5s3.4-3.3 4.7-5.3 2.2-4.2 2.8-6.5l1.2-5a122.4 122.4 0 0 0 1.2-20.5v-21c.1-4.2-.1-8.4-.6-12.6l-1-6c-.4-1.7-.8-3-1.3-4.4a25.2 25.2 0 0 0-1.9-3.8 25 25 0 0 0-2.5-3.5c-1.4-1.5-3-3-5-4a25.9 25.9 0 0 0-11.9-4.1c-9.6-1-19.2-.8-28.8-1zm-3 33h6a9.2 9.2 0 0 1 2.9.8c2.8 1.8 3 4.2 3.2 6.5l.3 7.7v26.6c0 1.6-.1 3.2-.4 4.7a5.7 5.7 0 0 1-2 3.8c-1.3 1.2-3 1.2-4.6 1.4-1.8.2-3.6.2-5.4.1V34zm105.2 169.3l3-40h16.6l3.3 40h41L646 1H593l-26 202.2h40.6zM625 130h-11.8l6-78.6L625 130zM774.3 13.5c-1.5-2.4-3.4-4.5-5.6-6.2s-4.8-3-6.7-3.7a19.6 19.6 0 0 0-4.3-1.2 58.9 58.9 0 0 0-3.7-.5 70.8 70.8 0 0 0-5.4-.4L680.3 1v202.2l68.6-.1c1.7 0 3.4-.5 5-.8 3.5-.6 6.6-1.3 10-2.8 1.8-.8 3.6-1.8 5.3-3a17.9 17.9 0 0 0 4.7-5.2 35 35 0 0 0 3.8-9.5 53.9 53.9 0 0 0 1.8-13.2l-.3-138c0-3-.8-6.3-1.6-9a29.8 29.8 0 0 0-3.3-7.9zm-48 20.6h2.7a14 14 0 0 1 2.5.5 6.7 6.7 0 0 1 1.8.8c.5.3 1 .8 1.3 1.2 1.5 2.3 1.3 5.4 1.4 8.3v116.5a18 18 0 0 1-.1 2.6c-.1.8-.3 1.7-.6 2.4s-.6 1.3-1 1.8a5.9 5.9 0 0 1-1.6 1.3c-.6.3-1.2.8-2 .8h-7l2.7-136z" fill="#fff" stroke="#000" stroke-width="3" />
+<figure>
+  <svg viewBox="-5 -5 790 210" width="33%" id="amstrad-logo">
+    <defs>
+      <g id="A">
+        <path d="M40 203l3-40h16l3 40h40L78 1H26L0 203h40zM57 130H46l6-78 5 78z" />
+      </g>
+    </defs>
+    <use xlink:href="#A" />
+    <path d="M170 1h-57v202h39V88l16 115h25L210 88v114h39V1h-57l-10 89L171 1z" />
+    <path d="M257 24l0 48a32.2 32 0 0 0 1.1 6c0 2 2 5 3 7a25 25 0 0 0 3 3 55 55 0 0 0 5 4 60 60 0 0 0 11 8l26 14c1 1 2 1 4 2 3 3 3 6 3 9l1 4V161c0 2-2 4-1 6a6 6 0 0 1-7 3 6 6 0 0 1-2-1c-2-2-2-5-2-8v-41h-43v46c0 5.7.1 11 1 16.6.7 3 1.7 6 3 9a24 24 0 0 0 6 7 30 30 0 0 0 8 4 25 25 0 0 0 6 1l5 1h44c2 0 4 0 6-1a30 30 0 0 0 8-3c3-2 5-4 6-6s2-4 3-7 1-4 2-6a73 73 0 0 0 1-9c0-3 0-6 0-9l-0-41a172 172 0 0 0-0-7 26 26 0 0 0-0-3 35 35 0 0 0-1-2 18 18 0 0 0-1-3c-1-1-2-3-3-5a28 28 0 0 0-4-5 44 44 0 0 0-5-4 170 170 0 0 0-13-8l-18-10a46 46 0 0 1-3-2 52 52 0 0 1-3-2c-1-1-1-1-2-1-0-0-0-0-1-1a12 12 0 0 1-2-5c-0-1 0-2 0-3v-19a13 13 0 0 1 0-5 9 9 0 0 1 1-2c2-3 5-3 7-2a6 6 0 0 1 2 1 7 7 0 0 1 1 2c.3.7.4 1.4.6 2a68 68 0 0 1 .2 7.3v24h43l-1-49a36 36 0 0 0-1-3 21 21 0 0 0-1-3c-1-2-2-4-3-6a22 22 0 0 0-5-5 26 26 0 0 0-6-3c-4-1-7-2-10-2-2-0-3-0-5-1l-37.4.3a54 54 0 0 0-13 2 22 22 0 0 0-4 2c-3 1-5 3-7 5-1 1-2 3-3 5a27 27 0 0 0-3 12z"/>
+    <path d="M362 1v33h22v170h43V34h21V1h-86z" />
+    <path d="M505 0h-46v202h43v-81c2.8.1 6-0 8.5.7.6.2 1.2.5 2 1 2 2 2 4 2 6 0 4.2.1 8.3.2 13v60.6h43V140a92 92 0 0 0-2-19c-0-1-1-3-2-4.2a24 24 0 0 0-4-6c-2-2-3-3-6-5a24 24 0 0 0-7-3 28 28 0 0 0 3-0c2-1 4-2 6-4s3.4-3 5-5 2-4 3-7l1.2-5a122 122 0 0 0 1-21v-21c.1-4-0-8-1-13l-1-6c-0-2-1-3-1-4a25 25 0 0 0-2-4 25 25 0 0 0-3-4c-1-2-3-3-5-4a26 26 0 0 0-12-4c-10-1-19-1-28-1zm-3 33h6a9 9 0 0 1 2.9.8c3 2 3 4 3 7l0 8v26.6c0 2-0 3-0 5a6 6 0 0 1-2 4c-1 1-3 1-5 1.4-1.8.2-3.6.2-5.4.1V34z"/>
+    <use xlink:href="#A" x="567" />
+    <path d="M774 14c-2-2-3-5-6-6s-5-3-7-4a20 20 0 0 0-4-1 59 59 0 0 0-4-1 71 71 0 0 0-5-1L680 1v202.2l68.6-0c2 0 3-2 5-1 4-1 7-1 10-3 2-1 4-2 5-3a18 18 0 0 0 5-5 35 35 0 0 0 4-10 54 54 0 0 0 2-13l-1-138c0-3-1-6-2-9a30 30 0 0 0-3-8Z m-48 21h3a14 14 0 0 1 2.5.5 7 7 0 0 1 1.8.8c.5.3 1 1 1 1 2 2 1 5 1 8v117a18 18 0 0 1-0 3c-.1.8-1 2-1 2s-1 1-1 2a6 6 0 0 1-2 1c-.6.3-1.2.8-2 1h-7l0-136z"/>
+  </svg>
+  <figcaption><p>© Copyright 1987 - AMSTRAD Plc.</p></figcaption>
+</figure>
 
-© Copyright 1987 - AMSTRAD Plc.
 Neither the whole nor any part of the information contained herein, nor the product described in this manual, may be adapted or reproduced in any material form except with the prior written approval of AMSTRAD Plc. ('AMSTRAD').
 
 The product described in this manual, and products for use with it are subject to continuous development and improvement. All information of a technical nature and particulars of the product and its use (including the information and particulars in this manual) are given by AMSTRAD in good faith.
@@ -342,6 +357,18 @@ Now switch on your TV. On the screen you will probably see either a faint TV pic
 The +3 is capable of generating its own test signal, enabling you to tune-in the TV accurately. The test signal consists of sixteen vertical colour bars (overprinted with text characters) which appear on the TV screen, and a repeating tone which is reproduced through the TV's speaker. (If you are using a black-and-white TV, then the colour bars appear as varying shades of grey.) You will see and hear the test signal when you have completed the tuning-in of your TV (described ahead).
 
 <canvas id="screen-test"></canvas>
+<script>spectrum('screen-test', 2, function(cx) {
+  clear(cx);
+  fill(cx, 16, borderSize, 16, 176, lightColors[7]);
+  let x = 0;
+  for (let c = 7; c >= 0; c--) {
+    fill(cx, borderSize + (x++ * 16), borderSize, 16, 176, darkColors[c]);
+    fill(cx, borderSize + (x++ * 16), borderSize, 16, 176, lightColors[c]);
+  }
+  x = 0;
+  for (let c = 7; c >= 0; c--)
+    text(cx, borderSize, borderSize + (x++ * 8), "19861986198619861986198619861986", lightColors[c]);
+});</script>
 
 Switch on the test signal by holding down the BREAK key (at the top right of the keyboard) and while it is held down, press and release the **RESET** button (at the left hand side of the +3). Keep the BREAK key held down for a few seconds longer, then release it. The test signal will now be generated by the +3, and you should proceed to tune-in your TV as now described.
 
@@ -458,6 +485,7 @@ We will now switch off the test signal and start using the +3. Press and release
 ### <a id="the-opening-menu"></a> The opening menu
 
 <canvas id="screen-opening-menu"></canvas>
+<script>spectrum('screen-opening-menu', 2, initialPlus3);</script>
 
 Note that the opening menu initially indicates which drives are available for use: drive A: is the built-in disk drive (at the front of the computer) and drive M: is the +3's internal RAMdisk (more about this in [chapter 8 part 20](#part20)). If you have connected an external disk drive to the +3, then you will see drive B: also indicated on the menu. The opening menu will appear whenever you first plug in and switch on the +3, or whenever you press and release the **RESET** button.
 
@@ -498,6 +526,11 @@ The computer then switches to the +3 BASIC mode. You will see a black horizontal
 Don't worry if you know nothing about BASIC - we're not going to do any programming just yet - we'll simply return to the opening menu again. To do this, we use a different menu - this one's called the edit menu. Call up the ***edit menu*** by pressing the **EDIT** key.
 
 <canvas id="screen-options"></canvas>
+<script>spectrum('screen-options', 2, function(cx) {
+  clear(cx);
+  optionsMenu(cx);
+  bottomBarWithStripe(cx, '+3 BASIC');
+})</script>
 
 Again, using the cursor keys and **ENTER**, select the option `Exit` to return to the opening menu.
 
@@ -553,6 +586,7 @@ To load Spectrum +3, Spectrum +2 and Spectrum 128 software (a game, an utility p
 1. Set up and switch on the +3 so that the opening menu appears on the screen...
 
 <canvas id="screen-loading-disk"></canvas>
+<script>spectrum('screen-loading-disk', 2, initialPlus3);</script>
 
 2. Insert your software disk into the disk drive.
 
@@ -592,6 +626,7 @@ To load Spectrum +3, Spectrum +2 and Spectrum 128 software (a game, an utility p
 1. Set up and switch on the system so that the opening menu appears on the screen...
 
 <canvas id="screen-loading-software"></canvas>
+<script>spectrum('screen-loading-software', 2, initialPlus3);</script>
 
 2. Make sure that no disk in inserted in the drive.
 
@@ -608,14 +643,23 @@ To load Spectrum 48 software (a game, an utility program, etc.) from tape, carry
 1. Set up and switch on the system so that the opening menu appears on the screen...
 
 <canvas id="screen-loading-48"></canvas>
+<script>spectrum('screen-loading-48', 2, initialPlus3);</script>
 
 2. Select the option `48 BASIC` from the opening menu. (If you don't know how to select a menu option, refer back to [chapter 2](#chapter2).) The opening menu will disappear and the following message will be displayed at the bottom of the screen...
 
 <canvas id="screen-basic-48"></canvas>
+<script>spectrum('screen-basic-48', 2, initial48K);</script>
 
 3. Now press the **J** key once, followed by the **"** (double quote) key twice. The screen should look like this...
 
 <canvas id="screen-basic-48-load"></canvas>
+<script>spectrum('screen-basic-48-load', 2, function(cx) {
+  clear(cx);
+  const y = borderSize + 192 - 8;
+  text(cx, borderSize, y, 'LOAD ""', darkColors[0]);
+  const x = borderSize + 7 * 8;
+  cursor48K(cx, x, y, 'L');
+})</script>
 
 When you see this message, press **ENTER**.
 
@@ -706,28 +750,42 @@ Various disk manufacturers employ differing mechanisms for opening and closing t
 
 To open the write protect hole, slide back the small shutter located at the left-hand corner of the disk, and the hole will be opened.
 
-Write protect hole (OPEN)               Write protection hole (CLOSED)
-```
-          |                                      ,^.
-         `v'                                      |
-        ____________________________            ____________________________
-Shutter/ |o|         __             \   Shutter/ |^|         __             \
-    ====>|_|        /  \            |       ====>|_|        /  \            |
-OPEN   |  :         |  |            |   CLOSED |            |  |            |
-       |  :         |  |            |          |            |  |            |
-       | `v'        \__/            |          |            \__/            |
-       |             __             |          |             __             |
-       |            /  \            |          |            /  \            |
-       |           |    |           |          |           |    |           |
-       |            \__/            |          |            \__/            |
-       |                            |          |                            |
-       |             ()             |          |             ()             |
-       |  ________________________  |          |  ________________________  |
-       | /                        \ |          | /                        \ |
- Write protection ON              | |    Write protection OFF             | |
-       | |                        | |          | |                        | |
-       \_|________________________|_/          \_|________________________|_/
-```
+<figure>
+  <svg viewBox="-2 -2 600 340" width="90%" id="disk-protect-side-diagram">
+  <defs>
+    <g id="disk-side">
+      <rect x="0" y="0" width="220" height="290" rx="8" ry="8" class="thick" />
+      <path d="M 11 289 v -60 a 8,8 0 0 1 8,-8 h 182 a 8,8 0 0 1 8,8 v 60" class="thick" />
+      <rect x="94" y="15" width="32" height="90" rx="20" ry="15" class="thin" />
+      <circle cx="110" cy="145" r="25" class="thin" />
+      <circle cx="110" cy="190" r="8" class="thin" />
+      <circle cx="110" cy="190" r="3" class="thin" />
+      <rect x="11" y="0.5" width="12" height="18" class="thin" />
+    </g>
+  </defs>
+    <use xlink:href="#disk-side" x="35" y="30" />
+    <circle cx="52" cy="36" r="2" class="hairline" />
+    <rect x="48" y="44" width="8" height="2" class="hairline" />
+    <text x="0" y="10" font-size="9px">Write protect hole (OPEN)</text>
+    <line x1="52" y1="15" x2="52" y2="30" class="thin" />
+    <path d="M 55 27 l -3 7 l -3 -7" class="filled" />
+    <text x="0" y="41" font-size="9px">Shutter</text>
+    <text x="0" y="55" font-size="9px">OPEN</text>
+    <line x1="21" y1="45" x2="42" y2="45" class="thin" />
+    <path d="M 38 42 l 7 3 l -7 3" class="filled" />
+    <line x1="52" y1="53" x2="52" y2="80" class="thin dashed" />
+    <path d="M 55 75 l -3 7 l -3 -7" class="filled" />
+    <use xlink:href="#disk-side" x="320" y="30" />
+    <rect x="333" y="33" width="8" height="2" class="hairline" />
+    <text x="280" y="41" font-size="9px">Shutter</text>
+    <text x="280" y="55" font-size="9px">CLOSED</text>
+    <line x1="310" y1="45" x2="323" y2="45" class="thin" />
+    <path d="M 323 45 v -3 l 7 3 l -7 3 v 3" class="filled" />
+    <line x1="337" y1="8" x2="337" y2="27" class="thin dashed" />
+    <path d="M 340 7 l -3 -7 l -3 7" class="filled" />
+  </svg>
+</figure>
+
 Once the hole is ***open***, write protection is ***ON***.
 
 To close the write protect hole, simply slide the shutter to its closed position. Write protection is then OFF.
@@ -820,6 +878,11 @@ Subjects covered...
 The screen should now look like this...
 
 <canvas id="screen-basic-plus3"></canvas>
+<script>spectrum('screen-basic-plus3', 2, function(cx) {
+  clear(cx);
+  cursor(cx, borderSize, borderSize);
+  bottomBarWithStripe(cx, '+3 BASIC');
+})</script>
 
 There are three things to notice about this screen.
 
@@ -832,6 +895,11 @@ The last item of note at the moment is the small screen. This fits between the f
 Now press the **EDIT** key. You will notice two things happen - the cursor vanishes, and a new menu appears. This is called the ***edit menu***...
 
 <canvas id="screen-basic-plus3-edit"></canvas>
+<script>spectrum('screen-basic-plus3-edit', 2, function(cx) {
+  clear(cx);
+  optionsMenu(cx);
+  bottomBarWithStripe(cx, '+3 BASIC');
+})</script>
 
 <a id="the-edit-menu"></a>The edit menu's options are selected in the same way as for the opening menu (by using the cursor keys and **ENTER**).
 
@@ -848,7 +916,7 @@ A useful aid to this renumbering facility can be found in [chapter 8 part 33](#p
 
 <a id="swapping-screens"></a>`Screen` - This option moves the cursor into the smaller (bottom) part of the screen, and allows BASIC to be entered and edited there. This is most useful for working with graphics, as any editing in the bottom screen does not disturb the top screen. To switch back to the top screen (which you can do at any time whilst editing), select the edit menu option `Screen` again.
 
-<a id="#listing-to-the-printer"></a>`Print` - If a printer is connected, this option will print-out a listing of the current program to it. When the listing has finished, the menu will go away and the cursor will come back. If for some reason the computer cannot print (e.g. the printer is not connected or is off-line), then pressing the **BREAK** key twice will return you to the editor.
+<a id="#listing-to-the-printer"></a>`Print` - If a printer is connected, this option will print-out a listing of the current program to it. When the listing has finished, the menu will go away and the cursor will come back. If for some reason the computer cannot print (eg. the printer is not connected or is off-line), then pressing the **BREAK** key twice will return you to the editor.
 
 `Exit` - This option returns you to the opening menu - the +3 retains any program that you were working on in the memory. If you wish to go back to the program again, select the option `+3 BASIC` from the opening menu.
 
@@ -1008,7 +1076,7 @@ Note that a filename on disk consists of two parts (***fields***). The first fie
 
 The second field is optional. You can use up to 3 characters (but again no spaces or punctuation). In the above example filename, 'pic' is the second field.
 
-If you use two fields in a filename, they must be separated by a dot (e.g. 'pattern.pic').
+If you use two fields in a filename, they must be separated by a dot (eg. 'pattern.pic').
 
 ## <a id="disk-catalog"></a> Disk catalog
 
@@ -1310,7 +1378,7 @@ keyboard('keyboard-48-graph', function(cx) {
         cx.font = '9px Arial';
         drawLabel(cx, 'GRAPHICS\nMODE\nOFF', x + w / 2, y + h, w, h, 10);
       } else if (c > 1 && c < 10) {
-        boxChar(cx, c - 1, x, y, 4, 24);
+        drawBoxChar(cx, c - 1, x + 4, y + 4, 24);
       }
     } else if (label) {
       drawLabel(cx, label, x + w, y + h + 11, w, h, 11);
@@ -1349,7 +1417,7 @@ keyboard('keyboard-48-graph-caps', function(cx) {
         cx.font = '9px Arial';
         drawLabel(cx, 'GRAPHICS\nMODE\nOFF', x + w / 2, y + h, w, h, 10);
       } else if (c > 1 && c < 10) {
-        boxCharInverse(cx, c - 1, x, y, 4, 24);
+        drawBoxChar(cx, c - 1, x + 4, y + 4, 24, true);
       }
     } else if (label) {
       drawLabel(cx, label, x + w, y + h + 11, w, h, 11);
@@ -1491,7 +1559,7 @@ keyboard('keyboard-graph', function(cx) {
         cx.font = '10px Segoe UI';
         drawLabel(cx, 'GRAPHICS\nMODE\nOFF', x + w / 2, y + h, w, h, 10);
       } else if (c > 1 && c < 10) {
-        boxChar(cx, c - 1, x, y, 4, 24);
+        drawBoxChar(cx, c - 1, x + 4, y + 4, 24);
       }
     }
   });
@@ -1518,7 +1586,7 @@ Pressing one of the keys **N**, **BREAK** or the space bar will make the program
 
     D BREAK - CONT repeats
 
-The smaller (bottom) part of the screen is used for editing short programs, entering input data, entering direct commands (where the main screen must not be used, e.g. graphics programs), and also for displaying reports.
+The smaller (bottom) part of the screen is used for editing short programs, entering input data, entering direct commands (where the main screen must not be used, eg. graphics programs), and also for displaying reports.
 
 ### Program entry
 
@@ -3032,6 +3100,14 @@ This program prints out the entire character set...
 On the screen will appear the following...
 
 <canvas id="screen-charset"></canvas>
+<script>spectrum('screen-charset', 2, function(cx) {
+  clear(cx);
+  cx.fillStyle = darkColors[0];
+  for (let i = 0; i < charLines.length; i++)
+    text(cx, borderSize, borderSize + (i * 8), charLines[i]);
+  graphics(cx, borderSize, borderSize + (3 * 8), '0123456789:;<=>?');
+  text(cx, borderSize, borderSize + 184, '0 OK, 10:1');
+})</script>
 
 The character set
 
@@ -3060,7 +3136,7 @@ keyboard('keyboard-graph-blocks', function(cx) {
         cx.font = '9px Arial';
         drawLabel(cx, 'GRAPHICS\nMODE\nOFF', x + w / 2, y + h, w, h, 10);
       } else if (c > 1 && c < 10) {
-        boxChar(cx, c - 1, x, y, 4, 24);
+        drawBoxChar(cx, c - 1, x + 4, y + 4, 24);
       }
     }
   })
@@ -3090,7 +3166,7 @@ keyboard('keyboard-graph-caps-blocks', function(cx) {
         cx.font = '9px Arial';
         drawLabel(cx, 'GRAPHICS\nMODE\nOFF', x + w / 2, y + h, w, h, 10);
       } else if (c > 1 && c < 10) {
-        boxCharInverse(cx, c - 1, x, y, 4, 24);
+        drawBoxChar(cx, c - 1, x, y, 4, 24, true);
       }
     }
   })
@@ -3102,7 +3178,6 @@ The cursor keys won't work properly while all this is going on as the +3 interpr
 Pressing the **9** key turns everything back to normal (as does pressing **GRAPH** again). The **0** key deletes the character to the left of the cursor.
 
 Here are the sixteen graphics symbols...
-
 
 | Symbol | Code | Symbol | Code
 | :----: | :--: | :----: | :--:
@@ -3121,10 +3196,10 @@ Here are the sixteen graphics symbols...
   for (let i = 0; i < 8; i++) {
     const reg = document.getElementById('box-char-' + i);
     reg.width = reg.height = size;
-    boxChar(reg.getContext('2d'), i, 0, 0, 0, size);
+    drawBoxChar(reg.getContext('2d'), i, 0, 0, size);
     const inv = document.getElementById('box-char-inv-' + i);
     inv.width = inv.height = size;
-    boxCharInverse(inv.getContext('2d'), i, 0, 0, 0, size);
+    drawBoxCharInverse(inv.getContext('2d'), i, 0, 0, size);
   }
 })();
 </script>
@@ -3891,7 +3966,7 @@ For instance, suppose a equals π. Then whatever values x and y take, a semicirc
 
 The drawing starts off in a south-easterly direction, but by the time it stops, it is going north-west. In between, it has turned through 180 degrees, or π radians (the value of a).
 
-Run the program several times, with `PI` replaced by various other expressions, e.g. `-PI`, `PI/2`, `3*PI/2`, `PI/4`, `1`, `0`, etc.
+Run the program several times, with `PI` replaced by various other expressions, eg. `-PI`, `PI/2`, `3*PI/2`, `PI/4`, `1`, `0`, etc.
 
 The last statement in this section is `CIRCLE`, which draws an entire circle. You specify the coordinates of the centre and the radius of the circle using...
 
@@ -4031,7 +4106,7 @@ Here is a revised clock program to make use of this...
     220 PLOT 131,91: DRAW OVER 1;sx,sy: REM rub out old hand
     230 LET t1=t: GO TO 120
 
-The internal clock that this method uses should be accurate to about 0.01% (approx 10 seconds per day) so long as the +3 is simply running the program. However, when you use the `BEEP` statement (described in [part 19 of this chapter](#part19)) or operate the disk drive or any peripheral attached to the +3 (e.g. a printer or second disk drive), the internal clock stops temporarily, losing time.
+The internal clock that this method uses should be accurate to about 0.01% (approx 10 seconds per day) so long as the +3 is simply running the program. However, when you use the `BEEP` statement (described in [part 19 of this chapter](#part19)) or operate the disk drive or any peripheral attached to the +3 (eg. a printer or second disk drive), the internal clock stops temporarily, losing time.
 
 The numbers `PEEK 23674`, `PEEK 23673`, and `PEEK 23672` are held inside the +3 and used for counting in 50ths of a second. Each is between 0 and 255 and they gradually increase through all the numbers from 0 to 255; after 255 they drop straight back to 0.
 
@@ -4293,48 +4368,44 @@ Now modify line 10 to...
 
 So far we've only used notes which start and stop at one level of volume. The +3 can alter the volume of a note while it is playing, so it can start loud and die away like a piano, or rise and fall like a dog growling. To turn these effects on, use `"W"` (for waveform) followed by a number between 0 and 7, together with `"U"` for each channel you want to use the effect on. Any channel with a volume setting (`"V"`) will not respond to `"U"`. This table shows graphically how the volume changes for each setting...
 
-<svg viewBox="0 0 300 290" width="50%" height="290">
-  <style>
-  .number { font-family: "Verdana"; font-weight: bold; font-size; 12px; text-anchor: start }
-  .guide { stroke: black; stroke-dasharray: 5,2 }
-  .base { stroke: black; stroke-width: 0.3 }
-  .wave { stroke: black; stroke-width: 2; stroke-linecap: round; stroke-miterlimit=1; fill: none }
-  </style>
-  <path d="M15 0 V 290" class="guide"  />
-  <path d="M35 0 V 290" class="guide" />
-  <text x="0" y="25" class="number">0</text>
-  <path d="M15 25 H 145" class="base" />
-  <text x="160" y="25">single decay then off.</text>
-  <path d="M 15 5 L 35 25 H 145" class="wave" />
-  <text x="0" y="60" class="number">1</text>
-  <path d="M15 60 H 145" class="base" />
-  <text x="160" y="60">single attack then off.</text>
-  <path d="M 15 60 L 35 40 V 60 H 145" class="wave" />
-  <text x="0" y="95" class="number">2</text>
-  <path d="M15 95 H 145" class="base" />
-  <text x="160" y="95">single decay then hold.</text>
-  <path d="M 15 75 L 35 95 V 75 H 145" class="wave" />
-  <text x="0" y="130" class="number">3</text>
-  <path d="M15 130 H 145" class="base" />
-  <text x="160" y="130">single attack then hold.</text>
-  <path d="M 15 130 L 35 110 H 145" class="wave" />
-  <text x="0" y="165" class="number">4</text>
-  <path d="M15 165 H 145" class="base" />
-  <text x="160" y="165">repeated decay.</text>
-  <path d="M 15 145 L 35 165 V 145 L 55 165 V 145 L 75 165 V 145 L 95 165 V 145 L 115 165 V 145 L 135 165 V 145 L 145 155" class="wave" />
-  <text x="0" y="200" class="number">5</text>
-  <path d="M15 200 H 145" class="base" />
-  <text x="160" y="200">repeated attack.</text>
-  <path d="M 15 200 L 35 180 V 200 L 55 180 V 200 L 75 180 V 200 L 95 180 V 200 L 115 180 V 200 L 135 180 V 200 L 145 190" class="wave" />
-  <text x="0" y="235" class="number">6</text>
-  <path d="M15 235 H 145" class="base" />
-  <text x="160" y="235">repeated attack-decay.</text>
-  <path d="M 15 235 L 35 215 L 55 235 L 75 215 L 95 235 L 115 215 L 135 235 L 145 225" class="wave" />
-  <text x="0" y="270" class="number">7</text>
-  <path d="M15 270 H 145" class="base" />
-  <text x="160" y="270">repeated decay-attack.</text>
-  <path d="M 15 250 L 35 270 L 55 250 L 75 270 L 95 250 L 115 270 L 135 250 L 145 260" class="wave" />
-</svg>
+<figure>
+  <svg viewBox="0 0 300 290" width="330" height="290" id="wave-diagram">
+    <path d="M15 0 V 290" class="guide"  />
+    <path d="M35 0 V 290" class="guide" />
+    <text x="0" y="25" class="number">0</text>
+    <path d="M15 25 H 145" class="base" />
+    <text x="240" y="25">single decay then off.</text>
+    <path d="M 15 5 L 35 25 H 145" class="wave" />
+    <text x="0" y="60" class="number">1</text>
+    <path d="M15 60 H 145" class="base" />
+    <text x="240" y="60">single attack then off.</text>
+    <path d="M 15 60 L 35 40 V 60 H 145" class="wave" />
+    <text x="0" y="95" class="number">2</text>
+    <path d="M15 95 H 145" class="base" />
+    <text x="240" y="95">single decay then hold.</text>
+    <path d="M 15 75 L 35 95 V 75 H 145" class="wave" />
+    <text x="0" y="130" class="number">3</text>
+    <path d="M15 130 H 145" class="base" />
+    <text x="240" y="130">single attack then hold.</text>
+    <path d="M 15 130 L 35 110 H 145" class="wave" />
+    <text x="0" y="165" class="number">4</text>
+    <path d="M15 165 H 145" class="base" />
+    <text x="240" y="165">repeated decay.</text>
+    <path d="M 15 145 L 35 165 V 145 L 55 165 V 145 L 75 165 V 145 L 95 165 V 145 L 115 165 V 145 L 135 165 V 145 L 145 155" class="wave" />
+    <text x="0" y="200" class="number">5</text>
+    <path d="M15 200 H 145" class="base" />
+    <text x="240" y="200">repeated attack.</text>
+    <path d="M 15 200 L 35 180 V 200 L 55 180 V 200 L 75 180 V 200 L 95 180 V 200 L 115 180 V 200 L 135 180 V 200 L 145 190" class="wave" />
+    <text x="0" y="235" class="number">6</text>
+    <path d="M15 235 H 145" class="base" />
+    <text x="240" y="235">repeated attack-decay.</text>
+    <path d="M 15 235 L 35 215 L 55 235 L 75 215 L 95 235 L 115 215 L 135 235 L 145 225" class="wave" />
+    <text x="0" y="270" class="number">7</text>
+    <path d="M15 270 H 145" class="base" />
+    <text x="240" y="270">repeated decay-attack.</text>
+    <path d="M 15 250 L 35 270 L 55 250 L 75 270 L 95 250 L 115 270 L 135 250 L 145 260" class="wave" />
+  </svg>
+</figure>
 
 This program plays the same note with each effect in turn, so you can compare them again the diagram above.
 
@@ -4418,22 +4489,22 @@ Finally, here is a brief list of the parameters that can be used in the string o
 
 Subjects covered...
 
-- Drives
-- `FORMAT`
-- Filenames
+- [Drives](#drives)
+- [`FORMAT`](#format)
+- [Filenames](#filenames)
 - `SAVE`, `LOAD`
-- Disk catalog: `CAT`
-- Wildcards
+- [Disk catalog: `CAT`](#disk-catalog)
+- [Wildcards](#wildcards)
 - `MERGE`
-- Deleting and renaming files
-- File attributes
-- `ERASE`, `MOVE`, CO`PY
-- The RAMdisk
-- Tape operations
-- `VERIFY`
-- Tape catalog: `CAT`
+- [Deleting and renaming files](#deleting-and-renaming)
+- [File attributes](#file-attributes)
+- `ERASE`, `MOVE`, `COPY`
+- [The RAMdisk](#ramdisk)
+- [Tape operations](#tape-operations)
+- [`VERIFY`](#verify)
+- [Tape catalog: `CAT`](#tape-catalog)
 
-### Drives
+### <a id="drives"></a> Drives
 
 The +3 has a built-in disk drive that can be used to save and load your own programs, and to load programs produced by other people. As it is also possible to connect a second disk drive to the +3, BASIC must have some way of identifying which disk drive is which. The built-in drive is known as drive A: (always followed by a colon because +3 BASIC knows that when you say A:, you mean 'disk drive A'). If the external drive is present, it is referred to as drive B:.
 
@@ -4458,7 +4529,7 @@ Now that you know which drives are available and what they are called, let's see
 
 This is the program that you are going to save to disk.
 
-As previously explained (in [chapter 6](#chapter6), you cannot simply unwrap a brand new disk and hope to save programs onto it straight away; it must first be made ready to use with the aid of the `FORMAT` command. `FORMAT` will erase anything that was previously on the disk and set it up for +3 BASIC to use. Be careful, therefore, not to `FORMAT` any disk that has programs on it you might like to keep. To format your new disk, type in the following...
+<a id="format"></a>As previously explained (in [chapter 6](#chapter6), you cannot simply unwrap a brand new disk and hope to save programs onto it straight away; it must first be made ready to use with the aid of the `FORMAT` command. `FORMAT` will erase anything that was previously on the disk and set it up for +3 BASIC to use. Be careful, therefore, not to `FORMAT` any disk that has programs on it you might like to keep. To format your new disk, type in the following...
 
     FORMAT "a:"
 
@@ -4501,7 +4572,7 @@ The words `SQUARES` is just a name that you use to 'label' the program you are g
 
 The range of characters that you are allowed to use for disk filenames is more limited than for tape filenames. The format of filenames used on +3 disks is the same as that used by an operating system known as ***CP/M*** (Control Program/Monitor) by Digital Research Inc. The fact that these formats are the same means that you can take a +3 disk and use it on other computers. Data can be transferred in this way between the +3 and a CP/M system, and this is most likely to be useful for people writing machine code programs or moving text from a +3 word processor to a CP/M program. (It is extremely unlikely that programs written in BASIC can be usefully converted from one machine to another using this method.)
 
-Filenames can be as simple as the example above - `SQUARES` (or even simpler - `S`, for example). However a full CP/M-type filename can be made up of as many as four parts: ***user number***, ***drive letter***, ***name*** and ***type***. Each of these parts is called a field (e.g. the name field or the type field).
+Filenames can be as simple as the example above - `SQUARES` (or even simpler - `S`, for example). However a full CP/M-type filename can be made up of as many as four parts: ***user number***, ***drive letter***, ***name*** and ***type***. Each of these parts is called a field (eg. the name field or the type field).
 
 You needn't worry about what user number means; if you don't know already, then it's probably best to remain blissfully ignorant. However, for anyone who is interested: on CP/M machines with very large disk capacities (or hard disks) with perhaps more than one terminal connected, user numbers are used to partition files into subsections (known as user areas) so that there isn't just one huge directory with several thousand files. On the +3, however, disks cannot have more than 64 files, so the use of user areas is not really necessary. Nevertheless, user areas can be specified in filenames used in +3 disk commands. They take the form...
 
@@ -4513,7 +4584,7 @@ You needn't worry about what user number means; if you don't know already, then 
 
 The problem with using user areas is that it's quite easy to forget which user area you saved a file to, and so finding it could take a while (as the `CAT` command can only catalog one user area at a time).
 
-As just mentioned, the drive letter will normally be A:, B: or M:. notice that the letter must be followed by a colon (e.g. 'a:squares'). If you don't specify a drive letter, then +3 BASIC will use the drive that was last used - this is known as the default drive. (When you first switch on the +3, the ***default*** drive is set to A:.) So typing...
+As just mentioned, the drive letter will normally be A:, B: or M:. notice that the letter must be followed by a colon (eg. 'a:squares'). If you don't specify a drive letter, then +3 BASIC will use the drive that was last used - this is known as the default drive. (When you first switch on the +3, the ***default*** drive is set to A:.) So typing...
 
     SAVE "squares"
 
@@ -4581,7 +4652,7 @@ Press **ENTER** then type in...
 
 The +3 will take a quick look at the disk (the read/write indicator lamp will come on briefly), and will display a list of the disk's contents on the screen. The list is sorted into alphanumerical order and each file is followed by an indication of its size to the nearest number of kilobytes (rounded up). At the end of the list, the amount of free space on the disk is also displayed.
 
-`CAT` (on its own) is the simplest form of the command. If you wanted to list all the files on a different drive (e.g. drive M:), you would use...
+`CAT` (on its own) is the simplest form of the command. If you wanted to list all the files on a different drive (eg. drive M:), you would use...
 
     CAT "m:"
 
@@ -4840,7 +4911,7 @@ Unlike ERASE, you cannot include the wildcards `*` or `?` when renaming files.
 
 `MOVE` has another use besides renaming files. It can also be used to change the ***attributes*** of a file. Attributes are bits of information associated with a file that tell you (and the computer) a little more about it.
 
-There are three attributes that can be changed. The most useful attribute is write protection. Once a file's write protection attribute has been set, it will not be possible to erase it (or save a file with the same name) until you remove the write protection. It behaves a little like the write protect hole on the disk, but works just on individual files. Unlike the write protect hole, however, it offers no protection against FORMAT, which erases everything on a disk, regardless of attributes. You can set a file's write protection attribute to ***on*** with a command such as...
+There are three attributes that can be changed. The most useful attribute is write protection. Once a file's write protection attribute has been set, it will not be possible to erase it (or save a file with the same name) until you remove the write protection. It behaves a little like the write protect hole on the disk, but works just on individual files. Unlike the write protect hole, however, it offers no protection against `FORMAT`, which erases everything on a disk, regardless of attributes. You can set a file's write protection attribute to ***on*** with a command such as...
 
     MOVE "squares" to "+p"
 
@@ -5107,7 +5178,7 @@ It could be that you mistyped the program name when you saved it (in which case 
 
 If there is a genuine mistake on the tape, then the +3 will display the report `R Tape loading error` which means in this case that it failed to verify the program. Note that a slight fault on the tape itself (which might be almost inaudible with music) can wreak havoc with a computer program. Try saving the program again, perhaps on a different part of the tape (or a different tape altogether).
 
-### <a id="verified-ok"></a> Verified OK
+### <a id="verify"></a> Verified OK
 
 Now let us suppose that you have saved the program and successfully verified it. Loading it back into the memory is just a matter of typing...
 
@@ -5224,9 +5295,9 @@ Subjects covered...
 
 - [Parallel printers](#parallel-printers)
 - [Serial printers](#serial-printers)
-- `LPRINT`, `LLIST`
-- `FORMAT`
-- `COPY`
+- [`LPRINT`, `LLIST`](#general-printing)
+- [`FORMAT`](#print-format)
+- [`COPY`](#print-copy)
 
 The +3 comes with an 8-bit Centronics parallel port and an RS232 serial port. Both are supported by built-in software enabling you to use virtually any printer. These features are usable only in +3 BASIC mode.
 
@@ -5292,7 +5363,7 @@ It's important to note that `LPRINT` and `LLIST` normally take care to screen ou
 
     LPRINT CHR$ (27);"x"; CHR$ (1); "This is in Near Letter Quality"
 
-However, in +3 BASIC, you must first issue the command...
+<a id="print-format"></a>However, in +3 BASIC, you must first issue the command...
 
     FORMAT LPRINT "U"
 
@@ -5322,7 +5393,7 @@ The third BASIC statement used with a printer - `COPY`, prints out a copy of the
 
     FOR n=1 TO 20: PRINT n,: NEXT n
 
-The numbers 1 to 20 will be printed in the top part of the screen. Now type...
+<a id="print-copy"></a>The numbers 1 to 20 will be printed in the top part of the screen. Now type...
 
     COPY
 
@@ -5476,18 +5547,18 @@ On the standard +3 system, streams and channels are of mostly academic interest.
 
 Subjects covered...
 
-- `IN`
-- `OUT`
+- [`IN`](#in)
+- [`OUT`](#out)
 
 The processor can read from (ROM and RAM) and write to (RAM) memory by using `PEEK` and `POKE`. The processor itself does not really care whether memory is ROM or RAM - it just thinks there are 65536 memory addresses, and it can read a byte from each one (even if it's nonsense), and write a byte to each one (even if it gets lost). In a completely analogous way, there are 65536 of what are called ***I/O ports*** (standing for input/output ports). These are used by the processor for communicating with things like the keyboard or the printer, and also for controlling the extra memory and the sound chip. Some of them can be safely controlled from BASIC by using the `IN` function and the `OUT` command, but there are locations to which you must not write from BASIC as you will probably cause the system to crash, losing any program and data.
 
-`IN` is a function like `PEEK`. Its form is...
+<a id="in"></a>`IN` is a function like `PEEK`. Its form is...
 
 - `IN` address
 
 It has one argument - the port address, and its result is a byte read from that port.
 
-`OUT` is a statement like `POKE`. Its form is...
+<a id="out"></a>`OUT` is a statement like `POKE`. Its form is...
 
 - `OUT` address`,`value
 
@@ -5518,7 +5589,7 @@ The keyboard is divided up into 8 half-rows of 5 keys each, viz:
 
 (These addresses are 254+256x(255-2^n) as n goes from 0 to 7.)
 
-Remember that digits followed by ***h*** signify hexadecimal numbers. If you don't understand hexadecimal numbers, refer to part 32 of this chapter.
+Remember that digits followed by ***h*** signify hexadecimal numbers. If you don't understand hexadecimal numbers, refer to [part 32](#part32) of this chapter.
 
 In the byte read in, bits D0 to D4 stand for the five keys in the given half-row. D0 is for the outside key, and D4 is for the one nearest the middle. The bit is 0 if the key is pressed, 1 if it is not. D6 is set by the tape interface, and is effectively random if no tape data is present.
 
@@ -5534,7 +5605,7 @@ Port address BFFDh (49149) drives the sound chip's data registers. Port address 
 
 Port address 0FFDh (4093) is used for the parallel (Centronics) interface (ie. **PRINTER**). When read using an `IN` instruction bit 0 shows the state of the BUSY signal produced by the printer. If the printer is off line or non-existent, then this bit will be 1. When this port is written to using `OUT`, it acts as the parallel port data register. In order to print a character it is necessary to wait until BUSY is 0, write the character code to port 0FFDh (4093), and finally, take the STROBE bit in port 1FFDh (8189) low than back high again.
 
-Port address 1FFDh (8189) controls several aspects of the +3. Amongst other things, this port controls the ROM that is switched into the memory area from 0000h...3FFFh (0...16383). As the port is write only, the +3 BASIC maintains a variable, [BANK678](#bank768), that holds the value last output to this port. It is therefore very unwise to `OUT` values directly to this port without first checking on the current state (which holds its current state in [BANKM](#bankm)). The bottom three bits (0..2) of this port (1FFDh) are used to switch RAM/ROM - further details can be found in part 24 of this chapter (under the heading [`Memory management'](#memory-management). Bit 3 controls the disk motor (0 is off, 1 is on), though it should not be necessary to control the motor by writing to this port as there are +3DOS routines that will achieve the desired effect. Bit 4 is the parallel port STROBE which is active low - this means that to print the character that has been output to port 0FFDh (4093), the STROBE bit should be brought low and then returned to its normally high state.
+Port address 1FFDh (8189) controls several aspects of the +3. Amongst other things, this port controls the ROM that is switched into the memory area from 0000h...3FFFh (0...16383). As the port is write only, the +3 BASIC maintains a variable, [BANK678](#bank678), that holds the value last output to this port. It is therefore very unwise to `OUT` values directly to this port without first checking on the current state (which holds its current state in [BANKM](#bankm)). The bottom three bits (0..2) of this port (1FFDh) are used to switch RAM/ROM - further details can be found in part 24 of this chapter (under the heading [`Memory management'](#memory-management). Bit 3 controls the disk motor (0 is off, 1 is on), though it should not be necessary to control the motor by writing to this port as there are +3DOS routines that will achieve the desired effect. Bit 4 is the parallel port STROBE which is active low - this means that to print the character that has been output to port 0FFDh (4093), the STROBE bit should be brought low and then returned to its normally high state.
 
 Port address 2FFDh (12285) can be used to read the disk controller (µPD765A) chip's main status register. This is unlikely to be very useful without an in-depth knowledge of how the chip operates.
 
@@ -5567,27 +5638,20 @@ Deep inside the +3, everything is stored as ***bytes***, ie. number between 0 an
 
 Each place where a byte can be stored has an address, which is a number between 0 (or 0000h) and 65535 (FFFFh). This means that an address can be stored as two bytes. You can think of the memory as a long row of numbered boxes, each of which can contain a byte. Not all the boxes are the same, however - the boxes from 4000h to FFFFh are ***RAM*** boxes, which means you can open the lid and alter the contents, but those from 0 to 3FFFh are ***ROM*** boxes, which have a glass lid that cannot be opened - you just have to read whatever was put into them when the computer was made. In the +3, we have crammed in more than twice the amount of memory than can comfortably fit. While the processor can address 65536 bytes, there are in fact 131072 bytes of RAM and 65536 bytes of ROM making 196608 bytes (192K) in all! All this is hidden from the processor by the hardware using a process called paging - BASIC (and the processor) always 'sees' the memory as 16K of ROM and 48K of RAM (or 64K of RAM with no ROM - though this latter combination is never used by BASIC).
 
-<svg xmlns="http://www.w3.org/2000/svg" width="33%" viewBox="-2 -2 220 260" stroke-linejoin="round" stroke-miterlimit="1">
-  <style>
-  .dec { font-weight: bold; font-size; 12px; text-anchor: end }
-  .hex { font-weight: bold; font-size; 12px; text-anchor: start }
-  .bank { font-weight: bold; font-size; 12px; text-anchor: middle }
-  .inner { stroke: black; stroke-width: 1 }
-  .outer { stroke: black; stroke-width: 2.5; fill: none }
-  </style>
-  <rect x="50" y="25" width="100" height="220" class="outer" />
+<svg xmlns="http://www.w3.org/2000/svg" width="33%" viewBox="-2 -2 220 260" id="rom-diagram">
+  <rect x="50" y="25" width="100" height="220" />
   <text x="40" y="25" class="dec">65535</text>
   <text x="160" y="25" class="hex">FFFFh</text>
   <text x="100" y="60" class="bank">RAM 0-7</text>
-  <line x1="50" y1="80" x2="150" y2="80" class="inner" />
+  <line x1="50" y1="80" x2="150" y2="80" />
   <text x="40" y="85" class="dec">49152</text>
   <text x="160" y="85" class="hex">C000h</text>
   <text x="100" y="115" class="bank">RAM 2</text>
-  <line x1="50" y1="135" x2="150" y2="135" class="inner" />
+  <line x1="50" y1="135" x2="150" y2="135" />
   <text x="40" y="140" class="dec">32768</text>
   <text x="160" y="140" class="hex">8000h</text>
   <text x="100" y="170" class="bank">RAM 5</text>
-  <line x1="50" y1="190" x2="150" y2="190" class="inner" />
+  <line x1="50" y1="190" x2="150" y2="190" />
   <text x="40" y="195" class="dec">16384</text>
   <text x="160" y="195" class="hex">4000h</text>
   <text x="100" y="220" class="bank">ROM 0-3</text>
@@ -5844,32 +5908,38 @@ The +3 also uses I/O port 1FFDh for some ROM and RAM switching. The bit field fo
 
 When bit 0 is 0, bit 1 has no effect and bit 2 is a 'vertical' ROM switch (ie. between ROM 0 and ROM 2, or between ROM 1 and ROM 3). Bit 4 in the port at 7FFDh is a 'horizontal' ROM switch (ie. between ROM 0 and ROM 1, or between ROM 2 and ROM 3). The following diagram serves to show the various ROM switching possibilities...
 
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-30 -5 450 410" height="410" id="paging-diagram">
+  <rect x="0" y="0" width="100" height="100" />
+  <rect x="300" y="0" width="100" height="100" />
+  <rect x="0" y="300" width="100" height="100" />
+  <rect x="300" y="300" width="100" height="100" />
+  <text x="50" y="25">ROM 0</text>
+  <text x="50" y="70">Editor</text>
+  <text x="350" y="25">ROM 1</text>
+  <text x="350" y="70">Syntax</text>
+  <text x="50" y="330">ROM 2</text>
+  <text x="50" y="370">DOS</text>
+  <text x="350" y="330">ROM 3</text>
+  <text x="350" y="370">48 BASIC</text>
+  <text x="350" y="200">vertical</text>
+  <text x="50" y="200">vertical</text>
+  <text x="200" y="50">horizontal</text>
+  <text x="200" y="350">horizontal</text>
+  <text x="200" y="10">Bit 4 7FFFd (23388)</text>
+  <text x="200" y="25" font-size="85%" class="sysvar">(system variable: BANKM)</text>
+  <text x="50" y="160">Bit 2 1FFFd (23399)</text>
+  <text x="50" y="175" font-size="85%" class="sysvar">(system variable: BANK678)</text>
+  <text x="50" y="115" class="arrow">↑</text>
+  <text x="350" y="115" class="arrow">↑</text>
+  <text x="50" y="295" class="arrow">↓</text>
+  <text x="350" y="295" class="arrow">↓</text>
+  <text x="110" y="50" class="arrow">←</text>
+  <text x="110" y="350" class="arrow">←</text>
+  <text x="290" y="50" class="arrow">→</text>
+  <text x="290" y="350" class="arrow">→</text>
+</svg>
 
-    +-------------+    Bit 4  7FFDh (23388)    +-------------+
-    |         |  (system variable: BANKM)  |         |
-    |    ROM 0    |                |    ROM 1    |
-    |         | <-----  horizontal  -----> |         |
-    |   Editor    |                |   Syntax    |
-    |         |                |         |
-    +-------------+                +-------------+
-           ^                      ^
-           |                      |
-                              |
-      Bit 2  1FFDh (23399)                |
-   (system variable: BANK678)
-       vertical                    vertical
-
-           |                      |
-           v                      v
-    +-------------+                +-------------+
-    |         |                |         |
-    |    ROM 2    |                |    ROM 3    |
-    |         | <-----  horizontal  -----> |         |
-    |     DOS     |                |  48 BASIC   |
-    |         |                |         |
-    +-------------+                +-------------+
-
-Horizontal and vertical ROM switching
+<center>Horizontal and vertical ROM switching</center>
 
 It is best to think of bit 4 in port 7FFDh and bit 2 in port 1FFDh combining to form a 2-bit number (0...3) which determines which ROM occupies the memory area 0000h...3FFFh. Bit 4 of port 7FFDh is the least significant bit and bit 2 of 1FFDh is the most significant bit.
 
@@ -6072,7 +6142,7 @@ The return address to BASIC is 'stacked' in the usual way, so return is by a Z80
 
 The system variable at 5CB0h (23728) was documented on previous models of the Spectrum as 'Not used'. It is now used on the +3 as an NMI jump vector. If an NMI occurs, this address is checked. If it contains a 0, then no action is taken. However, for any other (non-zero) value, a jump will be made to the address given by this variable. NMIs must not occur while the disk system is active.
 
-There are a number of standard pitfalls when programming a banked system such as the +3 from machine code. If you are experiencing problems, check that your stack is not being paged out during interrupts, and that your interrupt routine is always where you expect it to be (it is advisable to disable interrupts during paging operations). It is also recommended that you keep a copy of the current bank register setting in unpaged RAM somewhere as the ports are write-only. BASIC and the editor use the system variables BANKM and BANK678 for 7FFDh and 1FFDh respectively.
+There are a number of standard pitfalls when programming a banked system such as the +3 from machine code. If you are experiencing problems, check that your stack is not being paged out during interrupts, and that your interrupt routine is always where you expect it to be (it is advisable to disable interrupts during paging operations). It is also recommended that you keep a copy of the current bank register setting in unpaged RAM somewhere as the ports are write-only. BASIC and the editor use the system variables [BANKM](#bankm) and [BANK678](#bank678) for 7FFDh and 1FFDh respectively.
 
 If you call +3DOS routines, remember that interrupts should be enabled upon entry to the routines. Remember also that the stack must be below BFE0h (49120) and above 4000h (16384), and that there must be at least 50 words of stack space available.
 
@@ -6219,9 +6289,9 @@ As some of you may not have an assembler available, the following is a BASIC pro
 
 The addresses picked for the above code and its data areas are completely arbitrary. However, it is a good idea to keep things in the central 32K wherever possible so as not to run into the pitfall of accidentally switching out a vital variable or piece of code.
 
-If interrupts are to be enabled (as is the case in the above example), it is imperative that the system is kept up to date about the latest ROM switch. This mean that the user must make the BANK678 system variable reflect the last value output to the port at 1FFDh. As shown by the above example, the general technique is to take a copy of the variable in A, set/reset the relevant its, update the system variable then make the switch with an `OUT` instruction. Interrupts must be disabled while the system variable does not reflect the current state of the port. The port at 1FFDh doesn't just control the ROM switch, so setting the variable to absolute values would be very unwise. Using AND/OR with a bit mask or SET/RES instructions is the preferred method of updating the variable.
+If interrupts are to be enabled (as is the case in the above example), it is imperative that the system is kept up to date about the latest ROM switch. This mean that the user must make the [BANK678](#bank678) system variable reflect the last value output to the port at 1FFDh. As shown by the above example, the general technique is to take a copy of the variable in A, set/reset the relevant its, update the system variable then make the switch with an `OUT` instruction. Interrupts must be disabled while the system variable does not reflect the current state of the port. The port at 1FFDh doesn't just control the ROM switch, so setting the variable to absolute values would be very unwise. Using AND/OR with a bit mask or SET/RES instructions is the preferred method of updating the variable.
 
-Just as BANK678 reflects the last value output to 1FFDh, BANKM should also be kept up to date with the last value output to 7FFDh. Again, it is unwise to use absolute values, as the port is used for other purposes. For example, the bottom 3 bits of the port are used to select the RAM page that is switched into the memory area C000h...FFFFh (this is also shown in the above example). naturally, when more than one bit is to be set/reset, a bit mask used with OR/AND is the more efficient method. note that RAM paging was described in the section entitled 'Memory management' in [part 24 of this chapter](#part24).
+Just as [BANK678](#bank678) reflects the last value output to 1FFDh, [BANKM](#bankm) should also be kept up to date with the last value output to 7FFDh. Again, it is unwise to use absolute values, as the port is used for other purposes. For example, the bottom 3 bits of the port are used to select the RAM page that is switched into the memory area C000h...FFFFh (this is also shown in the above example). naturally, when more than one bit is to be set/reset, a bit mask used with OR/AND is the more efficient method. note that RAM paging was described in the section entitled 'Memory management' in [part 24 of this chapter](#part24).
 
 The above was a very simple example of calling DOS routines. The following shows one or two extra techniques that you may find useful. However, if you are not already familiar with assembler programming, it might be better to skip this example.
 
@@ -6242,7 +6312,7 @@ This example was developed using M80 on a CP/M based machine - so the method to 
      bank1               equ  07FFDh    ;"horizontal" and RAM switch port
      bankm               equ  05B5Ch    ;associated system variable
      bank2               equ  01FFDh    ;"vertical" switch port
-     bank678             equ  05B67h    ;associated system variable
+     [bank678]             equ  05B67h    ;associated system variable
 
      select              equ  01601h    ;BASIC routine to open stream
      dos_ref_xdpb        equ  0151h     ;
@@ -6654,8 +6724,8 @@ The issue and version numbers are provided for any future expansion. The issue n
 
 The following formats are automatically detected when the disk is first accessed:
 
-* AMSTRAD PCW range single track (e.g. as used on model PCW8256)
-* AMSTRAD PCW range double track (e.g. as used on model PCW8512)
+* AMSTRAD PCW range single track (eg. as used on model PCW8256)
+* AMSTRAD PCW range double track (eg. as used on model PCW8512)
 * AMSTRAD CPC range system format
 * AMSTRAD CPC range vendor format
 * AMSTRAD CPC range data only format
@@ -6884,7 +6954,7 @@ To enable this mapping, the routine DOS MAP B is called, passing to it the addre
 
     Please put the disk for x: into the drive then press any key
 
-...(where x is the name of the logical drive, e.g. `A:` or `B:`). The routine should then wait for a key to be pressed before returning, after which it is assumed that the disk in unit 0 is for the required logical drive.
+...(where x is the name of the logical drive, eg. `A:` or `B:`). The routine should then wait for a key to be pressed before returning, after which it is assumed that the disk in unit 0 is for the required logical drive.
 
 [DOS MAP B](#dos-map-b) can also be used to re-map B onto unit 1. If unit 1 does not exist, then drive B: is disabled.
 
@@ -9649,6 +9719,11 @@ To use the calculator, call up the opening menu and select the `Calculator` opti
 When you have selected the `Calculator` option, the screen will change to...
 
 <canvas id="screen-calculator"></canvas>
+<script>spectrum('screen-calculator', 2, function(cx) {
+  clear(cx);
+  cursor(cx, borderSize, borderSize);
+  bottomBarWithStripe(cx, 'Calculator');
+});</script>
 
 <a id="entering-numbers"></a>...and the +3's calculator is ready to accept your first entry. Type in...
 
@@ -9697,6 +9772,11 @@ BASIC keywords are not allowed to be used as variable names.
 When you have finished using the calculator, press the **EDIT** key. The screen will change to...
 
 <canvas id="screen-calculator-options"></canvas>
+<script>spectrum('screen-calculator-options', 2, function(cx) {
+  clear(cx);
+  menu(cx, borderSize + (8 * 8), borderSize + (7 * 8), 14 * 8, 'Options', Array('Calculator', 'Exit'), 0);
+  bottomBarWithStripe(cx, 'Calculator');
+})</script>
 
 <a id="exiting-the-calculator"></a>Select the `Exit` option to return to the opening menu. If you were working on a +3 BASIC program before you started using the calculator, then you may return to the program by selecting the `+3 BASIC` option. (If you wish to continue using the calculator, then select the `Calculator` option.)
 
@@ -9764,7 +9844,7 @@ Details of tape operation will be found in [chapter 4](#chapter4) and [chapter 8
 
 ## <a id="printer"></a> Printer
 
-The +3 may be used with any Centronics compatible parallel printer. We would particularly recommend the AMSTRAD DMP range of printers (e.g. models DMP2000, DMP3000, DMP3160 or DMP4000) for use with the +3.
+The +3 may be used with any Centronics compatible parallel printer. We would particularly recommend the AMSTRAD DMP range of printers (eg. models DMP2000, DMP3000, DMP3160 or DMP4000) for use with the +3.
 
 If you intend to connect the AMSTRAD DMP2000 to the +3, simply use the interconnecting lead provided with the printer.
 
@@ -9774,17 +9854,81 @@ Connect the end of the lead which is fitted with the flat edge-connector plug, i
 
 Connect the other end of the lead (which is fitted with a Centronics style plug) into the socket on the printer. If your printer is equipped with security clips at each side of the socket, these may be clipped into the cut-outs at the side of the printer plug.
 
-```
-  17  16  15  14  13  12  11  10   9   8   7   6   5   4   3   2   1
-  .-. .-. .-. .-. .-. .-. .-. .-. .-. .-. .-. .-. .-. .-. .-. .-. .-.
-|^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^|^^^^^^^^^^^^^^^^|
-|____________________________________________________|________________|
-  `-' `-' `-' `-' `-' `-' `-' `-' `-' `-' `-' `-' `-' `-' `-' `-' `-'
-  35  34  33  32  31  30  29  28  27  26  25  24  23  22  21  20  19
-```
-(viewed from rear)
-
-**PRINTER** socket
+<figure class="connector edge">
+  <svg viewBox="15 0 382 70" width="100%">
+    <rect y="30" x="30" height="5" width="15" />
+    <rect y="30" x="50" height="5" width="15" />
+    <rect y="30" x="70" height="5" width="15" />
+    <rect y="30" x="90" height="5" width="15" />
+    <rect y="30" x="110" height="5" width="15" />
+    <rect y="30" x="130" height="5" width="15" />
+    <rect y="30" x="150" height="5" width="15" />
+    <rect y="30" x="170" height="5" width="15" />
+    <rect y="30" x="190" height="5" width="15" />
+    <rect y="30" x="210" height="5" width="15" />
+    <rect y="30" x="230" height="5" width="15" />
+    <rect y="30" x="250" height="5" width="15" />
+    <rect y="30" x="270" height="5" width="15" />
+    <rect y="30" x="290" height="5" width="15" />
+    <rect y="30" x="310" height="5" width="15" />
+    <rect y="30" x="330" height="5" width="15" />
+    <rect y="30" x="350" height="5" width="15" />
+    <rect y="35" x="20" width="355" height="15" />
+    <rect y="50" x="30" height="5" width="15" />
+    <rect y="50" x="50" height="5" width="15" />
+    <rect y="50" x="70" height="5" width="15" />
+    <rect y="50" x="90" height="5" width="15" />
+    <rect y="50" x="110" height="5" width="15" />
+    <rect y="50" x="130" height="5" width="15" />
+    <rect y="50" x="150" height="5" width="15" />
+    <rect y="50" x="170" height="5" width="15" />
+    <rect y="50" x="190" height="5" width="15" />
+    <rect y="50" x="210" height="5" width="15" />
+    <rect y="50" x="230" height="5" width="15" />
+    <rect y="50" x="250" height="5" width="15" />
+    <rect y="50" x="270" height="5" width="15" />
+    <rect y="50" x="290" height="5" width="15" />
+    <rect y="50" x="310" height="5" width="15" />
+    <rect y="50" x="330" height="5" width="15" />
+    <rect y="50" x="350" height="5" width="15" />
+    <text y="25" x="37" class="pin">17</text>
+    <text y="25" x="57" class="pin">16</text>
+    <text y="25" x="77" class="pin">15</text>
+    <text y="25" x="97" class="pin">14</text>
+    <text y="25" x="117" class="pin">13</text>
+    <text y="25" x="137" class="pin">12</text>
+    <text y="25" x="157" class="pin">11</text>
+    <text y="25" x="177" class="pin">10</text>
+    <text y="25" x="197" class="pin">9</text>
+    <text y="25" x="217" class="pin">8</text>
+    <text y="25" x="237" class="pin">7</text>
+    <text y="25" x="257" class="pin">6</text>
+    <text y="25" x="277" class="pin">5</text>
+    <text y="25" x="297" class="pin">4</text>
+    <text y="25" x="317" class="pin">3</text>
+    <text y="25" x="337" class="pin">2</text>
+    <text y="25" x="357" class="pin">1</text>
+    <text y="70" x="37" class="pin">35</text>
+    <text y="70" x="57" class="pin">34</text>
+    <text y="70" x="77" class="pin">33</text>
+    <text y="70" x="97" class="pin">32</text>
+    <text y="70" x="117" class="pin">31</text>
+    <text y="70" x="137" class="pin">30</text>
+    <text y="70" x="157" class="pin">29</text>
+    <text y="70" x="177" class="pin">28</text>
+    <text y="70" x="197" class="pin">27</text>
+    <text y="70" x="217" class="pin">26</text>
+    <text y="70" x="237" class="pin">25</text>
+    <text y="70" x="257" class="pin">24</text>
+    <text y="70" x="277" class="pin">23</text>
+    <text y="70" x="297" class="pin">22</text>
+    <text y="70" x="317" class="pin">21</text>
+    <text y="70" x="337" class="pin">20</text>
+    <text y="70" x="357" class="pin">19</text>
+    <line y1="35" x1="288" y2="50" x2="288" />
+  </svg>
+  <figcaption><p>viewed from rear</p><strong>PRINTER</strong> socket</figcaption>
+</figure>
 
 | PIN | FUNCTION       | PIN | FUNCTION       |
 |-----|----------------|-----|----------------|
@@ -9833,17 +9977,81 @@ Important - Before connecting or disconnecting the additional disk drive, make s
 
 When the FD-1 is connected to the +3, first switch on the FD-1 (using the slide switch at the back of the disk drive), then switch on the +3 (by plugging in the PSU). Both the green and red indicators on the front panel of the FD-1 should be illuminated. The two-drive system will then be ready to operate.
 
-```
-   2   4   6   8  10  12  14  16  18  20  22  24  26  28  30  32  34
-  .-. .-. .-. .-. .-. .-. .-. .-. .-. .-. .-. .-. .-. .-. .-. .-. .-.
-|^^^^^^^^|^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^|
-|________|____________________________________________________________|
-  `-' `-' `-' `-' `-' `-' `-' `-' `-' `-' `-' `-' `-' `-' `-' `-' `-'
-   1   3   5   7   9  11  13  15  17  19  21  23  25  27  29  31  33
-```
-(viewed from rear)
-
-**DISK B:** socket
+<figure class="connector edge">
+  <svg viewBox="15 0 382 70" width="75%">
+    <rect y="30" x="30" height="5" width="15" />
+    <rect y="30" x="50" height="5" width="15" />
+    <rect y="30" x="70" height="5" width="15" />
+    <rect y="30" x="90" height="5" width="15" />
+    <rect y="30" x="110" height="5" width="15" />
+    <rect y="30" x="130" height="5" width="15" />
+    <rect y="30" x="150" height="5" width="15" />
+    <rect y="30" x="170" height="5" width="15" />
+    <rect y="30" x="190" height="5" width="15" />
+    <rect y="30" x="210" height="5" width="15" />
+    <rect y="30" x="230" height="5" width="15" />
+    <rect y="30" x="250" height="5" width="15" />
+    <rect y="30" x="270" height="5" width="15" />
+    <rect y="30" x="290" height="5" width="15" />
+    <rect y="30" x="310" height="5" width="15" />
+    <rect y="30" x="330" height="5" width="15" />
+    <rect y="30" x="350" height="5" width="15" />
+    <rect y="35" x="20" width="355" height="15" />
+    <rect y="50" x="30" height="5" width="15" />
+    <rect y="50" x="50" height="5" width="15" />
+    <rect y="50" x="70" height="5" width="15" />
+    <rect y="50" x="90" height="5" width="15" />
+    <rect y="50" x="110" height="5" width="15" />
+    <rect y="50" x="130" height="5" width="15" />
+    <rect y="50" x="150" height="5" width="15" />
+    <rect y="50" x="170" height="5" width="15" />
+    <rect y="50" x="190" height="5" width="15" />
+    <rect y="50" x="210" height="5" width="15" />
+    <rect y="50" x="230" height="5" width="15" />
+    <rect y="50" x="250" height="5" width="15" />
+    <rect y="50" x="270" height="5" width="15" />
+    <rect y="50" x="290" height="5" width="15" />
+    <rect y="50" x="310" height="5" width="15" />
+    <rect y="50" x="330" height="5" width="15" />
+    <rect y="50" x="350" height="5" width="15" />
+    <text y="25" x="37" class="pin">2</text>
+    <text y="25" x="57" class="pin">4</text>
+    <text y="25" x="77" class="pin">6</text>
+    <text y="25" x="97" class="pin">8</text>
+    <text y="25" x="117" class="pin">10</text>
+    <text y="25" x="137" class="pin">12</text>
+    <text y="25" x="157" class="pin">14</text>
+    <text y="25" x="177" class="pin">16</text>
+    <text y="25" x="197" class="pin">18</text>
+    <text y="25" x="217" class="pin">20</text>
+    <text y="25" x="237" class="pin">22</text>
+    <text y="25" x="257" class="pin">24</text>
+    <text y="25" x="277" class="pin">26</text>
+    <text y="25" x="297" class="pin">28</text>
+    <text y="25" x="317" class="pin">30</text>
+    <text y="25" x="337" class="pin">32</text>
+    <text y="25" x="357" class="pin">34</text>
+    <text y="70" x="37" class="pin">1</text>
+    <text y="70" x="57" class="pin">3</text>
+    <text y="70" x="77" class="pin">5</text>
+    <text y="70" x="97" class="pin">7</text>
+    <text y="70" x="117" class="pin">9</text>
+    <text y="70" x="137" class="pin">11</text>
+    <text y="70" x="157" class="pin">13</text>
+    <text y="70" x="177" class="pin">15</text>
+    <text y="70" x="197" class="pin">17</text>
+    <text y="70" x="217" class="pin">19</text>
+    <text y="70" x="237" class="pin">21</text>
+    <text y="70" x="257" class="pin">23</text>
+    <text y="70" x="277" class="pin">25</text>
+    <text y="70" x="297" class="pin">27</text>
+    <text y="70" x="317" class="pin">29</text>
+    <text y="70" x="337" class="pin">31</text>
+    <text y="70" x="357" class="pin">33</text>
+    <line y1="35" x1="68" y2="50" x2="68" />
+  </svg>
+  <figcaption><p>viewed from rear</p><strong>DISK B:</strong> socket</figcaption>
+</figure>
 
 | PIN | FUNCTION        | PIN | FUNCTION       |
 |:---:|-----------------|:---:|----------------|
@@ -9918,19 +10126,13 @@ A VDU monitor (or PERITEL TV) should be plugged into the RGB/PERITEL socket at t
 |  7  | red            |
 |  8  | blue           |
 
-```
-      __   __
-    _- |___| -_
-   /  7     6  \
-  /   o     o   \
-  | 3    8    1 |
-  | o    o    o |
-  \  5       4  /
-   \ o   2   o /
-    -_   o   _-
-      `-----'
-```
-*RGB/PERITEL* socket
+<figure id="vdu">
+  <svg viewBox="0 0 100 100" width="15%">
+    <text y="100" x="100">8</text>
+    <path -d="M40 0 V 15 H 55 V 0 C 195 80 -100 80 40 0 Z" />
+  </svg>
+  <figcaption><strong>RGB/PERITEL</strong> socket</figcaption>
+</figure>
 
 When using a monitor, some provision may have to be made for sound (if required). If the monitor has an audio input, then this should be connected either to pin 3 of the **RGB/PERITEL** socket or to the **TAPE/SOUND** socket at the back of the +3. If the monitor is not capable of producing sound, then an external amplifier will have to be used. See the next paragraph for further details.
 
@@ -9942,21 +10144,14 @@ Another point to note is that the level of sound produced by the `BEEP` command 
 
 It is safe to plug in (or unplug) an amplifier, tape recorder, etc. into the **TAPE/SOUND** socket while the +3 is switched on.
 
-```
-                       (not used)
-                           |
-                           |       ___
-             ___    _      v      |   --_
-  (not used)    \/ | |     _ _____|      -.___________
-                   | |  ()[_[_____|       |___________
-Audio output _/\   |_|  ^       | |     _-'
-                    |   |       | |___--
-GND (common) _______|   |       |
-                      Audio    GND
-                      output (common)
-```
-
-**TAPE/SOUND** socket
+<figure class="connector ">
+  <svg viewBox="0 0 350 350" width="75%">
+    <rect y="55" x="70" width="10" height="50" class="open" />
+    <path d="M20 55 h 30 d 10 10" />
+    <-text y="45" x="79">6</text>
+  </svg>
+  <figcaption><strong>TAPE/SOUND</strong> socket</figcaption>
+</figure>
 
 Details of the +3's sound facilities will be found in [chapter 8 part 19](#part19).
 
@@ -9975,14 +10170,24 @@ If you wish to wire-up your own, then the connections are as follows...
 |  5  | CTS      |
 |  6  | +12V     |
 
-```
-      ___________________________
-   __|   6   5   4   3   2   1   |
-  |__   ### ### ### ### ### ###  |
-     |___________________________|
-```
-
-**RS232** socket
+<figure class="connector bsjack">
+  <svg viewBox="0 -2 312 130" width="25%">
+    <path d="M10 60 V30 H50 V0 H310 V100 H50 V60 z" />
+    <text y="45" x="79">6</text>
+    <rect y="55" x="70" width="20" height="10" />
+    <text y="45" x="119">5</text>
+    <rect y="55" x="110" width="20" height="10" />
+    <text y="45" x="159">4</text>
+    <rect y="55" x="150" width="20" height="10" />
+    <text y="45" x="199">3</text>
+    <rect y="55" x="190" width="20" height="10" />
+    <text y="45" x="239">2</text>
+    <rect y="55" x="230" width="20" height="10" />
+    <text y="45" x="279">1</text>
+    <rect y="55" x="270" width="20" height="10" />
+  </svg>
+  <figcaption><strong>RS232</strong> socket</figcaption>
+</figure>
 
 Details of serial operations will be found in [chapter 8 part 21](#part21).
 
@@ -10001,14 +10206,24 @@ Using the MIDI interface will not disturb the RS232's baud rate setting.
 |  5  | DATA OUT |
 |  6  | not used |
 
-```
-     ___________________________
-  __|   6   5   4   3   2   1   |
- |__   ### ### ### ### ### ###  |
-    |___________________________|
-```
-
-**MIDI** socket
+<figure class="connector bsjack">
+  <svg viewBox="0 -2 312 130" width="25%">
+    <path d="M10 60 V30 H50 V0 H310 V100 H50 V60 z" />
+    <text y="45" x="79">6</text>
+    <rect y="55" x="70" width="20" height="10" />
+    <text y="45" x="119">5</text>
+    <rect y="55" x="110" width="20" height="10" />
+    <text y="45" x="159">4</text>
+    <rect y="55" x="150" width="20" height="10" />
+    <text y="45" x="199">3</text>
+    <rect y="55" x="190" width="20" height="10" />
+    <text y="45" x="239">2</text>
+    <rect y="55" x="230" width="20" height="10" />
+    <text y="45" x="279">1</text>
+    <rect y="55" x="270" width="20" height="10" />
+  </svg>
+  <figcaption><strong>MIDI</strong> socket</figcaption>
+</figure>
 
 Details of MIDI operations will be found in [chapter 8 part 19](#part19).
 
@@ -10038,14 +10253,24 @@ Using software control loops, the I/O lines could be driven as a second RS232 po
 |  5  | INPUT BIT 5  |
 |  6  | +12V         |
 
-```
-     ___________________________
-  __|   6   5   4   3   2   1   |
- |__   ### ### ### ### ### ###  |
-    |___________________________|
-```
-
-**AUX** socket
+<figure class="connector bsjack">
+  <svg viewBox="0 -2 312 130" width="25%">
+    <path d="M10 60 V30 H50 V0 H310 V100 H50 V60 z" />
+    <text y="45" x="79">6</text>
+    <rect y="55" x="70" width="20" height="10" />
+    <text y="45" x="119">5</text>
+    <rect y="55" x="110" width="20" height="10" />
+    <text y="45" x="159">4</text>
+    <rect y="55" x="150" width="20" height="10" />
+    <text y="45" x="199">3</text>
+    <rect y="55" x="190" width="20" height="10" />
+    <text y="45" x="239">2</text>
+    <rect y="55" x="230" width="20" height="10" />
+    <text y="45" x="279">1</text>
+    <rect y="55" x="270" width="20" height="10" />
+  </svg>
+  <figcaption><strong>AUX</strong> socket</figcaption>
+</figure>
 
 ## <a id="expansion-devices"></a> Expansion devices
 
@@ -10054,16 +10279,124 @@ The +3 can connect to a very wide range of peripherals via the **EXPANSION I/O**
 | WARNING - It is very dangerous indeed to plug in (or unplug) any device from the **EXPANSION I/O** socket while the +3 is switched on - you will probably damage both the +3 and the expansion device if you do so. |
 |-|
 
-```
-U 27  26  25  24  23  22  21           8   7   6   5   4   3   2   1
-  .-. .-. .-. .-. .-. .-. .-.         .-. .-. .-. .-. .-. .-. .-. .-.
-|^^^^^^^^^^^^^^^^^^^^^^^^^^^^ /////// ^^^^^^^^^^^^^^^|^^^^^^^^^^^^^^^^|
-|____________________________ /////// _______________|________________|
-  `-' `-' `-' `-' `-' `-' `-'         `-' `-' `-' `-' `-' `-' `-' `-'
-L 27  26  25  24  23  22  21           8   7   6   5   4   3   2   1
-```
-
-**EXPANSION I/O** socket
+<figure class="connector edge">
+  <svg viewBox="0 0 572 80" width="75%">
+    <text y="30" x="10">U</text>
+    <text y="70" x="10">L</text>
+    <rect y="30" x="30" height="5" width="15" />
+    <rect y="30" x="50" height="5" width="15" />
+    <rect y="30" x="70" height="5" width="15" />
+    <rect y="30" x="90" height="5" width="15" />
+    <rect y="30" x="110" height="5" width="15" />
+    <rect y="30" x="130" height="5" width="15" />
+    <rect y="30" x="150" height="5" width="15" />
+    <rect y="30" x="170" height="5" width="15" />
+    <rect y="30" x="190" height="5" width="15" />
+    <rect y="30" x="210" height="5" width="15" />
+    <rect y="30" x="230" height="5" width="15" />
+    <rect y="30" x="250" height="5" width="15" />
+    <rect y="30" x="270" height="5" width="15" />
+    <rect y="30" x="290" height="5" width="15" />
+    <rect y="30" x="310" height="5" width="15" />
+    <rect y="30" x="330" height="5" width="15" />
+    <rect y="30" x="350" height="5" width="15" />
+    <rect y="30" x="370" height="5" width="15" />
+    <rect y="30" x="390" height="5" width="15" />
+    <rect y="30" x="410" height="5" width="15" />
+    <rect y="30" x="430" height="5" width="15" />
+    <rect y="30" x="450" height="5" width="15" />
+    <rect y="30" x="470" height="5" width="15" />
+    <rect y="30" x="490" height="5" width="15" />
+    <rect y="30" x="510" height="5" width="15" />
+    <rect y="30" x="530" height="5" width="15" />
+    <rect y="30" x="550" height="5" width="15" />
+    <rect y="35" x="20" width="550" height="15" />
+    <rect y="50" x="30" height="5" width="15" />
+    <rect y="50" x="50" height="5" width="15" />
+    <rect y="50" x="70" height="5" width="15" />
+    <rect y="50" x="90" height="5" width="15" />
+    <rect y="50" x="110" height="5" width="15" />
+    <rect y="50" x="130" height="5" width="15" />
+    <rect y="50" x="150" height="5" width="15" />
+    <rect y="50" x="170" height="5" width="15" />
+    <rect y="50" x="190" height="5" width="15" />
+    <rect y="50" x="210" height="5" width="15" />
+    <rect y="50" x="230" height="5" width="15" />
+    <rect y="50" x="250" height="5" width="15" />
+    <rect y="50" x="270" height="5" width="15" />
+    <rect y="50" x="290" height="5" width="15" />
+    <rect y="50" x="310" height="5" width="15" />
+    <rect y="50" x="330" height="5" width="15" />
+    <rect y="50" x="350" height="5" width="15" />
+    <rect y="50" x="370" height="5" width="15" />
+    <rect y="50" x="390" height="5" width="15" />
+    <rect y="50" x="410" height="5" width="15" />
+    <rect y="50" x="430" height="5" width="15" />
+    <rect y="50" x="450" height="5" width="15" />
+    <rect y="50" x="470" height="5" width="15" />
+    <rect y="50" x="490" height="5" width="15" />
+    <rect y="50" x="510" height="5" width="15" />
+    <rect y="50" x="530" height="5" width="15" />
+    <rect y="50" x="550" height="5" width="15" />
+    <rect y="35" x="20" width="550" height="15" />
+    <text y="25" x="37" class="pin">27</text>
+    <text y="25" x="57" class="pin">26</text>
+    <text y="25" x="77" class="pin">25</text>
+    <text y="25" x="97" class="pin">24</text>
+    <text y="25" x="117" class="pin">23</text>
+    <text y="25" x="137" class="pin">22</text>
+    <text y="25" x="157" class="pin">21</text>
+    <text y="25" x="177" class="pin">20</text>
+    <text y="25" x="197" class="pin">19</text>
+    <text y="25" x="217" class="pin">18</text>
+    <text y="25" x="237" class="pin">17</text>
+    <text y="25" x="257" class="pin">16</text>
+    <text y="25" x="277" class="pin">15</text>
+    <text y="25" x="297" class="pin">14</text>
+    <text y="25" x="317" class="pin">13</text>
+    <text y="25" x="337" class="pin">12</text>
+    <text y="25" x="357" class="pin">11</text>
+    <text y="25" x="377" class="pin">10</text>
+    <text y="25" x="397" class="pin">9</text>
+    <text y="25" x="417" class="pin">8</text>
+    <text y="25" x="437" class="pin">7</text>
+    <text y="25" x="457" class="pin">6</text>
+    <text y="25" x="477" class="pin">5</text>
+    <text y="25" x="497" class="pin">4</text>
+    <text y="25" x="517" class="pin">3</text>
+    <text y="25" x="537" class="pin">2</text>
+    <text y="25" x="557" class="pin">1</text>
+    <text y="70" x="37" class="pin">27</text>
+    <text y="70" x="57" class="pin">26</text>
+    <text y="70" x="77" class="pin">25</text>
+    <text y="70" x="97" class="pin">24</text>
+    <text y="70" x="117" class="pin">23</text>
+    <text y="70" x="137" class="pin">22</text>
+    <text y="70" x="157" class="pin">21</text>
+    <text y="70" x="177" class="pin">20</text>
+    <text y="70" x="197" class="pin">19</text>
+    <text y="70" x="217" class="pin">18</text>
+    <text y="70" x="237" class="pin">17</text>
+    <text y="70" x="257" class="pin">16</text>
+    <text y="70" x="277" class="pin">15</text>
+    <text y="70" x="297" class="pin">14</text>
+    <text y="70" x="317" class="pin">13</text>
+    <text y="70" x="337" class="pin">12</text>
+    <text y="70" x="357" class="pin">11</text>
+    <text y="70" x="377" class="pin">10</text>
+    <text y="70" x="397" class="pin">9</text>
+    <text y="70" x="417" class="pin">8</text>
+    <text y="70" x="437" class="pin">7</text>
+    <text y="70" x="457" class="pin">6</text>
+    <text y="70" x="477" class="pin">5</text>
+    <text y="70" x="497" class="pin">4</text>
+    <text y="70" x="517" class="pin">3</text>
+    <text y="70" x="537" class="pin">2</text>
+    <text y="70" x="557" class="pin" hover="A14">1</text>
+    <line y1="35" x1="488" y2="50" x2="488" />
+  </svg>
+  <figcaption><strong>EXPANSION I/O</strong> socket</figcaption>
+</figure>
 
 | PIN | UPPER ROW (U) | LOWER ROW (L) |
 |:---:|---------------|---------------|
@@ -10106,71 +10439,5 @@ Details of the +3's hardware will be found in [chapter 8 part 30](#part30).
   - Russell Marks <mr216@gre.ac.uk> did the rest.
 
 <script>
-spectrum('screen-calculator', 2, function(cx) {
-  clear(cx);
-  cursor(cx, borderSize, borderSize);
-  bottomBarWithStripe(cx, 'Calculator');
-});
-
-spectrum('screen-test', 2, function(cx) {
-  clear(cx);
-  fill(cx, 16, borderSize, 16, 176, lightColors[7]);
-  let x = 0;
-  for (let c = 7; c >= 0; c--) {
-    fill(cx, borderSize + (x++ * 16), borderSize, 16, 176, darkColors[c]);
-    fill(cx, borderSize + (x++ * 16), borderSize, 16, 176, lightColors[c]);
-  }
-  x = 0;
-  for (let c = 7; c >= 0; c--)
-    text(cx, borderSize, borderSize + (x++ * 8), "19861986198619861986198619861986", lightColors[c]);
-});
-
-spectrum('screen-opening-menu', 2, initialPlus3);
-spectrum('screen-loading-disk', 2, initialPlus3);
-spectrum('screen-loading-software', 2, initialPlus3);
-spectrum('screen-loading-48', 2, initialPlus3);
-
-spectrum('screen-basic-48', 2, initial48K);
-
-spectrum('screen-basic-48-load', 2, function(cx) {
-  clear(cx);
-  const y = borderSize + 192 - 8;
-  text(cx, borderSize, y, 'LOAD ""', darkColors[0]);
-  const x = borderSize + 7 * 8;
-  cursor48K(cx, x, y, 'L');
-})
-
-spectrum('screen-options', 2, function(cx) {
-  clear(cx);
-  optionsMenu(cx);
-  bottomBarWithStripe(cx, '+3 BASIC');
-})
-
-spectrum('screen-calculator-options', 2, function(cx) {
-  clear(cx);
-  menu(cx, borderSize + (8 * 8), borderSize + (7 * 8), 14 * 8, 'Options', Array('Calculator', 'Exit'), 0);
-  bottomBarWithStripe(cx, 'Calculator');
-})
-
-spectrum('screen-basic-plus3', 2, function(cx) {
-  clear(cx);
-  cursor(cx, borderSize, borderSize);
-  bottomBarWithStripe(cx, '+3 BASIC');
-})
-
-spectrum('screen-basic-plus3-edit', 2, function(cx) {
-  clear(cx);
-  optionsMenu(cx);
-  bottomBarWithStripe(cx, '+3 BASIC');
-})
-
-spectrum('screen-charset', 2, function(cx) {
-  clear(cx);
-  cx.fillStyle = darkColors[0];
-  for (let i = 0; i < charLines.length; i++)
-    text(cx, borderSize, borderSize + (i * 8), charLines[i]);
-  graphics(cx, borderSize, borderSize + (3 * 8), '0123456789:;<=>?');
-  text(cx, borderSize, borderSize + 184, '0 OK, 10:1');
-})
-
+document.body.onscroll = asFragmentsGoBy();
 </script>

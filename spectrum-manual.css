@@ -1,48 +1,206 @@
 html {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
+
 body {
-  background-color: #fefefe;
-  color: #000;
-  font-family: 'Roboto Slab';
-  font-size: 100%;
+    background-color: #fefefe;
+    color: #000;
+    font-family: 'Roboto Slab';
+    font-size: 100%;
 }
-table, canvas, svg {
-  margin: auto !important;
-  padding: 0;
+
+table,
+canvas,
+svg {
+    margin: auto !important;
+    padding: 0;
 }
-canvas, svg {
-  display: block;
+
+canvas,
+svg {
+    display: block;
 }
-td, th {
-  border: 1px solid #ccc !important;
+
+td,
+th {
+    border: 1px solid #ccc !important;
 }
+
 h1 {
-  border-bottom: 3px solid #000 !important;
+    border-bottom: 3px solid #000 !important;
 }
+
 h2 {
-  border-top: 3px solid #000 !important;
+    border-top: 3px solid #000 !important;
 }
-h1, h2, h3, h4, h5 {
-  font-weight: 700;
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: 700;
 }
+
 pre {
-  margin: 1em !important;
-  padding: 0 !important;
+    margin: 1em !important;
+    padding: 0 !important;
 }
-pre, * {
-  background-color: #fefefe !important;
-  color: #000 !important;
-}
-a {
-  color: #004c8c !important;
-}
-.signal-high {
-  border-top: 2px solid #000;
-}
+
+pre,
 code {
-  color: #000;
-  font-family: 'Roboto Mono';
-  font-weight: 500;
+    background-color: #fefefe !important;
+    color: #000 !important;
 }
+
+a,
+a pre,
+a code {
+    color: #004c8c !important;
+}
+
+code {
+    color: #000;
+    font-family: 'Roboto Mono';
+    font-weight: 500;
+}
+
+#amstrad-logo path {
+    stroke: #000;
+    stroke-width: 2;
+    fill: #fefefe
+}
+
+
+/* Styles for connectors */
+
+svg .open {
+    stroke: #000;
+    stroke-width: 2.5;
+    fill: #fefefe;
+}
+
+svg .thick {
+    stroke: #000;
+    stroke-width: 2.5;
+    fill: #fefefe;
+}
+
+svg .thin {
+    stroke: #000;
+    stroke-width: 1.5;
+    fill: #fefefe;
+}
+
+svg .dashed {
+    stroke-dasharray: 5,2.5;
+}
+
+svg .hairline {
+    stroke: #000;
+    stroke-width: 0.8;
+    fill: #fefefe;
+}
+
+svg .closed {
+    stroke: #000;
+    stroke-width: 2.5;
+    fill: #000;
+}
+
+svg line {
+    stroke: #000;
+    stroke-width: 3;
+}
+
+.connector .pin {
+    font-size: 12px;
+    font-weight: bold;
+    text-anchor: center
+}
+
+.bsjack path {
+    stroke: #000;
+    stroke-width: 3;
+    fill: #fefefe
+}
+
+.bsjack text {
+    font-size: 27px;
+    font-weight: bold;
+    text-anchor: right
+}
+
+.bsjack rect {
+    fill: #000;
+    stroke-width: 2;
+}
+
+figcaption {
+    display: block;
+    visibility: visible;
+    text-align: center
+}
+
+.signal-high {
+    border-top: 2px solid #000;
+}
+
+.guide {
+    stroke: black;
+    stroke-dasharray: 5, 2
+}
+
+.base {
+    stroke: black;
+    stroke-width: 0.3
+}
+
+.wave {
+    stroke: black;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-miterlimit: 1;
+    fill: none
+}
+
+#rom-diagram .dec {
+    text-anchor: end
+}
+
+#rom-diagram .hex {
+    text-anchor: start
+}
+
+#rom-diagram .bank {
+    text-anchor: middle
+}
+
+#rom-diagram rect {
+    stroke: black;
+    stroke-width: 1
+}
+
+#rom-diagram line {
+    stroke: black;
+    stroke-width: 1;
+    fill: none
+}
+
+#paging-diagram text {
+    font-weight: bold;
+    text-anchor: middle
+}
+
+#paging-diagram rect {
+    stroke: black;
+    stroke-width: 2.5;
+    fill: none
+}
+
+#paging-diagram .arrow {
+    font-size: 150%
+}
+
+#vdu text { font-size: 10px; font-weight: bold }
