@@ -2710,25 +2710,39 @@ Like ***e***, π is an infinite non-recurring decimal - it starts off as 3.14159
 
 These ***trigonometrical*** functions measure what happens when a point moves round a circle. Here is a circle of radius 1 ('1 what?' you may ask - it doesn't matter, as long as we keep to the same unit all the way through) and a point moving round it. The point started at the '3 o'clock' position, and then moved round in an anti-clockwise direction.
 
-                                  | y-axis
-                                  |
-                                  |     <-__
-                               ___|___      --_   distance moved
-                           __--   |   -+__     -_   around circle = a
-                         _-       |   /   -_     \
-                        /         |  /      \     \
-                       /          | /        \     |
-                      |           |/          |    |
-            ----------+-----------+-----------+-----------
-                      |           |           |\     x-axis
-                      :\          |          /  \
-                      : \_        |        _/    \
-                      :   --__    |    __--       \
-                      :       ----+----             starting
-                      :           |                 position
-                      <-radius=1 ->
-                                  |
-                                  |
+<figure>
+  <svg viewBox="0 0 500 500" width="100%" id="trig-1-diagram">
+    <defs>
+      <g id="arrow-head">
+        <path d="M 0 0 l -4 9 l -4 -9" class="filled" />
+      </g>
+      <g id="circle-grid">
+        <circle cx="250" cy="250" r="125" class="open" />
+        <line x1="250" y1="0" x2="250" y2="500" class="thick" />
+        <line x1="0" y1="250" x2="500" y2="250" class="thick" />
+        <text x="500" text-anchor="end" y="262" font-size="10">x-axis</text>
+        <text x="255" text-anchor="start" y="10" font-size="10">y-axis</text>
+      </g>
+      <g id="circle-grid-arc">
+        <use xlink:href="#circle-grid" />
+        <path d="M 400 250 A 145 145 0 0 0 320 115" fill="none" stroke="#000" stroke-width="3" />
+        <use xlink:href="#arrow-head" transform="translate(320, 120) rotate(117,0,0)" />
+        <circle cx="310" cy="140" r="3.5" class="filled" />
+        <line x1="250" y1="250" x2="310" y2="140" class="thick" />
+      </g>
+    </defs>
+    <use xlink:href="#circle-grid-arc" />
+    <text x="320" y="275" text-anchor="middle" font-size="10">radius=1</text>
+    <use xlink:href="#arrow-head" transform="translate(256, 260) rotate(124,0,0)" />
+    <line x1="254" y1="254" x2="352" y2="311" class="thick" />
+    <use xlink:href="#arrow-head" transform="translate(351, 306) rotate(304,0,0)" />
+    <text x="425" y="165" text-anchor="middle" font-size="10">distance moved</text>
+    <text x="435" y="175" text-anchor="middle" font-size="10">around circle=a</text>
+    <text x="422" y="292" text-anchor="left" font-size="10">starting position</text>
+    <line x1="380" y1="254" x2="419" y2="284" class="thick" />
+    <use xlink:href="#arrow-head" transform="translate(381, 260) rotate(127.5,0,0)" />
+  </svg>
+</figure>
 
 We have also drawn in two lines called ***axes*** through the centre of the circle. The one through 3 o'clock is called the ***x-axis***, and the one through 12 o'clock is called the ***y-axis***.
 
@@ -2736,25 +2750,25 @@ To specify where the point is, you say how far it has moved round the circle fro
 
 Given the curved distance round the edge - a, two other distances you might like to know are how far the point is the right of the y-axis, and how far it is above the x-axis. These are called, respectively, the ***cosine*** and ***sine*** of a. The functions `COS` and `SIN` on the +3 will calculate these.
 
-                                  | y-axis
-                                  |
-                    cosine of a = COS a <-__
-                               ___|_|_      --_   a
-                           __--   |_v_-+__     -_
-                         _-       |   /|  -_     \
-                        /         |  / |    \     \
-                       /          | /  |<-+  \     |
-                      |           |/   |  |   |    |
-            ----------+-----------+-------|---+-----------
-                      |           |       |   |\     x-axis
-                      :\ sine of a = SIN a   /  \
-                      : \_        |        _/    \
-                      :   --__    |    __--       \
-                      :       ----+----             starting
-                      :           |                 position
-                      <-radius=1 ->
-                                  |
-                                  |
+<figure>
+  <svg viewBox="0 0 500 500" width="100%" id="trig-1-diagram">
+    <use xlink:href="#circle-grid-arc" />
+    <text x="390" y="165" text-anchor="middle" font-size="10">a</text>
+    <text x="310" y="90" text-anchor="middle" font-size="10">cosine of a=<tspan font-weight="bold">COS</a> a</text>
+    <use xlink:href="#arrow-head" transform="translate(260, 144) rotate(90,0,0)" />
+    <line x1="255" y1="140" x2="305" y2="140" class="thick" />
+    <use xlink:href="#arrow-head" transform="translate(298, 136.5) rotate(-90,0,0)" />
+    <use xlink:href="#arrow-head" transform="translate(306, 152) rotate(180,0,0)" />
+    <text x="280" y="290" text-anchor="middle" font-size="10">sine of a</text>
+    <text x="280" y="302" text-anchor="middle" font-size="10">=<tspan font-weight="bold">SIN</a> a</text>
+    <line x1="270" y1="280" x2="305" y2="200" class="thick" />
+    <use xlink:href="#arrow-head" transform="translate(300, 200) rotate(-155,0,0)" />
+    <line x1="310" y1="245" x2="310" y2="145" class="thick" />
+    <use xlink:href="#arrow-head" transform="translate(314, 240)" />
+    <line x1="295" y1="94" x2="279.5" y2="132" class="thick" />
+    <use xlink:href="#arrow-head" transform="translate(283, 132.5) rotate(20,0,0)" />
+  </svg>
+</figure>
 
 Note that if the point goes to the left of the y0axis, then the cosine becomes negative, and if the point goes below the x-axis, the since becomes negative.
 
