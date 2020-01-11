@@ -36,6 +36,10 @@ h1 {
   padding-bottom: 0.25em;
 }
 
+ul {
+  list-style: none;
+}
+
 /* h1:before {
   border-bottom: 1.5px solid #000;
   bottom: -10px;
@@ -202,6 +206,7 @@ figcaption {
 }
 
 #rom-diagram rect {
+  fill: none;
   stroke: black;
   stroke-width: 1;
 }

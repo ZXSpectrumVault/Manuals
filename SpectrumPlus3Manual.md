@@ -1,6 +1,6 @@
 <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:500|Roboto+Slab:400,700&amp;display=swap" rel="stylesheet"></link>
 <link href="./spectrum-manual.css" rel="stylesheet"></link>
-<script src="./spectrum-manual.js?"></script>
+<script src="./spectrum-manual.js"></script>
 
 # Contents
 
@@ -2854,7 +2854,7 @@ Exercise...
 
 Note that the next value of `RND` will be...
 
-    `(75*(`your number`+1)-1)/65536`
+- `(75*(`your number`+1)-1)/65536`
 
 Try this out for yourself.
 
@@ -3026,19 +3026,19 @@ Convince yourself that `>=` and `<=` are the negations of `<` and `>` respective
 
 Also...
 
-    `NOT` (a first logical expression `AND` a second)
+- `NOT` (a first logical expression `AND` a second)
 
 ...is the same as...
 
-    `NOT` (the first) `OR NOT` (the second)
+- `NOT` (the first) `OR NOT` (the second)
 
 ...and...
 
-    `NOT` (a first logical expression OR a second)
+- `NOT` (a first logical expression OR a second)
 
 ...is the same as...
 
-    `NOT` (the first) `AND NOT` (the second)
+- `NOT` (the first) `AND NOT` (the second)
 
 Using this, you can work `NOT`s through brackets until eventually they are all applied to relations, and then you can get rid of them. Logically speaking, `NOT` is unnecessary, although you might still find that using it makes a program clearer.
 
@@ -3055,11 +3055,11 @@ instead it uses ordinary numbers, subject to a few rules...
 
 (ii) In the statement...
 
-  `IF` condition `THEN`...
+- `IF` condition `THEN`...
 
 ...the condition can be actually any numeric expression. If its value is 0, then it counts as false, and any other value (including the value of 1 that a true relation gives) counts as true. Thus the `IF` statement means exactly the same as...
 
-  `IF` condition `<> 0 THEN`...
+- `IF` condition `<> 0 THEN`...
 
 (iii) `AND`, `OR` and `NOT` are also number-valued operations...
 
@@ -3085,19 +3085,19 @@ Each time it prints the larger of the two numbers `a` and `b`.
 
 Convince yourself that you can think of...
 
-    x AND y
+- x `AND` y
 
 ...as meaning...
 
-  `x` if `y` (else the result is 0)
+- `x` if `y` (else the result is 0)
 
 ...and of...
 
-    x OR y
+- x `OR` y
 
 ...as meaning...
 
-  `x` unless `y` (in which case the result is 1)
+- `x` unless `y` (in which case the result is 1)
 
 An expression using `AND` or `OR` like this is called a conditional expression. An example using OR could be...
 
@@ -3107,8 +3107,8 @@ Notice how `AND` tends to go with addition (because its default value is 0), and
 
 You can also make string valued conditional expressions, but only using AND...
 
-  `x$ AND y` has the value      __[ `x$` if `y` is non-zero
-                                  [ "" if y is zero
+  `x$ AND y` has the value      __| `x$` if `y` is non-zero
+                                  | "" if y is zero
 
 ...so it means `x$` if `y` (else the empty string).
 
@@ -3173,7 +3173,7 @@ On the screen will appear the following...
   text(cx, borderSize, borderSize + 184, '0 OK, 10:1');
 })</script>
 
-The character set
+### <a id="character-set"></a> The character set
 
 As you can see, the character set consists of a space, 15 symbols and punctuation marks, the ten digits, seven more symbols, the capital letters, six more symbols, the lower case letters and five more symbols. These are all (except `£` and `©`) taken from a widely-used set of characters known as ***ASCII*** (American Standard Codes for Information Interchange). ***ASCII*** also assigns numeric codes to these characters, and these are the codes that the +3 uses.
 
@@ -3274,25 +3274,10 @@ To define a new character for yourself, follow this recipe, it defines a charact
 
 (i) Work out what the character looks like. Each character has an 8 x 8 grid of dots, each of which can appear to be on or off. You'd draw a diagram something like this (with blank squares representing the dots which are on)...
 
-````
-                    _______________________________
-                   |   |   |   |   |   |   |   |   |
-                   |___|___|___|___|___|___|___|___|
-                   |   |   |   |   |   |   |   |   |
-                   |___|___|___|___|___|___|___|___|
-                   |   |   |   |   |   |   |###|   |
-                   |___|___|___|___|___|___|###|___|
-                   |   |   |###|###|###|###|   |   |
-                   |___|___|###|###|###|###|___|___|
-                   |   |###|   |###|   |###|   |   |
-                   |___|###|___|###|___|###|___|___|
-                   |   |   |   |###|   |###|   |   |
-                   |___|___|___|###|___|###|___|___|
-                   |   |   |   |###|   |###|   |   |
-                   |___|___|___|###|___|###|___|___|
-                   |   |   |   |   |   |   |   |   |
-                   |___|___|___|___|___|___|___|___|
-````
+<figure>
+  <canvas id="grid-pi"></canvas>
+  <script>plot8x8Grid('grid-pi', [0, 0, 2, 60, 84, 20, 20, 0 ]);</script>
+</figure>
 
 When a dot is on, the +3 prints the ink colour; when a dot if off, the +3 prints the paper colour. (The terms ink and paper are explained in [part 16 of this chapter](#part16).)
 
@@ -3300,7 +3285,7 @@ We've left a one-square border around the edge because all the other letters als
 
 (ii) Work out which user-defined graphic you wish to display π - let's say the one corresponding to **P** so that if you press **P** (after pressing **GRAPH**) you get π.
 
-(iii) Store the new pattern. Each user-defined graphic has its pattern stored as eight numbers, one for each row.  You can write each of these numbers in a program as `BIN` followed by eight 0's or 1's - 0 for paper, 1 for ink - so the eight numbers for our pi character are...
+(iii) Store the new pattern. Each user-defined graphic has its pattern stored as eight numbers, one for each row.  You can write each of these numbers in a program as `BIN` followed by eight 0's or 1's - 0 for paper, 1 for ink - so the eight numbers for our π character are...
 
 - `BIN 00000000`    - top row
 - `BIN 00000000`    - second row down
@@ -3730,25 +3715,11 @@ On a black-and-white TV, these numbers are in order of brightness. To use these 
 
 The picture is divided up into 768 (24 lines of 32) positions (cells) where characters can be printed.
 
-                    _______________________________
-                   |   |   |   |   |   |   |   |   |
-                   |___|___|___|___|___|___|___|___|
-                   |   |   |   |   |   |   |   |   |
-                   |___|___|___|___|___|___|___|___|
-                   |   |   |###|###|###|   |   |   |
-                   |___|___|###|###|###|___|___|___|
-                   |   |   |   |   |   |###|   |   |
-                   |___|___|___|___|___|###|___|___|
-                   |   |   |###|###|###|###|   |   |
-                   |___|___|###|###|###|###|___|___|
-                   |   |###|   |   |   |###|   |   |
-                   |___|###|___|___|___|###|___|___|
-                   |   |   |###|###|###|###|   |   |
-                   |___|___|###|###|###|###|___|___|
-                   |   |   |   |   |   |   |   |   |
-                   |___|___|___|___|___|___|___|___|
-
-                       A typical character cell
+<figure>
+  <canvas id="grid-a"></canvas>
+  <script>plot8x8Grid('grid-a', 'a');</script>
+  <figcaption>A typical character cell</figcaption>
+</figure>
 
 Each character cell consists of an 8 x 8 grid (such as above). This should remind you of the user-defined graphics in [part 14](#part14), where we had 0s for the white dots and 1s for the black dots.
 
@@ -3827,26 +3798,12 @@ To see how all eight colours fit together, imagine three rectangular spotlights,
 
 There is a function called `ATTR` that finds out what the attributes ate at a given position on the screen. It is a fairly complicated function, so it has been relegated to the end of this section.
 
-There are two more statements, `INVERSE` and `OVER`, which control not the attributes, but the dot pattern that is printed on the screen. They use the numbers 0 for off, and 1 for on. If you use `INVERSE 1`, then each character cell's dot pattern will be the inverse of its usual form, ie. paper dots will be replaced by ink dots and vice versa. Thus the character cell containing '**a' (shown previously) would be printed as follow...
+There are two more statements, `INVERSE` and `OVER`, which control not the attributes, but the dot pattern that is printed on the screen. They use the numbers 0 for off, and 1 for on. If you use `INVERSE 1`, then each character cell's dot pattern will be the inverse of its usual form, ie. paper dots will be replaced by ink dots and vice versa. Thus the character cell containing '**a**' (shown previously) would be printed as follows...
 
-                    _______________________________
-                   |###|###|###|###|###|###|###|###|
-                   |###|###|###|###|###|###|###|###|
-                   |###|###|###|###|###|###|###|###|
-                   |###|###|###|###|###|###|###|###|
-                   |###|###|   |   |   |###|###|###|
-                   |###|###|___|___|___|###|###|###|
-                   |###|###|###|###|###|   |###|###|
-                   |###|###|###|###|###|___|###|###|
-                   |###|###|   |   |   |   |###|###|
-                   |###|###|___|___|___|___|###|###|
-                   |###|   |###|###|###|   |###|###|
-                   |###|___|###|###|###|___|###|###|
-                   |###|###|   |   |   |   |###|###|
-                   |###|###|___|___|___|___|###|###|
-                   |###|###|###|###|###|###|###|###|
-                   |###|###|###|###|###|###|###|###|
-
+<figure>
+  <canvas id="grid-a-inverse"></canvas>
+  <script>plot8x8Grid('grid-a-inverse', 'a', null, true);</script>
+</figure>
 
 If (as at switch on) we have black ink on white paper, then the '**a**' will appear as white on black.
 
@@ -5663,7 +5620,7 @@ Port address 00FEh (254 decimal) in output drives the sound (D4) and the save si
 
 Port addresses 00FEh (254), 00F7h (247) and 00EFh (239) are reserved.
 
-Port address 7FFDh (32765) drives the extra memory. Executing an `OUT` to this port from BASIC will nearly always cause the computer to crash, losing any program and data. There is a fuller description of this port in [part 24](#part24) of this chapter (under the heading [`Memory management'](#memory-management). This port is write only, ie. you cannot determine the current state of the paging by an `IN` instruction. This is why the [BANKM](#bankm) system variable is always kept up to date with the last value output to this port.
+Port address 7FFDh (32765) drives the extra memory. Executing an `OUT` to this port from BASIC will nearly always cause the computer to crash, losing any program and data. There is a fuller description of this port in [part 24](#part24) of this chapter (under the heading [Memory management](#memory-management)). This port is write only, ie. you cannot determine the current state of the paging by an `IN` instruction. This is why the [BANKM](#bankm) system variable is always kept up to date with the last value output to this port.
 
 Port address BFFDh (49149) drives the sound chip's data registers. Port address FFFDh (65533) in output writes a register address, and in input reads a register. Judicious use of these two registers can allow sounds to be generated whilst BASIC gets on with something else, but you should be aware that they also control **RS232/MIDI** and **AUX** interfaces.
 
@@ -5972,38 +5929,39 @@ The +3 also uses I/O port 1FFDh for some ROM and RAM switching. The bit field fo
 
 When bit 0 is 0, bit 1 has no effect and bit 2 is a 'vertical' ROM switch (ie. between ROM 0 and ROM 2, or between ROM 1 and ROM 3). Bit 4 in the port at 7FFDh is a 'horizontal' ROM switch (ie. between ROM 0 and ROM 1, or between ROM 2 and ROM 3). The following diagram serves to show the various ROM switching possibilities...
 
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-30 -5 450 410" height="410" id="paging-diagram">
-  <rect x="0" y="0" width="100" height="100" />
-  <rect x="300" y="0" width="100" height="100" />
-  <rect x="0" y="300" width="100" height="100" />
-  <rect x="300" y="300" width="100" height="100" />
-  <text x="50" y="25">ROM 0</text>
-  <text x="50" y="70">Editor</text>
-  <text x="350" y="25">ROM 1</text>
-  <text x="350" y="70">Syntax</text>
-  <text x="50" y="330">ROM 2</text>
-  <text x="50" y="370">DOS</text>
-  <text x="350" y="330">ROM 3</text>
-  <text x="350" y="370">48 BASIC</text>
-  <text x="350" y="200">vertical</text>
-  <text x="50" y="200">vertical</text>
-  <text x="200" y="50">horizontal</text>
-  <text x="200" y="350">horizontal</text>
-  <text x="200" y="10">Bit 4 7FFFd (23388)</text>
-  <text x="200" y="25" font-size="85%" class="sysvar">(system variable: BANKM)</text>
-  <text x="50" y="160">Bit 2 1FFFd (23399)</text>
-  <text x="50" y="175" font-size="85%" class="sysvar">(system variable: BANK678)</text>
-  <text x="50" y="115" class="arrow">↑</text>
-  <text x="350" y="115" class="arrow">↑</text>
-  <text x="50" y="295" class="arrow">↓</text>
-  <text x="350" y="295" class="arrow">↓</text>
-  <text x="110" y="50" class="arrow">←</text>
-  <text x="110" y="350" class="arrow">←</text>
-  <text x="290" y="50" class="arrow">→</text>
-  <text x="290" y="350" class="arrow">→</text>
-</svg>
-
-<center>Horizontal and vertical ROM switching</center>
+<figure id="rom-switching">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="-30 -5 450 410" height="410" id="paging-diagram">
+    <rect x="0" y="0" width="100" height="100" />
+    <rect x="300" y="0" width="100" height="100" />
+    <rect x="0" y="300" width="100" height="100" />
+    <rect x="300" y="300" width="100" height="100" />
+    <text x="50" y="25">ROM 0</text>
+    <text x="50" y="70">Editor</text>
+    <text x="350" y="25">ROM 1</text>
+    <text x="350" y="70">Syntax</text>
+    <text x="50" y="330">ROM 2</text>
+    <text x="50" y="370">DOS</text>
+    <text x="350" y="330">ROM 3</text>
+    <text x="350" y="370">48 BASIC</text>
+    <text x="350" y="200">vertical</text>
+    <text x="50" y="200">vertical</text>
+    <text x="200" y="50">horizontal</text>
+    <text x="200" y="350">horizontal</text>
+    <text x="200" y="10">Bit 4 7FFFd (23388)</text>
+    <text x="200" y="25" font-size="85%" class="sysvar">(system variable: BANKM)</text>
+    <text x="50" y="160">Bit 2 1FFFd (23399)</text>
+    <text x="50" y="175" font-size="85%" class="sysvar">(system variable: BANK678)</text>
+    <text x="50" y="115" class="arrow">↑</text>
+    <text x="350" y="115" class="arrow">↑</text>
+    <text x="50" y="295" class="arrow">↓</text>
+    <text x="350" y="295" class="arrow">↓</text>
+    <text x="110" y="50" class="arrow">←</text>
+    <text x="110" y="350" class="arrow">←</text>
+    <text x="290" y="50" class="arrow">→</text>
+    <text x="290" y="350" class="arrow">→</text>
+  </svg>
+  <figcaption>Horizontal and vertical ROM switching</figcaption>
+</figure>
 
 It is best to think of bit 4 in port 7FFDh and bit 2 in port 1FFDh combining to form a 2-bit number (0...3) which determines which ROM occupies the memory area 0000h...3FFFh. Bit 4 of port 7FFDh is the least significant bit and bit 2 of 1FFDh is the most significant bit.
 
@@ -9803,7 +9761,7 @@ As soon as you press **ENTER**, the answer `10` will appear. (Note that you ***d
 
     *PI
 
-This produces the result `6.2831853` on the screen. The +3 has used its built-in pi function - all you had to do was type in `PI`. This applies to all the +3's mathematical functions. To demonstrate, type in...
+This produces the result `6.2831853` on the screen. The +3 has used its built-in π function - all you had to do was type in `PI`. This applies to all the +3's mathematical functions. To demonstrate, type in...
 
     *ATN 60
 

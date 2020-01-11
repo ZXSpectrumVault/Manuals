@@ -2121,49 +2121,61 @@ are...</p>
 </code></pre>
 <h3 id="sin-cos-and-tan-asn-acs-and-atn">SIN COS and TAN, ASN ACS and ATN</h3>
 <p>These <em><strong>trigonometrical</strong></em> functions measure what happens when a point moves round a circle. Here is a circle of radius 1 ('1 what?' you may ask - it doesn't matter, as long as we keep to the same unit all the way through) and a point moving round it. The point started at the '3 o'clock' position, and then moved round in an anti-clockwise direction.</p>
-<pre><code>                              | y-axis
-                              |
-                              |     &lt;-__
-                           ___|___      --_   distance moved
-                       __--   |   -+__     -_   around circle = a
-                     _-       |   /   -_     \
-                    /         |  /      \     \
-                   /          | /        \     |
-                  |           |/          |    |
-        ----------+-----------+-----------+-----------
-                  |           |           |\     x-axis
-                  :\          |          /  \
-                  : \_        |        _/    \
-                  :   --__    |    __--       \
-                  :       ----+----             starting
-                  :           |                 position
-                  &lt;-radius=1 -&gt;
-                              |
-                              |
-</code></pre>
+<figure>
+  <svg viewBox="0 0 500 500" width="100%" id="trig-1-diagram">
+    <defs>
+      <g id="arrow-head">
+        <path d="M 0 0 l -4 9 l -4 -9" class="filled" />
+      </g>
+      <g id="circle-grid">
+        <circle cx="250" cy="250" r="125" class="open" />
+        <line x1="250" y1="0" x2="250" y2="500" class="thick" />
+        <line x1="0" y1="250" x2="500" y2="250" class="thick" />
+        <text x="500" text-anchor="end" y="262" font-size="10">x-axis</text>
+        <text x="255" text-anchor="start" y="10" font-size="10">y-axis</text>
+      </g>
+      <g id="circle-grid-arc">
+        <use xlink:href="#circle-grid" />
+        <path d="M 400 250 A 145 145 0 0 0 320 115" fill="none" stroke="#000" stroke-width="3" />
+        <use xlink:href="#arrow-head" transform="translate(320, 120) rotate(117,0,0)" />
+        <circle cx="310" cy="140" r="3.5" class="filled" />
+        <line x1="250" y1="250" x2="310" y2="140" class="thick" />
+      </g>
+    </defs>
+    <use xlink:href="#circle-grid-arc" />
+    <text x="320" y="275" text-anchor="middle" font-size="10">radius=1</text>
+    <use xlink:href="#arrow-head" transform="translate(256, 260) rotate(124,0,0)" />
+    <line x1="254" y1="254" x2="352" y2="311" class="thick" />
+    <use xlink:href="#arrow-head" transform="translate(351, 306) rotate(304,0,0)" />
+    <text x="425" y="165" text-anchor="middle" font-size="10">distance moved</text>
+    <text x="435" y="175" text-anchor="middle" font-size="10">around circle=a</text>
+    <text x="422" y="292" text-anchor="left" font-size="10">starting position</text>
+    <line x1="380" y1="254" x2="419" y2="284" class="thick" />
+    <use xlink:href="#arrow-head" transform="translate(381, 260) rotate(127.5,0,0)" />
+  </svg>
+</figure>
 <p>We have also drawn in two lines called <em><strong>axes</strong></em> through the centre of the circle. The one through 3 o'clock is called the <em><strong>x-axis</strong></em>, and the one through 12 o'clock is called the <em><strong>y-axis</strong></em>.</p>
 <p>To specify where the point is, you say how far it has moved round the circle from its 3 o'clock starting position: let us call this distance a. We know that the circumference of the circle is 2π (because its radius is 1 and its diameter is thus 2), so when it has moved a quarter of the way round the circle, a is equal to π/2; when it has moved halfway round, a is equal to π; and when it has moved the whole way round, a is equal to 2π.</p>
 <p>Given the curved distance round the edge - a, two other distances you might like to know are how far the point is the right of the y-axis, and how far it is above the x-axis. These are called, respectively, the <em><strong>cosine</strong></em> and <em><strong>sine</strong></em> of a. The functions <code>COS</code> and <code>SIN</code> on the +3 will calculate these.</p>
-<pre><code>                              | y-axis
-                              |
-                cosine of a = COS a &lt;-__
-                           ___|_|_      --_   a
-                       __--   |_v_-+__     -_
-                     _-       |   /|  -_     \
-                    /         |  / |    \     \
-                   /          | /  |&lt;-+  \     |
-                  |           |/   |  |   |    |
-        ----------+-----------+-------|---+-----------
-                  |           |       |   |\     x-axis
-                  :\ sine of a = SIN a   /  \
-                  : \_        |        _/    \
-                  :   --__    |    __--       \
-                  :       ----+----             starting
-                  :           |                 position
-                  &lt;-radius=1 -&gt;
-                              |
-                              |
-</code></pre>
+<figure>
+  <svg viewBox="0 0 500 500" width="100%" id="trig-1-diagram">
+    <use xlink:href="#circle-grid-arc" />
+    <text x="390" y="165" text-anchor="middle" font-size="10">a</text>
+    <text x="310" y="90" text-anchor="middle" font-size="10">cosine of a=<tspan font-weight="bold">COS</a> a</text>
+    <use xlink:href="#arrow-head" transform="translate(260, 144) rotate(90,0,0)" />
+    <line x1="255" y1="140" x2="305" y2="140" class="thick" />
+    <use xlink:href="#arrow-head" transform="translate(298, 136.5) rotate(-90,0,0)" />
+    <use xlink:href="#arrow-head" transform="translate(306, 152) rotate(180,0,0)" />
+    <text x="280" y="290" text-anchor="middle" font-size="10">sine of a</text>
+    <text x="280" y="302" text-anchor="middle" font-size="10">=<tspan font-weight="bold">SIN</a> a</text>
+    <line x1="270" y1="280" x2="305" y2="200" class="thick" />
+    <use xlink:href="#arrow-head" transform="translate(300, 200) rotate(-155,0,0)" />
+    <line x1="310" y1="245" x2="310" y2="145" class="thick" />
+    <use xlink:href="#arrow-head" transform="translate(314, 240)" />
+    <line x1="295" y1="94" x2="279.5" y2="132" class="thick" />
+    <use xlink:href="#arrow-head" transform="translate(283, 132.5) rotate(20,0,0)" />
+  </svg>
+</figure>
 <p>Note that if the point goes to the left of the y0axis, then the cosine becomes negative, and if the point goes below the x-axis, the since becomes negative.</p>
 <p>Another property is that once a has got up to 2π, the point is back where it started and the sine and cosine start taking the same values all over again, ie. <code>SIN (</code>a<code>+2*PI)</code> equals <code>SIN</code> a, and <code>COS (</code>a<code>+2*PI)</code> equals <code>COS</code> a.</p>
 <p>The <em><strong>tangent</strong></em> of a is defined as being the sine divided by the cosine; the corresponding function on the +3 is called <code>TAN</code>.</p>
@@ -2225,8 +2237,9 @@ are...</p>
 </li>
 </ol>
 <p>Note that the next value of <code>RND</code> will be...</p>
-<pre><code>`(75*(`your number`+1)-1)/65536`
-</code></pre>
+<ul>
+<li><code>(75*(</code>your number<code>+1)-1)/65536</code></li>
+</ul>
 <p>Try this out for yourself.</p>
 <h2 id="a-id%22part12%22a-part-12---arrays"><a id="part12"></a> Part 12 - Arrays</h2>
 <p>Subjects covered...</p>
@@ -2345,17 +2358,21 @@ PRINT m(3)
 <p><code>NOT a&lt;&gt;b</code> is the same as <code>a=b</code></p>
 <p>Convince yourself that <code>&gt;=</code> and <code>&lt;=</code> are the negations of <code>&lt;</code> and <code>&gt;</code> respectively. Thus you can always get rid of NOT from in front of a relation by changing the relation.</p>
 <p>Also...</p>
-<pre><code>`NOT` (a first logical expression `AND` a second)
-</code></pre>
+<ul>
+<li><code>NOT</code> (a first logical expression <code>AND</code> a second)</li>
+</ul>
 <p>...is the same as...</p>
-<pre><code>`NOT` (the first) `OR NOT` (the second)
-</code></pre>
+<ul>
+<li><code>NOT</code> (the first) <code>OR NOT</code> (the second)</li>
+</ul>
 <p>...and...</p>
-<pre><code>`NOT` (a first logical expression OR a second)
-</code></pre>
+<ul>
+<li><code>NOT</code> (a first logical expression OR a second)</li>
+</ul>
 <p>...is the same as...</p>
-<pre><code>`NOT` (the first) `AND NOT` (the second)
-</code></pre>
+<ul>
+<li><code>NOT</code> (the first) <code>AND NOT</code> (the second)</li>
+</ul>
 <p>Using this, you can work <code>NOT</code>s through brackets until eventually they are all applied to relations, and then you can get rid of them. Logically speaking, <code>NOT</code> is unnecessary, although you might still find that using it makes a program clearer.</p>
 <p>The following section is quite complicated, and can easily be skipped by the faint by the faint-hearted!</p>
 <p>Try...</p>
@@ -2365,9 +2382,13 @@ PRINT m(3)
 instead it uses ordinary numbers, subject to a few rules...</p>
 <p>(i) <code>=</code>, <code>&lt;</code>, <code>&gt;</code>, <code>&lt;=</code>, <code>&gt;=</code> and <code>&lt;&gt;</code> all give the numeric results: 1 for true, and 0 for false. Thus, the <code>PRINT</code> command above printed 0 for 1<code>=</code>2, which is false, and 1 for 1<code>&lt;&gt;</code>2, which is true.</p>
 <p>(ii) In the statement...</p>
-<p><code>IF</code> condition <code>THEN</code>...</p>
+<ul>
+<li><code>IF</code> condition <code>THEN</code>...</li>
+</ul>
 <p>...the condition can be actually any numeric expression. If its value is 0, then it counts as false, and any other value (including the value of 1 that a true relation gives) counts as true. Thus the <code>IF</code> statement means exactly the same as...</p>
-<p><code>IF</code> condition <code>&lt;&gt; 0 THEN</code>...</p>
+<ul>
+<li><code>IF</code> condition <code>&lt;&gt; 0 THEN</code>...</li>
+</ul>
 <p>(iii) <code>AND</code>, <code>OR</code> and <code>NOT</code> are also number-valued operations...</p>
 <p><code>x AND y</code> has the value   __[ <code>x</code>, if <code>y</code> is true (non-zero)
 [ 0 (false) if <code>y</code> is false (zero)</p>
@@ -2384,22 +2405,28 @@ instead it uses ordinary numbers, subject to a few rules...</p>
 </code></pre>
 <p>Each time it prints the larger of the two numbers <code>a</code> and <code>b</code>.</p>
 <p>Convince yourself that you can think of...</p>
-<pre><code>x AND y
-</code></pre>
+<ul>
+<li>x <code>AND</code> y</li>
+</ul>
 <p>...as meaning...</p>
-<p><code>x</code> if <code>y</code> (else the result is 0)</p>
+<ul>
+<li><code>x</code> if <code>y</code> (else the result is 0)</li>
+</ul>
 <p>...and of...</p>
-<pre><code>x OR y
-</code></pre>
+<ul>
+<li>x <code>OR</code> y</li>
+</ul>
 <p>...as meaning...</p>
-<p><code>x</code> unless <code>y</code> (in which case the result is 1)</p>
+<ul>
+<li><code>x</code> unless <code>y</code> (in which case the result is 1)</li>
+</ul>
 <p>An expression using <code>AND</code> or <code>OR</code> like this is called a conditional expression. An example using OR could be...</p>
 <pre><code>LET total=price less tax*(1.15 OR v$=&quot;zero rated&quot;)
 </code></pre>
 <p>Notice how <code>AND</code> tends to go with addition (because its default value is 0), and <code>OR</code> tends to go with multiplication (because its default value is 1).</p>
 <p>You can also make string valued conditional expressions, but only using AND...</p>
-<p><code>x$ AND y</code> has the value      __[ <code>x$</code> if <code>y</code> is non-zero
-[ &quot;&quot; if y is zero</p>
+<p><code>x$ AND y</code> has the value      __| <code>x$</code> if <code>y</code> is non-zero
+| &quot;&quot; if y is zero</p>
 <p>...so it means <code>x$</code> if <code>y</code> (else the empty string).</p>
 <p>Try this program, which inputs two strings and puts them in alphabetical order.</p>
 <pre><code>10 INPUT &quot;type in two strings&quot;'a$,b$
@@ -2453,7 +2480,7 @@ instead it uses ordinary numbers, subject to a few rules...</p>
   graphics(cx, borderSize, borderSize + (3 * 8), '0123456789:;<=>?');
   text(cx, borderSize, borderSize + 184, '0 OK, 10:1');
 })</script>
-<p>The character set</p>
+<h3 id="a-id%22character-set%22a-the-character-set"><a id="character-set"></a> The character set</h3>
 <p>As you can see, the character set consists of a space, 15 symbols and punctuation marks, the ten digits, seven more symbols, the capital letters, six more symbols, the lower case letters and five more symbols. These are all (except <code>£</code> and <code>©</code>) taken from a widely-used set of characters known as <em><strong>ASCII</strong></em> (American Standard Codes for Information Interchange). <em><strong>ASCII</strong></em> also assigns numeric codes to these characters, and these are the codes that the +3 uses.</p>
 <p>The rest of the characters are not part of ASCII, but are dedicated to the ZX Spectrum range of computers. First amongst them are a space and 15 patterns of black and white blobs. These are called the <em><strong>graphics symbols</strong></em> and can be used for drawing pictures. You can enter these from the keyboard, using what's known as <em><strong>graphics mode</strong></em>. Pressing the <strong>GRAPH</strong> key switches on graphics mode, after which the keys <strong>1,</strong> <strong>2</strong>, <strong>3</strong>, <strong>4</strong>, <strong>5</strong>, <strong>6</strong>, <strong>7</strong> and <strong>8</strong> will produce the graphics symbols...</p>
 <p><canvas id="keyboard-graph-blocks"></canvas></p>
@@ -2590,28 +2617,14 @@ keyboard('keyboard-graph-caps-blocks', function(cx) {
 <p>After the graphics symbols in the character set, you will see what appears to be another copy of the alphabet from A to S. These are characters that you can redefine yourself (though when the machine is first switched on they are set as letters) - they are called <em><strong>user-defined graphics</strong></em>. You can type these in from the keyboard by going into graphics mode, and then using the letter keys <strong>A</strong> to <strong>S</strong>.</p>
 <p>To define a new character for yourself, follow this recipe, it defines a character to show π.</p>
 <p>(i) Work out what the character looks like. Each character has an 8 x 8 grid of dots, each of which can appear to be on or off. You'd draw a diagram something like this (with blank squares representing the dots which are on)...</p>
-<pre><code><code><div>                    _______________________________
-                   |   |   |   |   |   |   |   |   |
-                   |___|___|___|___|___|___|___|___|
-                   |   |   |   |   |   |   |   |   |
-                   |___|___|___|___|___|___|___|___|
-                   |   |   |   |   |   |   |###|   |
-                   |___|___|___|___|___|___|###|___|
-                   |   |   |###|###|###|###|   |   |
-                   |___|___|###|###|###|###|___|___|
-                   |   |###|   |###|   |###|   |   |
-                   |___|###|___|###|___|###|___|___|
-                   |   |   |   |###|   |###|   |   |
-                   |___|___|___|###|___|###|___|___|
-                   |   |   |   |###|   |###|   |   |
-                   |___|___|___|###|___|###|___|___|
-                   |   |   |   |   |   |   |   |   |
-                   |___|___|___|___|___|___|___|___|
-</div></code></code></pre>
+<figure>
+  <canvas id="grid-pi"></canvas>
+  <script>plot8x8Grid('grid-pi', [0, 0, 2, 60, 84, 20, 20, 0 ]);</script>
+</figure>
 <p>When a dot is on, the +3 prints the ink colour; when a dot if off, the +3 prints the paper colour. (The terms ink and paper are explained in <a href="#part16">part 16 of this chapter</a>.)</p>
 <p>We've left a one-square border around the edge because all the other letters also have one (except for lower case letters with tails, where the tail goes right down to the bottom).</p>
 <p>(ii) Work out which user-defined graphic you wish to display π - let's say the one corresponding to <strong>P</strong> so that if you press <strong>P</strong> (after pressing <strong>GRAPH</strong>) you get π.</p>
-<p>(iii) Store the new pattern. Each user-defined graphic has its pattern stored as eight numbers, one for each row.  You can write each of these numbers in a program as <code>BIN</code> followed by eight 0's or 1's - 0 for paper, 1 for ink - so the eight numbers for our pi character are...</p>
+<p>(iii) Store the new pattern. Each user-defined graphic has its pattern stored as eight numbers, one for each row.  You can write each of these numbers in a program as <code>BIN</code> followed by eight 0's or 1's - 0 for paper, 1 for ink - so the eight numbers for our π character are...</p>
 <ul>
 <li><code>BIN 00000000</code>    - top row</li>
 <li><code>BIN 00000000</code>    - second row down</li>
@@ -2965,26 +2978,11 @@ CHR$ 8+&quot;AARDVARK HUNTING&quot;
 </code></pre>
 <p>On a black-and-white TV, these numbers are in order of brightness. To use these colours properly, you will need to understand a bit about how the picture is arranged.</p>
 <p>The picture is divided up into 768 (24 lines of 32) positions (cells) where characters can be printed.</p>
-<pre><code>                _______________________________
-               |   |   |   |   |   |   |   |   |
-               |___|___|___|___|___|___|___|___|
-               |   |   |   |   |   |   |   |   |
-               |___|___|___|___|___|___|___|___|
-               |   |   |###|###|###|   |   |   |
-               |___|___|###|###|###|___|___|___|
-               |   |   |   |   |   |###|   |   |
-               |___|___|___|___|___|###|___|___|
-               |   |   |###|###|###|###|   |   |
-               |___|___|###|###|###|###|___|___|
-               |   |###|   |   |   |###|   |   |
-               |___|###|___|___|___|###|___|___|
-               |   |   |###|###|###|###|   |   |
-               |___|___|###|###|###|###|___|___|
-               |   |   |   |   |   |   |   |   |
-               |___|___|___|___|___|___|___|___|
-
-                   A typical character cell
-</code></pre>
+<figure>
+  <canvas id="grid-a"></canvas>
+  <script>plot8x8Grid('grid-a', 'a');</script>
+  <figcaption>A typical character cell</figcaption>
+</figure>
 <p>Each character cell consists of an 8 x 8 grid (such as above). This should remind you of the user-defined graphics in <a href="#part14">part 14</a>, where we had 0s for the white dots and 1s for the black dots.</p>
 <p>The character has two colours associated with it: the <em><strong>ink</strong></em>, or foreground colour, which is the colour for the black dots in our square, and the <em><strong>paper</strong></em>, or background colour, which is used for the white dots. To start off with, every cell has black ink and white paper so writing appears as black on white.</p>
 <p>The character also has a brightness (normal or extra bright), and something to say whether it flashes or not. Flashing is done by continuously swapping the ink and paper colours. All this information can be coded into numbers, so a character then has the following...</p>
@@ -3041,24 +3039,10 @@ CHR$ 8+&quot;AARDVARK HUNTING&quot;
 </code></pre>
 <p>There is a function called <code>ATTR</code> that finds out what the attributes ate at a given position on the screen. It is a fairly complicated function, so it has been relegated to the end of this section.</p>
 <p>There are two more statements, <code>INVERSE</code> and <code>OVER</code>, which control not the attributes, but the dot pattern that is printed on the screen. They use the numbers 0 for off, and 1 for on. If you use <code>INVERSE 1</code>, then each character cell's dot pattern will be the inverse of its usual form, ie. paper dots will be replaced by ink dots and vice versa. Thus the character cell containing '**a' (shown previously) would be printed as follow...</p>
-<pre><code>                _______________________________
-               |###|###|###|###|###|###|###|###|
-               |###|###|###|###|###|###|###|###|
-               |###|###|###|###|###|###|###|###|
-               |###|###|###|###|###|###|###|###|
-               |###|###|   |   |   |###|###|###|
-               |###|###|___|___|___|###|###|###|
-               |###|###|###|###|###|   |###|###|
-               |###|###|###|###|###|___|###|###|
-               |###|###|   |   |   |   |###|###|
-               |###|###|___|___|___|___|###|###|
-               |###|   |###|###|###|   |###|###|
-               |###|___|###|###|###|___|###|###|
-               |###|###|   |   |   |   |###|###|
-               |###|###|___|___|___|___|###|###|
-               |###|###|###|###|###|###|###|###|
-               |###|###|###|###|###|###|###|###|
-</code></pre>
+<figure>
+  <canvas id="grid-a-inverse"></canvas>
+  <script>plot8x8Grid('grid-a-inverse', 'a', null, true);</script>
+</figure>
 <p>If (as at switch on) we have black ink on white paper, then the '<strong>a</strong>' will appear as white on black.</p>
 <p>The statement...</p>
 <pre><code>OVER 1
@@ -12572,7 +12556,7 @@ number 3AF0h (for example) is far more likely to be easily and correctly read th
 <p><a id="built-in-math-functions"></a>...and back comes the answer <code>2</code>. Now type in...</p>
 <pre><code>*PI
 </code></pre>
-<p>This produces the result <code>6.2831853</code> on the screen. The +3 has used its built-in pi function - all you had to do was type in <code>PI</code>. This applies to all the +3's mathematical functions. To demonstrate, type in...</p>
+<p>This produces the result <code>6.2831853</code> on the screen. The +3 has used its built-in π function - all you had to do was type in <code>PI</code>. This applies to all the +3's mathematical functions. To demonstrate, type in...</p>
 <pre><code>*ATN 60
 </code></pre>
 <p><a id="editing-the-screen"></a>...which gives the result <code>9.7648943</code>. You may also 'edit' the contents of the screen. To demonstrate, move the cursor (using the cursor left key) to the beginning of the line and then type in <code>INT</code> so that the line reads...</p>
