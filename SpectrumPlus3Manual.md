@@ -485,7 +485,16 @@ We will now switch off the test signal and start using the +3. Press and release
 ### <a id="the-opening-menu"></a> The opening menu
 
 <canvas id="screen-opening-menu"></canvas>
-<script>spectrum('screen-opening-menu', 2, initialPlus3);</script>
+<script>
+spectrum('screen-opening-menu', 2, initialPlus3,
+  function(cx, state) {
+    if (state.frame !== 0) return;
+    if (state.menuIndex == undefined) state.menuIndex = 0;
+    plus3Menu(cx, state.menuIndex);
+    state.menuIndex = (state.menuIndex + 1) % 4;
+  }
+);
+</script>
 
 Note that the opening menu initially indicates which drives are available for use: drive A: is the built-in disk drive (at the front of the computer) and drive M: is the +3's internal RAMdisk (more about this in [chapter 8 part 20](#part20)). If you have connected an external disk drive to the +3, then you will see drive B: also indicated on the menu. The opening menu will appear whenever you first plug in and switch on the +3, or whenever you press and release the **RESET** button.
 
@@ -526,11 +535,20 @@ The computer then switches to the +3 BASIC mode. You will see a black horizontal
 Don't worry if you know nothing about BASIC - we're not going to do any programming just yet - we'll simply return to the opening menu again. To do this, we use a different menu - this one's called the edit menu. Call up the ***edit menu*** by pressing the **EDIT** key.
 
 <canvas id="screen-options"></canvas>
-<script>spectrum('screen-options', 2, function(cx) {
-  clear(cx);
-  optionsMenu(cx);
-  bottomBarWithStripe(cx, '+3 BASIC');
-})</script>
+<script>
+spectrum('screen-options', 2,
+  function(cx) {
+    clear(cx);
+    optionsMenu(cx);
+    bottomBarWithStripe(cx, '+3 BASIC');
+  },
+  function(cx, state) {
+    if (state.frame !== 0) return;
+    if (state.menuIndex == undefined) state.menuIndex = 0;
+    optionsMenu(cx, state.menuIndex);
+    state.menuIndex = (state.menuIndex + 1) % 5;
+  }
+)</script>
 
 Again, using the cursor keys and **ENTER**, select the option `Exit` to return to the opening menu.
 
@@ -626,7 +644,22 @@ To load Spectrum +3, Spectrum +2 and Spectrum 128 software (a game, an utility p
 1. Set up and switch on the system so that the opening menu appears on the screen...
 
 <canvas id="screen-loading-software"></canvas>
-<script>spectrum('screen-loading-software', 2, initialPlus3);</script>
+<script>
+spectrum('screen-loading-software', 2, initialPlus3,
+  function(cx, state) {
+    if (state.frame !== 0) return;
+    if (state.elapsedSeconds < 1) {
+      clear(cx);
+      return;
+    }
+    if (state.elapsedSeconds < 2) {
+      bottomBarWithStripe(cx, 'Loader');
+      cx.fillStyle = darkColors[0];
+      text(cx, borderSize, borderSize + 176, 'Insert tape and press PLAY');
+      text(cx, borderSize, borderSize + 184, 'To cancel - press BREAK twice');
+    }
+  }
+);</script>
 
 2. Make sure that no disk in inserted in the drive.
 
@@ -643,9 +676,13 @@ To load Spectrum 48 software (a game, an utility program, etc.) from tape, carry
 1. Set up and switch on the system so that the opening menu appears on the screen...
 
 <canvas id="screen-loading-48"></canvas>
-<script>spectrum('screen-loading-48', 2, initialPlus3);</script>
+<script>spectrum('screen-loading-48', 2, initialPlus3, function(cx, state) {
+  if (state.frame !== 0) return;
+  if (state.elapsedSeconds < 4)
+    plus3Menu(cx, state.elapsedSeconds);
+});</script>
 
-2. Select the option `48 BASIC` from the opening menu. (If you don't know how to select a menu option, refer back to [chapter 2](#chapter2).) The opening menu will disappear and the following message will be displayed at the bottom of the screen...
+1. Select the option `48 BASIC` from the opening menu. (If you don't know how to select a menu option, refer back to [chapter 2](#chapter2).) The opening menu will disappear and the following message will be displayed at the bottom of the screen...
 
 <canvas id="screen-basic-48"></canvas>
 <script>spectrum('screen-basic-48', 2, initial48K);</script>
@@ -7448,7 +7485,7 @@ Buffer format:
 * ...to...
 * Entry n
 
-Entry 0 must be preloaded with the first 'filename.type' required. Entry 1 will contain the first matching filename greater than the preloaded entry (if any). A zeroised preload entry is OK.
+Entry 0 must be preloaded with the first ***filename.type*** required. Entry 1 will contain the first matching filename greater than the preloaded entry (if any). A zeroised preload entry is OK.
 
 If the buffer is too small for the directory, this routine can be called again with entry 0 replaced by entry n to fetch the next part of the directory.
 

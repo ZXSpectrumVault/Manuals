@@ -47,12 +47,13 @@ function spectrum(id, scale, f, animationFunction) {
     if (animationFunction) {
         const fps = 50;
         let timer = null;
-        let state = { frame: 0 };
         cx.canvas.onmouseenter = function () {
             if (timer) return;
-            timer = setInterval(function (e) {
+            let state = { frame: 0, start: new Date() };
+            timer = setInterval(function () {
+                state.elapsedSeconds = (new Date() - state.start) / 1000;
                 animationFunction(cx, state);
-                state.frame = state.frame + 1 % fps;
+                state.frame = (state.frame + 1) % fps;
             }, 1000 / fps);
         }
         cx.canvas.onmouseleave = function () {
@@ -296,13 +297,13 @@ function clear(cx, color) {
 
 // Draw the 128K bottom-bar with rainbow stripe
 function bottomBarWithStripe(cx, title) {
-    barWithStripe(cx, borderSize, 172 + borderSize, 256, title);
+    barWithStripe(cx, borderSize, borderSize + 168, 256, title);
 }
 
 // Draw the +3 initial power-on screen
 function initialPlus3(cx) {
     clear(cx);
-    menu(cx, borderSize + (8 * 8), borderSize + (7 * 8), 14 * 8, '128 +3', Array('Loader', '+3 BASIC', 'Calculator', '48 BASIC'), 0);
+    plus3Menu(cx, 0);
     cx.fillStyle = darkColors[0];
     text(cx, borderSize, borderSize + 176, '©1982, 1986, 1987 Amstrad Plc.');
     text(cx, borderSize, borderSize + 184, 'Drives A: and M: available.');
@@ -316,9 +317,13 @@ function cursor48K(cx, x, y, mode, inverse) {
     text(cx, x, y, mode, foreground);
 }
 
+function plus3Menu(cx, index) {
+    menu(cx, borderSize + (8 * 8), borderSize + (7 * 8), 14 * 8, '128 +3', Array('Loader', '+3 BASIC', 'Calculator', '48 BASIC'), index);
+}
+
 // Draw the 128K options menu
-function optionsMenu(cx) {
-    menu(cx, borderSize + (8 * 8), borderSize + (7 * 8), 14 * 8, 'Options', Array('+3 BASIC', 'Renumber', 'Screen', 'Print', 'Exit'), 0);
+function optionsMenu(cx, index) {
+    menu(cx, borderSize + (8 * 8), borderSize + (7 * 8), 14 * 8, 'Options', Array('+3 BASIC', 'Renumber', 'Screen', 'Print', 'Exit'), index || 0);
 }
 
 // Draw the initial 48K display on an Amstrad machine
