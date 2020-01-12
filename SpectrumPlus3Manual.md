@@ -10001,41 +10001,46 @@ When the FD-1 is connected to the +3, first switch on the FD-1 (using the slide 
 
 <figure class="connector edge">
   <svg viewBox="15 0 382 70" width="75%">
-    <rect y="30" x="30" height="5" width="15" />
-    <rect y="30" x="50" height="5" width="15" />
-    <rect y="30" x="70" height="5" width="15" />
-    <rect y="30" x="90" height="5" width="15" />
-    <rect y="30" x="110" height="5" width="15" />
-    <rect y="30" x="130" height="5" width="15" />
-    <rect y="30" x="150" height="5" width="15" />
-    <rect y="30" x="170" height="5" width="15" />
-    <rect y="30" x="190" height="5" width="15" />
-    <rect y="30" x="210" height="5" width="15" />
-    <rect y="30" x="230" height="5" width="15" />
-    <rect y="30" x="250" height="5" width="15" />
-    <rect y="30" x="270" height="5" width="15" />
-    <rect y="30" x="290" height="5" width="15" />
-    <rect y="30" x="310" height="5" width="15" />
-    <rect y="30" x="330" height="5" width="15" />
-    <rect y="30" x="350" height="5" width="15" />
+    <defs>
+      <g id="edge-pin">
+        <rect height="5" width="15" />
+      </g>
+    </defs>
+    <use xlink:href="#edge-pin" y="30" x="30" />
+    <use xlink:href="#edge-pin" y="30" x="50" />
+    <use xlink:href="#edge-pin" y="30" x="70" />
+    <use xlink:href="#edge-pin" y="30" x="90" />
+    <use xlink:href="#edge-pin" y="30" x="110" />
+    <use xlink:href="#edge-pin" y="30" x="130" />
+    <use xlink:href="#edge-pin" y="30" x="150" />
+    <use xlink:href="#edge-pin" y="30" x="170" />
+    <use xlink:href="#edge-pin" y="30" x="190" />
+    <use xlink:href="#edge-pin" y="30" x="210" />
+    <use xlink:href="#edge-pin" y="30" x="230" />
+    <use xlink:href="#edge-pin" y="30" x="250" />
+    <use xlink:href="#edge-pin" y="30" x="270" />
+    <use xlink:href="#edge-pin" y="30" x="290" />
+    <use xlink:href="#edge-pin" y="30" x="310" />
+    <use xlink:href="#edge-pin" y="30" x="330" />
+    <use xlink:href="#edge-pin" y="30" x="350" />
     <rect y="35" x="20" width="355" height="15" />
-    <rect y="50" x="30" height="5" width="15" />
-    <rect y="50" x="50" height="5" width="15" />
-    <rect y="50" x="70" height="5" width="15" />
-    <rect y="50" x="90" height="5" width="15" />
-    <rect y="50" x="110" height="5" width="15" />
-    <rect y="50" x="130" height="5" width="15" />
-    <rect y="50" x="150" height="5" width="15" />
-    <rect y="50" x="170" height="5" width="15" />
-    <rect y="50" x="190" height="5" width="15" />
-    <rect y="50" x="210" height="5" width="15" />
-    <rect y="50" x="230" height="5" width="15" />
-    <rect y="50" x="250" height="5" width="15" />
-    <rect y="50" x="270" height="5" width="15" />
-    <rect y="50" x="290" height="5" width="15" />
-    <rect y="50" x="310" height="5" width="15" />
-    <rect y="50" x="330" height="5" width="15" />
-    <rect y="50" x="350" height="5" width="15" />
+    <use xlink:href="#edge-pin" y="50" x="30" />
+    <use xlink:href="#edge-pin" y="50" x="50" />
+    <use xlink:href="#edge-pin" y="50" x="70" />
+    <use xlink:href="#edge-pin" y="50" x="90" />
+    <use xlink:href="#edge-pin" y="50" x="110" />
+    <use xlink:href="#edge-pin" y="50" x="130" />
+    <use xlink:href="#edge-pin" y="50" x="150" />
+    <use xlink:href="#edge-pin" y="50" x="170" />
+    <use xlink:href="#edge-pin" y="50" x="190" />
+    <use xlink:href="#edge-pin" y="50" x="210" />
+    <use xlink:href="#edge-pin" y="50" x="230" />
+    <use xlink:href="#edge-pin" y="50" x="250" />
+    <use xlink:href="#edge-pin" y="50" x="270" />
+    <use xlink:href="#edge-pin" y="50" x="290" />
+    <use xlink:href="#edge-pin" y="50" x="310" />
+    <use xlink:href="#edge-pin" y="50" x="330" />
+    <use xlink:href="#edge-pin" y="50" x="350" />
     <text y="25" x="37" class="pin">2</text>
     <text y="25" x="57" class="pin">4</text>
     <text y="25" x="77" class="pin">6</text>
@@ -10119,16 +10124,35 @@ It is safe to plug in (or unplug) a joystick while the +3 is switched on.
 |  8  | common   |
 |  9  | down     |
 
-```
- _____________________
-/  1   2   3   4   5  \
-\  o   o   o   o   o  /
- \   6   7   8   9   /
-  \  o   o   o   o  /
-   \_______________/
-```
-
-**JOYSTICK 1** and **JOYSTICK 2** sockets
+<figure id="joysticks">
+  <svg viewBox="0 0 120 45" width="25%">
+    <defs>
+      <g id="pin">
+        <circle cx="0" cy="0" r="2.5"/>
+      </g>
+    </defs>
+    <path d="M 20 2 h 80 a 10,8 0 0 1 10,10 l -10 23 a 10,10 0 0 1 -10,5 h -60 a 10,10 0 0 1 -10, -5 l -10 -23 a 10,8 0 0 1 10,-10" class="thick" />
+    <use xlink:href="#pin" x="20" y="10" />
+    <text x="20" y="20" font-size="8" text-anchor="middle">1</text>
+    <use xlink:href="#pin" x="40" y="10" />
+    <text x="40" y="20" font-size="8" text-anchor="middle">2</text>
+    <use xlink:href="#pin" x="60" y="10" />
+    <text x="60" y="20" font-size="8" text-anchor="middle">3</text>
+    <use xlink:href="#pin" x="80" y="10" />
+    <text x="80" y="20" font-size="8" text-anchor="middle">4</text>
+    <use xlink:href="#pin" x="100" y="10" />
+    <text x="100" y="20" font-size="8" text-anchor="middle">5</text>
+    <use xlink:href="#pin" x="30" y="25" />
+    <text x="30" y="35" font-size="8" text-anchor="middle">6</text>
+    <use xlink:href="#pin" x="50" y="25" />
+    <text x="50" y="35" font-size="8" text-anchor="middle">7</text>
+    <use xlink:href="#pin" x="70" y="25" />
+    <text x="70" y="35" font-size="8" text-anchor="middle">8</text>
+    <use xlink:href="#pin" x="90" y="25" />
+    <text x="90" y="35" font-size="8" text-anchor="middle">9</text>
+  </svg>
+  <figcaption><strong>JOYSTICK 1</strong> and <strong>JOYSTICK 2</strong> sockets</figcaption>
+</figure>
 
 ## <a id="vdu-monitor"></a> VDU Monitor
 
@@ -10149,9 +10173,24 @@ A VDU monitor (or PERITEL TV) should be plugged into the RGB/PERITEL socket at t
 |  8  | blue           |
 
 <figure id="vdu">
-  <svg viewBox="0 0 100 100" width="15%">
-    <text y="100" x="100">8</text>
-    <path -d="M40 0 V 15 H 55 V 0 C 195 80 -100 80 40 0 Z" />
+  <svg viewBox="0 0 160 160" width="25%">
+    <path d="M 70 10 A 70 70 0 1 0 100 10 v 20 h -30 v -20" class="thick" />
+    <text x="50" y="45">7</text>
+    <circle cx="50" cy="55" r="5"/>
+    <text x="120" y="45">6</text>
+    <circle cx="120" cy="55" r="5"/>
+    <text x="85" y="70">8</text>
+    <circle cx="85" cy="80" r="5"/>
+    <text x="50" y="82">3</text>
+    <circle cx="40" cy="85" r="5"/>
+    <text x="120" y="82">1</text>
+    <circle cx="130" cy="85" r="5"/>
+    <text x="62" y="108">5</text>
+    <circle cx="55" cy="112" r="5"/>
+    <text x="106" y="108">4</text>
+    <circle cx="115" cy="112" r="5"/>
+    <text x="85" y="115">2</text>
+    <circle cx="85" cy="125" r="5"/>
   </svg>
   <figcaption><strong>RGB/PERITEL</strong> socket</figcaption>
 </figure>
@@ -10296,68 +10335,68 @@ Using software control loops, the I/O lines could be driven as a second RS232 po
 
 The +3 can connect to a very wide range of peripherals via the **EXPANSION I/O** socket at the back of the machine. Although this socket is much the same as on the old-style Spectrum 48K, there is no guarantee that a device which ran correctly on a Spectrum 48K will run on a +3. You should, therefore, before you purchase any expansion device or add-on, verify that it will work with the +3, and not just with a 48K Spectrum.
 
-| WARNING - It is very dangerous indeed to plug in (or unplug) any device from the **EXPANSION I/O** socket while the +3 is switched on - you will probably damage both the +3 and the expansion device if you do so. |
-|-|
+<p class="warning-box">WARNING - It is very dangerous indeed to plug in (or unplug) any device from the <strong>EXPANSION I/O</strong> socket while the +3 is switched on - you will probably damage both the +3 and the expansion device if you do so.</p>
 
 <figure class="connector edge">
   <svg viewBox="0 0 572 80" width="75%">
     <text y="30" x="10">U</text>
     <text y="70" x="10">L</text>
-    <rect y="30" x="30" height="5" width="15" />
-    <rect y="30" x="50" height="5" width="15" />
-    <rect y="30" x="70" height="5" width="15" />
-    <rect y="30" x="90" height="5" width="15" />
-    <rect y="30" x="110" height="5" width="15" />
-    <rect y="30" x="130" height="5" width="15" />
-    <rect y="30" x="150" height="5" width="15" />
-    <rect y="30" x="170" height="5" width="15" />
-    <rect y="30" x="190" height="5" width="15" />
-    <rect y="30" x="210" height="5" width="15" />
-    <rect y="30" x="230" height="5" width="15" />
-    <rect y="30" x="250" height="5" width="15" />
-    <rect y="30" x="270" height="5" width="15" />
-    <rect y="30" x="290" height="5" width="15" />
-    <rect y="30" x="310" height="5" width="15" />
-    <rect y="30" x="330" height="5" width="15" />
-    <rect y="30" x="350" height="5" width="15" />
-    <rect y="30" x="370" height="5" width="15" />
-    <rect y="30" x="390" height="5" width="15" />
-    <rect y="30" x="410" height="5" width="15" />
-    <rect y="30" x="430" height="5" width="15" />
-    <rect y="30" x="450" height="5" width="15" />
-    <rect y="30" x="470" height="5" width="15" />
-    <rect y="30" x="490" height="5" width="15" />
-    <rect y="30" x="510" height="5" width="15" />
-    <rect y="30" x="530" height="5" width="15" />
-    <rect y="30" x="550" height="5" width="15" />
+    <use xlink:href="#edge-pin" y="30" x="30" />
+    <use xlink:href="#edge-pin" y="30" x="30" />
+    <use xlink:href="#edge-pin" y="30" x="50" />
+    <use xlink:href="#edge-pin" y="30" x="70" />
+    <use xlink:href="#edge-pin" y="30" x="90" />
+    <use xlink:href="#edge-pin" y="30" x="110" />
+    <use xlink:href="#edge-pin" y="30" x="130" />
+    <use xlink:href="#edge-pin" y="30" x="150" />
+    <use xlink:href="#edge-pin" y="30" x="170" />
+    <use xlink:href="#edge-pin" y="30" x="190" />
+    <use xlink:href="#edge-pin" y="30" x="210" />
+    <use xlink:href="#edge-pin" y="30" x="230" />
+    <use xlink:href="#edge-pin" y="30" x="250" />
+    <use xlink:href="#edge-pin" y="30" x="270" />
+    <use xlink:href="#edge-pin" y="30" x="290" />
+    <use xlink:href="#edge-pin" y="30" x="310" />
+    <use xlink:href="#edge-pin" y="30" x="330" />
+    <use xlink:href="#edge-pin" y="30" x="350" />
+    <use xlink:href="#edge-pin" y="30" x="370" />
+    <use xlink:href="#edge-pin" y="30" x="390" />
+    <use xlink:href="#edge-pin" y="30" x="410" />
+    <use xlink:href="#edge-pin" y="30" x="430" />
+    <use xlink:href="#edge-pin" y="30" x="450" />
+    <use xlink:href="#edge-pin" y="30" x="470" />
+    <use xlink:href="#edge-pin" y="30" x="490" />
+    <use xlink:href="#edge-pin" y="30" x="510" />
+    <use xlink:href="#edge-pin" y="30" x="530" />
+    <use xlink:href="#edge-pin" y="30" x="550" />
     <rect y="35" x="20" width="550" height="15" />
-    <rect y="50" x="30" height="5" width="15" />
-    <rect y="50" x="50" height="5" width="15" />
-    <rect y="50" x="70" height="5" width="15" />
-    <rect y="50" x="90" height="5" width="15" />
-    <rect y="50" x="110" height="5" width="15" />
-    <rect y="50" x="130" height="5" width="15" />
-    <rect y="50" x="150" height="5" width="15" />
-    <rect y="50" x="170" height="5" width="15" />
-    <rect y="50" x="190" height="5" width="15" />
-    <rect y="50" x="210" height="5" width="15" />
-    <rect y="50" x="230" height="5" width="15" />
-    <rect y="50" x="250" height="5" width="15" />
-    <rect y="50" x="270" height="5" width="15" />
-    <rect y="50" x="290" height="5" width="15" />
-    <rect y="50" x="310" height="5" width="15" />
-    <rect y="50" x="330" height="5" width="15" />
-    <rect y="50" x="350" height="5" width="15" />
-    <rect y="50" x="370" height="5" width="15" />
-    <rect y="50" x="390" height="5" width="15" />
-    <rect y="50" x="410" height="5" width="15" />
-    <rect y="50" x="430" height="5" width="15" />
-    <rect y="50" x="450" height="5" width="15" />
-    <rect y="50" x="470" height="5" width="15" />
-    <rect y="50" x="490" height="5" width="15" />
-    <rect y="50" x="510" height="5" width="15" />
-    <rect y="50" x="530" height="5" width="15" />
-    <rect y="50" x="550" height="5" width="15" />
+    <use xlink:href="#edge-pin" y="50" x="30" />
+    <use xlink:href="#edge-pin" y="50" x="50" />
+    <use xlink:href="#edge-pin" y="50" x="70" />
+    <use xlink:href="#edge-pin" y="50" x="90" />
+    <use xlink:href="#edge-pin" y="50" x="110" />
+    <use xlink:href="#edge-pin" y="50" x="130" />
+    <use xlink:href="#edge-pin" y="50" x="150" />
+    <use xlink:href="#edge-pin" y="50" x="170" />
+    <use xlink:href="#edge-pin" y="50" x="190" />
+    <use xlink:href="#edge-pin" y="50" x="210" />
+    <use xlink:href="#edge-pin" y="50" x="230" />
+    <use xlink:href="#edge-pin" y="50" x="250" />
+    <use xlink:href="#edge-pin" y="50" x="270" />
+    <use xlink:href="#edge-pin" y="50" x="290" />
+    <use xlink:href="#edge-pin" y="50" x="310" />
+    <use xlink:href="#edge-pin" y="50" x="330" />
+    <use xlink:href="#edge-pin" y="50" x="350" />
+    <use xlink:href="#edge-pin" y="50" x="370" />
+    <use xlink:href="#edge-pin" y="50" x="390" />
+    <use xlink:href="#edge-pin" y="50" x="410" />
+    <use xlink:href="#edge-pin" y="50" x="430" />
+    <use xlink:href="#edge-pin" y="50" x="450" />
+    <use xlink:href="#edge-pin" y="50" x="470" />
+    <use xlink:href="#edge-pin" y="50" x="490" />
+    <use xlink:href="#edge-pin" y="50" x="510" />
+    <use xlink:href="#edge-pin" y="50" x="530" />
+    <use xlink:href="#edge-pin" y="50" x="550" />
     <text y="25" x="37" class="pin">27</text>
     <text y="25" x="57" class="pin">26</text>
     <text y="25" x="77" class="pin">25</text>
@@ -10432,7 +10471,7 @@ The +3 can connect to a very wide range of peripherals via the **EXPANSION I/O**
 |  11 | D4            | A3            |
 |  12 | <span class="signal-high">INT</a>  | not used      |
 |  13 | <span class="signal-high">NMI</a>  | GND           |
-|  14 | <span class="signal-high">HALT</a> | ROM 2 OE      |
+|  14 | <span class="signal-high">HALT</a> | ROM 2 <span class="signal-high">OE</a>      |
 |  15 | <span class="signal-high">MREQ</a> | DISK <span class="signal-high">RD</a> |
 |  16 | <span class="signal-high">IORQ</a> | DISK <span class="signal-high">WR</a> |
 |  17 | <span class="signal-high">RD</a>   | <span class="signal-high">MOTOR ON</a> |

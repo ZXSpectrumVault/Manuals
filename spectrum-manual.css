@@ -81,6 +81,12 @@ code {
   font-weight: 500;
 }
 
+.warning-box {
+  border: 3px solid #000;
+  display: block;
+  padding: 0.75em;
+}
+
 /* SVG */
 
 #amstrad-logo path, #amstrad-logo-a {
@@ -233,6 +239,7 @@ figcaption {
 }
 
 #vdu text {
-  font-size: 10px;
+  font-size: 18px;
   font-weight: bold;
+  text-anchor: middle;
 }
