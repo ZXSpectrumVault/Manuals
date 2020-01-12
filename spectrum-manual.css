@@ -17,6 +17,10 @@ svg {
   padding: 0;
 }
 
+table {
+  border: 3px solid #000;
+}
+
 canvas,
 svg {
   display: block;
@@ -39,16 +43,6 @@ h1 {
 ul {
   list-style: none;
 }
-
-/* h1:before {
-  border-bottom: 1.5px solid #000;
-  bottom: -10px;
-  content: " ";
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-} */
 
 h1,
 h2,

@@ -908,10 +908,7 @@ spectrum('screen-basic-plus3', 2,
     clear(cx);
     cursor(cx, borderSize, borderSize);
     bottomBarWithStripe(cx, '+3 BASIC');
-  },
-  function (cx, state) {
-    cursor(cx, borderSize, borderSize, state.frame % 30 > 15);
-  }
+  }, cursorAnimation128K
 );
 </script>
 
@@ -5965,7 +5962,7 @@ When bit 0 is 0, bit 1 has no effect and bit 2 is a 'vertical' ROM switch (ie. b
 
 It is best to think of bit 4 in port 7FFDh and bit 2 in port 1FFDh combining to form a 2-bit number (0...3) which determines which ROM occupies the memory area 0000h...3FFFh. Bit 4 of port 7FFDh is the least significant bit and bit 2 of 1FFDh is the most significant bit.
 
-|Bit 2 of 1FFDh<br>(System variable:[BANK768](#bank768))|Bit 4 of 7FFDh<br>(System variable:[BANKM](#bankm))|Switched ROM at 0000h...3FFFh
+|Bit 2 of 1FFDh<br>(System variable:[BANK678](#bank678))|Bit 4 of 7FFDh<br>(System variable:[BANKM](#bankm))|Switched ROM at 0000h...3FFFh
 |:-:|:-:|:-:
 | 0 | 0 | 0
 | 0 | 1 | 1
@@ -6334,7 +6331,7 @@ This example was developed using M80 on a CP/M based machine - so the method to 
      bank1               equ  07FFDh    ;"horizontal" and RAM switch port
      bankm               equ  05B5Ch    ;associated system variable
      bank2               equ  01FFDh    ;"vertical" switch port
-     [bank678]             equ  05B67h    ;associated system variable
+     bank678             equ  05B67h    ;associated system variable
 
      select              equ  01601h    ;BASIC routine to open stream
      dos_ref_xdpb        equ  0151h     ;
@@ -7444,12 +7441,12 @@ Note that +3DOS format disks (which are the same as single-sided, single track A
 
 Buffer format:
 
-    Entry 0
-    Entry 1
-    Entry 2
-    Entry 3
-    ...to...
-    Entry n
+* Entry 0
+* Entry 1
+* Entry 2
+* Entry 3
+* ...to...
+* Entry n
 
 Entry 0 must be preloaded with the first 'filename.type' required. Entry 1 will contain the first matching filename greater than the preloaded entry (if any). A zeroised preload entry is OK.
 
@@ -7457,10 +7454,9 @@ If the buffer is too small for the directory, this routine can be called again w
 
 Entry format (13 bytes long):
 
-    Bytes 0...7 - Filename (ASCII) left justified, space
-               filled
-    Bytes 6...10    - Type (ASCII) left justified, space filledd
-    Bytes 11...12   - Size in kilobytes (binary)
+* Bytes 0...7 - Filename (ASCII) left justified, space filled
+* Bytes 6...10    - Type (ASCII) left justified, space filled
+* Bytes 11...12   - Size in kilobytes (binary)
 
 The file size is the amount of disk space allocated to the file, not necessarily the same as the amount used by the file.
 
@@ -7785,11 +7781,11 @@ This routine will fail if the file is already open, in an incompatible access mo
 * B = File number
 * C = Access mode required
   * Bits 0...2 values:
-    1 = exclusive-read
-    2 = exclusive-write
-    3 = exclusive-read-write
-    5 = shared-read
-    (all other bit settings reserved)
+    * 1 = exclusive-read
+    * 2 = exclusive-write
+    * 3 = exclusive-read-write
+    * 5 = shared-read
+    * (all other bit settings reserved)
   * Bits 3...7 = 0 (reserved)
 
 ##### EXIT CONDITIONS
@@ -7815,21 +7811,21 @@ This routine first sets the attributes specified in D, then clears those attribu
 ##### ENTRY CONDITIONS
 
 * D = Attributes to set
-    bit 0 = t3' Archive
-    bit 1 = t2' System
-    bit 2 = t1' Read-only
-    bit 3 = f4'
-    bit 4 = f3'
-    bit 5 = f2'
-    bit 6 = f1'
+  * bit 0 = t3' Archive
+  * bit 1 = t2' System
+  * bit 2 = t1' Read-only
+  * bit 3 = f4'
+  * bit 4 = f3'
+  * bit 5 = f2'
+  * bit 6 = f1'
 * E = Attributes to clear
-    bit 0 = t3' Archive
-    bit 1 = t2' System
-    bit 2 = t1' Read-only
-    bit 3 = f4'
-    bit 4 = f3'
-    bit 5 = f2'
-    bit 6 = f1'
+  * bit 0 = t3' Archive
+  * bit 1 = t2' System
+  * bit 2 = t1' Read-only
+  * bit 3 = f4'
+  * bit 4 = f3'
+  * bit 5 = f2'
+  * bit 6 = f1'
 * HL = Address of filename (wildcards permitted)
 
 ##### EXIT CONDITIONS
@@ -7862,11 +7858,11 @@ If there are any file open on this drive from other file numbers with exclusive 
 * B = File number
 * C = Access mode required
   * Bits 0...2 values:
-    1 = exclusive-read
-    2 = exclusive-write
-    3 = exclusive-read-write
-    5 = shared-read
-    (all other bit settings reserved)
+    * 1 = exclusive-read
+    * 2 = exclusive-write
+    * 3 = exclusive-read-write
+    * 5 = shared-read
+    * (all other bit settings reserved)
    * Bits 3...7 = 0 (reserved)
 
 ##### EXIT CONDITIONS
@@ -7891,8 +7887,8 @@ When +3DOS detects an error, it will call your ALERT subroutine, passing to it t
 ##### ENTRY CONDITIONS
 
 * A = Enable/disable
-  FFh (255) = enable
-  00h (0) = disable
+  * FFh (255) = enable
+  * 00h (0) = disable
 * HL = Address of ALERT routine (if enabled)
 
 ##### EXIT CONDITIONS
@@ -7934,9 +7930,9 @@ The second version of ALERT, which allows the user to provide non-UK error messa
 
 ##### EXIT CONDITIONS
 * A = Reply
-  0 = cancel
-  1 = retry
-  2 = ignore
+  * 0 = cancel
+  * 1 = retry
+  * 2 = ignore
 * Always:
   * F BC DE HL IX corrupt
   * All other registers preserved
@@ -8099,12 +8095,12 @@ Read a sector.
 
 ##### ENTRY CONDITIONS
 
-    B = Page for C000h (49152)...FFFFh (65535)
-    C = Unit (0/1)
-    D = Logical track, 0 base
-    E = Logical sector, 0 base
-    HL = Address of buffer
-    IX = Address of XDPB
+- B = Page for C000h (49152)...FFFFh (65535)
+- C = Unit (0/1)
+- D = Logical track, 0 base
+- E = Logical sector, 0 base
+- HL = Address of buffer
+- IX = Address of XDPB
 
 ##### EXIT CONDITIONS
 
@@ -8118,20 +8114,18 @@ Read a sector.
   * BC DE HL IX corrupt
   * All other registers preserved
 
-
-DD WRITE SECTOR
-0166h (358)
+### <a id="dd-write-sector"></a> DD WRITE SECTOR 0166h (358)
 
 Write a sector.
 
 ##### ENTRY CONDITIONS
 
-    B = Page for C000h (49152)...FFFFh (65535)
-    C = Unit (0/1)
-    D = Logical track, 0 base
-    E = Logical sector, 0 base
-    HL = Address of buffer
-    IX = Address of XDPB
+- B = Page for C000h (49152)...FFFFh (65535)
+- C = Unit (0/1)
+- D = Logical track, 0 base
+- E = Logical sector, 0 base
+- HL = Address of buffer
+- IX = Address of XDPB
 
 ##### EXIT CONDITIONS
 
@@ -8155,12 +8149,12 @@ Note that FFh (255) on disk or in memory always matches anything (see uPD765A sp
 
 ##### ENTRY CONDITIONS
 
-    B = Page for C000h (49152)...FFFFh (65535)
-    C = Unit (0/1)
-    D = Logical track, 0 base
-    E = Logical sector, 0 base
-    HL = Address of copy of sector
-    IX = Address of XDPB
+- B = Page for C000h (49152)...FFFFh (65535)
+- C = Unit (0/1)
+- D = Logical track, 0 base
+- E = Logical sector, 0 base
+- HL = Address of copy of sector
+- IX = Address of XDPB
 
 ##### EXIT CONDITIONS
 
@@ -8294,11 +8288,11 @@ This routine does not affect or consider the freeze flag.
 ##### ENTRY CONDITIONS
 
 * A = Disk type
-  0 = Spectrum +3 format (AMSTRAD PCW range - DD SS ST)
-  1 = AMSTRAD CPC range system format
-  2 = AMSTRAD CPC range data-only format
-  3 = AMSTRAD PCW range - DD SS DT
-  (other values = error)
+  * 0 = Spectrum +3 format (AMSTRAD PCW range - DD SS ST)
+  * 1 = AMSTRAD CPC range system format
+  * 2 = AMSTRAD CPC range data-only format
+  * 3 = AMSTRAD PCW range - DD SS DT
+  * (other values = error)
 * IX = Address of XDPB
 
 ##### EXIT CONDITIONS
@@ -8351,9 +8345,9 @@ Issue a sense drive status command.
 ##### ENTRY CONDITIONS
 
 * C = Unit/head
-  bits 0...1 = unit
-  bit 2 = head
-  bits 3...7 = 0
+  * bits 0...1 = unit
+  * bit 2 = head
+  * bits 3...7 = 0
 
 ##### EXIT CONDITIONS
 
@@ -8379,13 +8373,13 @@ Side information can only be detected after a double sided disk has been seen an
 
 * A = Side/track information
   * bits 0...1 = side information
-    0 = unknown
-    1 = single sided
-    2 = double sided
+    * 0 = unknown
+    * 1 = single sided
+    * 2 = double sided
   * bits 2...3 = track information
-    0 = unknown
-    1 = single track
-    2 = double track
+    * 0 = unknown
+    * 1 = single track
+    * 2 = double track
 * Always:
   * F BC DE HL IX corrupt
   * All other registers preserved
@@ -8403,8 +8397,8 @@ Note that tracks 0...2 on either side of a disk should not be encoded.
 ##### ENTRY CONDITIONS
 
 * A = Enable/disable
-  00h (0) = disable
-  FFh (255) = enable
+  * 00h (0) = disable
+  * FFh (255) = enable
 * HL = (If enabled) address of ENCODE subroutine
 
 ##### EXIT CONDITIONS
@@ -8424,9 +8418,9 @@ subroutine, and the 'exit conditions' are the values that your subroutine must p
 ##### ENTRY CONDITIONS
 
 * C = Unit/side
-  bits 0...1 = unit
-  bit 2 = side
-  bits 3...7 = 0
+  * bits 0...1 = unit
+  * bit 2 = side
+  * bits 3...7 = 0
 * D = Physical track
 * E = Physical sector
 * IX = Address of DPB
@@ -9152,7 +9146,7 @@ Slicing is performed before functions or operations are evaluated (unless bracke
 
 Substrings can be assigned to (see `LET`). If a string quote is to be written in a string literal, then it must be doubled.
 
-### Functions
+### <a id="functions"></a> Functions
 
 The argument of a function does not need brackets if it is a constant or a variable (optionally subscripted or sliced).
 
@@ -9745,7 +9739,7 @@ When you have selected the `Calculator` option, the screen will change to...
   clear(cx);
   cursor(cx, borderSize, borderSize);
   bottomBarWithStripe(cx, 'Calculator');
-});</script>
+}, cursorAnimation128K);</script>
 
 <a id="entering-numbers"></a>...and the +3's calculator is ready to accept your first entry. Type in...
 
@@ -9999,8 +9993,8 @@ Important - Before connecting or disconnecting the additional disk drive, make s
 
 When the FD-1 is connected to the +3, first switch on the FD-1 (using the slide switch at the back of the disk drive), then switch on the +3 (by plugging in the PSU). Both the green and red indicators on the front panel of the FD-1 should be illuminated. The two-drive system will then be ready to operate.
 
-<figure class="connector edge">
-  <svg viewBox="15 0 382 70" width="75%">
+<figure>
+  <svg viewBox="15 0 382 70" width="75%" class="connector edge">
     <defs>
       <g id="edge-pin">
         <rect height="5" width="15" />
@@ -10337,8 +10331,8 @@ The +3 can connect to a very wide range of peripherals via the **EXPANSION I/O**
 
 <p class="warning-box">WARNING - It is very dangerous indeed to plug in (or unplug) any device from the <strong>EXPANSION I/O</strong> socket while the +3 is switched on - you will probably damage both the +3 and the expansion device if you do so.</p>
 
-<figure class="connector edge">
-  <svg viewBox="0 0 572 80" width="75%">
+<figure>
+  <svg viewBox="0 0 572 80" width="75%" class="connector edge">
     <text y="30" x="10">U</text>
     <text y="70" x="10">L</text>
     <use xlink:href="#edge-pin" y="30" x="30" />

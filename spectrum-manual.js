@@ -32,6 +32,10 @@ function plot8x8Grid(id, data, scale, inverse) {
     }
 }
 
+function cursorAnimation128K(cx, state) {
+    cursor(cx, borderSize, borderSize, state.frame % 30 > 15);
+}
+
 // Render a Spectrum screen given the canvas id and the function to render
 function spectrum(id, scale, f, animationFunction) {
     const cx = getCanvas2D(id);
