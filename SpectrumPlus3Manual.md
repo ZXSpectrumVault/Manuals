@@ -10242,8 +10242,30 @@ Another point to note is that the level of sound produced by the `BEEP` command 
 It is safe to plug in (or unplug) an amplifier, tape recorder, etc. into the **TAPE/SOUND** socket while the +3 is switched on.
 
 <figure class="connector ">
-  <svg viewBox="0 0 350 350" width="75%">
-    <rect y="55" x="70" width="10" height="50" class="open" />
+  <svg width="90%" viewBox="0 0 700 360">
+      <text x="150" y="155" style="text-anchor:end">(not used)</text>
+      <text x="150" y="230" style="text-anchor:end">Audio output</text>
+      <text x="150" y="300" style="text-anchor:end">GND (common)</text>
+      <text x="370" y="338" style="text-anchor:end">Audio output</text>
+      <text x="439" y="338">GND (common)</text>
+      <text x="372" y="25">(not used)</text>
+      <g style="fill:none;stroke:#000;stroke-width:3px;">
+        <path d="M 165,147 h 80 l 14,21 l 14,-21" />
+        <path d="M 165,224 h 45 l14,-21 l 14,21" />
+        <path d="M 165,295 h 144 v -70" />
+        <path d="M 360,202 v 113" />
+        <path d="M 446,202 v 113" />
+        <path d="M 402,36 v124" />
+        <rect x="298" y="145" width="22" height="80" />
+        <path d="M 476,147 v67 h50 l31,-15 v-37 l-31,-15 h-50" />
+        <path d="M 558,187 h 148 m 0,-14 h -148" />
+        <path d="M 376,176 c 0,0 -7,-7 -13,-7 c -10,0 -13,7 -13,13 c 0,10 7,13 13,13 c 10,0 13,-7 13,-7
+        h 7 c5,0 0,0 8,7 h 85
+        v -26
+        h -85 c-5,0 0,0 -8,7 h -8" />
+      </g>
+      <rect x="388" y="170" width="10" height="25" style="fill:#000" />
+      <rect x="407" y="170" width="10" height="25" style="fill:#000" />
   </svg>
   <figcaption><strong>TAPE/SOUND</strong> socket</figcaption>
 </figure>
