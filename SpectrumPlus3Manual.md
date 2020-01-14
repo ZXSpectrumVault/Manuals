@@ -887,19 +887,24 @@ Note that regardless of the method employed to open and close the write protect 
 
 At the front of the disk drive, you will see a push button (for ejecting the disk), and a red lamp (called the ***read/write indicator lamp***)...
 
-```
-          _____________________________________________________
-         |  _________________________________________________  |
-         | |                   _____________                 | |
-         | |  |^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^|  | |
-         | |  |                                           |  | |
-         | |  |________________-------------______________|  | |
-Read/write_|                   =============        ______   |_|
-indicator ===> ##                                  [______] <==== Eject button lamp
-         | |_________________________________________________| |
-        _   _   _   _   _   _   _   _   _   _   _   _          |
-      _| |_| |_| |_| |_| |_| |_| |_| |_| |_| |_| |_| |_________|
-```
+<figure>
+<svg width="100%" height="100%" viewBox="0 0 535 300" style="stroke-width: 3px; fill: none; stroke: black">
+    <g>
+        <path d="
+        M 53,105 l-2,70 h -50
+        M 65,5 l -12,100 h 474 l -12,-100 m 12,100 l 4,151 h -20 m 20,0
+        c 0,40 0,40 -20,40 h -10
+        v -20 h -10 v 20 h -10 v -20 h -10 v 20 h -10 v -20 h -10 v 20 h -10 v -20 h -10 v 20 h -10 v -20 h -10 v 20 h -10 v -20 h -10 v 20 h -10 v -20 h -10 v 20 h -10 v -20 h -10 v 20 h -10 v -20 h -10 v 20 h -10 v -20 h -10 v 20 h -10 v -20 h -10 v 20 h -10 v -20 h -10 v 20 h -10 v -20 h -10 v 20 h -10 v -20 h -10 v 20 h -10 v -20 h -10 v 20 h -10 v -20 h -10 v 20 h -10 v -20 h -10 v 20 h -10 v -20 h -10 v 20 h -10 v -20 h -10 v 20 h -10 v -20 h -10 v 20 h -10 v -20 h -10 v 20 h -10 v -20 h -10 v 20 h -10 v -20 h -10 v 20 h -10 v -20 h -10 v 20 h -10 v -20 h -10 v 20 h -10"/>
+    </g>
+    <g>
+      <rect x="69" y="125" width="441" height="131" />
+      <rect x="98" y="225" width="20" height="14" style="fill:black; stroke: none"/>
+      <rect x="405" y="215" width="80" height="25" style="stroke-width:6px"/>
+      <path d="M 355,195 v -6 h -133 v 6 h-131 v-45 h 397 v 45 h-133 v11 h-133 v-11" class="thick" />
+      <rect x="220" y="140" width="133" height="9" style="fill:black"/>
+    </g>
+</svg>
+</figure>
 
 ## <a id="read-write-indicator-lamp"></a> Read/write indicator lamp
 
