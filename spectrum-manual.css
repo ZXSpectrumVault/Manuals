@@ -193,27 +193,29 @@ figcaption {
   fill: none;
 }
 
-#rom-diagram .dec {
+svg rect, svg line {
+  stroke: #000;
+  stroke-width: 2.5px;;
+}
+
+figure {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.rom-diagram .dec {
   text-anchor: end;
 }
 
-#rom-diagram .hex {
+.rom-diagram .hex {
   text-anchor: start;
 }
 
-#rom-diagram .bank {
+.rom-diagram .bank {
   text-anchor: middle;
 }
 
-#rom-diagram rect {
-  fill: none;
-  stroke: black;
-  stroke-width: 1;
-}
-
-#rom-diagram line {
-  stroke: black;
-  stroke-width: 1;
+.rom-diagram path {
   fill: none;
 }
 
