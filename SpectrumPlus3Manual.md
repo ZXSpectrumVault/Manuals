@@ -5841,43 +5841,94 @@ The variables have different formats according to their different natures. The l
 
 Number whose name is one letter only:
 
-                     Sign bit
-                     |
-                     v
-        +-+-+-+-+-+-+-+-+---------------+-+----- - - - - ------+
-        | | | | | | | | |               | |                    |
-        |0 1 1          | Exponent byte |    4 Mantissa bytes  |
-        | | | | | | | | |               | |                    |
-        +-+-+-+-+-+-+-+-+---------------+-+----- - - - - ------+
-              \_______/ \____________________________________/
-                  |               |
-              Letter-60h        Value
+<figure>
+  <svg xmlns="http://www.w3.org/2000/svg" width="90%" viewBox="0 0 665 175" style="font-size: 11px">
+    <text x="280" y="10" style="text-anchor:middle">Sign bit</text>
+    <path d="M 280,15 v 18 m -3.7,-5 l 3.7,5 l 3.7,-5" style="stroke-weight: 0.75; fill: none; stroke: #000" />
+    <path d="M 10,40 h 340 m 10,0 h 10 m 10,0 h 10 m10,0 h 10 m 10,0 h 10 m10,0 h 80 v 60 h -80
+      m -10,0 h -10 m -10,0 h -10 m -10,0 h -10 m -10,0 h -10 m -10,0 h -340 v -60
+      m 40,0 m 120,60 v -60 m 100,0 v 60 m 20,-60 v 20 m 0,20 v 20
+      " class="thin" />
+    <use xlink:href="#8bitcolumn" x="30" y="40" />
+    <text x="20" y="74" style="text-anchor:middle">0</text>
+    <text x="40" y="74" style="text-anchor:middle">1</text>
+    <text x="60" y="74" style="text-anchor:middle">1</text>
+    <text x="220" y="74" style="text-anchor:middle">Exponent byte</text>
+    <text x="390" y="74" style="text-anchor:middle">4 Mantissa bytes</text>
+    <text x="120" y="162" style="text-anchor:middle">Letter-60h</text>
+    <path d="M 75,110 v 10 h 90 v -10 m -45,10 v 10" class="thin" />
+    <text x="345" y="162" style="text-anchor:middle">Value</text>
+    <path d="M 175,110 v 10 h 340 v -10 m -170,10 v 10" class="thin" />
+  </svg>
+</figure>
 
 Number whose name is longer than one letter:
 
-        +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ - -+-+-+-+-+-+-+-+-+--- - - ---+
-        | | | | | | | | | | | | | | | | |    | | | | | | | | |           |
-        |1 0 1          |0              |    |1              |  5 bytes  |
-        | | | | | | | | | | | | | | | | |    | | | | | | | | |           |
-        +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- - +-+-+-+-+-+-+-+-+--- - - ---+
-           \_______/ \_____________/      \_____________/ \_________/
-               |            |                    |             |
-            Letter-60h  2nd character       Last character    Value
+<figure>
+  <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 765 105" style="font-size: 11px">
+    <defs>
+      <g id="8bitcolumn">
+        <path d="M 0,0 v 20 m 0,20 v 20 m 20,0 v -20 m 0,-20 v -20 m 20,0 v 20 m 0,20 v 20 m 20,0 v -20 m 0,-20 v -20 m 20,0 v 20 m 0,20 v 20 m 20,0 v -20 m 0,-20 v -20 m 20,0 v 20 m 0,20 v 20 m 20,0 v -60" class="thin" />
+      </g>
+    </defs>
+    <path d="M 10,0 h 340 m 5,0 h 5 m 5,0 h 5 m5,0 h 5 m 5,0 h 5 m5,0 h 250 v 60 h -250 m -5,0 h -5 m -5,0 h -5 m -5,0 h -5 m -5,0 h -5 m -5,0 h -340 v -60 m 410,0 v 60" class="thin" />
+    <use xlink:href="#8bitcolumn" x="30" y="0" />
+    <use xlink:href="#8bitcolumn" x="190" y="0" />
+    <use xlink:href="#8bitcolumn" x="440" y="0" />
+    <text x="20" y="34" style="text-anchor:middle">1</text>
+    <text x="40" y="34" style="text-anchor:middle">0</text>
+    <text x="60" y="34" style="text-anchor:middle">1</text>
+    <text x="180" y="34" style="text-anchor:middle">0</text>
+    <text x="430" y="34" style="text-anchor:middle">1</text>
+    <text x="610" y="34" style="text-anchor:middle">5 bytes</text>
+    <text x="120" y="102" style="text-anchor:middle">Letter-60h</text>
+    <path d="M 75,70 v 10 h 90 v -10 m -45,10 v 10" class="thin" />
+    <text x="250" y="102" style="text-anchor:middle">2nd character</text>
+    <path d="M 175,70 v 10 h 150 v -10 m -75,10 v 10" class="thin" />
+    <text x="500" y="102" style="text-anchor:middle">Last character</text>
+    <path d="M 430,70 v 10 h 145 v -10 m -75,10 v 10" class="thin" />
+    <text x="610" y="102" style="text-anchor:middle">Value</text>
+    <path d="M 590,70 v 10 h 45 v -10 m -22.5,10 v 10" class="thin" />
+  </svg>
+</figure>
 
 Array of numbers:
 
-        +-+-+-+-+-+-+-+-+-------+------+-------+ - - +-------+-------+
-        | | | | | | | | |   2   |  1   |   2   |     |   2   |   5   |
-        |1 0 0          | bytes | byte | bytes |     | bytes | bytes |
-        | | | | | | | | |   |      |       |     |       | each  |
-        +-+-+-+-+-+-+-+-+-------+------+-------+ - - +-------+-------+
-               \_______/ \_____/ \____/ \_____/       \_____/ \_____/
-                  |        |      |       |             |       |
-              Letter-60h  Total  No.   1st dim.       Last   Elements
-                length  of dims              dim.
-              of elements &
-              dims + 1 for no.
-              of dimensions
+<figure>
+  <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 765 170" style="font-size: 11px">
+    <path d="M 10,0 h 410 m 5,0 h 5 m 5,0 h 5 m 5,0 h 5 m 5,0 h 5 m5,0 h 10 v 60 m 0,-60 h 80 v 60 m 0,-60
+    h 30 m 5,0 h 5 m 5,0 h 5 m 5,0 h 5 m 5,0 h 5 m 5,0 h 25
+    v 60 h -20 h -5 m -5,0 h -5 m -5,0 h -5 m -5,0 h -5 m -5,0 h -5 m -5,0 h -120
+    m -5,0 h -5 m -5,0 h -5 m -5,0 h -5 m -5,0 h -5 m -5,0
+    h -410 v -60 m 240,0 v 60 m 80,-60 v 60 m 80,-60 v 60" class="thin" />
+    <use xlink:href="#8bitcolumn" x="30" y="0" />
+    <text x="20" y="34" style="text-anchor:middle">1</text>
+    <text x="40" y="34" style="text-anchor:middle">0</text>
+    <text x="60" y="34" style="text-anchor:middle">0</text>
+    <text x="210" y="34" style="text-anchor:middle">2 bytes</text>
+    <text x="290" y="34" style="text-anchor:middle">1 byte</text>
+    <text x="370" y="34" style="text-anchor:middle">2 bytes</text>
+    <text x="605" y="34" style="text-anchor:middle">5 bytes each</text>
+    <text x="515" y="34" style="text-anchor:middle">2 bytes</text>
+    <text x="120" y="102" style="text-anchor:middle">Letter-60h</text>
+    <path d="M 75,70 v 10 h 90 v -10 m -45,10 v 10" class="thin" />
+    <text x="210" y="102" style="text-anchor:middle">Total</text>
+    <text x="210" y="117" style="text-anchor:middle">length of</text>
+    <text x="210" y="132" style="text-anchor:middle">elements &amp;</text>
+    <text x="210" y="147" style="text-anchor:middle">dims + 1 for no.</text>
+    <text x="210" y="162" style="text-anchor:middle">of dimensions</text>
+    <path d="M 175,70 v 10 h 70 v -10 m -35,10 v 10" class="thin" />
+    <text x="290" y="102" style="text-anchor:middle">No. of</text>
+    <text x="290" y="117" style="text-anchor:middle">dims.</text>
+    <path d="M 255,70 v 10 h 70 v -10 m -35,10 v 10" class="thin" />
+    <text x="370" y="102" style="text-anchor:middle">1st dims.</text>
+    <path d="M 335,70 v 10 h 70 v -10 m -35,10 v 10" class="thin" />
+    <text x="520" y="102" style="text-anchor:middle">Last dim</text>
+    <path d="M 480,70 v 10 h 70 v -10 m -35,10 v 10" class="thin" />
+    <text x="610" y="102" style="text-anchor:middle">Elements</text>
+    <path d="M 560,70 v 10 h 90 v -10 m -45,10 v 10" class="thin" />
+  </svg>
+</figure>
 
 The order of the elements is:
 
@@ -5889,33 +5940,61 @@ As an example, the elements of the 3 x 6 array 'c' in part 12 of this chapter ar
 
 Control variable of a `FOR`...`NEXT` loop:
 
-
-                 Least significant byte  Most significant byte
-                              |   |
-                              v   v
-        +-+-+-+-+-+-+-+-+-------+-------+-------+---+---+------+
-        | | | | | | | | |   5   |  1    |   2   |   |   |  1   |
-        |1 1 1          | bytes | byte  | bytes |2 bytes| byte |
-        | | | | | | | | |       |       |       |   |   |      |
-        +-+-+-+-+-+-+-+-+-------+-------+-------+---+---+------+
-               \_______/ \_____/ \_____/ \_____/ \_____/ \____/
-                  |        |       |       |       |       |
-           Letter-60h  Value  Limit   Step   Looping  Statement
-                          line    number
-                            within line
+<figure>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 565 165" style="font-size: 11px">
+    <path d="M 10,30 h 520 v 60 h -520 v -60" class="thin" />
+    <path d="M 250,30 v 60 m 80,-60 v 60 m 80,-60 v 60 m 30,-60 v 20 m 0,20 v 20 m 30,-60 v 60" class="thin" />
+    <use xlink:href="#8bitcolumn" x="30" y="30" />
+    <text x="317" y="8" style="text-anchor:right">Least significant byte</text>
+    <path d="M 425,12 v 14 m -3.7,-5 l 3.7,5 l 3.7,-5" style="stroke-weight: 0.75; fill: none; stroke: #000" />
+    <text x="450" y="8">Most significant byte</text>
+    <path d="M 455,12 v 14 m -3.7,-5 l 3.7,5 l 3.7,-5" style="stroke-weight: 0.75; fill: none; stroke: #000" />
+    <text x="20" y="64" style="text-anchor:middle">1</text>
+    <text x="40" y="64" style="text-anchor:middle">1</text>
+    <text x="60" y="64" style="text-anchor:middle">1</text>
+    <text x="210" y="64" style="text-anchor:middle">5 bytes</text>
+    <text x="290" y="64" style="text-anchor:middle">5 bytes</text>
+    <text x="370" y="64" style="text-anchor:middle">5 bytes</text>
+    <text x="440" y="64" style="text-anchor:middle">2 bytes</text>
+    <text x="500" y="64" style="text-anchor:middle">1 byte</text>
+    <text x="120" y="132" style="text-anchor:middle">Letter-60h</text>
+    <path d="M 75,100 v 10 h 90 v -10 m -45,10 v 10" class="thin" />
+    <text x="210" y="132" style="text-anchor:middle">Value</text>
+    <path d="M 175,100 v 10 h 70 v -10 m -35,10 v 10" class="thin" />
+    <text x="290" y="132" style="text-anchor:middle">Limit</text>
+    <path d="M 255,100 v 10 h 70 v -10 m -35,10 v 10" class="thin" />
+    <text x="370" y="132" style="text-anchor:middle">Step</text>
+    <path d="M 335,100 v 10 h 70 v -10 m -35,10 v 10" class="thin" />
+    <text x="440" y="132" style="text-anchor:middle">Looping</text>
+    <text x="440" y="147" style="text-anchor:middle">line</text>
+    <path d="M 415,100 v 10 h 50 v -10 m -25,10 v 10" class="thin" />
+    <text x="500" y="132" style="text-anchor:middle">Statement</text>
+    <text x="500" y="147" style="text-anchor:middle">number</text>
+    <text x="500" y="162" style="text-anchor:middle">within line</text>
+    <path d="M 475,100 v 10 h 50 v -10 m -25,10 v 10" class="thin" />
+  </svg>
+</figure>
 
 String:
 
-        +-+-+-+-+-+-+-+-+---------+--------- - - - ----------+
-        | | | | | | | | |         |                          |
-        |0 1 0          | 2 bytes |                          |
-        | | | | | | | | |         |                          |
-        +-+-+-+-+-+-+-+-+---------+--------- - - - ----------+
-           \_______/ \_______/ \________________________/
-               |         |                 |
-           Letter-60h  Number        Text of string
-                 of          (may be empty)
-             characters
+<figure>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 30 550 135" style="font-size: 11px">
+    <path d="M 10,30 h 340 m 5,0 h 5 m 5,0 h 5 m 5,0 h 5 m 5,0 h 125 v 60 h -125 m -5,0 h -5 m -5,0 h -5 m -5,0 h -5 m -5,0 h -340 v -60" class="thin" />
+    <path d="M 250,30 v 60" class="thin" />
+    <use xlink:href="#8bitcolumn" x="30" y="30" />
+    <text x="20" y="64" style="text-anchor:middle">0</text>
+    <text x="40" y="64" style="text-anchor:middle">1</text>
+    <text x="60" y="64" style="text-anchor:middle">0</text>
+    <text x="210" y="64" style="text-anchor:middle">2 bytes</text>
+    <text x="120" y="132" style="text-anchor:middle">Letter-60h</text>
+    <path d="M 75,100 v 10 h 90 v -10 m -45,10 v 10" class="thin" />
+    <text x="210" y="132" style="text-anchor:middle">Number of</text>
+    <text x="210" y="147" style="text-anchor:middle">characters</text>
+    <path d="M 175,100 v 10 h 70 v -10 m -35,10 v 10" class="thin" />
+    <text x="360" y="132" style="text-anchor:middle">Text of string (may be empty)</text>
+    <path d="M 255,100 v 10 h 250 v -10 m -125,10 v 10" class="thin" />
+  </svg>
+</figure>
 
 Array of characters:
 
