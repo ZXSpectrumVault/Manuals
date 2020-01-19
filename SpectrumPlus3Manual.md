@@ -5704,7 +5704,8 @@ Deep inside the +3, everything is stored as ***bytes***, ie. number between 0 an
 Each place where a byte can be stored has an address, which is a number between 0 (or 0000h) and 65535 (FFFFh). This means that an address can be stored as two bytes. You can think of the memory as a long row of numbered boxes, each of which can contain a byte. Not all the boxes are the same, however - the boxes from 4000h to FFFFh are ***RAM*** boxes, which means you can open the lid and alter the contents, but those from 0 to 3FFFh are ***ROM*** boxes, which have a glass lid that cannot be opened - you just have to read whatever was put into them when the computer was made. In the +3, we have crammed in more than twice the amount of memory than can comfortably fit. While the processor can address 65536 bytes, there are in fact 131072 bytes of RAM and 65536 bytes of ROM making 196608 bytes (192K) in all! All this is hidden from the processor by the hardware using a process called paging - BASIC (and the processor) always 'sees' the memory as 16K of ROM and 48K of RAM (or 64K of RAM with no ROM - though this latter combination is never used by BASIC).
 
 <svg xmlns="http://www.w3.org/2000/svg" width="322px" viewBox="10 10 220 245" class="rom-diagram" style="font-size: 10px; font-weight: bold">
-  <path d="m50,25 h 100 v 220 h -100 v -220 m 0,55 h 100 m 0,55 h -100 m 0,55 h 100" style="stroke: #000; stroke-width: 2.5" />
+  <rect x="50" y="25" height="220" width="100" class="thick" />
+  <path d="M 50,80 h 100 m 0,55 h -100 m 0,55 h 100" class="thick" />
   <text x="40" y="25" class="dec">65535</text>
   <text x="160" y="25" class="hex">FFFFh</text>
   <text x="100" y="58" class="bank">RAM 0-7</text>
@@ -5756,43 +5757,130 @@ The attributes are the colours and so on for each character position, using the 
 
 The way that the computer organises its affairs changes slightly between 48 BASIC and +3 BASIC mode. The area that was the printer buffer in 48 BASIC mode, is used for extra system variables in +3 BASIC mode in much the same way as it was on the Spectrum +2. The variables have changed, though.
 
-                                              5C00h
-                                             (23552)
-                                                |
-                                                v
-                              +-----------------+-----------------+
-             (48K mode only)  | Printer buffer  |   System vars   |
-                              +-----------------+-----------------+
-                              :                                   :
-  +--------------+------------+-----------------------------------+--
-  | Display file | Attributes |        System variables           |
-  +--------------+------------+-----------------------------------+--
-  ^              ^            ^                 ^                 ^
-  |              |            |                 |                 | 4000h          5800h        5B00h             5C00h             5CB6h (16384)       (22528)      (23296)           (23552)           (23734)
-                                                                CHANS
-
---+-------------+-----+-------+------+-----+-------------------+----+-----+--
-  |   Channel   | 80h | BASIC | Vars | 80h | Command or prog.  | NL | 80h |
-  | information |     | prog  |      |     | line being edited |    |     | --+-------------+-----+-------+------+-----+-------------------+----+-----+--
-      ^                                                                   ^
-      |                                                                   |
-    5CB6h                                                             WORKSP
-   (23734)
-    CHANS
-
---+-------+----+------------+------------+-------+---------+--
-  | INPUT | NL | Temporary  | Calculator | Spare | Machine |
-  | data  |    | work space |    stack   |       |  stack  | --+-------+----+------------+------------+-------+---------+--
-  ^                         ^            ^       ^
-  |                         |            |       | WORKSP                    STKBOT      STKEND     SP
-                                             (stack pointer)
-
---+--------------+---+-----+-----------------------+
-  | GO SUB stack | ? | 3Eh | User defined graphics | --+--------------+---+-----+-----------------------+
-                     ^     ^                       ^
-                     |     |                       |
-                  RAMTOP  UDG                   P RAMT
-
+<figure>
+  <svg xmlns="http://www.w3.org/2000/svg" width="90%" viewBox="-20 0 1155 900" style="font-size: 14px">
+    <defs>
+      <g id="arrow-down-open">
+        <path d="M 0,0 v 25 m -3.7,-5 l 3.7,5 l 3.7,-5" class="hairline" />
+      </g>
+      <g id="arrow-up-open">
+        <use xlink:href="#arrow-down-open" transform="rotate(180)" />
+      </g>
+    </defs>
+    <text x="750" y="20" text-anchor="middle">5C00h</text>
+    <text x="750" y="40" text-anchor="middle">(23552)</text>
+    <use xlink:href="#arrow-down-open" x="750" y="45" />
+    <rect x="520" y="75" width="500" height="80" class="thick" />
+    <line x1="520" y1="155" x2="520" y2="230" class="dashed"/>
+    <line x1="1020" y1="155" x2="1020" y2="230" class="dashed"/>
+    <text x="620" y="115" text-anchor="middle">Printer</text>
+    <text x="620" y="135" text-anchor="middle">buffer</text>
+    <line x1="750" y1="75" x2="750" y2="155" class="thick" />
+    <text x="870" y="115" text-anchor="middle">System</text>
+    <text x="870" y="135" text-anchor="middle">variables</text>
+    <text x="1040" y="110">(48K mode only)</text>
+    <rect x="20" y="230" width="1000" height="80" class="thick" />
+    <line x1="1020" y1="230" x2="1060" y2="230" class="dashed"/>
+    <line x1="1020" y1="310" x2="1060" y2="310" class="dashed"/>
+    <use x="20" y="340" xlink:href="#arrow-up-open" />
+    <text x="20" y="360" text-anchor="middle">4000h</text>
+    <text x="20" y="380" text-anchor="middle">(16384)</text>
+    <text x="140" y="275" text-anchor="middle">Display file</text>
+    <use x="270" y="340" xlink:href="#arrow-up-open" />
+    <text x="270" y="360" text-anchor="middle">5800h</text>
+    <text x="270" y="380" text-anchor="middle">(22528)</text>
+    <line x1="270" y1="230" x2="270" y2="310" class="thick" />
+    <text x="390" y="275" text-anchor="middle">Attributes</text>
+    <use x="520" Y="340" xlink:href="#arrow-up-open" />
+    <text x="520" y="360" text-anchor="middle">5B00h</text>
+    <text x="520" y="380" text-anchor="middle">(23296)</text>
+    <line x1="520" y1="230" x2="520" y2="310" class="thick" />
+    <use x="770" Y="340" xlink:href="#arrow-up-open" />
+    <text x="770" y="360" text-anchor="middle">5C00h</text>
+    <text x="770" y="380" text-anchor="middle">(23552)</text>
+    <text x="770" y="275" text-anchor="middle">System variables</text>
+    <use x="1020" Y="340" xlink:href="#arrow-up-open" />
+    <text x="1020" y="360" text-anchor="middle">5CB6h</text>
+    <text x="1020" y="380" text-anchor="middle">(23734)</text>
+    <text x="1020" y="400" text-anchor="middle">CHANS</text>
+    <rect x="20" y="430" width="1000" height="80" class="thick" />
+    <line x1="20" y1="430" x2="-20" y2="430" class="dashed"/>
+    <line x1="20" y1="510" x2="-20" y2="510" class="dashed"/>
+    <line x1="1020" y1="430" x2="1060" y2="430" class="dashed"/>
+    <line x1="1020" y1="510" x2="1060" y2="510" class="dashed"/>
+    <use x="20" y="540" xlink:href="#arrow-up-open" />
+    <text x="20" y="560" text-anchor="middle">5CB6h</text>
+    <text x="20" y="580" text-anchor="middle">(23734)</text>
+    <text x="20" y="600" text-anchor="middle">CHANS</text>
+    <text x="130" y="465" text-anchor="middle">Channel</text>
+    <text x="130" y="485" text-anchor="middle">information</text>
+    <line x1="235" y1="430" x2="235" y2="510" class="thick" />
+    <text x="252" y="475" text-anchor="middle">80h</text>
+    <line x1="270" y1="430" x2="270" y2="510" class="thick" />
+    <use x="270" y="540" xlink:href="#arrow-up-open" />
+    <text x="270" y="560" text-anchor="middle">PROG</text>
+    <text x="360" y="475" text-anchor="middle">BASIC program</text>
+    <line x1="450" y1="430" x2="450" y2="510" class="thick" />
+    <use x="450" y="540" xlink:href="#arrow-up-open" />
+    <text x="450" y="560" text-anchor="middle">VARS</text>
+    <text x="515" y="475" text-anchor="middle">Variables</text>
+    <line x1="580" y1="430" x2="580" y2="510" class="thick" />
+    <text x="597" y="475" text-anchor="middle">80h</text>
+    <line x1="615" y1="430" x2="615" y2="510" class="thick" />
+    <use x="615" y="540" xlink:href="#arrow-up-open" />
+    <text x="618" y="560" text-anchor="middle">E LINE</text>
+    <text x="790" y="465" text-anchor="middle">Command or</text>
+    <text x="790" y="485" text-anchor="middle">program line being edited</text>
+    <line x1="950" y1="430" x2="950" y2="510" class="thick" />
+    <text x="967" y="475" text-anchor="middle">NL</text>
+    <line x1="985" y1="430" x2="985" y2="510" class="thick" />
+    <text x="1002" y="475" text-anchor="middle">80h</text>
+    <use x="1020" y="540" xlink:href="#arrow-up-open" />
+    <text x="1020" y="560" text-anchor="middle">WORKSP</text>
+    <rect x="20" y="630" width="1040" height="80" class="thick" />
+    <line x1="20" y1="630" x2="-20" y2="630" class="dashed"/>
+    <line x1="20" y1="710" x2="-20" y2="710" class="dashed"/>
+    <use x="20" y="740" xlink:href="#arrow-up-open" />
+    <text x="20" y="760" text-anchor="middle">WORKSP</text>
+    <text x="110" y="675" text-anchor="middle">INPUT data</text>
+    <line x1="200" y1="630" x2="200" y2="710" class="thick" />
+    <text x="215" y="675" text-anchor="middle">NL</text>
+    <line x1="230" y1="630" x2="230" y2="710" class="thick" />
+    <text x="280" y="665" text-anchor="middle">Temporary</text>
+    <text x="280" y="685" text-anchor="middle">workspace</text>
+    <use x="330" y="740" xlink:href="#arrow-up-open" />
+    <text x="330" y="760" text-anchor="middle">STKBOT</text>
+    <line x1="330" y1="630" x2="330" y2="710" class="thick" />
+    <text x="380" y="665" text-anchor="middle">Calculator</text>
+    <text x="380" y="685" text-anchor="middle">stack</text>
+    <line x1="430" y1="630" x2="430" y2="710" class="thick" />
+    <use x="430" y="740" xlink:href="#arrow-up-open" />
+    <text x="430" y="760" text-anchor="middle">STKEND</text>
+    <line x1="500" y1="630" x2="500" y2="710" class="thick" />
+    <text x="465" y="675" text-anchor="middle">Spare</text>
+    <use x="500" y="740" xlink:href="#arrow-up-open" />
+    <text x="500" y="760" text-anchor="middle">SP</text>
+    <text x="493" y="780">(STACK POINTER)</text>
+    <line x1="630" y1="630" x2="630" y2="710" class="thick" />
+    <text x="560" y="665" text-anchor="middle">Machine</text>
+    <text x="560" y="685" text-anchor="middle">stack</text>
+    <line x1="730" y1="630" x2="730" y2="710" class="thick" />
+    <text x="680" y="665" text-anchor="middle">GO SUB</text>
+    <text x="680" y="685" text-anchor="middle">stack</text>
+    <text x="745" y="675" text-anchor="middle">?</text>
+    <line x1="760" y1="630" x2="760" y2="710" class="thick" />
+    <use x="760" y="740" xlink:href="#arrow-up-open" />
+    <text x="760" y="760" text-anchor="middle">RAM</text>
+    <text x="760" y="780" text-anchor="middle">TOP</text>
+    <text x="780" y="675" text-anchor="middle">3Eh</text>
+    <line x1="800" y1="630" x2="800" y2="710" class="thick" />
+    <use x="800" y="740" xlink:href="#arrow-up-open" />
+    <text x="800" y="760" text-anchor="middle">UDG</text>
+    <text x="910" y="675" text-anchor="middle">User defined graphics</text>
+    <use x="1060" y="740" xlink:href="#arrow-up-open" />
+    <text x="1060" y="760" text-anchor="middle">P RAMT</text>
+  </svg>
+</figure>
 
 The system variables contain various pieces of information that tell the computer what sort of state it's in. They are listed fully in part 25 of this chapter, but for the moment, note that there are some (called CHANS, PROG, VARS, E LINE, and so on) that contain the addresses of the boundaries between the various areas in memory. These are not BASIC variables, and their names will not be recognised by the +3.
 
@@ -5886,7 +5974,7 @@ Number whose name is longer than one letter:
     <text x="250" y="102" style="text-anchor:middle">2nd character</text>
     <path d="M 175,70 v 10 h 150 v -10 m -75,10 v 10" class="thin" />
     <text x="500" y="102" style="text-anchor:middle">Last character</text>
-    <path d="M 430,70 v 10 h 145 v -10 m -75,10 v 10" class="thin" />
+    <path d="M 425,70 v 10 h 150 v -10 m -75,10 v 10" class="thin" />
     <text x="610" y="102" style="text-anchor:middle">Value</text>
     <path d="M 590,70 v 10 h 45 v -10 m -22.5,10 v 10" class="thin" />
   </svg>
@@ -5896,11 +5984,12 @@ Array of numbers:
 
 <figure>
   <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 765 170" style="font-size: 11px">
-    <path d="M 10,0 h 410 m 5,0 h 5 m 5,0 h 5 m 5,0 h 5 m 5,0 h 5 m5,0 h 10 v 60 m 0,-60 h 80 v 60 m 0,-60
+    <path d="M 10,0 h 410 m 5,0 h 5 m 5,0 h 5 m 5,0 h 5 m 5,0 h 5 m5,0 h 90
     h 30 m 5,0 h 5 m 5,0 h 5 m 5,0 h 5 m 5,0 h 5 m 5,0 h 25
     v 60 h -20 h -5 m -5,0 h -5 m -5,0 h -5 m -5,0 h -5 m -5,0 h -5 m -5,0 h -120
     m -5,0 h -5 m -5,0 h -5 m -5,0 h -5 m -5,0 h -5 m -5,0
-    h -410 v -60 m 240,0 v 60 m 80,-60 v 60 m 80,-60 v 60" class="thin" />
+    h -410 v -60" class="thin" />
+    <path d="M 250,0 v 60 m 80,-60 v 60 m 80,-60 v 60 m 65,-60 v 60 m 80,-60 v 60" class="thin" />
     <use xlink:href="#8bitcolumn" x="30" y="0" />
     <text x="20" y="34" style="text-anchor:middle">1</text>
     <text x="40" y="34" style="text-anchor:middle">0</text>
@@ -5908,8 +5997,8 @@ Array of numbers:
     <text x="210" y="34" style="text-anchor:middle">2 bytes</text>
     <text x="290" y="34" style="text-anchor:middle">1 byte</text>
     <text x="370" y="34" style="text-anchor:middle">2 bytes</text>
-    <text x="605" y="34" style="text-anchor:middle">5 bytes each</text>
     <text x="515" y="34" style="text-anchor:middle">2 bytes</text>
+    <text x="605" y="34" style="text-anchor:middle">5 bytes each</text>
     <text x="120" y="102" style="text-anchor:middle">Letter-60h</text>
     <path d="M 75,70 v 10 h 90 v -10 m -45,10 v 10" class="thin" />
     <text x="210" y="102" style="text-anchor:middle">Total</text>
@@ -5941,7 +6030,7 @@ As an example, the elements of the 3 x 6 array 'c' in part 12 of this chapter ar
 Control variable of a `FOR`...`NEXT` loop:
 
 <figure>
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 565 165" style="font-size: 11px">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -2 565 165" style="font-size: 11px">
     <path d="M 10,30 h 520 v 60 h -520 v -60" class="thin" />
     <path d="M 250,30 v 60 m 80,-60 v 60 m 80,-60 v 60 m 30,-60 v 20 m 0,20 v 20 m 30,-60 v 60" class="thin" />
     <use xlink:href="#8bitcolumn" x="30" y="30" />
@@ -5991,25 +6080,49 @@ String:
     <text x="210" y="132" style="text-anchor:middle">Number of</text>
     <text x="210" y="147" style="text-anchor:middle">characters</text>
     <path d="M 175,100 v 10 h 70 v -10 m -35,10 v 10" class="thin" />
-    <text x="360" y="132" style="text-anchor:middle">Text of string (may be empty)</text>
+    <text x="375" y="132" style="text-anchor:middle">Text of string (may be empty)</text>
     <path d="M 255,100 v 10 h 250 v -10 m -125,10 v 10" class="thin" />
   </svg>
 </figure>
 
 Array of characters:
 
-        +-+-+-+-+-+-+-+-+-------+------+-------+ - - +-------+------+
-        | | | | | | | | |   2   |  1   |   2   |     |   2   |   1  |
-        |1 1 0          | bytes | byte | bytes |     | bytes | byte |
-        | | | | | | | | |       |      |       |     |       | each |
-        +-+-+-+-+-+-+-+-+-------+------+-------+ - - +-------+------+
-               \_______/ \_____/ \____/ \_____/       \_____/ \____/
-                   |        |      |       |             |       |
-           Letter-60h  Total  No.   1st dim.       Last   Elements
-              length  of dims              dim.
-              of elements &
-              dims + 1 for no.
-              of dimensions
+<figure>
+  <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 765 170" style="font-size: 11px">
+    <path d="M 10,0 h 410 m 5,0 h 5 m 5,0 h 5 m 5,0 h 5 m 5,0 h 5 m5,0 h 90
+    h 30 m 5,0 h 5 m 5,0 h 5 m 5,0 h 5 m 5,0 h 5 m 5,0 h 25
+    v 60 h -20 h -5 m -5,0 h -5 m -5,0 h -5 m -5,0 h -5 m -5,0 h -5 m -5,0 h -120
+    m -5,0 h -5 m -5,0 h -5 m -5,0 h -5 m -5,0 h -5 m -5,0
+    h -410 v -60" class="thin" />
+    <path d="M 250,0 v 60 m 80,-60 v 60 m 80,-60 v 60 m 65,-60 v 60 m 80,-60 v 60" class="thin" />
+    <use xlink:href="#8bitcolumn" x="30" y="0" />
+    <text x="20" y="34" style="text-anchor:middle">1</text>
+    <text x="40" y="34" style="text-anchor:middle">1</text>
+    <text x="60" y="34" style="text-anchor:middle">0</text>
+    <text x="210" y="34" style="text-anchor:middle">2 bytes</text>
+    <text x="290" y="34" style="text-anchor:middle">1 byte</text>
+    <text x="370" y="34" style="text-anchor:middle">2 bytes</text>
+    <text x="515" y="34" style="text-anchor:middle">2 bytes</text>
+    <text x="605" y="34" style="text-anchor:middle">1 byte each</text>
+    <text x="120" y="102" style="text-anchor:middle">Letter-60h</text>
+    <path d="M 75,70 v 10 h 90 v -10 m -45,10 v 10" class="thin" />
+    <text x="210" y="102" style="text-anchor:middle">Total</text>
+    <text x="210" y="117" style="text-anchor:middle">length of</text>
+    <text x="210" y="132" style="text-anchor:middle">elements &amp;</text>
+    <text x="210" y="147" style="text-anchor:middle">dims + 1 for no.</text>
+    <text x="210" y="162" style="text-anchor:middle">of dimensions</text>
+    <path d="M 175,70 v 10 h 70 v -10 m -35,10 v 10" class="thin" />
+    <text x="290" y="102" style="text-anchor:middle">No. of</text>
+    <text x="290" y="117" style="text-anchor:middle">dims.</text>
+    <path d="M 255,70 v 10 h 70 v -10 m -35,10 v 10" class="thin" />
+    <text x="370" y="102" style="text-anchor:middle">1st dims.</text>
+    <path d="M 335,70 v 10 h 70 v -10 m -35,10 v 10" class="thin" />
+    <text x="520" y="102" style="text-anchor:middle">Last dim</text>
+    <path d="M 480,70 v 10 h 70 v -10 m -35,10 v 10" class="thin" />
+    <text x="610" y="102" style="text-anchor:middle">Elements</text>
+    <path d="M 560,70 v 10 h 90 v -10 m -45,10 v 10" class="thin" />
+  </svg>
+</figure>
 
 The calculator is the part of the BASIC system that deals with arithmetic, and the numbers on which it is operating are held mostly in the calculator stack.
 
