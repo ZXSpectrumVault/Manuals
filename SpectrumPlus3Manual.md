@@ -1665,7 +1665,9 @@ The smaller (bottom) part of the screen is used for editing short programs, ente
 
 If the program being entered gets bigger than the screen size, then the +3 attempts to display the area of most interest (usually the last line entered together with its surrounding lines). You may, however, specify a different area of the program to be displayed using the command...
 
+```
     LIST xxx
+```
 
 ...where xxx is a line number, telling the +3 to bring a specified area of the program into view.
 
@@ -1680,21 +1682,25 @@ Subjects covered...
 - Programs
 - Line numbers
 - Editing programs using the cursor keys
-- RUN, LIST
-- GO TO, CONTINUE, INPUT, NEW, REM
-- PRINT
+- `RUN`, `LIST`
+- `GO TO`, `CONTINUE`, `INPUT`, `NEW`, `REM`
+- `PRINT`
 - Stopping a program
 
 Type in the following first two lines of a program (which will eventually print the sum of two numbers). Don't forget to press **ENTER** after you type each line...
 
-    20 print a
-    10 let a=10
+```
+   20 print a
+   10 let a=10
+```
 
 Note that the screen looks like this...
 
-    10 LET a=10
-[]
-    20 PRINT a
+```
+   10 LET a=10
+█
+   20 PRINT a
+```
 
 As we have already discussed - because these lines began with numbers, they were not obeyed immediately but were stored away as program lines. You will have also noticed here that the line numbers govern the order in which the program lines are to be executed, and as you can see on the screen, the +3 sorts all the lines into order whenever a new line is entered.
 
@@ -1704,72 +1710,98 @@ Note also that although we typed each line in lower case letters, the keywords (
 
 So far you have only entered one number, so type...
 
+```
     15 LET b=15
+```
 
 ...and press **ENTER**. Now you need to change line 20 to...
 
+```
     20 PRINT a+b
+```
 
 You could type out the replacement line in full, but it is far easier to move the cursor (using the cursor keys) to just after the `a`, and then type...
 
-    +b  (don't press **ENTER** yet)
+`+b` (don't press **ENTER** yet)
 
 Check that the line then reads...
 
+```
     20 PRINT a+b
+```
 
 ...then press ENTER. The cursor will move to the line below, and the screen should look like this...
 
+```
     10 LET a=10
     15 LET b=15
     20 PRINT a+b
-[]
+█
+```
 
 What you have done in this program is to have ***assigned*** the value 10 to the ***variable*** called `a`, and the value 15 to the variable called `b`. You have then instructed the computer to print the sum of these two values by simply adding the two variables.
 
 Run this program by typing...
 
+```
     RUN
+```
 
 ...and pressing **ENTER**. The sum of the two numbers will be displayed...
 
+```
     25
+```
 
 Run the program again and then afterwards, press **ENTER** and type...
 
+```
     PRINT a,b
+```
 
 Now press **ENTER** again and notice how the values of the variables `a` and `b` are still in the +3's memory, even though the program has finished...
 
+```
     10              15
+```
 
 ### Mistakes
 
 If you enter a line by mistake, say...
 
+```
     12 LET b=8
+```
 
 ...and you wish to delete the line, then simply type...
 
+```
     12
+```
 
 ..and press **ENTER**. Line 12 will vanish, and the cursor will reappear where line 12 used to be.
 
 Now type...
 
+```
     30
+```
 
 ...and press **ENTER**. The +3 will search for line 30, and since there isn't one, it will 'fall off' the end of the program. The cursor will be positioned just after the last line. If you enter any non-existent line number (such as 30), then the +3 will place the cursor where it thinks the line would have been if it really existed. This can be a useful way of moving about large programs, but beware - it can also be very dangerous because if the line really did exist before you entered the line number - it certainly wouldn't exist afterwards!
 
 To list a program on the screen, type...
 
+```
     LIST
+```
 
 ...and press **ENTER**. You may (particularly when working with more lengthy programs) wish to list from a certain point onwards. This can be achieved by typing an appropriate line number after the `LIST` command.
 
 Type...
 
+```
     LIST 15
+```
 
 ...and press **ENTER**, to see this illustrated.
 
@@ -1781,7 +1813,9 @@ If, at some time, you find that you haven't left enough space between line numbe
 
 We are now going to use the BASIC command `NEW`. This erases any existing programs and variables in the +3's memory. The command should be used whenever you are about to start afresh, so type...
 
+```
     NEW
+```
 
 ...and press **ENTER**. From now on, we won't mention 'press **ENTER**' every time - we'll assume that you'll remember.
 
@@ -1789,6 +1823,7 @@ With the opening menu on the screen, start up BASIC by selecting the option `+3 
 
 Now carefully type in this program, which converts Fahrenheit temperatures to Celsius (centigrade)...
 
+```
     10 REM temperature conversion
     20 PRINT "deg F","deg C"
     30 PRINT
@@ -1796,6 +1831,7 @@ Now carefully type in this program, which converts Fahrenheit temperatures to Ce
     50 PRINT f,
     60 PRINT (f-32)*5/9
     70 GO TO 40
+```
 
 Although you can type in all of line 10 in lower case, only the `REM` will be converted to upper case on entry as it's the only keyword that the +3 recognises. Also, although the words `GO TO` will appear with a space between them, they may be typed in as one word (`GOTO`) if you prefer.
 
@@ -1810,13 +1846,17 @@ So, enter another temperature, then another...
 
 After a few more of there you might be wondering if the computer will ever get bored of this - it won't! Next time it asks for another number, hold down **SYMB SHIFT** and type `A`. The word `STOP` will appear, and when you press **ENTER** then +3 comes back with the report...
 
+```
     H STOP in INPUT in line 40:1
+```
 
 ...which tells you why it stopped, and where (in line 40). (The `:1` after the line number in the report tells you that the 1st instruction in line 40 is being reported upon.)
 
 If you wish to continue the program, type...
 
+```
     CONTINUE
+```
 
 ...and the +3 will ask you for another number.
 
@@ -1824,7 +1864,9 @@ When `CONTINUE` is used, the +3 remembers the line number in the last report tha
 
 Stop the program again and replace line 70 by...
 
+```
     70 GO TO 31
+```
 
 There will be no perceptible difference to the running of the program because if the line number in a `GO TO` command refers to a non-existent line, then the jump is to the next line after the given number. The same goes for `RUN` (in face, `RUN` on its own actually means `RUN 0`).
 
@@ -1842,9 +1884,11 @@ Another punctuation mark you can use like this in `PRINT` commands is the apostr
 
 If you wish to inhibit this (so that whatever follows to be printed continues on the same line) you can put a comma or semicolon at the end of the `PRINT` statement. To see how this works, replace line 50 in turn by each of these...
 
+```
     50 PRINT f,
     50 PRINT f;
     50 PRINT f
+```
 
 ...and run the program each time to see the difference.
 
@@ -1852,24 +1896,32 @@ The line with the comma (you typed in originally) printed everything in two colu
 
 Always remember the difference between commas and semicolons in `PRINT` commands, and do not confuse them with `:` colons which are used as separators between commands on a single line, for example...
 
+```
     PRINT f: GO TO 40
+```
 
 Now type in these extra lines...
 
+```
     100 REM greeting program
     110 INPUT "Enter your name",n$
     120 PRINT "Hello ";n$;"!"
     130 GO TO 110
+```
 
 This is a separate program from the last one, but you may keep them both in the +3 at the same time. To run the new one, type...
 
+```
     RUN 100
+```
 
 Because this program expects you to input a string (a character or group of characters) instead of a number, it prints out two string quotes '""' as a reminder. So type in a name and press **ENTER**.
 
 Next time round, you will get two string quotes again, but you don't have to use them if you don't want to. Try this, for example: rub out the quotes by pressing cursor right, then **DELETE** twice, and type...
 
+```
     n$
+```
 
 Since there are no string quotes, the +3 knows that it has to do some calculation - the calculation in this case is to find the value of the string variable called `n$` (which is whatever name you happen to have typed in last time round). In this way, the `INPUT` statement acts like `LET n$=n$`, so the value of `n$` is unchanged.
 
@@ -1881,18 +1933,24 @@ Another difference of course is that you may type `RUN` without a line number, a
 
 Both this program and the 'temperature conversion' program stopped because you pressed **SYMB SHIFT** and typed `A` in the input line. Sometimes, you may write a program that you can't stop and that won't stop itself. Type...
 
+```
     200 GO TO 200
     RUN 200
+```
 
 Although the screen is blank, the program is running - executing line 200 over and over again. This looks all set to go on forever unless you pull the plug out or reset the computer! However, these is a less drastic remedy - press the **BREAK** key. The program will stop with the report...
 
+```
     L BREAK into program
+```
 
 At the end of every statement, the program looks to see if this key is pressed, and if it is, then the program stops. The **BREAK** key can also be used when you are in the middle of using a printer, a cassette unit, or various other add-ons that you can attach to the +3.
 
 In these cases there is a different report...
 
+```
     D BREAK - CONT repeats
+```
 
 The instruction `CONTINUE` in this case *and in most other cases too) repeats the statement where the program was stopped and carries straight on with the next statement (after allowing for any jumps to be made).
 
@@ -1902,15 +1960,21 @@ Run the 'name' program again and when it asks you for input, type...
 
 Because `n$` is an undefined variable, you will get the error report...
 
+```
     2 Variable not found
+```
 
 If you now type...
 
+```
     LET n$="Fremsley"
+```
 
 (which produces the report `0 OK, 0:1`), and then type...
 
+```
     CONTINUE
+```
 
 ...you will find that you can use `n$` as input data without any trouble.
 
@@ -1941,6 +2005,7 @@ All the programs we have seen so far have been pretty predictable - they went st
 
 Let's look at an example of this. Use `NEW` to clear the previous program from the +3, select `+3 BASIC`, then type in and run this program. (This is clearly meant for two people to play!)...
 
+```
     10 REM Guess the number
     20 INPUT "Enter a secret number",a: CLS
     30 INPUT "Guess the number",b
@@ -1948,6 +2013,7 @@ Let's look at an example of this. Use `NEW` to clear the previous program from t
     50 IF b<a THEN PRINT "That is too small, try again"
     60 IF b>a THEN PRINT "That is too big, try again"
     70 GO TO 30
+```
 
 Note that the `CLS` command (at the end of line 20) means 'clear the screen'. We have used it in this program to stop the other person seeing the secret number after it is entered.
 
@@ -1970,7 +2036,9 @@ The simplest conditions compare two numbers or two strings; they can test whethe
 
 In the program we have just typed in, line 40 compares `a` and `b`. If they are equal, then the program is halted by the `STOP` command. The report at the bottom of the screen...
 
+```
     9 STOP statement, 40:3
+```
 
 ...shows that the 3rd statement (ie. the `STOP` command) in line 40 caused the program to halt.
 
@@ -1989,12 +2057,12 @@ This means the same as...
 Exercise...
 
 1. Try this program...
-
+```
         10 LET a=1
         20 LET b=1
         30 IF a>b THEN PRINT a;" is higher"
         40 IF a<b THEN PRINT b;" is higher"
-
+```
 Before you run it, try to work out what will be printed on the screen.
 
 ## <a id="part4"></a> Part 4 - Looping
@@ -2008,6 +2076,7 @@ Suppose you wish to input five numbers and add them together.
 
 One way (don't type this in unless you are feeling dutiful) is as follows...
 
+```
      10 LET total=0
      20 INPUT a
      30 LET total=total+a
@@ -2020,11 +2089,13 @@ One way (don't type this in unless you are feeling dutiful) is as follows...
     100 INPUT a
     110 LET total=total+a
     120 PRINT total
+```
 
 This method is not good programming practice. It may be just about controllable for five numbers, but you can imagine how tedious a program like this to add twenty numbers would be, and to add a hundred or more would be out of the question.
 
 Much better is to set up a variable to count up to 5 and then stop the program, like this (which you should type in)...
 
+```
     10 LET total=0
     20 LET count=1
     30 INPUT a
@@ -2033,11 +2104,13 @@ Much better is to set up a variable to count up to 5 and then stop the program, 
     60 LET count=count+1
     70 IF count <= 5 THEN GO TO 30
     80 PRINT total
+```
 
 Notice how easy it would be to change line 70 so that this program adds ten numbers, or even a hundred.
 
 This sort of thing is so useful that there are two special commands to make it easier - the `FOR` command and the `NEXT` command. They are always used together. Using these, the program you have just typed in does exactly the same as...
 
+```
     10 LET total=0
     20 FOR c=1 TO 5
     30 INPUT a
@@ -2045,6 +2118,7 @@ This sort of thing is so useful that there are two special commands to make it e
     50 LET total=total+a
     60 NEXT c
     80 PRINT total
+```
 
 (To get this program from the previous one, you just have to edit lines 20, 40 and 60, then delete line 70.)
 
@@ -2061,7 +2135,9 @@ An extra subtlety to the `FOR`...`NEXT` structure is that the control variable d
 
 ...where the control variable is a single letter, and where the initial value, the limit and the step are all things that the +3 can calculate as numbers - like the actual numbers themselves, or sums, or the names of numeric variables. So, if you replace line 20 in the program by...
 
+```
     20 FOR c=1 TO 5 STEP 3/2
+```
 
 ...this will step the control variable by the amount 3/2 each time the FOR loop is executed. Note that we could have simply said `STEP 1.5`, or we could have assigned the step value to a variable, say `s`, and then said `STEP s`.
 
@@ -2071,9 +2147,11 @@ At this point, attempt exercise 3 at the end of this section (which refers to th
 
 Step values can be negative instead of positive. Try this program which prints out the numbers from 1 to 10 in reverse order. (Remember, use the command `NEW` before typing in a new program.)
 
+```
     10 FOR n=10 to 1 STEP -1
     20 PRINT n
     30 NEXT n
+```
 
 We said before that the program carries on looping as long as the control variable is less than or equal to the limit. If you consider what that would mean in this case, you'll see that it now doesn't hold true. Hence, the rule has to be modified to say that when the step is negative, the program carries on looping as long as the control variable is greater than or equal to the limit.
 
@@ -2081,17 +2159,20 @@ At this point, attempt exercises 4 and 5 at the end of this section (which refer
 
 You must be careful if you are running two `FOR`...`NEXT` loops together, one inside the other. Try this program, which prints out the numbers for a complete set of six dot dominoes.
 
+```
     10 FOR m=0 TO 6                       |
     20 FOR n=0 TO m         |             |
     30 PRINT m;":";n;" ";   |- n loop     |- m loop
     40 NEXT n               |             |
     50 PRINT                              |
     60 NEXT m                             |
+```
 
 You can see that the `n` loop is entirely inside the `m` loop. This means that they are properly ***nested***.
 
 However, what must be avoided is having two `FOR`...`NEXT` loops that overlap without either being entirely inside the other, like this...
 
+```
      5 REM this program is wrong
     10 FOR m=0 TO 6               |
     20 FOR n=0 TO m               |           |
@@ -2099,6 +2180,7 @@ However, what must be avoided is having two `FOR`...`NEXT` loops that overlap wi
     40 NEXT m                     |           |
     50 PRINT                      |
     60 NEXT n                     |
+```
 
 Two `FOR`...`NEXT` loops must either be one inside the other, or completely separate.
 
@@ -2106,7 +2188,9 @@ Another thing to avoid is jumping into the middle of a `FOR`...`NEXT` loop from 
 
 There is nothing to stop you using a `FOR`...`NEXT` loop in a direct command. For example, try...
 
+```
     FOR m=0 TO 10: PRINT m: NEXT m
+```
 
 You can sometimes use this as a (somewhat artificial) way of getting around the restriction that you cannot `GO TO` anywhere inside a command - because a command has no line number. For instance...
 
@@ -2150,7 +2234,9 @@ Sometimes, different parts of the program will have rather similar jobs to do, a
 
 To do this, you use the statements `GO SUB` (go to subroutine) and `RETURN`. This takes the form...
 
+```
     GO SUB xxx
+```
 
 ...where 'xxx' is the line number of the first line in the subroutine. It is just like `GO TO` xxx except that the +3 remembers where the `GO SUB` statement was, so that it can come back again after carrying out the subroutine.
 
@@ -2158,12 +2244,15 @@ To do this, you use the statements `GO SUB` (go to subroutine) and `RETURN`. Thi
 
 When the command...
 
+```
     RETURN
+```
 
 ...is met (at the end of the subroutine itself), the +3 takes the top return address off the `GO SUB` stack, and continues from the next statement.
 
 As an example, let's look at the number guessing program again. Retype it as follows...
 
+```
      10 REM "A rearranged guessing game"
      20 INPUT "Enter a secret number",a: CLS
      30 INPUT "Guess the number",b
@@ -2173,11 +2262,13 @@ As an example, let's look at the number guessing program again. Retype it as fol
      70 GO TO 30
     100 PRINT "Try again"
     110 RETURN
+```
 
 The `GO TO 30` statement in line 70 (and the `STOP` statement in line 60 of the next program) are very important because otherwise the programs will run on into their subroutines and cause an error (`7 RETURN without GO SUB`) when the `RETURN` statement is reached.
 
 The following program uses a subroutine (from line 100 to 150) which prints a 'times table' corresponding to the value of parameter `n`. The command `GO SUB 100` may be issued from any point in the program to call the subroutine. When the `RETURN` command in line 150 of the subroutine is reached, control returns to the main program, which continues running from the statement after the `GO SUB` call. Like `GO TO`, `GO SUB` may be typed in as `GOSUB`.
 
+```
      10 REM times tables for 2, 5, 10 and 11
      20 LET n=2: GO SUB 100
      30 LET n=5: GO SUB 100
@@ -2191,6 +2282,7 @@ The following program uses a subroutine (from line 100 to 150) which prints a 't
     130 NEXT t
     140 PRINT
     150 RETURN
+```
 
 One subroutine can happily call another, or even itself (a subroutine that calls itself is known as ***recursive***).
 
@@ -2202,9 +2294,11 @@ Subjects covered...
 
 In some of the previous programs we saw that information, or data, can be entered directly into the +3 using the `INPUT` statement. Sometimes this can be very tedious, especially if a lot of the data is repeated every time the program is run. You can save a lot of time by using the `READ`, `DATA` and `RESTORE` commands. For example:
 
+```
     10 READ a,b,c
     20 PRINT a,b,c
     30 DATA 1,2,3
+```
 
 A `READ` statement consists of `READ` followed by a list of the names of variables, separated by commas. It works rather like an `INPUT` statement, except that instead of getting ***you*** to type in the values to give to the variables, the +3 looks up the values in the `DATA` statement.
 
@@ -2216,11 +2310,13 @@ Let's see how all this works in the program you've just typed in. Line 10 tells 
 
 The information in `DATA` can be part of a `FOR`...`NEXT` loop. Type in...
 
+```
     10 DATA 2,4,6,8,10,12
     20 FOR n=1 TO 6
     30 READ d
     40 PRINT d
     50 NEXT n
+```
 
 Note from the above two programs that a `DATA` statement can appear anywhere - before or after the `READ` statement.
 
@@ -2228,11 +2324,13 @@ When the above program is run, the `READ` statement moves through the `DATA` lis
 
 `DATA` statements may also contain string variables. For example...
 
+```
     10 FOR a=1 TO 7
     20 READ n$
     30 PRINT n$
     40 DATA "Bob","Edith","Carole","Jacquie","Gavin","Charles","Holly"
     50 NEXT a
+```
 
 The +3 doesn't have to `READ` the `DATA` statements in order - it can be made to 'jump about' between `DATA` statements by using the `RESTORE` command. The form of the command is...
 
@@ -2242,6 +2340,7 @@ The +3 doesn't have to `READ` the `DATA` statements in order - it can be made to
 
 Type in and run the following program...
 
+```
      10 DATA 1,2,3,4,5
      20 DATA 6,7,8,9
      30 GO SUB 110
@@ -2256,6 +2355,7 @@ Type in and run the following program...
     120 PRINT a'b'c
     130 PRINT
     140 RETURN
+```
 
 The command `GO SUB 110` calls a subroutine which `READ`s the next three items of `DATA` and the `PRINT`s them. Notice how the `RESTORE` command affects which items are read.
 
@@ -2272,7 +2372,9 @@ You have already seen some of the ways in which the +3 can calculate with number
 
 The example...
 
+```
     LET tax=sum*15/100
+```
 
 ...illustrates that calculations can be combined. Such a combination, like `sum*15/100`, is called an expression - so an ***expression*** is just a short-hand way of telling the +3 to do several calculations, one after the other. In our example, the expression `sum*15/100` means 'look up the value of the variable called `sum`, multiply it by 15, and divide by 100'.
 
@@ -2286,13 +2388,17 @@ Next to be carried out is the subtraction `8-3` which equals 5, so the expressio
 
 Try this out for yourself. Type in...
 
+```
     PRINT 8-12/4+2*2
+```
 
 A full list of the priorities of mathematical (and logical) operations will be found in [part 31 of this chapter](#part31).
 
 You may, however, change the priority of calculations within an expression by the use of brackets. Calculations within brackets are carried out first, so if in the above expression, you required the addition `4+2` to be carried out first, you would enclose it in brackets. To see this, type in...
 
+```
     PRINT 8-12/(4+2)*2
+```
 
 ...and the result this time is 4 instead of 9.
 
@@ -2300,10 +2406,12 @@ Expressions are useful because, whenever the +3 is expecting a number from you, 
 
 You can also add together strings (or string variables) in a single expression. For example...
 
+```
     10 LET a$="large "
     20 LET b$="and puffy"
     30 LET c$=a$+b$
     40 PRINT c$
+```
 
 We really ought to tell you what you can and cannot use as the names of variables. As we have already said, the name of a string variable has to be a single letter followed by `$`, and the name of the control variable in a `FOR`...`NEXT` loop must be a single letter; however, the names of ordinary numeric variables are less restricted - they can use any letters or digits as long as the first one is a letter. You can put spaces in as well to make it easier to read, but they won't count as part of the name. Also, it doesn't make any difference to the name whether you type it in upper or lower case letters. There are some restrictions about variable names which are the same as commands, however. In general, if the variable contains a BASIC keyword in it (with spaces around it) then it won't be accepted.
 
@@ -2332,29 +2440,39 @@ The following are ***not*** allowed as the names of variables...
 
 Numerical expressions can be represented by a number and exponent. Try the following to prove the point...
 
+```
     PRINT 2.34e0
     PRINT 2.34e1
     PRINT 2.34e2
+```
 
 ...and so on up to...
 
+```
     PRINT 2.34e15
+```
 
 PRINT gives only eight significant digits of a number. Try...
 
+```
     PRINT 4294967295, 4294967295-429e7
+```
 
 This proves that the computer can hold the digits of 4294967295, even though it is not prepared to display them all at once.
 
 The +3 uses ***floating point arithmetic***, which means that it keeps separate the digits of a number (its ***mantissa***) and the position of the point (the ***exponent***). This is not always exact, even for whole numbers. Type...
 
+```
     PRINT 1e10+1-1e10,1e10-1e10+1
+```
 
 Numbers are held to about nine and a half digits accuracy, so 1e10 is too big to be held exactly right. The inaccuracy (actually about 2) is more than 1, so the numbers 1e10 and 1e10+1 appear to the computer to be equal.
 
 For an even more peculiar example, type...
 
+```
     PRINT 5e9+1-5e9
+```
 
 Here the inaccuracy in 5e9 is only about 1, and the 1 to be added on in fact gets rounded up to 2. The numbers 5e9+1 and 5e9+2 appear to the computer to be equal. The largest ***integer*** (whole number) that can be held completely accurately is 4,294,967,294.
 
@@ -2362,13 +2480,17 @@ The string `""` with no character at all is called the ***empty*** or ***null st
 
 Try...
 
+```
     PRINT "Did you read "The Times" yesterday?"
+```
 
 When you press **ENTER** you will get the flashing red cursor that shows there is a mistake somewhere in the line. When the +3 finds the double quotes at the beginning of the `"The Times"` it imagines that these mark the end of the string `"Did you read "`, and it then can't work out what `The Times` means.
 
 There is a special device to get over this - whenever you wish to write a string quote symbol in the middle of a string, you must write it twice, like this...
 
+```
     PRINT "Did you read ""The Times"" yesterday?"
+```
 
 As you can see from what is printed on the screen, each double quote is only really there once - you just have to type it twice to get it recognised.
 
@@ -2418,17 +2540,21 @@ Although normally both start and finish must refer to existing parts of the stri
 
 The start and finish must not be negative, or you get the error `B integer out of range`. This next program is a simple one illustrating some of these rules...
 
+```
     10 LET a$="abcdef"
     20 FOR n=1 TO 6
     30 PRINT a$(n TO 6)
     40 NEXT n
+```
 
 Type `NEW` when this program has been run and enter the next program.
 
+```
     10 LET a$="1234567890"
     20 FOR n=1 TO 10
     30 PRINT a$(n TO 10),a$((11-n) TO 10)
     40 NEXT n
+```
 
 For string variables, we can not only extract substrings, but also assign to them. For instance, type...
 
@@ -5758,7 +5884,7 @@ The attributes are the colours and so on for each character position, using the 
 The way that the computer organises its affairs changes slightly between 48 BASIC and +3 BASIC mode. The area that was the printer buffer in 48 BASIC mode, is used for extra system variables in +3 BASIC mode in much the same way as it was on the Spectrum +2. The variables have changed, though.
 
 <figure>
-  <svg xmlns="http://www.w3.org/2000/svg" width="90%" viewBox="-20 0 1155 900" style="font-size: 14px">
+  <svg xmlns="http://www.w3.org/2000/svg" width="90%" viewBox="-20 0 1155 800" style="font-size: 14px">
     <defs>
       <g id="arrow-down-open">
         <path d="M 0,0 v 25 m -3.7,-5 l 3.7,5 l 3.7,-5" class="hairline" />
@@ -5811,18 +5937,18 @@ The way that the computer organises its affairs changes slightly between 48 BASI
     <use x="20" y="540" xlink:href="#arrow-up-open" />
     <text x="20" y="560" text-anchor="middle">5CB6h</text>
     <text x="20" y="580" text-anchor="middle">(23734)</text>
-    <text x="20" y="600" text-anchor="middle">CHANS</text>
+    <text x="20" y="600" text-anchor="middle"><a href="#chans">CHANS</a></text>
     <text x="130" y="465" text-anchor="middle">Channel</text>
     <text x="130" y="485" text-anchor="middle">information</text>
     <line x1="235" y1="430" x2="235" y2="510" class="thick" />
     <text x="252" y="475" text-anchor="middle">80h</text>
     <line x1="270" y1="430" x2="270" y2="510" class="thick" />
-    <use x="270" y="540" xlink:href="#arrow-up-open" />
-    <text x="270" y="560" text-anchor="middle">PROG</text>
+    <use x="270" y="540" xlink:href="#arrow-up-open" />2
+    <text x="270" y="560" text-anchor="middle"><a href="#prog">PROG</a></text>
     <text x="360" y="475" text-anchor="middle">BASIC program</text>
     <line x1="450" y1="430" x2="450" y2="510" class="thick" />
     <use x="450" y="540" xlink:href="#arrow-up-open" />
-    <text x="450" y="560" text-anchor="middle">VARS</text>
+    <text x="450" y="560" text-anchor="middle"><a href="#vars">VARS</a></text>
     <text x="515" y="475" text-anchor="middle">Variables</text>
     <line x1="580" y1="430" x2="580" y2="510" class="thick" />
     <text x="597" y="475" text-anchor="middle">80h</text>
@@ -5878,7 +6004,7 @@ The way that the computer organises its affairs changes slightly between 48 BASI
     <text x="800" y="760" text-anchor="middle">UDG</text>
     <text x="910" y="675" text-anchor="middle">User defined graphics</text>
     <use x="1060" y="740" xlink:href="#arrow-up-open" />
-    <text x="1060" y="760" text-anchor="middle">P RAMT</text>
+    <text x="1060" y="760" text-anchor="middle"><a href="#pramt">P RAMT</a></text>
   </svg>
 </figure>
 
@@ -10478,29 +10604,38 @@ It is safe to plug in (or unplug) an amplifier, tape recorder, etc. into the **T
 
 <figure class="connector ">
   <svg width="90%" viewBox="0 0 700 360">
+      <defs>
+        <g id="jack35mm" style="fill:none;stroke:#000;stroke-width:3px;">
+          <path d="M 0,29 c 0,0 -7,-7 -13,-7 c -10,0 -13,7 -13,13 c 0,10 7,13 13,13 c 10,0 13,-7 13,-7
+          h 7 c5,0 0,0 8,7 h 85
+          v -26
+          h -85 c-5,0 0,0 -8,7 h -8" />
+          <path d="M 100,0 v67 h50 l31,-15 v-37 l-31,-15 h-50" stroke-linecap="square" />
+        </g>
+        <g id="stereojack35mm" style="fill:#000">
+          <use xlink:href="#jack35mm"/>
+          <rect x="15" y="23" width="10" height="25" />
+          <rect x="34" y="23" width="10" height="25" />
+        </g>
+        <g id="stereojack35mmsocket" style="fill:none;stroke:#000;stroke-width:3px;">
+          <path d="M 165,114 h 80 l 14,21 l 14,-21" />
+          <path d="M 165,193 h 45 l14,-21 l 14,21" />
+          <path d="M 165,264 h 144 v -70" />
+          <path d="M 360,171 v 113" />
+          <path d="M 446,171 v 113" />
+          <path d="M 402,0 v124" />
+          <rect x="298" y="114" width="22" height="80" />
+        </g>
+      </defs>
       <text x="150" y="150" style="text-anchor:end">(not used)</text>
       <text x="150" y="230" style="text-anchor:end">Audio output</text>
       <text x="150" y="300" style="text-anchor:end">GND (common)</text>
       <text x="370" y="338" style="text-anchor:end">Audio output</text>
       <text x="439" y="338">GND (common)</text>
       <text x="372" y="25">(not used)</text>
-      <g style="fill:none;stroke:#000;stroke-width:3px;">
-        <path d="M 165,145 h 80 l 14,21 l 14,-21" />
-        <path d="M 165,225 h 45 l14,-21 l 14,21" />
-        <path d="M 165,295 h 144 v -70" />
-        <path d="M 360,202 v 113" />
-        <path d="M 446,202 v 113" />
-        <path d="M 402,36 v124" />
-        <rect x="298" y="145" width="22" height="80" />
-        <path d="M 476,147 v67 h50 l31,-15 v-37 l-31,-15 h-50" />
-        <path d="M 558,187 h 148 m 0,-14 h -148" />
-        <path d="M 376,176 c 0,0 -7,-7 -13,-7 c -10,0 -13,7 -13,13 c 0,10 7,13 13,13 c 10,0 13,-7 13,-7
-        h 7 c5,0 0,0 8,7 h 85
-        v -26
-        h -85 c-5,0 0,0 -8,7 h -8" />
-      </g>
-      <rect x="388" y="170" width="10" height="25" style="fill:#000" />
-      <rect x="407" y="170" width="10" height="25" style="fill:#000" />
+      <use xlink:href="#stereojack35mmsocket" x="0" y="30" />
+      <use xlink:href="#stereojack35mm" x="374" y="147" />
+      <path d="M 556,187 h 148 m 0,-14 h -148" style="stroke:#000;stroke-width:3px;" />
   </svg>
   <figcaption><strong>TAPE/SOUND</strong> socket</figcaption>
 </figure>
@@ -10524,19 +10659,24 @@ If you wish to wire-up your own, then the connections are as follows...
 
 <figure class="connector bsjack">
   <svg viewBox="0 -2 312 130" width="25%">
-    <path d="M10 60 V30 H50 V0 H310 V100 H50 V60 z" />
-    <text y="45" x="79">6</text>
-    <rect y="55" x="70" width="20" height="10" />
-    <text y="45" x="119">5</text>
-    <rect y="55" x="110" width="20" height="10" />
-    <text y="45" x="159">4</text>
-    <rect y="55" x="150" width="20" height="10" />
-    <text y="45" x="199">3</text>
-    <rect y="55" x="190" width="20" height="10" />
-    <text y="45" x="239">2</text>
-    <rect y="55" x="230" width="20" height="10" />
-    <text y="45" x="279">1</text>
-    <rect y="55" x="270" width="20" height="10" />
+    <defs>
+      <g id="bsjack">
+        <path d="M10 60 v-30 h40 v-30 h260 v100 h-260 v-40 z" />
+        <text y="45" x="79">6</text>
+        <rect y="55" x="70" width="20" height="10" />
+        <text y="45" x="119">5</text>
+        <rect y="55" x="110" width="20" height="10" />
+        <text y="45" x="159">4</text>
+        <rect y="55" x="150" width="20" height="10" />
+        <text y="45" x="199">3</text>
+        <rect y="55" x="190" width="20" height="10" />
+        <text y="45" x="239">2</text>
+        <rect y="55" x="230" width="20" height="10" />
+        <text y="45" x="279">1</text>
+        <rect y="55" x="270" width="20" height="10" />
+      <g>
+    </defs>
+    <use xlink:href="#bsjack"/>
   </svg>
   <figcaption><strong>RS232</strong> socket</figcaption>
 </figure>
@@ -10560,19 +10700,7 @@ Using the MIDI interface will not disturb the RS232's baud rate setting.
 
 <figure class="connector bsjack">
   <svg viewBox="0 -2 312 130" width="25%">
-    <path d="M10 60 V30 H50 V0 H310 V100 H50 V60 z" />
-    <text y="45" x="79">6</text>
-    <rect y="55" x="70" width="20" height="10" />
-    <text y="45" x="119">5</text>
-    <rect y="55" x="110" width="20" height="10" />
-    <text y="45" x="159">4</text>
-    <rect y="55" x="150" width="20" height="10" />
-    <text y="45" x="199">3</text>
-    <rect y="55" x="190" width="20" height="10" />
-    <text y="45" x="239">2</text>
-    <rect y="55" x="230" width="20" height="10" />
-    <text y="45" x="279">1</text>
-    <rect y="55" x="270" width="20" height="10" />
+    <use xlink:href="#bsjack"/>
   </svg>
   <figcaption><strong>MIDI</strong> socket</figcaption>
 </figure>
@@ -10607,19 +10735,7 @@ Using software control loops, the I/O lines could be driven as a second RS232 po
 
 <figure class="connector bsjack">
   <svg viewBox="0 -2 312 130" width="25%">
-    <path d="M10 60 V30 H50 V0 H310 V100 H50 V60 z" />
-    <text y="45" x="79">6</text>
-    <rect y="55" x="70" width="20" height="10" />
-    <text y="45" x="119">5</text>
-    <rect y="55" x="110" width="20" height="10" />
-    <text y="45" x="159">4</text>
-    <rect y="55" x="150" width="20" height="10" />
-    <text y="45" x="199">3</text>
-    <rect y="55" x="190" width="20" height="10" />
-    <text y="45" x="239">2</text>
-    <rect y="55" x="230" width="20" height="10" />
-    <text y="45" x="279">1</text>
-    <rect y="55" x="270" width="20" height="10" />
+    <use xlink:href="#bsjack"/>
   </svg>
   <figcaption><strong>AUX</strong> socket</figcaption>
 </figure>
@@ -10781,15 +10897,19 @@ The +3 can connect to a very wide range of peripherals via the **EXPANSION I/O**
 
 Details of the +3's hardware will be found in [chapter 8 part 30](#part30).
 
-# <a id="credits"></a> Credits
+# <a id="postfix"></a> Postfix
 
-- HTML5 conversion & cross-referencing by [Damien Guard](https://damieng.com)
-- Canvas drawing, SVG drawings, layout coding by [Damien Guard](https://damieng.com)
+## <a id="credits"></a> Credits
+
+- Original manual by Ivor Spital, Cliff Lawson, Rupert Goodwins, Steve Vickers and Robin Bradbeer.
+- Markdown conversion, JavaScript, style, screenshots, and SVG drawings by [Damien Guard](https://damieng.com)
 - Original ASCII manual prepared by:
   - Ian Coates <oktup@mono.city.ac.uk> did [chapter 8 parts 26](#part26) and [30](#part30).
   - Thomas Ahn Kjaer <takjaer@daimi.aau.dk> did [chapter 8 part 17](#part17).
   - Russell Marks <mr216@gre.ac.uk> did the rest.
 
-<script>
-document.body.onscroll = asFragmentsGoBy();
-</script>
+## <a id="credits"></a> Revision history
+
+- 25-Jan-2020 Public release of HTML & markdown version.
+
+<script>document.body.onscroll = asFragmentsGoBy();</script>
