@@ -1,0 +1,319 @@
+		 VIDI
+	ROMBO PRODUCTIONS
+	
+	
+	
+
+		VIDI-ZX
+
+	VIDEO DIGITISER FOR ZX-SPECTRUM
+
+
+Copyright 1988, ROMBO Productions.
+
+
+
+			Credits :
+
+
+			Hardware	Colin Faulkner
+			Software	Marcus Sharp
+
+
+
+
+			ROMBO Productions
+			107 Raeburn Rigg
+			Livingston
+			West Lothian
+			EH54 8PH
+			Tel : (0506) 39046
+
+
+
+CONTENTS                                                          PAGE
+
+1. INTRODUCTION
+        1.1 Items Supplied .......................................... 1
+        1.2 Hardware Requirements ................................... 1
+        1.3 VIDI-ZX Overview ........................................ 1
+
+2. GETTING STARTED
+        2.1 Connecting Up ........................................... 2
+        2.2 Loading the Software .................................... 2
+
+3. USING VIDI-ZX
+    3.1 Grab/Run .................................................... 2
+    3.2 Shades On/Off ............................................... 2
+    3.3 View ........................................................ 2
+    3.4 Menu ........................................................ 3
+    3.5 Load ........................................................ 3
+    3.6 Save ........................................................ 3
+    3.7 Copy ........................................................ 3
+    3.8 Menu-2 ...................................................... 3
+
+4. TECHNICAL DETAILS
+    4.1 Troubleshooting and Video Cables ............................ 4
+    4.2 DISCiple interface and VIDI4 program ........................ 4
+    4.3 Using Microdrives and other Storage devices ................. 4
+    4.4 The Machine Code program .................................... 5
+    4.5 Driving VIDI from your own BASIC program .................... 5
+    4.6 Backing up the VIDI software ................................ 5
+    4.7 Technical Support ........................................... 5
+
+VIDI-ZX                                                          VIDI-ZX
+
+1. INTRODUCTION
+
+1.1 Items Supplied
+
+        Your VIDI-ZX pack should contain :- VIDI-ZX interface,
+        Software on tape or disc and this manual.
+
+1.2 Hardware Requirements
+
+        To use VIDI-ZX you will need a Spectrum 48k, 128, +2 or +3. A
+        video source is also required. This can be a Video Recorder,
+        Camera (Black and White or Colour) or any Composite Video
+        Signal (usually marked as Video Out). A suitable cable is
+        also required. (SEE Technical details)
+
+1.3 VIDI-ZX Overview
+
+        VIDI-ZX is a Video Digitiser. This means that it is able to
+        scan signals from a Video Source and represent them on the
+        Spectrum display. VIDI-ZX is a frame-grabber, taking a single
+        frame in full flight. This means that a still frame is not
+        necessary to get a good picture.
+
+        VIDI-ZX represents each point on the picture (or Pixel) as
+        either black or white. It can also use a stipple method to
+        produce an intermediate grey.
+
+        Software is included to easily grab a picture, load and save
+        and print (Using the Spectrum's COPY command).
+
+        VIDI-ZX produces screen files suitable for use in all the
+        major Spectrum art and design packages, or can be loaded
+        eaSily in the user's own programs.
+
+        Full details are included to allow you to drive the VIDI-ZX
+        hardware from within you own customised programs. VIDI-ZX is
+        easily configurable to work with other storage devices
+        (DISCiple interface, Microdrives etc.).
+
+                                    1
+
+VIDI-ZX                                                          VIDI-ZX
+
+2. GETTING STARTED
+
+2.1 Connecting Up
+
+        Connect the VIDI-ZX interface to the Expansion Connector at
+        the back of your Spectrum.
+IMPORTANT:
+        NEVER CONNECT OR REMOVE THE VIDI-ZX INTERFACE WITH SPECTRUM
+        POWERED UP - YOU WILL DAMAGE YOUR COMPUTER.
+
+        Connect the Video Lead to the Socket on the side of VIDI-ZZ
+        and the other end to the Video Out on the video source.
+
+2.2 Loading the Software
+
+        Load the tape in the normal way by typing LOAD"" . The first
+        program is VIDI (BASIC) and then VIDCODE (Machine Code). The
+        programs are recorded twice on the same side of the tape.
+
+        N.B. If you are using the DISCiple interface see Technical
+        Details for details of using the different VIDI4 program.
+
+3. USING VIDI-ZX
+
+3.1 Grab/Run
+
+        You should now be watching the Spectrum screen displaying your
+        video picture (if not then SEE Troubleshooting in the
+        Technical Details section).
+
+        The VIDI program has a MENU bar along the top of the screen.
+        Options are selected by pressing the letter in brackets. For
+        example the first option is (G)rab. Press G and the picture
+        will freeze (or be grabbed). The Option now says (R)un. Press
+        R to action it.
+
+3.2 Brightness Control
+
+        The orange knob on the side of the VIDI-ZX is the Brightness
+        Control. Adjust it by turning to get the best Picture.
+
+3.2 Shades On/Off
+
+        The (S)hades On/Off option selects either 2 or 3 shaded
+        pictures. Remember the option is to change the current mode -
+        so when you actually have shades on then the menu will say
+        (S)hades Off, as that is the next option.
+
+3.3 View
+
+        (V)iew if selected will remove the menu bar and show the
+        entire screen. This is useful to see how the whole screen
+        looks. The menu options operate exactly the same regardless of
+        whether the View is on or off. Press V again to redisplay the
+        menu.
+
+                                        2
+
+VIDI-ZX                                                          VIDI-ZX
+
+3.4 Menu
+
+        The (M)enu option will take you to the 2nd menu. This is used
+        for loading, saving and printing. When you move to this menu
+        the picture is automatically frozen.
+
+3.5 Load
+
+        (L)oad will load a previously saved picture to the screen.
+        Press L then respond to the request for a filename in the
+        normal way. If no filename is entered then the command is
+        cancelled.
+
+3.6 Save
+
+        (S)ave works in the same way as load, except it saves the
+        current screen to tape or disc. Only the picture information
+        is saved and not the attributes.
+
+        If for any reason an error occurs and the program stops - type
+        RUN to return to the save and Load menu.
+
+3.7 Copy
+
+        (C)opy activates the built in COPY command. Remember this only
+        prints the tcp 22 lines and not the bottom two lines on the
+        screen.
+
+3.8 Menu-2
+
+        The final option is (M)enu again. This will return you the the
+        lst menu bar.
+
+                                        3
+
+VIDI-ZX                                                          VIDI-ZX
+
+4. TECHNICAL DETAILS
+
+4.1 Troubleshooting and Video Cables
+
+        If you have the software loaded and the menu showing, but no
+        Picture then check :-
+
+        1. Brightness control on the VIDI-ZX interface, turn it both
+        ways to see if a moving picture is actually there. NOTE : when
+        adjusting the Brightness control the menu should say (G)rab
+        and NOT (R)un.
+
+        2. Video Source - the Video Out should be connected to
+        VIDI-ZX, make sure the video is switched on and playing!
+
+        3. Video Lead - most videos have the Video Out on a BNC
+        connector, in this case you will need a BNC to PHONO lead
+        (available from ROMBO at £3.95 inc). Some older videos have a
+        PHONO socket on the Video Out, others (especially in Europe)
+        have a SCART connector - in these cases consult your video
+        dealer for a suitable cable, remember that the connector on
+        the VIDI-ZX is 'PHONO'.
+
+        4. Check the small link on the VIDI-ZX at the back of the
+        edge connector. It should be on the inner two pins if you are
+        using the VIDI program - or the Outer 2 pins if you are using
+        VIDI4, see DISCiple interface below. If the link is
+        disconnected the VIDI-ZX will ignore all request signals.
+
+        5. Phone ROMBO technical support.
+
+4.2 DISCiple interface and VIDI4 program
+
+	VIDI-ZX uses address line 6 for its control. This is also used
+	by the DISCiple interface. To ensure compatibility there is a
+	small link on the VIDI-ZX by the back of the edge connector.
+	This is normally on the inner two pins for the VIDI program
+	using address line 6.
+
+	To use address line 4 change the link to the outer two pins.
+	You will also have to load in the VIDI4 program and not VIDI.
+	VIDI4 and its code is recorded twice on the tape after the two
+	recordings of the VIDI program.
+
+	If the link is removed then VIDI-ZX will effectively be
+	transparent to the system and will not respond to any signals.
+
+4.3 Using Microdrives and other Storage devices
+
+	The Save and Load options are situated at the end of the VIDI
+	BASIC program. These can be easily edited to suit microdrives
+	etc. The program should be resaved to start at line 20
+	(i.e. SAVE "VIDI" LINE 20).
+
+                                        4
+
+VIDI-ZX                                                          VIDI-ZX
+
+4.4 The Machine Code program
+
+        The routines to operate the VIDI-ZX hardware are written in
+        machine code. They have been split up into small modules or
+        subroutines. Each subroutine controls a specific function of
+        the VIDI-ZX.
+
+        The Subroutines are as follows : (the VIDCODE should be loaded
+        in at address 32768 it is not relocatable - CLEAR 32767 first)
+
+        If start is 32768 then
+        INITIALISE      = START+0       - Initialises the interface
+        SYNC            = START+3       - Grabs a frame after a sync
+        FETCH           = START+6       - Reads the frame from VIDI-ZX
+        VIEWSWITCH      = START+9       - Switches the menu bar on/off
+        STORE           = START+12      - Stores the screen
+        RETRIEVE        = START+15      - Retrieves the screen
+        FETCHSTIPPLE    = START+18      - Reads a stippled frame
+        STIPPLE         = START+21      - Stipples a shaded screen
+        FILTERVAR       = START+24      - 0=2 shade,  1=3 Shade
+        VIEWVAR         = START+25      - 0=menu   1=full screen
+        SYNCFLAG        = START+26      - 0=sync   1= no sync
+
+4.5 Driving VIDI from your own BASIC program
+
+        It is not difficult to drive VIDI from BASIC with the VIDCODE
+        (or VIDCODE4) machine code loaded at 32768, and the addresses
+        set up with BASIC LET statements. Look at the VIDI BASIC
+        program to see the technique used.
+
+        The INITIALISE routine must be called at the start.
+
+        To get a picture make sure to POKE,VIEWVAR=0, POKE
+        FILTERVAR,0 [or 1], call SYNC to synchronise on the next video
+        Picture, if PEEK(SYNCFLAG) = 0 then call (RANDOMIZE USR) FETCH
+        (or FETCHSTIPPLE if FILTERVAR=1)
+
+4.6 Backing up the VIDI software
+
+        The VIDI software is unprotected and should be backed up
+        straight away. The easiest way is to run the program, press
+        BREAK then :
+
+                SAVE "VIDI" LINE 20
+                SAVE "VIDCODE" CODE 32768,1000
+
+4.7 Technical Support
+
+        Technical support is available from ROMBO Productions. During
+        office hours phone (0506) 39046, or write to :
+
+ROMBO Productions, 107 Raeburn Rigg, Livingston, West Lothian EH54 8PH
+
+        GOOD LUCK! and HAPPY DIGITISING!
+
+                                            5
