@@ -776,57 +776,54 @@ Each side of a disk may be used independently. A disk should be inserted with it
 
 In the left-hand corner of each side of a blank disk, you will see an arrow pointing to a small shuttered hole. This is called the ***write protect hole***, and allows you to protect the contents of the disk from erasure or 'overwriting'...
 
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="100%" height="100%" viewBox="0 0 3050 1512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-miterlimit:1;">
-    <g id="Side-Slot" serif:id="Side Slot">
-        <path d="M141,620l1284,722" style="fill:none;stroke:#000;stroke-width:4px;"/>
-        <path d="M1428,1359l-8,-61c0,0 -1279,-699 -1279,-702" style="fill:none;stroke:#000;stroke-width:6.67px;"/>
-        <path d="M1425,1359l-1292,-730.265" style="fill:none;stroke:#000;stroke-width:4px;"/>
+<svg viewBox="0 0 3050 1512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xstyle="stroke-linecap:round;stroke-miterlimit:1;">
+    <g id="Side-Slot">
+        <path d="M141,620l1284,722" style="stroke-width:4px;"/>
+        <path d="M1428,1359l-8,-61c0,0 -1279,-699 -1279,-702" style="stroke-width:6.67px;"/>
+        <path d="M1425,1359l-1292,-730.265" style="stroke-width:4px;"/>
     </g>
-    <g id="Side-Arrow-Upper" serif:id="Side Arrow Upper">
-        <path d="M1722,1403l-3,-40" style="fill:none;stroke:#000;stroke-width:4px;"/>
-        <path d="M1713.87,1347.36l18.107,11.811l-24.69,12.925l6.583,-24.736Z" style="stroke:#000;stroke-width:4px;"/>
+    <g id="Side-Arrow-Upper">
+        <path d="M1722,1403l-3,-40" style="stroke-width:4px;"/>
+        <path d="M1713.87,1347.36l18.107,11.811l-24.69,12.925l6.583,-24.736Z" class="filled" style="stroke-width:4px;"/>
     </g>
-    <g id="Side-Arrow-Lower" serif:id="Side Arrow Lower">
-        <path d="M2896.62,676.041l-3,-40" style="fill:none;stroke:#000;stroke-width:4px;"/>
-        <path d="M2889.49,628.404l18.106,11.811l-24.689,12.925l6.583,-24.736Z" style="stroke:#000;stroke-width:4px;"/>
+    <g id="Side-Arrow-Lower">
+        <path d="M2896.62,676.041l-3,-40" style="stroke-width:4px;"/>
+        <path d="M2889.49,628.404l18.106,11.811l-24.689,12.925l6.583,-24.736Z" class="filled" style="stroke-width:4px;"/>
     </g>
-    <path id="Label" d="M1691,1435l-7,-75l-383.167,-207.706c-17.215,-16.667 -13.462,-30.962 0.634,-36.356l1160.49,-632.739c18.834,-7.978 38.743,-9.51 59.832,-3.96l401.21,121.761l6,66" style="fill:none;stroke:#000;stroke-width:6.67px;"/>
-    <g id="Label-Top-Arrow" serif:id="Label Top Arrow">
-        <path d="M1444,1171l-63,-33" style="fill:none;stroke:#000;stroke-width:4px;"/>
-        <path d="M1357.12,1125.98l43.035,2.499l-38.55,23.086l-4.485,-25.585Z" style="stroke:#000;stroke-width:4px;"/>
+    <path id="Label" d="M1691,1435l-7,-75l-383.167,-207.706c-17.215,-16.667 -13.462,-30.962 0.634,-36.356l1160.49,-632.739c18.834,-7.978 38.743,-9.51 59.832,-3.96l401.21,121.761l6,66" style="stroke-width:6.67px;"/>
+    <g id="Label-Top-Arrow">
+        <path d="M1444,1171l-63,-33" style="stroke-width:4px;"/>
+        <path d="M1357.12,1125.98l43.035,2.499l-38.55,23.086l-4.485,-25.585Z" class="filled" style="stroke-width:4px;"/>
     </g>
-    <path id="Bottom" d="M138.174,587.251l0.518,35.404c-0,-0 -20.06,11.858 4.74,26.272c207.048,120.34 1192.83,687.21 1423.3,803.278c16.463,8.291 29.374,9.778 42.939,9.485c13.859,-0.299 46.097,-2.082 60.266,-10.842c207.335,-128.185 1085.03,-674.88 1265.34,-786.112c12.938,-7.981 15.818,-21.69 15.313,-34.063c-0.721,-17.695 -7.078,-63.625 -7.078,-63.625" style="fill:none;stroke:#000;stroke-width:6.67px;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
-    <path id="Bottom1" serif:id="Bottom" d="M408.397,425.8l0.004,22.39" style="fill:none;stroke:#000;stroke-width:6.67px;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
-    <path id="Top" d="M2931.27,591.749c12.942,-7.984 15.092,-22.644 10.316,-34.074c-5.723,-13.701 -25.086,-23.634 -25.086,-23.634l-1568.32,-455.839c-21.605,-4.777 -41.821,-5.112 -59.993,1.839l-877.979,344.516l22.528,14.46l-43.911,20.809l-30.087,-14.263l-113.675,46.714c-0,-0 74.223,42.564 75.223,41.564c-1,1 -70.619,32.117 -70.619,32.117l-77.46,-43.741l-37.495,15.408c0,-0 -21.455,34.58 3.743,48.288c210.877,114.722 1201.48,650.036 1440.81,779.553c16.219,8.778 29.384,9.781 42.954,9.489c13.864,-0.299 30.107,-2.082 44.281,-10.845c207.406,-128.227 1084.4,-661.093 1264.78,-772.361Z" style="fill:none;stroke:#000;stroke-width:6.67px;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
-    <path id="Protect" d="M240,501l-12,-4l-44,19l3,8l53,-23Z" style="fill:none;stroke:#000;stroke-width:6.67px;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
-    <path d="M247,497l63,36.75" style="fill:none;stroke:#000;stroke-width:10.07px;"/>
+    <path id="Bottom" d="M138.174,587.251l0.518,35.404c-0,-0 -20.06,11.858 4.74,26.272c207.048,120.34 1192.83,687.21 1423.3,803.278c16.463,8.291 29.374,9.778 42.939,9.485c13.859,-0.299 46.097,-2.082 60.266,-10.842c207.335,-128.185 1085.03,-674.88 1265.34,-786.112c12.938,-7.981 15.818,-21.69 15.313,-34.063c-0.721,-17.695 -7.078,-63.625 -7.078,-63.625" style="stroke-width:6.67px;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
+    <path id="Bottom1" d="M408.397,425.8l0.004,22.39" style="stroke-width:6.67px;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
+    <path id="Top" d="M2931.27,591.749c12.942,-7.984 15.092,-22.644 10.316,-34.074c-5.723,-13.701 -25.086,-23.634 -25.086,-23.634l-1568.32,-455.839c-21.605,-4.777 -41.821,-5.112 -59.993,1.839l-877.979,344.516l22.528,14.46l-43.911,20.809l-30.087,-14.263l-113.675,46.714c-0,-0 74.223,42.564 75.223,41.564c-1,1 -70.619,32.117 -70.619,32.117l-77.46,-43.741l-37.495,15.408c0,-0 -21.455,34.58 3.743,48.288c210.877,114.722 1201.48,650.036 1440.81,779.553c16.219,8.778 29.384,9.781 42.954,9.489c13.864,-0.299 30.107,-2.082 44.281,-10.845c207.406,-128.227 1084.4,-661.093 1264.78,-772.361Z" style="stroke-width:6.67px;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
+    <path id="Protect" d="M240,501l-12,-4l-44,19l3,8l53,-23Z" style="stroke-width:6.67px;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
+    <path d="M247,497l63,36.75" style="stroke-width:10.07px;"/>
     <g id="Oval">
-        <path d="M439.554,518.797c10.949,-4.024 28.154,-17.28 17.072,-23.9c-16.092,-9.613 -34.177,-12.316 -52.265,-8.873c-14.408,2.743 -29.83,11.842 -46.43,18.743c-27.325,11.361 -15.966,36.622 38.367,29.675l43.256,-15.645Z" style="fill:none;stroke:#000;stroke-width:6.67px;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
-        <path d="M439.554,518.797c10.949,-4.024 1.781,-14.114 -16.193,-8.773c-67.224,19.977 -64.492,40.625 16.193,8.773Z" style="fill:none;stroke:#000;stroke-width:6.67px;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
+        <path d="M439.554,518.797c10.949,-4.024 28.154,-17.28 17.072,-23.9c-16.092,-9.613 -34.177,-12.316 -52.265,-8.873c-14.408,2.743 -29.83,11.842 -46.43,18.743c-27.325,11.361 -15.966,36.622 38.367,29.675l43.256,-15.645Z" style="stroke-width:6.67px;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
+        <path d="M439.554,518.797c10.949,-4.024 1.781,-14.114 -16.193,-8.773c-67.224,19.977 -64.492,40.625 16.193,8.773Z" style="stroke-width:6.67px;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
     </g>
     <g id="Window">
-        <path d="M1176.14,528.237c77.915,24.354 223.281,-48.251 124.062,-82.688l-344.12,-126.69c-71.61,-18.319 -210.27,49.158 -89.062,87.688l309.12,121.69Z" style="fill:none;stroke:#000;stroke-width:6.67px;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
-        <path d="M1176.14,528.237c77.915,24.354 215.281,-40.251 116.062,-74.688l-344.12,-126.69c-72.341,-12.004 -191.926,47.771 -70.062,82.688l298.12,118.69Z" style="fill:none;stroke:#000;stroke-width:6.67px;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
+        <path d="M1176.14,528.237c77.915,24.354 223.281,-48.251 124.062,-82.688l-344.12,-126.69c-71.61,-18.319 -210.27,49.158 -89.062,87.688l309.12,121.69Z" style="stroke-width:6.67px;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
+        <path d="M1176.14,528.237c77.915,24.354 215.281,-40.251 116.062,-74.688l-344.12,-126.69c-72.341,-12.004 -191.926,47.771 -70.062,82.688l298.12,118.69Z" style="stroke-width:6.67px;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
     </g>
-    <path id="Protect-Arrow" serif:id="Protect Arrow" d="M314.233,579.001l-21.116,8.878l5.087,-35.356l67.27,4.425l-16.116,10.877l36.5,22.799l-30.125,13.176l-41.5,-24.799Z" style="stroke:#000;stroke-width:6.67px;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
+    <path id="Protect-Arrow" d="M314.233,579.001l-21.116,8.878l5.087,-35.356l67.27,4.425l-16.116,10.877l36.5,22.799l-30.125,13.176l-41.5,-24.799Z" class="filled" style="stroke-width:6.67px;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
     <g id="Spindle">
-        <path d="M1563.4,581.454c84.317,-10.831 156.624,10.366 161.37,47.305c4.745,36.94 -59.857,75.724 -144.174,86.555c-84.317,10.831 -156.624,-10.366 -161.37,-47.305c-4.745,-36.94 59.857,-75.724 144.174,-86.555Z" style="fill:none;stroke:#000;stroke-width:6.67px;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
-        <path d="M1565.81,592.309c82.112,-10.548 152.314,8.418 156.669,42.327c4.356,33.908 -58.772,70.002 -140.885,80.55c-82.112,10.548 -152.314,-8.418 -156.67,-42.327c-4.355,-33.909 58.773,-70.002 140.886,-80.55Z" style="fill:none;stroke:#000;stroke-width:6.67px;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
+        <path d="M1563.4,581.454c84.317,-10.831 156.624,10.366 161.37,47.305c4.745,36.94 -59.857,75.724 -144.174,86.555c-84.317,10.831 -156.624,-10.366 -161.37,-47.305c-4.745,-36.94 59.857,-75.724 144.174,-86.555Z" style="stroke-width:6.67px;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
+        <path d="M1565.81,592.309c82.112,-10.548 152.314,8.418 156.669,42.327c4.356,33.908 -58.772,70.002 -140.885,80.55c-82.112,10.548 -152.314,-8.418 -156.67,-42.327c-4.355,-33.909 58.773,-70.002 140.886,-80.55Z" style="stroke-width:6.67px;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
     </g>
     <text x="420" y="620" font-size="48px">Write protect hole</text>
-    <path id="Detect-Hole" serif:id="Detect Hole" d="M1273.11,108.033c14.31,-1.065 26.344,3.656 26.856,10.537c0.513,6.88 -10.689,13.331 -25,14.397c-14.31,1.065 -26.344,-3.656 -26.856,-10.537c-0.512,-6.88 10.69,-13.331 25,-14.397Z" style="fill:none;stroke:#000;stroke-width:6.67px;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
-    <g id="Dunno-Hole" serif:id="Dunno Hole">
-        <path d="M1216.02,176.097c21.69,-2.226 40.053,3.318 40.982,12.371c0.929,9.054 -15.926,18.21 -37.616,20.435c-21.69,2.226 -40.053,-3.318 -40.982,-12.371c-0.929,-9.054 15.927,-18.21 37.616,-20.435Z" style="fill:none;stroke:#000;stroke-width:6.67px;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
-        <path d="M1215.02,194.097c14.907,-1.53 26.242,0.61 33.427,5.037c3.269,2.015 -11.817,7.232 -31.681,9.22c-19.441,1.946 -34.138,-2.257 -29.44,-5.517c6.771,-4.698 14.89,-7.427 27.694,-8.74Z" style="fill:none;stroke:#000;stroke-width:6.67px;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
+    <path id="Detect-Hole" d="M1273.11,108.033c14.31,-1.065 26.344,3.656 26.856,10.537c0.513,6.88 -10.689,13.331 -25,14.397c-14.31,1.065 -26.344,-3.656 -26.856,-10.537c-0.512,-6.88 10.69,-13.331 25,-14.397Z" style="stroke-width:6.67px;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
+    <g id="Dunno-Hole">
+        <path d="M1216.02,176.097c21.69,-2.226 40.053,3.318 40.982,12.371c0.929,9.054 -15.926,18.21 -37.616,20.435c-21.69,2.226 -40.053,-3.318 -40.982,-12.371c-0.929,-9.054 15.927,-18.21 37.616,-20.435Z" style="stroke-width:6.67px;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
+        <path d="M1215.02,194.097c14.907,-1.53 26.242,0.61 33.427,5.037c3.269,2.015 -11.817,7.232 -31.681,9.22c-19.441,1.946 -34.138,-2.257 -29.44,-5.517c6.771,-4.698 14.89,-7.427 27.694,-8.74Z" style="stroke-width:6.67px;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
     </g>
-    <g id="Index-Hole" serif:id="Index Hole">
-        <path d="M1843.89,734.5c21.689,-2.225 40.053,3.318 40.982,12.372c0.928,9.053 -15.927,18.21 -37.617,20.435c-21.689,2.225 -40.053,-3.318 -40.981,-12.372c-0.929,-9.053 15.926,-18.21 37.616,-20.435Z" style="fill:none;stroke:#000;stroke-width:6.67px;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
-        <path d="M1842.89,752.5c14.906,-1.529 26.241,0.611 33.426,5.038c3.269,2.014 -11.817,7.231 -31.68,9.22c-19.441,1.946 -34.139,-2.258 -29.44,-5.518c6.77,-4.697 14.89,-7.426 27.694,-8.74Z" style="fill:none;stroke:#000;stroke-width:6.67px;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
+    <g id="Index-Hole">
+        <path d="M1843.89,734.5c21.689,-2.225 40.053,3.318 40.982,12.372c0.928,9.053 -15.927,18.21 -37.617,20.435c-21.689,2.225 -40.053,-3.318 -40.981,-12.372c-0.929,-9.053 15.926,-18.21 37.616,-20.435Z" style="stroke-width:6.67px;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
+        <path d="M1842.89,752.5c14.906,-1.529 26.241,0.611 33.426,5.038c3.269,2.014 -11.817,7.231 -31.68,9.22c-19.441,1.946 -34.139,-2.258 -29.44,-5.518c6.77,-4.697 14.89,-7.426 27.694,-8.74Z" style="stroke-width:6.67px;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
     </g>
 </svg>
-
 
 When the hole is ***closed***, data can be 'written' onto the disk by the computer. When the hole is ***open***, however, the disk will ***not*** allow data to be written onto it, thus enabling you to avoid the accidental erasure of valuable programs.
 
@@ -835,7 +832,7 @@ Various disk manufacturers employ differing mechanisms for opening and closing t
 To open the write protect hole, slide back the small shutter located at the left-hand corner of the disk, and the hole will be opened.
 
 <figure>
-  <svg viewBox="-2 -2 600 325" width="90%" id="disk-protect-side-diagram">
+  <svg viewBox="-2 -2 600 325" width="90%" id="disk-protect-side-diagram" >
   <defs>
     <g id="disk-side">
       <rect x="0" y="0" width="220" height="290" rx="8" ry="8" class="thick" />
@@ -864,7 +861,7 @@ To open the write protect hole, slide back the small shutter located at the left
     <text x="280" y="41" font-size="9px">Shutter</text>
     <text x="280" y="55" font-size="9px">CLOSED</text>
     <line x1="310" y1="45" x2="323" y2="45" class="thin" />
-    <path d="M 323 45 v -3 l 7 3 l -7 3 v 3" class="filled" />
+    <path d="M 323 45 v -3 l 7 3 l -7 3 v -3" class="filled" />
     <line x1="337" y1="8" x2="337" y2="27" class="thin dashed" />
     <path d="M 340 7 l -3 -7 l -3 7" class="filled" />
   </svg>
@@ -890,9 +887,9 @@ Other manufacturers' disks employ a small lever located in a slot at the left-ha
     <use xlink:href="#disk-top" x="30" y="30" />
     <ellipse cx="54" cy="56" rx="3.5" ry="2" />
     <path class="fillonly" d="M 56 36 h 4 l -1 5 h -4 m 6 -5 h 4 l -1 5 h -4 " />
-    <text x="51" y="7" font-size="7">Lever</text>
+    <text x="53" y="6" font-size="6">Lever</text>
     <path class="fillonly" d="M 60 9 h 2 v 15 h 2 l -3 8 l -3 -8 h 2" />
-    <text x="55" y="75" font-size="7">Write protect hole (CLOSED)</text>
+    <text x="55" y="75" font-size="6">Write protect hole (CLOSED)</text>
     <path class="fillonly" d="M 55.5 68 h 3 l -1.5 -5 h 1.5 l -4 -4 l -2 4 h 1.5" />
   </svg>
   <figcaption>Write protection OFF</figcaption>
@@ -905,12 +902,12 @@ To open the write protect hole on this type of disk, slide the lever towards the
     <use xlink:href="#disk-top" x="30" y="40" />
     <ellipse cx="54" cy="66" rx="3.5" ry="2" class="hairline" />
     <path class="fillonly" d="M 66 46 h 4 l -1 5 h -4 m 6 -5 h 4 l -1 5 h -4 " />
-    <text x="55" y="85" font-size="7">Write protect hole (OPEN)</text>
+    <text x="55" y="85" font-size="6">Write protect hole (OPEN)</text>
     <path class="fillonly" d="M 55.5 78 h 3 l -1.5 -5 h 1.5 l -4 -4 l -2 4 h 1.5" />
-    <text x="6" y="10" font-size="7" text-anchor="middle">Slide lever</text>
-    <text x="6" y="18" font-size="7" text-anchor="middle">towards middle</text>
-    <text x="6" y="26" font-size="7" text-anchor="middle">of disk</text>
-    <path class="fillyonly" d="M 35 20 v 0 h 8 v 5 l 8 -10 l -8 -10 v 5 h -8" />
+    <text x="6" y="10" font-size="6" text-anchor="middle">Slide lever</text>
+    <text x="6" y="18" font-size="6" text-anchor="middle">towards middle</text>
+    <text x="6" y="26" font-size="6" text-anchor="middle">of disk</text>
+    <path class="fillonly" d="M 35 20 v 0 h 8 v 5 l 8 -10 l -8 -10 v 5 h -8z" />
     <path class="thin" d="
       M 53 1 l 9.5 34 L 70 45
       M 57 0 L 66 32 l -5 1 l 5 -1 l 4 -2
@@ -927,21 +924,24 @@ Note that regardless of the method employed to open and close the write protect 
 At the front of the disk drive, you will see a push button (for ejecting the disk), and a red lamp (called the ***read/write indicator lamp***)...
 
 <figure>
-<svg width="75%"viewBox="0 0 535 300" style="stroke-width: 3px; fill: none; stroke: black">
-    <g>
-        <path d="
-        M 53,105 l-2,70 h -50
-        M 65,5 l -12,100 h 474 l -12,-100 m 12,100 l 4,151 h -20 m 20,0
-        c 0,40 0,40 -20,40 h -10
-        v -20 h -10 v 20 h -10 v -20 h -10 v 20 h -10 v -20 h -10 v 20 h -10 v -20 h -10 v 20 h -10 v -20 h -10 v 20 h -10 v -20 h -10 v 20 h -10 v -20 h -10 v 20 h -10 v -20 h -10 v 20 h -10 v -20 h -10 v 20 h -10 v -20 h -10 v 20 h -10 v -20 h -10 v 20 h -10 v -20 h -10 v 20 h -10 v -20 h -10 v 20 h -10 v -20 h -10 v 20 h -10 v -20 h -10 v 20 h -10 v -20 h -10 v 20 h -10 v -20 h -10 v 20 h -10 v -20 h -10 v 20 h -10 v -20 h -10 v 20 h -10 v -20 h -10 v 20 h -10 v -20 h -10 v 20 h -10 v -20 h -10 v 20 h -10 v -20 h -10 v 20 h -10 v -20 h -10 v 20 h -10 v -20 h -10 v 20 h -10"/>
-    </g>
-    <g>
-      <rect x="69" y="125" width="441" height="131" />
-      <rect x="98" y="225" width="20" height="14" style="fill:black; stroke: none"/>
-      <rect x="405" y="215" width="80" height="25" style="stroke-width:6px"/>
-      <path d="M 355,195 v -6 h -133 v 6 h-131 v-45 h 397 v 45 h-133 v11 h-133 v-11" class="thick" />
-      <rect x="220" y="140" width="133" height="9" style="fill:black"/>
-    </g>
+<svg width="75%"viewBox="-20 0 620 300">
+  <text x="20" y="207" font-size="11" text-anchor="middle">Read/write</text>
+  <text x="20" y="220" font-size="11" text-anchor="middle">indicator lamp</text>
+  <text x="570" y="220" font-size="11" text-anchor="middle">Eject button</text>
+  <g style="stroke-width: 3px; fill: none; stroke: black">
+    <path style="fill: black" d="M30,232 h48 v-5 l12,5 l-12,5 v-5 h-48 z" />
+    <path style="fill: black" d="M572,228 h-58 v-9 l-20,8 l20,8 v-9 h58 z" />
+    <path d="
+      M 53,105 l-2,70 h-50
+      M 65,5 l-12,100 h474 l-12,-100 m12,100 l4,150.5 h-20 m20,0
+      c0,40 0,40 -20,40 h-10
+      v-20 h-10 v20 h-10 v-20 h -10 v 20 h -10 v -20 h -10 v 20 h -10 v -20 h -10 v 20 h -10 v -20 h -10 v20 h-10 v -20 h -10 v 20 h -10 v -20 h -10 v 20 h -10 v -20 h -10 v 20 h -10 v -20 h -10 v20 h-10 v -20 h -10 v 20 h -10 v -20 h -10 v 20 h -10 v -20 h -10 v 20 h -10 v -20 h -10 v20 h-10 v -20 h -10 v 20 h -10 v -20 h -10 v 20 h -10 v -20 h -10 v 20 h -10 v -20 h -10 v20 h-10 v -20 h -10 v 20 h -10 v -20 h -10 v 20 h -10 v -20 h -10 v 20 h -10 v -20 h -10 v20 h-10 v -20 h -10 v 20 h -10 v -20 h -10 v 20 h -10 v -20 h -10 v 20 h -10 v -20 h -10 v20 h-10"/>
+    <rect x="69" y="125" width="441" height="131" />
+    <rect x="97" y="225" width="24" height="14" style="fill:black; stroke: none"/>
+    <rect x="405" y="215" width="80" height="25" style="stroke-width:6px"/>
+    <path d="M 355,195 v -6 h -133 v 6 h-131 v-45 h 397 v 45 h-133 v11 h-133 v-11" class="thick" />
+    <rect x="220" y="140" width="133" height="9" style="fill:black"/>
+  </g>
 </svg>
 </figure>
 
@@ -10608,9 +10608,9 @@ A VDU monitor (or PERITEL TV) should be plugged into the RGB/PERITEL socket at t
     <circle cx="40" cy="85" r="5"/>
     <text x="120" y="82">1</text>
     <circle cx="130" cy="85" r="5"/>
-    <text x="62" y="108">5</text>
+    <text x="63" y="107">5</text>
     <circle cx="55" cy="112" r="5"/>
-    <text x="106" y="108">4</text>
+    <text x="105" y="107">4</text>
     <circle cx="115" cy="112" r="5"/>
     <text x="85" y="115">2</text>
     <circle cx="85" cy="125" r="5"/>
@@ -10928,7 +10928,7 @@ Details of the +3's hardware will be found in [chapter 8 part 30](#part30).
 ## <a id="credits"></a> Credits
 
 - Original manual by Ivor Spital, Cliff Lawson, Rupert Goodwins, Steve Vickers and Robin Bradbeer.
-- Markdown conversion, JavaScript, style, screenshots, and SVG drawings by [Damien Guard](https://damieng.com)
+- Markdown conversion, JavaScript, style, screenshots, and SVG drawings by [Damien Guard](https://damieng.com).
 - Original ASCII manual prepared by:
   - Ian Coates <oktup@mono.city.ac.uk> did [chapter 8 parts 26](#part26) and [30](#part30).
   - Thomas Ahn Kjaer <takjaer@daimi.aau.dk> did [chapter 8 part 17](#part17).
@@ -10936,6 +10936,6 @@ Details of the +3's hardware will be found in [chapter 8 part 30](#part30).
 
 ## <a id="credits"></a> Revision history
 
-- 25-Jan-2020 Public release of HTML & markdown version.
+- **28-Feb-2021** Public release of HTML & markdown version.
 
 <script>document.body.onscroll = asFragmentsGoBy();</script>

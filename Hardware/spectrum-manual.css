@@ -7,7 +7,11 @@ body {
   background-color: #fefefe;
   color: #000;
   font-family: "Roboto Slab";
-  font-size: 100%;
+  font-size: 16px;
+}
+
+p {
+  margin: 1em 0;
 }
 
 table,
@@ -19,6 +23,7 @@ svg {
 
 table {
   border: 3px solid #000;
+  margin: 1em 0;
 }
 
 canvas,
@@ -38,6 +43,10 @@ th {
 h1 {
   border-bottom: 2.5px solid #000 !important;
   padding-bottom: 0.25em;
+}
+
+h2 {
+  margin: 1.25em 0 0.25em 0;
 }
 
 ul {
@@ -83,6 +92,16 @@ code {
 
 /* SVG */
 
+svg {
+  fill: none;
+  stroke: #000;
+}
+
+svg > text {
+  fill: #000;
+  stroke: none;
+}
+
 #amstrad-logo path, #amstrad-logo-a {
   stroke: #000;
   stroke-width: 2;
@@ -107,6 +126,10 @@ svg .thin {
   fill: #fefefe;
 }
 
+svg .filled {
+  fill: #000;
+}
+
 svg .dashed {
   stroke-dasharray: 5, 2.5;
 }
@@ -124,10 +147,11 @@ svg .closed {
 }
 
 svg .fillonly {
+  stroke: none;
   fill: #000;
 }
 
-svg line {
+svg > line {
   stroke: #000;
   stroke-width: 3;
 }
@@ -155,7 +179,9 @@ svg line {
 }
 
 .bsjack text {
-  font-size: 27px;
+  stroke: none;
+  fill: #000;
+  font-size: 20px;
   font-weight: bold;
   text-anchor: middle;
 }
@@ -199,8 +225,7 @@ svg rect, svg line {
 }
 
 figure {
-  margin-left: 0;
-  margin-right: 0;
+  margin: 1em 0;
 }
 
 .rom-diagram .dec {
