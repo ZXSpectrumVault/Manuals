@@ -265,6 +265,44 @@ Inside the carton, you'll find the following...
 - The aerial lead
 - This manual (together with your user registration/guarantee card)
 
+
+## <a id="fitting-a-plug"></a> Fitting a mains plug
+
+The power supply unit for the Spectrum +3 operates from a 220-240 Volt AC 50Hz mains supply.
+
+Fit a proper mains plug to the mains lead of the power supply unit. If a 13 Amp (BS1363) plug is used, a 3 Amp fuse must be fitted. The 13 Amp fuse supplied in a new plug must NOT be used. If any other type of plug is used, a 5 Amp fuse must be fitted either in the plug or at the distribution board.
+
+**IMPORTANT - The wires in this mains lead are coloured in accordance with the following code...**
+
+- Blue   : Neutral
+- Brown  : Live
+
+As the colours of the wires in the mains lead of this apparatus may not correspond with the coloured markings identifying the terminals in your plug, proceed as follows...
+
+The wire which is coloured BLUE must be connected to the terminal which is marked with the letter **N** or coloured black.
+
+The wire which is coloured BROWN must be connected to the terminal which is marked with the letter **L** or coloured red.
+
+Disconnect the mains plug from the supply socket when not in use.
+
+Do not attempt to remove any screws, nor open the casing of the power supply unit. Always obey the warning on the rating label of the power supply unit.
+
+| **WARNING: LIVE PARTS INSIDE - DO NOT REMOVE ANY SCREWS** |
+|-----------------------------------------------------------|
+
+## <a id="setting-up"></a> Setting up
+
+We will now set up the standard +3 system. All you need (other than the items you unpacked) is a standard TV set (UHF). You can use a colour or black-and-white TV, but of course, with the latter you will not be able to enjoy the full colour capabilities of your +3.
+
+Note that if you wish to attach one or more add-ons, or ***peripherals***, (eg. printer, joystick, cassette deck, second disk drive, monitor, audio amplifier, MIDI device, modem or other serial/expansion device) to your +3 system, you should turn to [chapter 10 (Peripherals for your +3)](#chapter10).
+
+Place the +3 computer on a suitable flat surface, ready to be connected to your TV. Next, remove any plug which is already connected to the aerial socket at the back of the TV. Using the aerial lead provided with your +3, insert he larger plug into the TV's aerial socket, and insert the smaller plug into the socket marked **TV** at the back of the +3.
+
+Finally, insert the 6-pin DIN plug coming from the power supply unit into the socket marked **PSU** at the back of the +3.
+
+The +3 system is now ready to be switched on.
+
+<figure>
 <svg xmlns="http://www.w3.org/2000/svg" viewbox="0,0,1398,1034" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1.5" xmlns:v="https://vecta.io/nano">
     <style>
         <![CDATA[.B{stroke:#000}.C{stroke-width:1.3}.D{fill:none}.E{fill:#fff}.F{stroke-width:2}.H{stroke-width:4}.I{font-size:16px}.J{font-size:32.95px}.K{stroke-width:3}]]>
@@ -376,53 +414,15 @@ Inside the carton, you'll find the following...
     <text x="882.54" y="764.99" class="J">PSU</text>
     <text x="-0.77" y="39.66" class="J">TV set</text>
     <g transform="matrix(2.0595 0 0 2.0595 -2220.22 -738.669)">
-        <text x="1086" y="770">Spectrum</text>
+        <text x="1080" y="770">Spectrum</text>
         <text x="1159" y="770" font-weight="700" font-style="italic">+3</text>
-        <text x="1181" y="770">computer</text>
+        <text x="1185" y="770">computer</text>
     </g>
     <text x="488" y="956" transform="matrix(.95 -.3 .3 0.9543 -10 -105)" class="G I">PSU</text>
     <text x="1134" y="790" transform="matrix(.974 -.222 .222 .975 -55.5 13.6)" class="G I">TV</text>
 </svg>
-
-## <a id="fitting-a-plug"></a> Fitting a mains plug
-
-The power supply unit for the Spectrum +3 operates from a 220-240 Volt AC 50Hz mains supply.
-
-Fit a proper mains plug to the mains lead of the power supply unit. If a 13 Amp (BS1363) plug is used, a 3 Amp fuse must be fitted. The 13 Amp fuse supplied in a new plug must NOT be used. If any other type of plug is used, a 5 Amp fuse must be fitted either in the plug or at the distribution board.
-
-**IMPORTANT - The wires in this mains lead are coloured in accordance with the following code...**
-
-- Blue   : Neutral
-- Brown  : Live
-
-As the colours of the wires in the mains lead of this apparatus may not correspond with the coloured markings identifying the terminals in your plug, proceed as follows...
-
-The wire which is coloured BLUE must be connected to the terminal which is marked with the letter **N** or coloured black.
-
-The wire which is coloured BROWN must be connected to the terminal which is marked with the letter **L** or coloured red.
-
-Disconnect the mains plug from the supply socket when not in use.
-
-Do not attempt to remove any screws, nor open the casing of the power supply unit. Always obey the warning on the rating label of the power supply unit.
-
-| **WARNING: LIVE PARTS INSIDE - DO NOT REMOVE ANY SCREWS** |
-|-----------------------------------------------------------|
-
-## <a id="setting-up"></a> Setting up
-
-We will now set up the standard +3 system. All you need (other than the items you unpacked) is a standard TV set (UHF). You can use a colour or black-and-white TV, but of course, with the latter you will not be able to enjoy the full colour capabilities of your +3.
-
-Note that if you wish to attach one or more add-ons, or ***peripherals***, (eg. printer, joystick, cassette deck, second disk drive, monitor, audio amplifier, MIDI device, modem or other serial/expansion device) to your +3 system, you should turn to [chapter 10 (Peripherals for your +3)](#chapter10).
-
-Place the +3 computer on a suitable flat surface, ready to be connected to your TV. Next, remove any plug which is already connected to the aerial socket at the back of the TV. Using the aerial lead provided with your +3, insert he larger plug into the TV's aerial socket, and insert the smaller plug into the socket marked **TV** at the back of the +3.
-
-Finally, insert the 6-pin DIN plug coming from the power supply unit into the socket marked **PSU** at the back of the +3.
-
-The +3 system is now ready to be switched on.
-
-```
-PIC
-```
+<legend style="text-align:center">The standard <b><i>+3</i></b> system set-up.</legend>
+</figure>
 
 # <a id="chapter2"></a> Chapter 2 <br> Operating your +3
 
