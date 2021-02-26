@@ -97,7 +97,7 @@ svg {
   stroke: #000;
 }
 
-svg > text {
+svg text {
   fill: #000;
   stroke: none;
 }
@@ -151,7 +151,11 @@ svg .fillonly {
   fill: #000;
 }
 
-svg > line {
+svg .lightfill {
+  fill: #bfbfbf;
+}
+
+svg line {
   stroke: #000;
   stroke-width: 3;
 }
