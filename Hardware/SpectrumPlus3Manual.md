@@ -2949,8 +2949,6 @@ These ***trigonometrical*** functions measure what happens when a point moves ro
         <circle cx="250" cy="250" r="125" class="open" />
         <line x1="250" y1="0" x2="250" y2="500" class="thick" />
         <line x1="0" y1="250" x2="500" y2="250" class="thick" />
-        <text x="500" text-anchor="end" y="262" font-size="10">x-axis</text>
-        <text x="255" text-anchor="start" y="10" font-size="10">y-axis</text>
       </g>
       <g id="circle-grid-arc">
         <use xlink:href="#circle-grid" />
@@ -2969,6 +2967,8 @@ These ***trigonometrical*** functions measure what happens when a point moves ro
     <text x="435" y="175" text-anchor="middle" font-size="10">around circle=a</text>
     <text x="422" y="292" text-anchor="left" font-size="10">starting position</text>
     <line x1="380" y1="254" x2="419" y2="284" class="thick" />
+    <text x="500" fill="none" text-anchor="end" y="262" font-size="10">x-axis</text>
+    <text x="255" text-anchor="start" y="10" font-size="10">y-axis</text>
     <use xlink:href="#arrow-head" transform="translate(381, 260) rotate(127.5,0,0)" />
   </svg>
 </figure>
@@ -10283,24 +10283,34 @@ Programs may be loaded from, or saved to tape instead of disk, (the commands whi
 
 To connect your cassette unit to the +3, you will require a suitable interconnecting lead, wired as follows...
 
-```
-            TAPE/SOUND socket on the +3                     Cassette unit
-
-                                                            To EAR socket
-                         Input                                 ___
-                         (EAR)                             __ /   |____
-                           |                              / _|    |____()
-                           |       ___                   / /  \___|
-             ___    _      v      |   --_               / /
- Input (EAR)    \/ | |     _ _____|      -.------------' /
-                   | |  ()[_[_____|       |-------------<
-Output (MIC) _/\   |_|  ^       | |     _-^------------. \  To MIC socket
-                    |   |       | |___--                \ \    ___
-GND (common) _______|   |       |                        \ \_ /   |____
-                      Output   GND                        \__|    |____()
-                       (MIC) (common)                         \___|
-                                                              (red)
-```
+<figure class="connector ">
+  <figcaption><strong>TAPE/SOUND</strong> socket on the <b><i>+3</i></b></figcaption>
+  <svg width="90%" viewBox="0 0 1700 360">
+      <defs>
+        <g id="wire">
+          <path d="M 556,192 h 350 q 50 0, 50 50 t 50 50 h 214 m 0,-10 h -204 q -50 0, -50 -50 t -50 -50 h-360" class="thick" />
+        </g>
+      </defs>
+      <text x="150" y="150" style="text-anchor:end">Input (EAR)</text>
+      <text x="150" y="230" style="text-anchor:end">Output (MIC)</text>
+      <text x="150" y="300" style="text-anchor:end">GND (common)</text>
+      <text x="370" y="338" style="text-anchor:end">Output</text>
+      <text x="370" y="358" style="text-anchor:end">(MIC)</text>
+      <text x="439" y="338">GND</text>
+      <text x="439" y="358">(common)</text>
+      <text x="372" y="25">Input (EAR)</text>
+      <text x="1272" y="15">Casette unit</text>
+      <use xlink:href="#stereojack35mmsocket" x="0" y="30" />
+      <use xlink:href="#stereojack35mm" x="374" y="147" />
+      <use transform="scale(-1,1)" x="-1400" y="43" xlink:href="#jack35mm" />
+      <text x="1440" y="84">To EAR socket</text>
+      <use transform="scale(-1,1)" x="-1400" y="252" xlink:href="#jack35mm" />
+      <text x="1440" y="292">To MIC socket</text>
+      <text x="1250" y="350">(red)</text>
+      <use xlink:href="#wire"/>
+      <use transform="scale(1,-1)" y="-364" class="filled" xlink:href="#wire"/>
+  </svg>
+</figure>
 
 You will see that the shaft of one of the jack plugs is divided into 3 separate metal sections - this is the plug that should be inserted into the socket marked **TAPE/SOUND** at the back of the +3.
 
@@ -10664,12 +10674,12 @@ It is safe to plug in (or unplug) an amplifier, tape recorder, etc. into the **T
         <g id="jack35mm" class="thick">
           <path d="M 0,29 c 0,0 -7,-7 -13,-7 c -10,0 -13,7 -13,13 c 0,10 7,13 13,13 c 10,0 13,-7 13,-7
           h 7 c5,0 0,0 8,7 h 85 v -26 h -85 c-5,0 0,0 -8,7 h -8" />
-          <path d="M 100,0 v67 h50 l31,-15 v-37 l-31,-15 h-50" stroke-linecap="square" />
+          <path d="M 100,0 v67 h50 l31,-15 v-37 l-31,-15 h-50" />
+          <rect x="15" y="23" width="10" height="25" class="filled" />
         </g>
-        <g id="stereojack35mm" class="filled">
+        <g id="stereojack35mm">
           <use xlink:href="#jack35mm"/>
-          <rect x="15" y="23" width="10" height="25" />
-          <rect x="37" y="23" width="10" height="25" />
+          <rect x="37" y="23" width="10" height="25" class="filled" />
         </g>
         <g id="stereojack35mmsocket" class="thin">
           <path d="M 165,114 h 80 l 14,21 l 14,-21" />
