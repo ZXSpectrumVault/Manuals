@@ -173,7 +173,7 @@ Therefore, you should adopt the following reading programme...
     <use xlink:href="#amstrad-logo-a" x="567" />
     <path d="M774 14c-2-2-3-5-6-6s-5-3-7-4a20 20 0 0 0-4-1 59 59 0 0 0-4-1 71 71 0 0 0-5-1L680 1v202.2l68.6-0c2 0 3-2 5-1 4-1 7-1 10-3 2-1 4-2 5-3a18 18 0 0 0 5-5 35 35 0 0 0 4-10 54 54 0 0 0 2-13l-1-138c0-3-1-6-2-9a30 30 0 0 0-3-8Z m-48 21h3a14 14 0 0 1 2.5.5 7 7 0 0 1 1.8.8c.5.3 1 1 1 1 2 2 1 5 1 8v117a18 18 0 0 1-0 3c-.1.8-1 2-1 2s-1 1-1 2a6 6 0 0 1-2 1c-.6.3-1.2.8-2 1h-7l0-136z"/>
   </svg>
-  <figcaption>© Copyright 1987 - AMSTRAD Plc.</figcaption>
+  <figcaption>&copy; Copyright 1987 - AMSTRAD Plc.</figcaption>
 </figure>
 
 Neither the whole nor any part of the information contained herein, nor the product described in this manual, may be adapted or reproduced in any material form except with the prior written approval of AMSTRAD Plc. ('AMSTRAD').
@@ -388,10 +388,13 @@ Finally, insert the 6-pin DIN plug coming from the power supply unit into the so
 
 The ***+3*** system is now ready to be switched on.
 
-<figure>
-<svg xmlns="http://www.w3.org/2000/svg" viewbox="0,0,1398,1034" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1.5" xmlns:v="https://vecta.io/nano">
+<style>
+  #standard-setup-fig text { font-size: 24px; }
+</style>
+<figure id="standard-setup-fig">
+<svg xmlns="http://www.w3.org/2000/svg" viewbox="0,0,1398,1034">
     <style>
-        <![CDATA[.B{stroke:#000}.C{stroke-width:1.3}.D{fill:none}.E{fill:#fff}.F{stroke-width:2}.H{stroke-width:4}.I{font-size:16px}.J{font-size:32.95px}.K{stroke-width:3}]]>
+        <![CDATA[.B{stroke:#000}.C{stroke-width:1.3}.D{fill:none}.E{fill:#fff}.F{stroke-width:2}.H{stroke-width:4}.I{font-family:Arial,Helvetica,Sans-Serif;font-size:16px;fill:#000}.K{stroke-width:3}]]>
     </style> 
     <g class="K">
         <path d="M849.64 907.46l240.44 94.22 135.08-62.59-7.26-74.12-122.75 51.54-5.07 85.17" />
@@ -496,18 +499,16 @@ The ***+3*** system is now ready to be switched on.
             <path d="M792.44 672.56c1.7.29 2.6 3.26 2.02 6.62s-2.43 5.85-4.12 5.56-2.6-3.26-2.02-6.62 2.43-5.85 4.13-5.56z" />
         </g>
     </g>
-    <text x="896.38" y="249.53" class="J">Aerial lead</text>
-    <text x="882.54" y="764.99" class="J">PSU</text>
-    <text x="-0.77" y="39.66" class="J">TV set</text>
-    <g transform="matrix(2.0595 0 0 2.0595 -2220.22 -738.669)">
-        <text x="1080" y="770">Spectrum</text>
-        <text x="1159" y="770" font-weight="700" font-style="italic">+3</text>
-        <text x="1185" y="770">computer</text>
-    </g>
-    <text x="488" y="956" transform="matrix(.95 -.3 .3 0.9543 -10 -105)" class="G I">PSU</text>
-    <text x="1134" y="790" transform="matrix(.974 -.222 .222 .975 -55.5 13.6)" class="G I">TV</text>
-</svg>
-<legend style="text-align:center">The standard <b><i>+3</i></b> system set-up.</legend>
+    <text x="896.38" y="249.53">Aerial lead</text>
+    <text x="882.54" y="764.99">PSU</text>
+    <text x="-0.77" y="39.66">TV set</text>
+    <text x="0" y="850">Spectrum</text>
+    <text x="120" y="850" font-weight="700" font-style="italic">+3</text>
+    <text x="160" y="850">computer</text>
+    <text x="488" y="956" transform="matrix(.95 -.3 .3 0.9543 -10 -105)" class="I">PSU</text>
+    <text x="1134" y="790" transform="matrix(.974 -.222 .222 .975 -55.5 13.6)" class="I">TV</text>
+  </svg>
+  <figcaption style="text-align:center">The standard <b><i>+3</i></b> system set-up.</figcaption>
 </figure>
 
 # <a id="chapter2"></a> Chapter 2 <br> Operating your +3

@@ -87,6 +87,15 @@ ul {
   list-style: none;
 }
 
+ol {
+  padding-left: 0;
+  margin-left: 2rem;
+}
+
+ol li {
+  margin: 0.8rem 0;
+}
+
 ul + h2, p + h2 {
   margin-top: 2rem;
 }
@@ -194,7 +203,7 @@ svg .fillonly {
 }
 
 svg .lightfill {
-  fill: #bfbfbf;
+  fill: #ddd;
 }
 
 svg line {
