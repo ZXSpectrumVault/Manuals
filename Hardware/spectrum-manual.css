@@ -78,9 +78,14 @@ h1 + *
   border-top: solid 2px #000;
 }
 
+h1 + h2
+{
+  margin-top: 0;
+}
+
 h2 {
   line-height: 2rem;
-  margin: 1rem 0 0.25rem 0;
+  margin: 3rem 0 0.25rem 0;
 }
 
 ul {
@@ -195,6 +200,19 @@ svg .closed {
   stroke: #000;
   stroke-width: 2.5;
   fill: #000;
+}
+
+kbd {
+  background: transparent;
+  border: none;
+  margin: inherit;
+  padding: inherit;
+  color: inherit;
+  font-family: inherit;
+  text-transform: uppercase;
+  font-weight: 700;
+  box-shadow: none;
+  line-height: inherit;
 }
 
 svg .fillonly {
