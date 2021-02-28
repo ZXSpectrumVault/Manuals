@@ -267,8 +267,8 @@ This manual (together with your user registration/guarantee card)<br>
 #open-the-box-fig .G{stroke-width:2}
 #open-the-box-fig .I{fill:#ebebeb}
 #open-the-box-fig text{font-size:2rem}
-#open-the-box-fig .A{font-family:Arial,Helvetica,sans-serif;font-weight:bold;font-size:2rem;text-align:center}
-#open-the-box-fig .B{font-family:Arial,Helvetica,sans-serif;font-weight:bold;font-size:1.35rem;text-align:center}
+#open-the-box-fig .A{font-family:'Segoe UI',Helvetica,sans-serif;font-weight:600;font-size:2rem;text-align:center}
+#open-the-box-fig .B{font-family:'Segoe UI',Helvetica,sans-serif;font-weight:700;font-size:1.35rem;text-align:center}
 </style>
 <figure id="open-the-box-fig">
   <svg xmlns="http://www.w3.org/2000/svg" viewbox="0,0,1702,1255" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1.5">
@@ -392,7 +392,7 @@ The ***+3*** system is now ready to be switched on.
 
 <style>
   #standard-setup-fig text { font-size: 24px; }
-  #standard-setup-fig text.port { font-size: 17px; font-family: Arial, Helvectica, sans-serif; }
+  #standard-setup-fig text.port { font-size: 17px; font-family: 'Segoe UI', Helvectica, sans-serif; }
   #standard-setup-fig .B{stroke:#000}
   #standard-setup-fig .C{stroke-width:1.5}
   #standard-setup-fig .E{fill:#fff}
@@ -4296,7 +4296,9 @@ Exercises...
 
 1. Try...
 
-    PRINT "B"; CHR$ 8; OVER 1;"/";
+```
+  PRINT "B"; CHR$ 8; OVER 1;"/";
+```
 
 Where the `/` has cut through the `B`, it has left a white dot. This is the way that overprinting works on the ***+3*** - two papers or two inks give a paper, one of each gives an ink. This has the interesting property that if you overprint with the same thing twice you end up with what you had at the beginning. If you now type...
 
@@ -4306,8 +4308,10 @@ Where the `/` has cut through the `B`, it has left a white dot. This is the way 
 
 2. Run this program...
 
-    10 POKE 22528+ RND *704, RND *127
-    20 GO TO 10
+```
+  10 POKE 22528+ RND *704, RND *127
+  20 GO TO 10
+```
 
 (Never mind how this program works.) The program is changing the colours of squares on the TV screen and the `RND` should ensure that this happens randomly. (The diagonal stripes that you eventually see are a manifestation of the hidden pattern in `RND`, ie. pseudo-random instead of truly random.)
 
@@ -4474,7 +4478,7 @@ Exercises...
 
 1. Experiment with `PAPER`, `INK`, `FLASH` and `BRIGHT` items in a `PLOT` statement. These are the parts that affect the whole of the character cell containing the pixel. Normally it is as though the `PLOT` statement had started off...
 
-    PLOT PAPER 8; FLASH 8; BRIGHT 8; ...etc
+    `PLOT PAPER 8; FLASH 8; BRIGHT 8; ...etc`
 
 ...and only the ink colour of a character cell is altered when something is plotted there, but you can change this if you wish.
 
@@ -4482,16 +4486,18 @@ Be especially careful when using colours with `INVERSE 1`, because this sets the
 
 2. If you have read [part 10](#part10), see if you can work out how to draw circles using `SIN` and `COS`. Run this program...
 
-    10 FOR n=0 TO 2* PI STEP PI /180
-    20 PLOT 100+80* COS n, 87+80*SIN n
-    30 NEXT n
-    40 CIRCLE 150, 87, 80
+```
+ 10 FOR n=0 TO 2* PI STEP PI /180
+ 20 PLOT 100+80* COS n, 87+80*SIN n
+ 30 NEXT n
+ 40 CIRCLE 150, 87, 80
+```
 
 You can see that the `CIRCLE` statement is much quicker, albeit less accurate.
 
 3. Try...
 
-    CIRCLE 100,87,80: DRAW 50,50
+    `CIRCLE 100,87,80: DRAW 50,50`
 
 You can see from this that the `CIRCLE` statement leaves the `PLOT` position at a rather indeterminate place - it is always somewhere about half way up the right-hand side of the circle. You will usually need to follow the `CIRCLE` statement with a `PLOT` statement before you do any more drawing.
 
@@ -4596,9 +4602,11 @@ Exercises...
 
 2. Another way of using `INKEY$` is in conjunction with `PAUSE`, as in this alternative 'typewriter' program...
 
-    10 PAUSE 0
-    20 PRINT INKEY$ ;
-    30 GO TO 10
+```
+ 10 PAUSE 0
+ 20 PRINT INKEY$ ;
+ 30 GO TO 10
+```
 
 To make this work, why is it essential that a pause should not finish if it finds you already pressing a key when it starts?
 
@@ -4646,16 +4654,82 @@ There are two ways of making music and sounds with the ***+3***. The most elemen
 
 Here is a diagram to show the pitch values of all the notes in one octave on the piano for `BEEP`...
 
-
-      |   | | | C#| D#| | | F#| G#| A#| | |   |   |
-      |   | | | Db| Eb| | | Gb| Ab| Bb| | |   |   |
-      |-2 | | | 1 | 3 | | | 6 | 8 |10 | | |13 |15 |
-    __|___| | |___|___| | |___|___|___| | |___|___|
-        |   |   |   |   |   |   |   |   |   |   |
-     -3 |-1 | 0 | 2 | 4 | 5 | 7 | 9 |11 |12 |14 |16
-    ____|___|___|___|___|___|___|___|___|___|___|____
-              C   D   E   F   G   A   B   C
-
+<style>
+  #music-notes-fig text {
+    font-family: 'Segoe UI', Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+  }
+</style>
+<figure id="music-notes-fig">
+  <svg width="560" height="160">
+    <path d="M0,120 h540 m-540,-45 m-20,-80
+    v80 h40 v-80
+    m4,0 
+    v80 h40 v-80
+    m-20,80
+    v45 m44,0 v-125
+    m24,0
+    v80 h40 v-80
+    m-20,80
+    v45 m44,0 v-45
+    m-20,-80
+    v80 h40 v-80
+    m24,0 v125 m24,0 m0,-125
+    v80 h40 v-80
+    m-20,80 v45
+    m44,0 v-45 m-20,-80
+    v80 h40 v-80
+    m4,0
+    v80 h40 v-80
+    m-20,80 v45
+    m45,0 v-125 m25,0
+    v80 h40 v-80
+    m-20,80 v45
+    m49,0 v-45
+    m-20,-80
+    v80 h40 v-80
+    " class="thin"/>
+    <text y="112" x="20" text-anchor="middle">-3</text>
+    <text y="65" x="42" text-anchor="middle">-2</text>
+    <text y="112" x="65" text-anchor="middle">-1</text>
+    <text y="112" x="110" text-anchor="middle">0</text>
+    <text y="140" x="110" text-anchor="middle">C</text>
+    <text y="35" x="132" text-anchor="middle">C♯</text>
+    <text y="50" x="132" text-anchor="middle">D♭</text>
+    <text y="65" x="132" text-anchor="middle">1</text>
+    <text y="112" x="155" text-anchor="middle">2</text>
+    <text y="140" x="155" text-anchor="middle">D</text>
+    <text y="65" x="178" text-anchor="middle">3</text>
+    <text y="35" x="178" text-anchor="middle">D♯</text>
+    <text y="50" x="178" text-anchor="middle">E♭</text>
+    <text y="112" x="200" text-anchor="middle">4</text>
+    <text y="140" x="200" text-anchor="middle">E</text>
+    <text y="112" x="245" text-anchor="middle">5</text>
+    <text y="140" x="245" text-anchor="middle">F</text>
+    <text y="65" x="265" text-anchor="middle">6</text>
+    <text y="35" x="265" text-anchor="middle">F♯</text>
+    <text y="50" x="265" text-anchor="middle">G♭</text>
+    <text y="112" x="288" text-anchor="middle">7</text>
+    <text y="140" x="288" text-anchor="middle">G</text>
+    <text y="65" x="308" text-anchor="middle">8</text>
+    <text y="35" x="308" text-anchor="middle">G♯</text>
+    <text y="50" x="308" text-anchor="middle">A♭</text>
+    <text y="112" x="330" text-anchor="middle">9</text>
+    <text y="140" x="330" text-anchor="middle">A</text>
+    <text y="65" x="352" text-anchor="middle">10</text>
+    <text y="35" x="352" text-anchor="middle">A♯</text>
+    <text y="50" x="352" text-anchor="middle">GB♭</text>
+    <text y="112" x="378" text-anchor="middle">11</text>
+    <text y="140" x="378" text-anchor="middle">B</text>
+    <text y="112" x="420" text-anchor="middle">12</text>
+    <text y="140" x="420" text-anchor="middle">C</text>
+    <text y="65" x="442" text-anchor="middle">13</text>
+    <text y="112" x="468" text-anchor="middle">14</text>
+    <text y="65" x="490" text-anchor="middle">15</text>
+    <text y="112" x="515" text-anchor="middle">16</text>
+  </svg>
+</figure>
 
 Hence, to play the A above middle C for half a second, you would use...
 
@@ -4700,6 +4774,7 @@ Now run the above program. Edit line 10 so that `"O5"` becomes `"O7"`, and run i
 
 [OK, time to use your imagination here...]
 
+```
             _______________________________________________________
            |C|D|E|F|G|A|B|C|D|E|F|G|A|B|C|D|E|F|G|A|B|C|D|E|F|G|A|B|
            | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
@@ -4716,6 +4791,7 @@ Now run the above program. Edit line 10 so that `"O5"` becomes `"O7"`, and run i
                          |__________OCTAVE_4_________| | | | | | | |
                                        |c|d|e|f|g|a|b|C|D|E|F|G|A|B|
                                        |__________OCTAVE_5_________|
+```                                       
 
 There is a lot of overlap, so for example, `"O3D"` is the same as `"O4d"`. This makes it easier to write tunes without having the change octave all the time. Some of the notes in the lowest octaves (0 and 1) aren't very accurate for technical reasons, and so the computer just makes a brave attempt at getting as close as possible.
 
@@ -5293,7 +5369,7 @@ The start parameter shows the address where the first byte is to be loaded back 
 
 If you have saved one or two things on a disk and then you save something with a filename that has already been used, what will happen? Well, each time you save a program, the disk system checks to see if the filename you specify has already been used. If it has, the existing copy on disk is given a new filename before the information you have asked to save is stored. The new name given to the existing file has the same name field but its type field will always be `.BAK` (short for backup).
 
-If a `.BAK` version of the file already exists, then that will be lost in preference to the new `.BAK` file. This means that as you save successive versions of a program with the same name the previous copy will still be there in a file called filename`.BAK`. So, if you make a serious programming error and inadvertently save the program, you can delete the newest version and rename the `.BAK` file to the original filename. The next section shows you how to do this; but first, type...
+If a `.BAK` version of the file already exists, then that will be lost in preference to the new `.BAK` file. This means that as you save successive versions of a program with the same name the previous copy will still be there in a file called filename `.BAK`. So, if you make a serious programming error and inadvertently save the program, you can delete the newest version and rename the `.BAK` file to the original filename. The next section shows you how to do this; but first, type...
 
     SAVE "a:squares"
 
@@ -9649,7 +9725,7 @@ Subjects covered...
 
 The ***+3*** is designed around the Z80A microprocessor, which runs at a speed of 3.5469MHz (about three and half million cycles per second).
 
-The _**+3**'s_ memory is divided into 64K ROM and 128K RAM, arranged in 16K pages. The four ROM pages (0-3) can be mapped into the bottom 16K (0000h-3FFFh) of the memory map.The eight RAM pages (0-7) are usually mapped into the top 16K (C000h-FFFFh) of the memory map. RAM page 5 is also mapped into the range 4000h-7FFFh, and RAM page 2 is mapped into the range 8000h-BFFFh.There are also several RAM page combinations that occupy the full 64K address range. These were given in [part 35 of this chapter](#part35), under the heading 'Memory management'.
+The _**+3**'s_ memory is divided into 64K ROM and 128K RAM, arranged in 16K pages. The four ROM pages (0-3) can be mapped into the bottom 16K (0000h-3FFFh) of the memory map. The eight RAM pages (0-7) are usually mapped into the top 16K (C000h-FFFFh) of the memory map. RAM page 5 is also mapped into the range 4000h-7FFFh, and RAM page 2 is mapped into the range 8000h-BFFFh. There are also several RAM page combinations that occupy the full 64K address range. These were given in [part 35 of this chapter](#part35), under the heading 'Memory management'.
 
 Physically speaking, the ROMs are two 32K devices (similar to the 27256), which are both treated by the system as two 16K chips. The RAM is composed of four 16K x 4 bit chips (41464), some of which (RAM banks 4-7) are time-shared between the circuitry that produces the screen display, and the Z80A. The others (RAM banks 0-3) are for the exclusive use of the Z80A, as in the ROM.
 

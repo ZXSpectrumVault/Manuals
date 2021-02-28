@@ -376,7 +376,7 @@ const keyboardLabelsK = [
     []
 ];
 
-const lowerKeyFont = '11px sans-serif';
+const lowerKeyFont = '11px Arial';
 const midKeyBigFont = '24px Roboto Mono';
 
 function drawBoxChar(cx, index, x, y, size, inverse) {
@@ -449,7 +449,7 @@ function drawBoxChar(cx, index, x, y, size, inverse) {
 }
 
 function drawDefaultKeyboard(cx) {
-    cx.fontSize = '11px';
+    cx.fontSize = '10px';
     drawKeyboard(cx, function (c, r, x, y, w, h) {
         cx.fillStyle = 'black';
         cx.textAlign = 'right';
