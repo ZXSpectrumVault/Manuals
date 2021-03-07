@@ -86,7 +86,8 @@ function fill(cx, x, y, w, h, color) {
 
 // Draw the 128K bar with rainbow stripe
 function barWithStripe(cx, x, y, w, title) {
-    cx.clearRect(x, y, w, 8);
+    cx.fillStyle = darkColors[0];
+    cx.fillRect(x, y, w, 8);
     stripe(cx, x + w - (8 * 5), y);
     if (title) text(cx, x, y, title, lightColors[7]);
 }
