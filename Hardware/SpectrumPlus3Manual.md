@@ -8206,7 +8206,7 @@ The file size is the amount of disk space allocated to the file, not necessarily
   * C DE HL IX corrupt
   * All other registers preserved
 
-#### <a id="dos-free"></a> DOS FREE SPACE 0121h (289)
+#### <a id="dos-free-space"></a> DOS FREE SPACE 0121h (289)
 
 How much free space is there on this drive?
 
@@ -8226,6 +8226,28 @@ How much free space is there on this drive?
   * HL corrupt
 * Always:
   * BC DE IX corrupt
+  * All other registers preserved
+ 
+#### <a id="dos-delete"></a> DOS DELETE 0124h (292)
+
+Deletes an existing file.
+
+File must not be open on any file number.
+
+##### ENTRY CONDITIONS
+
+* HL = Address of filename (wildcards permitted)
+
+##### EXIT CONDITIONS
+
+* If OK:
+  * Carry true
+  * A corrupt
+* Otherwise:
+  * Carry false
+  * A = Error code
+* Always:
+  * BC DE HL IX corrupt
   * All other registers preserved
 
 #### <a id="dos-rename"></a> DOS RENAME 0127h (295)
