@@ -10,4 +10,4 @@ Various manuals for Spectrum related hardware and software
 
 ## Hardware
 - [Spectrum +3 Manual](https://zxspectrumvault.github.io/Manuals/Hardware/SpectrumPlus3Manual.html)
-- [Rombo Vidi-ZX digitiser](/ZXSpectrumVault/Manuals/blob/master/Hardware/rombo-vidi-zx.txt)
+- [Rombo Vidi-ZX digitiser](https://github.com/ZXSpectrumVault/Manuals/blob/master/Hardware/rombo-vidi-zx.txt)
