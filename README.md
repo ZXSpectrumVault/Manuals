@@ -3,10 +3,10 @@
 Various manuals for Spectrum related hardware and software
 
 ## Applications
-- Profile2 Spreadsheet (txt)
+- [Profile2 Spreadsheet](https://github.com/ZXSpectrumVault/Manuals/blob/master/Applications/profile2.txt)
 
 ## Developer
-- The GAC Adventure Writers Handbook (txt, markdown)
+- [The GAC Adventure Writers Handbook](https://github.com/ZXSpectrumVault/Manuals/blob/master/Developer/TheGACAdventureWritersHandbook.md)
 
 ## Hardware
 - [Spectrum +3 Manual](https://zxspectrumvault.github.io/Manuals/Hardware/SpectrumPlus3Manual.html)
