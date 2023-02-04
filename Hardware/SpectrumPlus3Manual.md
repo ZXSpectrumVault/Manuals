@@ -1,6 +1,7 @@
 <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:500|Roboto+Slab:400,700&amp;display=swap" rel="stylesheet"></link>
 <link href="./spectrum-manual.css" rel="stylesheet"></link>
 <script src="./spectrum-manual.js"></script>
+<!-- no toc -->
 
 # Contents
  
@@ -24,16 +25,16 @@
 - [Chapter 3<br>How to load disk software](#chapter3)
   - [Disks for the ***+3***](#disks-for-plus3)
   - [Loading disk software](#loading-disk-software)
-  - [Abandoning loading](#abandoning-loading)
+  - [Abandoning loading](#abandoning-loading-disk)
 - [Chapter 4<br>How to load tape software](#chapter4)
   - [Using tape instead of disk](#using-tape)
   - [Loading Spectrum ***+3***, Spectrum ***+3*** and Spectrum 128 software](#loading-128)
   - [Loading Spectrum 48 software](#loading-48)
-  - [Abandoning loading](#abandoning-loading)
+  - [Abandoning loading](#abandoning-loading-tape)
 - [Chapter 5<br>The ***+3*** disk drive](#chapter5)
   - [Disks and drives](#disks-and-drives)
   - [Insertion](#insertion)
-  - [Write protection](#write-protect)
+  - [Write protection](#write-protection)
   - [Read/write indicator lamp](#read-write-indicator-lamp)
   - [Eject button](#eject-button)
 - [Chapter 6<br>Introducing ***+3*** BASIC](#chapter6)
@@ -49,7 +50,7 @@
   - [Simple disk operations](#simple-disk-operations)
   - [Formatting a disk](#formatting-a-disk)
   - [Saving a program](#saving-a-program)
-  - [Filenames](#filenames)
+  - [Filenames](#filenames-disk)
   - [Disk catalog](#disk-catalog)
   - [Loading a program](#loading-a-program)
   - [Error reports](#error-reports)
@@ -101,7 +102,7 @@
   - [Editing the screen](#editing-the-screen)
   - [Assigning variables](#assigning-variables)
   - [User defined functions](#user-defined-functions)
-  - [Exiting from the calculator](#exiting-from-the-calculator)
+  - [Exiting from the calculator](#exiting-the-calculator)
 - [Chapter 10<br>Peripherals for your ***+3***](#chapter10)
   - [Cassette unit](#cassette-unit)
   - [Printer](#printer)
@@ -116,7 +117,7 @@
 
 </div>
 
-# <a id="introduction"></a>Introduction
+# <a id="introduction"></a> Introduction
 
 ## Sinclair ZX Spectrum +3<br>128K Integrated Home Computer/Disk System
 
@@ -244,7 +245,7 @@ Unauthorised use of the above trademarks, or of the word AMSTRAD, is strictly fo
 **Subjects covered...**
 
 - [Unpacking](#unpacking)
-- [Fitting a mains plug](#fitting-a-plus)
+- [Fitting a mains plug](#fitting-a-plug)
 - [Setting up](#setting-up)
 
 ## <a id="unpacking"></a> Unpacking
@@ -371,7 +372,7 @@ Disconnect the mains plug from the supply socket when not in use.
 Do not attempt to remove any screws, nor open the casing of the power supply unit. Always obey the warning on the rating label of the power supply unit.
 
 | **WARNING: LIVE PARTS INSIDE - DO NOT REMOVE ANY SCREWS** |
-|-----------------------------------------------------------|
+| --------------------------------------------------------- |
 
 ## <a id="setting-up"></a> Setting up
 
@@ -387,7 +388,7 @@ The ***+3*** system is now ready to be switched on.
 
 <style>
   #standard-setup-fig text { font-size: 24px; }
-  #standard-setup-fig text.port { font-size: 17px; font-family: 'Segoe UI', Helvectica, sans-serif; }
+  #standard-setup-fig text.port { font-size: 17px; font-family: 'Segoe UI', Helvetica, sans-serif; }
   #standard-setup-fig .B{stroke:#000}
   #standard-setup-fig .C{stroke-width:1.5}
   #standard-setup-fig .E{fill:#fff}
@@ -748,7 +749,7 @@ Subjects covered...
 
 - [Disks for the ***+3***](#disks-for-plus3)
 - [Loading disk software](#loading-disk-software)
-- [Abandoning loading](#abandoning-loading)
+- [Abandoning loading](#abandoning-loading-disk)
 
 This chapter describes the loading of commercially available disk software.
 
@@ -829,7 +830,7 @@ When you have finished using the software and wish to use the ***+3*** for somet
 
 **If you are going to switch off the ***+3*** completely, remember to remove any disk from the disk drive first.**
 
-## <a id="abandoning-loading"></a> Abandoning loading
+## <a id="abandoning-loading-disk"></a> Abandoning loading
 
 If you wish to abandon a loading operation, simply press and release the **RESET** button. The ***+3*** will return to the opening menu.
 
@@ -840,7 +841,7 @@ Subjects covered...
 - [Using tape instead of disk](#using-tape)
 - [Loading Spectrum +3, Spectrum ***+3*** and Spectrum 128 software](#loading-128)
 - [Loading Spectrum 48 software](#loading-48)
-- [Abandoning loading](#abandoning-loading)
+- [Abandoning loading](#abandoning-loading-tape)
 
 This chapter describes the loading of commercially available pre-recorded tape software.
 
@@ -938,7 +939,7 @@ When the program has loaded, stop the cassette. The software is then ready to us
 
 When you have finished using the software and wish to use the ***+3*** for something else, press and release the **RESET** button (at the left-hand side of the ***+3***). Always remember that whenever the **RESET** button is pressed, ***everything*** in the computer's memory (RAM) is cleared. You should therefore always make sure that you have completely finished with any program in the _**+3**'s_ memory, ***before*** you press the button.
 
-## <a id="abandoning-loading"></a> Abandoning loading
+## <a id="abandoning-loading-tape"></a> Abandoning loading
 
 If, while loading software from tape, you wish to abandon the loading operation, then simply press and release the **RESET** button. The ***+3*** will return to the opening menu.
 
@@ -950,7 +951,7 @@ Subjects covered...
 
 - [Disks and drives](#disks-and-drives)
 - [Insertion](#insertion)
-- [Write protection](#write-protect)
+- [Write protection](#write-protection)
 - [Read/write indicator lamp](#read-write-indicator-lamp)
 - [Eject button](#eject-button)
 
@@ -1189,7 +1190,7 @@ Subjects covered...
 - [Simple disk operations](#simple-disk-operations)
 - [Formatting a disk](#formatting-a-disk)
 - [Saving a program](#saving-a-program)
-- [Filenames](#filenames)
+- [Filenames](#filenames-disk)
 - [Disk catalog](#disk-catalog)
 - [Loading a program](#loading-a-program)
 - [Error reports](#error-reports)
@@ -1240,7 +1241,7 @@ A useful aid to this renumbering facility can be found in [chapter 8 part 33](#p
 
 <a id="swapping-screens"></a>`Screen` - This option moves the cursor into the smaller (bottom) part of the screen, and allows BASIC to be entered and edited there. This is most useful for working with graphics, as any editing in the bottom screen does not disturb the top screen. To switch back to the top screen (which you can do at any time whilst editing), select the edit menu option `Screen` again.
 
-<a id="#listing-to-the-printer"></a>`Print` - If a printer is connected, this option will print-out a listing of the current program to it. When the listing has finished, the menu will go away and the cursor will come back. If for some reason the computer cannot print (eg. the printer is not connected or is off-line), then pressing the **BREAK** key twice will return you to the editor.
+<a id="listing-to-the-printer"></a>`Print` - If a printer is connected, this option will print-out a listing of the current program to it. When the listing has finished, the menu will go away and the cursor will come back. If for some reason the computer cannot print (eg. the printer is not connected or is off-line), then pressing the **BREAK** key twice will return you to the editor.
 
 `Exit` - This option returns you to the opening menu - the ***+3*** retains any program that you were working on in the memory. If you wish to go back to the program again, select the option `+3 BASIC` from the opening menu.
 
@@ -1296,7 +1297,7 @@ Don't worry about what this report means.
 
 Press **ENTER**. The screen will clear and the footer bar will come back, as will the program listing. This takes about a second or so, during which time the ***+3*** ***won't*** be taking input from the keyboard, so don't try and type anything while it's all happening.
 
-<a id="#commands-and-instructions"></a>You've just done most of the major operations necessary to program and use a computer! First, you've given the ***+3*** a list of instructions. ***Instructions*** tell the ***+3*** what to do (like the instruction `30 NEXT f`).  Instructions have a line number and are 'stored away' rather than used immediately you type them in. Then you gave the ***+3*** the command `run` to execute the stored program.
+<a id="commands-and-instructions"></a>You've just done most of the major operations necessary to program and use a computer! First, you've given the ***+3*** a list of instructions. ***Instructions*** tell the ***+3*** what to do (like the instruction `30 NEXT f`).  Instructions have a line number and are 'stored away' rather than used immediately you type them in. Then you gave the ***+3*** the command `run` to execute the stored program.
 
 ***Commands*** are just like instructions, only they don't have line numbers and the ***+3*** carries them out immediately (as soon as **ENTER** is pressed). In general, any instruction can be used as a command, and vice versa -
 it all depends on the circumstances. Every instruction or command must have at least one ***keyword***. Keywords make up the vocabulary of the computer, and many of them require parameters. In the command `DRAW
@@ -1394,7 +1395,7 @@ The program is now saved onto disk.
 
 (If you don't receive the above report (and some other message appears instead), check the section entitled 'Error reports' at the end of this chapter.)
 
-## <a id="filenames"></a> Filenames
+## <a id="filenames-disk"></a> Filenames
 
 Note that a filename on disk consists of two parts (***fields***). The first field is obligatory and can contain up to 8 characters (letters and numbers may be used but no spaces and punctuation marks). In the above example filename, 'pattern' is the first field.
 
@@ -1402,7 +1403,7 @@ The second field is optional. You can use up to 3 characters (but again no space
 
 If you use two fields in a filename, they must be separated by a dot (eg. 'pattern.pic').
 
-## <a id="disk-catalog"></a> Disk catalog
+## <a id="disk-cataloging"></a> Disk catalog
 
 A catalog of the disk (in alphabetical order) can be displayed by typing in...
 
@@ -3169,7 +3170,7 @@ To specify where the point is, you say how far it has moved round the circle fro
 Given the curved distance round the edge - a, two other distances you might like to know are how far the point is the right of the y-axis, and how far it is above the x-axis. These are called, respectively, the ***cosine*** and ***sine*** of a. The functions `COS` and `SIN` on the ***+3*** will calculate these.
 
 <figure>
-  <svg viewBox="0 0 500 500" width="100%" id="trig-1-diagram">
+  <svg viewBox="0 0 500 500" width="100%" id="trig-1-diagram-b">
     <use xlink:href="#circle-grid-arc" />
     <text x="390" y="165" text-anchor="middle" font-size="10">a</text>
     <text x="310" y="90" text-anchor="middle" font-size="10">cosine of a=<tspan font-weight="bold">COS</a> a</text>
@@ -3661,16 +3662,16 @@ Pressing the **9** key turns everything back to normal (as does pressing **GRAPH
 
 Here are the sixteen graphics symbols...
 
-| Symbol | Code | Symbol | Code
-| :----: | :--: | :----: | :--:
-| <canvas id="box-char-0"></canvas> | 128 | <canvas id="box-char-inv-0"></canvas> | 143
-| <canvas id="box-char-1"></canvas> | 129 | <canvas id="box-char-inv-1"></canvas> | 142
-| <canvas id="box-char-2"></canvas> | 130 | <canvas id="box-char-inv-2"></canvas> | 141
-| <canvas id="box-char-3"></canvas> | 131 | <canvas id="box-char-inv-3"></canvas> | 140
-| <canvas id="box-char-4"></canvas> | 132 | <canvas id="box-char-inv-4"></canvas> | 139
-| <canvas id="box-char-5"></canvas> | 133 | <canvas id="box-char-inv-5"></canvas> | 138
-| <canvas id="box-char-6"></canvas> | 134 | <canvas id="box-char-inv-6"></canvas> | 137
-| <canvas id="box-char-7"></canvas> | 135 | <canvas id="box-char-inv-7"></canvas> | 136
+|              Symbol               | Code  |                Symbol                 | Code  |
+| :-------------------------------: | :---: | :-----------------------------------: | :---: |
+| <canvas id="box-char-0"></canvas> |  128  | <canvas id="box-char-inv-0"></canvas> |  143  |
+| <canvas id="box-char-1"></canvas> |  129  | <canvas id="box-char-inv-1"></canvas> |  142  |
+| <canvas id="box-char-2"></canvas> |  130  | <canvas id="box-char-inv-2"></canvas> |  141  |
+| <canvas id="box-char-3"></canvas> |  131  | <canvas id="box-char-inv-3"></canvas> |  140  |
+| <canvas id="box-char-4"></canvas> |  132  | <canvas id="box-char-inv-4"></canvas> |  139  |
+| <canvas id="box-char-5"></canvas> |  133  | <canvas id="box-char-inv-5"></canvas> |  138  |
+| <canvas id="box-char-6"></canvas> |  134  | <canvas id="box-char-inv-6"></canvas> |  137  |
+| <canvas id="box-char-7"></canvas> |  135  | <canvas id="box-char-inv-7"></canvas> |  136  |
 
 <script>
 (function() {
@@ -4797,25 +4798,25 @@ There is a lot of overlap, so for example, `"O3D"` is the same as `"O4d"`. This 
 
 ...and run it. Then alter the setting of `o$` between `"1"` and `"9"`. The note length can be changed anywhere in a string by including a number between 1 and 9, and this is effective for all subsequent notes until a new number is encountered. Each of these nine note lengths has a specific musical name, and looks different when written down in musical notation. The following table shows which is which...
 
-| NUMBER | NOTE NAME           | MUSICAL SYMBOL |
-|:------:|---------------------|:--------------:|
-|   1    | semi-quaver         |       𝅘𝅥𝅯        |
-|   2    | dotted semi-quaver  |       𝅘𝅥𝅯.       |
-|   3    | quaver              |       𝅘𝅥𝅮        |
-|   4    | dotted quaver       |       𝅘𝅥𝅮.       |
-|   5    | crotchet            |       𝅘𝅥        |
-|   6    | dotted crotchet     |       𝅘𝅥.       |
-|   7    | minim               |       𝅗𝅥        |
-|   8    | dotted minim        |       𝅗𝅥.       |
-|   9    | semi-breve          |       𝅝        |
+| NUMBER | NOTE NAME          | MUSICAL SYMBOL |
+| :----: | ------------------ | :------------: |
+|   1    | semi-quaver        |       𝅘𝅥𝅯        |
+|   2    | dotted semi-quaver |       𝅘𝅥𝅯.       |
+|   3    | quaver             |       𝅘𝅥𝅮        |
+|   4    | dotted quaver      |       𝅘𝅥𝅮.       |
+|   5    | crotchet           |       𝅘𝅥        |
+|   6    | dotted crotchet    |       𝅘𝅥.       |
+|   7    | minim              |       𝅗𝅥        |
+|   8    | dotted minim       |       𝅗𝅥.       |
+|   9    | semi-breve         |       𝅝        |
 
 `PLAY` can also cope with triplets, which are three notes played in the time for two. Unlike simple note lengths, the triplet number only applies for the three notes immediately following, and then the previous note length number resumes. The triplet numbers are as follows...
 
-| NUMBER | NOTE NAME               | MUSICAL SYMBOL |
-|:------:|-------------------------|:--------------:|
-|    10     | triplet semi-quaver  | <svg height="1rem" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"><path d="M37.4 63h138.3v112.7c0 3.8-1.3 7.4-4 10.7-2.7 3.5-6.2 6.2-10.4 8s-8.2 3-12 3c-3.4 0-6.6-1-9.4-3-3-2.6-4.4-5.3-4.4-8.3 0-3.8 1.5-7.4 4.4-10.7 2.3-3.4 5.6-6.3 10-8.7 2.6-1 4.8-1.7 6.7-2.2s3.8-.7 5.6-.7c3.5 0 7 1 10 3V76h-63.5v99.6c0 3.4-1.3 7-4 10.7-2.6 3.5-6 6.2-10.2 8s-8.4 3-12.5 3c-3.4 0-6.6-1-9.4-3-2.7-2.3-4-5-4-8.3 0-3.8 1.3-7.4 4-10.7 1.4-1.7 3-3.2 4.8-4.7s3.8-2.8 5.8-4c2-1 4.2-1.7 6.2-2.2s4-.7 5.7-.7c2 0 3.6.3 5.2.8s3.3 1.3 5 2.3V76H41v99.6c0 3.8-1.3 7.4-4 10.7-2.7 3.5-6.2 6.2-10.4 8s-8.3 3-12.2 3c-2 0-3.6-.3-5-.8s-3-1.2-4.4-2.2C2.2 192 .8 189.2.8 186c0-4 1.4-7.5 4.2-10.7 1.3-1.7 2.8-3.3 4.6-4.7s3.7-2.8 6-4c2.2-1 4.2-1.7 6.2-2.2a25 25 0 0 1 5.6-.7c3.8 0 7 1 10 3V63zM103.7 44v-1.4l3-.8c.7-.3 1.4-.7 2-1.3.6-.5 1.2-1.2 1.7-2.2s.8-1.8.8-2.6c0-2.4-1.6-3.7-4.7-3.7-1.4 0-2.5.3-3.3 1s-1.7 1.8-2.6 3.4h-1.3c.4-1.3.8-2.3 1-2.8a12 12 0 0 1 1.5-1.8c1.3-1.3 3-2 5.3-2 2 0 3.5.5 4.8 1.6s2 2.4 2 4c0 1-.3 2.3-.8 3.4s-1.5 2.2-3 3.2c1 .4 1.5.8 1.8 1s.6.5 1 .8a8 8 0 0 1 1.5 1.9c.3.7.5 1.5.5 2.5 0 3-1 5.3-3.3 7-2.2 1.5-5 2.3-8 2.3-3 0-4.6-.7-4.6-2 0-.8.6-1.2 1.7-1.2.3 0 .6 0 1 .1s1 .3 1.6.8c1.5.6 2.7.8 3.6.4 1.4-.4 2.6-1 3.4-1.6s1.3-1.8 1.5-3.5c.3-1.5 0-2.8-.8-4a5.5 5.5 0 0 0-3.2-2.3c-1.3-.3-2.7-.4-4.2-.4z M40 79h133v12H40z" fill-rule="nonzero"/></svg> |
-|    11     | triplet quaver       | <svg height="1rem" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"><path d="M37.4 63h138.3v112.7c0 3.8-1.3 7.4-4 10.7-2.7 3.5-6.2 6.2-10.4 8s-8.2 3-12 3c-3.4 0-6.6-1-9.4-3-3-2.6-4.4-5.3-4.4-8.3 0-3.8 1.5-7.4 4.4-10.7 2.3-3.4 5.6-6.3 10-8.7 2.6-1 4.8-1.7 6.7-2.2s3.8-.7 5.6-.7c3.5 0 7 1 10 3V76h-63.5v99.6c0 3.4-1.3 7-4 10.7-2.6 3.5-6 6.2-10.2 8s-8.4 3-12.5 3c-3.4 0-6.6-1-9.4-3-2.7-2.3-4-5-4-8.3 0-3.8 1.3-7.4 4-10.7 1.4-1.7 3-3.2 4.8-4.7s3.8-2.8 5.8-4c2-1 4.2-1.7 6.2-2.2s4-.7 5.7-.7c2 0 3.6.3 5.2.8s3.3 1.3 5 2.3V76H41v99.6c0 3.8-1.3 7.4-4 10.7-2.7 3.5-6.2 6.2-10.4 8s-8.3 3-12.2 3c-2 0-3.6-.3-5-.8s-3-1.2-4.4-2.2C2.2 192 .8 189.2.8 186c0-4 1.4-7.5 4.2-10.7 1.3-1.7 2.8-3.3 4.6-4.7s3.7-2.8 6-4c2.2-1 4.2-1.7 6.2-2.2a25 25 0 0 1 5.6-.7c3.8 0 7 1 10 3V63zM103.7 44v-1.4l3-.8c.7-.3 1.4-.7 2-1.3.6-.5 1.2-1.2 1.7-2.2s.8-1.8.8-2.6c0-2.4-1.6-3.7-4.7-3.7-1.4 0-2.5.3-3.3 1s-1.7 1.8-2.6 3.4h-1.3c.4-1.3.8-2.3 1-2.8a12 12 0 0 1 1.5-1.8c1.3-1.3 3-2 5.3-2 2 0 3.5.5 4.8 1.6s2 2.4 2 4c0 1-.3 2.3-.8 3.4s-1.5 2.2-3 3.2c1 .4 1.5.8 1.8 1s.6.5 1 .8a8 8 0 0 1 1.5 1.9c.3.7.5 1.5.5 2.5 0 3-1 5.3-3.3 7-2.2 1.5-5 2.3-8 2.3-3 0-4.6-.7-4.6-2 0-.8.6-1.2 1.7-1.2.3 0 .6 0 1 .1s1 .3 1.6.8c1.5.6 2.7.8 3.6.4 1.4-.4 2.6-1 3.4-1.6s1.3-1.8 1.5-3.5c.3-1.5 0-2.8-.8-4a5.5 5.5 0 0 0-3.2-2.3c-1.3-.3-2.7-.4-4.2-.4z" fill-rule="nonzero"/></svg> |
-|    12     | triplet crochet      | <svg height="1rem" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"  fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"><path d="M37.4 63h138.3v112.7c0 3.8-1.3 7.4-4 10.7-2.7 3.5-6.2 6.2-10.4 8s-8.2 3-12 3c-3.4 0-6.6-1-9.4-3-3-2.6-4.4-5.3-4.4-8.3 0-3.8 1.5-7.4 4.4-10.7 2.3-3.4 5.6-6.3 10-8.7 2.6-1 4.8-1.7 6.7-2.2s3.8-.7 5.6-.7c3.5 0 7 1 10 3V76h-63.5v99.6c0 3.4-1.3 7-4 10.7-2.6 3.5-6 6.2-10.2 8s-8.4 3-12.5 3c-3.4 0-6.6-1-9.4-3-2.7-2.3-4-5-4-8.3 0-3.8 1.3-7.4 4-10.7 1.4-1.7 3-3.2 4.8-4.7s3.8-2.8 5.8-4c2-1 4.2-1.7 6.2-2.2a27 27 0 0 1 5.7-.7c2 0 3.6.3 5.2.8s3.3 1.3 5 2.3V76H41v99.6c0 3.8-1.3 7.4-4 10.7-2.7 3.5-6.2 6.2-10.4 8s-8.3 3-12.2 3c-2 0-3.6-.3-5-.8s-3-1.2-4.4-2.2C2.2 192 .8 189.2.8 186c0-4 1.4-7.5 4.2-10.7 1.3-1.7 2.8-3.3 4.6-4.7s3.7-2.8 6-4c2.2-1 4.2-1.7 6.2-2.2a25 25 0 0 1 5.6-.7c3.8 0 7 1 10 3V63zm145-4.2V45.4h-60v-4H186v17.3h-3.5zM19 59V41.4h71.5v4H22.5V59H19zM103.7 44v-1.4l3-.8c.7-.2 1.4-.7 2-1.3.6-.5 1.2-1.2 1.7-2.2s.8-1.8.8-2.6c0-2.4-1.6-3.7-4.7-3.7-1.4 0-2.5.3-3.3 1s-1.7 1.8-2.6 3.4h-1.3c.4-1.3.8-2.3 1-2.8a12 12 0 0 1 1.5-1.8c1.3-1.3 3-2 5.3-2 2 0 3.5.5 4.8 1.6s2 2.4 2 4c0 1-.3 2.3-.8 3.4s-1.5 2.2-3 3.2c1 .4 1.5.8 1.8 1s.6.5 1 .8a8 8 0 0 1 1.5 1.9c.3.7.5 1.5.5 2.5 0 3-1 5.3-3.3 7-2.2 1.5-5 2.3-8 2.3-3 0-4.6-.7-4.6-2 0-.8.6-1.2 1.7-1.2.3 0 .6 0 1 .1s1 .3 1.6.8c1.5.6 2.7.8 3.6.4 1.4-.4 2.6-1 3.4-1.6s1.3-1.8 1.5-3.5c.3-1.5 0-2.8-.8-4s-2-2-3.2-2.3c-1.3-.3-2.7-.4-4.2-.4z" fill-rule="nonzero"/></svg>|
+| NUMBER | NOTE NAME           |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                MUSICAL SYMBOL                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| :----: | ------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+|   10   | triplet semi-quaver |                        <svg height="1rem" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"><path d="M37.4 63h138.3v112.7c0 3.8-1.3 7.4-4 10.7-2.7 3.5-6.2 6.2-10.4 8s-8.2 3-12 3c-3.4 0-6.6-1-9.4-3-3-2.6-4.4-5.3-4.4-8.3 0-3.8 1.5-7.4 4.4-10.7 2.3-3.4 5.6-6.3 10-8.7 2.6-1 4.8-1.7 6.7-2.2s3.8-.7 5.6-.7c3.5 0 7 1 10 3V76h-63.5v99.6c0 3.4-1.3 7-4 10.7-2.6 3.5-6 6.2-10.2 8s-8.4 3-12.5 3c-3.4 0-6.6-1-9.4-3-2.7-2.3-4-5-4-8.3 0-3.8 1.3-7.4 4-10.7 1.4-1.7 3-3.2 4.8-4.7s3.8-2.8 5.8-4c2-1 4.2-1.7 6.2-2.2s4-.7 5.7-.7c2 0 3.6.3 5.2.8s3.3 1.3 5 2.3V76H41v99.6c0 3.8-1.3 7.4-4 10.7-2.7 3.5-6.2 6.2-10.4 8s-8.3 3-12.2 3c-2 0-3.6-.3-5-.8s-3-1.2-4.4-2.2C2.2 192 .8 189.2.8 186c0-4 1.4-7.5 4.2-10.7 1.3-1.7 2.8-3.3 4.6-4.7s3.7-2.8 6-4c2.2-1 4.2-1.7 6.2-2.2a25 25 0 0 1 5.6-.7c3.8 0 7 1 10 3V63zM103.7 44v-1.4l3-.8c.7-.3 1.4-.7 2-1.3.6-.5 1.2-1.2 1.7-2.2s.8-1.8.8-2.6c0-2.4-1.6-3.7-4.7-3.7-1.4 0-2.5.3-3.3 1s-1.7 1.8-2.6 3.4h-1.3c.4-1.3.8-2.3 1-2.8a12 12 0 0 1 1.5-1.8c1.3-1.3 3-2 5.3-2 2 0 3.5.5 4.8 1.6s2 2.4 2 4c0 1-.3 2.3-.8 3.4s-1.5 2.2-3 3.2c1 .4 1.5.8 1.8 1s.6.5 1 .8a8 8 0 0 1 1.5 1.9c.3.7.5 1.5.5 2.5 0 3-1 5.3-3.3 7-2.2 1.5-5 2.3-8 2.3-3 0-4.6-.7-4.6-2 0-.8.6-1.2 1.7-1.2.3 0 .6 0 1 .1s1 .3 1.6.8c1.5.6 2.7.8 3.6.4 1.4-.4 2.6-1 3.4-1.6s1.3-1.8 1.5-3.5c.3-1.5 0-2.8-.8-4a5.5 5.5 0 0 0-3.2-2.3c-1.3-.3-2.7-.4-4.2-.4z M40 79h133v12H40z" fill-rule="nonzero"/></svg>                        |
+|   11   | triplet quaver      |                                 <svg height="1rem" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"><path d="M37.4 63h138.3v112.7c0 3.8-1.3 7.4-4 10.7-2.7 3.5-6.2 6.2-10.4 8s-8.2 3-12 3c-3.4 0-6.6-1-9.4-3-3-2.6-4.4-5.3-4.4-8.3 0-3.8 1.5-7.4 4.4-10.7 2.3-3.4 5.6-6.3 10-8.7 2.6-1 4.8-1.7 6.7-2.2s3.8-.7 5.6-.7c3.5 0 7 1 10 3V76h-63.5v99.6c0 3.4-1.3 7-4 10.7-2.6 3.5-6 6.2-10.2 8s-8.4 3-12.5 3c-3.4 0-6.6-1-9.4-3-2.7-2.3-4-5-4-8.3 0-3.8 1.3-7.4 4-10.7 1.4-1.7 3-3.2 4.8-4.7s3.8-2.8 5.8-4c2-1 4.2-1.7 6.2-2.2s4-.7 5.7-.7c2 0 3.6.3 5.2.8s3.3 1.3 5 2.3V76H41v99.6c0 3.8-1.3 7.4-4 10.7-2.7 3.5-6.2 6.2-10.4 8s-8.3 3-12.2 3c-2 0-3.6-.3-5-.8s-3-1.2-4.4-2.2C2.2 192 .8 189.2.8 186c0-4 1.4-7.5 4.2-10.7 1.3-1.7 2.8-3.3 4.6-4.7s3.7-2.8 6-4c2.2-1 4.2-1.7 6.2-2.2a25 25 0 0 1 5.6-.7c3.8 0 7 1 10 3V63zM103.7 44v-1.4l3-.8c.7-.3 1.4-.7 2-1.3.6-.5 1.2-1.2 1.7-2.2s.8-1.8.8-2.6c0-2.4-1.6-3.7-4.7-3.7-1.4 0-2.5.3-3.3 1s-1.7 1.8-2.6 3.4h-1.3c.4-1.3.8-2.3 1-2.8a12 12 0 0 1 1.5-1.8c1.3-1.3 3-2 5.3-2 2 0 3.5.5 4.8 1.6s2 2.4 2 4c0 1-.3 2.3-.8 3.4s-1.5 2.2-3 3.2c1 .4 1.5.8 1.8 1s.6.5 1 .8a8 8 0 0 1 1.5 1.9c.3.7.5 1.5.5 2.5 0 3-1 5.3-3.3 7-2.2 1.5-5 2.3-8 2.3-3 0-4.6-.7-4.6-2 0-.8.6-1.2 1.7-1.2.3 0 .6 0 1 .1s1 .3 1.6.8c1.5.6 2.7.8 3.6.4 1.4-.4 2.6-1 3.4-1.6s1.3-1.8 1.5-3.5c.3-1.5 0-2.8-.8-4a5.5 5.5 0 0 0-3.2-2.3c-1.3-.3-2.7-.4-4.2-.4z" fill-rule="nonzero"/></svg>                                 |
+|   12   | triplet crochet     | <svg height="1rem" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"  fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"><path d="M37.4 63h138.3v112.7c0 3.8-1.3 7.4-4 10.7-2.7 3.5-6.2 6.2-10.4 8s-8.2 3-12 3c-3.4 0-6.6-1-9.4-3-3-2.6-4.4-5.3-4.4-8.3 0-3.8 1.5-7.4 4.4-10.7 2.3-3.4 5.6-6.3 10-8.7 2.6-1 4.8-1.7 6.7-2.2s3.8-.7 5.6-.7c3.5 0 7 1 10 3V76h-63.5v99.6c0 3.4-1.3 7-4 10.7-2.6 3.5-6 6.2-10.2 8s-8.4 3-12.5 3c-3.4 0-6.6-1-9.4-3-2.7-2.3-4-5-4-8.3 0-3.8 1.3-7.4 4-10.7 1.4-1.7 3-3.2 4.8-4.7s3.8-2.8 5.8-4c2-1 4.2-1.7 6.2-2.2a27 27 0 0 1 5.7-.7c2 0 3.6.3 5.2.8s3.3 1.3 5 2.3V76H41v99.6c0 3.8-1.3 7.4-4 10.7-2.7 3.5-6.2 6.2-10.4 8s-8.3 3-12.2 3c-2 0-3.6-.3-5-.8s-3-1.2-4.4-2.2C2.2 192 .8 189.2.8 186c0-4 1.4-7.5 4.2-10.7 1.3-1.7 2.8-3.3 4.6-4.7s3.7-2.8 6-4c2.2-1 4.2-1.7 6.2-2.2a25 25 0 0 1 5.6-.7c3.8 0 7 1 10 3V63zm145-4.2V45.4h-60v-4H186v17.3h-3.5zM19 59V41.4h71.5v4H22.5V59H19zM103.7 44v-1.4l3-.8c.7-.2 1.4-.7 2-1.3.6-.5 1.2-1.2 1.7-2.2s.8-1.8.8-2.6c0-2.4-1.6-3.7-4.7-3.7-1.4 0-2.5.3-3.3 1s-1.7 1.8-2.6 3.4h-1.3c.4-1.3.8-2.3 1-2.8a12 12 0 0 1 1.5-1.8c1.3-1.3 3-2 5.3-2 2 0 3.5.5 4.8 1.6s2 2.4 2 4c0 1-.3 2.3-.8 3.4s-1.5 2.2-3 3.2c1 .4 1.5.8 1.8 1s.6.5 1 .8a8 8 0 0 1 1.5 1.9c.3.7.5 1.5.5 2.5 0 3-1 5.3-3.3 7-2.2 1.5-5 2.3-8 2.3-3 0-4.6-.7-4.6-2 0-.8.6-1.2 1.7-1.2.3 0 .6 0 1 .1s1 .3 1.6.8c1.5.6 2.7.8 3.6.4 1.4-.4 2.6-1 3.4-1.6s1.3-1.8 1.5-3.5c.3-1.5 0-2.8-.8-4s-2-2-3.2-2.3c-1.3-.3-2.7-.4-4.2-.4z" fill-rule="nonzero"/></svg> |
 
 `PLAY` is quite happy about being told to 'shut up'! A timed period during which no notes play is called a reset, and `"&"` is used to signify this. The length of reset it produces is the same as the current note length. To demonstrate, edit lines 10 and 20 to...
 
@@ -4970,27 +4971,27 @@ So, to send a little tune (in four-part harmony) to a four-voice synthesiser (af
 
 Finally, here is a brief list of the parameters that can be used in the string of a PLAY command, together with the values they may have...
 
-| STRING  | FUNCTION
-|---------|--------------------------------------------------------------------
-| `a`...`g`<br>`A`...`G` | Specifies the pitch of the note within the current octave range.
-| `$`        | Specifies that the note which follows must be flattened.
-| `#`        | Specifies that the note which follows must be sharpened.
-| `O`        | Specifies the octave number to be used (followed by 0 to 8).
-| `1`...`12` | Specifies the length of notes to be used.
-| `&`        | Specifies that a rest is to be played.
-| `_`        | Specifies that a tied note is to be played.
-| `N`        | Separates two numbers.
-| `V`        | Specifies the volume to be used (followed by 0 to 15).
-| `W`        | Specifies the volume effect is to be used in a string.
-| `U`        | Specifies that the volume effect is to be used in a string.
-| `X`        | Specifies duration of volume effect (followed by 0 to 65535).
-| `T`        | Specifies tempo of music (followed by 60 to 240).
-| `()`       | Specifies that enclosed phrase must be repeated.
-| `! !`      | Specifies that enclosed comment is to be skipped over.
-| `H`        | Specifies that the PLAY command must stop.
-| `M`        | Specifies the channel(s) to be used (followed by 1 to 63).
-| `Y`        | Specifies that MIDI channel is to be used (followed by 1 to 16).
-| `Z`        | Specifies MIDI programming code (followed by code number).
+| STRING                 | FUNCTION                                                         |
+| ---------------------- | ---------------------------------------------------------------- |
+| `a`...`g`<br>`A`...`G` | Specifies the pitch of the note within the current octave range. |
+| `$`                    | Specifies that the note which follows must be flattened.         |
+| `#`                    | Specifies that the note which follows must be sharpened.         |
+| `O`                    | Specifies the octave number to be used (followed by 0 to 8).     |
+| `1`...`12`             | Specifies the length of notes to be used.                        |
+| `&`                    | Specifies that a rest is to be played.                           |
+| `_`                    | Specifies that a tied note is to be played.                      |
+| `N`                    | Separates two numbers.                                           |
+| `V`                    | Specifies the volume to be used (followed by 0 to 15).           |
+| `W`                    | Specifies the volume effect is to be used in a string.           |
+| `U`                    | Specifies that the volume effect is to be used in a string.      |
+| `X`                    | Specifies duration of volume effect (followed by 0 to 65535).    |
+| `T`                    | Specifies tempo of music (followed by 60 to 240).                |
+| `()`                   | Specifies that enclosed phrase must be repeated.                 |
+| `! !`                  | Specifies that enclosed comment is to be skipped over.           |
+| `H`                    | Specifies that the PLAY command must stop.                       |
+| `M`                    | Specifies the channel(s) to be used (followed by 1 to 63).       |
+| `Y`                    | Specifies that MIDI channel is to be used (followed by 1 to 16). |
+| `Z`                    | Specifies MIDI programming code (followed by code number).       |
 
 ## <a id="part20"></a> Part 20<br>File operations
 
@@ -5004,11 +5005,11 @@ Subjects covered...
 - [Wildcards](#wildcards)
 - `MERGE`
 - [Deleting and renaming files](#deleting-and-renaming)
-- [File attributes](#file-attributes)
+- [File attributes](#file-attributes-p20)
 - `ERASE`, `MOVE`, `COPY`
 - [The RAMdisk](#ramdisk)
 - [Tape operations](#tape-operations)
-- [`VERIFY`](#verify)
+- [`VERIFY`](#verify-tape)
 - [Tape catalog: `CAT`](#tape-catalog)
 
 ### <a id="drives"></a> Drives
@@ -5234,7 +5235,7 @@ If you only want some of the files printed-out, you can also include a file spec
 
 Any form of the `CAT` command may also end with the word `EXP`, for example, `CAT "a:" EXP`. The `EXP` is short for expanded, and as the name might suggest, gives you a little more information about the ***attributes*** of the files on a disk. Not only will the expanded catalog display system files but also it will indicate whether files are set to write protected mode, archive mode or system status (these terms are explained in the section ahead entitled 'File attributes').
 
-(There is one other specialist use for the `CAT` command, and this will be dealt with in the section ahead entitled ['Tape catalog'](#tape-catalog.)
+(There is one other specialist use for the `CAT` command, and this will be dealt with in the section ahead entitled ['Tape catalog'](#tape-catalog).
 
 Now that you have successfully saved a program to drive A:, you can happily switch off or reset the ***+3***, or start a `NEW` program, knowing that you could always load in the saved program if you needed it. Remember - there is a difference between resetting the ***+3*** and using the `NEW` command - if you reset, all the _**+3**'s_ memory (RAM) will be cleared. This includes any files you may have saved on drive M:. When you use `NEW`, however, any files on drive M: will remain intact. As we have saved the program on the disk in drive A:, you can go ahead and press the **RESET** button, then release it. The usual opening menu will be displayed. Select `+3 BASIC` then type the command...
 
@@ -5414,7 +5415,7 @@ Unlike ERASE, you cannot include the wildcards `*` or `?` when renaming files.
 
 ...(for example) will fail with the error `No rename between drives` reported. Instead, you can use the COPY command (explained ahead) followed by `ERASE` to achieve the desired result.
 
-### <a id="file-attributes"></a> File attributes
+### <a id="file-attributes-p20"></a> File attributes
 
 `MOVE` has another use besides renaming files. It can also be used to change the ***attributes*** of a file. Attributes are bits of information associated with a file that tell you (and the computer) a little more about it.
 
@@ -5650,7 +5651,7 @@ Two seconds of the red and cyan stripes again, followed by another short burst o
 While the stripes appear on the screen, you can also hear the 'sound' of the data through your TV's speaker.
 
 Keep trying out the above `SAVE` command (without actually operating your cassette unit) until you can recognise these patterns. What's actually happening is that the information is being saved in two blocks and both blocks have a 'lead-in' (which corresponds to the red and cyan stripes) followed by the information itself (which corresponds to the blue and yellow stripes). The first block is a preliminary one containing the name and various other bits of information about the program, and the second is the program itself together with any variables present. The pause between them is just a gap.
-
+<a id="verify-tape"></a>
 Now let's actually save the program onto tape:
 
 1. Wind the tape to an area that is either blank, or that you are prepared to overwrite.
@@ -5685,7 +5686,7 @@ It could be that you mistyped the program name when you saved it (in which case 
 
 If there is a genuine mistake on the tape, then the ***+3*** will display the report `R Tape loading error` which means in this case that it failed to verify the program. Note that a slight fault on the tape itself (which might be almost inaudible with music) can wreak havoc with a computer program. Try saving the program again, perhaps on a different part of the tape (or a different tape altogether).
 
-### <a id="verify"></a> Verified OK
+### <a id="verified-ok"></a> Verified OK
 
 Now let us suppose that you have saved the program and successfully verified it. Loading it back into the memory is just a matter of typing...
 
@@ -6658,22 +6659,22 @@ When bit 0 is 0, bit 1 has no effect and bit 2 is a 'vertical' ROM switch (ie. b
 
 It is best to think of bit 4 in port 7FFDh and bit 2 in port 1FFDh combining to form a 2-bit number (0...3) which determines which ROM occupies the memory area 0000h...3FFFh. Bit 4 of port 7FFDh is the least significant bit and bit 2 of 1FFDh is the most significant bit.
 
-|Bit 2 of 1FFDh<br>(System variable:[BANK678](#bank678))|Bit 4 of 7FFDh<br>(System variable:[BANKM](#bankm))|Switched ROM at 0000h...3FFFh
-|:-:|:-:|:-:
-| 0 | 0 | 0
-| 0 | 1 | 1
-| 1 | 0 | 2
-| 1 | 1 | 3
+| Bit 2 of 1FFDh<br>(System variable:[BANK678](#bank678)) | Bit 4 of 7FFDh<br>(System variable:[BANKM](#bankm)) | Switched ROM at 0000h...3FFFh |
+| :-----------------------------------------------------: | :-------------------------------------------------: | :---------------------------: |
+|                            0                            |                          0                          |               0               |
+|                            0                            |                          1                          |               1               |
+|                            1                            |                          0                          |               2               |
+|                            1                            |                          1                          |               3               |
 
 ROM switching (with Bit 0 of 1FFDh set to 0)
 When bit 0 of port 1FFDh is set to 1, bits 1 and 2 switch in various RAM combinations that occupy the full 64K address space. These are not used by ***+3*** BASIC but are provided for authors of operating systems/games. When the [+3DOS 'DOS BOOT'](#dos-boot) routine is used, the bootstrap is loaded into the 4, 7, 6, 3 RAM page environment. The various ***+3*** extra RAM paging options are as follows:
 
-|Bit 2 of 1FFDh|Bit 1 of 1FFDh|RAM pages used<br>(0000h...3FFFh, 4000h...7FFFh, etc.)
-|:-:|:-:|:-:
-| 0 | 0 | 0, 1, 2, 3
-| 0 | 1 | 4, 5, 6, 7
-| 1 | 0 | 4, 5, 6, 3
-| 1 | 1 | 4, 7, 6, 3
+| Bit 2 of 1FFDh | Bit 1 of 1FFDh | RAM pages used<br>(0000h...3FFFh, 4000h...7FFFh, etc.) |
+| :------------: | :------------: | :----------------------------------------------------: |
+|       0        |       0        |                       0, 1, 2, 3                       |
+|       0        |       1        |                       4, 5, 6, 7                       |
+|       1        |       0        |                       4, 5, 6, 3                       |
+|       1        |       1        |                       4, 7, 6, 3                       |
 
 Extended memory paging (with Bit 0 of 1FFDh set to 1)
 
@@ -6706,112 +6707,112 @@ The number in column 1 is the number of bytes in the variable or routine. For a 
 
         PRINT PEEK n+256* PEEK (n+1)
 
-| NOTES | ADDRESS HEX (DECIMAL) | NAME | CONTENTS |
-|-------|-----------------------|------|----------|
-| R16   | 5B00h (23296) | <a id="swap"></a> SWAP    | Paging subroutine.
-| R17   | 5B10h (23312) | <a id="stoo"></a> STOO    | Paging subroutine. Entered with interrupts already disabled and AF, BC on the stack.
-| R9    | 5B21h (23329) | <a id="younger"></a> YOUNGER | Paging subroutine.
-| R16   | 5B2Ah (23338) | <a id="regnuoy"></a> REGNUOY | Paging subroutine.
-| R24   | 5B3Ah (23354) | <a id="onerr"></a>ONERR   | Paging subroutine.
-| X2    | 5B52h (23378) | <a id="oldhl"></a> OLDHL   | Temporary register store while switching ROMs.
-| X2    | 5B54h (23380) | <a id="oldbc"></a> OLDBC   | Temporary register store while switching ROMs.
-| X2    | 5B56h (23382) | <a id="oldaf"></a> OLDAF   | Temporary register store while switching ROMs.
-| N2    | 5B58h (23384) | <a id="target"></a> TARGET  | Subroutine address in ROM 3.
-| X2    | 5B5Ah (23386) | <a id="retaddr"></a> RETADDR | Return address in ROM 1.
-| X1    | 5B5Ch (23388) | <a id="bankm"></a> BANKM   | Copy of last byte output to I/O port 7FFDh (32765). This port is used to control the RAM paging (bits 0...2), the 'horizontal' ROM switch (0<->1 and 2<->3 - bit 4), screen selection (bit 3) and added I/O disabling (bit 5). This byte must be kept up to date with the last value output to the port if interrupts are enabled.
-| X1    | 5B5Dh (23389) | <a id="ramrst"></a> RAMRST  | RST 8 instruction. Used by ROM 1 to report old errors to ROM 3.
-| N1    | 5B5Eh (23390) | <a id="ramerr"></a> RAMERR  | Error number passed from ROM 1 to ROM 3. Also used by **SAVE/LOAD** as temporary drive store.
-| 2     | 5B5Fh (23391) | <a id="baud"></a> BAUD    | RS232 bit period in T states/26. Set by `FORMAT LINE`.
-| N2    | 5B61h (23393) | <a id="serfl"></a> SERFL   | Second-character-received-flag, and data.
-| N1    | 5B63h (23395) | <a id="col"></a> COL     | Current column from 1 to width.
-| 1     | 5B64h (23396) | <a id="width"></a> WIDTH   | Paper column width. Defaults to 80.
-| 1     | 5B65h (23397) | <a id="tvpars"></a> TVPARS  | Number of inline parameters expected by RS232.
-| 1     | 5B66h (23398) | <a id="flags3"></a> FLAGS3  | Various flags. Bits 0, 1, 6 and 7 unlikely to be useful. Bit 2 is set when tokens are to be expanded on printing. Bit 3 is set if print output is RS232. The default (at reset) is Centronics. Bit 4 is set if a disk interface is present. Bit 5 is set if drive B: is present.
-| X1    | 5B67h (23399) | <a id="bank678"></a> BANK678 | Copy of last byte output to I/O port 1FFDh (8189). This port is used to control the ***+3*** extended RAM and ROM switching (bits 0..2 - if bit 0 is 0 then bit 2 controls the 'vertical' ROM switch 0<->2 and 1<->3), the disk motor (bit 3) and Centronics strobe (bit 4). This byte must be kept up to date with the last value output to the port if interrupts are enabled.
-| N1    | 5B68h (23400) | <a id="xloc"></a> XLOC    | Holds X location when using the unexpanded `COPY` command.
-| N1    | 5B69h (23401) | <a id="yloc"></a> YLOC    | Holds Y location when using the unexpanded `COPY` command.
-| X2    | 5B6Ah (23402) | <a id="oldsp"></a> OLDSP   | Old SP (stack pointer) when [TSTACK](#tstack) is in use.
-| X2    | 5B6Ch (23404) | <a id="synret"></a> SYNRET  | Return address for [ONERR](#onerr).
-| 5     | 5B6Eh (23406) | <a id="lastv"></a> LASTV   | Last value printed by calculator.
-| 2     | 5B73h (23411) | <a id="rcline"></a> RCLINE  | Current line being renumbered.
-| 2     | 5B75h (23413) | <a id="rcstart"></a> RCSTART | Starting line number for renumbering. The default value is 10.
-| 2     | 5B77h (23415) | <a id="rcstep"></a> RCSTEP  | Incremental value for renumbering. The default is 10.
-| 1     | 5B79h (23417) | <a id="loddrv"></a> LODDRV  | Holds `T` if `LOAD`, `VERIFY`, `MERGE` are from tape, otherwise holds `A`, `B` or `M`.
-| 1     | 5B7Ah (23418) | <a id="savdrv"></a> SAVDRV  | Holds `T` if `SAVE` is to tape, otherwise holds `A`, `B` or `M`.
-| 1     | 5B7Bh (23419) | <a id="dumplf"></a> DUMPLF  | Holds the number of 1/216ths user for line feeds in `COPY EXP`. This is normally set to 9. If problems are experienced fitting a dump onto a sheet of A4 paper, `POKE` this location with 8. This will reduce the size of the dump and improve the aspect ratio slightly. (The quality of the dump will be marginally degraded, however.)
-| N8    | 5B7Ch (23420) | <a id="strip1"></a>STRIP1  | Stripe one bitmap.
-| N8    | 5B84h (23428) | <a id="strip2"></a>STRIP2  | Stripe two bitmap. This extends to 5B8Bh (23436).
-| X115  | 5BFFh (23551) | <a id="tstack"></a>TSTACK  | Temporary stack grows down from here. Used when RAM page 7 is switched in at top of memory (while executing the editor or calling +3DOS). it may safely go down to 5B8Ch (and across [STRIP1](#strip1) and [STRIP2](#strip2) if necessary). This guarantees at least 115 bytes of stack when BASIC calls +3DOS.
-| N8    | 5C00h (23552) | <a id="kstate"></a> KSTATE  | Used in reading the keyboard.
-| N1    | 5C08h (23560) | <a id="lastk"></a> LASTK   | Stores newly pressed key.
-| 1     | 5C09h (23561) | <a id="repdel"></a> REPDEL  | Time (in 50ths of a second) that a key must be held down before it repeats. This starts off at 35, but you can `POKE` in other values.
-| 1     | 5C0Ah (23562) | <a id="repper"></a> REPPER  | Delay (in 50ths of a second) between successive repeats of a key held down - initially 5.
-| N2    | 5C0Bh (23565) | <a id="defadd"></a> DEFADD  | Address of arguments of user defined function (if one is being evaluated), otherwise 0.
-| N1    | 5C0Dh (23566) | <a id="tvdata"></a> TVDATA  | Stores bytes of colour, `AT` and `TAB` controls going to TV.
-| X38   | 5C10h (23568) | <a id="strms"></a> STRMS   | Addresses of channels attached to streams.
-| 2     | 5C36h (23606) | <a id="chars"></a> CHARS   | 256 less than address of character set (which starts with space and carries on to ©). Normally in ROM, but you can set up your own in RAM and make CHARS point to it.
-| 1     | 5C38h (23608) | <a id="rasp"></a> RASP    | Length of warning buzz.
-| 1     | 5C39h (23609) | <a id="pip"></a> PIP     | Length of keyboard click.
-| 1     | 5C3Ah (23610) | <a id="errnr"></a> ERRNR   | 1 less than the report code. Starts off at 255 (for -1) so `PEEK 23610` gives 255.
-| X1    | 5C3Bh (23611) | <a id="flags"></a> FLAGS   | Various flags to control the BASIC system.
-| X1    | 5C3Ch (23612) | <a id="tvflag"></a> TVFLAG  | Flags associated with the TV.
-| X2    | 5C3Dh (23613) | <a id="errsp"></a> ERRSP   | Address of item on machine stack to be used as error return.
-| N2    | 5C3Fh (23615) | <a id="listsp"></a> LISTSP  | Address of return address from automatic listing.
-| N1    | 5C41h (23617) | <a id="mode"></a> MODE    | Specifies `K`, `L`, `C`, `E` or `G` cursor.
-| 2     | 5C42h (23618) | <a id="newppc"></a>NEWPPC  | Line to be jumped to.
-| 1     | 5C44h (23620) | <a id="nsppc"></a>NSPPC   | Statement number in line to be jumped to. Poking first [NEWPPC](#newppc) and then [NSPPC](#nsppc) forces a jump to a specified statement in a line.
-| 2     | 5C45h (23621) | <a id="ppc"></a> PPC     | Line number of statement currently being executed.
-| 1     | 5C47h (23623) | <a id="subppc"></a> SUBPPC  | Number within line of statement currently being executed.
-| 1     | 5C48h (23624) | <a id="bordcr"></a> BORDCR  | Border colour multiplied by 8; also contains the attributes normally used for the lower half of the screen.
-| 2     | 5C49h (23625) | <a id="eppc"></a> E PPC   | Number of current line (with program cursor).
-| X2    | 5C4Bh (23627) | <a id="vars"></a> VARS    | Address of variables.
-| N2    | 5C4Dh (23629) | <a id="dest"></a> DEST    | Address of variable in assignment.
-| X2    | 5C4Fh (23631) | <a id="chans"></a> CHANS   | Address of channel data.
-| X2    | 5C51h (23633) | <a id="curchl"></a> CURCHL  | Address of information currently being used for input and output.
-| X2    | 5C53h (23635) | <a id="prog"></a> PROG    | Address of BASIC program.
-| X2    | 5C57h (23637) | <a id="nxtlin"></a> NXTLIN  | Address of next line in program.
-| X2    | 5C57h (23639) | <a id="datadd"></a> DATADD  | Address of terminator of last `DATA` item.
-| X2    | 5C59h (23641) | <a id="eline"></a> E LINE  | Address of command being typed in.
-| 2     | 5C5Bh (23643) | <a id="kcur"></a> K CUR   | Address of cursor.
-| X2    | 5C5Dh (23645) | <a id="chadd"></a> CH ADD  | Address of the next character to be interpreted - the character after the argument of `PEEK`, or the NEWLINE at the end of a `POKE` statement.
-| 2     | 5C5Fh (23647) | <a id="xptr"></a> X PTR   | Address of the character after the `?` marker.
-| X2    | 5C61h (23649) | <a id="worksp"></a> WORKSP  | Address of temporary work space.
-| X2    | 5C63h (23651) | <a id="stkbot"></a> STKBOT  | Address of bottom of calculator stack.
-| X2    | 5C65h (23653) | <a id="stkend"></a> STKEND  | Address of start of spare space.
-| N1    | 5C67h (23655) | <a id="breg"></a> BREG    | Calculator's B register.
-| N2    | 5C68h (23656) | <a id="mem"></a> MEM     | Address of area used for calculator's memory (usually [MEMBOT](#membot), but not always).
-| 1     | 5C6Ah (23658) | <a id="flags2"></a> FLAGS2  | More flags. (Bit 3 set when **CAPS SHIFT** or **CAPS LOCK** is on.)
-| X1    | 5C6Bh (23659) | <a id="dfsz"></a> DF SZ   | The number of lines (including one blank line) in the lower part of the screen.
-| 2     | 5C6Ch (23660) | <a id="stop"></a> S TOP   | The number of the top program line in automatic listings.
-| 2     | 5C6Eh (23662) | <a id="oldppc"></a> OLDPPC  | Line number to which `CONTINUE` jumps.
-| 1     | 5C70h (23664) | <a id="osppc"></a> OSPPC   | Number within line of statement to which `CONTINUE` jumps.
-| N1    | 5C71h (23665) | <a id="flagx"></a> FLAGX   | Various flags.
-| N2    | 5C72h (23666) | <a id="strlen"></a> STRLEN  | Length of string type destination in assignment.
-| N2    | 5C74h (23668) | <a id="taddr"></a> T ADDR  | Address of next item in syntax table (very unlikely to be useful).
-| 2     | 5C76h (23670) | <a id="seed"></a> SEED    | The seed for `RND`. This is the variable that is set by `RANDOMIZE`.
-| 3     | 5C78h (23672) | <a id="frames"></a> FRAMES  | 3 byte (least significant byte first), frame counter incremented every 20ms.
-| 2     | 5C7Bh (23675) | <a id="udg"></a> UDG     | Address of first user-defined graphic. You can change this, for instance, to save space by having fewer user-defined characters.
-| 1     | 5C7Dh (23677) | <a id="coords"></a> COORDS  | X-coordinate of last point plotted.
-| 1     | 5C7Eh (23678) |         | Y-coordinate of last point plotted.
-| 1     | 5C7Fh (23679) | <a id="pposn"></a> P POSN  | 33-column number of printer position.
-| 1     | 5C80h (23680) | <a id="prcc"></a> PR CC   | Least significant byte of address of next position for `LPRINT` to print at (in printer buffer).
-| 1     | 5C81h (23681) |         | Not used.
-| 2     | 5C82h (23682) | <a id="echoe"></a> ECHO E  | 33-column number and 24-line number (in lower half) of end of input buffer.
-| 2     | 5C84h (23684) | <a id="dfcc"></a>DF CC   | Address in display file of `PRINT` position.
-| 2     | 5C86h (23686) | <a id="dfccl"></a> DF CCL  | Like [DF CC](#dfcc) for lower part of screen.
-| X1    | 5C88h (23688) | <a id="sposn"></a>S POSN  | 33-column number for `PRINT` position.
-| X1    | 5C89h (23689) |         | 24-line number for `PRINT` position.
-| X2    | 5C8Ah (23690) | <a id="sposnl"></a> SPOSNL  | Like [S POSN](#sposn) for lower part.
-| 1     | 5C8Ch (23691) | <a id="scrct"></a> SCR CT  | Counts scrolls - it is always 1 more than the number of scrolls that will be done before stopping with `scroll?`. If you keep poking this with a number bigger than 1 (say 255), the screen will scroll on and on without asking you.
-| 1     | 5C8Dh (23692) | <a id="attrp"></a>ATTR P  | Permanent current colours, etc., (as set up by colour statements).
-| 1     | 5C8Eh (23693) | <a id="maskp"></a>MASK P  | Used for transparent colours, etc. Any bit that is 1 shows that the corresponding attribute bit is taken not from [ATTR P](#attrp), but from what is already on the screen.
-| N1    | 5C8Fh (23694) | <a id="attrt"></a> ATTR T  | Temporary current colours, etc., (as set up by colour items).
-| N1    | 5C90h (23696) | <a id="maskt"></a> MASK T  | Like [MASK P](#maskp), but temporary.
-| 1     | 5C91h (23697) | <a id="pflag"></a> P FLAG  | More flags.
-| N30   | 5C92h (23698) | <a id="membot"></a>MEMBOT  | Calculator's memory area - used to store numbers that cannot conveniently be put on the calculator stack.
-| 2     | 5CB0h (23728) | <a id="nmiadd"></a> NMIADD  | Holds the address of the users NMI service routine. NOTE - On previous machines, this did not work correctly and these two bytes were documented as 'Not used.' Programs that user these two bytes for passing values may need to be modified.
-| 2     | 5CB2h (23730) | <a id="ramtop"></a> RAMTOP  | Address of last byte of BASIC system area.
-| 2     | 5CB4h (23732) | <a id="pramt"></a> P RAMT  | Address of last byte of physical RAM.
+| NOTES | ADDRESS HEX (DECIMAL) | NAME                         | CONTENTS                                                                                                                                                                                                                                                                                                                                                                         |
+| ----- | --------------------- | ---------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| R16   | 5B00h (23296)         | <a id="swap"></a> SWAP       | Paging subroutine.                                                                                                                                                                                                                                                                                                                                                               |
+| R17   | 5B10h (23312)         | <a id="stoo"></a> STOO       | Paging subroutine. Entered with interrupts already disabled and AF, BC on the stack.                                                                                                                                                                                                                                                                                             |
+| R9    | 5B21h (23329)         | <a id="younger"></a> YOUNGER | Paging subroutine.                                                                                                                                                                                                                                                                                                                                                               |
+| R16   | 5B2Ah (23338)         | <a id="regnuoy"></a> REGNUOY | Paging subroutine.                                                                                                                                                                                                                                                                                                                                                               |
+| R24   | 5B3Ah (23354)         | <a id="onerr"></a>ONERR      | Paging subroutine.                                                                                                                                                                                                                                                                                                                                                               |
+| X2    | 5B52h (23378)         | <a id="oldhl"></a> OLDHL     | Temporary register store while switching ROMs.                                                                                                                                                                                                                                                                                                                                   |
+| X2    | 5B54h (23380)         | <a id="oldbc"></a> OLDBC     | Temporary register store while switching ROMs.                                                                                                                                                                                                                                                                                                                                   |
+| X2    | 5B56h (23382)         | <a id="oldaf"></a> OLDAF     | Temporary register store while switching ROMs.                                                                                                                                                                                                                                                                                                                                   |
+| N2    | 5B58h (23384)         | <a id="target"></a> TARGET   | Subroutine address in ROM 3.                                                                                                                                                                                                                                                                                                                                                     |
+| X2    | 5B5Ah (23386)         | <a id="retaddr"></a> RETADDR | Return address in ROM 1.                                                                                                                                                                                                                                                                                                                                                         |
+| X1    | 5B5Ch (23388)         | <a id="bankm"></a> BANKM     | Copy of last byte output to I/O port 7FFDh (32765). This port is used to control the RAM paging (bits 0...2), the 'horizontal' ROM switch (0<->1 and 2<->3 - bit 4), screen selection (bit 3) and added I/O disabling (bit 5). This byte must be kept up to date with the last value output to the port if interrupts are enabled.                                               |
+| X1    | 5B5Dh (23389)         | <a id="ramrst"></a> RAMRST   | RST 8 instruction. Used by ROM 1 to report old errors to ROM 3.                                                                                                                                                                                                                                                                                                                  |
+| N1    | 5B5Eh (23390)         | <a id="ramerr"></a> RAMERR   | Error number passed from ROM 1 to ROM 3. Also used by **SAVE/LOAD** as temporary drive store.                                                                                                                                                                                                                                                                                    |
+| 2     | 5B5Fh (23391)         | <a id="baud"></a> BAUD       | RS232 bit period in T states/26. Set by `FORMAT LINE`.                                                                                                                                                                                                                                                                                                                           |
+| N2    | 5B61h (23393)         | <a id="serfl"></a> SERFL     | Second-character-received-flag, and data.                                                                                                                                                                                                                                                                                                                                        |
+| N1    | 5B63h (23395)         | <a id="col"></a> COL         | Current column from 1 to width.                                                                                                                                                                                                                                                                                                                                                  |
+| 1     | 5B64h (23396)         | <a id="width"></a> WIDTH     | Paper column width. Defaults to 80.                                                                                                                                                                                                                                                                                                                                              |
+| 1     | 5B65h (23397)         | <a id="tvpars"></a> TVPARS   | Number of inline parameters expected by RS232.                                                                                                                                                                                                                                                                                                                                   |
+| 1     | 5B66h (23398)         | <a id="flags3"></a> FLAGS3   | Various flags. Bits 0, 1, 6 and 7 unlikely to be useful. Bit 2 is set when tokens are to be expanded on printing. Bit 3 is set if print output is RS232. The default (at reset) is Centronics. Bit 4 is set if a disk interface is present. Bit 5 is set if drive B: is present.                                                                                                 |
+| X1    | 5B67h (23399)         | <a id="bank678"></a> BANK678 | Copy of last byte output to I/O port 1FFDh (8189). This port is used to control the ***+3*** extended RAM and ROM switching (bits 0..2 - if bit 0 is 0 then bit 2 controls the 'vertical' ROM switch 0<->2 and 1<->3), the disk motor (bit 3) and Centronics strobe (bit 4). This byte must be kept up to date with the last value output to the port if interrupts are enabled. |
+| N1    | 5B68h (23400)         | <a id="xloc"></a> XLOC       | Holds X location when using the unexpanded `COPY` command.                                                                                                                                                                                                                                                                                                                       |
+| N1    | 5B69h (23401)         | <a id="yloc"></a> YLOC       | Holds Y location when using the unexpanded `COPY` command.                                                                                                                                                                                                                                                                                                                       |
+| X2    | 5B6Ah (23402)         | <a id="oldsp"></a> OLDSP     | Old SP (stack pointer) when [TSTACK](#tstack) is in use.                                                                                                                                                                                                                                                                                                                         |
+| X2    | 5B6Ch (23404)         | <a id="synret"></a> SYNRET   | Return address for [ONERR](#onerr).                                                                                                                                                                                                                                                                                                                                              |
+| 5     | 5B6Eh (23406)         | <a id="lastv"></a> LASTV     | Last value printed by calculator.                                                                                                                                                                                                                                                                                                                                                |
+| 2     | 5B73h (23411)         | <a id="rcline"></a> RCLINE   | Current line being renumbered.                                                                                                                                                                                                                                                                                                                                                   |
+| 2     | 5B75h (23413)         | <a id="rcstart"></a> RCSTART | Starting line number for renumbering. The default value is 10.                                                                                                                                                                                                                                                                                                                   |
+| 2     | 5B77h (23415)         | <a id="rcstep"></a> RCSTEP   | Incremental value for renumbering. The default is 10.                                                                                                                                                                                                                                                                                                                            |
+| 1     | 5B79h (23417)         | <a id="loddrv"></a> LODDRV   | Holds `T` if `LOAD`, `VERIFY`, `MERGE` are from tape, otherwise holds `A`, `B` or `M`.                                                                                                                                                                                                                                                                                           |
+| 1     | 5B7Ah (23418)         | <a id="savdrv"></a> SAVDRV   | Holds `T` if `SAVE` is to tape, otherwise holds `A`, `B` or `M`.                                                                                                                                                                                                                                                                                                                 |
+| 1     | 5B7Bh (23419)         | <a id="dumplf"></a> DUMPLF   | Holds the number of 1/216ths user for line feeds in `COPY EXP`. This is normally set to 9. If problems are experienced fitting a dump onto a sheet of A4 paper, `POKE` this location with 8. This will reduce the size of the dump and improve the aspect ratio slightly. (The quality of the dump will be marginally degraded, however.)                                        |
+| N8    | 5B7Ch (23420)         | <a id="strip1"></a>STRIP1    | Stripe one bitmap.                                                                                                                                                                                                                                                                                                                                                               |
+| N8    | 5B84h (23428)         | <a id="strip2"></a>STRIP2    | Stripe two bitmap. This extends to 5B8Bh (23436).                                                                                                                                                                                                                                                                                                                                |
+| X115  | 5BFFh (23551)         | <a id="tstack"></a>TSTACK    | Temporary stack grows down from here. Used when RAM page 7 is switched in at top of memory (while executing the editor or calling +3DOS). it may safely go down to 5B8Ch (and across [STRIP1](#strip1) and [STRIP2](#strip2) if necessary). This guarantees at least 115 bytes of stack when BASIC calls +3DOS.                                                                  |
+| N8    | 5C00h (23552)         | <a id="kstate"></a> KSTATE   | Used in reading the keyboard.                                                                                                                                                                                                                                                                                                                                                    |
+| N1    | 5C08h (23560)         | <a id="lastk"></a> LASTK     | Stores newly pressed key.                                                                                                                                                                                                                                                                                                                                                        |
+| 1     | 5C09h (23561)         | <a id="repdel"></a> REPDEL   | Time (in 50ths of a second) that a key must be held down before it repeats. This starts off at 35, but you can `POKE` in other values.                                                                                                                                                                                                                                           |
+| 1     | 5C0Ah (23562)         | <a id="repper"></a> REPPER   | Delay (in 50ths of a second) between successive repeats of a key held down - initially 5.                                                                                                                                                                                                                                                                                        |
+| N2    | 5C0Bh (23565)         | <a id="defadd"></a> DEFADD   | Address of arguments of user defined function (if one is being evaluated), otherwise 0.                                                                                                                                                                                                                                                                                          |
+| N1    | 5C0Dh (23566)         | <a id="tvdata"></a> TVDATA   | Stores bytes of colour, `AT` and `TAB` controls going to TV.                                                                                                                                                                                                                                                                                                                     |
+| X38   | 5C10h (23568)         | <a id="strms"></a> STRMS     | Addresses of channels attached to streams.                                                                                                                                                                                                                                                                                                                                       |
+| 2     | 5C36h (23606)         | <a id="chars"></a> CHARS     | 256 less than address of character set (which starts with space and carries on to ©). Normally in ROM, but you can set up your own in RAM and make CHARS point to it.                                                                                                                                                                                                            |
+| 1     | 5C38h (23608)         | <a id="rasp"></a> RASP       | Length of warning buzz.                                                                                                                                                                                                                                                                                                                                                          |
+| 1     | 5C39h (23609)         | <a id="pip"></a> PIP         | Length of keyboard click.                                                                                                                                                                                                                                                                                                                                                        |
+| 1     | 5C3Ah (23610)         | <a id="errnr"></a> ERRNR     | 1 less than the report code. Starts off at 255 (for -1) so `PEEK 23610` gives 255.                                                                                                                                                                                                                                                                                               |
+| X1    | 5C3Bh (23611)         | <a id="flags"></a> FLAGS     | Various flags to control the BASIC system.                                                                                                                                                                                                                                                                                                                                       |
+| X1    | 5C3Ch (23612)         | <a id="tvflag"></a> TVFLAG   | Flags associated with the TV.                                                                                                                                                                                                                                                                                                                                                    |
+| X2    | 5C3Dh (23613)         | <a id="errsp"></a> ERRSP     | Address of item on machine stack to be used as error return.                                                                                                                                                                                                                                                                                                                     |
+| N2    | 5C3Fh (23615)         | <a id="listsp"></a> LISTSP   | Address of return address from automatic listing.                                                                                                                                                                                                                                                                                                                                |
+| N1    | 5C41h (23617)         | <a id="mode"></a> MODE       | Specifies `K`, `L`, `C`, `E` or `G` cursor.                                                                                                                                                                                                                                                                                                                                      |
+| 2     | 5C42h (23618)         | <a id="newppc"></a>NEWPPC    | Line to be jumped to.                                                                                                                                                                                                                                                                                                                                                            |
+| 1     | 5C44h (23620)         | <a id="nsppc"></a>NSPPC      | Statement number in line to be jumped to. Poking first [NEWPPC](#newppc) and then [NSPPC](#nsppc) forces a jump to a specified statement in a line.                                                                                                                                                                                                                              |
+| 2     | 5C45h (23621)         | <a id="ppc"></a> PPC         | Line number of statement currently being executed.                                                                                                                                                                                                                                                                                                                               |
+| 1     | 5C47h (23623)         | <a id="subppc"></a> SUBPPC   | Number within line of statement currently being executed.                                                                                                                                                                                                                                                                                                                        |
+| 1     | 5C48h (23624)         | <a id="bordcr"></a> BORDCR   | Border colour multiplied by 8; also contains the attributes normally used for the lower half of the screen.                                                                                                                                                                                                                                                                      |
+| 2     | 5C49h (23625)         | <a id="eppc"></a> E PPC      | Number of current line (with program cursor).                                                                                                                                                                                                                                                                                                                                    |
+| X2    | 5C4Bh (23627)         | <a id="vars"></a> VARS       | Address of variables.                                                                                                                                                                                                                                                                                                                                                            |
+| N2    | 5C4Dh (23629)         | <a id="dest"></a> DEST       | Address of variable in assignment.                                                                                                                                                                                                                                                                                                                                               |
+| X2    | 5C4Fh (23631)         | <a id="chans"></a> CHANS     | Address of channel data.                                                                                                                                                                                                                                                                                                                                                         |
+| X2    | 5C51h (23633)         | <a id="curchl"></a> CURCHL   | Address of information currently being used for input and output.                                                                                                                                                                                                                                                                                                                |
+| X2    | 5C53h (23635)         | <a id="prog"></a> PROG       | Address of BASIC program.                                                                                                                                                                                                                                                                                                                                                        |
+| X2    | 5C57h (23637)         | <a id="nxtlin"></a> NXTLIN   | Address of next line in program.                                                                                                                                                                                                                                                                                                                                                 |
+| X2    | 5C57h (23639)         | <a id="datadd"></a> DATADD   | Address of terminator of last `DATA` item.                                                                                                                                                                                                                                                                                                                                       |
+| X2    | 5C59h (23641)         | <a id="eline"></a> E LINE    | Address of command being typed in.                                                                                                                                                                                                                                                                                                                                               |
+| 2     | 5C5Bh (23643)         | <a id="kcur"></a> K CUR      | Address of cursor.                                                                                                                                                                                                                                                                                                                                                               |
+| X2    | 5C5Dh (23645)         | <a id="chadd"></a> CH ADD    | Address of the next character to be interpreted - the character after the argument of `PEEK`, or the NEWLINE at the end of a `POKE` statement.                                                                                                                                                                                                                                   |
+| 2     | 5C5Fh (23647)         | <a id="xptr"></a> X PTR      | Address of the character after the `?` marker.                                                                                                                                                                                                                                                                                                                                   |
+| X2    | 5C61h (23649)         | <a id="worksp"></a> WORKSP   | Address of temporary work space.                                                                                                                                                                                                                                                                                                                                                 |
+| X2    | 5C63h (23651)         | <a id="stkbot"></a> STKBOT   | Address of bottom of calculator stack.                                                                                                                                                                                                                                                                                                                                           |
+| X2    | 5C65h (23653)         | <a id="stkend"></a> STKEND   | Address of start of spare space.                                                                                                                                                                                                                                                                                                                                                 |
+| N1    | 5C67h (23655)         | <a id="breg"></a> BREG       | Calculator's B register.                                                                                                                                                                                                                                                                                                                                                         |
+| N2    | 5C68h (23656)         | <a id="mem"></a> MEM         | Address of area used for calculator's memory (usually [MEMBOT](#membot), but not always).                                                                                                                                                                                                                                                                                        |
+| 1     | 5C6Ah (23658)         | <a id="flags2"></a> FLAGS2   | More flags. (Bit 3 set when **CAPS SHIFT** or **CAPS LOCK** is on.)                                                                                                                                                                                                                                                                                                              |
+| X1    | 5C6Bh (23659)         | <a id="dfsz"></a> DF SZ      | The number of lines (including one blank line) in the lower part of the screen.                                                                                                                                                                                                                                                                                                  |
+| 2     | 5C6Ch (23660)         | <a id="stop"></a> S TOP      | The number of the top program line in automatic listings.                                                                                                                                                                                                                                                                                                                        |
+| 2     | 5C6Eh (23662)         | <a id="oldppc"></a> OLDPPC   | Line number to which `CONTINUE` jumps.                                                                                                                                                                                                                                                                                                                                           |
+| 1     | 5C70h (23664)         | <a id="osppc"></a> OSPPC     | Number within line of statement to which `CONTINUE` jumps.                                                                                                                                                                                                                                                                                                                       |
+| N1    | 5C71h (23665)         | <a id="flagx"></a> FLAGX     | Various flags.                                                                                                                                                                                                                                                                                                                                                                   |
+| N2    | 5C72h (23666)         | <a id="strlen"></a> STRLEN   | Length of string type destination in assignment.                                                                                                                                                                                                                                                                                                                                 |
+| N2    | 5C74h (23668)         | <a id="taddr"></a> T ADDR    | Address of next item in syntax table (very unlikely to be useful).                                                                                                                                                                                                                                                                                                               |
+| 2     | 5C76h (23670)         | <a id="seed"></a> SEED       | The seed for `RND`. This is the variable that is set by `RANDOMIZE`.                                                                                                                                                                                                                                                                                                             |
+| 3     | 5C78h (23672)         | <a id="frames"></a> FRAMES   | 3 byte (least significant byte first), frame counter incremented every 20ms.                                                                                                                                                                                                                                                                                                     |
+| 2     | 5C7Bh (23675)         | <a id="udg"></a> UDG         | Address of first user-defined graphic. You can change this, for instance, to save space by having fewer user-defined characters.                                                                                                                                                                                                                                                 |
+| 1     | 5C7Dh (23677)         | <a id="coords"></a> COORDS   | X-coordinate of last point plotted.                                                                                                                                                                                                                                                                                                                                              |
+| 1     | 5C7Eh (23678)         |                              | Y-coordinate of last point plotted.                                                                                                                                                                                                                                                                                                                                              |
+| 1     | 5C7Fh (23679)         | <a id="pposn"></a> P POSN    | 33-column number of printer position.                                                                                                                                                                                                                                                                                                                                            |
+| 1     | 5C80h (23680)         | <a id="prcc"></a> PR CC      | Least significant byte of address of next position for `LPRINT` to print at (in printer buffer).                                                                                                                                                                                                                                                                                 |
+| 1     | 5C81h (23681)         |                              | Not used.                                                                                                                                                                                                                                                                                                                                                                        |
+| 2     | 5C82h (23682)         | <a id="echoe"></a> ECHO E    | 33-column number and 24-line number (in lower half) of end of input buffer.                                                                                                                                                                                                                                                                                                      |
+| 2     | 5C84h (23684)         | <a id="dfcc"></a>DF CC       | Address in display file of `PRINT` position.                                                                                                                                                                                                                                                                                                                                     |
+| 2     | 5C86h (23686)         | <a id="dfccl"></a> DF CCL    | Like [DF CC](#dfcc) for lower part of screen.                                                                                                                                                                                                                                                                                                                                    |
+| X1    | 5C88h (23688)         | <a id="sposn"></a>S POSN     | 33-column number for `PRINT` position.                                                                                                                                                                                                                                                                                                                                           |
+| X1    | 5C89h (23689)         |                              | 24-line number for `PRINT` position.                                                                                                                                                                                                                                                                                                                                             |
+| X2    | 5C8Ah (23690)         | <a id="sposnl"></a> SPOSNL   | Like [S POSN](#sposn) for lower part.                                                                                                                                                                                                                                                                                                                                            |
+| 1     | 5C8Ch (23691)         | <a id="scrct"></a> SCR CT    | Counts scrolls - it is always 1 more than the number of scrolls that will be done before stopping with `scroll?`. If you keep poking this with a number bigger than 1 (say 255), the screen will scroll on and on without asking you.                                                                                                                                            |
+| 1     | 5C8Dh (23692)         | <a id="attrp"></a>ATTR P     | Permanent current colours, etc., (as set up by colour statements).                                                                                                                                                                                                                                                                                                               |
+| 1     | 5C8Eh (23693)         | <a id="maskp"></a>MASK P     | Used for transparent colours, etc. Any bit that is 1 shows that the corresponding attribute bit is taken not from [ATTR P](#attrp), but from what is already on the screen.                                                                                                                                                                                                      |
+| N1    | 5C8Fh (23694)         | <a id="attrt"></a> ATTR T    | Temporary current colours, etc., (as set up by colour items).                                                                                                                                                                                                                                                                                                                    |
+| N1    | 5C90h (23696)         | <a id="maskt"></a> MASK T    | Like [MASK P](#maskp), but temporary.                                                                                                                                                                                                                                                                                                                                            |
+| 1     | 5C91h (23697)         | <a id="pflag"></a> P FLAG    | More flags.                                                                                                                                                                                                                                                                                                                                                                      |
+| N30   | 5C92h (23698)         | <a id="membot"></a>MEMBOT    | Calculator's memory area - used to store numbers that cannot conveniently be put on the calculator stack.                                                                                                                                                                                                                                                                        |
+| 2     | 5CB0h (23728)         | <a id="nmiadd"></a> NMIADD   | Holds the address of the users NMI service routine. NOTE - On previous machines, this did not work correctly and these two bytes were documented as 'Not used.' Programs that user these two bytes for passing values may need to be modified.                                                                                                                                   |
+| 2     | 5CB2h (23730)         | <a id="ramtop"></a> RAMTOP   | Address of last byte of BASIC system area.                                                                                                                                                                                                                                                                                                                                       |
+| 2     | 5CB4h (23732)         | <a id="pramt"></a> P RAMT    | Address of last byte of physical RAM.                                                                                                                                                                                                                                                                                                                                            |
 
 ## <a id="part26"></a> Part 26<br>Using machine code
 
@@ -7333,71 +7334,71 @@ The following is a list of the routines in each of these categories (together wi
 
 #### Essential filing system routines
 
-| NAME OF ROUTINE                     | FUNCTION
-|-------------------------------------|----------
-| [DOS INITIALISE](#dos-initialise)   | Initialise +3DOS
-| [DOS VERSION](#dos-version)         | Get +3DOS issue and version numbers
-| [DOS OPEN](#dos-open)               | Create and/or open a file
-| [DOS CLOSE](#dos-close)             | Close a file
-| [DOS ABANDON](#dos-abandon)         | Abandon a file
-| [DOS REF HEAD](#dos-ref-head)       | Point at the header data for this file
-| [DOS READ](#dos-read)               | Read bytes into memory
-| [DOS WRITE](#dos-write)             | Write bytes from memory
-| [DOS BYTE READ](#dos-byte-read)     | Read a byte
-| [DOS BYTE WRITE](#dos-byte-write)   | Write a byte
-| [DOS CATALOG](#dos-catalog)         | Catalog disk directory
-| [DOS FREE SPACE](#dos-free-space)   | Free space on disk
-| [DOS DELETE](#dos-delete)           | Delete a file
-| [DOS RENAME](#dos-rename)           | Rename a file
-| [DOS BOOT](#dos-boot)               | Boot an operating system or other program
-| [DOS SET DRIVE](#dos-set-drive)     | Set/get default drive
-| [DOS SET USER](#dos-set-user)       | Set/get default user number
+| NAME OF ROUTINE                   | FUNCTION                                  |
+| --------------------------------- | ----------------------------------------- |
+| [DOS INITIALISE](#dos-initialise) | Initialise +3DOS                          |
+| [DOS VERSION](#dos-version)       | Get +3DOS issue and version numbers       |
+| [DOS OPEN](#dos-open)             | Create and/or open a file                 |
+| [DOS CLOSE](#dos-close)           | Close a file                              |
+| [DOS ABANDON](#dos-abandon)       | Abandon a file                            |
+| [DOS REF HEAD](#dos-ref-head)     | Point at the header data for this file    |
+| [DOS READ](#dos-read)             | Read bytes into memory                    |
+| [DOS WRITE](#dos-write)           | Write bytes from memory                   |
+| [DOS BYTE READ](#dos-byte-read)   | Read a byte                               |
+| [DOS BYTE WRITE](#dos-byte-write) | Write a byte                              |
+| [DOS CATALOG](#dos-catalog)       | Catalog disk directory                    |
+| [DOS FREE SPACE](#dos-free-space) | Free space on disk                        |
+| [DOS DELETE](#dos-delete)         | Delete a file                             |
+| [DOS RENAME](#dos-rename)         | Rename a file                             |
+| [DOS BOOT](#dos-boot)             | Boot an operating system or other program |
+| [DOS SET DRIVE](#dos-set-drive)   | Set/get default drive                     |
+| [DOS SET USER](#dos-set-user)     | Set/get default user number               |
 
 #### Additional routines for games and operating systems
 
-| NAME OF ROUTINE                     | FUNCTION
-|-------------------------------------|----------
-| [DOS GET POSITION](#dos-get-pos)    | Get file pointer for random access
-| [DOS SET POSITION](#dos-set-pos)    | Set file pointer for random access
-| [DOS GET EOF](#dos-get-eof)         | Get end of file position for random access
-| [DOS GET 1346](#dos-get-1346)       | Get memory usage in pages 1, 3, 4, 6
-| [DOS SET 1346](#dos-set-1346)       | Re-allocate memory usage in pages 1, 3, 4, 6
-| [DOS FLUSH](#dos-flush)             | Bring disk up to date
-| [DOS SET ACCESS](#dos-set-access)   | Change open file's access mode
-| [DOS SET ATTRIBUTES](#dos-set-attr) | Change a file's attributes
-| [DOS OPEN DRIVE](#dos-open-drive)   | Open a drive as a single file
-| [DOS SET MESSAGE](#dos-set-msg)     | Enable/disable error messages
-| [DOS REF XDPB](#dos-ref-xdpb)       | Point at XDPB for low level disk access
-| [DOS MAP B](#dos-map-b)             | Map B: onto unit 0 or 1
+| NAME OF ROUTINE                     | FUNCTION                                     |
+| ----------------------------------- | -------------------------------------------- |
+| [DOS GET POSITION](#dos-get-pos)    | Get file pointer for random access           |
+| [DOS SET POSITION](#dos-set-pos)    | Set file pointer for random access           |
+| [DOS GET EOF](#dos-get-eof)         | Get end of file position for random access   |
+| [DOS GET 1346](#dos-get-1346)       | Get memory usage in pages 1, 3, 4, 6         |
+| [DOS SET 1346](#dos-set-1346)       | Re-allocate memory usage in pages 1, 3, 4, 6 |
+| [DOS FLUSH](#dos-flush)             | Bring disk up to date                        |
+| [DOS SET ACCESS](#dos-set-access)   | Change open file's access mode               |
+| [DOS SET ATTRIBUTES](#dos-set-attr) | Change a file's attributes                   |
+| [DOS OPEN DRIVE](#dos-open-drive)   | Open a drive as a single file                |
+| [DOS SET MESSAGE](#dos-set-msg)     | Enable/disable error messages                |
+| [DOS REF XDPB](#dos-ref-xdpb)       | Point at XDPB for low level disk access      |
+| [DOS MAP B](#dos-map-b)             | Map B: onto unit 0 or 1                      |
 
 #### Low level floppy disk driving routines
 
-| NAME OF ROUTINE                     | FUNCTION
-|-------------------------------------|----------
-| [DD INTERFACE](#dd-interface)       | Is the floppy disk driver interface present?
-| [DD INIT](#dd-init)                 | Initialise disk driver
-| [DD SETUP](#dd-setup)               | Specify drive parameters
-| [DD SET RETRY](#dd-set-retry)       | Set try/retry count
-| [DD READ SECTOR](#dd-read-sector)   | Read a sector
-| [DD WRITE SECTOR](#dd-write-sector) | Write a sector
-| [DD CHECK SECTOR](#dd-check-sector) | Check a sector
-| [DD FORMAT](#dd-format)             | Format a track
-| [DD READ ID](#dd-read-id)           | Read a sector identifier
-| [DD TEST UNSUITABLE](#dd-test-suit) | Test media suitability
-| [DD LOGIN](#dd-login)               | Log in disk, initialise XDPB
-| [DD SEL FORMAT](#dd-sel-format)     | Pre-initialise XDPB for DD FORMAT
-| [DD ASK 1](#dd-ask-1)               | Is unit 1 (external drive) present?
-| [DD DRIVE STATUS](#dd-drive-status) | Fetch drive status
-| [DD EQUIPMENT](#dd-equipment)       | What type of drive?
-| [DD ENCODE](#dd-encode)             | Set intercept routine for copy protection
-| [DD L XDPB](#dd-l-xdpb)             | Initialise an XDPB from a disk specification
-| [DD L DPB](#dd-l-dpb)               | Initialise a DPB from a disk specification
-| [DD L SEEK](#dd-l-seek)             | µPD765A seek driver
-| [DD L READ](#dd-l-read)             | µPD765A read driver
-| [DD L WRITE](#dd-l-write)           | µPD765A write driver
-| [DD L ON MOTOR](#dd-l-on-motor)     | Motor on, wait for motor-on time
-| [DD L T OFF MOTOR](#dd-t-off-motor) | Start the motor-off ticker
-| [DD L OFF MOTOR](#dd-l-off-motor)   | Turn the motor off
+| NAME OF ROUTINE                     | FUNCTION                                     |
+| ----------------------------------- | -------------------------------------------- |
+| [DD INTERFACE](#dd-interface)       | Is the floppy disk driver interface present? |
+| [DD INIT](#dd-init)                 | Initialise disk driver                       |
+| [DD SETUP](#dd-setup)               | Specify drive parameters                     |
+| [DD SET RETRY](#dd-set-retry)       | Set try/retry count                          |
+| [DD READ SECTOR](#dd-read-sector)   | Read a sector                                |
+| [DD WRITE SECTOR](#dd-write-sector) | Write a sector                               |
+| [DD CHECK SECTOR](#dd-check-sector) | Check a sector                               |
+| [DD FORMAT](#dd-format)             | Format a track                               |
+| [DD READ ID](#dd-read-id)           | Read a sector identifier                     |
+| [DD TEST UNSUITABLE](#dd-test-suit) | Test media suitability                       |
+| [DD LOGIN](#dd-login)               | Log in disk, initialise XDPB                 |
+| [DD SEL FORMAT](#dd-sel-format)     | Pre-initialise XDPB for DD FORMAT            |
+| [DD ASK 1](#dd-ask-1)               | Is unit 1 (external drive) present?          |
+| [DD DRIVE STATUS](#dd-drive-status) | Fetch drive status                           |
+| [DD EQUIPMENT](#dd-equipment)       | What type of drive?                          |
+| [DD ENCODE](#dd-encode)             | Set intercept routine for copy protection    |
+| [DD L XDPB](#dd-l-xdpb)             | Initialise an XDPB from a disk specification |
+| [DD L DPB](#dd-l-dpb)               | Initialise a DPB from a disk specification   |
+| [DD L SEEK](#dd-l-seek)             | µPD765A seek driver                          |
+| [DD L READ](#dd-l-read)             | µPD765A read driver                          |
+| [DD L WRITE](#dd-l-write)           | µPD765A write driver                         |
+| [DD L ON MOTOR](#dd-l-on-motor)     | Motor on, wait for motor-on time             |
+| [DD L T OFF MOTOR](#dd-t-off-motor) | Start the motor-off ticker                   |
+| [DD L OFF MOTOR](#dd-l-off-motor)   | Turn the motor off                           |
 
 ### Games and other non-BASIC programs
 
@@ -7522,20 +7523,20 @@ Logical sectors hide the actual physical sector numbers. Logical sector numbers 
 
 The PCW range disk format (used by the +3) is, in fact, a family of formats the precise member of which is defined in the 'disk specification' which is recorded on bytes 0...15 of sector 1, track 0 side 0. The format used on the ***+3*** is the same as disk type 0 below. The sector holding this specification is also that used for a bootstrap program. An example of how it may be set up is shown in the second example in [part 26 of this chapter](#part26).
 
-| BYTE          | USAGE
-|---------------|------
-| Byte 0        | Disk type<ol start=0><li>Standard PCW range DD SS ST (and +3)</li><li>Standard CPC range DD SS ST system format</li><li>Standard CPC range DD SS ST data only format</li><li>Standard PCW range DD DS DT</li></ol>All other values reserved
-| Byte 1        | Bits 0...1 Sidedness<ol start=0><li>Single sided</li><li>Double sided (alternating sides)</li><li>Double sided (successive sides)</li></ol>Bits 2...6 Reserved (set to 0)<br>Bit 7 Double track
-| Byte 2        | Number of tracks per side
-| Byte 3        | Number of sectors per track
-| Byte 4        | Log<sub>2</sub>(sector size) - 7
-| Byte 5        | Number of reserved tracks
-| Byte 6        | Log<sub>2</sub>(block size / 128)
-| Byte 7        | Number of directory blocks
-| Byte 8        | Gap length (read/write)
-| Byte 9        | Gap length (format)
-| Bytes 10...14 | Reserved
-| Byte 15       | Checksum (used only if disk is bootable)
+| BYTE          | USAGE                                                                                                                                                                                                                                       |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Byte 0        | Disk type<ol start=0><li>Standard PCW range DD SS ST (and +3)</li><li>Standard CPC range DD SS ST system format</li><li>Standard CPC range DD SS ST data only format</li><li>Standard PCW range DD DS DT</li></ol>All other values reserved |
+| Byte 1        | Bits 0...1 Sidedness<ol start=0><li>Single sided</li><li>Double sided (alternating sides)</li><li>Double sided (successive sides)</li></ol>Bits 2...6 Reserved (set to 0)<br>Bit 7 Double track                                             |
+| Byte 2        | Number of tracks per side                                                                                                                                                                                                                   |
+| Byte 3        | Number of sectors per track                                                                                                                                                                                                                 |
+| Byte 4        | Log<sub>2</sub>(sector size) - 7                                                                                                                                                                                                            |
+| Byte 5        | Number of reserved tracks                                                                                                                                                                                                                   |
+| Byte 6        | Log<sub>2</sub>(block size / 128)                                                                                                                                                                                                           |
+| Byte 7        | Number of directory blocks                                                                                                                                                                                                                  |
+| Byte 8        | Gap length (read/write)                                                                                                                                                                                                                     |
+| Byte 9        | Gap length (format)                                                                                                                                                                                                                         |
+| Bytes 10...14 | Reserved                                                                                                                                                                                                                                    |
+| Byte 15       | Checksum (used only if disk is bootable)                                                                                                                                                                                                    |
 
 When a disk is logged on, the disk specification is used to initialise the relevant XDPB.
 
@@ -7545,29 +7546,29 @@ Associated with each (logical) drive is an extended disk parameter block (XDPB).
 
 XDPB structure:
 
-| BYTE          | USAGE
-|---------------|------
-| Bytes 0...1   | SPT records per track
-| Byte 2        | BSH log<sub>2</sub> (block size / 128)
-| Byte 3        | BLM block size / 128 - 1
-| Byte 4        | EXM extent mask
-| Bytes 5...6   | DSM last block number
-| Bytes 7...8   | DRM last directory entry number
-| Byte 9        | AL0 directory bit map
-| Byte 10       | AL1 directory bit map
-| Bytes 11...12 | CKS size of checksum vector (bit 15 = permanent)
-| Bytes 13...14 | OFF number of reserved tracks
-| Byte 15       | PSH log<sub>2</sub> (sector size / 128)
-| Byte 16       | PHM sector size / 128 - 1
-| Byte 17       | Bits 0...1 Sidedness<ol start=0><li>Single sided</li><li>Double sided (alternating sides)</li><li>Double sided (successive sides)</li></ol>Bits 2...6 Reserved (set to 0)<br>Bit 7 Double track
-| Byte 18       | Number of tracks per side
-| Byte 19       | Number of sectors per track
-| Byte 20       | First sector number
-| Bytes 21...22 | Sector size
-| Byte 23       | Gap length (read/write)
-| Byte 24       | Gap length (format)
-| Byte 25       | Bit 7 Multi-track operation<ol start=0><li>single-track</li><li>multi-track</li></ol>Bit 6 Modulation mode<ol start=0><li>FM mode</li><li>MFM mode</li></ol>Bit 5 Skip deleted data address mark<ol start=0><li>don't skip deleted address mark</li><li>skip deleted data address mark</li></ol>Bits 0...4 = 0
-| Byte 26     | Freeze flag<br>00h (0) = auto-detect disk format<br>FFh (255) = don't auto-detect disk format
+| BYTE          | USAGE                                                                                                                                                                                                                                                                                                          |
+| ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Bytes 0...1   | SPT records per track                                                                                                                                                                                                                                                                                          |
+| Byte 2        | BSH log<sub>2</sub> (block size / 128)                                                                                                                                                                                                                                                                         |
+| Byte 3        | BLM block size / 128 - 1                                                                                                                                                                                                                                                                                       |
+| Byte 4        | EXM extent mask                                                                                                                                                                                                                                                                                                |
+| Bytes 5...6   | DSM last block number                                                                                                                                                                                                                                                                                          |
+| Bytes 7...8   | DRM last directory entry number                                                                                                                                                                                                                                                                                |
+| Byte 9        | AL0 directory bit map                                                                                                                                                                                                                                                                                          |
+| Byte 10       | AL1 directory bit map                                                                                                                                                                                                                                                                                          |
+| Bytes 11...12 | CKS size of checksum vector (bit 15 = permanent)                                                                                                                                                                                                                                                               |
+| Bytes 13...14 | OFF number of reserved tracks                                                                                                                                                                                                                                                                                  |
+| Byte 15       | PSH log<sub>2</sub> (sector size / 128)                                                                                                                                                                                                                                                                        |
+| Byte 16       | PHM sector size / 128 - 1                                                                                                                                                                                                                                                                                      |
+| Byte 17       | Bits 0...1 Sidedness<ol start=0><li>Single sided</li><li>Double sided (alternating sides)</li><li>Double sided (successive sides)</li></ol>Bits 2...6 Reserved (set to 0)<br>Bit 7 Double track                                                                                                                |
+| Byte 18       | Number of tracks per side                                                                                                                                                                                                                                                                                      |
+| Byte 19       | Number of sectors per track                                                                                                                                                                                                                                                                                    |
+| Byte 20       | First sector number                                                                                                                                                                                                                                                                                            |
+| Bytes 21...22 | Sector size                                                                                                                                                                                                                                                                                                    |
+| Byte 23       | Gap length (read/write)                                                                                                                                                                                                                                                                                        |
+| Byte 24       | Gap length (format)                                                                                                                                                                                                                                                                                            |
+| Byte 25       | Bit 7 Multi-track operation<ol start=0><li>single-track</li><li>multi-track</li></ol>Bit 6 Modulation mode<ol start=0><li>FM mode</li><li>MFM mode</li></ol>Bit 5 Skip deleted data address mark<ol start=0><li>don't skip deleted address mark</li><li>skip deleted data address mark</li></ol>Bits 0...4 = 0 |
+| Byte 26       | Freeze flag<br>00h (0) = auto-detect disk format<br>FFh (255) = don't auto-detect disk format                                                                                                                                                                                                                  |
 
 Byte 25 is normally set to 60h (96). Multi-track operation is not recommended.
 
@@ -7577,81 +7578,81 @@ The XDPBs for the three main formats are as follows:
 
 #### AMSTRAD PCW range single track format (type 0) (As used by the +3)
 
-| VALUE     | USAGE
-|-----------|------
-| 36        | SPT, records per track
-| 3         | BSH, block shift
-| 7         | BLM, block mask
-| 0         | EXM, extent mask
-| 174       | DSM, number of blocks - 1
-| 63        | DRM, number of directory entries - 1
-| C0h (192) | AL0, 2 directory blocks
-| 00h (0)   | AL1
-| 16        | CKS, size of checksum vector
-| 1         | OFF, reserved tracks
-| 2         | PSH, physical sector shift
-| 3         | PHM, physical sector mask
-| 0         | Single sided
-| 40        | Tracks per side
-| 9         | Sectors per track
-| 1         | First sector number
-| 512       | Sector size
-| 42        | Gap length (read/write)
-| 82        | Gap length (format)
-| 60h (96)  | MFM mode, skip deleted data address mark
-| 0         | Do auto select format
+| VALUE     | USAGE                                    |
+| --------- | ---------------------------------------- |
+| 36        | SPT, records per track                   |
+| 3         | BSH, block shift                         |
+| 7         | BLM, block mask                          |
+| 0         | EXM, extent mask                         |
+| 174       | DSM, number of blocks - 1                |
+| 63        | DRM, number of directory entries - 1     |
+| C0h (192) | AL0, 2 directory blocks                  |
+| 00h (0)   | AL1                                      |
+| 16        | CKS, size of checksum vector             |
+| 1         | OFF, reserved tracks                     |
+| 2         | PSH, physical sector shift               |
+| 3         | PHM, physical sector mask                |
+| 0         | Single sided                             |
+| 40        | Tracks per side                          |
+| 9         | Sectors per track                        |
+| 1         | First sector number                      |
+| 512       | Sector size                              |
+| 42        | Gap length (read/write)                  |
+| 82        | Gap length (format)                      |
+| 60h (96)  | MFM mode, skip deleted data address mark |
+| 0         | Do auto select format                    |
 
 #### AMSTRAD CPC range SYSTEM format (type 1)
 
-| VALUE     | USAGE
-|-----------|------
-| 36        | SPT, records per track
-| 3         | BSH, block shift
-| 7         | BLM, block mask
-| 0         | EXM, extent mask
-| 170       | DSM, number of blocks - 1
-| 63        | DRM, number of directory entries - 1
-| C0h (192) | AL0, 2 directory blocks
-| 00h (0)   | AL1
-| 16        | CKS, size of checksum vector
-| 2         | OFF, reserved tracks
-| 2         | PSH, physical sector shift
-| 3         | PHM, physical sector mask
-| 0         | Single sided
-| 40        | Tracks per side
-| 9         | Sectors per track
-| 41h (65)  | First sector number
-| 512       | Sector size
-| 42        | Gap length (read/write)
-| 82        | Gap length (format)
-| 60h (96)  | MFM mode, skip deleted data address mark
-| 0         | Do auto select format
+| VALUE     | USAGE                                    |
+| --------- | ---------------------------------------- |
+| 36        | SPT, records per track                   |
+| 3         | BSH, block shift                         |
+| 7         | BLM, block mask                          |
+| 0         | EXM, extent mask                         |
+| 170       | DSM, number of blocks - 1                |
+| 63        | DRM, number of directory entries - 1     |
+| C0h (192) | AL0, 2 directory blocks                  |
+| 00h (0)   | AL1                                      |
+| 16        | CKS, size of checksum vector             |
+| 2         | OFF, reserved tracks                     |
+| 2         | PSH, physical sector shift               |
+| 3         | PHM, physical sector mask                |
+| 0         | Single sided                             |
+| 40        | Tracks per side                          |
+| 9         | Sectors per track                        |
+| 41h (65)  | First sector number                      |
+| 512       | Sector size                              |
+| 42        | Gap length (read/write)                  |
+| 82        | Gap length (format)                      |
+| 60h (96)  | MFM mode, skip deleted data address mark |
+| 0         | Do auto select format                    |
 
 #### AMSTRAD CPC range DATA ONLY format (type 2)
 
-| VALUE     | USAGE
-|-----------|------
-| 36        | SPT, records per track
-| 3         | BSH, block shift
-| 7         | BLM, block mask
-| 0         | EXM, extent mask
-| 179       | DSM, number of blocks - 1
-| 63        | DRM, number of directory entries - 1
-| C0h (192) | AL0, 2 directory blocks
-| 00h (0)   | AL1
-| 16        | CKS, size of checksum vector
-| 0         | OFF, reserved tracks
-| 2         | PSH, physical sector shift
-| 3         | PHM, physical sector mask
-| 0         | Single sided
-| 40        | Tracks per side
-| 9         | Sectors per track
-| C1h (193) | First sector number
-| 512       | Sector size
-| 42        | Gap length (read/write)
-| 82        | Gap length (format)
-| 60h (96)  | MFM mode, skip deleted data address mark
-| 0         | Do auto select format
+| VALUE     | USAGE                                    |
+| --------- | ---------------------------------------- |
+| 36        | SPT, records per track                   |
+| 3         | BSH, block shift                         |
+| 7         | BLM, block mask                          |
+| 0         | EXM, extent mask                         |
+| 179       | DSM, number of blocks - 1                |
+| 63        | DRM, number of directory entries - 1     |
+| C0h (192) | AL0, 2 directory blocks                  |
+| 00h (0)   | AL1                                      |
+| 16        | CKS, size of checksum vector             |
+| 0         | OFF, reserved tracks                     |
+| 2         | PSH, physical sector shift               |
+| 3         | PHM, physical sector mask                |
+| 0         | Single sided                             |
+| 40        | Tracks per side                          |
+| 9         | Sectors per track                        |
+| C1h (193) | First sector number                      |
+| 512       | Sector size                              |
+| 42        | Gap length (read/write)                  |
+| 82        | Gap length (format)                      |
+| 60h (96)  | MFM mode, skip deleted data address mark |
+| 0         | Do auto select format                    |
 
 ### CP/M File compatibility
 
@@ -7702,40 +7703,40 @@ Many +3DOS routines can fail. This is indicated with 'carry' false and an error 
 
 Recoverable disk errors:
 
-| CODE | DESCRIPTION
-|------|-------------------------------------------
-|   0  | `Drive not ready`
-|   1  | `Disk is write protected`
-|   2  | `Seek fail`
-|   3  | `CRC data error`
-|   4  | `No data`
-|   5  | `Missing address mark`
-|   6  | `Unrecognised disk format`
-|   7  | `Unknown disk error`
-|   8  | `Disk changed whilst +3DOS was using it`
-|   9  | `Unsuitable media for drive`
+| CODE | DESCRIPTION                              |
+| ---- | ---------------------------------------- |
+| 0    | `Drive not ready`                        |
+| 1    | `Disk is write protected`                |
+| 2    | `Seek fail`                              |
+| 3    | `CRC data error`                         |
+| 4    | `No data`                                |
+| 5    | `Missing address mark`                   |
+| 6    | `Unrecognised disk format`               |
+| 7    | `Unknown disk error`                     |
+| 8    | `Disk changed whilst +3DOS was using it` |
+| 9    | `Unsuitable media for drive`             |
 
 Non-recoverable errors:
 
-| CODE | DESCRIPTION
-|------|-------------------------------------------
-|  20  | `Bad filename`
-|  21  | `Bad parameter`
-|  22  | `Drive not found`
-|  23  | `File not found`
-|  24  | `File already exists`
-|  25  | `End of file`
-|  26  | `Disk full`
-|  27  | `Directory full`
-|  28  | `Read-only file`
-|  29  | `File number not open` (or open with wrong access)
-|  30  | `Access denied` (file is in use already)
-|  31  | `Cannot rename between drives`
-|  32  | `Extent missing` (which should be there)
-|  33  | `Uncached` (software error)
-|  34  | `File too big` (trying to read or write past 8 megabytes)
-|  35  | `Disk not bootable` (boot sector is not acceptable to [DOS BOOT](#dos-boot))
-|  36  | `Drive in use` (trying to re-map or remove a drive with files open)
+| CODE | DESCRIPTION                                                                  |
+| ---- | ---------------------------------------------------------------------------- |
+| 20   | `Bad filename`                                                               |
+| 21   | `Bad parameter`                                                              |
+| 22   | `Drive not found`                                                            |
+| 23   | `File not found`                                                             |
+| 24   | `File already exists`                                                        |
+| 25   | `End of file`                                                                |
+| 26   | `Disk full`                                                                  |
+| 27   | `Directory full`                                                             |
+| 28   | `Read-only file`                                                             |
+| 29   | `File number not open` (or open with wrong access)                           |
+| 30   | `Access denied` (file is in use already)                                     |
+| 31   | `Cannot rename between drives`                                               |
+| 32   | `Extent missing` (which should be there)                                     |
+| 33   | `Uncached` (software error)                                                  |
+| 34   | `File too big` (trying to read or write past 8 megabytes)                    |
+| 35   | `Disk not bootable` (boot sector is not acceptable to [DOS BOOT](#dos-boot)) |
+| 36   | `Drive in use` (trying to re-map or remove a drive with files open)          |
 
 As an example, the report `Unsuitable media for drive` is caused by trying to write to a single track disk in a double track drive, or trying to read or write a double track disk in a single track drive.
 
@@ -7747,18 +7748,18 @@ If error messages are enabled ([DOS SET MESSAGE](#dos-set-msg)) then, in the eve
 
 The recoverable disk errors (in the range 0..9) are:
 
-| CODE | DESCRIPTION
-|------|-------------------------------------------
-|   0  | `Drive x: not ready`
-|   1  | `Drive x: disk write protected`
-|   2  | `Drive x: track` ttt`, seek fail`
-|   3  | `Drive x: track` ttt`, sector` sss`, data error`
-|   4  | `Drive x: track` ttt`, sector` sss`, no data`
-|   5  | `Drive x: track` ttt`, sector` sss`, missing address mark`
-|   6  | `Drive x: bad format`
-|   7  | `Drive x: track` ttt`, sector` sss`, unknown error`
-|   8  | `Drive x: disk changed, please replace`
-|   9  | `Drive x: disk unsuitable`
+| CODE | DESCRIPTION                                                |
+| ---- | ---------------------------------------------------------- |
+| 0    | `Drive x: not ready`                                       |
+| 1    | `Drive x: disk write protected`                            |
+| 2    | `Drive x: track` ttt`, seek fail`                          |
+| 3    | `Drive x: track` ttt`, sector` sss`, data error`           |
+| 4    | `Drive x: track` ttt`, sector` sss`, no data`              |
+| 5    | `Drive x: track` ttt`, sector` sss`, missing address mark` |
+| 6    | `Drive x: bad format`                                      |
+| 7    | `Drive x: track` ttt`, sector` sss`, unknown error`        |
+| 8    | `Drive x: disk changed, please replace`                    |
+| 9    | `Drive x: disk unsuitable`                                 |
 
 ...where X is the disk drive (eg. `A:` or `B:`), ttt is the track number, and sss is the sector number.
 
@@ -8969,7 +8970,7 @@ Read a sector identifier.
   * BC DE IX corrupt
   * All other registers preserved
 
-#### <a id="dd-test-suitable"></a> DD TEST UNSUITABLE 0172h (370)
+#### <a id="dd-test-suit"></a> DD TEST UNSUITABLE 0172h (370)
 
 Check that disk is suitable to write to.
 
@@ -9174,7 +9175,7 @@ subroutine, and the 'exit conditions' are the values that your subroutine must p
   * AF corrupt
   * All other registers preserved
 
-#### <a id="dd-l-xdbp"></a> DD L XDPB 0187h (391)
+#### <a id="dd-l-xdpb"></a> DD L XDPB 0187h (391)
 
 Initialise an XDPB for a given format.
 
@@ -9333,7 +9334,7 @@ Motor must be running.
   * AF BC DE IX corrupt
   * All other registers preserved
 
-#### <a id="dd-l-motor-on"></a> DD L ON MOTOR 0196h (406)
+#### <a id="dd-l-on-motor"></a> DD L ON MOTOR 0196h (406)
 
 Turn on the motor.
 
@@ -9349,7 +9350,7 @@ None
   * AF BC DE HL IX corrupt
   * All other registers preserved
 
-#### <a id="dd-t-motor-off"></a> DD L T OFF MOTOR 0199h (409)
+#### <a id="dd-t-off-motor"></a> DD L T OFF MOTOR 0199h (409)
 
 Start the motor off time-out.
 
@@ -9387,264 +9388,264 @@ Subjects covered...
 
 This is the complete Spectrum character set, with codes in decimal and hex. If one imagines the codes as being Z80 machine code instructions, then the right hand columns give the corresponding assembly language mnemonics. As you may be aware certain Z80 instructions are 'compounds' starting with CBh or EDh, these are shown in the two right hand columns. Where a character changes between 48K and ***+3*** (128K) modes, the 48K version is given in brackets after the ***+3*** one.
 
-| CODE | CHARACTER             | HEX | Z80 ASSEMBLER | -AFTER CBh | -AFTER EDh
-|------|-----------------------|-----|---------------|------------|-----------
-|   0  | *not used*            | 00  | nop           | rlc b
-|   1  | *not used*            | 01  | ld bc,NN      | rlc d
-|   2  | *not used*            | 02  | ld (bc),a     |  rlc e
-|   3  | *not used*            | 03  | inc bc        | rlc h
-|   4  | *not used*            | 04  | inc b         | rlc l
-|   5  | *not used*            | 05  | dec b         | rlc (hl)
-|   6  | `PRINT` comma         | 06  | ld b,N        | rlc a
-|   7  | **[EDIT]**            | 07  | rlca          | rlc a
-|   8  | cursor left           | 08  | ex af,af'     | rrc b
-|   9  | cursor right          | 09  | add hl,bc     | rrc c
-|  10  |  cursor down          | 0A  | ld a,(bc)     | rrc d
-|  11  |  cursor up            | 0B  | dec bc        | rrc e
-|  12  |  **[DELETE]**         | 0C  | inc c         | rrc h
-|  13  |  **[ENTER]**          | 0D  | dec c         | rrc l
-|  14  |  number               | 0E  | ld c,N        | rrc (hl)
-|  15  |  not used             | 0F  | rrca          | rrc a
-|  16  |  `INK` control        | 10  | djnz DIS      | rl b
-|  17  |  `PAPER` control      | 11  | ld de,NN      | rl c
-|  18  |  `FLASH` control      | 12  | ld (de),a     | rl d
-|  19  |  `BRIGHT` control     | 13  | inc de        | rl e
-|  20  |  `INVERSE` control    | 14  | inc d         | rl h
-|  21  |  `OVER` control       | 15  | dec d         | rl l
-|  22  |  `AT` control         | 16  | ld d,N        | rl (hl)
-|  23  |  `TAB` control        | 17  | rla           | rl a
-|  24  |  *not used*           | 18  | jr DIS        | rr b
-|  25  |  *not used*           | 19  | add hl,de     | rr c
-|  26  |  *not used*           | 1A  | ld a,(de)     | rr d
-|  27  |  *not used*           | 1B  | dec de        | rr e
-|  28  |  *not used*           | 1C  | inc e         | rr h
-|  29  |  *not used*           | 1D  | dec e         | rr l
-|  30  |  *not used*           | 1E  | ld e,N        | rr (hl)
-|  31  |  *not used*           | 1F  | rra           | rr a
-|  32  |  space                | 20  | jr nz,DIS     | sla b
-|  33  |  `!`                  | 21  | ld hl,NN      | sla c
-|  34  |  `"`                  | 22  | ld (NN),hl    | sla d
-|  35  |  `#`                  | 23  | inc hl        | sla e
-|  36  |  `$`                  | 24  | inc h         | sla h
-|  37  |  `%`                  | 25  | dec h         | sla l
-|  38  |  `&`                  | 26  | ld h,N        | sla (hl)
-|  39  |  `'`                  | 27  | daa           | sla a
-|  40  |  `(`                  | 28  | jr z,DIS      | sra b
-|  41  |  `)`                  | 29  | add hl,hl     | sra c
-|  42  |  `*`                  | 2A  | ld hl,(NN)    | sra d
-|  43  |  `+`                  | 2B  | dec hl        | sra e
-|  44  |  `,`                  | 2C  | inc l         | sra h
-|  45  |  `-`                  | 2D  | dec l         | sra l
-|  46  |  `.`                  | 2E  | ld l,N        | sra (hl)
-|  47  |  `/`                  | 2F  | cpl           | sra a
-|  48  |  `0`                  | 30  | jr nc,DIS
-|  49  |  `1`                  | 31  | ld sp,NN
-|  50  |  `2`                  | 32  | ld (NN),a
-|  51  |  `3`                  | 33  | inc sp
-|  52  |  `4`                  | 34  | inc (hl)
-|  53  |  `5`                  | 35  | dec (hl)
-|  54  |  `6`                  | 36  | ld (hl),N
-|  55  |  `7`                  | 37  | scf
-|  56  |  `8`                  | 38  | jr c,DIS      | srl b
-|  57  |  `9`                  | 39  | add hl,sp     | srl c
-|  58  |  `:`                  | 3A  | ld a,(NN)     | srl d
-|  59  |  `;`                  | 3B  | dec sp        | srl e
-|  60  |  `<`                  | 3C  | inc a         | srl h
-|  61  |  `=`                  | 3D  | dec a         | srl l
-|  62  |  `>`                  | 3E  | ld a,N        | srl (hl)
-|  63  |  `?`                  | 3F  | ccf           | srl a
-|  64  |  `@`                  | 40  | ld b,b        | bit 0,b     | in b,(c)
-|  65  |  `A`                  | 41  | ld b,c        | bit 0,c     | out (c),b
-|  66  |  `B`                  | 42  | ld b,d        | bit 0,d     | sbc hl,bc
-|  67  |  `C`                  | 43  | ld b,e        | bit 0,e     | ld (NN),bc
-|  68  |  `D`                  | 44  | ld b,h        | bit 0,h     | neg
-|  69  |  `E`                  | 45  | ld b,l        | bit 0,l     | retn
-|  70  |  `F`                  | 46  | ld b,(hl)     | bit 0,(hl)  | im 0
-|  71  |  `G`                  | 47  | ld b,a        | bit 1,a     | ld i,a
-|  72  |  `H`                  | 48  | ld c,b        | bit 1,b     | in c,(c)
-|  73  |  `I`                  | 49  | ld c,c        | bit 1,c     | out (c),c
-|  74  |  `J`                  | 4A  | ld c,d        | bit 1,d     | adc hl,bc
-|  75  |  `K`                  | 4B  | ld c,e        | bit 1,e     | ld bc,(NN)
-|  76  |  `L`                  | 4C  | ld c,h        | bit 1,h
-|  77  |  `M`                  | 4D  | ld c,l        | bit 1,l     | reti
-|  78  |  `N`                  | 4E  | ld c,(hl)     | bit 1,(hl)
-|  79  |  `O`                  | 4F  | ld c,a        | bit 1,a     | ld r,a
-|  80  |  `P`                  | 50  | ld d,b        |  bit 2,b    | in d,(c)
-|  81  |  `Q`                  | 51  | ld d,c        |  bit 2,c    | out (c),d
-|  82  |  `R`                  | 52  | ld d,d        |  bit 2,d    | sbc hl,de
-|  83  |  `S`                  | 53  | ld d,e        |  bit 2,e    | ld (NN),de
-|  84  |  `T`                  | 54  | ld d,h        |  bit 2,h
-|  85  |  `U`                  | 55  | ld d,l        |  bit 2,l
-|  86  |  `V`                  | 56  | ld d,(hl)     |  bit 2,(hl) | im 1
-|  87  |  `W`                  | 57  | ld d,a        |  bit 2,a    | ld a,i
-|  88  |  `X`                  | 58  | ld e,b        |  bit 3,b    | in e,(c)
-|  89  |  `Y`                  | 59  | ld e,c        | bit 3,c     | out (c),e
-|  90  |  `Z`                  | 5A  | ld e,d        | bit 3,d     | adc hl,de
-|  91  |  `[`                  | 5B  | ld e,e        | bit 3,e     | ld de,(NN)
-|  92  |  `\`                  | 5C  | ld e,h        | bit 3,h
-|  93  |  `]`                  | 5D  | ld e,l        | bit 3,l
-|  94  |  `^`                  | 5E  | ld e,(hl)     | bit 3,(hl)  | im 2
-|  95  |  `_`                  | 5F  | ld e,a        | bit 3,a     | ld a,r
-|  96  |  `` ` ``              | 60  | ld h,b        | bit 4,b     | in h,(c)
-|  97  |  `a`                  | 61  | ld h,c        | bit 4,c     | out (c),h
-|  98  |  `b`                  | 62  | ld h,d        | bit 4,d     | sbc hl,hl
-|  99  |  `c`                  | 63  | ld h,e        | bit 4,e     | ld (NN),hl
-| 100  |  `d`                  | 64  | ld h,h        | bit 4,h
-| 101  |  `e`                  | 65  | ld h,l        | bit 4,l
-| 102  |  `f`                  | 66  | ld h,(hl)     | bit 4,(hl)
-| 103  |  `g`                  | 67  | ld h,a        | bit 4,a     | rrd
-| 104  |  `h`                  | 68  | ld l,b        | bit 5,b     | in l,(c)
-| 105  |  `i`                  | 69  | ld l,c        | bit 5,c     | out (c),l
-| 106  |  `j`                  | 6A  | ld l,d        | bit 5,d     | adc hl,hl
-| 107  |  `k`                  | 6B  | ld l,e        | bit 5,e     | ld hl,(NN)
-| 108  |  `l`                  | 6C  | ld l,h        | bit 5,h
-| 109  |  `m`                  | 6D  | ld l,l        | bit 5,l
-| 110  |  `n`                  | 6E  | ld l,(hl)     | bit 5,(hl)
-| 111  |  `o`                  | 6F  | ld l,a        | bit 5,a     | rld
-| 112  |  `p`                  | 70  | ld (hl),b     | bit 6,b     | in f,(c)
-| 113  |  `q`                  | 71  | ld (hl),c     | bit 6,c
-| 114  |  `r`                  | 72  | ld (hl),d     | bit 6,d     | sbc hl,sp
-| 115  |  `s`                  | 73  | ld (hl),e     | bit 6,e     | ld (NN),sp
-| 116  |  `t`                  | 74  | ld (hl),h     | bit 6,h
-| 117  |  `u`                  | 75  | ld (hl),l     | bit 6,l
-| 118  |  `v`                  | 76  | halt          | bit 6,(hl)
-| 119  |  `w`                  | 77  | ld (hl),a     | bit 6,a
-| 120  |  `x`                  | 78  | ld a,b        | bit 7,b     | in a,(c)
-| 121  |  `y`                  | 79  | ld a,c        | bit 7,c     | out (c),a
-| 122  |  `z`                  | 7A  | ld a,d        | bit 7,d     | adc hl,sp
-| 123  |  `{`                  | 7B  | ld a,e        | bit 7,e     | ld sp,(NN)
-| 124  |  `|`                  | 7C  | ld a,h        | bit 7,h
-| 125  |  `}`                  | 7D  | ld a,l        | bit 7,l
-| 126  |  `~`                  | 7E  | ld a,(hl)     | bit 7,(hl)
-| 127  |  `©`                  | 7F  | ld a,a        | bit 7,a
-| 128  | ▯                    | 80  | add a,b       | res 0,b
-| 129  | ▝                    | 81  | add a,c       | res 0,c
-| 130  | ▘                    | 82  | add a,d       | res 0,d
-| 131  | ▀                     | 83  | add a,e       | res 0,e
-| 132  | ▗                    | 84  | add a,h       | res 0,h
-| 133  | ▐                     | 85  | add a,l       | res 0,l
-| 134  | ▚                    | 86  | add a,(hl)    | res 0,(hl)
-| 135  | ▜                    | 87  | add a,a       | res 0,a
-| 136  | ▘                    | 88  | adc a,b       | res 1,b
-| 137  | ▞                    | 89  | adc a,c       | res 1,c
-| 138  | ▌                     | 8A  | adc a,d       | res 1,d
-| 139  | ▛                    | 8B  | adc a,e       | res 1,e
-| 140  | ▅                    | 8C  | adc a,h       | res 1,h
-| 141  | ▟                    | 8D  | adc a,l       | res 1,l
-| 142  | ▙                    | 8E  | adc a,(hl)    | res 1,(hl)
-| 143  | █                     | 8F  | adc a,a       | res 1,a
-| 144  | `(a)`                 | 90  | sub b         | res 2,b
-| 145  | `(b)`                 | 91  | sub c         | res 2,c
-| 146  | `(c)`                 | 92  | sub d         | res 2,d
-| 147  | `(d)`                 | 93  | sub e         | res 2,e
-| 148  | `(e)`                 | 94  | sub h         | res 2,h
-| 149  | `(f)`                 | 95  | sub l         | res 2,l
-| 150  | `(g)`                 | 96  | sub (hl)      | res 2,(hl)
-| 151  | `(h)`                 | 97  | sub a         | res 2,a
-| 152  | `(i)`   user          | 98  | sbc a,b       | res 3,b
-| 153  | `(j)`   graphics      | 99  | sbc a,c       | res 3,c
-| 154  | `(k)`                 | 9A  | sbc a,d       | res 3,d
-| 155  | `(l)`                 | 9B  | sbc a,e       | res 3,e
-| 156  | `(m)`                 | 9C  | sbc a,h       | res 3,h
-| 157  | `(n)`                 | 9D  | sbc a,l       | res 3,l
-| 158  | `(o)`                 | 9E  | sbc a,(hl)    | res 3,(hl)
-| 159  | `(p)`                 | 9F  | sbc a,a       | res 3,a
-| 160  | `(q)`                 | A0  | and b         | res 4,b       |  ldi
-| 161  | `(r)`                 | A1  | and c         | res 4,c       |  cpi
-| 162  | `(s)`                 | A2  | and d         | res 4,d       |  ini
-| 163  | `SPECTRUM (t)`        | A3  | and e         | res 4,e       | outi
-| 164  | `PLAY (u)`            | A4  | and h         | res 4,h
-| 165  | `RND`                 | A5  | and l         | res 4,l
-| 166  | `INKEY$`              | A6  | and (hl)      | res 4,(hl)
-| 167  | `PI`                  | A7  | and a         | res 4,a
-| 168  | `FN`                  | A8  | xor b         | res 5,b       | ldd
-| 169  | `POINT`               | A9  | xor c         | res 5,c       | cpd
-| 170  | `SCREEN$`             | AA  | xor d         | res 5,d       | ind
-| 171  | `ATTR`                | AB  | xor e         | res 5,e       | outd
-| 172  | `AT`                  | AC  | xor h         | res 5,h
-| 173  | `TAB`                 | AD  | xor l         | res 5,l
-| 174  | `VAL$`                | AE  | xor (hl)      | res 5,(hl)
-| 175  | `CODE`                | AF  | xor a         | res 5,a
-| 176  | `VAL`                 | B0  | or b          | res 6,b       | ldir
-| 177  | `LEN`                 | B1  | or c          | res 6,c       | cpir
-| 178  | `SIN`                 | B2  | or d          | res 6,d       | inir
-| 179  | `COS`                 | B3  | or e          | res 6,e       | otir
-| 180  | `TAN`                 | B4  | or h          | res 6,h
-| 181  | `ASN`                 | B5  | or l          | res 6,l
-| 182  | `ACS`                 | B6  | or (hl)       | res 6,(hl)
-| 183  | `ATN`                 | B7  | or a          | res 6,a
-| 184  | `LN`                  | B8  | cp b          | res 7,b       | lddr
-| 185  | `EXP`                 | B9  | cp c          | res 7,c       | cpdr
-| 186  | `INT`                 | BA  | cp d          | res 7,d       | indr
-| 187  | `SQR`                 | BB  | cp e          | res 7,e       | otdr
-| 188  | `SGN`                 | BC  | cp h          | res 7,h
-| 189  | `ABS`                 | BD  | cp l          | res 7,l
-| 190  | `PEEK`                | BE  | cp (hl)       | res 7,(hl)
-| 191  | `IN`                  | BF  | cp a          | res 7,a
-| 192  | `USR`                 | C0  | ret nz        | set 0,b
-| 193  | `STR$`                | C1  | pop bc        | set 0,c
-| 194  | `CHR$`                | C2  | jp nz,NN      | set 0,d
-| 195  | `NOT`                 | C3  | jp NN         | set 0,e
-| 196  | `BIN`                 | C4  | call nz,NN    | set 0,h
-| 197  | `OR`                  | C5  | push bc       | set 0,l
-| 198  | `AND`                 | C6  | add a,N       | set 0,(hl)
-| 199  | `<=`                  | C7  | rst 0         | set 0,a
-| 200  | `>=`                  | C8  | ret z         | set 1,b
-| 201  | `<>`                  | C9  | ret           | set 1,c
-| 202  | `LINE`                | CA  | jp z,NN       | set 1,d
-| 203  | `THEN`                | CB  |               | set 1,e
-| 204  | `TO`                  | CC  | call z,NN     | set 1,h
-| 205  | `STEP`                | CD  | call NN       | set 1,l
-| 206  | `DEF FN`              | CE  | adc a,N       | set 1,(hl)
-| 207  | `CAT`                 | CF  | rst 8         | set 1,a
-| 208  | `FORMAT`              | D0  | ret nc        | set 2,b
-| 209  | `MOVE`                | D1  | pop de        | set 2,c
-| 210  | `ERASE`               | D2  | jp nc,NN      | set 2,d
-| 211  | `OPEN #`              | D3  | out (N),a     | set 2,e
-| 212  | `CLOSE #`             | D4  | call nc,NN    | set 2,h
-| 213  | `MERGE`               | D5  | push de       | set 2,l
-| 214  | `VERIFY`              | D6  | sub N         | set 2,(hl)
-| 215  | `BEEP`                | D7  | rst 16        | set 2,a
-| 216  | `CIRCLE`              | D8  | ret c         | set 3,b
-| 217  | `INK`                 | D9  | exx           | set 3,c
-| 218  | `PAPER`               | DA  | jp c,NN       | set 3,d
-| 219  | `FLASH`               | DB  | in a,(N)      | set 3,e
-| 220  | `BRIGHT`              | DC  | call c,NN     | set 3,h
-| 221  | `INVERSE`             | DD  | prefixes<br>instructions<br>using ix | set 3,l
-| 222  | `OVER`                | DE  | sbc a,N       | set 3,(hl)
-| 223  | `OUT`                 | DF  | rst 24        | set 3,a
-| 224  | `LPRINT`              | E0  | ret po        | set 4,b
-| 225  | `LLIST`               | E1  | pop hl        | set 4,c
-| 226  | `STOP`                | E2  | jp po,NN      | set 4,d
-| 227  | `READ`                | E3  | ex (sp),hl    | set 4,e
-| 228  | `DATA`                | E4  | call po,NN    | set 4,h
-| 229  | `RESTORE`             | E5  | push hl       | set 4,l
-| 230  | `NEW`                 | E6  | and N         | set 4,(hl)
-| 231  | `BORDER`              | E7  | rst 32        | set 4,a
-| 232  | `CONTINUE`            | E8  | ret pe        | set 5,b
-| 233  | `DIM`                 | E9  | jp (hl)       | set 5,c
-| 234  | `REM`                 | EA  | jp pe,NN      | set 5,d
-| 235  | `FOR`                 | EB  | ex de,hl      | set 5,e
-| 236  | `GO TO`               | EC  | call pe,NN    | set 5,h
-| 237  | `GOTO`                | ED  |               | set 5,l
-| 238  | `GO SUB`              | EE  | xor N         | set 5,(hl)
-| 239  | `GOSUB`               | EF  | rst 40        | set 5,a
-| 240  | `INPUT`               | F0  | ret p         | set 6,b
-| 241  | `LOAD`                | F1  | pop af        | set 6,c
-| 242  | `LIST`                | F2  | jp p,NN       | set 6,d
-| 243  | `LET`                 | F3  | di            | set 6,e
-| 244  | `PAUSE`               | F4  | call p,NN     | set 6,h
-| 245  | `NEXT`                | F5  | push af       | set 6,l
-| 246  | `POKE`                | F6  | or N          | set 6,(hl)
-| 247  | `PRINT`               | F7  | rst 48        | set 6,a
-| 248  | `PLOT`                | F8  | ret m         | set 7,b
-| 249  | `RUN`                 | F9  | ld sp,hl      | set 7,c
-| 250  | `SAVE`                | FA  | jp m,NN       | set 7,d
-| 251  | `RANDOMIZE`           | FB  | ei            | set 7,e
-| 252  | `IF`                  | FC  | call m,NN     | set 7,h
-| 253  | `CLS`                 | FD  | prefixes<br>instructions<br>using iy | set 7,l
-| 254  | `DRAW`                | FE  | cp N          | set 7,(hl)
-| 255  | `CLEAR`               | FF  | rst 56        | set 7,a
+| CODE | CHARACTER             | HEX | Z80 ASSEMBLER                        | -AFTER CBh | -AFTER EDh |
+| ---- | --------------------- | --- | ------------------------------------ | ---------- | ---------- |
+| 0    | *not used*            | 00  | nop                                  | rlc b      |
+| 1    | *not used*            | 01  | ld bc,NN                             | rlc d      |
+| 2    | *not used*            | 02  | ld (bc),a                            | rlc e      |
+| 3    | *not used*            | 03  | inc bc                               | rlc h      |
+| 4    | *not used*            | 04  | inc b                                | rlc l      |
+| 5    | *not used*            | 05  | dec b                                | rlc (hl)   |
+| 6    | `PRINT` comma         | 06  | ld b,N                               | rlc a      |
+| 7    | **[EDIT]**            | 07  | rlca                                 | rlc a      |
+| 8    | cursor left           | 08  | ex af,af'                            | rrc b      |
+| 9    | cursor right          | 09  | add hl,bc                            | rrc c      |
+| 10   | cursor down           | 0A  | ld a,(bc)                            | rrc d      |
+| 11   | cursor up             | 0B  | dec bc                               | rrc e      |
+| 12   | **[DELETE]**          | 0C  | inc c                                | rrc h      |
+| 13   | **[ENTER]**           | 0D  | dec c                                | rrc l      |
+| 14   | number                | 0E  | ld c,N                               | rrc (hl)   |
+| 15   | not used              | 0F  | rrca                                 | rrc a      |
+| 16   | `INK` control         | 10  | djnz DIS                             | rl b       |
+| 17   | `PAPER` control       | 11  | ld de,NN                             | rl c       |
+| 18   | `FLASH` control       | 12  | ld (de),a                            | rl d       |
+| 19   | `BRIGHT` control      | 13  | inc de                               | rl e       |
+| 20   | `INVERSE` control     | 14  | inc d                                | rl h       |
+| 21   | `OVER` control        | 15  | dec d                                | rl l       |
+| 22   | `AT` control          | 16  | ld d,N                               | rl (hl)    |
+| 23   | `TAB` control         | 17  | rla                                  | rl a       |
+| 24   | *not used*            | 18  | jr DIS                               | rr b       |
+| 25   | *not used*            | 19  | add hl,de                            | rr c       |
+| 26   | *not used*            | 1A  | ld a,(de)                            | rr d       |
+| 27   | *not used*            | 1B  | dec de                               | rr e       |
+| 28   | *not used*            | 1C  | inc e                                | rr h       |
+| 29   | *not used*            | 1D  | dec e                                | rr l       |
+| 30   | *not used*            | 1E  | ld e,N                               | rr (hl)    |
+| 31   | *not used*            | 1F  | rra                                  | rr a       |
+| 32   | space                 | 20  | jr nz,DIS                            | sla b      |
+| 33   | `!`                   | 21  | ld hl,NN                             | sla c      |
+| 34   | `"`                   | 22  | ld (NN),hl                           | sla d      |
+| 35   | `#`                   | 23  | inc hl                               | sla e      |
+| 36   | `$`                   | 24  | inc h                                | sla h      |
+| 37   | `%`                   | 25  | dec h                                | sla l      |
+| 38   | `&`                   | 26  | ld h,N                               | sla (hl)   |
+| 39   | `'`                   | 27  | daa                                  | sla a      |
+| 40   | `(`                   | 28  | jr z,DIS                             | sra b      |
+| 41   | `)`                   | 29  | add hl,hl                            | sra c      |
+| 42   | `*`                   | 2A  | ld hl,(NN)                           | sra d      |
+| 43   | `+`                   | 2B  | dec hl                               | sra e      |
+| 44   | `,`                   | 2C  | inc l                                | sra h      |
+| 45   | `-`                   | 2D  | dec l                                | sra l      |
+| 46   | `.`                   | 2E  | ld l,N                               | sra (hl)   |
+| 47   | `/`                   | 2F  | cpl                                  | sra a      |
+| 48   | `0`                   | 30  | jr nc,DIS                            |
+| 49   | `1`                   | 31  | ld sp,NN                             |
+| 50   | `2`                   | 32  | ld (NN),a                            |
+| 51   | `3`                   | 33  | inc sp                               |
+| 52   | `4`                   | 34  | inc (hl)                             |
+| 53   | `5`                   | 35  | dec (hl)                             |
+| 54   | `6`                   | 36  | ld (hl),N                            |
+| 55   | `7`                   | 37  | scf                                  |
+| 56   | `8`                   | 38  | jr c,DIS                             | srl b      |
+| 57   | `9`                   | 39  | add hl,sp                            | srl c      |
+| 58   | `:`                   | 3A  | ld a,(NN)                            | srl d      |
+| 59   | `;`                   | 3B  | dec sp                               | srl e      |
+| 60   | `<`                   | 3C  | inc a                                | srl h      |
+| 61   | `=`                   | 3D  | dec a                                | srl l      |
+| 62   | `>`                   | 3E  | ld a,N                               | srl (hl)   |
+| 63   | `?`                   | 3F  | ccf                                  | srl a      |
+| 64   | `@`                   | 40  | ld b,b                               | bit 0,b    | in b,(c)   |
+| 65   | `A`                   | 41  | ld b,c                               | bit 0,c    | out (c),b  |
+| 66   | `B`                   | 42  | ld b,d                               | bit 0,d    | sbc hl,bc  |
+| 67   | `C`                   | 43  | ld b,e                               | bit 0,e    | ld (NN),bc |
+| 68   | `D`                   | 44  | ld b,h                               | bit 0,h    | neg        |
+| 69   | `E`                   | 45  | ld b,l                               | bit 0,l    | retn       |
+| 70   | `F`                   | 46  | ld b,(hl)                            | bit 0,(hl) | im 0       |
+| 71   | `G`                   | 47  | ld b,a                               | bit 1,a    | ld i,a     |
+| 72   | `H`                   | 48  | ld c,b                               | bit 1,b    | in c,(c)   |
+| 73   | `I`                   | 49  | ld c,c                               | bit 1,c    | out (c),c  |
+| 74   | `J`                   | 4A  | ld c,d                               | bit 1,d    | adc hl,bc  |
+| 75   | `K`                   | 4B  | ld c,e                               | bit 1,e    | ld bc,(NN) |
+| 76   | `L`                   | 4C  | ld c,h                               | bit 1,h    |
+| 77   | `M`                   | 4D  | ld c,l                               | bit 1,l    | reti       |
+| 78   | `N`                   | 4E  | ld c,(hl)                            | bit 1,(hl) |
+| 79   | `O`                   | 4F  | ld c,a                               | bit 1,a    | ld r,a     |
+| 80   | `P`                   | 50  | ld d,b                               | bit 2,b    | in d,(c)   |
+| 81   | `Q`                   | 51  | ld d,c                               | bit 2,c    | out (c),d  |
+| 82   | `R`                   | 52  | ld d,d                               | bit 2,d    | sbc hl,de  |
+| 83   | `S`                   | 53  | ld d,e                               | bit 2,e    | ld (NN),de |
+| 84   | `T`                   | 54  | ld d,h                               | bit 2,h    |
+| 85   | `U`                   | 55  | ld d,l                               | bit 2,l    |
+| 86   | `V`                   | 56  | ld d,(hl)                            | bit 2,(hl) | im 1       |
+| 87   | `W`                   | 57  | ld d,a                               | bit 2,a    | ld a,i     |
+| 88   | `X`                   | 58  | ld e,b                               | bit 3,b    | in e,(c)   |
+| 89   | `Y`                   | 59  | ld e,c                               | bit 3,c    | out (c),e  |
+| 90   | `Z`                   | 5A  | ld e,d                               | bit 3,d    | adc hl,de  |
+| 91   | `[`                   | 5B  | ld e,e                               | bit 3,e    | ld de,(NN) |
+| 92   | `\`                   | 5C  | ld e,h                               | bit 3,h    |
+| 93   | `]`                   | 5D  | ld e,l                               | bit 3,l    |
+| 94   | `^`                   | 5E  | ld e,(hl)                            | bit 3,(hl) | im 2       |
+| 95   | `_`                   | 5F  | ld e,a                               | bit 3,a    | ld a,r     |
+| 96   | `` ` ``               | 60  | ld h,b                               | bit 4,b    | in h,(c)   |
+| 97   | `a`                   | 61  | ld h,c                               | bit 4,c    | out (c),h  |
+| 98   | `b`                   | 62  | ld h,d                               | bit 4,d    | sbc hl,hl  |
+| 99   | `c`                   | 63  | ld h,e                               | bit 4,e    | ld (NN),hl |
+| 100  | `d`                   | 64  | ld h,h                               | bit 4,h    |
+| 101  | `e`                   | 65  | ld h,l                               | bit 4,l    |
+| 102  | `f`                   | 66  | ld h,(hl)                            | bit 4,(hl) |
+| 103  | `g`                   | 67  | ld h,a                               | bit 4,a    | rrd        |
+| 104  | `h`                   | 68  | ld l,b                               | bit 5,b    | in l,(c)   |
+| 105  | `i`                   | 69  | ld l,c                               | bit 5,c    | out (c),l  |
+| 106  | `j`                   | 6A  | ld l,d                               | bit 5,d    | adc hl,hl  |
+| 107  | `k`                   | 6B  | ld l,e                               | bit 5,e    | ld hl,(NN) |
+| 108  | `l`                   | 6C  | ld l,h                               | bit 5,h    |
+| 109  | `m`                   | 6D  | ld l,l                               | bit 5,l    |
+| 110  | `n`                   | 6E  | ld l,(hl)                            | bit 5,(hl) |
+| 111  | `o`                   | 6F  | ld l,a                               | bit 5,a    | rld        |
+| 112  | `p`                   | 70  | ld (hl),b                            | bit 6,b    | in f,(c)   |
+| 113  | `q`                   | 71  | ld (hl),c                            | bit 6,c    |
+| 114  | `r`                   | 72  | ld (hl),d                            | bit 6,d    | sbc hl,sp  |
+| 115  | `s`                   | 73  | ld (hl),e                            | bit 6,e    | ld (NN),sp |
+| 116  | `t`                   | 74  | ld (hl),h                            | bit 6,h    |
+| 117  | `u`                   | 75  | ld (hl),l                            | bit 6,l    |
+| 118  | `v`                   | 76  | halt                                 | bit 6,(hl) |
+| 119  | `w`                   | 77  | ld (hl),a                            | bit 6,a    |
+| 120  | `x`                   | 78  | ld a,b                               | bit 7,b    | in a,(c)   |
+| 121  | `y`                   | 79  | ld a,c                               | bit 7,c    | out (c),a  |
+| 122  | `z`                   | 7A  | ld a,d                               | bit 7,d    | adc hl,sp  |
+| 123  | `{`                   | 7B  | ld a,e                               | bit 7,e    | ld sp,(NN) |
+| 124  | `                 | ` | 7C  | ld a,h                               | bit 7,h    |
+| 125  | `}`                   | 7D  | ld a,l                               | bit 7,l    |
+| 126  | `~`                   | 7E  | ld a,(hl)                            | bit 7,(hl) |
+| 127  | `©`                   | 7F  | ld a,a                               | bit 7,a    |
+| 128  | ▯                     | 80  | add a,b                              | res 0,b    |
+| 129  | ▝                     | 81  | add a,c                              | res 0,c    |
+| 130  | ▘                     | 82  | add a,d                              | res 0,d    |
+| 131  | ▀                     | 83  | add a,e                              | res 0,e    |
+| 132  | ▗                     | 84  | add a,h                              | res 0,h    |
+| 133  | ▐                     | 85  | add a,l                              | res 0,l    |
+| 134  | ▚                     | 86  | add a,(hl)                           | res 0,(hl) |
+| 135  | ▜                     | 87  | add a,a                              | res 0,a    |
+| 136  | ▘                     | 88  | adc a,b                              | res 1,b    |
+| 137  | ▞                     | 89  | adc a,c                              | res 1,c    |
+| 138  | ▌                     | 8A  | adc a,d                              | res 1,d    |
+| 139  | ▛                     | 8B  | adc a,e                              | res 1,e    |
+| 140  | ▅                     | 8C  | adc a,h                              | res 1,h    |
+| 141  | ▟                     | 8D  | adc a,l                              | res 1,l    |
+| 142  | ▙                     | 8E  | adc a,(hl)                           | res 1,(hl) |
+| 143  | █                     | 8F  | adc a,a                              | res 1,a    |
+| 144  | `(a)`                 | 90  | sub b                                | res 2,b    |
+| 145  | `(b)`                 | 91  | sub c                                | res 2,c    |
+| 146  | `(c)`                 | 92  | sub d                                | res 2,d    |
+| 147  | `(d)`                 | 93  | sub e                                | res 2,e    |
+| 148  | `(e)`                 | 94  | sub h                                | res 2,h    |
+| 149  | `(f)`                 | 95  | sub l                                | res 2,l    |
+| 150  | `(g)`                 | 96  | sub (hl)                             | res 2,(hl) |
+| 151  | `(h)`                 | 97  | sub a                                | res 2,a    |
+| 152  | `(i)`   user          | 98  | sbc a,b                              | res 3,b    |
+| 153  | `(j)`   graphics      | 99  | sbc a,c                              | res 3,c    |
+| 154  | `(k)`                 | 9A  | sbc a,d                              | res 3,d    |
+| 155  | `(l)`                 | 9B  | sbc a,e                              | res 3,e    |
+| 156  | `(m)`                 | 9C  | sbc a,h                              | res 3,h    |
+| 157  | `(n)`                 | 9D  | sbc a,l                              | res 3,l    |
+| 158  | `(o)`                 | 9E  | sbc a,(hl)                           | res 3,(hl) |
+| 159  | `(p)`                 | 9F  | sbc a,a                              | res 3,a    |
+| 160  | `(q)`                 | A0  | and b                                | res 4,b    | ldi        |
+| 161  | `(r)`                 | A1  | and c                                | res 4,c    | cpi        |
+| 162  | `(s)`                 | A2  | and d                                | res 4,d    | ini        |
+| 163  | `SPECTRUM (t)`        | A3  | and e                                | res 4,e    | outi       |
+| 164  | `PLAY (u)`            | A4  | and h                                | res 4,h    |
+| 165  | `RND`                 | A5  | and l                                | res 4,l    |
+| 166  | `INKEY$`              | A6  | and (hl)                             | res 4,(hl) |
+| 167  | `PI`                  | A7  | and a                                | res 4,a    |
+| 168  | `FN`                  | A8  | xor b                                | res 5,b    | ldd        |
+| 169  | `POINT`               | A9  | xor c                                | res 5,c    | cpd        |
+| 170  | `SCREEN$`             | AA  | xor d                                | res 5,d    | ind        |
+| 171  | `ATTR`                | AB  | xor e                                | res 5,e    | outd       |
+| 172  | `AT`                  | AC  | xor h                                | res 5,h    |
+| 173  | `TAB`                 | AD  | xor l                                | res 5,l    |
+| 174  | `VAL$`                | AE  | xor (hl)                             | res 5,(hl) |
+| 175  | `CODE`                | AF  | xor a                                | res 5,a    |
+| 176  | `VAL`                 | B0  | or b                                 | res 6,b    | ldir       |
+| 177  | `LEN`                 | B1  | or c                                 | res 6,c    | cpir       |
+| 178  | `SIN`                 | B2  | or d                                 | res 6,d    | inir       |
+| 179  | `COS`                 | B3  | or e                                 | res 6,e    | otir       |
+| 180  | `TAN`                 | B4  | or h                                 | res 6,h    |
+| 181  | `ASN`                 | B5  | or l                                 | res 6,l    |
+| 182  | `ACS`                 | B6  | or (hl)                              | res 6,(hl) |
+| 183  | `ATN`                 | B7  | or a                                 | res 6,a    |
+| 184  | `LN`                  | B8  | cp b                                 | res 7,b    | lddr       |
+| 185  | `EXP`                 | B9  | cp c                                 | res 7,c    | cpdr       |
+| 186  | `INT`                 | BA  | cp d                                 | res 7,d    | indr       |
+| 187  | `SQR`                 | BB  | cp e                                 | res 7,e    | otdr       |
+| 188  | `SGN`                 | BC  | cp h                                 | res 7,h    |
+| 189  | `ABS`                 | BD  | cp l                                 | res 7,l    |
+| 190  | `PEEK`                | BE  | cp (hl)                              | res 7,(hl) |
+| 191  | `IN`                  | BF  | cp a                                 | res 7,a    |
+| 192  | `USR`                 | C0  | ret nz                               | set 0,b    |
+| 193  | `STR$`                | C1  | pop bc                               | set 0,c    |
+| 194  | `CHR$`                | C2  | jp nz,NN                             | set 0,d    |
+| 195  | `NOT`                 | C3  | jp NN                                | set 0,e    |
+| 196  | `BIN`                 | C4  | call nz,NN                           | set 0,h    |
+| 197  | `OR`                  | C5  | push bc                              | set 0,l    |
+| 198  | `AND`                 | C6  | add a,N                              | set 0,(hl) |
+| 199  | `<=`                  | C7  | rst 0                                | set 0,a    |
+| 200  | `>=`                  | C8  | ret z                                | set 1,b    |
+| 201  | `<>`                  | C9  | ret                                  | set 1,c    |
+| 202  | `LINE`                | CA  | jp z,NN                              | set 1,d    |
+| 203  | `THEN`                | CB  |                                      | set 1,e    |
+| 204  | `TO`                  | CC  | call z,NN                            | set 1,h    |
+| 205  | `STEP`                | CD  | call NN                              | set 1,l    |
+| 206  | `DEF FN`              | CE  | adc a,N                              | set 1,(hl) |
+| 207  | `CAT`                 | CF  | rst 8                                | set 1,a    |
+| 208  | `FORMAT`              | D0  | ret nc                               | set 2,b    |
+| 209  | `MOVE`                | D1  | pop de                               | set 2,c    |
+| 210  | `ERASE`               | D2  | jp nc,NN                             | set 2,d    |
+| 211  | `OPEN #`              | D3  | out (N),a                            | set 2,e    |
+| 212  | `CLOSE #`             | D4  | call nc,NN                           | set 2,h    |
+| 213  | `MERGE`               | D5  | push de                              | set 2,l    |
+| 214  | `VERIFY`              | D6  | sub N                                | set 2,(hl) |
+| 215  | `BEEP`                | D7  | rst 16                               | set 2,a    |
+| 216  | `CIRCLE`              | D8  | ret c                                | set 3,b    |
+| 217  | `INK`                 | D9  | exx                                  | set 3,c    |
+| 218  | `PAPER`               | DA  | jp c,NN                              | set 3,d    |
+| 219  | `FLASH`               | DB  | in a,(N)                             | set 3,e    |
+| 220  | `BRIGHT`              | DC  | call c,NN                            | set 3,h    |
+| 221  | `INVERSE`             | DD  | prefixes<br>instructions<br>using ix | set 3,l    |
+| 222  | `OVER`                | DE  | sbc a,N                              | set 3,(hl) |
+| 223  | `OUT`                 | DF  | rst 24                               | set 3,a    |
+| 224  | `LPRINT`              | E0  | ret po                               | set 4,b    |
+| 225  | `LLIST`               | E1  | pop hl                               | set 4,c    |
+| 226  | `STOP`                | E2  | jp po,NN                             | set 4,d    |
+| 227  | `READ`                | E3  | ex (sp),hl                           | set 4,e    |
+| 228  | `DATA`                | E4  | call po,NN                           | set 4,h    |
+| 229  | `RESTORE`             | E5  | push hl                              | set 4,l    |
+| 230  | `NEW`                 | E6  | and N                                | set 4,(hl) |
+| 231  | `BORDER`              | E7  | rst 32                               | set 4,a    |
+| 232  | `CONTINUE`            | E8  | ret pe                               | set 5,b    |
+| 233  | `DIM`                 | E9  | jp (hl)                              | set 5,c    |
+| 234  | `REM`                 | EA  | jp pe,NN                             | set 5,d    |
+| 235  | `FOR`                 | EB  | ex de,hl                             | set 5,e    |
+| 236  | `GO TO`               | EC  | call pe,NN                           | set 5,h    |
+| 237  | `GOTO`                | ED  |                                      | set 5,l    |
+| 238  | `GO SUB`              | EE  | xor N                                | set 5,(hl) |
+| 239  | `GOSUB`               | EF  | rst 40                               | set 5,a    |
+| 240  | `INPUT`               | F0  | ret p                                | set 6,b    |
+| 241  | `LOAD`                | F1  | pop af                               | set 6,c    |
+| 242  | `LIST`                | F2  | jp p,NN                              | set 6,d    |
+| 243  | `LET`                 | F3  | di                                   | set 6,e    |
+| 244  | `PAUSE`               | F4  | call p,NN                            | set 6,h    |
+| 245  | `NEXT`                | F5  | push af                              | set 6,l    |
+| 246  | `POKE`                | F6  | or N                                 | set 6,(hl) |
+| 247  | `PRINT`               | F7  | rst 48                               | set 6,a    |
+| 248  | `PLOT`                | F8  | ret m                                | set 7,b    |
+| 249  | `RUN`                 | F9  | ld sp,hl                             | set 7,c    |
+| 250  | `SAVE`                | FA  | jp m,NN                              | set 7,d    |
+| 251  | `RANDOMIZE`           | FB  | ei                                   | set 7,e    |
+| 252  | `IF`                  | FC  | call m,NN                            | set 7,h    |
+| 253  | `CLS`                 | FD  | prefixes<br>instructions<br>using iy | set 7,l    |
+| 254  | `DRAW`                | FE  | cp N                                 | set 7,(hl) |
+| 255  | `CLEAR`               | FF  | rst 56                               | set 7,a    |
 
 ## <a id="part29"></a> Part 29<br>Reports
 
@@ -9665,75 +9666,75 @@ Here is a table showing all the reports. The right-hand column tells you in whic
 
 Disk errors marked by `RIC` (in the left-hand column) will normally be displayed followed by the options: `- Retry, Ignore or Cancel?`. If the cancel option is chosen, then the report shown in the second column will be displayed.
 
-|CODE | REPORT/EXPLANATION                               | SITUATION
-|:---:|--------------------------------------------------|----------
-| `0` | `OK`<br>Successful completion, or jump to a line number bigger than any existing. This report does not change the line and statement jumped to by `CONTINUE`.| Any
-| `1` | `NEXT without FOR`<br>The control variable does not exist (it has not been set up by a `FOR` statement), but there is an  ordinary variable with the same name. | `NEXT`
-| `2` | `Variable not found`<br> For a simple variable, this will happen if the  variable is used before it has been assigned to by a `LET`, `READ` or `INPUT` statement, loaded from  disk (or tape), or set up in a `FOR` statement. For a subscripted variable, it will happen if   the variable is used before it has been dimensioned in a `DIM` statement, or loaded from  disk (or tape). | Any
-| `3` | `Subscript wrong`<br>A subscript is beyond the dimension of the array, or there are the wrong number of subscripts. If the subscript is negative or bigger than 65535, then error `B` will result. | Subscripted variables, strings
-| `4` | `Out of memory`<br>There is not enough room in the computer for what you are trying to do. If the computer really seems to be stuck in this state, you may have to clear out the command line using **DELETE** and then delete a program line or two (with the intention of putting them back afterwards) to give yourself room to manoeuvre. | `LET`, `INPUT`, `FOR`, `DIM`, `GO SUB`, `LOAD`, `MERGE`, Sometimes during expression evaluation.
-| `5` | `Out of screen`<br>An `INPUT` statement has tried to generate more than 23 lines in the lower half of the screen. Also occurs with `PRINT AT 22,`xx. | `INPUT`, `PRINT AT`
-| `6` | `Number too big`<br>Calculations have yielded a number greater than approximately 10<sup>38</sup>.| Any arithmetic
-| `7` | `RETURN without GO SUB`<br>There has been one more `RETURN` than there were `GO SUB`s. | `RETURN`
-| `9` | `STOP statement`<br>After this, `CONTINUE` will not repeat the `STOP`, but carries on with the statement after. | `STOP`
-| `A` | `Invalid argument`<p>The argument for a function is unsuitable (for some reason). | `SQR`, `LN`, `ASN`, `ACS`, `USR` (with string argument)
-| `B` | `Integer out of range`<br>When an integer is required, the floating point argument is rounded to the nearest integer. If this is outside a suitable range, then this error results.</p>For array access, see also [error 3](#error-3). | `RUN`, `RANDOMIZE`, `POKE`, `DIM`,` GO TO`, `GO SUB`, `LIST`, `LLIST`, `PAUSE`, `PLOT`, `CHR$`, `PEEK`, `USR` (with numeric argument)
-| `C` | `Nonsense in BASIC`<br>The text of the (string) argument does not form a valid expression. Also used when the argument for a function or command is outrageously wrong.| `VAL`, `VAL$`
-| `D` | `BREAK - CONT repeats`<br>**BREAK** was pressed during some peripheral operation. The behaviour of `CONTINUE` after this report is normal in that it repeats the statement. Compare with report `L`. | `LOAD`, `SAVE`, `VERIFY`, `MERGE`, Also used when the computer asks `scroll?` and you press **N**, **BREAK** or the space bar
-| `E` | `Out of DATA`<br>You have tried to `READ` past the end of the `DATA` list. | `READ`
-| `F` | `Invalid filename`<br>`SAVE` with filename empty (or longer than 10 characters using tape). | `SAVE`
-| `G` |` No room for line`<br>There is not enough room left in memory to accommodate the new program line. | Entering a line into the program
-| `H` | `STOP in INPUT`<br> Some `INPUT` data started with `STOP`. Unlike the case with report `9`, after this report, `CONTINUE` will behave normally, by repeating the `INPUT` statement. | `INPUT`
-| `I` |` FOR without NEXT`<br>There was a `FOR` loop to be executed no times (eg. `FOR n=1 TO 0`) and the corresponding `NEXT` statement could not be found. | `FOR`
-| `J` | `Invalid I/O device`<br>You are attempting to input characters from (or output characters to) a device that doesn't support it. For example, it is not possible to input characters from the screen stream. A command such as `INPUT #2,a$` will therefore result in this error. | Stream operations; `OPEN #`, `CLOSE #`, `INPUT #`, `PRINT #`, etc.
-| `K` | `Invalid colour`<br>The number specified is not an appropriate value. | `INK`, `PAPER`, `BORDER`, `FLASH`, `BRIGHT`, `INVERSE`, `OVER`; also after one of the corresponding control characters
-| `L` | `BREAK into program`<br>**BREAK** pressed. This is detected between two statements. The line and statement number in the report refer to the statement before **BREAK** was pressed, but `CONTINUE` goes to the statement after (allowing for any jumps to be made), so that it does not repeat any statements. | Any
-| `M` | `RAMTOP no good`<br>The number specified for [RAMTOP](#ramtop) is either too big or too small | `CLEAR`; possibly in `RUN`
-| `N` | `Statement lost`<br>Jump to a statement that no longer exists. | `RETURN`, `NEXT`, `CONTINUE`
-| `O` | `Invalid Stream`<br>Trying to input from (or output to) a stream that isn't open or that is out of range (0...15), or trying to open a stream that is out of range. | `INPUT #`, `OPEN #`, `PRINT #`
-| `P` | `FN without DEF`<br>User-defined function used without a corresponding `DEF` in the program. | `FN`
-| `Q` | `Parameter error`<br>Wrong number of arguments, or one of them is the wrong type (string instead of number, or vice versa). | `FN`
-| `R` | `Tape loading error`A file on tape was found but for some reason could not be read in, or would not verify. | `VERIFY`, `LOAD` or `MERGE`
-| `d` | `Too many brackets`<br>Too many brackets around a repeated phrase in one of the arguments. | `PLAY`
-| `j` | `Invalid baud rate`<br>The baud rate for the RS232 was set to zero. | `FORMAT LINE`
-| `k` | `Invalid note name`<br>`PLAY` came across a note or command it didn't recognise, or a command which was in lower case. | `PLAY`
-| `l` | `Number too big`<br>A parameter for a command is an order of magnitude too big. | `PLAY`
-| `m` | `Note out of range`<br>A series of sharps of flats has taken a note beyond the range of the sound chip. | `PLAY`
-| `n` | `Out of range`<br>A parameter for a command is too big or too small. If the error is very large, error [`l`][#error-l] results.| `PLAY`
-| `o` | `Too many tied notes`<br>An attempt was made to tie too many notes together. | `PLAY`
-|     | `Bad filename`<br>The filename used in any of the disk commands does not conform to the limits described in [part 20 of this chapter](#part20). | `CAT`, `COPY`, `ERASE`, `LOAD`, `MERGE`, `MOVE`, `SAVE`
-|     | `Bad parameters`<br>One of the values passed to +3DOS by BASIC is out of range. It is unlikely that this error will ever be seen. | Unlikely
-| `RIC` | `CRC data error`<br>The cyclic redundancy check (checksum byte) for a sector is incorrect. This is a rare error that is produced if the disk being read has been corrupted in some way (perhaps magnetically). | `CAT`, `COPY`, `ERASE`, `LOAD`, `MERGE`, `MOVE`, `SAVE`
-|     | `Code length error`<br>Trying to load a `CODE` file from disk that is longer than the value given in the `LOAD` command.| `LOAD`...`CODE`
-|     | `Destination cannot be wild`<br>Trying to give a wildcard file specification for the destination in a `COPY` command when the source also contains wildcard characters. In this case, the destination can ***only*** be a drive letter. | `COPY`...`TO`
-|     | `Destination must be drive`<br>The source filename in a `COPY` command contains wildcard characters, but the destination is only a single file name. In this case, the destination can only be a drive letter. | `COPY`...`TO`
-|     | `Directory full`<br>Trying to create the 65th file on a disk; (the normal disk directory can only have 64 entries). | `COPY`, `SAVE`
-|     | `Disk full`<br>Saving or copying files to a disk has used the last byte of free space. The `CAT` command can be used to check that there is sufficient free space before attempting such an operation. When copying, any partially-copied files will be deleted. However, when saving, it is possible that part of the file may be left on the disk - this part should be erased, as any attempt to use it will fail. | `COPY`, `SAVE`
-| RIC | `Disk has been changed`<br>While executing a command, +3DOS has noticed that the disk in the drive is not the same one that was present at the beginning of command execution. If a machine code program has opened files on a disk (then the disk is changed) and a ***+3*** BASIC command tries to access the disk, then this report will be produced. | `CAT`, `COPY`, `ERASE`, `LOAD`, `MERGE`, `MOVE`, `SAVE`
-|     | `Disk is not bootable`<br>An attempt has been made to load the 'bootstrap' program from a disk that doesn't have a boot sector.| `LOAD "*"`
-| RIC | `Disk is write protected`<br>An attempt has been made to write to a disk whose write protect hole is open. Write protection may be disabled by sliding closed the appropriate tab, before the disk is written to. | `COPY`, `ERASE`, `FORMAT`, `MOVE`, `SAVE`
-|     | `Drive B: is not present`<br>An attempt has been made to use the `FORMAT` command on the external disk drive (drive B:) when it has not been connected. | `FORMAT`
-|     | `Drive in use`<br>An attempt has been made to re-map a drive that has files open on it. It is very unlikely that this error will ever be seen. | Unlikely
-|     | `Drive not found`<br> A filename used in a disk command contains a drive letter specifying a drive that isn't present. For example, `ERASE "c:fred"`. | `CAT`, `COPY`, `ERASE`, `LOAD`, `MERGE`, `MOVE`, `SAVE`
-| RIC | `Drive not ready`<br>A disk command has been attempted when the drive was not ready. This usually happens because there is no disk in the drive. It will usually be possible to simply put a disk in the drive and type `R`. | `CAT`, `COPY`, `ERASE`, `FORMAT`, `LOAD`, `MERGE`, `MOVE`, `SAVE`
-|     | `End of file found`<br>An attempt has been made to read a byte past the end-of-file position. It is unlikely that this report will be seen.| Unlikely
-|     | `File already exists`<br>The destination filename in a `MOVE` command (that is being used to rename a file) already exists. | `MOVE`...`TO`
-|     | `File already in use`<br>If a machine code program has opened files 1...3, then a ***+3*** BASIC command might fail with  this error when it tries to open a file that was already open. It is unlikely that this error will ever be seen.| Unlikely; `COPY`, `LOAD`, `MERGE`, `SAVE`
-|     | `File is read only`<br>Trying to update, erase or save using the name  of a file that has its protection attribute set (using the command `MOVE` filename `TO "+P"`). Use the command `MOVE` filename `TO "-P"` to remove write protection. | `COPY`, `ERASE`, `MOVE`, `SAVE`
-|     | `File not found`<br>The filename given for one of the disk reading commands specifies a file that does not exist. | `COPY`, `ERASE`, `LOAD`, `MERGE`, `MERGE`
-|     | `File not open`<br>A disk command has tried to operate on a file which has not been opened. It is very unlikely that this error will ever be seen.| Unlikely
-|     | `File too big`<br>An attempt has been made to write a file that is greater than 8 megabytes in length. It is very unlikely that this error will ever be seen. | Unlikely
-|     | `Invalid attribute`<br>The attribute character following `+` or `-` in a `MOVE` command is not `P`, `S` or `A` (or there is more than one character after the `+` or `-`). | `MOVE`...`TO`
-|     | `Invalid drive`<br>A drive letter other than `A:` or `B:` has been specified in a `FORMAT` command. | `FORMAT`
-| RIC | `Missing address mark`<br>A sector being read from the disk does not contain the usual information that is used by the system to identify where it is on the disk. This almost invariably means that an attempt is being made to read a disk that has not been formatted. The error may possibly occur when trying to read a disk that has become corrupted in some way, or one that employs some form of in-built protection. | `CAT`, `COPY`, `ERASE`, `LOAD`, `MERGE`, `MOVE`, `SAVE`
-|     | `Missing extent`<br>Files are essentially made up of 16K blocks and each of these is known as an ***extent***. This error might occur while reading a file from disk if the disk is changed after the system has read the directory entry for a file (but before it has read a particular extent). However, it is very unlikely that this error will ever be seen. | Unlikely; `COPY`, `LOAD`, `MERGE`
-| RIC | `No data`<br>This is a low level disk error that occurs when a sector identifier cannot be found. It is possible that the error might occur while trying to copy a disk that employs some form of in-built protection.| `CAT`, `COPY`, `ERASE`, `LOAD`, `MERGE`, `MOVE`, `SAVE`
-|     | `No rename between drives`<br>An attempt has been made to use the `MOVE` command specifying source and destination filenames that are on different drives.| `MOVE`...`TO`
-| RIC | `Seek fail`<br>This is a hardware error that means the drive is unable to locate the track that has been requested. If this error persists, it may indicate that the computer needs to be serviced.| `CAT`, `COPY`, `ERASE`, `ERASE`, `FORMAT`, `LOAD`, `MERGE`, `MOVE`, `SAVE`
-|     | `Uncached`<br>This is an internal system error and it is very unlikely that it will ever be seen. | Unlikely
-| RIC | `Unknown disk error`<br>An error has occurred that the system is not familiar with. It is very unlikely that it will ever be seen. | Unlikely; `CAT`, `COPY`, `ERASE`, `FORMAT`, `LOAD`, `MERGE`, `MOVE`, `SAVE`
-| RIC | `Unrecognised disk format`<br>While trying to read/write a disk, +3DOS has been unable to recognise its format, ie. it has read the disk specification but has found information there that doesn't make sense. This error may occur when trying to access disks which employ some form of in-built protection. | `CAT`, `COPY`, `ERASE`, `LOAD`, `MERGE`, `MOVE`, `SAVE`
-| RIC | `Unsuitable media`<br>The disk in the drive has a format that is not suitable. This error might occur when, for example, trying to write to an 80 track disk placed in the (40 track) disk drive of the ***+3***. | `CAT`, `COPY`, `ERASE`, `FORMAT`, `LOAD`, `MERGE`, `MOVE`, `SAVE`
+|             CODE              | REPORT/EXPLANATION                                                                                                                                                                                                                                                                                                                                                                                                             | SITUATION                                                                                                                             |
+| :---------------------------: | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------- |
+|    <a id="error-0"></a>`0`    | `OK`<br>Successful completion, or jump to a line number bigger than any existing. This report does not change the line and statement jumped to by `CONTINUE`.                                                                                                                                                                                                                                                                  | Any                                                                                                                                   |
+|    <a id="error-1"></a>`1`    | `NEXT without FOR`<br>The control variable does not exist (it has not been set up by a `FOR` statement), but there is an  ordinary variable with the same name.                                                                                                                                                                                                                                                                | `NEXT`                                                                                                                                |
+|    <a id="error-2"></a>`2`    | `Variable not found`<br> For a simple variable, this will happen if the  variable is used before it has been assigned to by a `LET`, `READ` or `INPUT` statement, loaded from  disk (or tape), or set up in a `FOR` statement. For a subscripted variable, it will happen if   the variable is used before it has been dimensioned in a `DIM` statement, or loaded from  disk (or tape).                                       | Any                                                                                                                                   |
+|    <a id="error-3"></a>`3`    | `Subscript wrong`<br>A subscript is beyond the dimension of the array, or there are the wrong number of subscripts. If the subscript is negative or bigger than 65535, then error `B` will result.                                                                                                                                                                                                                             | Subscripted variables, strings                                                                                                        |
+|    <a id="error-4"></a>`4`    | `Out of memory`<br>There is not enough room in the computer for what you are trying to do. If the computer really seems to be stuck in this state, you may have to clear out the command line using **DELETE** and then delete a program line or two (with the intention of putting them back afterwards) to give yourself room to manoeuvre.                                                                                  | `LET`, `INPUT`, `FOR`, `DIM`, `GO SUB`, `LOAD`, `MERGE`, Sometimes during expression evaluation.                                      |
+|    <a id="error-5"></a>`5`    | `Out of screen`<br>An `INPUT` statement has tried to generate more than 23 lines in the lower half of the screen. Also occurs with `PRINT AT 22,`xx.                                                                                                                                                                                                                                                                           | `INPUT`, `PRINT AT`                                                                                                                   |
+|    <a id="error-6"></a>`6`    | `Number too big`<br>Calculations have yielded a number greater than approximately 10<sup>38</sup>.                                                                                                                                                                                                                                                                                                                             | Any arithmetic                                                                                                                        |
+|    <a id="error-7"></a>`7`    | `RETURN without GO SUB`<br>There has been one more `RETURN` than there were `GO SUB`s.                                                                                                                                                                                                                                                                                                                                         | `RETURN`                                                                                                                              |
+|    <a id="error-9"></a>`9`    | `STOP statement`<br>After this, `CONTINUE` will not repeat the `STOP`, but carries on with the statement after.                                                                                                                                                                                                                                                                                                                | `STOP`                                                                                                                                |
+|    <a id="error-a"></a>`A`    | `Invalid argument`<p>The argument for a function is unsuitable (for some reason).                                                                                                                                                                                                                                                                                                                                              | `SQR`, `LN`, `ASN`, `ACS`, `USR` (with string argument)                                                                               |
+|    <a id="error-b"></a>`B`    | `Integer out of range`<br>When an integer is required, the floating point argument is rounded to the nearest integer. If this is outside a suitable range, then this error results.</p>For array access, see also [error 3](#error-3).                                                                                                                                                                                         | `RUN`, `RANDOMIZE`, `POKE`, `DIM`,` GO TO`, `GO SUB`, `LIST`, `LLIST`, `PAUSE`, `PLOT`, `CHR$`, `PEEK`, `USR` (with numeric argument) |
+|    <a id="error-c"></a>`C`    | `Nonsense in BASIC`<br>The text of the (string) argument does not form a valid expression. Also used when the argument for a function or command is outrageously wrong.                                                                                                                                                                                                                                                        | `VAL`, `VAL$`                                                                                                                         |
+|    <a id="error-d"></a>`D`    | `BREAK - CONT repeats`<br>**BREAK** was pressed during some peripheral operation. The behaviour of `CONTINUE` after this report is normal in that it repeats the statement. Compare with report `L`.                                                                                                                                                                                                                           | `LOAD`, `SAVE`, `VERIFY`, `MERGE`, Also used when the computer asks `scroll?` and you press **N**, **BREAK** or the space bar         |
+|    <a id="error-e"></a>`E`    | `Out of DATA`<br>You have tried to `READ` past the end of the `DATA` list.                                                                                                                                                                                                                                                                                                                                                     | `READ`                                                                                                                                |
+|    <a id="error-f"></a>`F`    | `Invalid filename`<br>`SAVE` with filename empty (or longer than 10 characters using tape).                                                                                                                                                                                                                                                                                                                                    | `SAVE`                                                                                                                                |
+|    <a id="error-g"></a>`G`    | ` No room for line`<br>There is not enough room left in memory to accommodate the new program line.                                                                                                                                                                                                                                                                                                                            | Entering a line into the program                                                                                                      |
+|    <a id="error-h"></a>`H`    | `STOP in INPUT`<br> Some `INPUT` data started with `STOP`. Unlike the case with report `9`, after this report, `CONTINUE` will behave normally, by repeating the `INPUT` statement.                                                                                                                                                                                                                                            | `INPUT`                                                                                                                               |
+|    <a id="error-i"></a>`I`    | ` FOR without NEXT`<br>There was a `FOR` loop to be executed no times (eg. `FOR n=1 TO 0`) and the corresponding `NEXT` statement could not be found.                                                                                                                                                                                                                                                                          | `FOR`                                                                                                                                 |
+|    <a id="error-j"></a>`J`    | `Invalid I/O device`<br>You are attempting to input characters from (or output characters to) a device that doesn't support it. For example, it is not possible to input characters from the screen stream. A command such as `INPUT #2,a$` will therefore result in this error.                                                                                                                                               | Stream operations; `OPEN #`, `CLOSE #`, `INPUT #`, `PRINT #`, etc.                                                                    |
+|    <a id="error-k"></a>`K`    | `Invalid colour`<br>The number specified is not an appropriate value.                                                                                                                                                                                                                                                                                                                                                          | `INK`, `PAPER`, `BORDER`, `FLASH`, `BRIGHT`, `INVERSE`, `OVER`; also after one of the corresponding control characters                |
+|    <a id="error-l"></a>`L`    | `BREAK into program`<br>**BREAK** pressed. This is detected between two statements. The line and statement number in the report refer to the statement before **BREAK** was pressed, but `CONTINUE` goes to the statement after (allowing for any jumps to be made), so that it does not repeat any statements.                                                                                                                | Any                                                                                                                                   |
+|    <a id="error-m"></a>`M`    | `RAMTOP no good`<br>The number specified for [RAMTOP](#ramtop) is either too big or too small                                                                                                                                                                                                                                                                                                                                  | `CLEAR`; possibly in `RUN`                                                                                                            |
+|    <a id="error-n"></a>`N`    | `Statement lost`<br>Jump to a statement that no longer exists.                                                                                                                                                                                                                                                                                                                                                                 | `RETURN`, `NEXT`, `CONTINUE`                                                                                                          |
+|    <a id="error-o"></a>`O`    | `Invalid Stream`<br>Trying to input from (or output to) a stream that isn't open or that is out of range (0...15), or trying to open a stream that is out of range.                                                                                                                                                                                                                                                            | `INPUT #`, `OPEN #`, `PRINT #`                                                                                                        |
+|    <a id="error-p"></a>`P`    | `FN without DEF`<br>User-defined function used without a corresponding `DEF` in the program.                                                                                                                                                                                                                                                                                                                                   | `FN`                                                                                                                                  |
+|    <a id="error-q"></a>`Q`    | `Parameter error`<br>Wrong number of arguments, or one of them is the wrong type (string instead of number, or vice versa).                                                                                                                                                                                                                                                                                                    | `FN`                                                                                                                                  |
+|    <a id="error-r"></a>`R`    | `Tape loading error`A file on tape was found but for some reason could not be read in, or would not verify.                                                                                                                                                                                                                                                                                                                    | `VERIFY`, `LOAD` or `MERGE`                                                                                                           |
+| <a id="error-d-lower"></a>`d` | `Too many brackets`<br>Too many brackets around a repeated phrase in one of the arguments.                                                                                                                                                                                                                                                                                                                                     | `PLAY`                                                                                                                                |
+| <a id="error-j-lower"></a>`j` | `Invalid baud rate`<br>The baud rate for the RS232 was set to zero.                                                                                                                                                                                                                                                                                                                                                            | `FORMAT LINE`                                                                                                                         |
+| <a id="error-k-lower"></a>`k` | `Invalid note name`<br>`PLAY` came across a note or command it didn't recognise, or a command which was in lower case.                                                                                                                                                                                                                                                                                                         | `PLAY`                                                                                                                                |
+| <a id="error-l-lower"></a>`l` | `Number too big`<br>A parameter for a command is an order of magnitude too big.                                                                                                                                                                                                                                                                                                                                                | `PLAY`                                                                                                                                |
+| <a id="error-m-lower"></a>`m` | `Note out of range`<br>A series of sharps of flats has taken a note beyond the range of the sound chip.                                                                                                                                                                                                                                                                                                                        | `PLAY`                                                                                                                                |
+| <a id="error-n-lower"></a>`n` | `Out of range`<br>A parameter for a command is too big or too small. If the error is very large, error [`l`][#error-l] results.                                                                                                                                                                                                                                                                                                | `PLAY`                                                                                                                                |
+| <a id="error-o-lower"></a>`o` | `Too many tied notes`<br>An attempt was made to tie too many notes together.                                                                                                                                                                                                                                                                                                                                                   | `PLAY`                                                                                                                                |
+|                               | `Bad filename`<br>The filename used in any of the disk commands does not conform to the limits described in [part 20 of this chapter](#part20).                                                                                                                                                                                                                                                                                | `CAT`, `COPY`, `ERASE`, `LOAD`, `MERGE`, `MOVE`, `SAVE`                                                                               |
+|                               | `Bad parameters`<br>One of the values passed to +3DOS by BASIC is out of range. It is unlikely that this error will ever be seen.                                                                                                                                                                                                                                                                                              | Unlikely                                                                                                                              |
+|             `RIC`             | `CRC data error`<br>The cyclic redundancy check (checksum byte) for a sector is incorrect. This is a rare error that is produced if the disk being read has been corrupted in some way (perhaps magnetically).                                                                                                                                                                                                                 | `CAT`, `COPY`, `ERASE`, `LOAD`, `MERGE`, `MOVE`, `SAVE`                                                                               |
+|                               | `Code length error`<br>Trying to load a `CODE` file from disk that is longer than the value given in the `LOAD` command.                                                                                                                                                                                                                                                                                                       | `LOAD`...`CODE`                                                                                                                       |
+|                               | `Destination cannot be wild`<br>Trying to give a wildcard file specification for the destination in a `COPY` command when the source also contains wildcard characters. In this case, the destination can ***only*** be a drive letter.                                                                                                                                                                                        | `COPY`...`TO`                                                                                                                         |
+|                               | `Destination must be drive`<br>The source filename in a `COPY` command contains wildcard characters, but the destination is only a single file name. In this case, the destination can only be a drive letter.                                                                                                                                                                                                                 | `COPY`...`TO`                                                                                                                         |
+|                               | `Directory full`<br>Trying to create the 65th file on a disk; (the normal disk directory can only have 64 entries).                                                                                                                                                                                                                                                                                                            | `COPY`, `SAVE`                                                                                                                        |
+|                               | `Disk full`<br>Saving or copying files to a disk has used the last byte of free space. The `CAT` command can be used to check that there is sufficient free space before attempting such an operation. When copying, any partially-copied files will be deleted. However, when saving, it is possible that part of the file may be left on the disk - this part should be erased, as any attempt to use it will fail.          | `COPY`, `SAVE`                                                                                                                        |
+|              RIC              | `Disk has been changed`<br>While executing a command, +3DOS has noticed that the disk in the drive is not the same one that was present at the beginning of command execution. If a machine code program has opened files on a disk (then the disk is changed) and a ***+3*** BASIC command tries to access the disk, then this report will be produced.                                                                       | `CAT`, `COPY`, `ERASE`, `LOAD`, `MERGE`, `MOVE`, `SAVE`                                                                               |
+|                               | `Disk is not bootable`<br>An attempt has been made to load the 'bootstrap' program from a disk that doesn't have a boot sector.                                                                                                                                                                                                                                                                                                | `LOAD "*"`                                                                                                                            |
+|              RIC              | `Disk is write protected`<br>An attempt has been made to write to a disk whose write protect hole is open. Write protection may be disabled by sliding closed the appropriate tab, before the disk is written to.                                                                                                                                                                                                              | `COPY`, `ERASE`, `FORMAT`, `MOVE`, `SAVE`                                                                                             |
+|                               | `Drive B: is not present`<br>An attempt has been made to use the `FORMAT` command on the external disk drive (drive B:) when it has not been connected.                                                                                                                                                                                                                                                                        | `FORMAT`                                                                                                                              |
+|                               | `Drive in use`<br>An attempt has been made to re-map a drive that has files open on it. It is very unlikely that this error will ever be seen.                                                                                                                                                                                                                                                                                 | Unlikely                                                                                                                              |
+|                               | `Drive not found`<br> A filename used in a disk command contains a drive letter specifying a drive that isn't present. For example, `ERASE "c:fred"`.                                                                                                                                                                                                                                                                          | `CAT`, `COPY`, `ERASE`, `LOAD`, `MERGE`, `MOVE`, `SAVE`                                                                               |
+|              RIC              | `Drive not ready`<br>A disk command has been attempted when the drive was not ready. This usually happens because there is no disk in the drive. It will usually be possible to simply put a disk in the drive and type `R`.                                                                                                                                                                                                   | `CAT`, `COPY`, `ERASE`, `FORMAT`, `LOAD`, `MERGE`, `MOVE`, `SAVE`                                                                     |
+|                               | `End of file found`<br>An attempt has been made to read a byte past the end-of-file position. It is unlikely that this report will be seen.                                                                                                                                                                                                                                                                                    | Unlikely                                                                                                                              |
+|                               | `File already exists`<br>The destination filename in a `MOVE` command (that is being used to rename a file) already exists.                                                                                                                                                                                                                                                                                                    | `MOVE`...`TO`                                                                                                                         |
+|                               | `File already in use`<br>If a machine code program has opened files 1...3, then a ***+3*** BASIC command might fail with  this error when it tries to open a file that was already open. It is unlikely that this error will ever be seen.                                                                                                                                                                                     | Unlikely; `COPY`, `LOAD`, `MERGE`, `SAVE`                                                                                             |
+|                               | `File is read only`<br>Trying to update, erase or save using the name  of a file that has its protection attribute set (using the command `MOVE` filename `TO "+P"`). Use the command `MOVE` filename `TO "-P"` to remove write protection.                                                                                                                                                                                    | `COPY`, `ERASE`, `MOVE`, `SAVE`                                                                                                       |
+|                               | `File not found`<br>The filename given for one of the disk reading commands specifies a file that does not exist.                                                                                                                                                                                                                                                                                                              | `COPY`, `ERASE`, `LOAD`, `MERGE`, `MERGE`                                                                                             |
+|                               | `File not open`<br>A disk command has tried to operate on a file which has not been opened. It is very unlikely that this error will ever be seen.                                                                                                                                                                                                                                                                             | Unlikely                                                                                                                              |
+|                               | `File too big`<br>An attempt has been made to write a file that is greater than 8 megabytes in length. It is very unlikely that this error will ever be seen.                                                                                                                                                                                                                                                                  | Unlikely                                                                                                                              |
+|                               | `Invalid attribute`<br>The attribute character following `+` or `-` in a `MOVE` command is not `P`, `S` or `A` (or there is more than one character after the `+` or `-`).                                                                                                                                                                                                                                                     | `MOVE`...`TO`                                                                                                                         |
+|                               | `Invalid drive`<br>A drive letter other than `A:` or `B:` has been specified in a `FORMAT` command.                                                                                                                                                                                                                                                                                                                            | `FORMAT`                                                                                                                              |
+|              RIC              | `Missing address mark`<br>A sector being read from the disk does not contain the usual information that is used by the system to identify where it is on the disk. This almost invariably means that an attempt is being made to read a disk that has not been formatted. The error may possibly occur when trying to read a disk that has become corrupted in some way, or one that employs some form of in-built protection. | `CAT`, `COPY`, `ERASE`, `LOAD`, `MERGE`, `MOVE`, `SAVE`                                                                               |
+|                               | `Missing extent`<br>Files are essentially made up of 16K blocks and each of these is known as an ***extent***. This error might occur while reading a file from disk if the disk is changed after the system has read the directory entry for a file (but before it has read a particular extent). However, it is very unlikely that this error will ever be seen.                                                             | Unlikely; `COPY`, `LOAD`, `MERGE`                                                                                                     |
+|              RIC              | `No data`<br>This is a low level disk error that occurs when a sector identifier cannot be found. It is possible that the error might occur while trying to copy a disk that employs some form of in-built protection.                                                                                                                                                                                                         | `CAT`, `COPY`, `ERASE`, `LOAD`, `MERGE`, `MOVE`, `SAVE`                                                                               |
+|                               | `No rename between drives`<br>An attempt has been made to use the `MOVE` command specifying source and destination filenames that are on different drives.                                                                                                                                                                                                                                                                     | `MOVE`...`TO`                                                                                                                         |
+|              RIC              | `Seek fail`<br>This is a hardware error that means the drive is unable to locate the track that has been requested. If this error persists, it may indicate that the computer needs to be serviced.                                                                                                                                                                                                                            | `CAT`, `COPY`, `ERASE`, `ERASE`, `FORMAT`, `LOAD`, `MERGE`, `MOVE`, `SAVE`                                                            |
+|                               | `Uncached`<br>This is an internal system error and it is very unlikely that it will ever be seen.                                                                                                                                                                                                                                                                                                                              | Unlikely                                                                                                                              |
+|              RIC              | `Unknown disk error`<br>An error has occurred that the system is not familiar with. It is very unlikely that it will ever be seen.                                                                                                                                                                                                                                                                                             | Unlikely; `CAT`, `COPY`, `ERASE`, `FORMAT`, `LOAD`, `MERGE`, `MOVE`, `SAVE`                                                           |
+|              RIC              | `Unrecognised disk format`<br>While trying to read/write a disk, +3DOS has been unable to recognise its format, ie. it has read the disk specification but has found information there that doesn't make sense. This error may occur when trying to access disks which employ some form of in-built protection.                                                                                                                | `CAT`, `COPY`, `ERASE`, `LOAD`, `MERGE`, `MOVE`, `SAVE`                                                                               |
+|              RIC              | `Unsuitable media`<br>The disk in the drive has a format that is not suitable. This error might occur when, for example, trying to write to an 80 track disk placed in the (40 track) disk drive of the ***+3***.                                                                                                                                                                                                              | `CAT`, `COPY`, `ERASE`, `FORMAT`, `LOAD`, `MERGE`, `MOVE`, `SAVE`                                                                     |
 
 ## <a id="part30"></a> Part 30<br>Reference section
 
@@ -9743,7 +9744,7 @@ Subjects covered...
 
 The ***+3*** is designed around the Z80A microprocessor, which runs at a speed of 3.5469MHz (about three and half million cycles per second).
 
-The _**+3**'s_ memory is divided into 64K ROM and 128K RAM, arranged in 16K pages. The four ROM pages (0-3) can be mapped into the bottom 16K (0000h-3FFFh) of the memory map. The eight RAM pages (0-7) are usually mapped into the top 16K (C000h-FFFFh) of the memory map. RAM page 5 is also mapped into the range 4000h-7FFFh, and RAM page 2 is mapped into the range 8000h-BFFFh. There are also several RAM page combinations that occupy the full 64K address range. These were given in [part 35 of this chapter](#part35), under the heading 'Memory management'.
+The _**+3**'s_ memory is divided into 64K ROM and 128K RAM, arranged in 16K pages. The four ROM pages (0-3) can be mapped into the bottom 16K (0000h-3FFFh) of the memory map. The eight RAM pages (0-7) are usually mapped into the top 16K (C000h-FFFFh) of the memory map. RAM page 5 is also mapped into the range 4000h-7FFFh, and RAM page 2 is mapped into the range 8000h-BFFFh. There are also several RAM page combinations that occupy the full 64K address range. These were given in [part 24 of this chapter](#part24), under the heading 'Memory management'.
 
 Physically speaking, the ROMs are two 32K devices (similar to the 27256), which are both treated by the system as two 16K chips. The RAM is composed of four 16K x 4 bit chips (41464), some of which (RAM banks 4-7) are time-shared between the circuitry that produces the screen display, and the Z80A. The others (RAM banks 0-3) are for the exclusive use of the Z80A, as in the ROM.
 
@@ -9891,44 +9892,44 @@ Substrings can be assigned to (see `LET`). If a string quote is to be written in
 
 The argument of a function does not need brackets if it is a constant or a variable (optionally subscripted or sliced).
 
-| FUNCTION    | TYPE OF ARGUMENT      | RESULT
-|-------------|-----------------------|-------
-| `ABS`       | number                | Absolute magnitude.
-| `ACS`       | number                | Arccosine in radians. [Error `A`](#error-a) if x not in the range -1...+1.
-| `AND`       | binary operation, right operand always a number
-|             | numeric left operand  | `a AND b` `a` if `b`<>`0` or 0 if `b=`0
-|             | string left operand   | `a$ AND b` `a$` if `b`<>`0` or `""` if `b=`0
-| `ASN`       | number                | Arcsine in radians. [Error `A`](#error-a) if x not in the range -1...+1.
-| `ATN`       | number                | Arctangent in radians.
-| `ATTR`      | two arguments, x and y, both numbers (enclosed in brackets) | A number whose binary form codes the attributes of line x, column y on the screen. Bit 7 (most significant) is 1 for flashing, 0 for steady. Bit 6 is 1 for bright, 0 for normal. Bits 5...3 are the paper colour. Bits 2...0 are ink colour. [Error `B`](#error-b) unless 0`<=`x`<=`23 and 0`<=`y`<=`31.
-| `BIN`       | binary number         | This is not really a function, but an alternative notation for numbers: `BIN` followed by a sequence of 0s and 1s is the number with such a representation in binary.
-| `CHR$`      | number                | The character whose code is x, rounded to the nearest integer.
-| `CODE`      | string                | The code of the first character in x (or 0 if x is the empty string)
-| `COS`       | number (in radians)   | Cosine x.
-| `EXP`       | number                | e<sup>x</sup>.
-| `FN`        |                       | `FN` followed by a letter calls up a user-defined function (see `DEF`). The arguments must be enclosed in brackets - (even if there are no arguments, the brackets must still be present).
-| `IN`        | number                | The result of inputting at processor level from port x (0`<=`x`<=`FFFFh). Loads the BC register pair with x and does the assembly language instruction ***in a,(c)***.
-| `INKEY$`    | none                  | Reads the keyboard. The result is the character representing the key pressed (if there is exactly one), else the empty string.
-| `INT`       | number                | Integer part (always rounds down).
-| `LEN`       | string                | Length.
-| `LN`        | number                | Natural logarithm (to base e). [Error `A`](#error-a) if x`<=`0.
-| `NOT`       | number                | 0 if x`<>`0, 1 if x=0. `NOT` has priority 4.
-| `OR`        | binary operation, both operands numbers |`a OR b` 1 if `b<>`0 or `a` if `b=`0<br>`OR` has priority 2.
-| `PEEK`      | number                | The value of the byte in memory whose address is x (rounded to the nearest integer). [Error `B`](#error-b) if x is not in the range 0...65535.
-| `PI`        | none                  | π (3.1415927...).
-| `POINT`     | two arguments, x and y, both numbers (enclosed in brackets) | 1 if the pixel at (x,y) is ink colour. 0 if it is paper colour.<br>[Error `B`](#error-b) unless 0`<=`x`<=`255 and 0`<=`y`<=`175.
-| `RND`       | none                  | The next pseudo-random number in a sequence generated by taking the powers of 75 modulo 65537, subtracting 1 and dividing by 65536. Yields a number in the range 0`<=`x`<`1.
-| `SCREEN$`   | two arguments, x and y both numbers (wrapped in brackets) | The character that appears (either normally or inverted) on the screen at line x, column y. Returns the empty string if the character is not recognised.<br>[Error `B`](#error-b) unless 0`<=`x`<=`23 and 0`<=`y`<=`31.
-| `SGN`       | number                | Sign of number. Returns -1 for negative, 0 for zero, or +1 for positive.
-| `SIN`       | number (in radians)   | Sine x.
-| `SQR`       | number                | Square root.<br>[Error `A`](#error-a) if x<0.
-| `STR$`      | number                | The string of characters that would be displayed if x were printed.
-| `TAN`       | number (in radians)   | Tangent.
-| `USR`       | number                | Calls the machine code subroutine whose starting address is x. On entry to the routine at address x the memory is configured so that 0000h...3FFFh (0...16383) is occupied by ROM 3 (48 BASIC), 4000h...7FFFh (16384...32767) is occupied by RAM page 5, 8000h...BFFFh (32768...49151) is occupied by RAM page 2, and C000h...FFFFh (49152...65535) is occupied by RAM page 0. If +3DOS routines are to be called, RAM page 7 should be switched in at C000h...FFFFh (49152...65535), and ROM 2 (+3DOS) should be switched in at 0000h...3FFFh (0...16383). See [part 26 of this chapter](#part26) for further details.<br>On return, the result is the contents of the BC register pair.
-| `USR`       | string                | The address of the bit pattern for the user-defined graphic corresponding to x.<br>[Error `A`](#error-a) if x is not a single letter between 'a' and 'u', or a user-defined graphic.
-| `VAL`       | string                | Evaluates x (without its bounding quotes as a numerical expression.<br>[Error `C`](#error-c) if x contains a syntax error, or gives a string value. Other errors possible, depending on the expression.
-| `VAL$`      | string                | Evaluates x (without its bounding quotes) as a string expression.<br>[Error `C`](#error-c) if x contains a syntax error of gives a numerical value. Other errors possible (as for `VAL`).
-| `-`         | number                | Negation.
+| FUNCTION  | TYPE OF ARGUMENT                                            | RESULT                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| --------- | ----------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `ABS`     | number                                                      | Absolute magnitude.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| `ACS`     | number                                                      | Arccosine in radians. [Error `A`](#error-a) if x not in the range -1...+1.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| `AND`     | binary operation, right operand always a number             |
+|           | numeric left operand                                        | `a AND b` `a` if `b`<>`0` or 0 if `b=`0                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+|           | string left operand                                         | `a$ AND b` `a$` if `b`<>`0` or `""` if `b=`0                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| `ASN`     | number                                                      | Arcsine in radians. [Error `A`](#error-a) if x not in the range -1...+1.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| `ATN`     | number                                                      | Arctangent in radians.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| `ATTR`    | two arguments, x and y, both numbers (enclosed in brackets) | A number whose binary form codes the attributes of line x, column y on the screen. Bit 7 (most significant) is 1 for flashing, 0 for steady. Bit 6 is 1 for bright, 0 for normal. Bits 5...3 are the paper colour. Bits 2...0 are ink colour. [Error `B`](#error-b) unless 0`<=`x`<=`23 and 0`<=`y`<=`31.                                                                                                                                                                                                                                                                                                                                                                                 |
+| `BIN`     | binary number                                               | This is not really a function, but an alternative notation for numbers: `BIN` followed by a sequence of 0s and 1s is the number with such a representation in binary.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| `CHR$`    | number                                                      | The character whose code is x, rounded to the nearest integer.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| `CODE`    | string                                                      | The code of the first character in x (or 0 if x is the empty string)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| `COS`     | number (in radians)                                         | Cosine x.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| `EXP`     | number                                                      | e<sup>x</sup>.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| `FN`      |                                                             | `FN` followed by a letter calls up a user-defined function (see `DEF`). The arguments must be enclosed in brackets - (even if there are no arguments, the brackets must still be present).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| `IN`      | number                                                      | The result of inputting at processor level from port x (0`<=`x`<=`FFFFh). Loads the BC register pair with x and does the assembly language instruction ***in a,(c)***.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| `INKEY$`  | none                                                        | Reads the keyboard. The result is the character representing the key pressed (if there is exactly one), else the empty string.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| `INT`     | number                                                      | Integer part (always rounds down).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| `LEN`     | string                                                      | Length.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| `LN`      | number                                                      | Natural logarithm (to base e). [Error `A`](#error-a) if x`<=`0.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| `NOT`     | number                                                      | 0 if x`<>`0, 1 if x=0. `NOT` has priority 4.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| `OR`      | binary operation, both operands numbers                     | `a OR b` 1 if `b<>`0 or `a` if `b=`0<br>`OR` has priority 2.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| `PEEK`    | number                                                      | The value of the byte in memory whose address is x (rounded to the nearest integer). [Error `B`](#error-b) if x is not in the range 0...65535.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| `PI`      | none                                                        | π (3.1415927...).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| `POINT`   | two arguments, x and y, both numbers (enclosed in brackets) | 1 if the pixel at (x,y) is ink colour. 0 if it is paper colour.<br>[Error `B`](#error-b) unless 0`<=`x`<=`255 and 0`<=`y`<=`175.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| `RND`     | none                                                        | The next pseudo-random number in a sequence generated by taking the powers of 75 modulo 65537, subtracting 1 and dividing by 65536. Yields a number in the range 0`<=`x`<`1.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| `SCREEN$` | two arguments, x and y both numbers (wrapped in brackets)   | The character that appears (either normally or inverted) on the screen at line x, column y. Returns the empty string if the character is not recognised.<br>[Error `B`](#error-b) unless 0`<=`x`<=`23 and 0`<=`y`<=`31.                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| `SGN`     | number                                                      | Sign of number. Returns -1 for negative, 0 for zero, or +1 for positive.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| `SIN`     | number (in radians)                                         | Sine x.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| `SQR`     | number                                                      | Square root.<br>[Error `A`](#error-a) if x<0.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| `STR$`    | number                                                      | The string of characters that would be displayed if x were printed.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| `TAN`     | number (in radians)                                         | Tangent.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| `USR`     | number                                                      | Calls the machine code subroutine whose starting address is x. On entry to the routine at address x the memory is configured so that 0000h...3FFFh (0...16383) is occupied by ROM 3 (48 BASIC), 4000h...7FFFh (16384...32767) is occupied by RAM page 5, 8000h...BFFFh (32768...49151) is occupied by RAM page 2, and C000h...FFFFh (49152...65535) is occupied by RAM page 0. If +3DOS routines are to be called, RAM page 7 should be switched in at C000h...FFFFh (49152...65535), and ROM 2 (+3DOS) should be switched in at 0000h...3FFFh (0...16383). See [part 26 of this chapter](#part26) for further details.<br>On return, the result is the contents of the BC register pair. |
+| `USR`     | string                                                      | The address of the bit pattern for the user-defined graphic corresponding to x.<br>[Error `A`](#error-a) if x is not a single letter between 'a' and 'u', or a user-defined graphic.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| `VAL`     | string                                                      | Evaluates x (without its bounding quotes as a numerical expression.<br>[Error `C`](#error-c) if x contains a syntax error, or gives a string value. Other errors possible, depending on the expression.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| `VAL$`    | string                                                      | Evaluates x (without its bounding quotes) as a string expression.<br>[Error `C`](#error-c) if x contains a syntax error of gives a numerical value. Other errors possible (as for `VAL`).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| `-`       | number                                                      | Negation.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 
 The following are binary operations:
 
@@ -9936,7 +9937,7 @@ The following are binary operations:
 * `-`    Subtraction
 * `*`    Multiplication
 * `/`    Division
-* `^`    Exponentiation ([error `B`](#error-B) if the left operand is negative)
+* `^`    Exponentiation ([error `B`](#error-b) if the left operand is negative)
 * `=`    Equal to             ---.
 * `>`    Greater than          |   Both operands must be of
 * `<`    Less than             |   the same type. The result
@@ -9946,18 +9947,18 @@ The following are binary operations:
 
 Functions and operations have the following priorities:
 
-| OPERATION                                               | PRIORITY
-|---------------------------------------------------------|----------:
-| Subscripting and slicing                                | 12
-| All functions except `NOT` and unary minus              | 11
-| `^` (exponentiation)                                    | 10
-| `-` Unary minus (used to negate)                        | 9
-| `*`, `/` (multiplication, division)                     | 8
-| `+`, `-` (addition, subtraction)                        | 6
-| `=`, `>`, `<`, `<=`, `>=`, `<>` (relational operators)  | 5
-| `NOT`                                                   | 4
-| `AND`                                                   | 3
-| `OR`                                                    | 1
+| OPERATION                                              | PRIORITY |
+| ------------------------------------------------------ | -------: |
+| Subscripting and slicing                               |       12 |
+| All functions except `NOT` and unary minus             |       11 |
+| `^` (exponentiation)                                   |       10 |
+| `-` Unary minus (used to negate)                       |        9 |
+| `*`, `/` (multiplication, division)                    |        8 |
+| `+`, `-` (addition, subtraction)                       |        6 |
+| `=`, `>`, `<`, `<=`, `>=`, `<>` (relational operators) |        5 |
+| `NOT`                                                  |        4 |
+| `AND`                                                  |        3 |
+| `OR`                                                   |        1 |
 
 ### Statements
 
@@ -9981,91 +9982,91 @@ Arbitrary expressions are allowed everywhere (except for the line number at the 
 
 All statements except `INPUT`, `DEF FN` and `DATA` can be used either as commands or in programs (although they may be more sensible in one than the other). A command or program line can have several statements, separated by colons. There is no restriction on whereabouts in a line any particular statement can occur; however, see `IF` and `REM`.
 
-| STATEMENT             | DESCRIPTION
-|-----------------------|------------
-| `BEEP` x`,`y          | Sounds a note through the TV's speaker for x seconds at the pitch y semitones above middle C (or below middle C if y is negative)
-| `BORDER` m            | Sets the border colour around the screen, and also the paper colour for the lower part of the screen. [Error `K`](#error-k) unless 0<=m<=7 (ie. unless m is not in the range 0...7).
-| `BRIGHT` m            | Sets brightness of characters subsequently printed; 0 for normal, 1 for bright, 8 for transparent. [Error `K`](#error-k) unless m is 0, 1 or 8.
-| `CAT` [#n`,`] [d] [a]   | The `CAT` command produces an alphanumerically sorted catalog of files on a disk. If used in the form `CAT #`n`,`... the output is directed to stream n. If an unambiguous filename (or an ambiguous file specification) is included, then only those files that 'match' will be displayed. When `CAT` is followed by a drive letter only, then all files on that drive will be displayed. If the drive letter specified is `T:`, then a catalog of tape filenames will be displayed (together with information that will be useful for tape-to-disk file transfer).
-| `CAT` [#n`,`] [d] [a] `EXP` | Operates as per the `CAT` command, but produces an expanded catalog that includes system files, and displays those files whose write protection, system status and archive attributes have been set. (See `MOVE` u `TO` f.)
-| `CIRCLE` x`,`y`,`z    | Draws an arc of a circle, centre (x,y) radius z.
-| `CLEAR`             | Deletes all variables, freeing the space they previously occupied. Executes a `RESTORE` and `CLS`, resets the `PLOT` position to the bottom left-hand corner and clears the `GO SUB` stack.
-| `CLEAR` n             | Like `CLEAR`, but if possible, changes the system variable [RAMTOP](#ramtop) to n and puts the new `GO SUB` stack there. (Note that this command may be used to ensure the machine stack is below BFE0h (49120) when entering a routine that calls +3DOS from BASIC.)
-| `CLOSE #`n            | Marks stream n as being unattached to any channel. It may then be used in a subsequent `OPEN #`n`,`f statement.
-| `CLS`                 | (Clear screen). Clears the display file.
-| `CONTINUE`            | Continues executing a program from the point at which it stopped with a report (other than `0`). If the report was `9` or `L`, then execution continues with the following statement (taking any jumps into account); otherwise repeats the statement where the report occurred. If the last report was in a command line, then `CONTINUE` will attempt to continue the command line, and will either go into a loop (if the error was in `0:1`), generate report `0` (if it was in `0:2`), or report `N` (if it was in `0:3` or greater).
-| `COPY`              | Sends (dumps) a copy of the top 22 lines of the screen display to the printer (if connected) in quad density Epson bit map format; otherwise does nothing. [Report `D`](#report-d) if **BREAK** pressed. Note that if the dump is prematurely stopped, the printer may be left in graphics mode and the line feed set to an odd value.
-| `COPY EXP` [`INVERSE`]  | Sends a copy of all 24 lines of display to the printer (if connected) in quad density Epson bit map format; otherwise does nothing. Each coloured dot on the screen is printed with a different pixel pattern thus providing different grey levels for each colour. The `BRIGHT` attribute is also taken into account. The optional `INVERSE` modifier allows the dump to be 'reversed' (like a negative) in order to save ribbon wear when printing-out predominantly black dumps. [Report `D`](#report-d) if **BREAK** pressed. Note that if the dump is prematurely stopped, the printer may be left in graphics mode and the line feed set to an odd value.
-| `COPY` u<sub>1</sub> `TO` u<sub>2</sub><br>`COPY` a `TO` d<br>`COPY` d `TO` d | Copies the first named file to the second named file. The names must be different. Drive letters and user numbers may be specified within the filename.<br>If the source (u<sub>1</sub>) is an ambiguous file specification, then the destination (u<sub>2</sub>) must only be a drive letter. (In this case, the destination files will have the same name as the source.)<br>If both source and destination names are just drive letters, a complete disk-to-disk transfer will be made (note that any files previously on the destination disk will be deleted). If the destination disk is not ***+3*** format, then the disk-to-disk transfer will not work.<br>When copying files, if the destination filename already exists, then the report `File already exists` will be displayed. If the report `Missing address mark` is displayed, then it is likely that the destination disk has not been formatted.
-| `COPY` u `TO SCREEN$`   | Displays the contents of a disk file on the screen. Control characters (tabs, line feeds, etc.) are replaced by spaces. This command can only sensibly be used to inspect ASCII files (though BASIC programs will be displayed, albeit without the correct formatting).
-| `COPY` u `TO LPRINT`    | The contents of the named disk file are sent to the printer. No character translations are made. If the command `FORMAT LPRINT "r"` has been issued (to divert printer output to the serial (**RS232** socket), then this form of the `COPY` command may be used as a method of exporting programs to an external machine.
-| `COPY` u `TO SPECTRUM FORMAT` | This allows a +3DOS file header to be added to a binary file created on a different type of machine. A new file with the name: u`.HED` is created.
-| `DATA` e<sub>1</sub>`,`e<sub>2</sub>`,`e<sub>3</sub>,... | Part of the `DATA` list. Must be in a program; otherwise has no effect.
-| `DEF FN` l`(`l<sub>1</sub>`,`...l<sub>k</sub>`)=`e| User-defined function definition. Must be in a program, otherwise has no effect. Each of l and l<sub>1</sub>,...l<sub>k</sub> is either a single letter or a single letter followed by `$` for string argument or result. Takes the form `DEF FN` l`()=`e if no arguments.
-| `DIM` l`(`n<sub>1</sub>`,`...n<sub>k</sub>`)` | Deletes any array with the name l, and sets up an array l of numbers with k dimensions n<sub>1</sub>,...n<sub>k</sub>. Initialises all the values to 0.
-| `DIM` l`$(`n1`,`...nk`)` | Deletes any array or string with the name l`$`, and sets up an array l`$` of characters with k dimensions n<sub>1</sub>,...n<sub>k</sub>. Initialises all the values to `""`. This can be considered as an array of strings of fixed length nk, with k-1 dimensions (n<sub>1`,`...n<sub>k-1</sub>). An array is undefined until it is dimensioned by `DIM`. [Error `4`](#error-4) if there is no room to fit the array in.
-| `DRAW` x`,`y          | `DRAW` x`,`y`,0`
-| `DRAW` x`,`y`,`z      | Draws a line from the current plot position, moving x horizontally and y vertically relative to it, while turning through angle z. [Error `B`](#error-b) if line runs off the screen.
-| `ERASE` a<br>`ERASE` d | If a single file is specified, then that file will be erased from either the default drive or the drive identified in the filename. If an ambiguous file name is specified, a message asking for confirmation will appear. If **Y** is pressed, then all files that match the specification will be erased. If `ERASE` is followed by a drive letter only, then all files on that drive will be erased without confirmation being sought.
- | `FLASH`             | Defines whether characters will be flashing or steady; n=0 or steady, n=1 for flash, n=8 for no change.
- | `FOR` l`=`x `TO` y  | `FOR` l`=`x `TO` y `STEP 1`
- | `FOR` l`=`x `TO` y `STEP` z | Deletes any simple variable l and sets up a control variable with value x, limit y, step z, and looping address referring to the statement after the `FOR` statement. Checks if the initial value is greater (if z`>=`0) or less (if z`<`0) than the limit, and if so then skips to statement `NEXT` l, giving [error `1`](#error-1) if there is none. See `NEXT`. [Error `4`](#error-4) if there is no room for the control variable.
- | `FORMAT` d          | Prepares the disk in the specified drive (`A:` or `B:`) to be used. If the disk has already been formatted on a +3, a message allowing the operation to be abandoned will produced. Disks formatted on other machines (except the AMSTRAD PCW range (CF-2) format) will not be recognised.
- | `FORMAT LINE` n     | Sets the baud rate of the **RS232** interface to n. Valid baud rates are in the range 75...19200.
- | `FORMAT LPRINT` f<sub>1</sub>[`;`f<sub>2</sub>] | Allows printer output to be redirected and token expansion to be switched on or off. If string f<sub>1</sub> is `"C"`, then subsequent printer output will be via the Centronics interface (the **PRINTER** socket). If string f<sub>1</sub> is `"R"`, then printer output will be directed to the **RS232** socket. String f<sub>1</sub> can also be `"E"` (for expanded), in which case characters below `CHR$ 32` are not sent to the printer, and those above `CHR$ 127` are converted to the letters of the appropriate BASIC token. When string f<sub>1</sub> is `"U"` (for unexpanded), all characters that follow are sent to the printer without translation. This allows ESC (escape) sequences to be sent. If f<sub>1</sub> is either `"C"` or `"R"`, a second string, f<sub>2</sub>, may be specified, this can be either `"E"` or `"U"` (described above).
- | `GO SUB` n            | Pushes the line number of the `GO SUB` statement onto a stack, then operates as per `GO TO` n. [Error `4`](#error-4) may occur if there are not enough `RETURN`s.
- | `GO TO` n             | Jumps to line n (or, if there is none, the first line after that).
- | `IF` x `THEN` s       | If x is true (non-zero), then s is executed. Note that s comprises all the statements until the end of the line. The form `IF` x `THEN` line number is not allowed.
- | `INK` n               | Sets the ink (foreground) colour of characters subsequently printed; n is in the range 0...7 for a colour, 8 for transparent, 9 for contrast. [Error `K`](#error-k) unless 0`<=`n`<=`9.
- | `INPUT` [#n`,`]...    | The '...' is a sequence of `INPUT` items, separated (as in a `PRINT` statement) by commas, semicolons or apostrophes. An `INPUT` item can be any of the following:<br>(i) Any `PRINT` item not beginning with a letter.<br>(ii) A variable name.<br>(iii) `LINE`, then a string type variable name.<br>The `PRINT` items and separators in (i) are treated exactly as in `PRINT`, except that everything is printed in the lower part of the screen. For (ii) the computer stops and waits for input of an expression from the keyboard - the value of this is assigned to the variable. The input is echoed in the usual way and syntax errors give the flashing `?`. For string type expressions, the input buffer is initialised to contain two string quotes (which can be erased if necessary). If the first character in the input is `STOP` (**SYMB SHIFT** and **A**), then the program stops with [error `H`](#error-h). (iii) is like (ii) except that the input is treated as a string literal without quotes, and the `STOP` mechanism won't work; to stop it you must press cursor down instead.
- | `INVERSE` n           | Controls inversion of characters subsequently printed. If n=0, then characters are printed in normal video, ie. as ink colour on paper colour. If n=1, then characters are printed in inverse video, ie. paper colour on ink colour.<br>[Error `K`](#error-k) unless n=0 or 1.<br>Note that in 48 BASIC, pressing the **INV VIDEO** key is equivalent to `INVERSE 1`; pressing the **TRUE VIDEO** key is equivalent to `INVERSE 0`.
- | `LET` v`=`e           | Assigns the value of e to the variable v. `LET` cannot be omitted. A simple variable is undefined until it is assigned to in either a `LET`, `READ` or `INPUT` statement. If v is a subscripted string variable, or a sliced string variable (substring), then the assignment is Procrustean (fixed length), ie. the string value of e is either truncated or filled out with spaces on the right, to make it the same length as specified in v.
- | `LIST` [#m]        | `LIST` [#m,] 0
- | `LIST` [#m`,`] n        | Lists the program to the upper part of the screen, starting at the first line whose number is at least n, and makes n the current line. If #m is included, the output is sent to the channel currently assigned to stream m.
- | `LLIST`            | `LLIST` 0
- | `LLIST` n          | Like `LIST`, but using the printer. By default, output will be to the Centronics (**PRINTER**) socket; however, printer output can be directed to the **RS232** socket using the command `FORMAT LPRINT "R"`. In order that BASIC listings appear correctly, token codes are expanded to the relevant letters of each token, (codes below 32 are not printed). The command `FORMAT LPRINT "E"` can be used to restore this state if it has been changed (by `FORMAT LPRINT "U"`).
- | `LOAD` d              | Makes the named drive the current default input device for all subsequent disk operations (`COPY`, `ERASE`, `MOVE` etc.). If the drive letter specified is `T:`, then all subsequent `LOAD`s will default to tape.
- | `LOAD` f              | Loads the program and variables from disk (or tape). The string f that specifies the file to be loaded may optionally include a drive letter and user number when operating from disk. If a drive letter is not specified, then the default drive is used.<br>If the string f contains just an asterisk, ie. `LOAD "*"`, an attempt is made to boot the disk in drive A:. This may be used to load alternative operating systems or some games disks.
- | `LOAD` f `DATA` l`()`  | Loads a numeric array l() from file f.
- | `LOAD` f `DATA` l`$()` | Loads character array l$() from file f.
- | `LOAD` f `CODE` m`,`n  | Loads (at most) n bytes, starting at address m.
- | `LOAD` f `CODE` m      | Loads bytes starting at address m. If a file from another machine has been converted to Spectrum format (using the command `COPY` u `TO SPECTRUM FORMAT`), then this is the form of `LOAD` command to use (as the header will not contain a load address).
- | `LOAD` f `CODE`       | Loads bytes back to the address from where they were saved.
- | `LOAD` f `SCREEN$`    | `LOAD` f `CODE 16384,6912`
- | `LPRINT`              | Like `PRINT`, but using the printer. Use the `FORMAT LPRINT` command to direct output to the Centronics (**PRINTER**) or **RS232** socket and to set expansion of tokens on or off. By default, output will be sent to the **PRINTER** socket with tokens expanded and codes below 32 not printed. If ESC (escape) sequences are to be printed (for print formatting), issue the command `FORMAT LPRINT "U"` before using `LPRINT`. If printer output has been set to **RS232** (using the command `FORMAT LPRINT "R"`), then `LPRINT` can be used to send strings of characters to a remote computer/terminal.
- | `MERGE` f             | Like `LOAD` f, but does not delete old program lines or variables, except to make way for new ones with the same line number or name. Like LOAD, the filename may include a drive letter and user number. If a drive letter is not specified, the default drive will be used.
- | `MOVE` f<sub>1</sub> `TO` f<sub>2</sub>     | This will rename file f<sub>1</sub> to f<sub>2</sub>. Both files f<sub>1</sub> and f<sub>2</sub> must be on the same drive.
- | `MOVE` u `TO` f       | The string f may be `"+P"`, `"+S"`, `"+A"`, `"-P"`, `"-S"` or `"-A"`. This allows the attributes of the file specified by u to be set (`+`) or unset (`-`). The attribute letters in the string f control write protection (`P`), system status (`S`), or archive status (`A`). The `CAT`...`EXP` command can be used to display current settings. Protected files cannot be erased, saved over, or have any operation that would change them in any way performed upon them. System files are hidden from the normal catalog display and are only shown by the `CAT`...`EXP` command. Archive status is provided for compatibility with CP/M based machines, and has no other relevance to the ***+3***.
- | `NEW`               | Starts the BASIC system afresh, deleting any program and variables, and using the memory up to and including the byte whose address is in the system variable [RAMTOP](#ramtop).<br>The system variables [UDG](#udg), [P RAMT](#pramt), [RASP](#rasp) and [PIP](#pip) are preserved. Returns control to the opening menu, but does not erase files held on drive M: (the RAMdisk).
- | `NEXT` l              | (i) Finds the control variable l.<br>(ii) Adds its step to its value.<br>(iii) If the step `>=`0 and the value `>` the limit; or if the step `<`0 and the value `<` the limit, then jumps to the looping statement.<br>[Error `2`](#error-2) if there is no variable l.<br>[Error `1`](#error-1) if variable l does not match control variable in `FOR` statement.
- | `OPEN #`n`,`f       | Allows stream number to be attached to the channel identified by string f. Stream numbers may be in the range 0...15, however the system itself makes use of 0...3 (so their use is not advised). Possible strings are `"S"` (for the screen channel), `"K"` (for the keyboard channel) and `"P"` (for the printer channel). The printer channel may be further re-directed to the Centronics (**PRINTER**) or **RS232** sockets using the `FORMAT LPRINT` command. Trying to input from a stream that is set to a channel that only supports output, or vice versa, will cause an `Invalid I/O device` report.
- | `OUT` m`,`n         | Outputs byte n at port m at processor level. (Loads the BC register pair with m, the A register with n, and executes the assembly language instruction ***out (c),a***.)<br>[Error `B`](#error-b) unless 0`<=`m`<=`65535 and `-`255`<=`n`<=`255.
- | `OVER` n            | Controls overprinting for characters subsequently printed. If n=0, characters obliterate previous characters at that position. If n=1, then new characters are mixed in with old characters to give ink colour wherever either (but not both) has ink colour, and paper colour where they were both paper or both ink.<br>[Error `K`](#error-k) unless n is 0 or 1.
- | `PAPER` n           | Like `INK`, but controlling the paper (background) colour.
- | `PAUSE` n           | Stops computing and displays the display file for n frames (there are 50 frames per second), or until a key is pressed. If n=0 then the pause is not timed, but lasts until a key is pressed.<br>[Error `B`](#error-b) unless 0`<=`n`<=`255.
- | `PLAY` f<sub>1</sub>[`,`f<sub>2</sub>`,`...f<sub>8</sub>]  | Interpret up to eight strings and play them simultaneously. The first three strings play via the TV speaker and (optionally) via the **MIDI** socket; and subsequent strings can be output only via **MIDI**.
- | `PLOT` c`;`m`,`n    | Prints an ink dot (subject to `OVER` and `INVERSE`) at the pixel (m,n), moving the `PLOT` position thereto. Unless the colour items c specify otherwise, the ink colour at the character position containing the pixel is changed to the current permanent ink colour, and the others (paper colour, flashing and brightness) are left unchanged.<br>[Error `B`](#error-b) unless 0`<=`m`<=`255 and 0`<=`n`<=`175.
- | `POKE` m`,`n        | Writes the value n to the byte in store with address m.<br>[Error `B`](#error-b) unless 0`<=`m`<=`65535 and `-`255`<=`n`<=`255.
- | `PRINT` [`#`n`,`]... | The '...' is a sequence of `PRINT` items, separated by commas, semicolons or apostrophes, and they are written to the display file for output to the screen.<br>When used in the form `PRINT #`n`,`... output is directed to stream n rather than the screen (unless that stream has been opened to the screen channel `"S"`). A semicolon between two items has no effect - it is used purely to delimit the items. A comma shifts printing forward to the next print zone, while an apostrophe generates a carriage return/line feed (which is generated by default if a PRINT statement is not terminated by a semicolon, comma or apostrophe).<br>A `PRINT` item can be:<br>(i) Empty, ie. nothing.<br>(ii) A numerical expression. First a minus sign is printed if the value is negative. Now let x be the modulus of value - If x<=10<sup>-5</sup> or x>=10<sup>13</sup>, then it is printed using scientific notation. The mantissa part has up to eight digits (with no trailing zeroes), and the decimal point (absent if only one digit) is after the first. The exponent part is `E`, followed by `+` or `-`, followed by one or two digits. Otherwise x is printed in ordinary decimal notation with up to eight significant digits, and no trailing zeroes after the decimal point. A decimal point right at the beginning is always followed by a zero, so for instance `.03` and `0.3` are printed as such. Zero is printed as a single digit `0`.<br>(iii) A string expression. The tokens in the string are expanded, possibly with a space before or after.<br>Control characters have their control effect.<br>Unrecognised characters print as `?`.<br>(iv) `AT` m`,`n. Outputs an `AT` control character followed by a byte for m (the line number) and a byte for n (the column number).<br>(v) `TAB` n. Outputs a tab control character followed by two bytes for n (least significant byte first) - the tab stop.<br>(vi) A colour item, which takes the form of a `PAPER`, `INK`, `FLASH`, `BRIGHT`, `INVERSE` or `OVER` statement.
- | `RANDOMIZE`         | `RANDOMIZE 0`
- | `RANDOMIZE` n         | Sets the system variable (called [SEED](#seed)) used to generate the next value of `RND`. If n`<>`0, then [SEED](#seed) is given the value n. If n=0 then [SEED](#seed) is given the value of another system variable (called [FRAMES](#frames)) that counts the frames so far displayed on the screen, and so should be fairly random.<br>[Error `B`](#error-b) unless 0`<=`n`<=`65535.
- | `READ` v<sub>1</sub>`,`v<sub>2</sub>`,`...v<sub>k</sub> | Assigns to the variable using successive expressions in the `DATA` list.<br>[Error `C`](#error-c) if an expression is the wrong type.<br>[Error `E`](#error-e) if there are variables left to be read when the `DATA` list is exhausted.
- | `REM`...            | No effect. The '...' can be any sequence of characters terminated by **ENTER**. No statements in the line will be acted upon after the `REM`, and colons will not be treated as separators.
- | `RESTORE`           | `RESTORE 0`
- | `RESTORE` n         | Restores the `DATA` pointer to the first `DATA` statement in line n. If line n doesn't exist (or is not a `DATA` statement), then the first `DATA` statement after line n is restored, and the next READ statement will start reading from there.
- | `RETURN`            | Takes a reference to a statement off the `GO SUB` stack, and jumps to the line after it.<br>[Error `7`](#error-7) when there is no statement reference on the stack - (this probably means that there is some mistake in your program - ensure that all `GO SUB`s are balanced by `RETURN`s).
- | `RUN`               | `RUN 0`
- | `RUN` n             | `CLEAR`, and then `GO TO` n.
- | `SAVE` d            | Makes the named drive the current default output device for all subsequent disk operations (`COPY`, `ERASE`, `MOVE`, etc.). If the drive letter specified is `T:`, then all subsequent `SAVE`s will default to tape.
- | `SAVE` f            | Saves the program and variables to disk (or tape), giving it the name f. The filename may optionally include a drive letter and user number when operating with disks. If a drive letter is not specified, then the default drive is used.<br>[Error `F`](#error-f) if f is empty, or is greater than ten characters in length (on tape).
- | `SAVE` f `LINE` m      | Saves the program and variables so that if they are loaded, there is an automatic jump to line m.
- | `SAVE` f `DATA` l`()`  | Saves the numeric array l`()` to the file f.
- | `SAVE` f `DATA` l`$()` | Saves the character array l`$()` to the file f.
- | `SAVE` f `CODE` m`,`n  | Saves n bytes starting at address m.
- | `SAVE` f `SCREEN$`     | `SAVE` f `CODE 16384,6912`. Saves the current screen display.
- | `SPECTRUM`          | Switches from ***+3*** BASIC into 48 BASIC, maintaining any program in RAM. There is no switch back to ***+3*** BASIC. Note that ROM/RAM switching is not disabled when entering 48 BASIC using this command; (this is not the case when the option `48 BASIC` is selected from the opening menu).
- | `STOP`              | Stops the program with [report `9`](#error-9). The `CONTINUE` command will resume the program from the following statement.
- | `VERIFY` f          | Like `LOAD` (from tape), but the tape information is not loaded into RAM - instead, it is just compared against what is already in RAM.<br>If the filename specifies a disk file (or if the current default drive is A: or B:), then no action is taken.<br>[Error `R`](#error-r) if the comparison shows different bytes.
+| STATEMENT                                                                     | DESCRIPTION                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| ----------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `BEEP` x`,`y                                                                  | Sounds a note through the TV's speaker for x seconds at the pitch y semitones above middle C (or below middle C if y is negative)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| `BORDER` m                                                                    | Sets the border colour around the screen, and also the paper colour for the lower part of the screen. [Error `K`](#error-k) unless 0<=m<=7 (ie. unless m is not in the range 0...7).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| `BRIGHT` m                                                                    | Sets brightness of characters subsequently printed; 0 for normal, 1 for bright, 8 for transparent. [Error `K`](#error-k) unless m is 0, 1 or 8.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| `CAT` [#n`,`] [d] [a]                                                         | The `CAT` command produces an alphanumerically sorted catalog of files on a disk. If used in the form `CAT #`n`,`... the output is directed to stream n. If an unambiguous filename (or an ambiguous file specification) is included, then only those files that 'match' will be displayed. When `CAT` is followed by a drive letter only, then all files on that drive will be displayed. If the drive letter specified is `T:`, then a catalog of tape filenames will be displayed (together with information that will be useful for tape-to-disk file transfer).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| `CAT` [#n`,`] [d] [a] `EXP`                                                   | Operates as per the `CAT` command, but produces an expanded catalog that includes system files, and displays those files whose write protection, system status and archive attributes have been set. (See `MOVE` u `TO` f.)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| `CIRCLE` x`,`y`,`z                                                            | Draws an arc of a circle, centre (x,y) radius z.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| `CLEAR`                                                                       | Deletes all variables, freeing the space they previously occupied. Executes a `RESTORE` and `CLS`, resets the `PLOT` position to the bottom left-hand corner and clears the `GO SUB` stack.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| `CLEAR` n                                                                     | Like `CLEAR`, but if possible, changes the system variable [RAMTOP](#ramtop) to n and puts the new `GO SUB` stack there. (Note that this command may be used to ensure the machine stack is below BFE0h (49120) when entering a routine that calls +3DOS from BASIC.)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| `CLOSE #`n                                                                    | Marks stream n as being unattached to any channel. It may then be used in a subsequent `OPEN #`n`,`f statement.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| `CLS`                                                                         | (Clear screen). Clears the display file.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| `CONTINUE`                                                                    | Continues executing a program from the point at which it stopped with a report (other than `0`). If the report was `9` or `L`, then execution continues with the following statement (taking any jumps into account); otherwise repeats the statement where the report occurred. If the last report was in a command line, then `CONTINUE` will attempt to continue the command line, and will either go into a loop (if the error was in `0:1`), generate report `0` (if it was in `0:2`), or report `N` (if it was in `0:3` or greater).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| `COPY`                                                                        | Sends (dumps) a copy of the top 22 lines of the screen display to the printer (if connected) in quad density Epson bit map format; otherwise does nothing. [Report `D`](#error-d) if **BREAK** pressed. Note that if the dump is prematurely stopped, the printer may be left in graphics mode and the line feed set to an odd value.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| `COPY EXP` [`INVERSE`]                                                        | Sends a copy of all 24 lines of display to the printer (if connected) in quad density Epson bit map format; otherwise does nothing. Each coloured dot on the screen is printed with a different pixel pattern thus providing different grey levels for each colour. The `BRIGHT` attribute is also taken into account. The optional `INVERSE` modifier allows the dump to be 'reversed' (like a negative) in order to save ribbon wear when printing-out predominantly black dumps. [Report `D`](#error-d) if **BREAK** pressed. Note that if the dump is prematurely stopped, the printer may be left in graphics mode and the line feed set to an odd value.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| `COPY` u<sub>1</sub> `TO` u<sub>2</sub><br>`COPY` a `TO` d<br>`COPY` d `TO` d | Copies the first named file to the second named file. The names must be different. Drive letters and user numbers may be specified within the filename.<br>If the source (u<sub>1</sub>) is an ambiguous file specification, then the destination (u<sub>2</sub>) must only be a drive letter. (In this case, the destination files will have the same name as the source.)<br>If both source and destination names are just drive letters, a complete disk-to-disk transfer will be made (note that any files previously on the destination disk will be deleted). If the destination disk is not ***+3*** format, then the disk-to-disk transfer will not work.<br>When copying files, if the destination filename already exists, then the report `File already exists` will be displayed. If the report `Missing address mark` is displayed, then it is likely that the destination disk has not been formatted.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| `COPY` u `TO SCREEN$`                                                         | Displays the contents of a disk file on the screen. Control characters (tabs, line feeds, etc.) are replaced by spaces. This command can only sensibly be used to inspect ASCII files (though BASIC programs will be displayed, albeit without the correct formatting).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| `COPY` u `TO LPRINT`                                                          | The contents of the named disk file are sent to the printer. No character translations are made. If the command `FORMAT LPRINT "r"` has been issued (to divert printer output to the serial (**RS232** socket), then this form of the `COPY` command may be used as a method of exporting programs to an external machine.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| `COPY` u `TO SPECTRUM FORMAT`                                                 | This allows a +3DOS file header to be added to a binary file created on a different type of machine. A new file with the name: u`.HED` is created.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| `DATA` e<sub>1</sub>`,`e<sub>2</sub>`,`e<sub>3</sub>,...                      | Part of the `DATA` list. Must be in a program; otherwise has no effect.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| `DEF FN` l`(`l<sub>1</sub>`,`...l<sub>k</sub>`)=`e                            | User-defined function definition. Must be in a program, otherwise has no effect. Each of l and l<sub>1</sub>,...l<sub>k</sub> is either a single letter or a single letter followed by `$` for string argument or result. Takes the form `DEF FN` l`()=`e if no arguments.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| `DIM` l`(`n<sub>1</sub>`,`...n<sub>k</sub>`)`                                 | Deletes any array with the name l, and sets up an array l of numbers with k dimensions n<sub>1</sub>,...n<sub>k</sub>. Initialises all the values to 0.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| `DIM` l`$(`n1`,`...nk`)`                                                      | Deletes any array or string with the name l`$`, and sets up an array l`$` of characters with k dimensions n<sub>1</sub>,...n<sub>k</sub>. Initialises all the values to `""`. This can be considered as an array of strings of fixed length nk, with k-1 dimensions (n<sub>1`,`...n<sub>k-1</sub>). An array is undefined until it is dimensioned by `DIM`. [Error `4`](#error-4) if there is no room to fit the array in.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| `DRAW` x`,`y                                                                  | `DRAW` x`,`y`,0`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| `DRAW` x`,`y`,`z                                                              | Draws a line from the current plot position, moving x horizontally and y vertically relative to it, while turning through angle z. [Error `B`](#error-b) if line runs off the screen.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| `ERASE` a<br>`ERASE` d                                                        | If a single file is specified, then that file will be erased from either the default drive or the drive identified in the filename. If an ambiguous file name is specified, a message asking for confirmation will appear. If **Y** is pressed, then all files that match the specification will be erased. If `ERASE` is followed by a drive letter only, then all files on that drive will be erased without confirmation being sought.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| `FLASH`                                                                       | Defines whether characters will be flashing or steady; n=0 or steady, n=1 for flash, n=8 for no change.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| `FOR` l`=`x `TO` y                                                            | `FOR` l`=`x `TO` y `STEP 1`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| `FOR` l`=`x `TO` y `STEP` z                                                   | Deletes any simple variable l and sets up a control variable with value x, limit y, step z, and looping address referring to the statement after the `FOR` statement. Checks if the initial value is greater (if z`>=`0) or less (if z`<`0) than the limit, and if so then skips to statement `NEXT` l, giving [error `1`](#error-1) if there is none. See `NEXT`. [Error `4`](#error-4) if there is no room for the control variable.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| `FORMAT` d                                                                    | Prepares the disk in the specified drive (`A:` or `B:`) to be used. If the disk has already been formatted on a +3, a message allowing the operation to be abandoned will produced. Disks formatted on other machines (except the AMSTRAD PCW range (CF-2) format) will not be recognised.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| `FORMAT LINE` n                                                               | Sets the baud rate of the **RS232** interface to n. Valid baud rates are in the range 75...19200.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| `FORMAT LPRINT` f<sub>1</sub>[`;`f<sub>2</sub>]                               | Allows printer output to be redirected and token expansion to be switched on or off. If string f<sub>1</sub> is `"C"`, then subsequent printer output will be via the Centronics interface (the **PRINTER** socket). If string f<sub>1</sub> is `"R"`, then printer output will be directed to the **RS232** socket. String f<sub>1</sub> can also be `"E"` (for expanded), in which case characters below `CHR$ 32` are not sent to the printer, and those above `CHR$ 127` are converted to the letters of the appropriate BASIC token. When string f<sub>1</sub> is `"U"` (for unexpanded), all characters that follow are sent to the printer without translation. This allows ESC (escape) sequences to be sent. If f<sub>1</sub> is either `"C"` or `"R"`, a second string, f<sub>2</sub>, may be specified, this can be either `"E"` or `"U"` (described above).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| `GO SUB` n                                                                    | Pushes the line number of the `GO SUB` statement onto a stack, then operates as per `GO TO` n. [Error `4`](#error-4) may occur if there are not enough `RETURN`s.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| `GO TO` n                                                                     | Jumps to line n (or, if there is none, the first line after that).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| `IF` x `THEN` s                                                               | If x is true (non-zero), then s is executed. Note that s comprises all the statements until the end of the line. The form `IF` x `THEN` line number is not allowed.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| `INK` n                                                                       | Sets the ink (foreground) colour of characters subsequently printed; n is in the range 0...7 for a colour, 8 for transparent, 9 for contrast. [Error `K`](#error-k) unless 0`<=`n`<=`9.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| `INPUT` [#n`,`]...                                                            | The '...' is a sequence of `INPUT` items, separated (as in a `PRINT` statement) by commas, semicolons or apostrophes. An `INPUT` item can be any of the following:<br>(i) Any `PRINT` item not beginning with a letter.<br>(ii) A variable name.<br>(iii) `LINE`, then a string type variable name.<br>The `PRINT` items and separators in (i) are treated exactly as in `PRINT`, except that everything is printed in the lower part of the screen. For (ii) the computer stops and waits for input of an expression from the keyboard - the value of this is assigned to the variable. The input is echoed in the usual way and syntax errors give the flashing `?`. For string type expressions, the input buffer is initialised to contain two string quotes (which can be erased if necessary). If the first character in the input is `STOP` (**SYMB SHIFT** and **A**), then the program stops with [error `H`](#error-h). (iii) is like (ii) except that the input is treated as a string literal without quotes, and the `STOP` mechanism won't work; to stop it you must press cursor down instead.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| `INVERSE` n                                                                   | Controls inversion of characters subsequently printed. If n=0, then characters are printed in normal video, ie. as ink colour on paper colour. If n=1, then characters are printed in inverse video, ie. paper colour on ink colour.<br>[Error `K`](#error-k) unless n=0 or 1.<br>Note that in 48 BASIC, pressing the **INV VIDEO** key is equivalent to `INVERSE 1`; pressing the **TRUE VIDEO** key is equivalent to `INVERSE 0`.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| `LET` v`=`e                                                                   | Assigns the value of e to the variable v. `LET` cannot be omitted. A simple variable is undefined until it is assigned to in either a `LET`, `READ` or `INPUT` statement. If v is a subscripted string variable, or a sliced string variable (substring), then the assignment is Procrustean (fixed length), ie. the string value of e is either truncated or filled out with spaces on the right, to make it the same length as specified in v.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| `LIST` [#m]                                                                   | `LIST` [#m,] 0                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| `LIST` [#m`,`] n                                                              | Lists the program to the upper part of the screen, starting at the first line whose number is at least n, and makes n the current line. If #m is included, the output is sent to the channel currently assigned to stream m.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| `LLIST`                                                                       | `LLIST` 0                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| `LLIST` n                                                                     | Like `LIST`, but using the printer. By default, output will be to the Centronics (**PRINTER**) socket; however, printer output can be directed to the **RS232** socket using the command `FORMAT LPRINT "R"`. In order that BASIC listings appear correctly, token codes are expanded to the relevant letters of each token, (codes below 32 are not printed). The command `FORMAT LPRINT "E"` can be used to restore this state if it has been changed (by `FORMAT LPRINT "U"`).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| `LOAD` d                                                                      | Makes the named drive the current default input device for all subsequent disk operations (`COPY`, `ERASE`, `MOVE` etc.). If the drive letter specified is `T:`, then all subsequent `LOAD`s will default to tape.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| `LOAD` f                                                                      | Loads the program and variables from disk (or tape). The string f that specifies the file to be loaded may optionally include a drive letter and user number when operating from disk. If a drive letter is not specified, then the default drive is used.<br>If the string f contains just an asterisk, ie. `LOAD "*"`, an attempt is made to boot the disk in drive A:. This may be used to load alternative operating systems or some games disks.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| `LOAD` f `DATA` l`()`                                                         | Loads a numeric array l() from file f.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| `LOAD` f `DATA` l`$()`                                                        | Loads character array l$() from file f.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| `LOAD` f `CODE` m`,`n                                                         | Loads (at most) n bytes, starting at address m.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| `LOAD` f `CODE` m                                                             | Loads bytes starting at address m. If a file from another machine has been converted to Spectrum format (using the command `COPY` u `TO SPECTRUM FORMAT`), then this is the form of `LOAD` command to use (as the header will not contain a load address).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| `LOAD` f `CODE`                                                               | Loads bytes back to the address from where they were saved.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| `LOAD` f `SCREEN$`                                                            | `LOAD` f `CODE 16384,6912`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| `LPRINT`                                                                      | Like `PRINT`, but using the printer. Use the `FORMAT LPRINT` command to direct output to the Centronics (**PRINTER**) or **RS232** socket and to set expansion of tokens on or off. By default, output will be sent to the **PRINTER** socket with tokens expanded and codes below 32 not printed. If ESC (escape) sequences are to be printed (for print formatting), issue the command `FORMAT LPRINT "U"` before using `LPRINT`. If printer output has been set to **RS232** (using the command `FORMAT LPRINT "R"`), then `LPRINT` can be used to send strings of characters to a remote computer/terminal.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| `MERGE` f                                                                     | Like `LOAD` f, but does not delete old program lines or variables, except to make way for new ones with the same line number or name. Like LOAD, the filename may include a drive letter and user number. If a drive letter is not specified, the default drive will be used.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| `MOVE` f<sub>1</sub> `TO` f<sub>2</sub>                                       | This will rename file f<sub>1</sub> to f<sub>2</sub>. Both files f<sub>1</sub> and f<sub>2</sub> must be on the same drive.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| `MOVE` u `TO` f                                                               | The string f may be `"+P"`, `"+S"`, `"+A"`, `"-P"`, `"-S"` or `"-A"`. This allows the attributes of the file specified by u to be set (`+`) or unset (`-`). The attribute letters in the string f control write protection (`P`), system status (`S`), or archive status (`A`). The `CAT`...`EXP` command can be used to display current settings. Protected files cannot be erased, saved over, or have any operation that would change them in any way performed upon them. System files are hidden from the normal catalog display and are only shown by the `CAT`...`EXP` command. Archive status is provided for compatibility with CP/M based machines, and has no other relevance to the ***+3***.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| `NEW`                                                                         | Starts the BASIC system afresh, deleting any program and variables, and using the memory up to and including the byte whose address is in the system variable [RAMTOP](#ramtop).<br>The system variables [UDG](#udg), [P RAMT](#pramt), [RASP](#rasp) and [PIP](#pip) are preserved. Returns control to the opening menu, but does not erase files held on drive M: (the RAMdisk).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| `NEXT` l                                                                      | (i) Finds the control variable l.<br>(ii) Adds its step to its value.<br>(iii) If the step `>=`0 and the value `>` the limit; or if the step `<`0 and the value `<` the limit, then jumps to the looping statement.<br>[Error `2`](#error-2) if there is no variable l.<br>[Error `1`](#error-1) if variable l does not match control variable in `FOR` statement.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| `OPEN #`n`,`f                                                                 | Allows stream number to be attached to the channel identified by string f. Stream numbers may be in the range 0...15, however the system itself makes use of 0...3 (so their use is not advised). Possible strings are `"S"` (for the screen channel), `"K"` (for the keyboard channel) and `"P"` (for the printer channel). The printer channel may be further re-directed to the Centronics (**PRINTER**) or **RS232** sockets using the `FORMAT LPRINT` command. Trying to input from a stream that is set to a channel that only supports output, or vice versa, will cause an `Invalid I/O device` report.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| `OUT` m`,`n                                                                   | Outputs byte n at port m at processor level. (Loads the BC register pair with m, the A register with n, and executes the assembly language instruction ***out (c),a***.)<br>[Error `B`](#error-b) unless 0`<=`m`<=`65535 and `-`255`<=`n`<=`255.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| `OVER` n                                                                      | Controls overprinting for characters subsequently printed. If n=0, characters obliterate previous characters at that position. If n=1, then new characters are mixed in with old characters to give ink colour wherever either (but not both) has ink colour, and paper colour where they were both paper or both ink.<br>[Error `K`](#error-k) unless n is 0 or 1.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| `PAPER` n                                                                     | Like `INK`, but controlling the paper (background) colour.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| `PAUSE` n                                                                     | Stops computing and displays the display file for n frames (there are 50 frames per second), or until a key is pressed. If n=0 then the pause is not timed, but lasts until a key is pressed.<br>[Error `B`](#error-b) unless 0`<=`n`<=`255.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| `PLAY` f<sub>1</sub>[`,`f<sub>2</sub>`,`...f<sub>8</sub>]                     | Interpret up to eight strings and play them simultaneously. The first three strings play via the TV speaker and (optionally) via the **MIDI** socket; and subsequent strings can be output only via **MIDI**.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| `PLOT` c`;`m`,`n                                                              | Prints an ink dot (subject to `OVER` and `INVERSE`) at the pixel (m,n), moving the `PLOT` position thereto. Unless the colour items c specify otherwise, the ink colour at the character position containing the pixel is changed to the current permanent ink colour, and the others (paper colour, flashing and brightness) are left unchanged.<br>[Error `B`](#error-b) unless 0`<=`m`<=`255 and 0`<=`n`<=`175.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| `POKE` m`,`n                                                                  | Writes the value n to the byte in store with address m.<br>[Error `B`](#error-b) unless 0`<=`m`<=`65535 and `-`255`<=`n`<=`255.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| `PRINT` [`#`n`,`]...                                                          | The '...' is a sequence of `PRINT` items, separated by commas, semicolons or apostrophes, and they are written to the display file for output to the screen.<br>When used in the form `PRINT #`n`,`... output is directed to stream n rather than the screen (unless that stream has been opened to the screen channel `"S"`). A semicolon between two items has no effect - it is used purely to delimit the items. A comma shifts printing forward to the next print zone, while an apostrophe generates a carriage return/line feed (which is generated by default if a PRINT statement is not terminated by a semicolon, comma or apostrophe).<br>A `PRINT` item can be:<br>(i) Empty, ie. nothing.<br>(ii) A numerical expression. First a minus sign is printed if the value is negative. Now let x be the modulus of value - If x<=10<sup>-5</sup> or x>=10<sup>13</sup>, then it is printed using scientific notation. The mantissa part has up to eight digits (with no trailing zeroes), and the decimal point (absent if only one digit) is after the first. The exponent part is `E`, followed by `+` or `-`, followed by one or two digits. Otherwise x is printed in ordinary decimal notation with up to eight significant digits, and no trailing zeroes after the decimal point. A decimal point right at the beginning is always followed by a zero, so for instance `.03` and `0.3` are printed as such. Zero is printed as a single digit `0`.<br>(iii) A string expression. The tokens in the string are expanded, possibly with a space before or after.<br>Control characters have their control effect.<br>Unrecognised characters print as `?`.<br>(iv) `AT` m`,`n. Outputs an `AT` control character followed by a byte for m (the line number) and a byte for n (the column number).<br>(v) `TAB` n. Outputs a tab control character followed by two bytes for n (least significant byte first) - the tab stop.<br>(vi) A colour item, which takes the form of a `PAPER`, `INK`, `FLASH`, `BRIGHT`, `INVERSE` or `OVER` statement. |
+| `RANDOMIZE`                                                                   | `RANDOMIZE 0`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| `RANDOMIZE` n                                                                 | Sets the system variable (called [SEED](#seed)) used to generate the next value of `RND`. If n`<>`0, then [SEED](#seed) is given the value n. If n=0 then [SEED](#seed) is given the value of another system variable (called [FRAMES](#frames)) that counts the frames so far displayed on the screen, and so should be fairly random.<br>[Error `B`](#error-b) unless 0`<=`n`<=`65535.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| `READ` v<sub>1</sub>`,`v<sub>2</sub>`,`...v<sub>k</sub>                       | Assigns to the variable using successive expressions in the `DATA` list.<br>[Error `C`](#error-c) if an expression is the wrong type.<br>[Error `E`](#error-e) if there are variables left to be read when the `DATA` list is exhausted.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| `REM`...                                                                      | No effect. The '...' can be any sequence of characters terminated by **ENTER**. No statements in the line will be acted upon after the `REM`, and colons will not be treated as separators.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| `RESTORE`                                                                     | `RESTORE 0`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| `RESTORE` n                                                                   | Restores the `DATA` pointer to the first `DATA` statement in line n. If line n doesn't exist (or is not a `DATA` statement), then the first `DATA` statement after line n is restored, and the next READ statement will start reading from there.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| `RETURN`                                                                      | Takes a reference to a statement off the `GO SUB` stack, and jumps to the line after it.<br>[Error `7`](#error-7) when there is no statement reference on the stack - (this probably means that there is some mistake in your program - ensure that all `GO SUB`s are balanced by `RETURN`s).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| `RUN`                                                                         | `RUN 0`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| `RUN` n                                                                       | `CLEAR`, and then `GO TO` n.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| `SAVE` d                                                                      | Makes the named drive the current default output device for all subsequent disk operations (`COPY`, `ERASE`, `MOVE`, etc.). If the drive letter specified is `T:`, then all subsequent `SAVE`s will default to tape.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| `SAVE` f                                                                      | Saves the program and variables to disk (or tape), giving it the name f. The filename may optionally include a drive letter and user number when operating with disks. If a drive letter is not specified, then the default drive is used.<br>[Error `F`](#error-f) if f is empty, or is greater than ten characters in length (on tape).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| `SAVE` f `LINE` m                                                             | Saves the program and variables so that if they are loaded, there is an automatic jump to line m.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| `SAVE` f `DATA` l`()`                                                         | Saves the numeric array l`()` to the file f.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| `SAVE` f `DATA` l`$()`                                                        | Saves the character array l`$()` to the file f.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| `SAVE` f `CODE` m`,`n                                                         | Saves n bytes starting at address m.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| `SAVE` f `SCREEN$`                                                            | `SAVE` f `CODE 16384,6912`. Saves the current screen display.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| `SPECTRUM`                                                                    | Switches from ***+3*** BASIC into 48 BASIC, maintaining any program in RAM. There is no switch back to ***+3*** BASIC. Note that ROM/RAM switching is not disabled when entering 48 BASIC using this command; (this is not the case when the option `48 BASIC` is selected from the opening menu).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| `STOP`                                                                        | Stops the program with [report `9`](#error-9). The `CONTINUE` command will resume the program from the following statement.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| `VERIFY` f                                                                    | Like `LOAD` (from tape), but the tape information is not loaded into RAM - instead, it is just compared against what is already in RAM.<br>If the filename specifies a disk file (or if the current default drive is A: or B:), then no action is taken.<br>[Error `R`](#error-r) if the comparison shows different bytes.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 
 ## <a id="part32"></a> Part 32<br>Binary and hexadecimal
 
@@ -10086,42 +10087,42 @@ Most European languages count using a more or less regular pattern of tens - in 
 
 Instead of using the decimal system - based on ten, computers use a form of binary called ***hexadecimal*** (or 'hex' for short) which is based on sixteen. As there are only ten digits available in our number system we need six extra digits to do the counting. So we use A, B, C, D, E and F. And what comes after F? Well, just as we, with ten fingers, write 10 for ten (a hand full), so computers use 10 for sixteen. Comparing counting in decimal to hex...
 
-| DECIMAL | HEX |
-| ------- | --- |
-|    0    |  0  |
-|    1    |  1  |
-|    2    |  2  |
-|    3    |  3  |
-|    4    |  4  |
-|    5    |  5  |
-|    6    |  6  |
-|    7    |  7  |
-|    8    |  8  |
-|    9    |  9  |
-|    10   |  A  |
-|    11   |  B  |
-|    12   |  C  |
-|    13   |  D  |
-|    14   |  E  |
-|    15   |  F  |
-|    16   |  10 |
-|    17   |  11 |
-|  continued... |
-|    25   |  19 |
-|    26   |  1A |
-|    27   |  1B |
-|   ...etc...   |
-|    31   | 1F  |
-|    32   | 20  |
-|    33   | 21  |
-|   ...etc...   |
-|   158  |  9E  |
-|   159  |  9F  |
-|   160  |  A0  |
-|   161  |  A1  |
-|    ...etc...  |
-|   255  |  FF  |
-|   256  |  100 |
+| DECIMAL       | HEX |
+| ------------- | --- |
+| 0             | 0   |
+| 1             | 1   |
+| 2             | 2   |
+| 3             | 3   |
+| 4             | 4   |
+| 5             | 5   |
+| 6             | 6   |
+| 7             | 7   |
+| 8             | 8   |
+| 9             | 9   |
+| 10            | A   |
+| 11            | B   |
+| 12            | C   |
+| 13            | D   |
+| 14            | E   |
+| 15            | F   |
+| 16            | 10  |
+| 17            | 11  |
+| continued...  |
+| 25            | 19  |
+| 26            | 1A  |
+| 27            | 1B  |
+| ...etc...     |
+| 31            | 1F  |
+| 32            | 20  |
+| 33            | 21  |
+| ...etc...     |
+| 158           | 9E  |
+| 159           | 9F  |
+| 160           | A0  |
+| 161           | A1  |
+| ...etc...     |
+| 255           | FF  |
+| 256           | 100 |
 | ...and so on. |
 
 If you are using hex notation and you want to make the fact quite plain, then write 'h' at the end of the number, and say 'hex'. For instance, for one hundred and fifty eight (decimal), write '9Eh' and say 'nine E hex'.
@@ -10130,27 +10131,27 @@ You may be wondering what all this has to do with computers. In fact, computers 
 
 So to expand the previous table of counting to include binary...
 
-| DECIMAL | HEX | BINARY
-| ------- | --- | ------
-|    0    |  0  |  0
-|    1    |  1  |  1
-|    2    |  2  |  10
-|    3    |  3  |  11
-|    4    |  4  |  100
-|    5    |  5  |  101
-|    6    |  6  |  110
-|    7    |  7  |  111
-|    8    |  8  |  1000
-|    9    |  9  |  1001
-|    10   |  A  |  1010
-|    11   |  B  |  1011
-|    12   |  C  |  1100
-|    13   |  D  |  1101
-|    14   |  E  |  1110
-|    15   |  F  |  1111
-|    16   |  10 |  10000
-|    17   |  11 |  10001
-| ...etc...
+| DECIMAL   | HEX | BINARY |
+| --------- | --- | ------ |
+| 0         | 0   | 0      |
+| 1         | 1   | 1      |
+| 2         | 2   | 10     |
+| 3         | 3   | 11     |
+| 4         | 4   | 100    |
+| 5         | 5   | 101    |
+| 6         | 6   | 110    |
+| 7         | 7   | 111    |
+| 8         | 8   | 1000   |
+| 9         | 9   | 1001   |
+| 10        | A   | 1010   |
+| 11        | B   | 1011   |
+| 12        | C   | 1100   |
+| 13        | D   | 1101   |
+| 14        | E   | 1110   |
+| 15        | F   | 1111   |
+| 16        | 10  | 10000  |
+| 17        | 11  | 10001  |
+| ...etc... |
 
 It is customary to 'pad out' binary numbers with leading zeroes so that they always contain at least four bits - for example, 0000, 0001, 0010, 0011 (representing 0 to 3 decimal).
 
@@ -10465,7 +10466,7 @@ Subjects covered...
 - [Editing the screen](#editing-the-screen)
 - [Assigning variables](#assigning-variables)
 - [User defined functions](#user-defined-functions)
-- [Exiting from the calculator](#exiting-from-the-calculator)
+- [Exiting from the calculator](#exiting-the-calculator)
 
 The ***+3*** can be used as a full function calculator.
 
@@ -10488,7 +10489,7 @@ When you have selected the `Calculator` option, the screen will change to...
 
 As soon as you press **ENTER**, the answer `10` will appear. (Note that you ***don{1*** key in `=` as you would on a conventional calculator.)
 
-<a id="running-totals"></a>You will see that the cursor is positioned to the right of the answer, which is a ***running total*** (like on a conventional calculator). This means that you can simply type in the next operation to be carried out on the running total (without having to type in a whole new calculation). So, with the cursor still positioned to the right of the `10` on the screen, type in...
+<a id="running-total"></a>You will see that the cursor is positioned to the right of the answer, which is a ***running total*** (like on a conventional calculator). This means that you can simply type in the next operation to be carried out on the running total (without having to type in a whole new calculation). So, with the cursor still positioned to the right of the `10` on the screen, type in...
 
     /5
 
@@ -10697,26 +10698,26 @@ Connect the other end of the lead (which is fitted with a Centronics style plug)
   <figcaption><p>viewed from rear</p><strong>PRINTER</strong> socket</figcaption>
 </figure>
 
-| PIN | FUNCTION       | PIN | FUNCTION       |
-|-----|----------------|-----|----------------|
+| PIN | FUNCTION                                                           | PIN | FUNCTION       |
+| --- | ------------------------------------------------------------------ | --- | -------------- |
 | 1   | <a id="printer-strobe"></a><span class="signal-high">STROBE</span> | 19  | GND            |
-| 2   | D0             | 20  | GND            |
-| 3   | D1             | 21  | GND            |
-| 4   | D2             | 22  | GND            |
-| 5   | D3             | 23  | GND            |
-| 6   | D4             | 24  | GND            |
-| 7   | D5             | 25  | GND            |
-| 8   | D6             | 26  | GND            |
-| 9   | D7             | 27  | not used       |
-| 10  | not used       | 28  | GND            |
-| 11  | <a id="printer-busy"></a>BUSY           | 29  | not used       |
-| 12  | not used       | 30  | not used       |
-| 13  | not used       | 31  | not used       |
-| 14  | GND            | 32  | not used       |
-| 15  | not used       | 33  | GND            |
-| 16  | GND            | 34  | not used       |
-| 17  | not used       | 35  | not used       |
-| 18  | does not exist | 36  | does not exist |
+| 2   | D0                                                                 | 20  | GND            |
+| 3   | D1                                                                 | 21  | GND            |
+| 4   | D2                                                                 | 22  | GND            |
+| 5   | D3                                                                 | 23  | GND            |
+| 6   | D4                                                                 | 24  | GND            |
+| 7   | D5                                                                 | 25  | GND            |
+| 8   | D6                                                                 | 26  | GND            |
+| 9   | D7                                                                 | 27  | not used       |
+| 10  | not used                                                           | 28  | GND            |
+| 11  | <a id="printer-busy"></a>BUSY                                      | 29  | not used       |
+| 12  | not used                                                           | 30  | not used       |
+| 13  | not used                                                           | 31  | not used       |
+| 14  | GND                                                                | 32  | not used       |
+| 15  | not used                                                           | 33  | GND            |
+| 16  | GND                                                                | 34  | not used       |
+| 17  | not used                                                           | 35  | not used       |
+| 18  | does not exist                                                     | 36  | does not exist |
 
 Although there are only 34 terminations at the _**+3**'s_ **PRINTER** socket, the pins are numbered 1...17 and 19...35 (with 18 and 36 non-existent) for equivalence with the Centronics socket on the printer itself.
 
@@ -10825,25 +10826,25 @@ When the FD-1 is connected to the +3, first switch on the FD-1 (using the slide 
   <figcaption><p>viewed from rear</p><strong>DISK B:</strong> socket</figcaption>
 </figure>
 
-| PIN | FUNCTION        | PIN | FUNCTION       |
-|:---:|-----------------|:---:|----------------|
-| 1   | <span class="signal-high">READY</span> | 18  | GND            |
-| 2   | GND             | 19  | <span class="signal-high">MOTOR ON</span>       |
-| 3   | <span class="signal-high">SIDE 1 SELECT</span> | 20  | GND            |
-| 4   | GND             | 21  | not used       |
-| 5   | <span class="signal-high">READ DATA</span>       | 22  | GND            |
-| 6   | D4              | 23  | <span class="signal-high">DRIVE SELECT 1</span> |
-| 7   | <span class="signal-high">WRITE PROTECT</span>   | 24  | GND            |
-| 8   | GND             | 25  | not used       |
-| 9   | <span class="signal-high">TRACK 0</span>         | 26  | GND            |
-| 10  | GND             | 27  | <span class="signal-high">INDEX</span>          |
-| 11  | <span class="signal-high">WRITE GATE      | 28  | GND            |
-| 12  | GND             | 29  | not used       |
-| 13  | <span class="signal-high">WRITE DATA</span>      | 30  | GND            |
-| 14  | GND             | 31  | not used       |
-| 15  | <span class="signal-high">STEP</span>            | 32  | GND            |
-| 16  | GND             | 33  | not used       |
-| 17  | <span class="signal-high">DIRECTION SELECT</span> | 34  | GND            |
+|  PIN  | FUNCTION                                          |  PIN  | FUNCTION                                        |
+| :---: | ------------------------------------------------- | :---: | ----------------------------------------------- |
+|   1   | <span class="signal-high">READY</span>            |  18   | GND                                             |
+|   2   | GND                                               |  19   | <span class="signal-high">MOTOR ON</span>       |
+|   3   | <span class="signal-high">SIDE 1 SELECT</span>    |  20   | GND                                             |
+|   4   | GND                                               |  21   | not used                                        |
+|   5   | <span class="signal-high">READ DATA</span>        |  22   | GND                                             |
+|   6   | D4                                                |  23   | <span class="signal-high">DRIVE SELECT 1</span> |
+|   7   | <span class="signal-high">WRITE PROTECT</span>    |  24   | GND                                             |
+|   8   | GND                                               |  25   | not used                                        |
+|   9   | <span class="signal-high">TRACK 0</span>          |  26   | GND                                             |
+|  10   | GND                                               |  27   | <span class="signal-high">INDEX</span>          |
+|  11   | <span class="signal-high">WRITE GATE              |  28   | GND                                             |
+|  12   | GND                                               |  29   | not used                                        |
+|  13   | <span class="signal-high">WRITE DATA</span>       |  30   | GND                                             |
+|  14   | GND                                               |  31   | not used                                        |
+|  15   | <span class="signal-high">STEP</span>             |  32   | GND                                             |
+|  16   | GND                                               |  33   | not used                                        |
+|  17   | <span class="signal-high">DIRECTION SELECT</span> |  34   | GND                                             |
 
 Details of two-drive operation will be found in [chapter 8 parts 20](#part20) and [27](#part27).
 
@@ -10857,19 +10858,19 @@ If a program offers you a choice of joystick types, then choose the 'Interface T
 
 It is safe to plug in (or unplug) a joystick while the ***+3*** is switched on.
 
-| PIN | FUNCTION |
-|:---:|----------|
-|  1  | not used |
-|  2  | common   |
-|  3  | not used |
-|  4  | fire     |
-|  5  | up       |
-|  6  | right    |
-|  7  | left     |
-|  8  | common   |
-|  9  | down     |
+|  PIN  | FUNCTION |
+| :---: | -------- |
+|   1   | not used |
+|   2   | common   |
+|   3   | not used |
+|   4   | fire     |
+|   5   | up       |
+|   6   | right    |
+|   7   | left     |
+|   8   | common   |
+|   9   | down     |
 
-<figure id="joysticks">
+<figure id="joysticks-fig">
   <svg viewBox="0 0 120 45" width="25%">
     <defs>
       <g id="pin" class="shadow-svg">
@@ -10906,16 +10907,16 @@ compatible, then the chances are you'll have to buy a lead for it (contact your 
 
 A VDU monitor (or PERITEL TV) should be plugged into the RGB/PERITEL socket at the back of the ***+3***.
 
-| PIN | FUNCTION       |
-|:---:|----------------|
-|  1  | +12V           |
-|  2  | GND            |
-|  3  | audio out      |
-|  4  | <span class="signal-high">composite sync</a> |
-|  5  | +12V           |
-|  6  | green          |
-|  7  | red            |
-|  8  | blue           |
+|  PIN  | FUNCTION                                     |
+| :---: | -------------------------------------------- |
+|   1   | +12V                                         |
+|   2   | GND                                          |
+|   3   | audio out                                    |
+|   4   | <span class="signal-high">composite sync</a> |
+|   5   | +12V                                         |
+|   6   | green                                        |
+|   7   | red                                          |
+|   8   | blue                                         |
 
 <figure id="vdu">
   <svg viewBox="0 0 160 160" width="25%">
@@ -10999,14 +11000,14 @@ To connect any serial device to the +3, you will require a Spectrum ***+3*** ser
 
 If you wish to wire-up your own, then the connections are as follows...
 
-| PIN | FUNCTION |
-|:---:|----------|
-|  1  | GND      |
-|  2  | TXD      |
-|  3  | RXD      |
-|  4  | DTR      |
-|  5  | CTS      |
-|  6  | +12V     |
+|  PIN  | FUNCTION |
+| :---: | -------- |
+|   1   | GND      |
+|   2   | TXD      |
+|   3   | RXD      |
+|   4   | DTR      |
+|   5   | CTS      |
+|   6   | +12V     |
 
 <figure class="connector bsjack">
   <svg viewBox="0 -2 312 130" width="25%">
@@ -11040,14 +11041,14 @@ Although the _**+3**'s_ **MIDI** (Musical Instrument Digital Interface) socket s
 
 Using the MIDI interface will not disturb the RS232's baud rate setting.
 
-| PIN | FUNCTION |
-|:---:|----------|
-|  1  | RETURN   |
-|  2  | not used |
-|  3  | not used |
-|  4  | not used |
-|  5  | DATA OUT |
-|  6  | not used |
+|  PIN  | FUNCTION |
+| :---: | -------- |
+|   1   | RETURN   |
+|   2   | not used |
+|   3   | not used |
+|   4   | not used |
+|   5   | DATA OUT |
+|   6   | not used |
 
 <figure class="connector bsjack">
   <svg viewBox="0 -2 312 130" width="25%">
@@ -11062,27 +11063,27 @@ Details of MIDI operations will be found in [chapter 8 part 19](#part19).
 
 The **AUX** (auxiliary interface) socket supports two input lines (pins 2 and 5) and two output lines (pins 2 and 4). The I/O lines are driven by 1488 and 1489 line driver chips which are, in turn, connected to the I/O lines of the AY-3-8912 (see the manufacturer's data sheet for this device). Basically, register 16 of the AY-3-8912 controls eight I/O lines, the bits are designated as follows:
 
-| BIT | SIGNAL                    |
-|:---:|---------------------------|
-|  0  | **AUX** pin 2 (out)       |
-|  1  | **AUX** pin 4 (out)       |
-|  2  | **RS232** pin 5 (CTS out) |
-|  3  | **RS232** pin 3 (RXD out) |
-|  4  | **AUX** pin 3 (in)        |
-|  5  | **AUX** pin 5 (in)        |
-|  6  | **RS232** pin 4 (DTR in)  |
-|  7  | **RS232** pin 5 (TXD in)  |
+|  BIT  | SIGNAL                    |
+| :---: | ------------------------- |
+|   0   | **AUX** pin 2 (out)       |
+|   1   | **AUX** pin 4 (out)       |
+|   2   | **RS232** pin 5 (CTS out) |
+|   3   | **RS232** pin 3 (RXD out) |
+|   4   | **AUX** pin 3 (in)        |
+|   5   | **AUX** pin 5 (in)        |
+|   6   | **RS232** pin 4 (DTR in)  |
+|   7   | **RS232** pin 5 (TXD in)  |
 
 Using software control loops, the I/O lines could be driven as a second RS232 port (in the same way as the **RS232/MIDI** socket is driven using bits 2, 3, 6 and 7). Alternatively, the I/O lines could be used to drive, for example, a robot or some other external device.
 
-| PIN | FUNCTION     |
-|:---:|--------------|
-|  1  | GND          |
-|  2  | OUTPUT BIT 0 |
-|  3  | INPUT BIT 4  |
-|  4  | OUTPUT BIT 1 |
-|  5  | INPUT BIT 5  |
-|  6  | +12V         |
+|  PIN  | FUNCTION     |
+| :---: | ------------ |
+|   1   | GND          |
+|   2   | OUTPUT BIT 0 |
+|   3   | INPUT BIT 4  |
+|   4   | OUTPUT BIT 1 |
+|   5   | INPUT BIT 5  |
+|   6   | +12V         |
 
 <figure class="connector bsjack">
   <svg viewBox="0 -2 312 130" width="25%">
@@ -11216,35 +11217,35 @@ The ***+3*** can connect to a very wide range of peripherals via the **EXPANSION
   <figcaption><strong>EXPANSION I/O</strong> socket</figcaption>
 </figure>
 
-| PIN | UPPER ROW (U) | LOWER ROW (L) |
-|:---:|---------------|---------------|
-|  1  | A15           | A14           |
-|  2  | A13           | A12           |
-|  3  | D7            | +5V           |
-|  4  | ROM 1 <span class="signal-high">OE</a> | not used      |
-|  5  | D0            | GND           |
-|  6  | D1            | GND           |
-|  7  | D2            | CK            |
-|  8  | D6            | A0            |
-|  9  | D5            | A1            |
-|  10 | D3            | A2            |
-|  11 | D4            | A3            |
-|  12 | <span class="signal-high">INT</a>  | not used      |
-|  13 | <span class="signal-high">NMI</a>  | GND           |
-|  14 | <span class="signal-high">HALT</a> | ROM 2 <span class="signal-high">OE</a>      |
-|  15 | <span class="signal-high">MREQ</a> | DISK <span class="signal-high">RD</a> |
-|  16 | <span class="signal-high">IORQ</a> | DISK <span class="signal-high">WR</a> |
-|  17 | <span class="signal-high">RD</a>   | <span class="signal-high">MOTOR ON</a> |
-|  18 | <span class="signal-high">WR</a>   | <span class="signal-high">BUSRQ</a> |
-|  19 | not used      | <span class="signal-high">RESET</a> |
-|  20 | <span class="signal-high">WAIT</a> | A7            |
-|  21 | +12V          | A6            |
-|  22 | -12V          | A5            |
-|  23 | <span class="signal-high">M1</a>   | A4            |
-|  24 | <span class="signal-high">RFSH</a> | not used      |
-|  25 | A8            | BUSACK        |
-|  26 | A10           | A9            |
-|  27 | RESET         | A11           |
+|  PIN  | UPPER ROW (U)                          | LOWER ROW (L)                          |
+| :---: | -------------------------------------- | -------------------------------------- |
+|   1   | A15                                    | A14                                    |
+|   2   | A13                                    | A12                                    |
+|   3   | D7                                     | +5V                                    |
+|   4   | ROM 1 <span class="signal-high">OE</a> | not used                               |
+|   5   | D0                                     | GND                                    |
+|   6   | D1                                     | GND                                    |
+|   7   | D2                                     | CK                                     |
+|   8   | D6                                     | A0                                     |
+|   9   | D5                                     | A1                                     |
+|  10   | D3                                     | A2                                     |
+|  11   | D4                                     | A3                                     |
+|  12   | <span class="signal-high">INT</a>      | not used                               |
+|  13   | <span class="signal-high">NMI</a>      | GND                                    |
+|  14   | <span class="signal-high">HALT</a>     | ROM 2 <span class="signal-high">OE</a> |
+|  15   | <span class="signal-high">MREQ</a>     | DISK <span class="signal-high">RD</a>  |
+|  16   | <span class="signal-high">IORQ</a>     | DISK <span class="signal-high">WR</a>  |
+|  17   | <span class="signal-high">RD</a>       | <span class="signal-high">MOTOR ON</a> |
+|  18   | <span class="signal-high">WR</a>       | <span class="signal-high">BUSRQ</a>    |
+|  19   | not used                               | <span class="signal-high">RESET</a>    |
+|  20   | <span class="signal-high">WAIT</a>     | A7                                     |
+|  21   | +12V                                   | A6                                     |
+|  22   | -12V                                   | A5                                     |
+|  23   | <span class="signal-high">M1</a>       | A4                                     |
+|  24   | <span class="signal-high">RFSH</a>     | not used                               |
+|  25   | A8                                     | BUSACK                                 |
+|  26   | A10                                    | A9                                     |
+|  27   | RESET                                  | A11                                    |
 
 Details of the _**+3**'s_ hardware will be found in [chapter 8 part 30](#part30).
 
@@ -11259,8 +11260,8 @@ Details of the _**+3**'s_ hardware will be found in [chapter 8 part 30](#part30)
   - Thomas Ahn Kjaer <takjaer@daimi.aau.dk> did [chapter 8 part 17](#part17).
   - Russell Marks <mr216@gre.ac.uk> did the rest.
 
-## <a id="credits"></a> Revision history
+## <a id="revision"></a> Revision history
 
-- **28-Feb-2021** Public release of HTML & markdown version.
+- **04-Mar-2023** Public release of HTML & markdown version.
 
 <script>document.body.onscroll = asFragmentsGoBy();</script>
