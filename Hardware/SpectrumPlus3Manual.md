@@ -2,6 +2,7 @@
 <link href="./spectrum-manual.css" rel="stylesheet"></link>
 
 <div style="font-weight: bold; font-size: 48px" >Sinclair ZX Spectrum +3 Manual</div> 
+<script src="./spectrum-manual.js"></script>
 
 # Contents
  
@@ -11264,6 +11265,5 @@ Details of the _**+3**'s_ hardware will be found in [chapter 8 part 30](#part30)
 
 - **04-Mar-2023** Public release of HTML & markdown version.
 
-<script src="./spectrum-manual.js"></script>
 <script>document.body.onscroll = asFragmentsGoBy();</script>
 <!-- title: Sinclair ZX Spectrum +3 Manual -->
