@@ -11096,7 +11096,7 @@ Using software control loops, the I/O lines could be driven as a second RS232 po
 
 The ***+3*** can connect to a very wide range of peripherals via the **EXPANSION I/O** socket at the back of the machine. Although this socket is much the same as on the old-style Spectrum 48K, there is no guarantee that a device which ran correctly on a Spectrum 48K will run on a ***+3***. You should, therefore, before you purchase any expansion device or add-on, verify that it will work with the +3, and not just with a 48K Spectrum.
 
-<p class="warning-box">WARNING - It is very dangerous indeed to plug in (or unplug) any device from the <strong>EXPANSION I/O</strong> socket while the ***+3*** is switched on - you will probably damage both the ***+3*** and the expansion device if you do so.</p>
+<p class="warning-box">WARNING - It is very dangerous indeed to plug in (or unplug) any device from the <strong>EXPANSION I/O</strong> socket while the <b><i>+3</i></b> is switched on - you will probably damage both the <b><i>+3</i></b> and the expansion device if you do so.</p>
 
 <figure>
   <svg viewBox="0 0 572 80" width="75%" class="connector edge">
