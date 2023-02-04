@@ -148,55 +148,55 @@ code {
 
 /* SVG */
 
-svg {
+svg, .shadow-svg {
   fill: none;
   stroke: #000;
 }
 
-svg text {
+svg text, .shadow-svg text {
   fill: #000;
   stroke: none;
 }
 
-#amstrad-logo path, #amstrad-logo-a {
+#amstrad-logo path, #amstrad-a {
   stroke: #000;
   stroke-width: 2;
   fill: #fefefe;
 }
 
-svg .open {
+svg .open, .shadow-svg .open {
   stroke: #000;
   stroke-width: 2.5;
   fill: none;
 }
 
-svg .thick {
+svg .thick, .shadow-svg .thick {
   stroke: #000;
   stroke-width: 2.5;
   fill: #fefefe;
 }
 
-svg .thin {
+svg .thin, .shadow-svg .thin {
   stroke: #000;
   stroke-width: 1.5;
   fill: #fefefe;
 }
 
-svg .filled {
+svg .filled, .shadow-svg .filled {
   fill: #000;
 }
 
-svg .dashed {
+svg .dashed, .shadow-svg .dashed {
   stroke-dasharray: 5, 2.5;
 }
 
-svg .hairline {
+svg .hairline, .shadow-svg .hairline {
   stroke: #000;
   stroke-width: 0.8;
   fill: #fefefe;
 }
 
-svg .closed {
+svg .closed, .shadow-svg .closed {
   stroke: #000;
   stroke-width: 2.5;
   fill: #000;

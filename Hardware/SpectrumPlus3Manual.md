@@ -158,20 +158,15 @@ Therefore, you should adopt the following reading programme...
 
 [Chapter 10](#chapter10) - This chapter illustrates how add-ons (peripherals) are connected to the ***+3***. Peripherals include such devices as a cassette unit, a printer, an additional disk drive, a joystick, etc. So if you're thinking of linking up any device at all to the ***+3***, check this chapter to make sure that you've got the right connections. If, on the other hand, you intend to use just the standard ***+3*** set up (ie. computer and TV only), then you may skip this chapter.
 
-<figure>
-  <svg viewBox="-5 -5 790 215" width="33%" id="amstrad-logo">
+<figure id="amstrad-logo">
+  <svg viewBox="-5 -5 790 215" width="33%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <defs>
-      <g id="amstrad-logo-a">
-        <path d="M40 203l3-40h16l3 40h40L78 1H26L0 203h40zM57 130H46l6-78 5 78z" />
-      </g>
+        <path id="amstrad-a" d="M40 203l3-40h16l3 40h40L78 1H26L0 203h40zm17-73H46l6-78 5 78z" />
     </defs>
-    <use xlink:href="#amstrad-logo-a" />
-    <path d="M170 1h-57v202h39V88l16 115h25L210 88v114h39V1h-57l-10 89L171 1z" />
-    <path d="M257 24l0 48a32.2 32 0 0 0 1.1 6c0 2 2 5 3 7a25 25 0 0 0 3 3 55 55 0 0 0 5 4 60 60 0 0 0 11 8l26 14c1 1 2 1 4 2 3 3 3 6 3 9l1 4V161c0 2-2 4-1 6a6 6 0 0 1-7 3 6 6 0 0 1-2-1c-2-2-2-5-2-8v-41h-43v46c0 5.7.1 11 1 16.6.7 3 1.7 6 3 9a24 24 0 0 0 6 7 30 30 0 0 0 8 4 25 25 0 0 0 6 1l5 1h44c2 0 4 0 6-1a30 30 0 0 0 8-3c3-2 5-4 6-6s2-4 3-7 1-4 2-6a73 73 0 0 0 1-9c0-3 0-6 0-9l-0-41a172 172 0 0 0-0-7 26 26 0 0 0-0-3 35 35 0 0 0-1-2 18 18 0 0 0-1-3c-1-1-2-3-3-5a28 28 0 0 0-4-5 44 44 0 0 0-5-4 170 170 0 0 0-13-8l-18-10a46 46 0 0 1-3-2 52 52 0 0 1-3-2c-1-1-1-1-2-1-0-0-0-0-1-1a12 12 0 0 1-2-5c-0-1 0-2 0-3v-19a13 13 0 0 1 0-5 9 9 0 0 1 1-2c2-3 5-3 7-2a6 6 0 0 1 2 1 7 7 0 0 1 1 2c.3.7.4 1.4.6 2a68 68 0 0 1 .2 7.3v24h43l-1-49a36 36 0 0 0-1-3 21 21 0 0 0-1-3c-1-2-2-4-3-6a22 22 0 0 0-5-5 26 26 0 0 0-6-3c-4-1-7-2-10-2-2-0-3-0-5-1l-37.4.3a54 54 0 0 0-13 2 22 22 0 0 0-4 2c-3 1-5 3-7 5-1 1-2 3-3 5a27 27 0 0 0-3 12z"/>
-    <path d="M362 1v33h22v170h43V34h21V1h-86z" />
-    <path d="M505 0h-46v202h43v-81c2.8.1 6-0 8.5.7.6.2 1.2.5 2 1 2 2 2 4 2 6 0 4.2.1 8.3.2 13v60.6h43V140a92 92 0 0 0-2-19c-0-1-1-3-2-4.2a24 24 0 0 0-4-6c-2-2-3-3-6-5a24 24 0 0 0-7-3 28 28 0 0 0 3-0c2-1 4-2 6-4s3.4-3 5-5 2-4 3-7l1.2-5a122 122 0 0 0 1-21v-21c.1-4-0-8-1-13l-1-6c-0-2-1-3-1-4a25 25 0 0 0-2-4 25 25 0 0 0-3-4c-1-2-3-3-5-4a26 26 0 0 0-12-4c-10-1-19-1-28-1zm-3 33h6a9 9 0 0 1 2.9.8c3 2 3 4 3 7l0 8v26.6c0 2-0 3-0 5a6 6 0 0 1-2 4c-1 1-3 1-5 1.4-1.8.2-3.6.2-5.4.1V34z"/>
-    <use xlink:href="#amstrad-logo-a" x="567" />
-    <path d="M774 14c-2-2-3-5-6-6s-5-3-7-4a20 20 0 0 0-4-1 59 59 0 0 0-4-1 71 71 0 0 0-5-1L680 1v202.2l68.6-0c2 0 3-2 5-1 4-1 7-1 10-3 2-1 4-2 5-3a18 18 0 0 0 5-5 35 35 0 0 0 4-10 54 54 0 0 0 2-13l-1-138c0-3-1-6-2-9a30 30 0 0 0-3-8Z m-48 21h3a14 14 0 0 1 2.5.5 7 7 0 0 1 1.8.8c.5.3 1 1 1 1 2 2 1 5 1 8v117a18 18 0 0 1-0 3c-.1.8-1 2-1 2s-1 1-1 2a6 6 0 0 1-2 1c-.6.3-1.2.8-2 1h-7l0-136z"/>
+    <use xlink:href="#amstrad-a"/>
+    <path d="M170 1h-57v202h39V88l16 115h25l17-115v114h39V1h-57l-10 89-11-89zm87 23v48a32.2 32 0 0 0 1.1 6c0 2 2 5 3 7a25 25 0 0 0 3 3 55 55 0 0 0 5 4 60 60 0 0 0 11 8l26 14c1 1 2 1 4 2 3 3 3 6 3 9l1 4v32c0 2-2 4-1 6a6 6 0 0 1-9 2c-2-2-2-5-2-8v-41h-43v46a102 102 0 0 0 1 16.6 53 53 0 0 0 3 9 24 24 0 0 0 6 7 30 30 0 0 0 8 4 25 25 0 0 0 6 1l5 1h44c2 0 4 0 6-1a30 30 0 0 0 8-3 17 17 0 0 0 6-6c1-2 2-4 3-7s1-4 2-6a73 73 0 0 0 1-9v-50a172 172 0 0 0 0-7 26 26 0 0 0 0-3 35 35 0 0 0-1-2 18 18 0 0 0-1-3c-1-1-2-3-3-5a28 28 0 0 0-4-5 44 44 0 0 0-5-4 170 170 0 0 0-13-8l-18-10a46 46 0 0 1-3-2 52 52 0 0 1-3-2c-1-1-1-1-2-1l-1-1a12 12 0 0 1-2-5v-22a13 13 0 0 1 0-5 9 9 0 0 1 1-2c2-3 5-3 7-2a6 6 0 0 1 2 1 7 7 0 0 1 1 2c.3.7.4 1.4.6 2a68 68 0 0 1 .2 7.3v24h43l-1-49a36 36 0 0 0-1-3 21 21 0 0 0-1-3l-3-6a22 22 0 0 0-5-5 26 26 0 0 0-6-3l-10-2c-2 0-3 0-5-1l-37.4.3a54 54 0 0 0-13 2 22 22 0 0 0-4 2c-3 1-5 3-7 5-1 1-2 3-3 5a27 27 0 0 0-3 12zM362 1v33h22v170h43V34h21V1h-86zm143-1h-46v202h43v-81c2.8.1 6 0 8.5.7.6.2 1.2.5 2 1 2 2 2 4 2 6l.2 73.6h43V140a92 92 0 0 0-2-19c0-1-1-3-2-4.2a24 24 0 0 0-4-6l-6-5a24 24 0 0 0-7-3 28 28 0 0 0 3 0c2-1 4-2 6-4s3.4-3 5-5 2-4 3-7l1.2-5a122 122 0 0 0 1-21v-21c.1-4 0-8-1-13l-1-6c0-2-1-3-1-4a25 25 0 0 0-2-4 25 25 0 0 0-3-4c-1-2-3-3-5-4a26 26 0 0 0-12-4c-10-1-19-1-28-1zm-3 33h6a9 9 0 0 1 2.9.8c3 2 3 4 3 7v39.6a6 6 0 0 1-2 4c-1 1-3 1-5 1.4-1.8.2-3.6.2-5.4.1V34z"/>
+    <use xlink:href="#amstrad-a" x="567"/>
+    <path d="M774 14c-2-2-3-5-6-6s-5-3-7-4a20 20 0 0 0-4-1 59 59 0 0 0-4-1 71 71 0 0 0-5-1h-68v202.2h68.6c2 0 3-2 5-1 4-1 7-1 10-3l5-3a18 18 0 0 0 5-5 35 35 0 0 0 4-10 54 54 0 0 0 2-13l-1-138c0-3-1-6-2-9a30 30 0 0 0-3-8zm-48 21h3a14 14 0 0 1 2.5.5 7 7 0 0 1 1.8.8c.5.3 1 1 1 1 2 2 1 5 1 8v117a18 18 0 0 1 0 3c-.1.8-1 2-1 2s-1 1-1 2a6 6 0 0 1-2 1c-.6.3-1.2.8-2 1h-7v-136z"/>
   </svg>
   <figcaption>&copy; Copyright 1987 - AMSTRAD Plc.</figcaption>
 </figure>
@@ -765,59 +760,55 @@ The ***+3*** uses 3 inch compact floppy disks. We strongly recommend that for re
 
 Each side of a disk may be used independently. A disk should be inserted with its label facing ***outward*** from the drive, and with the side that you wish to use ***face up***...
 
-<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1206 584" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="5.5">
-  <use xlink:href="#disk-insert" />
-  <defs>
-  <g id="disk-insert">
-    <g stroke-width="3">
-      <path d="M1.33 105.33l486-104 62 17-8 3 454 120 1 74m-2-74l-351 138-446-176-171 42m17 39l154-40 446 256-152 72m-294-368v40m447 135v120m-1 1l12-3 15 60 119-60"/>
-      <path d="M655.33 397.33l1.01-1.65.99-106.35 328-130 1 53m-183 191l-246 125"/>
-      <path d="M778.33 392.33l-110 54m-126-418l-310 77 406 160 322-125-418-112zm7-10l2 1v3m287 396l-230 123"/>
-      <path d="M671.33 460.78l-.86-3.66"/>
-      <path d="M607.51 582.16l358.39-202.8c8.91-5.46 10.74-10 10.6-15.2"/>
-      <path d="M1056.33 385.33l11 44 18-13 92 35 27-20-88-34 17-12h-77zm-388-60v48l304-140 1-38-305 130z" class="filled"/>
-    </g>
-    <path d="M838.93 431.47l5.8-2.92v21.25l-5.8 3.23v-21.57z" fill="url(#A)"/>
-    <path d="M849.93 425.48l5.8-2.92v21.25l-5.8 3.23v-21.57z" fill="url(#A)"/>
-    <path d="M860.93 418.49l5.8-2.92v22.25l-5.8 3.23v-22.57z" fill="url(#A)"/>
-    <path d="M871.93 411.51l5.8-2.92v22.25l-5.8 3.23v-22.57z" fill="url(#A)"/>
-    <path d="M882.93 405.51l5.8-2.92v22.25l-5.8 3.23v-22.57z" fill="url(#A)"/>
-    <path d="M893.93 400.52l5.8-2.92v21.25l-5.8 3.23v-21.57z" fill="url(#A)"/>
-    <path d="M904.93 393.53l5.8-2.92v22.25l-5.8 3.23v-22.57z" fill="url(#A)"/>
-    <path d="M816.93 443.46l5.8-2.92v22.25l-5.8 3.23v-22.57z" fill="url(#A)"/>
-    <path d="M827.93 437.47l5.8-2.92v21.25l-5.8 3.23v-21.57z" fill="url(#A)"/>
-    <path d="M649.93 535.8l5.8-3.4-.21 24.56-5.59 2.82V535.8z" fill="url(#A)"/>
-    <path d="M660.93 529.32l5.8-2.92v24.25l-5.8 3.23v-24.57z" fill="url(#A)"/>
-    <path d="M671.93 523.33l5.8-2.92v24.25l-5.8 3.23v-24.57z" fill="url(#A)"/>
-    <path d="M682.93 517.34l5.8-2.91v24.25l-5.8 3.23v-24.57z" fill="url(#A)"/>
-    <path d="M693.93 511.35l5.8-2.92v23.25l-5.8 3.23v-23.57z" fill="url(#A)"/>
-    <path d="M704.93 505.36l5.8-2.92v23.25l-5.8 3.23v-23.57z" fill="url(#A)"/>
-    <path d="M715.93 498.37l5.8-2.92v24.25l-5.8 3.23v-24.57z" fill="url(#A)"/>
-    <path d="M726.93 492.38l5.8-2.92v24.25l-5.8 3.23v-24.57z" fill="url(#A)"/>
-    <path d="M737.93 486.39l5.8-2.92v23.25l-5.8 3.23v-23.57z" fill="url(#A)"/>
-    <path d="M748.93 480.4l5.8-2.92v23.25l-5.8 3.23V480.4z" fill="url(#A)"/>
-    <path d="M759.93 474.41l5.8-2.92v23.25l-5.8 3.23v-23.57z" fill="url(#A)"/>
-    <path d="M771.93 467.42l5.8-2.92v23.25l-5.8 3.23v-23.57z" fill="url(#A)"/>
-    <path d="M782.93 461.43l5.8-2.92v23.25l-5.8 3.23v-23.57z" fill="url(#A)"/>
-    <path d="M793.93 455.44l5.8-2.92v23.25l-5.8 3.23v-23.57z" fill="url(#A)"/>
-    <path d="M805.93 449.45l5.8-2.92v22.25l-5.8 3.23v-22.57z" fill="url(#A)"/>
-    <g stroke-width="1.5">
-      <path d="M670.87 405.26l-.08 8.05 14.68-7.42.24-7.97-14.84 7.34z" class="filled"/>
-      <path d="M670.37 332.47v9.92l183.24 81.51c3.44 1.77 8.94 1.73 13.19-.3l270.28-148.56-.1-13.94" fill="#fff"/>
-      <path d="M858.12 411.6l.03 13.36"/>
-      <path d="M670.53 332.42c-.17.72-.24 1.42.31 1.96l181.77 76.51c4.2 1.33 5.65.78 9.9-1.24l272.82-145.61c2.83-2.16 1.73-6.61-1.67-7.41l-172.32-50.3-290.81 126.09z" fill="#fff"/>
-      <path d="M826.05 404.79l-154.92-68.21v3.66l155.03 65.19-.11-.64z" class="filled"/>
-      <path d="M789.56 281.26c32.07 24.11 97.45 1.24 65.36-28.7m-119.75 97.93c-2.58 1.48-3.12 3.45-.73 4.72l114 49.33c7.68 3.31 11.23 1.57 18.1-1.94l252.85-134.15c4.05-1.87 4.44-8.19-1.93-9.98l-103.43-31.29c-3.96-1.31-7.95-1.42-12.02.61l-266.84 122.7z" />
-    </g>
-  </g>
-    <linearGradient id="A" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(116.411,207.81,-132.093,73.9961,649.928,473.248)">
-      <stop offset="0" stop-color="#fff"/>
-      <stop offset=".28"/>
-      <stop offset=".3" stop-color="#dadada"/>
-      <stop offset=".34" stop-color="#fff"/>
-    </linearGradient>
-  </defs>
-</svg>
+<figure id="insert-disk">
+  <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1206 584">
+    <use xlink:href="#disk-insert" />
+    <defs>
+      <g id="disk-insert" class="shadow-svg">
+        <g stroke-width="3">
+          <path d="M1.33 105.33l486-104 62 17-8 3 454 120 1 74m-2-74l-351 138-446-176-171 42m17 39l154-40 446 256-152 72m-294-368v40m447 135v120m-1 1l12-3 15 60 119-60"/>
+          <path d="M655.33 397.33l1.01-1.65.99-106.35 328-130 1 53m-183 191l-246 125"/>
+          <path d="M778.33 392.33l-110 54m-126-418l-310 77 406 160 322-125-418-112zm7-10l2 1v3m287 396l-230 123"/>
+          <path d="M671.33 460.78l-.86-3.66"/>
+          <path d="M607.51 582.16l358.39-202.8c8.91-5.46 10.74-10 10.6-15.2"/>
+          <path d="M1056.33 385.33l11 44 18-13 92 35 27-20-88-34 17-12h-77zm-388-60v48l304-140 1-38-305 130z" class="filled"/>
+        </g>
+        <path d="M838.93 431.47l5.8-2.92v21.25l-5.8 3.23v-21.57z" fill="url(#A)"/>
+        <path d="M849.93 425.48l5.8-2.92v21.25l-5.8 3.23v-21.57z" fill="url(#A)"/>
+        <path d="M860.93 418.49l5.8-2.92v22.25l-5.8 3.23v-22.57z" fill="url(#A)"/>
+        <path d="M871.93 411.51l5.8-2.92v22.25l-5.8 3.23v-22.57z" fill="url(#A)"/>
+        <path d="M882.93 405.51l5.8-2.92v22.25l-5.8 3.23v-22.57z" fill="url(#A)"/>
+        <path d="M893.93 400.52l5.8-2.92v21.25l-5.8 3.23v-21.57z" fill="url(#A)"/>
+        <path d="M904.93 393.53l5.8-2.92v22.25l-5.8 3.23v-22.57z" fill="url(#A)"/>
+        <path d="M816.93 443.46l5.8-2.92v22.25l-5.8 3.23v-22.57z" fill="url(#A)"/>
+        <path d="M827.93 437.47l5.8-2.92v21.25l-5.8 3.23v-21.57z" fill="url(#A)"/>
+        <path d="M649.93 535.8l5.8-3.4-.21 24.56-5.59 2.82V535.8z" fill="url(#A)"/>
+        <path d="M660.93 529.32l5.8-2.92v24.25l-5.8 3.23v-24.57z" fill="url(#A)"/>
+        <path d="M671.93 523.33l5.8-2.92v24.25l-5.8 3.23v-24.57z" fill="url(#A)"/>
+        <path d="M682.93 517.34l5.8-2.91v24.25l-5.8 3.23v-24.57z" fill="url(#A)"/>
+        <path d="M693.93 511.35l5.8-2.92v23.25l-5.8 3.23v-23.57z" fill="url(#A)"/>
+        <path d="M704.93 505.36l5.8-2.92v23.25l-5.8 3.23v-23.57z" fill="url(#A)"/>
+        <path d="M715.93 498.37l5.8-2.92v24.25l-5.8 3.23v-24.57z" fill="url(#A)"/>
+        <path d="M726.93 492.38l5.8-2.92v24.25l-5.8 3.23v-24.57z" fill="url(#A)"/>
+        <path d="M737.93 486.39l5.8-2.92v23.25l-5.8 3.23v-23.57z" fill="url(#A)"/>
+        <path d="M748.93 480.4l5.8-2.92v23.25l-5.8 3.23V480.4z" fill="url(#A)"/>
+        <path d="M759.93 474.41l5.8-2.92v23.25l-5.8 3.23v-23.57z" fill="url(#A)"/>
+        <path d="M771.93 467.42l5.8-2.92v23.25l-5.8 3.23v-23.57z" fill="url(#A)"/>
+        <path d="M782.93 461.43l5.8-2.92v23.25l-5.8 3.23v-23.57z" fill="url(#A)"/>
+        <path d="M793.93 455.44l5.8-2.92v23.25l-5.8 3.23v-23.57z" fill="url(#A)"/>
+        <path d="M805.93 449.45l5.8-2.92v22.25l-5.8 3.23v-22.57z" fill="url(#A)"/>
+        <g stroke-width="1.5">
+          <path d="M670.87 405.26l-.08 8.05 14.68-7.42.24-7.97-14.84 7.34z" class="filled"/>
+          <path d="M670.37 332.47v9.92l183.24 81.51c3.44 1.77 8.94 1.73 13.19-.3l270.28-148.56-.1-13.94" fill="#fff"/>
+          <path d="M858.12 411.6l.03 13.36"/>
+          <path d="M670.53 332.42c-.17.72-.24 1.42.31 1.96l181.77 76.51c4.2 1.33 5.65.78 9.9-1.24l272.82-145.61c2.83-2.16 1.73-6.61-1.67-7.41l-172.32-50.3-290.81 126.09z" fill="#fff"/>
+          <path d="M826.05 404.79l-154.92-68.21v3.66l155.03 65.19-.11-.64z" class="filled"/>
+          <path d="M789.56 281.26c32.07 24.11 97.45 1.24 65.36-28.7m-119.75 97.93c-2.58 1.48-3.12 3.45-.73 4.72l114 49.33c7.68 3.31 11.23 1.57 18.1-1.94l252.85-134.15c4.05-1.87 4.44-8.19-1.93-9.98l-103.43-31.29c-3.96-1.31-7.95-1.42-12.02.61l-266.84 122.7z" />
+        </g>
+      </g>
+    </defs>
+  </svg>
+</figure>
 
 ## <a id="loading-disk-software"></a> Loading disk software
 
@@ -1013,12 +1004,12 @@ In the left-hand corner of each side of a blank disk, you will see an arrow poin
         <path d="M1176.14,528.237c77.915,24.354 223.281,-48.251 124.062,-82.688l-344.12,-126.69c-71.61,-18.319 -210.27,49.158 -89.062,87.688l309.12,121.69Z" style="stroke-width:6.67px;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
         <path d="M1176.14,528.237c77.915,24.354 215.281,-40.251 116.062,-74.688l-344.12,-126.69c-72.341,-12.004 -191.926,47.771 -70.062,82.688l298.12,118.69Z" style="stroke-width:6.67px;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
     </g>
-    <path id="Protect-Arrow" d="M314.233,579.001l-21.116,8.878l5.087,-35.356l67.27,4.425l-16.116,10.877l36.5,22.799l-30.125,13.176l-41.5,-24.799Z" class="filled" style="stroke-width:6.67px;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
+    <path id="Protect-Arrow" d="M314.233,579.001l-21.116,8.878l5.087,-35.356l67.27,4.425l-16.116,10.877l36.5,22.799l-30.125,13.176l-41.5,-24.799Z" class="filled" />
     <g id="Spindle">
         <path d="M1563.4,581.454c84.317,-10.831 156.624,10.366 161.37,47.305c4.745,36.94 -59.857,75.724 -144.174,86.555c-84.317,10.831 -156.624,-10.366 -161.37,-47.305c-4.745,-36.94 59.857,-75.724 144.174,-86.555Z" style="stroke-width:6.67px;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
         <path d="M1565.81,592.309c82.112,-10.548 152.314,8.418 156.669,42.327c4.356,33.908 -58.772,70.002 -140.885,80.55c-82.112,10.548 -152.314,-8.418 -156.67,-42.327c-4.355,-33.909 58.773,-70.002 140.886,-80.55Z" style="stroke-width:6.67px;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
     </g>
-    <text x="420" y="620" style="font-size:48px" >Write protect hole</text>
+    <text x="420" y="620" style="font-size:48px">Write protect hole</text>
     <path id="Detect-Hole" d="M1273.11,108.033c14.31,-1.065 26.344,3.656 26.856,10.537c0.513,6.88 -10.689,13.331 -25,14.397c-14.31,1.065 -26.344,-3.656 -26.856,-10.537c-0.512,-6.88 10.69,-13.331 25,-14.397Z" style="stroke-width:6.67px;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
     <g id="Dunno-Hole">
         <path d="M1216.02,176.097c21.69,-2.226 40.053,3.318 40.982,12.371c0.929,9.054 -15.926,18.21 -37.616,20.435c-21.69,2.226 -40.053,-3.318 -40.982,-12.371c-0.929,-9.054 15.927,-18.21 37.616,-20.435Z" style="stroke-width:6.67px;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
@@ -1044,7 +1035,7 @@ To open the write protect hole, slide back the small shutter located at the left
 <figure id="disk-protect-side-fig">
   <svg viewBox="-10 -2 600 325" width="90%">
     <defs>
-      <g id="disk-side">
+      <g id="disk-side" class="shadow-svg">
         <rect x="0" y="0" width="220" height="290" rx="8" ry="8" class="thick" />
         <path d="M 11 289 v -60 a 8,8 0 0 1 8,-8 h 182 a 8,8 0 0 1 8,8 v 60" class="thick" />
         <rect x="94" y="20" width="32" height="80" rx="20" ry="15" class="thin" />
@@ -1091,13 +1082,13 @@ Other manufacturers' disks employ a small lever located in a slot at the left-ha
 <figure id="write-protection-off-fig">
   <svg viewBox="0 0 330 120" width="75%">
     <defs>
-    <g id="disk-top">
-      <path class="thin" d="
-        M 22 80 l -20 -65 v -2 h 6 l 1 -9 h -6 v -2 h 48 l -1.5 13 h -47
-        m 262 0 h -200 l 1.5 -13 h 198 v 2 h -6 l 1 9 h 6 v 3 l -20 65
-        m 18 -68 l 1 -9 m -3.5 0 l 1 9 m -212 0 h 15 m 2 -8 h -15
-        M 3 4 l 1 8 h 1.5 l 1 -8 m 6 2 h 35 l -0.7 5 h -35 l 1 -5.5 m 205 0 l 1 5 h 35 l -1 -5 h -35.5" />
-    </g>
+      <g id="disk-top" class="shadow-svg">
+        <path class="thin" d="
+          M 22 80 l -20 -65 v -2 h 6 l 1 -9 h -6 v -2 h 48 l -1.5 13 h -47
+          m 262 0 h -200 l 1.5 -13 h 198 v 2 h -6 l 1 9 h 6 v 3 l -20 65
+          m 18 -68 l 1 -9 m -3.5 0 l 1 9 m -212 0 h 15 m 2 -8 h -15
+          M 3 4 l 1 8 h 1.5 l 1 -8 m 6 2 h 35 l -0.7 5 h -35 l 1 -5.5 m 205 0 l 1 5 h 35 l -1 -5 h -35.5" />
+      </g>
     </defs>
     <use xlink:href="#disk-top" x="30" y="30" />
     <ellipse cx="54" cy="56" rx="3.5" ry="2" />
@@ -3140,15 +3131,15 @@ These ***trigonometrical*** functions measure what happens when a point moves ro
 <figure>
   <svg viewBox="0 0 500 500" width="100%" id="trig-1-diagram">
     <defs>
-      <g id="arrow-head">
+      <g id="arrow-head" class="shadow-svg">
         <path d="M 0 0 l -4 9 l -4 -9" class="filled" />
       </g>
-      <g id="circle-grid">
+      <g id="circle-grid" class="shadow-svg">
         <circle cx="250" cy="250" r="125" class="open" />
         <line x1="250" y1="0" x2="250" y2="500" class="thick" />
         <line x1="0" y1="250" x2="500" y2="250" class="thick" />
       </g>
-      <g id="circle-grid-arc">
+      <g id="circle-grid-arc" class="shadow-svg">
         <use xlink:href="#circle-grid" />
         <path d="M 400 250 A 145 145 0 0 0 320 115" fill="none" stroke="#000" stroke-width="3" />
         <use xlink:href="#arrow-head" transform="translate(320, 120) rotate(117,0,0)" />
@@ -6211,10 +6202,10 @@ The way that the computer organises its affairs changes slightly between 48 BASI
 <figure>
   <svg xmlns="http://www.w3.org/2000/svg" width="90%" viewBox="-20 0 1155 800" style="font-size: 14px">
     <defs>
-      <g id="arrow-down-open">
+      <g id="arrow-down-open" class="shadow-svg">
         <path d="M 0,0 v 25 m -3.7,-5 l 3.7,5 l 3.7,-5" class="hairline" />
       </g>
-      <g id="arrow-up-open">
+      <g id="arrow-up-open" class="shadow-svg">
         <use xlink:href="#arrow-down-open" transform="rotate(180)" />
       </g>
     </defs>
@@ -6406,7 +6397,7 @@ Number whose name is longer than one letter:
 <figure>
   <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 765 105" style="font-size: 11px">
     <defs>
-      <g id="8bitcolumn">
+      <g id="8bitcolumn" class="shadow-svg">
         <path d="M 0,0 v 20 m 0,20 v 20 m 20,0 v -20 m 0,-20 v -20 m 20,0 v 20 m 0,20 v 20 m 20,0 v -20 m 0,-20 v -20 m 20,0 v 20 m 0,20 v 20 m 20,0 v -20 m 0,-20 v -20 m 20,0 v 20 m 0,20 v 20 m 20,0 v -60" class="thin" />
       </g>
     </defs>
@@ -10583,7 +10574,7 @@ To connect your cassette unit to the +3, you will require a suitable interconnec
   <figcaption><strong>TAPE/SOUND</strong> socket on the <b><i>+3</i></b></figcaption>
   <svg width="90%" viewBox="0 0 1700 360">
       <defs>
-        <g id="wire">
+        <g id="wire" class="shadow-svg">
           <path d="M 556,192 h 350 q 50 0, 50 50 t 50 50 h 214 m 0,-10 h -204 q -50 0, -50 -50 t -50 -50 h-360" class="thick" />
         </g>
       </defs>
@@ -10756,7 +10747,7 @@ When the FD-1 is connected to the +3, first switch on the FD-1 (using the slide 
 <figure>
   <svg viewBox="15 0 382 70" width="75%" class="connector edge">
     <defs>
-      <g id="edge-pin">
+      <g id="edge-pin" class="shadow-svg">
         <rect height="5" width="15" />
       </g>
     </defs>
@@ -10881,7 +10872,7 @@ It is safe to plug in (or unplug) a joystick while the ***+3*** is switched on.
 <figure id="joysticks">
   <svg viewBox="0 0 120 45" width="25%">
     <defs>
-      <g id="pin">
+      <g id="pin" class="shadow-svg">
         <circle cx="0" cy="0" r="2.5" class="fillonly" />
       </g>
     </defs>
@@ -10929,10 +10920,10 @@ A VDU monitor (or PERITEL TV) should be plugged into the RGB/PERITEL socket at t
 <figure id="vdu">
   <svg viewBox="0 0 160 160" width="25%">
     <defs>
-    <g id="bpin">
-      <circle r="5" class="filled" />
-    </g>
-  </defs>
+      <g id="bpin" class="shadow-svg">
+        <circle r="5" class="filled" />
+      </g>
+    </defs>
     <path d="M 70 10 A 70 70 0 1 0 100 10 v 20 h -30 v -20" class="thick" />
     <text x="50" y="45">7</text>
     <use x="50" y="55" xlink:href="#bpin" />
@@ -11020,7 +11011,7 @@ If you wish to wire-up your own, then the connections are as follows...
 <figure class="connector bsjack">
   <svg viewBox="0 -2 312 130" width="25%">
     <defs>
-      <g id="bsjack">
+      <g id="bsjack" class="shadow-svg">
         <path d="M10 60 v-30 h40 v-30 h260 v100 h-260 v-40 z" />
         <text y="45" x="79">6</text>
         <rect y="55" x="70" width="20" height="10" />
