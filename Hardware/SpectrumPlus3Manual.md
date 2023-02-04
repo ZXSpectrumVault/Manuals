@@ -1,7 +1,10 @@
 <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:500|Roboto+Slab:400,700&amp;display=swap" rel="stylesheet"></link>
 <link href="./spectrum-manual.css" rel="stylesheet"></link>
 <script src="./spectrum-manual.js"></script>
+<!-- title: Sinclair ZX Spectrum +3 Manual -->
 <!-- no toc -->
+
+<div style="font-weight: bold; font-size: 48px" >Sinclair ZX Spectrum +3 Manual</div> 
 
 # Contents
  

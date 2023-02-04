@@ -43,12 +43,12 @@ th {
   border: 1px solid #ccc !important;
 }
 
-.toc > ul {
+.toc>ul {
   padding-left: 0;
   padding-top: 2rem;
 }
 
-ul > li > ul {
+ul>li>ul {
   margin-bottom: 1.5rem;
 }
 
@@ -71,15 +71,13 @@ h1 {
   margin-bottom: 5px;
 }
 
-h1 + *
-{
+h1+* {
   margin-top: 0;
   padding-top: 1rem;
   border-top: solid 2px #000;
 }
 
-h1 + h2
-{
+h1+h2 {
   margin-top: 0;
 }
 
@@ -101,7 +99,8 @@ ol li {
   margin: 0.8rem 0;
 }
 
-ul + h2, p + h2 {
+ul+h2,
+p+h2 {
   margin-top: 2rem;
 }
 
@@ -131,7 +130,7 @@ code {
 a,
 a pre,
 a code {
-  color: #004c8c !important;
+  color: #207cac !important;
 }
 
 code {
@@ -148,55 +147,65 @@ code {
 
 /* SVG */
 
-svg, .shadow-svg {
+svg,
+.shadow-svg {
   fill: none;
   stroke: #000;
 }
 
-svg text, .shadow-svg text {
+svg text,
+.shadow-svg text {
   fill: #000;
   stroke: none;
 }
 
-#amstrad-logo path, #amstrad-a {
+#amstrad-logo path,
+#amstrad-a {
   stroke: #000;
   stroke-width: 2;
   fill: #fefefe;
 }
 
-svg .open, .shadow-svg .open {
+svg .open,
+.shadow-svg .open {
   stroke: #000;
   stroke-width: 2.5;
   fill: none;
 }
 
-svg .thick, .shadow-svg .thick {
+svg .thick,
+.shadow-svg .thick {
   stroke: #000;
   stroke-width: 2.5;
   fill: #fefefe;
 }
 
-svg .thin, .shadow-svg .thin {
+svg .thin,
+.shadow-svg .thin {
   stroke: #000;
   stroke-width: 1.5;
   fill: #fefefe;
 }
 
-svg .filled, .shadow-svg .filled {
+svg .filled,
+.shadow-svg .filled {
   fill: #000;
 }
 
-svg .dashed, .shadow-svg .dashed {
+svg .dashed,
+.shadow-svg .dashed {
   stroke-dasharray: 5, 2.5;
 }
 
-svg .hairline, .shadow-svg .hairline {
+svg .hairline,
+.shadow-svg .hairline {
   stroke: #000;
   stroke-width: 0.8;
   fill: #fefefe;
 }
 
-svg .closed, .shadow-svg .closed {
+svg .closed,
+.shadow-svg .closed {
   stroke: #000;
   stroke-width: 2.5;
   fill: #000;
@@ -292,9 +301,11 @@ figcaption {
   fill: none;
 }
 
-svg rect, svg line {
+svg rect,
+svg line {
   stroke: #000;
-  stroke-width: 2.5px;;
+  stroke-width: 2.5px;
+  ;
 }
 
 figure {
