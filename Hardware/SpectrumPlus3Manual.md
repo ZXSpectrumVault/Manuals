@@ -1,8 +1,9 @@
+<!-- title: Sinclair ZX Spectrum +3 Manual -->
 <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:500|Roboto+Slab:400,700&amp;display=swap" rel="stylesheet"></link>
 <link href="./spectrum-manual.css" rel="stylesheet"></link>
+<script src="./spectrum-manual.js"></script>
 
 <div style="font-weight: bold; font-size: 48px" >Sinclair ZX Spectrum +3 Manual</div> 
-<script src="./spectrum-manual.js"></script>
 
 # Contents
  
@@ -2271,7 +2272,7 @@ You can see that the `IF` statement takes the form...
 
   `IF` condition `THEN` xxx
 
-...where 'xxx' stands for a command (or a sequence of commands separated by colons). The condition is something that is going to be worked out as either true or false - if it comes out as true then the statements in the reset of the line (after `THEN`) are executed; otherwise they are skipped over, and the program executes the next instruction.
+...where 'xxx' stands for a command (or a sequence of commands separated by colons). The condition is something that is going to be worked out as either true or false - if it comes out as true then the statements in the rest of the line (after `THEN`) are executed; otherwise they are skipped over, and the program executes the next instruction.
 
 The simplest conditions compare two numbers or two strings; they can test whether two numbers are equal or whether one is bigger than the other. They can also test whether two strings are equal, or whether one comes before the other in alphanumerical order. They use the symbols `=`, `<`, `>`, `<=`, `>=` and `<>` (these are known as relational operators).
 
@@ -4764,7 +4765,7 @@ Preceding a note by `$` drops it by a semitone (***flattens*** it), and precedin
     30 LET a$=o$+n$
     40 PLAY a$
 
-There are a few new things in this program. Firstly, `PLAY` is just as happy with a string variable as with a string constant. In other words, providing that 'a$' has been set up beforehand, `PLAY a$` works just as well as `PLAY "O5DECcg"`. In fact, using variables in `PLAY` statements has certain distinct advantages, and we shall be doing this from now on.
+There are a few new things in this program. Firstly, `PLAY` is just as happy with a string variable as with a string constant. In other words, providing that `a$` has been set up beforehand, `PLAY a$` works just as well as `PLAY "O5DECcg"`. In fact, using variables in `PLAY` statements has certain distinct advantages, and we shall be doing this from now on.
 
 Notice also that the string `a$` has been 'built up' by combining the two smaller strings `o$` and `n$`. While this doesn't make much difference at this sort of level, `PLAY` can cope with strings many thousands of notes long, and the only sensible way of creating and editing those strings from BASIC is to combine lots of smaller strings in this way.
 
@@ -4819,7 +4820,7 @@ There is a lot of overlap, so for example, `"O3D"` is the same as `"O4d"`. This 
 |   11   | triplet quaver      |                                 <svg height="1rem" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"><path d="M37.4 63h138.3v112.7c0 3.8-1.3 7.4-4 10.7-2.7 3.5-6.2 6.2-10.4 8s-8.2 3-12 3c-3.4 0-6.6-1-9.4-3-3-2.6-4.4-5.3-4.4-8.3 0-3.8 1.5-7.4 4.4-10.7 2.3-3.4 5.6-6.3 10-8.7 2.6-1 4.8-1.7 6.7-2.2s3.8-.7 5.6-.7c3.5 0 7 1 10 3V76h-63.5v99.6c0 3.4-1.3 7-4 10.7-2.6 3.5-6 6.2-10.2 8s-8.4 3-12.5 3c-3.4 0-6.6-1-9.4-3-2.7-2.3-4-5-4-8.3 0-3.8 1.3-7.4 4-10.7 1.4-1.7 3-3.2 4.8-4.7s3.8-2.8 5.8-4c2-1 4.2-1.7 6.2-2.2s4-.7 5.7-.7c2 0 3.6.3 5.2.8s3.3 1.3 5 2.3V76H41v99.6c0 3.8-1.3 7.4-4 10.7-2.7 3.5-6.2 6.2-10.4 8s-8.3 3-12.2 3c-2 0-3.6-.3-5-.8s-3-1.2-4.4-2.2C2.2 192 .8 189.2.8 186c0-4 1.4-7.5 4.2-10.7 1.3-1.7 2.8-3.3 4.6-4.7s3.7-2.8 6-4c2.2-1 4.2-1.7 6.2-2.2a25 25 0 0 1 5.6-.7c3.8 0 7 1 10 3V63zM103.7 44v-1.4l3-.8c.7-.3 1.4-.7 2-1.3.6-.5 1.2-1.2 1.7-2.2s.8-1.8.8-2.6c0-2.4-1.6-3.7-4.7-3.7-1.4 0-2.5.3-3.3 1s-1.7 1.8-2.6 3.4h-1.3c.4-1.3.8-2.3 1-2.8a12 12 0 0 1 1.5-1.8c1.3-1.3 3-2 5.3-2 2 0 3.5.5 4.8 1.6s2 2.4 2 4c0 1-.3 2.3-.8 3.4s-1.5 2.2-3 3.2c1 .4 1.5.8 1.8 1s.6.5 1 .8a8 8 0 0 1 1.5 1.9c.3.7.5 1.5.5 2.5 0 3-1 5.3-3.3 7-2.2 1.5-5 2.3-8 2.3-3 0-4.6-.7-4.6-2 0-.8.6-1.2 1.7-1.2.3 0 .6 0 1 .1s1 .3 1.6.8c1.5.6 2.7.8 3.6.4 1.4-.4 2.6-1 3.4-1.6s1.3-1.8 1.5-3.5c.3-1.5 0-2.8-.8-4a5.5 5.5 0 0 0-3.2-2.3c-1.3-.3-2.7-.4-4.2-.4z" fill-rule="nonzero"/></svg>                                 |
 |   12   | triplet crochet     | <svg height="1rem" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"  fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"><path d="M37.4 63h138.3v112.7c0 3.8-1.3 7.4-4 10.7-2.7 3.5-6.2 6.2-10.4 8s-8.2 3-12 3c-3.4 0-6.6-1-9.4-3-3-2.6-4.4-5.3-4.4-8.3 0-3.8 1.5-7.4 4.4-10.7 2.3-3.4 5.6-6.3 10-8.7 2.6-1 4.8-1.7 6.7-2.2s3.8-.7 5.6-.7c3.5 0 7 1 10 3V76h-63.5v99.6c0 3.4-1.3 7-4 10.7-2.6 3.5-6 6.2-10.2 8s-8.4 3-12.5 3c-3.4 0-6.6-1-9.4-3-2.7-2.3-4-5-4-8.3 0-3.8 1.3-7.4 4-10.7 1.4-1.7 3-3.2 4.8-4.7s3.8-2.8 5.8-4c2-1 4.2-1.7 6.2-2.2a27 27 0 0 1 5.7-.7c2 0 3.6.3 5.2.8s3.3 1.3 5 2.3V76H41v99.6c0 3.8-1.3 7.4-4 10.7-2.7 3.5-6.2 6.2-10.4 8s-8.3 3-12.2 3c-2 0-3.6-.3-5-.8s-3-1.2-4.4-2.2C2.2 192 .8 189.2.8 186c0-4 1.4-7.5 4.2-10.7 1.3-1.7 2.8-3.3 4.6-4.7s3.7-2.8 6-4c2.2-1 4.2-1.7 6.2-2.2a25 25 0 0 1 5.6-.7c3.8 0 7 1 10 3V63zm145-4.2V45.4h-60v-4H186v17.3h-3.5zM19 59V41.4h71.5v4H22.5V59H19zM103.7 44v-1.4l3-.8c.7-.2 1.4-.7 2-1.3.6-.5 1.2-1.2 1.7-2.2s.8-1.8.8-2.6c0-2.4-1.6-3.7-4.7-3.7-1.4 0-2.5.3-3.3 1s-1.7 1.8-2.6 3.4h-1.3c.4-1.3.8-2.3 1-2.8a12 12 0 0 1 1.5-1.8c1.3-1.3 3-2 5.3-2 2 0 3.5.5 4.8 1.6s2 2.4 2 4c0 1-.3 2.3-.8 3.4s-1.5 2.2-3 3.2c1 .4 1.5.8 1.8 1s.6.5 1 .8a8 8 0 0 1 1.5 1.9c.3.7.5 1.5.5 2.5 0 3-1 5.3-3.3 7-2.2 1.5-5 2.3-8 2.3-3 0-4.6-.7-4.6-2 0-.8.6-1.2 1.7-1.2.3 0 .6 0 1 .1s1 .3 1.6.8c1.5.6 2.7.8 3.6.4 1.4-.4 2.6-1 3.4-1.6s1.3-1.8 1.5-3.5c.3-1.5 0-2.8-.8-4s-2-2-3.2-2.3c-1.3-.3-2.7-.4-4.2-.4z" fill-rule="nonzero"/></svg> |
 
-`PLAY` is quite happy about being told to 'shut up'! A timed period during which no notes play is called a reset, and `"&"` is used to signify this. The length of reset it produces is the same as the current note length. To demonstrate, edit lines 10 and 20 to...
+`PLAY` is quite happy about being told to 'shut up'! A timed period during which no notes play is called a rest, and `"&"` is used to signify this. The length of rest it produces is the same as the current note length. To demonstrate, edit lines 10 and 20 to...
 
     10 LET o$="O4"
     20 LET n$="DEC&cg"
@@ -7406,7 +7407,7 @@ The following is a list of the routines in each of these categories (together wi
 +3DOS provides facilities specifically for non-BASIC programs:
 
 - Use DOS BOOT to load a single bootstrap sector, then take over the whole machine (see the second example in [part 26 of this chapter](#part26)).
-- Claim some store from +3DOS using DOS SET 1346. This enables a non-BASIC program to take control of the machine but still use the facilities of +3DOS if required. If +3DOS is not required, then the non-BASIC program should call DD L OFF MOTOR to force the drive motor off and disable the motor ticker. Bit 4 in the FLAGS system variable should be reset to prevent any back switching/variable decrementing on interrupt.
+- Claim some store from +3DOS using DOS SET 1346. This enables a non-BASIC program to take control of the machine but still use the facilities of +3DOS if required. If +3DOS is not required, then the non-BASIC program should call DD L OFF MOTOR to force the drive motor off and disable the motor ticker. Bit 4 in the [FLAGS](#flags) system variable should be reset to prevent any back switching/variable decrementing on interrupt.
 - A drive can be opened as a single file. This enables files and directories to be examined without going via the file structure.
 
 ### Using +3DOS without a floppy disk interface
@@ -9055,7 +9056,7 @@ This routine does not affect or consider the freeze flag.
 
 #### <a id="dd-ask-1"></a> DD ASK 1 017Bh (379)
 
-Check to see if unit 1 is present. (BASIC holds this information in bit 5 of the FLAGS3 system variable.)
+Check to see if unit 1 is present. (BASIC holds this information in bit 5 of the [FLAGS3](#flags3) system variable.)
 
 Turn motor on.
 
@@ -11263,7 +11264,8 @@ Details of the _**+3**'s_ hardware will be found in [chapter 8 part 30](#part30)
 
 ## <a id="revision"></a> Revision history
 
-- **04-Mar-2023** Public release of HTML & markdown version.
+- **05-Feb-2023** Minor fixes for typos, links and new updated converter.
+- **04-Feb-2023** Public release of HTML & markdown version.
 
 <script>document.body.onscroll = asFragmentsGoBy();</script>
-<!-- title: Sinclair ZX Spectrum +3 Manual -->
+
