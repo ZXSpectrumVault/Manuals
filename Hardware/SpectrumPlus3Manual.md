@@ -4881,7 +4881,7 @@ Now modify line 10 to...
 So far we've only used notes which start and stop at one level of volume. The ***+3*** can alter the volume of a note while it is playing, so it can start loud and die away like a piano, or rise and fall like a dog growling. To turn these effects on, use `"W"` (for waveform) followed by a number between 0 and 7, together with `"U"` for each channel you want to use the effect on. Any channel with a volume setting (`"V"`) will not respond to `"U"`. This table shows graphically how the volume changes for each setting...
 
 <figure>
-  <svg viewBox="0 0 300 290" width="330" height="290" id="wave-diagram">
+  <svg viewBox="0 0 450 290" width="450" height="290" id="wave-diagram">
     <path d="M15 0 V 290" class="guide"  />
     <path d="M35 0 V 290" class="guide" />
     <text x="0" y="25" class="number">0</text>
@@ -11266,6 +11266,7 @@ Details of the _**+3**'s_ hardware will be found in [chapter 8 part 30](#part30)
 
 ## <a id="revision"></a> Revision history
 
+- **07-Feb-2023** Minor fixes for code typo, TV test screenshot and waveform diagram.
 - **05-Feb-2023** Minor fixes for typos, links and new updated converter.
 - **04-Feb-2023** Public release of HTML & markdown version.
 
