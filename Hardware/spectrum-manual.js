@@ -32,8 +32,15 @@ function plot8x8Grid(id, data, scale, inverse) {
     }
 }
 
+const flashRate = (1000 / 25) * 16;
+const shouldFlash = (elapsed) => elapsed % flashRate * 2 < flashRate;
+
 function cursorAnimation128K(cx, state) {
-    cursor(cx, borderSize, borderSize, state.frame > 12);
+    cursor(cx, borderSize, borderSize, shouldFlash(state.elapsed));
+}
+
+function cursorAnimation48K(cx, state, x, y, mode) {
+    cursor48K(cx, x, y, mode, shouldFlash(state.elapsed));
 }
 
 // Render a Spectrum screen given the canvas id and the function to render
@@ -45,16 +52,16 @@ function spectrum(id, scale, f, animationFunction) {
     f(cx);
 
     if (animationFunction) {
-        const fps = 50;
         let timer = null;
         cx.canvas.onmouseenter = function () {
             if (timer) return;
             let state = { frame: 0, start: new Date() };
             timer = setInterval(function () {
-                state.elapsedSeconds = (new Date() - state.start) / 1000;
+                state.elapsed = (new Date() - state.start);
+                state.elapsedSeconds = state.elapsed / 1000;
+                state.frame = (state.frame + 1) % 25
                 animationFunction(cx, state);
-                state.frame = (state.frame + 1) % fps;
-            }, 1000 / fps);
+            }, 1000 / 25);
         }
         cx.canvas.onmouseleave = function () {
             if (!timer) return;

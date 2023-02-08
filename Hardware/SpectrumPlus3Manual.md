@@ -920,7 +920,7 @@ spectrum('screen-basic-48-load', 2,
   function (cx, state) {
     const y = borderSize + 192 - 8;
     const x = borderSize + 7 * 8;
-    cursor48K(cx, x, y, 'L', state.frame % 30 > 15);
+    cursorAnimation48K(cx, state, x, y, 'L')
   })
 </script>
 
