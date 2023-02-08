@@ -15,7 +15,7 @@ function plot8x8Grid(id, data, scale, inverse) {
     cx.fillStyle = 'black';
     cx.stroke = 'black';
     cx.strokeWidth = 2;
-    if (typeof(data) == 'string') {
+    if (typeof (data) == 'string') {
         const chrIdx = (data.charCodeAt(0) - 32) * 8;
         data = spectrumFont.slice(chrIdx, chrIdx + 8);
     }
@@ -33,7 +33,7 @@ function plot8x8Grid(id, data, scale, inverse) {
 }
 
 function cursorAnimation128K(cx, state) {
-    cursor(cx, borderSize, borderSize, state.frame % 30 > 15);
+    cursor(cx, borderSize, borderSize, state.frame > 12);
 }
 
 // Render a Spectrum screen given the canvas id and the function to render
