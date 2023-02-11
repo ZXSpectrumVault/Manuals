@@ -9942,12 +9942,15 @@ The following are binary operations:
 * `*`    Multiplication
 * `/`    Division
 * `^`    Exponentiation ([error `B`](#error-b) if the left operand is negative)
-* `=`    Equal to             ---.
-* `>`    Greater than          |   Both operands must be of
-* `<`    Less than             |   the same type. The result
-* `<=`   Less than or equal to     |-- is a number: 1 if the
-* `>=`   Greater than or equal to      |   comparison holds; 0 if it
-* `<>`   Not equal to       ---'   does not
+
+The following require both operands be of the same type. The result is a number: 1 if the comparison holds, 0 if it does not.
+
+* `=`    Equal to
+* `>`    Greater than
+* `<`    Less than
+* `<=`   Less than or equal to
+* `>=`   Greater than or equal to
+* `<>`   Not equal to
 
 Functions and operations have the following priorities:
 
@@ -10491,7 +10494,7 @@ When you have selected the `Calculator` option, the screen will change to...
 
     6+4
 
-As soon as you press **ENTER**, the answer `10` will appear. (Note that you ***don{1*** key in `=` as you would on a conventional calculator.)
+As soon as you press **ENTER**, the answer `10` will appear. (Note that you ***don't*** key in `=` as you would on a conventional calculator.)
 
 <a id="running-total"></a>You will see that the cursor is positioned to the right of the answer, which is a ***running total*** (like on a conventional calculator). This means that you can simply type in the next operation to be carried out on the running total (without having to type in a whole new calculation). So, with the cursor still positioned to the right of the `10` on the screen, type in...
 

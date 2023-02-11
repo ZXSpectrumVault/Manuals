@@ -12291,12 +12291,15 @@ cliff:
     <li><code>*</code> Multiplication</li>
     <li><code>/</code> Division</li>
     <li><code>^</code> Exponentiation (<a href="#error-b">error <code>B</code></a> if the left operand is negative)</li>
-    <li><code>=</code> Equal to ---.</li>
-    <li><code>&gt;</code> Greater than | Both operands must be of</li>
-    <li><code>&lt;</code> Less than | the same type. The result</li>
-    <li><code>&lt;=</code> Less than or equal to |-- is a number: 1 if the</li>
-    <li><code>&gt;=</code> Greater than or equal to | comparison holds; 0 if it</li>
-    <li><code>&lt;&gt;</code> Not equal to ---' does not</li>
+  </ul>
+  <p>The following require both operands be of the same type. The result is a number: 1 if the comparison holds, 0 if it does not.</p>
+  <ul>
+    <li><code>=</code> Equal to</li>
+    <li><code>&gt;</code> Greater than</li>
+    <li><code>&lt;</code> Less than</li>
+    <li><code>&lt;=</code> Less than or equal to</li>
+    <li><code>&gt;=</code> Greater than or equal to</li>
+    <li><code>&lt;&gt;</code> Not equal to</li>
   </ul>
   <p>Functions and operations have the following priorities:</p>
   <table>
@@ -13279,7 +13282,7 @@ cliff:
   <p><a id="entering-numbers"></a>...and the <em><strong>+3</strong>'s</em> calculator is ready to accept your first entry. Type in...</p>
   <pre><code>6+4
 </code></pre>
-  <p>As soon as you press <strong>ENTER</strong>, the answer <code>10</code> will appear. (Note that you <em><strong>don{1</strong></em> key in <code>=</code> as you would on a conventional calculator.)</p>
+  <p>As soon as you press <strong>ENTER</strong>, the answer <code>10</code> will appear. (Note that you <em><strong>don't</strong></em> key in <code>=</code> as you would on a conventional calculator.)</p>
   <p><a id="running-total"></a>You will see that the cursor is positioned to the right of the answer, which is a <em><strong>running total</strong></em> (like on a conventional calculator). This means that you can simply type in the next operation to be carried out on the running total (without having to type in a whole new calculation). So, with the cursor still positioned to the right of the <code>10</code> on the screen, type in...</p>
   <pre><code>/5
 </code></pre>
@@ -14458,6 +14461,7 @@ cliff:
     <li><strong>04-Feb-2023</strong> Public release of HTML &amp; markdown version.</li>
   </ul>
   <script>document.body.onscroll = asFragmentsGoBy();</script>
+
 </body>
 
 </html>
