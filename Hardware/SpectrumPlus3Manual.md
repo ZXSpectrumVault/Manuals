@@ -4722,7 +4722,7 @@ Here is a diagram to show the pitch values of all the notes in one octave on the
     <text y="140" x="330" text-anchor="middle">A</text>
     <text y="65" x="352" text-anchor="middle">10</text>
     <text y="35" x="352" text-anchor="middle">A♯</text>
-    <text y="50" x="352" text-anchor="middle">GB♭</text>
+    <text y="50" x="352" text-anchor="middle">B♭</text>
     <text y="112" x="378" text-anchor="middle">11</text>
     <text y="140" x="378" text-anchor="middle">B</text>
     <text y="112" x="420" text-anchor="middle">12</text>
