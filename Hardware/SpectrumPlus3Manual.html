@@ -5630,7 +5630,7 @@ PLOT 90,150: DRAW 80,-35
 </code></pre>
   <p>...and run it several times, changing line 5 for different tempos.</p>
   <p>A common feature in music is the repetition of a group of notes. Any part of a string can be repeated by enclosing it in brackets, so if you change line 10 to...</p>
-  <pre><code>10 LET a$=&quot;t$+&quot;O4(cC)(gG)&quot;
+  <pre><code>10 LET a$=t$+&quot;O4(cC)(gG)&quot;
 </code></pre>
   <p><code>PLAY</code> treats it just the same as the old line 10. If you include a closing bracket (with no matching opening bracket), then the string up to that point is repeated indefinitely. This is useful for rhythm effects and bass lines. To demonstrate, try this (you'll have to press <strong>BREAK</strong> to stop the sound)...</p>
   <pre><code>PLAY &quot;O4N2cdefgfed)&quot;
@@ -19099,7 +19099,6 @@ cliff:
     <li><strong>04-Feb-2023</strong> Public release of HTML &amp; markdown version.</li>
   </ul>
   <script>document.body.onscroll = asFragmentsGoBy();</script>
-
 </body>
 
 </html>

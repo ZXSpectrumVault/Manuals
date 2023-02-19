@@ -5029,7 +5029,7 @@ In general, there is no difference between the three channels, and any string of
 
 A common feature in music is the repetition of a group of notes. Any part of a string can be repeated by enclosing it in brackets, so if you change line 10 to...
 
-    10 LET a$="t$+"O4(cC)(gG)"
+    10 LET a$=t$+"O4(cC)(gG)"
 
 `PLAY` treats it just the same as the old line 10. If you include a closing bracket (with no matching opening bracket), then the string up to that point is repeated indefinitely. This is useful for rhythm effects and bass lines. To demonstrate, try this (you'll have to press **BREAK** to stop the sound)...
 
