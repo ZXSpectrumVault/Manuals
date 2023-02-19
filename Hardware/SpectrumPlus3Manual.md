@@ -4775,26 +4775,197 @@ Notice also that the string `a$` has been 'built up' by combining the two smalle
 
 Now run the above program. Edit line 10 so that `"O5"` becomes `"O7"`, and run it again, or if you want to be a big spaceship make it `"O2"`. If you don't specify an octave number for a particular string, then the ***+3*** assumes that you want octave 5. Here follows a diagram of the notes and octave numbers which correspond to the standard even-tempered musical scale...
 
-[OK, time to use your imagination here...]
-
-```
-            _______________________________________________________
-           |C|D|E|F|G|A|B|C|D|E|F|G|A|B|C|D|E|F|G|A|B|C|D|E|F|G|A|B|
-           | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
-       _   | | | | | | | | | | | | | | | | | | | | | | | | | | |.|'|
- _____|/___|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|.|'|_|_|___ |_|___/____|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|.|'|_|_|_|_|___| |_|__/|____|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|.|'|_|_|_|_|_|_|___| |_|_(_(_)__|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|.|'|_|_|_|_|_|_|_|_|___| |_|__`-'___|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|.|'|_|_|_|_|_|_|_|_|_|_|___|
-    ._/    | | | | | | | | | | | | | | |.|'| | | | | | | | | | | | |   |
- __________|_|_|_|_|_|_|_|_|_|_|_|_|.|'|_|_|_|_|_|_|_|_|_|_|_|_|_|_|___| |_|_/^\__*_|_|_|_|_|_|_|_|_|_|_|.|'|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|___| |_|(*__)_*_|_|_|_|_|_|_|_|_|.|'|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|___| |_|___/____|_|_|_|_|_|_|.|'|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|___| |_|__/_____|_|_|_|_|.|'|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|___|
-    ^      | | |.|'| | | | | | | | | | | | | | | | | | | | | | | | |
-           |.|'| | | | | | | | | | | | | | | | | | | | | | | | | | |
-           | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
-           |c|d|e|f|g|a|b|C|D|E|F|G|A|B| | | | | | | | | | | | | | |
-           |__________OCTAVE_3_________| | | | | | | | | | | | | | |
-                         |c|d|e|f|g|a|b|C|D|E|F|G|A|B| | | | | | | |
-                         |__________OCTAVE_4_________| | | | | | | |
-                                       |c|d|e|f|g|a|b|C|D|E|F|G|A|B|
-                                       |__________OCTAVE_5_________|
-```                                       
+ <svg viewBox="-2 -2 506 320" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink">
+    <style>
+      g { font-size: 12px; font-weight: bold; }
+      .clef { font-size: 62px }
+      #notes { font-size: 30px }
+      rect.grid, .octave-box rect { stroke-width: 1px }
+      .octave-box rect { fill: white }
+     </style>
+      <defs>
+        <rect id="grid-o3" y="10" width="15" height="200" class="grid"/>
+        <rect id="grid-o4" y="10" width="15" height="240" class="grid"/>
+        <rect id="grid-o5" y="10" width="15" height="280" class="grid"/>
+      </defs>
+     <g id="treble-clef">
+      <path d="M 0 60 L 500 60"/>
+      <path d="M 0 70 L 500 70"/>
+      <path d="M 0 80 L 500 80"/>
+      <path d="M 0 90 L 500 90"/>
+      <path d="M 0 100 L 500 100"/>
+      <text x="10" y="95" class="clef">&#x1D11E;</text>
+    </g>
+    <g id="bass-clef">
+      <path d="M 0 120 L 500 120"/>
+      <path d="M 0 130 L 500 130"/>
+      <path d="M 0 140 L 500 140"/>
+      <path d="M 0 150 L 500 150"/>
+      <path d="M 0 160 L 500 160"/>
+      <text x="10" y="161" class="clef">&#x1D122;</text>
+     </g>
+     <path d="M 0 60 L 0 160"/>
+     <path d="M 5 60 L 5 160"/>
+     <path d="M 500 60 L 500 160"/>
+     <g>
+       <use xlink:href="#grid-o3" x="60"></use>
+       <use xlink:href="#grid-o3" x="75"></use>
+       <use xlink:href="#grid-o3" x="90"></use>
+       <use xlink:href="#grid-o3" x="105"></use>
+       <use xlink:href="#grid-o3" x="120"></use>
+       <use xlink:href="#grid-o3" x="135"></use>
+       <use xlink:href="#grid-o3" x="150"></use>
+       <use xlink:href="#grid-o4" x="165"></use>
+       <use xlink:href="#grid-o4" x="180"></use>
+       <use xlink:href="#grid-o4" x="195"></use>
+       <use xlink:href="#grid-o4" x="210"></use>
+       <use xlink:href="#grid-o4" x="225"></use>
+       <use xlink:href="#grid-o4" x="240"></use>
+       <use xlink:href="#grid-o4" x="255"></use>
+       <use xlink:href="#grid-o5" x="270"></use>
+       <use xlink:href="#grid-o5" x="285"></use>
+       <use xlink:href="#grid-o5" x="300"></use>
+       <use xlink:href="#grid-o5" x="315"></use>
+       <use xlink:href="#grid-o5" x="330"></use>
+       <use xlink:href="#grid-o5" x="345"></use>
+       <use xlink:href="#grid-o5" x="360"></use>
+       <use xlink:href="#grid-o5" x="375"></use>
+       <use xlink:href="#grid-o5" x="390"></use>
+       <use xlink:href="#grid-o5" x="405"></use>
+       <use xlink:href="#grid-o5" x="420"></use>
+       <use xlink:href="#grid-o5" x="435"></use>
+       <use xlink:href="#grid-o5" x="450"></use>
+       <use xlink:href="#grid-o5" x="465"></use>
+     </g>
+     <g id="upper-notenames">
+      <text x="62" y="25">C</text>
+      <text x="77" y="25">D</text>
+      <text x="92" y="25">E</text>
+      <text x="107" y="25">F</text>
+      <text x="122" y="25">G</text>
+      <text x="137" y="25">A</text>
+      <text x="152" y="25">B</text>
+      <text x="167" y="25">C</text>
+      <text x="182" y="25">D</text>
+      <text x="197" y="25">E</text>
+      <text x="212" y="25">F</text>
+      <text x="227" y="25">G</text>
+      <text x="242" y="25">A</text>
+      <text x="257" y="25">B</text>
+      <text x="272" y="25">C</text>
+      <text x="287" y="25">D</text>
+      <text x="302" y="25">E</text>
+      <text x="317" y="25">F</text>
+      <text x="332" y="25">G</text>
+      <text x="347" y="25">A</text>
+      <text x="362" y="25">B</text>
+      <text x="377" y="25">C</text>
+      <text x="392" y="25">D</text>
+      <text x="407" y="25">E</text>
+      <text x="422" y="25">F</text>
+      <text x="437" y="25">G</text>
+      <text x="452" y="25">A</text>
+      <text x="467" y="25">B</text>
+     </g>
+     <g id="o3-notenames">
+      <text x="63" y="205">c</text>
+      <text x="78" y="205">d</text>
+      <text x="94" y="205">e</text>
+      <text x="109" y="205">f</text>
+      <text x="123" y="205">g</text>
+      <text x="138" y="205">a</text>
+      <text x="153" y="205">b</text>
+      <text x="167" y="205">C</text>
+      <text x="182" y="205">D</text>
+      <text x="197" y="205">E</text>
+      <text x="212" y="205">F</text>
+      <text x="227" y="205">G</text>
+      <text x="242" y="205">A</text>
+      <text x="257" y="205">B</text>
+     </g>
+     <g id="o3-box" class="octave-box">
+      <rect x="60" y="210" width="210" height="20"/>
+      <text x="137" y="225">OCTAVE 3</text>
+     </g>
+     <g id="o4-notenames">
+      <text x="168" y="245">c</text>
+      <text x="183" y="245">d</text>
+      <text x="199" y="245">e</text>
+      <text x="214" y="245">f</text>
+      <text x="228" y="245">g</text>
+      <text x="243" y="245">a</text>
+      <text x="258" y="245">b</text>
+      <text x="272" y="245">C</text>
+      <text x="287" y="245">D</text>
+      <text x="302" y="245">E</text>
+      <text x="317" y="245">F</text>
+      <text x="332" y="245">G</text>
+      <text x="347" y="245">A</text>
+      <text x="362" y="245">B</text>
+     </g>
+     <g id="o4-box" class="octave-box">
+      <rect x="165" y="250" width="210" height="20"/>
+      <text x="242" y="265">OCTAVE 4</text>
+     </g>
+     <g id="o5-notenames">
+      <text x="273" y="285">c</text>
+      <text x="288" y="285">d</text>
+      <text x="304" y="285">e</text>
+      <text x="319" y="285">f</text>
+      <text x="333" y="285">g</text>
+      <text x="348" y="285">a</text>
+      <text x="363" y="285">b</text>
+      <text x="377" y="285">C</text>
+      <text x="392" y="285">D</text>
+      <text x="407" y="285">E</text>
+      <text x="422" y="285">F</text>
+      <text x="437" y="285">G</text>
+      <text x="452" y="285">A</text>
+      <text x="467" y="285">B</text>
+     </g>
+     <g id="o5-box" class="octave-box">
+      <rect x="270" y="290" width="210" height="20"/>
+      <text x="348" y="305">OCTAVE 5</text>
+     </g>
+     <g id="notes">
+      <path d="M 62 180 L 73 180"/>
+      <text x="62" y="183">&#x1D158;</text>
+      <path d="M 77 170 L 88 170"/>
+      <text x="77" y="177">&#x1D158;</text>
+      <path d="M 92 170 L 103 170"/>
+      <text x="92" y="173">&#x1D158;</text>
+      <text x="107" y="167">&#x1D158;</text>
+      <text x="122" y="163">&#x1D158;</text>
+      <text x="137" y="158">&#x1D158;</text>
+      <text x="152" y="153">&#x1D158;</text>
+      <text x="167" y="148">&#x1D158;</text>
+      <text x="182" y="143">&#x1D158;</text>
+      <text x="197" y="138">&#x1D158;</text>
+      <text x="212" y="133">&#x1D158;</text>
+      <text x="227" y="128">&#x1D158;</text>
+      <text x="242" y="123">&#x1D158;</text>
+      <path d="M 257 110 L 268 110"/>
+      <text x="257" y="117">&#x1D158;</text>
+      <path d="M 272 110 L 283 110"/>
+      <text x="272" y="113">&#x1D158;</text>
+      <path d="M 287 110 L 298 110"/>
+      <text x="287" y="108">&#x1D158;</text>
+      <text x="302" y="103">&#x1D158;</text>
+      <text x="317" y="98">&#x1D158;</text>
+      <text x="332" y="93">&#x1D158;</text>
+      <text x="347" y="88">&#x1D158;</text>
+      <text x="362" y="83">&#x1D158;</text>
+      <text x="377" y="78">&#x1D158;</text>
+      <text x="392" y="73">&#x1D158;</text>
+      <text x="407" y="68">&#x1D158;</text>
+      <text x="422" y="63">&#x1D158;</text>
+      <path d="M 437 50 L 448 50"/>
+      <text x="437" y="58">&#x1D158;</text>
+      <path d="M 452 50 L 463 50"/>
+      <text x="452" y="53">&#x1D158;</text>
+      <path d="M 467 50 L 478 50"/>
+      <text x="467" y="49">&#x1D158;</text>
+    </svg>
 
 There is a lot of overlap, so for example, `"O3D"` is the same as `"O4d"`. This makes it easier to write tunes without having the change octave all the time. Some of the notes in the lowest octaves (0 and 1) aren't very accurate for technical reasons, and so the computer just makes a brave attempt at getting as close as possible.
 
@@ -11262,16 +11433,18 @@ Details of the _**+3**'s_ hardware will be found in [chapter 8 part 30](#part30)
 
 ## <a id="credits"></a> Credits
 
-- Original manual by Ivor Spital, Cliff Lawson, Rupert Goodwins, Steve Vickers and Robin Bradbeer.
-- Markdown conversion, JavaScript, style, screenshots, and SVG drawings by [Damien Guard](https://damieng.com).
-- Original ASCII manual prepared by:
+Original manual by Ivor Spital, Cliff Lawson, Rupert Goodwins, Steve Vickers and Robin Bradbeer.
+
+Markdown conversion, JavaScript, style, screenshots, and most SVG drawings by [Damien Guard](https://damieng.com). Music scale diagram by mjwilson.
+ 
+Original ASCII manual prepared by:
   - Ian Coates <oktup@mono.city.ac.uk> did [chapter 8 parts 26](#part26) and [30](#part30).
   - Thomas Ahn Kjaer <takjaer@daimi.aau.dk> did [chapter 8 part 17](#part17).
   - Russell Marks <mr216@gre.ac.uk> did the rest.
 
 ## <a id="revision"></a> Revision history
 
-- **19-Feb-2023** Remove stray editorial comment, note missing diagram.
+- **19-Feb-2023** Part 19 music scale diagram * fixes by mjwilson.
 - **07-Feb-2023** Minor fixes for code typo, TV test screenshot and waveform diagram.
 - **05-Feb-2023** Minor fixes for typos, links and new updated converter.
 - **04-Feb-2023** Public release of HTML & markdown version.
