@@ -1351,9 +1351,11 @@ Filenames on tape may vary greatly in length and may at times be omitted. Not so
 
 ## <a id="formatting-a-disk"></a> Formatting a disk
 
-Formatting can be likened to building a series of shelves and pigeonholes on a disk [!? never tried that one myself] prior to the storage of information on those shelves. In other words, formatting lays down an organised framework around which data can be put in or taken out.
+Formatting can be likened to building a series of shelves and pigeonholes on a disk prior to the storage of information on those shelves. In other words, formatting lays down an organised framework around which data can be put in or taken out.
 
 The formatting divides the disk into 360 distinctly separate areas...
+
+**Missing image of a floppy disk structure**
 
 There are 40 concentric tracks from the outside of the disk (Track 0) to the inside (Track 39), and each track is divided into 9 sectors.
 
@@ -11269,6 +11271,7 @@ Details of the _**+3**'s_ hardware will be found in [chapter 8 part 30](#part30)
 
 ## <a id="revision"></a> Revision history
 
+- **19-Feb-2023** Remove stray editorial comment, note missing diagram.
 - **07-Feb-2023** Minor fixes for code typo, TV test screenshot and waveform diagram.
 - **05-Feb-2023** Minor fixes for typos, links and new updated converter.
 - **04-Feb-2023** Public release of HTML & markdown version.
