@@ -4009,50 +4009,1268 @@ CHR$ 8+&quot;AARDVARK HUNTING&quot;
 </code></pre>
   <p>...will read the asterisk printed in the centre of the screen, then print it at location 0,0 (the top left-hand corner).</p>
   <p>Characters from tokens are read normally (as single characters), and spaces are read as spaces. However, attempting to read user-defined characters, graphics characters, or lines drawn by <code>PLOT</code>, <code>DRAW</code> and <code>CIRCLE</code>, result in a null (empty) string being returned. The same applies if <code>OVER</code> has been used to create a composite character. (The keywords <code>PLOT</code>, <code>DRAW</code>, <code>CIRCLE</code> and <code>OVER</code> are described in <a href="#part16">parts 16</a> and <a href="#part17">17</a> of this chapter.)</p>
-  <pre><code>           __ You cannot normally PRINT or PLOT
-          |   on the bottom two lines
-          |
-          |  2 2 1 1 1 1 1 1 1 1 1 1
-         _|_ 1 0 9 8 7 6 5 4 3 2 1 0 9 8 7 6 5 4 3 2 1 0
-        '___`___________________________________________
- P    0 |_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|  0  C
- i    8 |_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|  1  o
- x   16 |_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|  2  l
- e   24 |_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|  3  u
- l   32 |_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|  4  m
-     40 |_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|  5  n
- x   48 |_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|  6  s
-     56 |_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|  7
- c   64 |_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|  8  |
- o   72 |_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|  9  |
- o   80 |_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_| 10  v
- r   88 |_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_| 11
- d   96 |_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_| 12
- i  104 |_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_| 13
- n  112 |_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_| 14
- a  120 |_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_| 15
- t  128 |_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_| 16
- e  136 |_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_| 17
- s  144 |_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_| 18
-    152 |_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_| 19
- |  160 |_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_| 20
- |  168 |_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_| 21
- v  176 |_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_| 22
-    184 |_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_| 23
-    192 |_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_| 24
-    200 |_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_| 25
-    208 |_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_| 26
-    216 |_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_| 27
-    224 |_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_| 28
-    232 |_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_| 29
-    240 |_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_| 30
-    248 |_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_| 31
-                                      1 1 1 1 1 1 1 1 1
-                1 2 3 4 4 5 6 7 8 8 9 0 1 2 2 3 4 5 6 6
-            0 8 6 4 2 0 8 6 4 2 0 8 6 4 2 0 8 6 4 2 0 8
+  <svg
+    viewBox="-2 -2 500 600"
+    xmlns="http://www.w3.org/2000/svg"
+    xlink="http://www.w3.org/1999/xlink"
+  >
+    <style>
+      text {
+        font-weight: normal
+      }
 
-            Pixel y coordinates --&gt;
-</code></pre>
+      rect.grid {
+        stroke-width: 1px
+      }
+
+      .xsmall {
+        font-size: 6px
+      }
+
+      .small {
+        font-size: 8px
+      }
+
+      .large {
+        font-size: 32px
+      }
+
+      .kw {
+        font-weight: bold
+      }
+    </style>
+    <defs>
+      <rect
+        id="column"
+        y="42"
+        width="16"
+        height="512"
+        class="grid"
+      />
+      <rect
+        id="row"
+        x="60"
+        width="384"
+        height="16"
+        class="grid"
+      />
+    </defs>
+    <g>
+      <use
+        xlink:href="#column"
+        x="60"
+      ></use>
+      <use
+        xlink:href="#column"
+        x="76"
+      ></use>
+      <use
+        xlink:href="#column"
+        x="92"
+      ></use>
+      <use
+        xlink:href="#column"
+        x="108"
+      ></use>
+      <use
+        xlink:href="#column"
+        x="124"
+      ></use>
+      <use
+        xlink:href="#column"
+        x="140"
+      ></use>
+      <use
+        xlink:href="#column"
+        x="156"
+      ></use>
+      <use
+        xlink:href="#column"
+        x="172"
+      ></use>
+      <use
+        xlink:href="#column"
+        x="188"
+      ></use>
+      <use
+        xlink:href="#column"
+        x="204"
+      ></use>
+      <use
+        xlink:href="#column"
+        x="220"
+      ></use>
+      <use
+        xlink:href="#column"
+        x="236"
+      ></use>
+      <use
+        xlink:href="#column"
+        x="252"
+      ></use>
+      <use
+        xlink:href="#column"
+        x="268"
+      ></use>
+      <use
+        xlink:href="#column"
+        x="284"
+      ></use>
+      <use
+        xlink:href="#column"
+        x="300"
+      ></use>
+      <use
+        xlink:href="#column"
+        x="316"
+      ></use>
+      <use
+        xlink:href="#column"
+        x="332"
+      ></use>
+      <use
+        xlink:href="#column"
+        x="348"
+      ></use>
+      <use
+        xlink:href="#column"
+        x="364"
+      ></use>
+      <use
+        xlink:href="#column"
+        x="380"
+      ></use>
+      <use
+        xlink:href="#column"
+        x="396"
+      ></use>
+      <use
+        xlink:href="#column"
+        x="412"
+      ></use>
+      <use
+        xlink:href="#column"
+        x="428"
+      ></use>
+      <use
+        xlink:href="#row"
+        y="42"
+      ></use>
+      <use
+        xlink:href="#row"
+        y="58"
+      ></use>
+      <use
+        xlink:href="#row"
+        y="74"
+      ></use>
+      <use
+        xlink:href="#row"
+        y="90"
+      ></use>
+      <use
+        xlink:href="#row"
+        y="106"
+      ></use>
+      <use
+        xlink:href="#row"
+        y="122"
+      ></use>
+      <use
+        xlink:href="#row"
+        y="138"
+      ></use>
+      <use
+        xlink:href="#row"
+        y="154"
+      ></use>
+      <use
+        xlink:href="#row"
+        y="170"
+      ></use>
+      <use
+        xlink:href="#row"
+        y="186"
+      ></use>
+      <use
+        xlink:href="#row"
+        y="202"
+      ></use>
+      <use
+        xlink:href="#row"
+        y="218"
+      ></use>
+      <use
+        xlink:href="#row"
+        y="234"
+      ></use>
+      <use
+        xlink:href="#row"
+        y="250"
+      ></use>
+      <use
+        xlink:href="#row"
+        y="266"
+      ></use>
+      <use
+        xlink:href="#row"
+        y="282"
+      ></use>
+      <use
+        xlink:href="#row"
+        y="298"
+      ></use>
+      <use
+        xlink:href="#row"
+        y="314"
+      ></use>
+      <use
+        xlink:href="#row"
+        y="330"
+      ></use>
+      <use
+        xlink:href="#row"
+        y="346"
+      ></use>
+      <use
+        xlink:href="#row"
+        y="362"
+      ></use>
+      <use
+        xlink:href="#row"
+        y="378"
+      ></use>
+      <use
+        xlink:href="#row"
+        y="394"
+      ></use>
+      <use
+        xlink:href="#row"
+        y="410"
+      ></use>
+      <use
+        xlink:href="#row"
+        y="426"
+      ></use>
+      <use
+        xlink:href="#row"
+        y="442"
+      ></use>
+      <use
+        xlink:href="#row"
+        y="458"
+      ></use>
+      <use
+        xlink:href="#row"
+        y="474"
+      ></use>
+      <use
+        xlink:href="#row"
+        y="490"
+      ></use>
+      <use
+        xlink:href="#row"
+        y="506"
+      ></use>
+      <use
+        xlink:href="#row"
+        y="522"
+      ></use>
+      <use
+        xlink:href="#row"
+        y="538"
+      ></use>
+    </g>
+    <g id="warning">
+      <text
+        x="92"
+        y="5"
+        class="small"
+      >You cannot normally <tspan class="kw">PRINT</tspan> or <tspan class="kw">PLOT</tspan></text>
+      <text
+        x="92"
+        y="17"
+        class="small"
+      >on the bottom two lines</text>
+      <path d="M88,11 L76,11 L76,28" />
+      <text
+        x="28"
+        y="5"
+        class="large"
+        transform="translate(72,0) rotate(90)"
+      >{</text>
+    </g>
+    <text
+      x="28"
+      y="35"
+      class="small"
+      transform="translate(469,0) rotate(90)"
+    >0</text>
+    <text
+      x="28"
+      y="35"
+      class="small"
+      transform="translate(453,0) rotate(90)"
+    >1</text>
+    <text
+      x="28"
+      y="35"
+      class="small"
+      transform="translate(437,0) rotate(90)"
+    >2</text>
+    <text
+      x="28"
+      y="35"
+      class="small"
+      transform="translate(421,0) rotate(90)"
+    >3</text>
+    <text
+      x="28"
+      y="35"
+      class="small"
+      transform="translate(405,0) rotate(90)"
+    >4</text>
+    <text
+      x="28"
+      y="35"
+      class="small"
+      transform="translate(389,0) rotate(90)"
+    >5</text>
+    <text
+      x="28"
+      y="35"
+      class="small"
+      transform="translate(373,0) rotate(90)"
+    >6</text>
+    <text
+      x="28"
+      y="35"
+      class="small"
+      transform="translate(357,0) rotate(90)"
+    >7</text>
+    <text
+      x="28"
+      y="35"
+      class="small"
+      transform="translate(341,0) rotate(90)"
+    >8</text>
+    <text
+      x="28"
+      y="35"
+      class="small"
+      transform="translate(325,0) rotate(90)"
+    >9</text>
+    <text
+      x="28"
+      y="35"
+      class="small"
+      transform="translate(309,0) rotate(90)"
+    >10</text>
+    <text
+      x="28"
+      y="35"
+      class="small"
+      transform="translate(293,0) rotate(90)"
+    >11</text>
+    <text
+      x="28"
+      y="35"
+      class="small"
+      transform="translate(277,0) rotate(90)"
+    >12</text>
+    <text
+      x="28"
+      y="35"
+      class="small"
+      transform="translate(261,0) rotate(90)"
+    >13</text>
+    <text
+      x="28"
+      y="35"
+      class="small"
+      transform="translate(245,0) rotate(90)"
+    >14</text>
+    <text
+      x="28"
+      y="35"
+      class="small"
+      transform="translate(229,0) rotate(90)"
+    >15</text>
+    <text
+      x="28"
+      y="35"
+      class="small"
+      transform="translate(213,0) rotate(90)"
+    >16</text>
+    <text
+      x="28"
+      y="35"
+      class="small"
+      transform="translate(197,0) rotate(90)"
+    >17</text>
+    <text
+      x="28"
+      y="35"
+      class="small"
+      transform="translate(181,0) rotate(90)"
+    >18</text>
+    <text
+      x="28"
+      y="35"
+      class="small"
+      transform="translate(165,0) rotate(90)"
+    >19</text>
+    <text
+      x="28"
+      y="35"
+      class="small"
+      transform="translate(149,0) rotate(90)"
+    >20</text>
+    <text
+      x="28"
+      y="35"
+      class="small"
+      transform="translate(133,0) rotate(90)"
+    >21</text>
+    <text
+      x="48"
+      y="35"
+      class="small"
+      transform="translate(501,0) rotate(90)"
+    >Columns &#x27F6;</text>
+    <text
+      x="48"
+      y="35"
+      class="small"
+      transform="translate(485,0) rotate(90)"
+    >0</text>
+    <text
+      x="64"
+      y="35"
+      class="small"
+      transform="translate(485,0) rotate(90)"
+    >1</text>
+    <text
+      x="80"
+      y="35"
+      class="small"
+      transform="translate(485,0) rotate(90)"
+    >2</text>
+    <text
+      x="96"
+      y="35"
+      class="small"
+      transform="translate(485,0) rotate(90)"
+    >3</text>
+    <text
+      x="112"
+      y="35"
+      class="small"
+      transform="translate(485,0) rotate(90)"
+    >4</text>
+    <text
+      x="128"
+      y="35"
+      class="small"
+      transform="translate(485,0) rotate(90)"
+    >5</text>
+    <text
+      x="144"
+      y="35"
+      class="small"
+      transform="translate(485,0) rotate(90)"
+    >6</text>
+    <text
+      x="160"
+      y="35"
+      class="small"
+      transform="translate(485,0) rotate(90)"
+    >7</text>
+    <text
+      x="176"
+      y="35"
+      class="small"
+      transform="translate(485,0) rotate(90)"
+    >8</text>
+    <text
+      x="192"
+      y="35"
+      class="small"
+      transform="translate(485,0) rotate(90)"
+    >9</text>
+    <text
+      x="208"
+      y="35"
+      class="small"
+      transform="translate(485,0) rotate(90)"
+    >10</text>
+    <text
+      x="224"
+      y="35"
+      class="small"
+      transform="translate(485,0) rotate(90)"
+    >11</text>
+    <text
+      x="240"
+      y="35"
+      class="small"
+      transform="translate(485,0) rotate(90)"
+    >12</text>
+    <text
+      x="256"
+      y="35"
+      class="small"
+      transform="translate(485,0) rotate(90)"
+    >13</text>
+    <text
+      x="272"
+      y="35"
+      class="small"
+      transform="translate(485,0) rotate(90)"
+    >14</text>
+    <text
+      x="288"
+      y="35"
+      class="small"
+      transform="translate(485,0) rotate(90)"
+    >15</text>
+    <text
+      x="304"
+      y="35"
+      class="small"
+      transform="translate(485,0) rotate(90)"
+    >16</text>
+    <text
+      x="320"
+      y="35"
+      class="small"
+      transform="translate(485,0) rotate(90)"
+    >17</text>
+    <text
+      x="336"
+      y="35"
+      class="small"
+      transform="translate(485,0) rotate(90)"
+    >18</text>
+    <text
+      x="352"
+      y="35"
+      class="small"
+      transform="translate(485,0) rotate(90)"
+    >19</text>
+    <text
+      x="368"
+      y="35"
+      class="small"
+      transform="translate(485,0) rotate(90)"
+    >20</text>
+    <text
+      x="384"
+      y="35"
+      class="small"
+      transform="translate(485,0) rotate(90)"
+    >21</text>
+    <text
+      x="400"
+      y="35"
+      class="small"
+      transform="translate(485,0) rotate(90)"
+    >22</text>
+    <text
+      x="416"
+      y="35"
+      class="small"
+      transform="translate(485,0) rotate(90)"
+    >23</text>
+    <text
+      x="432"
+      y="35"
+      class="small"
+      transform="translate(485,0) rotate(90)"
+    >24</text>
+    <text
+      x="448"
+      y="35"
+      class="small"
+      transform="translate(485,0) rotate(90)"
+    >25</text>
+    <text
+      x="464"
+      y="35"
+      class="small"
+      transform="translate(485,0) rotate(90)"
+    >26</text>
+    <text
+      x="480"
+      y="35"
+      class="small"
+      transform="translate(485,0) rotate(90)"
+    >27</text>
+    <text
+      x="496"
+      y="35"
+      class="small"
+      transform="translate(485,0) rotate(90)"
+    >28</text>
+    <text
+      x="512"
+      y="35"
+      class="small"
+      transform="translate(485,0) rotate(90)"
+    >29</text>
+    <text
+      x="528"
+      y="35"
+      class="small"
+      transform="translate(485,0) rotate(90)"
+    >30</text>
+    <text
+      x="544"
+      y="35"
+      class="small"
+      transform="translate(485,0) rotate(90)"
+    >31</text>
+    <text
+      x="94"
+      y="580"
+      class="small"
+    >Pixel y coordinates &#x27F6;</text>
+    <text
+      x="94"
+      y="562"
+      class="xsmall"
+    >0</text>
+    <text
+      x="101"
+      y="568"
+      class="xsmall"
+    >7</text>
+    <text
+      x="110"
+      y="562"
+      class="xsmall"
+    >8</text>
+    <text
+      x="117"
+      y="568"
+      class="xsmall"
+    >15</text>
+    <text
+      x="126"
+      y="562"
+      class="xsmall"
+    >16</text>
+    <text
+      x="133"
+      y="568"
+      class="xsmall"
+    >23</text>
+    <text
+      x="142"
+      y="562"
+      class="xsmall"
+    >24</text>
+    <text
+      x="149"
+      y="568"
+      class="xsmall"
+    >31</text>
+    <text
+      x="158"
+      y="562"
+      class="xsmall"
+    >32</text>
+    <text
+      x="165"
+      y="568"
+      class="xsmall"
+    >39</text>
+    <text
+      x="174"
+      y="562"
+      class="xsmall"
+    >40</text>
+    <text
+      x="181"
+      y="568"
+      class="xsmall"
+    >47</text>
+    <text
+      x="190"
+      y="562"
+      class="xsmall"
+    >48</text>
+    <text
+      x="197"
+      y="568"
+      class="xsmall"
+    >55</text>
+    <text
+      x="206"
+      y="562"
+      class="xsmall"
+    >56</text>
+    <text
+      x="213"
+      y="568"
+      class="xsmall"
+    >63</text>
+    <text
+      x="222"
+      y="562"
+      class="xsmall"
+    >64</text>
+    <text
+      x="229"
+      y="568"
+      class="xsmall"
+    >71</text>
+    <text
+      x="238"
+      y="562"
+      class="xsmall"
+    >72</text>
+    <text
+      x="245"
+      y="568"
+      class="xsmall"
+    >79</text>
+    <text
+      x="254"
+      y="562"
+      class="xsmall"
+    >80</text>
+    <text
+      x="261"
+      y="568"
+      class="xsmall"
+    >87</text>
+    <text
+      x="270"
+      y="562"
+      class="xsmall"
+    >88</text>
+    <text
+      x="277"
+      y="568"
+      class="xsmall"
+    >95</text>
+    <text
+      x="286"
+      y="562"
+      class="xsmall"
+    >96</text>
+    <text
+      x="291"
+      y="568"
+      class="xsmall"
+    >103</text>
+    <text
+      x="302"
+      y="562"
+      class="xsmall"
+    >104</text>
+    <text
+      x="307"
+      y="568"
+      class="xsmall"
+    >111</text>
+    <text
+      x="318"
+      y="562"
+      class="xsmall"
+    >112</text>
+    <text
+      x="323"
+      y="568"
+      class="xsmall"
+    >119</text>
+    <text
+      x="334"
+      y="562"
+      class="xsmall"
+    >120</text>
+    <text
+      x="339"
+      y="568"
+      class="xsmall"
+    >127</text>
+    <text
+      x="350"
+      y="562"
+      class="xsmall"
+    >128</text>
+    <text
+      x="355"
+      y="568"
+      class="xsmall"
+    >135</text>
+    <text
+      x="366"
+      y="562"
+      class="xsmall"
+    >136</text>
+    <text
+      x="371"
+      y="568"
+      class="xsmall"
+    >143</text>
+    <text
+      x="382"
+      y="562"
+      class="xsmall"
+    >144</text>
+    <text
+      x="387"
+      y="568"
+      class="xsmall"
+    >151</text>
+    <text
+      x="398"
+      y="562"
+      class="xsmall"
+    >152</text>
+    <text
+      x="403"
+      y="568"
+      class="xsmall"
+    >159</text>
+    <text
+      x="414"
+      y="562"
+      class="xsmall"
+    >160</text>
+    <text
+      x="419"
+      y="568"
+      class="xsmall"
+    >167</text>
+    <text
+      x="430"
+      y="562"
+      class="xsmall"
+    >168</text>
+    <text
+      x="435"
+      y="568"
+      class="xsmall"
+    >175</text>
+    <text
+      x="52"
+      y="35"
+      class="small"
+      transform="translate(85,0) rotate(90)"
+    >Pixel x coordinates &#x27F6;</text>
+    <text
+      x="43"
+      y="35"
+      class="xsmall"
+      transform="translate(122,0) rotate(90)"
+    >0</text>
+    <text
+      x="52"
+      y="35"
+      class="xsmall"
+      transform="translate(114,0) rotate(90)"
+    >7</text>
+    <text
+      x="59"
+      y="35"
+      class="xsmall"
+      transform="translate(122,0) rotate(90)"
+    >8</text>
+    <text
+      x="65"
+      y="35"
+      class="xsmall"
+      transform="translate(114,0) rotate(90)"
+    >15</text>
+    <text
+      x="75"
+      y="35"
+      class="xsmall"
+      transform="translate(122,0) rotate(90)"
+    >16</text>
+    <text
+      x="81"
+      y="35"
+      class="xsmall"
+      transform="translate(114,0) rotate(90)"
+    >23</text>
+    <text
+      x="91"
+      y="35"
+      class="xsmall"
+      transform="translate(122,0) rotate(90)"
+    >24</text>
+    <text
+      x="97"
+      y="35"
+      class="xsmall"
+      transform="translate(114,0) rotate(90)"
+    >31</text>
+    <text
+      x="107"
+      y="35"
+      class="xsmall"
+      transform="translate(122,0) rotate(90)"
+    >32</text>
+    <text
+      x="113"
+      y="35"
+      class="xsmall"
+      transform="translate(114,0) rotate(90)"
+    >39</text>
+    <text
+      x="123"
+      y="35"
+      class="xsmall"
+      transform="translate(122,0) rotate(90)"
+    >40</text>
+    <text
+      x="129"
+      y="35"
+      class="xsmall"
+      transform="translate(114,0) rotate(90)"
+    >47</text>
+    <text
+      x="139"
+      y="35"
+      class="xsmall"
+      transform="translate(122,0) rotate(90)"
+    >48</text>
+    <text
+      x="145"
+      y="35"
+      class="xsmall"
+      transform="translate(114,0) rotate(90)"
+    >55</text>
+    <text
+      x="155"
+      y="35"
+      class="xsmall"
+      transform="translate(122,0) rotate(90)"
+    >56</text>
+    <text
+      x="161"
+      y="35"
+      class="xsmall"
+      transform="translate(114,0) rotate(90)"
+    >63</text>
+    <text
+      x="171"
+      y="35"
+      class="xsmall"
+      transform="translate(122,0) rotate(90)"
+    >64</text>
+    <text
+      x="177"
+      y="35"
+      class="xsmall"
+      transform="translate(114,0) rotate(90)"
+    >71</text>
+    <text
+      x="187"
+      y="35"
+      class="xsmall"
+      transform="translate(122,0) rotate(90)"
+    >72</text>
+    <text
+      x="193"
+      y="35"
+      class="xsmall"
+      transform="translate(114,0) rotate(90)"
+    >79</text>
+    <text
+      x="203"
+      y="35"
+      class="xsmall"
+      transform="translate(122,0) rotate(90)"
+    >80</text>
+    <text
+      x="209"
+      y="35"
+      class="xsmall"
+      transform="translate(114,0) rotate(90)"
+    >87</text>
+    <text
+      x="219"
+      y="35"
+      class="xsmall"
+      transform="translate(122,0) rotate(90)"
+    >88</text>
+    <text
+      x="225"
+      y="35"
+      class="xsmall"
+      transform="translate(114,0) rotate(90)"
+    >95</text>
+    <text
+      x="235"
+      y="35"
+      class="xsmall"
+      transform="translate(122,0) rotate(90)"
+    >96</text>
+    <text
+      x="239"
+      y="35"
+      class="xsmall"
+      transform="translate(114,0) rotate(90)"
+    >103</text>
+    <text
+      x="251"
+      y="35"
+      class="xsmall"
+      transform="translate(122,0) rotate(90)"
+    >104</text>
+    <text
+      x="255"
+      y="35"
+      class="xsmall"
+      transform="translate(114,0) rotate(90)"
+    >111</text>
+    <text
+      x="267"
+      y="35"
+      class="xsmall"
+      transform="translate(122,0) rotate(90)"
+    >112</text>
+    <text
+      x="271"
+      y="35"
+      class="xsmall"
+      transform="translate(114,0) rotate(90)"
+    >119</text>
+    <text
+      x="283"
+      y="35"
+      class="xsmall"
+      transform="translate(122,0) rotate(90)"
+    >120</text>
+    <text
+      x="287"
+      y="35"
+      class="xsmall"
+      transform="translate(114,0) rotate(90)"
+    >127</text>
+    <text
+      x="299"
+      y="35"
+      class="xsmall"
+      transform="translate(122,0) rotate(90)"
+    >128</text>
+    <text
+      x="303"
+      y="35"
+      class="xsmall"
+      transform="translate(114,0) rotate(90)"
+    >135</text>
+    <text
+      x="315"
+      y="35"
+      class="xsmall"
+      transform="translate(122,0) rotate(90)"
+    >136</text>
+    <text
+      x="319"
+      y="35"
+      class="xsmall"
+      transform="translate(114,0) rotate(90)"
+    >143</text>
+    <text
+      x="331"
+      y="35"
+      class="xsmall"
+      transform="translate(122,0) rotate(90)"
+    >144</text>
+    <text
+      x="335"
+      y="35"
+      class="xsmall"
+      transform="translate(114,0) rotate(90)"
+    >151</text>
+    <text
+      x="347"
+      y="35"
+      class="xsmall"
+      transform="translate(122,0) rotate(90)"
+    >152</text>
+    <text
+      x="351"
+      y="35"
+      class="xsmall"
+      transform="translate(114,0) rotate(90)"
+    >159</text>
+    <text
+      x="363"
+      y="35"
+      class="xsmall"
+      transform="translate(122,0) rotate(90)"
+    >160</text>
+    <text
+      x="367"
+      y="35"
+      class="xsmall"
+      transform="translate(114,0) rotate(90)"
+    >167</text>
+    <text
+      x="379"
+      y="35"
+      class="xsmall"
+      transform="translate(122,0) rotate(90)"
+    >168</text>
+    <text
+      x="383"
+      y="35"
+      class="xsmall"
+      transform="translate(114,0) rotate(90)"
+    >175</text>
+    <text
+      x="395"
+      y="35"
+      class="xsmall"
+      transform="translate(122,0) rotate(90)"
+    >176</text>
+    <text
+      x="399"
+      y="35"
+      class="xsmall"
+      transform="translate(114,0) rotate(90)"
+    >183</text>
+    <text
+      x="411"
+      y="35"
+      class="xsmall"
+      transform="translate(122,0) rotate(90)"
+    >184</text>
+    <text
+      x="415"
+      y="35"
+      class="xsmall"
+      transform="translate(114,0) rotate(90)"
+    >191</text>
+    <text
+      x="427"
+      y="35"
+      class="xsmall"
+      transform="translate(122,0) rotate(90)"
+    >192</text>
+    <text
+      x="431"
+      y="35"
+      class="xsmall"
+      transform="translate(114,0) rotate(90)"
+    >199</text>
+    <text
+      x="443"
+      y="35"
+      class="xsmall"
+      transform="translate(122,0) rotate(90)"
+    >200</text>
+    <text
+      x="447"
+      y="35"
+      class="xsmall"
+      transform="translate(114,0) rotate(90)"
+    >207</text>
+    <text
+      x="459"
+      y="35"
+      class="xsmall"
+      transform="translate(122,0) rotate(90)"
+    >208</text>
+    <text
+      x="463"
+      y="35"
+      class="xsmall"
+      transform="translate(114,0) rotate(90)"
+    >215</text>
+    <text
+      x="475"
+      y="35"
+      class="xsmall"
+      transform="translate(122,0) rotate(90)"
+    >216</text>
+    <text
+      x="479"
+      y="35"
+      class="xsmall"
+      transform="translate(114,0) rotate(90)"
+    >223</text>
+    <text
+      x="491"
+      y="35"
+      class="xsmall"
+      transform="translate(122,0) rotate(90)"
+    >224</text>
+    <text
+      x="495"
+      y="35"
+      class="xsmall"
+      transform="translate(114,0) rotate(90)"
+    >231</text>
+    <text
+      x="507"
+      y="35"
+      class="xsmall"
+      transform="translate(122,0) rotate(90)"
+    >232</text>
+    <text
+      x="511"
+      y="35"
+      class="xsmall"
+      transform="translate(114,0) rotate(90)"
+    >239</text>
+    <text
+      x="523"
+      y="35"
+      class="xsmall"
+      transform="translate(122,0) rotate(90)"
+    >240</text>
+    <text
+      x="527"
+      y="35"
+      class="xsmall"
+      transform="translate(114,0) rotate(90)"
+    >247</text>
+    <text
+      x="539"
+      y="35"
+      class="xsmall"
+      transform="translate(122,0) rotate(90)"
+    >248</text>
+    <text
+      x="543"
+      y="35"
+      class="xsmall"
+      transform="translate(114,0) rotate(90)"
+    >255</text>
+    <g id="example">
+      <text
+        x="430"
+        y="35"
+        class="small"
+        transform="translate(513,0) rotate(90)"
+      >An example: this is</text>
+      <text
+        x="430"
+        y="35"
+        class="small"
+        transform="translate(501,0) rotate(90)"
+      >the pixel (191, 159)</text>
+      <path d="M475,426 L475,412 L409,412 L409,418" />
+      <polygon
+        points="407,416 411,416 409,420"
+        fill="black"
+      />
+      <rect
+        x="409"
+        y="423"
+        height="2"
+        width="2"
+      />
+    </g>
+  </svg>
   <p>The function...</p>
   <p><code>TAB</code> column</p>
   <p>...prints enough spaces to move the <code>PRINT</code> position to the column specified. It stays on the same line, or, if this would involve backspacing, moves to the next line. Note that the <em><strong>+3</strong></em> reduces the column number 'modulo 32' (ie. it divides by 32 and takes the remainder) - so <code>TAB 33</code> means the same as <code>TAB 1</code>.</p>
@@ -19084,7 +20302,7 @@ cliff:
   <h1><a id="postfix"></a> Postfix</h1>
   <h2><a id="credits"></a> Credits</h2>
   <p>Original manual by Ivor Spital, Cliff Lawson, Rupert Goodwins, Steve Vickers and Robin Bradbeer.</p>
-  <p>Markdown conversion, JavaScript, style, screenshots, and most SVG drawings by <a href="https://damieng.com">Damien Guard</a>. Music scale diagram by mjwilson.</p>
+  <p>Markdown conversion, JavaScript, style, screenshots, and most SVG drawings by <a href="https://damieng.com">Damien Guard</a>. Music scale (part 19) and screen diagram (part 15) diagrams by mjwilson.</p>
   <p>Original ASCII manual prepared by:</p>
   <ul>
     <li>Ian Coates <a href="mailto:oktup@mono.city.ac.uk">oktup@mono.city.ac.uk</a> did <a href="#part26">chapter 8 parts 26</a> and <a href="#part30">30</a>.</li>
@@ -19093,6 +20311,7 @@ cliff:
   </ul>
   <h2><a id="revision"></a> Revision history</h2>
   <ul>
+    <li><strong>23-Feb-2023</strong> Part 15 screen diagram by mjwilson.</li>
     <li><strong>19-Feb-2023</strong> Part 19 music scale diagram * fixes by mjwilson.</li>
     <li><strong>07-Feb-2023</strong> Minor fixes for code typo, TV test screenshot and waveform diagram.</li>
     <li><strong>05-Feb-2023</strong> Minor fixes for typos, links and new updated converter.</li>
