@@ -5456,7 +5456,7 @@ CHR$ 8+&quot;AARDVARK HUNTING&quot;
 1040 NEXT b: PRINT: NEXT a
 1050 RETURN
 </code></pre>
-  <p>There is a function called <code>ATTR</code> that finds out what the attributes ate at a given position on the screen. It is a fairly complicated function, so it has been relegated to the end of this section.</p>
+  <p>There is a function called <code>ATTR</code> that finds out what the attributes are at a given position on the screen. It is a fairly complicated function, so it has been relegated to the end of this section.</p>
   <p>There are two more statements, <code>INVERSE</code> and <code>OVER</code>, which control not the attributes, but the dot pattern that is printed on the screen. They use the numbers 0 for off, and 1 for on. If you use <code>INVERSE 1</code>, then each character cell's dot pattern will be the inverse of its usual form, ie. paper dots will be replaced by ink dots and vice versa. Thus the character cell containing '<strong>a</strong>' (shown previously) would be printed as follows...</p>
   <figure>
     <canvas id="grid-a-inverse"></canvas>
@@ -6056,11 +6056,15 @@ PLOT 90,150: DRAW 80,-35
     <style>
       g {
         font-size: 12px;
-        font-weight: bold;
+        font-weight: bold
       }
 
-      .clef {
+      #treble-clef {
         font-size: 62px
+      }
+
+      #bass-clef {
+        font-size: 51px
       }
 
       #notes {
@@ -6108,7 +6112,6 @@ PLOT 90,150: DRAW 80,-35
       <text
         x="10"
         y="95"
-        class="clef"
       >&#x1D11E;</text>
     </g>
     <g id="bass-clef">
@@ -6119,8 +6122,7 @@ PLOT 90,150: DRAW 80,-35
       <path d="M 0 160 L 500 160" />
       <text
         x="10"
-        y="161"
-        class="clef"
+        y="153"
       >&#x1D122;</text>
     </g>
     <path d="M 0 60 L 0 160" />

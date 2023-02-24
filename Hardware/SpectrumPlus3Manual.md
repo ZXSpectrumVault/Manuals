@@ -4428,7 +4428,7 @@ To see how all eight colours fit together, imagine three rectangular spotlights,
     1040 NEXT b: PRINT: NEXT a
     1050 RETURN
 
-There is a function called `ATTR` that finds out what the attributes ate at a given position on the screen. It is a fairly complicated function, so it has been relegated to the end of this section.
+There is a function called `ATTR` that finds out what the attributes are at a given position on the screen. It is a fairly complicated function, so it has been relegated to the end of this section.
 
 There are two more statements, `INVERSE` and `OVER`, which control not the attributes, but the dot pattern that is printed on the screen. They use the numbers 0 for off, and 1 for on. If you use `INVERSE 1`, then each character cell's dot pattern will be the inverse of its usual form, ie. paper dots will be replaced by ink dots and vice versa. Thus the character cell containing '**a**' (shown previously) would be printed as follows...
 
@@ -4984,8 +4984,9 @@ Now run the above program. Edit line 10 so that `"O5"` becomes `"O7"`, and run i
 
  <svg viewBox="-2 -2 506 320" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink">
     <style>
-      g { font-size: 12px; font-weight: bold; }
-      .clef { font-size: 62px }
+      g { font-size: 12px; font-weight: bold }
+      #treble-clef { font-size: 62px }
+      #bass-clef { font-size: 51px }
       #notes { font-size: 30px }
       rect.grid, .octave-box rect { stroke-width: 1px }
       .octave-box rect { fill: white }
@@ -5001,7 +5002,7 @@ Now run the above program. Edit line 10 so that `"O5"` becomes `"O7"`, and run i
       <path d="M 0 80 L 500 80"/>
       <path d="M 0 90 L 500 90"/>
       <path d="M 0 100 L 500 100"/>
-      <text x="10" y="95" class="clef">&#x1D11E;</text>
+      <text x="10" y="95">&#x1D11E;</text>
     </g>
     <g id="bass-clef">
       <path d="M 0 120 L 500 120"/>
@@ -5009,7 +5010,7 @@ Now run the above program. Edit line 10 so that `"O5"` becomes `"O7"`, and run i
       <path d="M 0 140 L 500 140"/>
       <path d="M 0 150 L 500 150"/>
       <path d="M 0 160 L 500 160"/>
-      <text x="10" y="161" class="clef">&#x1D122;</text>
+      <text x="10" y="153">&#x1D122;</text>
      </g>
      <path d="M 0 60 L 0 160"/>
      <path d="M 5 60 L 5 160"/>
