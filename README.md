@@ -13,4 +13,4 @@ Various manuals for Spectrum related hardware and software
 - [Rombo Vidi-ZX digitiser](https://github.com/ZXSpectrumVault/Manuals/blob/master/Hardware/rombo-vidi-zx.txt)
 
 ## File Formats
-- [DSK][https://github.com/ZXSpectrumVault/Manuals/tree/master/Formats/Disk]
+- [DSK](https://github.com/ZXSpectrumVault/Manuals/tree/master/Formats/Disk)
