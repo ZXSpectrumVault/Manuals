@@ -522,7 +522,7 @@ The ***+3*** system is now ready to be switched on.
 
 # <a id="chapter2"></a> Chapter 2 <br> Operating your +3
 
-Subjects covered...
+**Subjects covered...**
 
 - [Switching on](#switching-on)
 - [Tuning-in your TV](#tuning-in)
@@ -749,7 +749,7 @@ Depending upon your selection, refer to the following chapters for further infor
 
 # <a id="chapter3"></a> Chapter 3 <br> How to load disk software
 
-Subjects covered...
+**Subjects covered...**
 
 - [Disks for the ***+3***](#disks-for-plus3)
 - [Loading disk software](#loading-disk-software)
@@ -840,7 +840,7 @@ If you wish to abandon a loading operation, simply press and release the **RESET
 
 # <a id="chapter4"></a> Chapter 4 <br> How to load tape software
 
-Subjects covered...
+**Subjects covered...**
 
 - [Using tape instead of disk](#using-tape)
 - [Loading Spectrum +3, Spectrum ***+3*** and Spectrum 128 software](#loading-128)
@@ -951,7 +951,7 @@ NOTE - Holding the **BREAK** key down while loading Spectrum ***+3***, Spectrum 
 
 # <a id="chapter5"></a> Chapter 5 <br> The ***+3*** disk drive
 
-Subjects covered...
+**Subjects covered...**
 
 - [Disks and drives](#disks-and-drives)
 - [Insertion](#insertion)
@@ -1180,7 +1180,7 @@ Always eject your disk from the disk drive before switching the system off.
 
 # <a id="chapter6"></a> Chapter 6 <br> Introducing ***+3*** BASIC
 
-Subjects covered...
+**Subjects covered...**
 
 - [The editor](#the-editor)
 - [The edit menu](#the-edit-menu)
@@ -1492,7 +1492,7 @@ Further information on disk operations (together with details of how to use the 
 
 # <a id="chapter7"></a> Chapter 7 <br> Using 48 BASIC
 
-Subjects covered...
+**Subjects covered...**
 
 - [Using the ***+3*** as a 48K Spectrum](#using-plus3-as-a-48)
 - [Entering 48 BASIC mode](#entering-48-basic)
@@ -1933,7 +1933,7 @@ While the ***+3*** is running a BASIC program, the **BREAK** key is checked ever
 
 ## <a id="part2"></a> Part 2<br>Simple programming concepts
 
-Subjects covered...
+**Subjects covered...**
 
 - Programs
 - Line numbers
@@ -2249,7 +2249,7 @@ Modify the program so that you can also input the tax rate (to allow for zero ra
 
 ## <a id="part3"></a> Part 3<br>Decisions
 
-Subjects covered...
+**Subjects covered...**
 
 - `CLS`, `IF`, `STOP`
 - `=`, `<`, `>`, `<=`, `>=`, `<>`
@@ -2322,7 +2322,7 @@ Before you run it, try to work out what will be printed on the screen.
 
 ## <a id="part4"></a> Part 4<br>Looping
 
-Subjects covered...
+**Subjects covered...**
 
 - `FOR`, `NEXT`
 - `TO`, `STEP`
@@ -2481,7 +2481,7 @@ Now change the third program so that instead of automatically adding five number
 
 ## <a id="part5"></a> Part 5<br>Subroutines
 
-Subjects covered...
+**Subjects covered...**
 
 - `GO SUB`, `RETURN`
 
@@ -2543,7 +2543,7 @@ One subroutine can happily call another, or even itself (a subroutine that calls
 
 ## <a id="part6"></a> Part 6<br>Data in programs
 
-Subjects covered...
+**Subjects covered...**
 
 - `READ`, `DATA`, `RESTORE`
 
@@ -2618,7 +2618,7 @@ Delete line 60 and run this program again to see what happens.
 
 ## <a id="part7"></a> Part 7<br>Expressions
 
-Subjects covered...
+**Subjects covered...**
 
 - Operations: `+`, `-`, `*`, `/`
 - Expressions, scientific notation, variable names
@@ -2751,7 +2751,7 @@ As you can see from what is printed on the screen, each double quote is only rea
 
 ## <a id="part8"></a> Part 8<br>Strings
 
-Subjects covered...
+**Subjects covered...**
 
 - Slicing, using `TO`
 
@@ -2836,7 +2836,7 @@ Exercise...
 
 ## <a id="part9"></a> Part 9<br>Functions
 
-Subjects covered...
+**Subjects covered...**
 
 - `LEN`, `STR$`, `VAL`, `SGN`, `ABS`, `INT`, `SQR`
 - `DEF FN`
@@ -3040,7 +3040,7 @@ Use the function `FN s(x)=x*x` to test `SQR`. You should find that...
 
 ## <a id="part10"></a> Part 10<br>Mathematical functions
 
-Subjects covered...
+**Subjects covered...**
 
 - ^
 - `PI`, `EXP`, `LN`, `SIN`, `COS`, `TAN`, `ASN`, `ACS`, `ATN`
@@ -3209,7 +3209,7 @@ You must always remember that on the ***+3***, the functions `SIN`, `COS`, etc. 
 
 ## <a id="part11"></a> Part 11<br>Random Numbers
 
-Subjects covered...
+**Subjects covered...**
 
 - `RANDOMIZE`
 - `RND`
@@ -3285,7 +3285,7 @@ Try this out for yourself.
 
 ## <a id="part12"></a> Part 12<br>Arrays
 
-Subjects covered...
+**Subjects covered...**
 
 - Arrays
 - `DIM`
@@ -3412,20 +3412,20 @@ Exercise...
 
 ## <a id="part13"></a> Part 13<br>Conditions
 
-Subjects covered...
+**Subjects covered...**
 
 - `AND`, `OR`
 - `NOT`
 
 We saw in [part 3 of this chapter](#part3) how an `IF` statement takes the form...
 
-  `IF` condition `THEN`...
+  - `IF` condition `THEN`...
 
 The conditions there were the relations `=`, `<`, `>`, `<=`, `>=` and `<>` which compare two numbers or two strings. You can also combine several of these, using the logical operations `AND`, `OR` and `NOT`.
 
 One relation `AND` another relation is true whenever ***both*** relations are true, so that you could have a line like...
 
-    IF a$="yes" AND x>0 THEN PRINT "result"
+  - `IF a$="yes" AND x>0 THEN PRINT "result"`
 
 ...in which `result` gets printed only if `a$` is equal to `yes` and `x` is greater than zero. The BASIC here is so close to English that it hardly seems worth spelling out the details. As in English, you can join lots of relations together with `AND`, and then the whole lot is true if ***all*** the individual relations are.
 
@@ -3435,19 +3435,19 @@ The `NOT` relationship turns things upside down. The `NOT` relation is true when
 
 Logical expressions may use combinations of `AND`, `OR` and `NOT`, just as numerical expressions may use combinations of `+`, `-`, `*` and so on.
 
-You can even put them in brackets if necessary. Logical operations have priorities in the same way as `+`, `-`, `*`, `/` and ^ do. `NOT` has the highest priority, then `AND`, then `OR`.
+You can even put them in brackets if necessary. Logical operations have priorities in the same way as `+`, `-`, `*`, `/` and ↑ do. `NOT` has the highest priority, then `AND`, then `OR`.
 
 `NOT` is really a function, with an argument and a result, but its priority is much lower than that of other functions. Therefore, its argument does not need brackets unless it contains `AND` or `OR` (or both). `NOT a=b` means the same as `NOT (a=b)` (and the same as `a<>b` of course).
 
 `<>` is the negation of `=` in the sense that it is true only if `=` is false. In other words...
 
-  `a<>b` is the same as `NOT a=b`
+- `a<>b` is the same as `NOT a=b`
 
 ...and also...
 
-  `NOT a<>b` is the same as `a=b`
+- `NOT a<>b` is the same as `a=b`
 
-Convince yourself that `>=` and `<=` are the negations of `<` and `>` respectively. Thus you can always get rid of NOT from in front of a relation by changing the relation.
+Convince yourself that `>=` and `<=` are the negations of `<` and `>` respectively. Thus you can always get rid of `NOT` from in front of a relation by changing the relation.
 
 Also...
 
@@ -3471,7 +3471,7 @@ The following section is quite complicated, and can easily be skipped by the fai
 
 Try...
 
-    PRINT 1=2,1 <> 2
+- `PRINT 1=2,1 <> 2`
 
 ...which you might expect to give a syntax error. In fact, as far as the computer is concerned, there is no such thing as a logical value -
 instead it uses ordinary numbers, subject to a few rules...
@@ -3488,14 +3488,17 @@ instead it uses ordinary numbers, subject to a few rules...
 
 (iii) `AND`, `OR` and `NOT` are also number-valued operations...
 
-`x AND y` has the value   __[ `x`, if `y` is true (non-zero)
-                            [ 0 (false) if `y` is false (zero)
+`x AND y` has the value
+- `x`, if `y` is true (non-zero)
+-  0 (false), if `y` is false (zero)
 
-`x OR y` has the value    __[ 1 (true), if `y` is true (non-zero)
-                            [ `x`, if `y` is false (zero)
+`x OR y` has the value
+- 1 (true), if `y` is true (non-zero)
+- `x`, if `y` is false (zero)
 
-`NOT x` has the value     __[ 0 (false), if `x` is true (non-zero)
-                            [ 1 (true), if `x` is false (zero)
+`NOT x` has the value
+- 0 (false), if `x` is true (non-zero)
+- 1 (true), if `x` is false (zero)
 
 (Notice that 'true' means non-zero when we're checking a given value, but it means 1 when we're producing a new one.)
 
@@ -3503,14 +3506,14 @@ Now try this program...
 
     10 INPUT a
     20 INPUT b
-    30 PRINT (a AND a >= b)+(b AND a<b)
+    30 PRINT (a AND a >= b)+(b AND a< b)
     40 GO TO 10
 
 Each time it prints the larger of the two numbers `a` and `b`.
 
 Convince yourself that you can think of...
 
-- x `AND` y
+- `x AND y`
 
 ...as meaning...
 
@@ -3518,13 +3521,13 @@ Convince yourself that you can think of...
 
 ...and of...
 
-- x `OR` y
+- `x OR y`
 
 ...as meaning...
 
 - `x` unless `y` (in which case the result is 1)
 
-An expression using `AND` or `OR` like this is called a conditional expression. An example using OR could be...
+An expression using `AND` or `OR` like this is called a conditional expression. An example using `OR` could be...
 
     LET total=price less tax*(1.15 OR v$="zero rated")
 
@@ -3532,8 +3535,9 @@ Notice how `AND` tends to go with addition (because its default value is 0), and
 
 You can also make string valued conditional expressions, but only using AND...
 
-  `x$ AND y` has the value      __| `x$` if `y` is non-zero
-                                  | "" if y is zero
+- `x$ AND y` has the value
+  - `x$` if `y` is non-zero
+  - `""` if `y` is zero
 
 ...so it means `x$` if `y` (else the empty string).
 
@@ -3546,7 +3550,7 @@ Try this program, which inputs two strings and puts them in alphabetical order.
 
 ## <a id="part14"></a> Part 14<br>The Character Set
 
-Subjects covered...
+**Subjects covered...**
 
 - `CODE`, `CHR$`
 - `POKE`, `PEEK`
@@ -3892,7 +3896,7 @@ If you experiment with it, you'll find that `CHR$ c` is rounded to the nearest w
 
 ## <a id="part15"></a> Part 15<br>More about PRINT and INPUT
 
-Subjects covered...
+**Subjects covered...**
 
 - `CLS`
 - `PRINT` items
@@ -4311,7 +4315,7 @@ If they are perceptive, they might manage to work out that they do not have to d
 
 ## <a id="part16"></a> Part 16<br>Colours
 
-Subjects covered...
+**Subjects covered...**
 
 - `INK`, `PAPER`, `FLASH`, `BRIGHT`, `INVERSE`, `OVER`
 - `BORDER`
@@ -4527,7 +4531,7 @@ Where the `/` has cut through the `B`, it has left a white dot. This is the way 
 
 ## <a id="part17"></a> Part 17<br>Graphics
 
-Subjects covered...
+**Subjects covered...**
 
 - `PLOT`, `DRAW`, `CIRCLE`
 - Pixels
@@ -4608,18 +4612,13 @@ For instance, suppose a equals π. Then whatever values x and y take, a semicirc
 
 ...which will draw this...
 
-
-                                       `-.   Finish at (150,150)
-                                          `
-                                           `
-                                            :
-                                            :
-                                           ;
-                                         ,'
-                             `--______--'
-
-                        Start at (100,100)
-
+<figure>
+<svg xmlns="http://www.w3.org/2000/svg" width="35%" viewbox="-50 0 300 100">
+  <path d="M50,50 a25,25 0 1,0 50,-50" stroke="#000" />
+  <text font-size="0.8em" x="20" y="90">Start at (100,100)</text>
+  <text font-size="0.8em" x="120" y="10">Finish at (150,150)</text>
+</svg>
+</figure>
 
 The drawing starts off in a south-easterly direction, but by the time it stops, it is going north-west. In between, it has turned through 180 degrees, or π radians (the value of a).
 
@@ -4713,7 +4712,7 @@ You can see from this that the `CIRCLE` statement leaves the `PLOT` position at 
 
 ## <a id="part18"></a> Part 18<br>Timing
 
-Subjects covered...
+**Subjects covered...**
 
 - `PAUSE`, `PEEK`, `INKEY$`
 
@@ -4824,7 +4823,7 @@ To make this work, why is it essential that a pause should not finish if it find
 
 ## <a id="part19"></a> Part 19<br>Sound
 
-Subjects covered...
+**Subjects covered...**
 
 - `BEEP`, `PLAY`
 
@@ -5380,7 +5379,7 @@ Finally, here is a brief list of the parameters that can be used in the string o
 
 ## <a id="part20"></a> Part 20<br>File operations
 
-Subjects covered...
+**Subjects covered...**
 
 - [Drives](#drives)
 - [`FORMAT`](#format)
@@ -6184,7 +6183,7 @@ Exercise...
 
 ## <a id="part21"></a> Part 21<br>Printer operations
 
-Subjects covered...
+**Subjects covered...**
 
 - [Parallel printers](#parallel-printers)
 - [Serial printers](#serial-printers)
@@ -6360,7 +6359,7 @@ Exercises...
 
 ## <a id="part22"></a >Part 22 - Streams
 
-Subjects covered...
+**Subjects covered...**
 
 - Streams
 - Channels
@@ -6438,7 +6437,7 @@ On the standard ***+3*** system, streams and channels are of mostly academic int
 
 ## <a id="part23"></a> Part 23<br>IN and OUT
 
-Subjects covered...
+**Subjects covered...**
 
 - [`IN`](#in)
 - [`OUT`](#out)
@@ -6520,7 +6519,7 @@ See [chapter 10](#chapter10) for a diagram and pin-out of the **EXPANSION I/O** 
 
 ## <a id="part24"></a> Part 24<br>The memory
 
-Subjects covered...
+**Subjects covered...**
 
 - `PEEK`
 - `POKE`
@@ -7065,7 +7064,7 @@ Extended memory paging (with Bit 0 of 1FFDh set to 1)
 
 ## <a id="part25"></a> Part 25<br>The system variables
 
-Subjects covered...
+**Subjects covered...**
 
 - `POKE`, `PEEK`
 
@@ -7201,7 +7200,7 @@ The number in column 1 is the number of bytes in the variable or routine. For a 
 
 ## <a id="part26"></a> Part 26<br>Using machine code
 
-Subjects covered...
+**Subjects covered...**
 
 - `USR` with numeric argument
 
@@ -7661,7 +7660,7 @@ This very simple boot program just uses the BASIC ROM to print a greeting then e
 
 ## <a id="part27"></a> Part 27<br>Guide to +3DOS
 
-Subjects covered...
+**Subjects covered...**
 
 - ROMs
 - +3DOS interface
@@ -9765,7 +9764,7 @@ None
 
 ## <a id="part28"></a> Part 28<br>Spectrum character set
 
-Subjects covered...
+**Subjects covered...**
 
 * Control codes
 * Characters
@@ -10034,7 +10033,7 @@ This is the complete Spectrum character set, with codes in decimal and hex. If o
 
 ## <a id="part29"></a> Part 29<br>Reports
 
-Subjects covered...
+**Subjects covered...**
 
 - Reports and messages
 - `CONTINUE`
@@ -10123,7 +10122,7 @@ Disk errors marked by `RIC` (in the left-hand column) will normally be displayed
 
 ## <a id="part30"></a> Part 30<br>Reference section
 
-Subjects covered...
+**Subjects covered...**
 
 - Hardware
 
@@ -10208,7 +10207,7 @@ The Centronics parallel printer port is basically just an 8 bit data latch (7427
 
 ## <a id="part31"></a> Part 31<br>The BASIC
 
-Subjects covered...
+**Subjects covered...**
 
 - Number handling
 - Variables
@@ -10458,7 +10457,7 @@ All statements except `INPUT`, `DEF FN` and `DATA` can be used either as command
 
 ## <a id="part32"></a> Part 32<br>Binary and hexadecimal
 
-Subjects covered...
+**Subjects covered...**
 
 - Number systems
 - Bits and bytes
@@ -10845,7 +10844,7 @@ Note the following when typing in the listing:
 
 # <a id="chapter9"></a> Chapter 9 <br> Using the calculator
 
-Subjects covered...
+**Subjects covered...**
 
 - [Selecting the calculator](#selecting-the-calculator)
 - [Entering numbers](#entering-numbers)
@@ -10938,7 +10937,7 @@ When you have finished using the calculator, press the **EDIT** key. The screen 
 
 # <a id="chapter10"></a> Chapter 10 <br> Peripherals for your +3
 
-Subjects covered...
+**Subjects covered...**
 
 - [Cassette unit](#cassette-unit)
 - [Printer](#printer)
@@ -11652,6 +11651,7 @@ Original ASCII manual prepared by:
 
 ## <a id="revision"></a> Revision history
 
+- **25-Feb-2023** Part 14 format fixes, part-17 SVG diagram.
 - **23-Feb-2023** Part 15 screen diagram by mjwilson.
 - **19-Feb-2023** Part 19 music scale diagram * fixes by mjwilson.
 - **07-Feb-2023** Minor fixes for code typo, TV test screenshot and waveform diagram.
