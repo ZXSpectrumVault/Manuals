@@ -119,6 +119,7 @@ h5 {
 pre {
   margin: 1em !important;
   padding: 0 !important;
+  white-space: pre-wrap;
 }
 
 pre,
