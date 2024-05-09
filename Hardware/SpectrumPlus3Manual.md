@@ -3,10 +3,10 @@
 <link href="./spectrum-manual.css" rel="stylesheet"></link>
 <script src="./spectrum-manual.js"></script>
 
-<div style="font-weight: bold; font-size: 48px" >Sinclair ZX Spectrum +3 Manual</div> 
+<div style="font-weight: bold; font-size: 48px" >Sinclair ZX Spectrum +3 Manual</div>
 
 # Contents
- 
+
  <div class="toc">
 
 - [Introduction](#introduction)
@@ -1149,8 +1149,8 @@ At the front of the disk drive, you will see a push button (for ejecting the dis
     <path class="thick" d="
       M 65,5 l-12,100 h 474 l-12,-100
       M 53,105 l-8,110 h-20 h 44
-      M 527,105 l8,110 h-25 h 40 h 9 
-      M 9,388 h0 v-28 h 12 v 28 h 12 v -28 h 12 v 28 h 12 v -28 h 12 v 28 h 12 v -28 h 12 v 28 h 12 v -28 h 12 v 28 h 12 v -28 h 12 v 28 h 12 v -28 h 12 v 28 h 12 v -28 h 12 v 28 h 12 v -28 h 12 v 28 h 12 v -28 h 12 v 28 h 12 v -28 h 12 v 28 h 12 v -28 h 12 v 28 h 12 v -28 h 12 v 28 h 12 v -28 h 12 v 28 h 12 v -28 h 12 v 28 h 12 v -28 h 12 v 28 h 12 v -28 h 12 l0,28 c 0,0 62,0 84,0 c4,0 7,-3 8,-7 c 1,-15 5,-47 5,-47 
+      M 527,105 l8,110 h-25 h 40 h 9
+      M 9,388 h0 v-28 h 12 v 28 h 12 v -28 h 12 v 28 h 12 v -28 h 12 v 28 h 12 v -28 h 12 v 28 h 12 v -28 h 12 v 28 h 12 v -28 h 12 v 28 h 12 v -28 h 12 v 28 h 12 v -28 h 12 v 28 h 12 v -28 h 12 v 28 h 12 v -28 h 12 v 28 h 12 v -28 h 12 v 28 h 12 v -28 h 12 v 28 h 12 v -28 h 12 v 28 h 12 v -28 h 12 v 28 h 12 v -28 h 12 v 28 h 12 v -28 h 12 v 28 h 12 v -28 h 12 l0,28 c 0,0 62,0 84,0 c4,0 7,-3 8,-7 c 1,-15 5,-47 5,-47
       M 9,335 c 0,0 444,0 529,0 c 8,0 14,-6 15,-14 c1,-13 2,-32 2,-32 h-541 m 541,0 l 4,-75 l -33,-120" />
     <rect x="100" y="225" width="25" height="14" class="filled"/>
     <path d="M 69,256 l-3,18 h 446 l-2,-18 h-441" class="thin" />
@@ -4874,7 +4874,7 @@ Here is a diagram to show the pitch values of all the notes in one octave on the
   <svg width="560" height="160">
     <path d="M0,120 h540 m-540,-45 m-20,-80
     v80 h40 v-80
-    m4,0 
+    m4,0
     v80 h40 v-80
     m-20,80
     v45 m44,0 v-125
@@ -8559,7 +8559,7 @@ If the buffer is too small for the directory, this routine can be called again w
 Entry format (13 bytes long):
 
 * Bytes 0...7 - Filename (ASCII) left justified, space filled
-* Bytes 6...10    - Type (ASCII) left justified, space filled
+* Bytes 8...10    - Type (ASCII) left justified, space filled
 * Bytes 11...12   - Size in kilobytes (binary)
 
 The file size is the amount of disk space allocated to the file, not necessarily the same as the amount used by the file.
@@ -8608,7 +8608,7 @@ How much free space is there on this drive?
 * Always:
   * BC DE IX corrupt
   * All other registers preserved
- 
+
 #### <a id="dos-delete"></a> DOS DELETE 0124h (292)
 
 Deletes an existing file.
@@ -8635,7 +8635,7 @@ File must not be open on any file number.
 
 Rename an existing file.
 
-File must not be open on any file number. A file with the new filename must not exist. The new name must specify, or default to, the sme drive as the old name.
+File must not be open on any file number. A file with the new filename must not exist. The new name must specify, or default to, the same drive as the old name.
 
 ##### ENTRY CONDITIONS
 
@@ -11643,7 +11643,7 @@ Details of the _**+3**'s_ hardware will be found in [chapter 8 part 30](#part30)
 Original manual by Ivor Spital, Cliff Lawson, Rupert Goodwins, Steve Vickers and Robin Bradbeer.
 
 Markdown conversion, JavaScript, style, screenshots, and most SVG drawings by [Damien Guard](https://damieng.com). Music scale (part 19) and screen diagram (part 15) diagrams by mjwilson.
- 
+
 Original ASCII manual prepared by:
   - Ian Coates <oktup@mono.city.ac.uk> did [chapter 8 parts 26](#part26) and [30](#part30).
   - Thomas Ahn Kjaer <takjaer@daimi.aau.dk> did [chapter 8 part 17](#part17).
