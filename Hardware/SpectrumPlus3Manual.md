@@ -1355,7 +1355,155 @@ Formatting can be likened to building a series of shelves and pigeonholes on a d
 
 The formatting divides the disk into 360 distinctly separate areas...
 
-**Missing image of a floppy disk structure**
+<figure>
+<svg width="100%" height="100%" viewBox="0 0 640 517" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
+    <g transform="matrix(1,0,0,1,6.74621,10.0674)">
+        <rect x="1.5" y="1.5" width="497" height="497" style="fill:none;stroke:black;stroke-width:4px;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,6.74621,10.0674)">
+        <circle cx="250" cy="250" r="237.981" style="fill:none;stroke:black;stroke-width:3px;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,6.74621,10.0674)">
+        <circle cx="250" cy="250" r="228.462" style="fill:none;stroke:black;stroke-width:2px;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,6.74621,10.0674)">
+        <circle cx="250" cy="250" r="218.942" style="fill:none;stroke:black;stroke-width:2px;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,6.74621,10.0674)">
+        <circle cx="250" cy="250" r="209.423" style="fill:none;stroke:black;stroke-width:2px;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,6.74621,10.0674)">
+        <circle cx="250" cy="250" r="199.904" style="fill:none;stroke:black;stroke-width:2px;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,6.74621,10.0674)">
+        <circle cx="250" cy="250" r="190.385" style="fill:none;stroke:black;stroke-width:2px;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,6.74621,10.0674)">
+        <circle cx="250" cy="250" r="180.865" style="fill:none;stroke:black;stroke-width:2px;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,6.74621,10.0674)">
+        <circle cx="250" cy="250" r="171.346" style="fill:none;stroke:black;stroke-width:2px;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,6.74621,10.0674)">
+        <circle cx="250" cy="250" r="161.827" style="fill:none;stroke:black;stroke-width:2px;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,6.74621,10.0674)">
+        <circle cx="250" cy="250" r="152.308" style="fill:none;stroke:black;stroke-width:2px;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,6.74621,10.0674)">
+        <circle cx="250" cy="250" r="142.788" style="fill:none;stroke:black;stroke-width:2px;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,6.74621,10.0674)">
+        <circle cx="250" cy="250" r="133.269" style="fill:none;stroke:black;stroke-width:2px;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,6.74621,10.0674)">
+        <circle cx="250" cy="250" r="123.75" style="fill:none;stroke:black;stroke-width:2px;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,6.74621,10.0674)">
+        <circle cx="250" cy="250" r="114.231" style="fill:none;stroke:black;stroke-width:2px;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,6.74621,10.0674)">
+        <circle cx="250" cy="250" r="104.712" style="fill:none;stroke:black;stroke-width:2px;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,6.74621,10.0674)">
+        <circle cx="250" cy="250" r="95.192" style="fill:none;stroke:black;stroke-width:2px;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,6.74621,10.0674)">
+        <circle cx="250" cy="250" r="85.673" style="fill:none;stroke:black;stroke-width:2px;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,6.74621,10.0674)">
+        <circle cx="250" cy="250" r="76.154" style="fill:none;stroke:black;stroke-width:2px;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,6.74621,10.0674)">
+        <circle cx="250" cy="250" r="66.635" style="fill:none;stroke:black;stroke-width:2px;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,6.74621,10.0674)">
+        <circle cx="250" cy="250" r="57.115" style="fill:none;stroke:black;stroke-width:2px;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,6.74621,10.0674)">
+        <circle cx="250" cy="250" r="47.596" style="fill:none;stroke:black;stroke-width:2px;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,6.74621,10.0674)">
+        <circle cx="250" cy="250" r="38.077" style="fill:none;stroke:black;stroke-width:3px;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,6.74621,10.0674)">
+        <rect x="248" y="15.019" width="4" height="194.981" style="fill:white;stroke:none"/>
+    </g>
+    <g transform="matrix(0.766044,0.642788,-0.642788,0.766044,225.932,-92.1406)">
+        <rect x="248" y="15.019" width="4" height="194.981" style="fill:white;stroke:none"/>
+    </g>
+    <g transform="matrix(0.173648,0.984808,-0.984808,0.173648,459.536,-29.5466)">
+        <rect x="248" y="15.019" width="4" height="194.981" style="fill:white;stroke:none"/>
+    </g>
+    <g transform="matrix(0.173648,0.984808,-0.279596,0.0493003,508.717,-38.1229)">
+        <rect x="248" y="15.019" width="4" height="194.981" style="stroke:white;fill:black;stroke-width:2px"/>
+    </g>
+    <g transform="matrix(-0.5,0.866025,-0.866025,-0.5,598.253,168.561)">
+        <rect x="248" y="15.019" width="4" height="194.981" style="fill:white;stroke:none"/>
+    </g>
+    <g transform="matrix(-0.5,0.866025,-0.250391,-0.144563,642.18,194.449)">
+        <rect x="248" y="15.019" width="4" height="194.981" style="stroke:white;fill:black;stroke-width:2px"/>
+    </g>
+    <g transform="matrix(-0.939693,0.34202,-0.34202,-0.939693,577.174,409.486)">
+        <rect x="248" y="15.019" width="4" height="194.981" style="fill:white;stroke:none"/>
+    </g>
+    <g transform="matrix(-0.939693,-0.34202,0.34202,-0.939693,406.164,580.496)">
+        <rect x="248" y="15.019" width="4" height="194.981" style="fill:white;stroke:none"/>
+    </g>
+    <g transform="matrix(-0.5,-0.866025,0.866025,-0.5,165.24,601.574)">
+        <rect x="248" y="15.019" width="4" height="194.981" style="fill:white;stroke:none"/>
+    </g>
+    <g transform="matrix(0.173648,-0.984808,0.984808,0.173648,-32.8678,462.857)">
+        <rect x="248" y="15.019" width="4" height="194.981" style="fill:white;stroke:none"/>
+    </g>
+    <g transform="matrix(0.766044,-0.642788,0.642788,0.766044,-95.4618,229.253)">
+        <rect x="248" y="15.019" width="4" height="194.981" style="fill:white;stroke:none"/>
+    </g>
+    <g transform="matrix(1,0,0,1,-3.65691,10.0674)">
+        <path d="M560,60l-50,0" style="fill:none;fill-rule:nonzero;"/>
+        <g transform="matrix(1,-0,-0,1,3.65691,-10.0674)">
+            <path d="M518.343,76.067l-12,-6l12,-6l0,12Z" style="fill:black"/>
+            <path d="M556.343,70.067l-40.4,0" style="fill:none;fill-rule:nonzero;stroke:black;stroke-width:2px;"/>
+        </g>
+    </g>
+    <g transform="matrix(1,0,0,1,558.222,76.1077)" >
+        <text x="0px" y="0px">Outer Case</text>
+    </g>
+    <g transform="matrix(1,0,0,1,6.74621,10.0674)" style="fill:black">
+        <g transform="matrix(1,-0,-0,1,-6.74621,-10.0674)">
+            <path d="M554.147,220.81l-9.128,-9.834l-2.39,13.202l11.518,-3.368Z"/>
+            <path d="M524.095,397.598l-11.367,7.126l1.12,-13.37l10.247,6.244Z"/>
+            <path d="M546.734,220.389c-0.109,-0.541 0.241,-1.069 0.782,-1.179c0.541,-0.109 1.069,0.241 1.178,0.782c4.094,20.235 6.457,63.174 3.645,90.291c-3.382,32.627 -24.045,70.393 -33.756,86.753c-0.282,0.475 -0.896,0.631 -1.371,0.349c-0.474,-0.281 -0.631,-0.895 -0.349,-1.37c9.622,-16.209 30.135,-53.611 33.487,-85.938c2.792,-26.936 0.45,-69.589 -3.616,-89.688Z"/>
+        </g>
+    </g>
+    <g transform="matrix(1.23531,0,0,1,-128.891,42.8372)">
+        <path d="M530,407l-106.263,0" style="fill:none;fill-rule:nonzero;"/>
+        <g transform="matrix(0.809514,-0,-0,1,104.339,-42.8372)">
+            <path d="M396.955,455.837l-12,-6l12,-6l0,12Z" style="fill:black;"/>
+            <path d="M525.823,449.837l-131.268,0" style="fill:none;fill-rule:nonzero;stroke:black;stroke-width:2px;"/>
+        </g>
+    </g>
+    <g transform="matrix(1,0,0,1,527.572,454.837)">
+        <text x="0px" y="0px">Track 0</text>
+    </g>
+    <g transform="matrix(1,0,0,1,555.619,315.019)">
+        <g transform="matrix(16,0,0,16,46.2422,0)">
+        </g>
+        <text x="0px" y="0px">Sector</text>
+    </g>
+    <g transform="matrix(0.992519,0.00534878,0.00534878,0.996176,-0.483247,15.532)">
+        <path d="M552.923,-1.53l-274.365,202.042" style="fill:none;fill-rule:nonzero;"/>
+        <g transform="matrix(1.00757,-0.00540993,-0.00540993,1.00387,0.57093,-15.5947)">
+            <path d="M290.28,214.481l-13.217,2.286l6.102,-11.944l7.115,9.658Z" style="fill:black;"/>
+            <path d="M548.296,16.965c-0,0 -219.259,161.516 -263.506,194.11" style="fill:none;fill-rule:nonzero;stroke:black;stroke-width:2px;"/>
+        </g>
+    </g>
+    <g transform="matrix(1,0,0,1,550.781,23.7891)">
+        <text x="0px" y="-2px">Track 39</text>
+    </g>
+</svg>
+
+</figure>
 
 There are 40 concentric tracks from the outside of the disk (Track 0) to the inside (Track 39), and each track is divided into 9 sectors.
 
